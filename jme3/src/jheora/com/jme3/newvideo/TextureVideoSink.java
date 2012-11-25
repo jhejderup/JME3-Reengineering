@@ -60,8 +60,10 @@ public class TextureVideoSink extends Sink {
 
     @Override
     protected int render(Buffer buf) {
-        if (buf.duplicate)
-            return Pad.OK;
+     
+    	//Joseph: will remove the error
+    	//if (buf.duplicate)
+        //    return Pad.OK;
 
         Debug.log(Debug.DEBUG, this.getName() + " starting buffer " + buf);
         if (buf.object instanceof Image){
