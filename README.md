@@ -14,6 +14,8 @@ There are a few unit tests that can be runned with JUnit, however most of the te
 ```bash 
 TestChooser.exe
 ```
+However, in the test suite, some test cases are not working(like android test cases), but might not have importance for our further work.
+
 
 ## Submission 2
 For making sure there are enough test cases, code coverage tools must be used. Below are some useful tools:
