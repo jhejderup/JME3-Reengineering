@@ -16,7 +16,7 @@ TestChooser.exe
 ```
 
 ## Submission 2
-For making sure there is enough test cases, code coverage tools must be used. Below are some useful tools:
+For making sure there are enough test cases, code coverage tools must be used. Below are some useful tools:
 ```bash 
 Google Code Pro Analytix
 EclEmma
