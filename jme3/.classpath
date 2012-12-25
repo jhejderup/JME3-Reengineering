@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src/blender"/>
+	<classpathentry kind="src" path="src/jbullet"/>
+	<classpathentry kind="src" path="src/bullet-native"/>
+	<classpathentry kind="src" path="src/core-data"/>
 	<classpathentry kind="src" path="src/android"/>
 	<classpathentry kind="src" path="src/bullet"/>
 	<classpathentry kind="src" path="src/bullet-common"/>
@@ -9,8 +12,6 @@
 	<classpathentry kind="src" path="src/core-plugins"/>
 	<classpathentry kind="src" path="src/desktop"/>
 	<classpathentry kind="src" path="src/ios"/>
-	<classpathentry kind="src" path="src/jbullet"/>
-	<classpathentry kind="src" path="src/jheora"/>
 	<classpathentry kind="src" path="src/jogg"/>
 	<classpathentry kind="src" path="src/jogl"/>
 	<classpathentry kind="src" path="src/lwjgl"/>
@@ -145,7 +146,6 @@
 	<classpathentry kind="lib" path="lib/swing-layout/swing-layout-1.0.4.jar"/>
 	<classpathentry kind="lib" path="lib/swingext/swing-layout-1.0.3.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="lib" path="lib/cortado-modified-0.82.jar"/>
 	<classpathentry kind="lib" path="lib/android/android.jar"/>
 	<classpathentry kind="output" path="build/terrain"/>
 </classpath>
