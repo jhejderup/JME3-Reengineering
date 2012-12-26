@@ -7,7 +7,10 @@ This is part of the learning outcomes of the Software Reengineering course at TU
 ##Build
 There is a build.xml included in the source code for building the project. However, in the eclipse environment,
 it will not be able to build the project and errors will show up, in order to build, right click on the build.xml
-and run the ANT builder instead
+and run the ANT builder instead. In the terminal, do the following
+```bash 
+$ ant build
+```
 
 ##Testing
 There are a few unit tests that can be runned with JUnit, however most of the test cases can be runned using the commando:
