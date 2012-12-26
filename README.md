@@ -31,3 +31,5 @@ Google Code Pro Analytix
 EclEmma
 -- more to come!
 ```
+All changes, decisions, ideas should be well-documented and available in the designated Google Drive folder for this course.
+
