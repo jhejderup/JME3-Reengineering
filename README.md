@@ -10,9 +10,13 @@ it will not be able to build the project and errors will show up, in order to bu
 and run the ANT builder instead
 
 ##Testing
-There are a few unit tests that can be runned with JUnit, however most of the test cases can be runned using:
+There are a few unit tests that can be runned with JUnit, however most of the test cases can be runned using the commando:
 ```bash 
-TestChooser.exe
+$ ant run
+```
+In eclipse environment, Run As Java Application, it will serach for all possible classes having a main-method. Select the one below:
+```bash 
+$ jme3test.TestChooser.java
 ```
 However, in the test suite, some test cases are not working(like android test cases), but might not have importance for our further work.
 
