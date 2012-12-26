@@ -16,7 +16,7 @@ $ ant run
 ```
 In eclipse environment, Run As Java Application, it will serach for all possible classes having a main-method. Select the one below:
 ```bash 
-$ jme3test.TestChooser.java
+jme3test.TestChooser.java
 ```
 However, in the test suite, some test cases are not working(like android test cases), but might not have importance for our further work.
 
