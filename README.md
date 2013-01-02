@@ -33,3 +33,5 @@ EclEmma
 ```
 All changes, decisions, ideas should be well-documented and available in the designated Google Drive folder for this course.
 
+## Issuetracker
+Link to the JME3 issuetracker: http://code.google.com/p/jmonkeyengine/issues/list?can=1&q=label%3AProduct-jME3&colspec=ID%20Type%20Status%20Component%20Priority%20Difficulty%20Product%20Milestone%20Owner%20Summary&groupby=&sort=priority&num=100&start=0
