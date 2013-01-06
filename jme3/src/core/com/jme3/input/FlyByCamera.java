@@ -238,7 +238,7 @@ public class FlyByCamera implements AnalogListener, ActionListener {
 
         inputManager.addListener(this, mappings);
         inputManager.setCursorVisible(dragToRotate || !isEnabled());
-
+//why is joystick diffrently handled?
         Joystick[] joysticks = inputManager.getJoysticks();
         if (joysticks != null && joysticks.length > 0){
             for (Joystick j : joysticks) {
@@ -246,7 +246,7 @@ public class FlyByCamera implements AnalogListener, ActionListener {
             }
         }
     }
-
+  //why is joystick diffrently handled?
     protected void mapJoystick( Joystick joystick ) {
         
         // Map it differently if there are Z axis

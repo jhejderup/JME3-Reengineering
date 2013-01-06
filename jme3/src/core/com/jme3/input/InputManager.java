@@ -184,7 +184,7 @@ public class InputManager implements RawInputListener {
         if (!bindings.containsKey(hash)) {
             return;
         }
-
+     //used for both mouse buttons and joystick buttons?
         if (pressed) {
             pressedButtons.put(hash, time);
         } else {

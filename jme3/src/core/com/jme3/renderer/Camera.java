@@ -128,8 +128,15 @@ public class Camera implements Savable, Cloneable {
      * The orientation of the camera.
      */
     protected Quaternion rotation;
+    
+    
+    //Decide whether frustumNear, frustumFar, frustumLeft-Right, frustmTop-Bottom
+    //should be in Camera.java or Frustum.java
+    
     /**
      * Distance from camera to near frustum plane.
+     * used in Camera(), copyFrom(Camera), getFrustumNear(), onFrameChange(), onFrustumChange(), read(), setFrustum()x3, toString(), write()
+     * Same for the others
      */
     protected float frustumNear;
     /**
@@ -154,6 +161,10 @@ public class Camera implements Savable, Cloneable {
     protected float frustumBottom;
     //Temporary values computed in onFrustumChange that are needed if a
     //call is made to onFrameChange.
+    /**
+     * Used in Camera(), copyFrom(Camera), onFrameChange(), onFrustumChange(), read(), write()
+     * This is valid for all coeff* arrays
+     */
     protected float[] coeffLeft;
     protected float[] coeffRight;
     protected float[] coeffBottom;
@@ -162,6 +173,8 @@ public class Camera implements Savable, Cloneable {
     /**
      * Percent value on display where horizontal viewing starts for this camera.
      * Default is 0.
+     * Used in: Camera(), copyFrom(Camera), getScreenCoordinates(),getViewPortLeft(), getWorldCoordinates, 
+     * read(), setGuiBounding(),SetViewPort(), write()
      */
     protected float viewPortLeft;
     /**
@@ -188,11 +201,17 @@ public class Camera implements Savable, Cloneable {
      * children.
      */
     private int planeState;
+    //width and height used in: Camera(), copyFrom(Camera), getWidth(), read(), resize(), setGuiBounding(), toString(), write
     protected int width;
     protected int height;
     protected boolean viewportChanged = true;
     /**
      * store the value for field parallelProjection
+     * 
+     * 
+     * Used in copyFrom(), isParallelProjection(), onFrustumChange(), setFrustumPerspective() setParallelProjection(), toString()
+     *
+     *
      */
     private boolean parallelProjection = true;
     protected Matrix4f projectionMatrixOverride;
@@ -218,10 +237,13 @@ public class Camera implements Savable, Cloneable {
      * values of the camera are set to default.
      */
     public Camera(int width, int height) {
-        this();
+        //for serialization
+    	this();
+    	
+    	//camera related
         location = new Vector3f();
         rotation = new Quaternion();
-
+        //camera or frustum related?
         frustumNear = 1.0f;
         frustumFar = 2.0f;
         frustumLeft = -0.5f;
@@ -234,16 +256,19 @@ public class Camera implements Savable, Cloneable {
         coeffBottom = new float[2];
         coeffTop = new float[2];
 
+       
         viewPortLeft = 0.0f;
         viewPortRight = 1.0f;
         viewPortTop = 1.0f;
         viewPortBottom = 0.0f;
-
+        //camera related
         this.width = width;
         this.height = height;
-
+        
+        //frustum related
         onFrustumChange();
         onViewPortChange();
+        //camera related
         onFrameChange();
 
         logger.log(Level.INFO, "Camera created (W: {0}, H: {1})", new Object[]{width, height});
@@ -293,9 +318,11 @@ public class Camera implements Savable, Cloneable {
 	 *            the camera we copy the settings from
 	 */
     public void copyFrom(Camera cam) {
+    	
+    	//camera related
     	location.set(cam.location);
         rotation.set(cam.rotation);
-
+        //frustum related
         frustumNear = cam.frustumNear;
         frustumFar = cam.frustumFar;
         frustumLeft = cam.frustumLeft;
@@ -316,17 +343,17 @@ public class Camera implements Savable, Cloneable {
         viewPortRight = cam.viewPortRight;
         viewPortTop = cam.viewPortTop;
         viewPortBottom = cam.viewPortBottom;
-
+        //camera related
         this.width = cam.width;
         this.height = cam.height;
-        
+        //frustum related
         this.planeState = cam.planeState;
         this.viewportChanged = cam.viewportChanged;
         for (int i = 0; i < MAX_WORLD_PLANES; ++i) {
             worldPlane[i].setNormal(cam.worldPlane[i].getNormal());
             worldPlane[i].setConstant(cam.worldPlane[i].getConstant());
         }
-        
+        //camera related
         this.parallelProjection = cam.parallelProjection;
         if(cam.projectionMatrixOverride != null) {
         	if(this.projectionMatrixOverride == null) {
@@ -381,6 +408,15 @@ public class Camera implements Savable, Cloneable {
      * if you want to handle the sky bucket, look at how it's done in SimpleWaterProcessor.java
      * @param clipPlane the plane
      * @param side the side the camera stands from the plane
+     * 
+     * 
+     * 
+     * 
+     *USED externally in: postQueue() in ReflectionProcessor class and preFrame() in SimpleWaterProcessor (Water package)
+     *Pure camera method -> we need to connect this part with Frustum to get the clipPlane
+     *
+     *
+     *
      */
     public void setClipPlane(Plane clipPlane, Plane.Side side) {     
         float sideFactor = 1;
@@ -432,6 +468,11 @@ public class Camera implements Savable, Cloneable {
      * Note that this will work properly only if it's called on each update, and be aware that it won't work properly with the sky bucket.
      * if you want to handle the sky bucket, look at how it's done in SimpleWaterProcessor.java
      * @param clipPlane the plane
+     * 
+     * 
+     * 
+     * 
+     * Same reasoning as above
      */
     public void setClipPlane(Plane clipPlane) {
         setClipPlane(clipPlane, clipPlane.whichSide(location));
@@ -447,12 +488,24 @@ public class Camera implements Savable, Cloneable {
      * @param height the view height
      * @param fixAspect If true, the camera's aspect ratio will be recomputed.
      * Recomputing the aspect ratio requires changing the frustum values.
+     * 
+     * This is also a camera method but the frustum is also affected -> frustum opertions moved to
+     * frusturm but a method like onResizeCamera(...) is needed for a call here
+     * 
+     * Used externally in FilterPostProcessor class, HDRRenderer class, RenderManager class and AwtPanel class
+     * Degree of problem: Low
+     * 
      */
     public void resize(int width, int height, boolean fixAspect) {
-        this.width = width;
+        
+    	//camera related
+    	this.width = width;
         this.height = height;
+        
+        //frustrum (but maybe camera related)
         onViewPortChange();
 
+        //frustum related
         if (fixAspect /*&& !parallelProjection*/) {
             frustumRight = frustumTop * ((float) width / height);
             frustumLeft = -frustumRight;
@@ -465,6 +518,13 @@ public class Camera implements Savable, Cloneable {
      * plane.
      *
      * @return the value of the bottom frustum plane.
+     * 
+     * 
+     * Used externally in postQueue() in SimpleWaterProcessor in water package
+     * 					  preFrame()  in WaterFilter in water package
+     * Degree of problem: high, since this method will be shifted to the new frustum classes 
+     * 							so we need to investigate the impact if this method is removed
+     * 
      */
     public float getFrustumBottom() {
         return frustumBottom;
@@ -475,6 +535,13 @@ public class Camera implements Savable, Cloneable {
      * plane.
      *
      * @param frustumBottom the value of the bottom frustum plane.
+     * 
+     * Used externally in zoomCamera(float) in FlyByCamera.java
+     * 
+     * Degree of problem: high, since this method will be shifted to the new frustum classes 
+     * 							so we need to investigate the impact if this method is removed
+     * 
+     * 
      */
     public void setFrustumBottom(float frustumBottom) {
         this.frustumBottom = frustumBottom;
@@ -485,6 +552,10 @@ public class Camera implements Savable, Cloneable {
      * <code>getFrustumFar</code> gets the value of the far frustum plane.
      *
      * @return the value of the far frustum plane.
+     * 
+     * Not used but could be a problem!
+     * 
+     * 
      */
     public float getFrustumFar() {
         return frustumFar;
@@ -494,6 +565,13 @@ public class Camera implements Savable, Cloneable {
      * <code>setFrustumFar</code> sets the value of the far frustum plane.
      *
      * @param frustumFar the value of the far frustum plane.
+     * 
+     * 
+     * Externally used in parseCameraClipping in SceneLoader
+     * Good thing used in jme3tests{batching,bullet,effect,light,post,water}!
+     *
+     * 
+     * 
      */
     public void setFrustumFar(float frustumFar) {
         this.frustumFar = frustumFar;
@@ -504,6 +582,11 @@ public class Camera implements Savable, Cloneable {
      * <code>getFrustumLeft</code> gets the value of the left frustum plane.
      *
      * @return the value of the left frustum plane.
+     * 
+     * 
+     *  Not used but could be a problem!
+     *  
+     *  
      */
     public float getFrustumLeft() {
         return frustumLeft;
@@ -513,6 +596,9 @@ public class Camera implements Savable, Cloneable {
      * <code>setFrustumLeft</code> sets the value of the left frustum plane.
      *
      * @param frustumLeft the value of the left frustum plane.
+     * 
+     * Used in zoomCamera in FlyByCamera
+     * 
      */
     public void setFrustumLeft(float frustumLeft) {
         this.frustumLeft = frustumLeft;
@@ -523,6 +609,15 @@ public class Camera implements Savable, Cloneable {
      * <code>getFrustumNear</code> gets the value of the near frustum plane.
      *
      * @return the value of the near frustum plane.
+     * 
+     * Used externally in zoomCamera in FlyByCamera, initFilter() in SSAOFilter, controlRender() in LodControl
+     *                    setCamera in UniformBindingManager, some classes in water and shadow package and
+     *                    perspectiveLodCalculator()
+     * 
+     * internally used in getViewToProjectionZ()                   
+     *                    
+     * Degree of problem: high , high usage of this method                   
+     *                      
      */
     public float getFrustumNear() {
         return frustumNear;
@@ -532,6 +627,8 @@ public class Camera implements Savable, Cloneable {
      * <code>setFrustumNear</code> sets the value of the near frustum plane.
      *
      * @param frustumNear the value of the near frustum plane.
+     *
+     * Exterbnally used in Sceneloader -> parseCameraClipping() 
      */
     public void setFrustumNear(float frustumNear) {
         this.frustumNear = frustumNear;
@@ -542,6 +639,9 @@ public class Camera implements Savable, Cloneable {
      * <code>getFrustumRight</code> gets the value of the right frustum plane.
      *
      * @return frustumRight the value of the right frustum plane.
+     * 
+     * Externally used in zoomCamera() in FlyBycamera, used in ShadowUtil in shadow package
+     * 					 used in SimpleWaterProcessor, WaterFiler class
      */
     public float getFrustumRight() {
         return frustumRight;
@@ -561,6 +661,9 @@ public class Camera implements Savable, Cloneable {
      * <code>getFrustumTop</code> gets the value of the top frustum plane.
      *
      * @return the value of the top frustum plane.
+     * 
+     * Same as the other used in many external packages
+     * 
      */
     public float getFrustumTop() {
         return frustumTop;
@@ -570,6 +673,8 @@ public class Camera implements Savable, Cloneable {
      * <code>setFrustumTop</code> sets the value of the top frustum plane.
      *
      * @param frustumTop the value of the top frustum plane.
+     * 
+     * Externally used in ZoomCamera() in FlyBycamera
      */
     public void setFrustumTop(float frustumTop) {
         this.frustumTop = frustumTop;
@@ -739,6 +844,14 @@ public class Camera implements Savable, Cloneable {
      * @param bottom the bottom plane.
      * @see Camera#setFrustum(float, float, float, float,
      *      float, float)
+     *      
+     *      
+     * Pure frustum method, should not be here
+     * 
+     * Externally called in water and shadow packages
+     * Test cases exist! good!
+     * 
+     * Degree of problem: medium (due to external calls)         
      */
     public void setFrustum(float near, float far, float left, float right,
             float top, float bottom) {
@@ -760,6 +873,11 @@ public class Camera implements Savable, Cloneable {
      * @param aspect Width:Height ratio
      * @param near   Near view plane distance
      * @param far    Far view plane distance
+     * 
+     * External call in initCamera() in Application and in 6 other classes
+     * Degree of Problem: medium, this is a pure frustum method but this is
+     * method is mainly desgined for the camera
+     * 
      */
     public void setFrustumPerspective(float fovY, float aspect, float near,
             float far) {
@@ -793,6 +911,10 @@ public class Camera implements Savable, Cloneable {
      * @param direction the facing of the camera.
      * @see Camera#setFrame(com.jme3.math.Vector3f,
      *      com.jme3.math.Vector3f, com.jme3.math.Vector3f, com.jme3.math.Vector3f)
+     *      
+     *      
+     *      Camera related
+     *      
      */
     public void setFrame(Vector3f location, Vector3f left, Vector3f up,
             Vector3f direction) {
@@ -812,6 +934,9 @@ public class Camera implements Savable, Cloneable {
      * @param pos           where to look at in terms of world coordinates
      * @param worldUpVector a normalized vector indicating the up direction of the world.
      *                      (typically {0, 1, 0} in jME.)
+     *                      
+     *    Camera related                  
+     *                      
      */
     public void lookAt(Vector3f pos, Vector3f worldUpVector) {
         TempVars vars = TempVars.get();
@@ -851,6 +976,10 @@ public class Camera implements Savable, Cloneable {
      *            the point position of the camera.
      * @param axes
      *            the orientation of the camera.
+     *
+     *
+     * Camera related
+     *
      */
     public void setFrame(Vector3f location, Quaternion axes) {
         this.location = location;
@@ -864,6 +993,12 @@ public class Camera implements Savable, Cloneable {
      * <code>onFrameChange</code>.
      *
      * @see Camera#update()
+     * 
+     * 
+     * 
+     *  Update method for Frustum class is needed (a seperation here)
+     *  
+     * 
      */
     public void update() {
         onFrustumChange();
@@ -877,6 +1012,10 @@ public class Camera implements Savable, Cloneable {
      * culling thus far.
      *
      * @return the current plane state int.
+     * 
+     * Externally called in renderSubScene in RenderManager and ShadowUtil
+     * Degree of Problem: medium (could maybe be decoupled from camera)
+     * 
      */
     public int getPlaneState() {
         return planeState;
@@ -887,6 +1026,12 @@ public class Camera implements Savable, Cloneable {
      * planes for culling.
      *
      * @param planeState the updated state.
+     * 
+     * 
+     * Externally used in renderScence,rendeSubScene in RenderManager
+     * 				   also used in the optimize package and shadow package
+     * 
+     * 
      */
     public void setPlaneState(int planeState) {
         this.planeState = planeState;
@@ -896,6 +1041,9 @@ public class Camera implements Savable, Cloneable {
      * <code>getViewPortLeft</code> gets the left boundary of the viewport
      *
      * @return the left boundary of the viewport
+     * 
+     * Externally used
+     * 
      */
     public float getViewPortLeft() {
         return viewPortLeft;
@@ -905,6 +1053,10 @@ public class Camera implements Savable, Cloneable {
      * <code>setViewPortLeft</code> sets the left boundary of the viewport
      *
      * @param left the left boundary of the viewport
+     * 
+     * 
+     * Not used
+     * 
      */
     public void setViewPortLeft(float left) {
         viewPortLeft = left;
@@ -915,6 +1067,9 @@ public class Camera implements Savable, Cloneable {
      * <code>getViewPortRight</code> gets the right boundary of the viewport
      *
      * @return the right boundary of the viewport
+     * 
+     * Externally used
+     * 
      */
     public float getViewPortRight() {
         return viewPortRight;
@@ -924,6 +1079,9 @@ public class Camera implements Savable, Cloneable {
      * <code>setViewPortRight</code> sets the right boundary of the viewport
      *
      * @param right the right boundary of the viewport
+     * 
+     * 
+     * Not used
      */
     public void setViewPortRight(float right) {
         viewPortRight = right;
@@ -934,6 +1092,10 @@ public class Camera implements Savable, Cloneable {
      * <code>getViewPortTop</code> gets the top boundary of the viewport
      *
      * @return the top boundary of the viewport
+     * 
+     * 
+     * Externally used
+     * 
      */
     public float getViewPortTop() {
         return viewPortTop;
@@ -943,6 +1105,10 @@ public class Camera implements Savable, Cloneable {
      * <code>setViewPortTop</code> sets the top boundary of the viewport
      *
      * @param top the top boundary of the viewport
+     *
+     *
+     *Not used
+     *
      */
     public void setViewPortTop(float top) {
         viewPortTop = top;
@@ -953,6 +1119,9 @@ public class Camera implements Savable, Cloneable {
      * <code>getViewPortBottom</code> gets the bottom boundary of the viewport
      *
      * @return the bottom boundary of the viewport
+     * 
+     * Externally used
+     * 
      */
     public float getViewPortBottom() {
         return viewPortBottom;
@@ -962,6 +1131,10 @@ public class Camera implements Savable, Cloneable {
      * <code>setViewPortBottom</code> sets the bottom boundary of the viewport
      *
      * @param bottom the bottom boundary of the viewport
+     * 
+     * 
+     * Not used
+     * 
      */
     public void setViewPortBottom(float bottom) {
         viewPortBottom = bottom;
@@ -975,6 +1148,13 @@ public class Camera implements Savable, Cloneable {
      * @param right  the right boundary of the viewport (default: 1)
      * @param bottom the bottom boundary of the viewport (default: 0)
      * @param top    the top boundary of the viewport (default: 1)
+     * 
+     * 
+     * As this method might be moved to Fustrum class, 
+     * External calls from FilterPostProcessor class, RenderManager, ViewPort classes
+     * test cases exist
+     * 
+     * 
      */
     public void setViewPort(float left, float right, float bottom, float top) {
         this.viewPortLeft = left;
@@ -989,6 +1169,14 @@ public class Camera implements Savable, Cloneable {
      * plane of the camera. This is used for render queue sorting.
      * @param pos The position to compute a distance to.
      * @return Distance from the far plane to the point.
+     * 
+     * 
+     * Not used 
+     * 
+     * This uses code that should be in the future fustrum class
+     * 
+     * Degree of Problem: low
+     * 
      */
     public float distanceToNearPlane(Vector3f pos) {
         return worldPlane[NEAR_PLANE].pseudoDistance(pos);
@@ -1012,6 +1200,16 @@ public class Camera implements Savable, Cloneable {
      *
      * @param bound the bound to check for culling
      * @return See enums in <code>FrustumIntersect</code>
+     * 
+     * 
+     * This method should moved to Fustrum class for sure
+     * 
+     * External calls: 3 packages{scence, shadow, jme3tools.optimize}, class Spatial, Shadowutil, FastOctNode,OctNode
+     * 
+     * The code is purly frustrum code, so no problem with camera! but BoundingVolume is used, should it be in both classes or only in fustrum?
+     * 
+     * 
+     * 
      */
     public FrustumIntersect contains(BoundingVolume bound) {
         if (bound == null) {
@@ -1057,6 +1255,11 @@ public class Camera implements Savable, Cloneable {
      *
      * @param bound the bound to check for culling
      * @return True if the camera contains the gui element bounding volume.
+     * 
+     * External call in checkCulling(Camera) in Spatial
+     * 
+     * This fells that this method belongs more to Fustrum
+     * 
      */
     public boolean containsGui(BoundingVolume bound) {
         return guiBounding.intersects(bound);
@@ -1067,6 +1270,9 @@ public class Camera implements Savable, Cloneable {
      * The view matrix transforms world space into eye space.
      * This matrix is usually defined by the position and
      * orientation of the camera.
+     * 
+     * Camera related
+     * 
      */
     public Matrix4f getViewMatrix() {
         return viewMatrix;
@@ -1076,6 +1282,9 @@ public class Camera implements Savable, Cloneable {
      * Overrides the projection matrix used by the camera. Will
      * use the matrix for computing the view projection matrix as well.
      * Use null argument to return to normal functionality.
+     *
+     *
+     * Camera related
      *
      * @param projMatrix
      */
@@ -1089,6 +1298,11 @@ public class Camera implements Savable, Cloneable {
      * The view projection matrix  transforms eye space into clip space.
      * This matrix is usually defined by the viewport and perspective settings
      * of the camera.
+     * 
+     * 
+     * Camera related
+     * 
+     * 
      */
     public Matrix4f getProjectionMatrix() {
         if (projectionMatrixOverride != null) {
@@ -1100,6 +1314,9 @@ public class Camera implements Savable, Cloneable {
 
     /**
      * Updates the view projection matrix.
+     * 
+     * Camera related
+     * 
      */
     public void updateViewProjection() {
         if (projectionMatrixOverride != null) {
@@ -1114,6 +1331,9 @@ public class Camera implements Savable, Cloneable {
      * @return The result of multiplying the projection matrix by the view
      * matrix. This matrix is required for rendering an object. It is
      * precomputed so as to not compute it every time an object is rendered.
+     * 
+     * Camera related
+     * 
      */
     public Matrix4f getViewProjectionMatrix() {
         return viewProjectionMatrix;
@@ -1123,6 +1343,11 @@ public class Camera implements Savable, Cloneable {
      * @return True if the viewport (width, height, left, right, bottom, up)
      * has been changed. This is needed in the renderer so that the proper
      * viewport can be set-up.
+     * 
+     * 
+     * A potential part of the fustrum class
+     * External call: setViewPort in RenderManager 
+     * 
      */
     public boolean isViewportChanged() {
         return viewportChanged;
@@ -1131,6 +1356,11 @@ public class Camera implements Savable, Cloneable {
     /**
      * Clears the viewport changed flag once it has been updated inside
      * the renderer.
+     * 
+     * A potential part of the fustrum class
+     * External call: setViewPort in RenderManager 
+     * 
+     * 
      */
     public void clearViewportChanged() {
         viewportChanged = false;
@@ -1138,12 +1368,24 @@ public class Camera implements Savable, Cloneable {
 
     /**
      * Called when the viewport has been changed.
+     * 
+     * 
+     * Mostly used inside this class actually! why not private or protected?
+     * Internal calls: Camera(), read(), resize(), setViewPort*(), update()
+     * 
+     * Potentially can be used in Frustum class
+     * 
      */
     public void onViewPortChange() {
         viewportChanged = true;
         setGuiBounding();
     }
 
+    /**
+     * Only used in the above method, no problem when moving this method
+     * 
+     * no camera code
+     */
     private void setGuiBounding() {
         float sx = width * viewPortLeft;
         float ex = width * viewPortRight;
@@ -1162,6 +1404,14 @@ public class Camera implements Savable, Cloneable {
      * made to the planes. The new frustum values are kept in a temporary
      * location for use when calculating the new frame. The projection
      * matrix is updated to reflect the current values of the frustum.
+     * 
+     * 
+     * Method only used in this class (similar fashion as the one above)
+     * 
+     * This method is subject of move to the fustrum class
+     * 
+     * 90% is fustrum code and the last is camera code
+     * 
      */
     public void onFrustumChange() {
         if (!isParallelProjection()) {
@@ -1199,7 +1449,9 @@ public class Camera implements Savable, Cloneable {
             coeffTop[0] = -1;
             coeffTop[1] = 0;
         }
-
+        
+        
+        //Camera code
         projectionMatrix.fromFrustum(frustumNear, frustumFar, frustumLeft, frustumRight, frustumTop, frustumBottom, parallelProjection);
 //        projectionMatrix.transposeLocal();
 
@@ -1210,8 +1462,20 @@ public class Camera implements Savable, Cloneable {
 
     /**
      * <code>onFrameChange</code> updates the view frame of the camera.
+     * 
+     * Camera related BUUT planes are used here and the code is mainly
+     * fustrum related, we need to figure out what to do with this.
+     * 
+     * on the other hand this a high coupling with the fustrum and the camera
+     * since the frame technically is a plane and the camera needs to know 
+     * hot to project it
+     * 
+     * Degree of problem medium-high
+     * 
      */
     public void onFrameChange() {
+    	
+    	//camera code
         TempVars vars = TempVars.get();
         
         Vector3f left = getLeft(vars.vect1);
@@ -1220,6 +1484,8 @@ public class Camera implements Savable, Cloneable {
 
         float dirDotLocation = direction.dot(location);
 
+        //fustrum code
+        
         // left plane
         Vector3f leftPlaneNormal = worldPlane[LEFT_PLANE].getNormal();
         leftPlaneNormal.x = left.x * coeffLeft[0];
@@ -1256,6 +1522,9 @@ public class Camera implements Savable, Cloneable {
                 * coeffTop[1], direction.z * coeffTop[1]);
         worldPlane[TOP_PLANE].setConstant(location.dot(topPlaneNormal));
 
+        
+        //condition: camera code, code inside: fustrum code 
+        
         if (isParallelProjection()) {
             worldPlane[LEFT_PLANE].setConstant(worldPlane[LEFT_PLANE].getConstant() + frustumLeft);
             worldPlane[RIGHT_PLANE].setConstant(worldPlane[RIGHT_PLANE].getConstant() - frustumRight);
@@ -1272,6 +1541,8 @@ public class Camera implements Savable, Cloneable {
         worldPlane[NEAR_PLANE].setNormal(direction.x, direction.y, direction.z);
         worldPlane[NEAR_PLANE].setConstant(dirDotLocation + frustumNear);
 
+        //camera code
+        
         viewMatrix.fromFrame(location, direction, up, left);
         
         vars.release();
@@ -1283,6 +1554,10 @@ public class Camera implements Savable, Cloneable {
     /**
      * @return true if parallel projection is enable, false if in normal perspective mode
      * @see #setParallelProjection(boolean)
+     * 
+     * 
+     * camera related but is used in onFrutstumChange
+     * 
      */
     public boolean isParallelProjection() {
         return this.parallelProjection;
@@ -1292,6 +1567,11 @@ public class Camera implements Savable, Cloneable {
      * Enable/disable parallel projection.
      *
      * @param value true to set up this camera for parallel projection is enable, false to enter normal perspective mode
+     * 
+     * Camera related but it has an effect on the frustrum!!
+     * 
+     * External calls in other packages!!
+     * 
      */
     public void setParallelProjection(final boolean value) {
         this.parallelProjection = value;
@@ -1305,6 +1585,10 @@ public class Camera implements Savable, Cloneable {
      * http://www.sjbaker.org/steve/omniv/love_your_z_buffer.html
      * @param viewZPos the z value in view space.
      * @return the z value in projection space.
+     * 
+     * 
+     * not even used, dont know if this is camera code or fustrum code
+     * 
      */
     public float getViewToProjectionZ(float viewZPos) {
         float far = getFrustumFar();
@@ -1326,6 +1610,10 @@ public class Camera implements Savable, Cloneable {
      * @param screenPos 2d coordinate in screen space
      * @param projectionZPos non linear z value in projection space
      * @return the position in world space.
+     * 
+     * 
+     * Many external calls, is it Camera code or Fustrum code?
+     * 
      */
     public Vector3f getWorldCoordinates(Vector2f screenPos, float projectionZPos) {
         return getWorldCoordinates(screenPos, projectionZPos, null);
@@ -1333,6 +1621,9 @@ public class Camera implements Savable, Cloneable {
 
     /**
      * @see Camera#getWorldCoordinates
+     * 
+     * Same issue as above, here we can see both camera code and fustrum code
+     * 
      */
     public Vector3f getWorldCoordinates(Vector2f screenPosition,
             float projectionZPos, Vector3f store) {
@@ -1358,6 +1649,9 @@ public class Camera implements Savable, Cloneable {
      * Converts the given position from world space to screen space.
      * 
      * @see Camera#getScreenCoordinates
+     * 
+     * not used
+     * 
      */
     public Vector3f getScreenCoordinates(Vector3f worldPos) {
         return getScreenCoordinates(worldPos, null);
@@ -1367,6 +1661,12 @@ public class Camera implements Savable, Cloneable {
      * Converts the given position from world space to screen space.
      *
      * @see Camera#getScreenCoordinates(Vector3f, Vector3f)
+     * 
+     * Internally used(see above code)
+     * 
+     * has both camera code and viewport code(fustrum)
+     * 
+     * 
      */
     public Vector3f getScreenCoordinates(Vector3f worldPosition, Vector3f store) {
         if (store == null) {
@@ -1413,7 +1713,7 @@ public class Camera implements Savable, Cloneable {
                 + "res=" + width + "x" + height + ", parallel=" + parallelProjection + "\n"
                 + "near=" + frustumNear + ", far=" + frustumFar + "]";
     }
-
+    
     public void write(JmeExporter e) throws IOException {
         OutputCapsule capsule = e.getCapsule(this);
         capsule.write(location, "location", Vector3f.ZERO);
