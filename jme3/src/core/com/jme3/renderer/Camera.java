@@ -39,7 +39,7 @@ import com.jme3.util.TempVars;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-// conflicts resolving @aditya
+
 /**
  * <code>Camera</code> is a standalone, purely mathematical class for doing
  * camera-related computations.
