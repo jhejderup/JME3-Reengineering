@@ -147,5 +147,7 @@
 	<classpathentry kind="lib" path="lib/swingext/swing-layout-1.0.3.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="lib/android/android.jar"/>
+	<classpathentry kind="lib" path="lib/jmockit/jmockit-coverage.jar"/>
+	<classpathentry kind="lib" path="lib/jmockit/jmockit.jar"/>
 	<classpathentry kind="output" path="build/terrain"/>
 </classpath>
