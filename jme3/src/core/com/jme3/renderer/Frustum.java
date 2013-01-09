@@ -17,7 +17,7 @@ package com.jme3.renderer;
 public class Frustum {
 	
 	
-	public void Fustrum(){
+	public Frustum(){
 		
 		
 		
