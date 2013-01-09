@@ -206,6 +206,13 @@ public class Camera implements Savable, Cloneable {
     protected int height;
     protected boolean viewportChanged = true;
     /**
+     * The Fustrum object that the camera will project on
+     */
+    protected Frustum frustum;
+    
+    
+    
+    /**
      * store the value for field parallelProjection
      * 
      * 
@@ -243,6 +250,10 @@ public class Camera implements Savable, Cloneable {
     	//camera related
         location = new Vector3f();
         rotation = new Quaternion();
+        
+        //initialize the frustom object
+        frustum = new Frustum();
+        //all the code below till viewportbottom should be moved to the constructor of frustum
         //camera or frustum related?
         frustumNear = 1.0f;
         frustumFar = 2.0f;

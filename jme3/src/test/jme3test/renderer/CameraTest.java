@@ -26,8 +26,15 @@ import com.jme3.renderer.Camera;
  *
  */
 public class CameraTest {
-
 	
+	
+	
+	
+	
+	
+	
+
+	//////////////   CONSTRUCTOR TESTS
 	
 	/**
 	 * This test will run on the default constructor for Camera class. Even though
@@ -197,20 +204,17 @@ public class CameraTest {
 	
 	
 	
+	///////////////// CLONE TESTS
 	
-	
-	
-	
-	
-	
-	
-	/*
-
 	@Test
 	public void testClone() {
-		fail("Not yet implemented");
+		
+		
+		
+		
 	}
-
+	
+	/*
 	@Test
 	public void testCopyFrom() {
 		fail("Not yet implemented");
