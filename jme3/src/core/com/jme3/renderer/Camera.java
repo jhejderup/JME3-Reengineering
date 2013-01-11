@@ -35,6 +35,8 @@ import com.jme3.bounding.BoundingBox;
 import com.jme3.bounding.BoundingVolume;
 import com.jme3.export.*;
 import com.jme3.math.*;
+import com.jme3.renderer.Frustum.FrustumIntersect;
+import com.jme3.renderer.Frustum.Planes;
 import com.jme3.util.TempVars;
 import java.io.IOException;
 import java.util.logging.Level;
@@ -65,29 +67,31 @@ public class Camera implements Savable, Cloneable {
 
     private static final Logger logger = Logger.getLogger(Camera.class.getName());
 //moved to frustrum
-    /**
-     * The <code>FrustumIntersect</code> enum is returned as a result
-     * of a culling check operation, 
-     * see {@link #contains(com.jme3.bounding.BoundingVolume) }
-     */
-    public enum FrustumIntersect {
-
-        /**
-         * defines a constant assigned to spatials that are completely outside
-         * of this camera's view frustum.
-         */
-        Outside,
-        /**
-         * defines a constant assigned to spatials that are completely inside
-         * the camera's view frustum.
-         */
-        Inside,
-        /**
-         * defines a constant assigned to spatials that are intersecting one of
-         * the six planes that define the view frustum.
-         */
-        Intersects;
-    }
+  
+    
+//    /**
+//     * The <code>FrustumIntersect</code> enum is returned as a result
+//     * of a culling check operation, 
+//     * see {@link #contains(com.jme3.bounding.BoundingVolume) }
+//     */
+//    public enum FrustumIntersect {
+//
+//        /**
+//         * defines a constant assigned to spatials that are completely outside
+//         * of this camera's view frustum.
+//         */
+//        Outside,
+//        /**
+//         * defines a constant assigned to spatials that are completely inside
+//         * the camera's view frustum.
+//         */
+//        Inside,
+//        /**
+//         * defines a constant assigned to spatials that are intersecting one of
+//         * the six planes that define the view frustum.
+//         */
+//        Intersects;
+//    }
 
                 //Moved to Frustrum
     /**      
@@ -113,7 +117,7 @@ public class Camera implements Savable, Cloneable {
     /**
      * NEAR_PLANE represents the near plane of the camera frustum.
      */
-    private static final int NEAR_PLANE = 5;
+   // private static final int NEAR_PLANE = 5;
     /**
      * FRUSTUM_PLANES represents the number of planes of the camera frustum.
      */ //moved to frustum
@@ -121,7 +125,7 @@ public class Camera implements Savable, Cloneable {
     /**
      * MAX_WORLD_PLANES holds the maximum planes allowed by the system.
      */
-    private static final int MAX_WORLD_PLANES = 6;
+ //   private static final int MAX_WORLD_PLANES = 6;
     /**
      * Camera's location
      */
@@ -197,12 +201,12 @@ public class Camera implements Savable, Cloneable {
     /**
      * Array holding the planes that this camera will check for culling.
      */      
-    protected Plane[] worldPlane;
+    //protected Plane[] worldPlane;
     /**
      * A mask value set during contains() that allows fast culling of a Node's
      * children.
      */
-    private int planeState;
+  //  private int planeState;
     //width and height used in: Camera(), copyFrom(Camera), getWidth(), read(), resize(), setGuiBounding(), toString(), write
     protected int width;
     protected int height;
@@ -235,10 +239,15 @@ public class Camera implements Savable, Cloneable {
      * Serialization only. Do not use.
      */
     public Camera() {
-        worldPlane = new Plane[MAX_WORLD_PLANES];
-        for (int i = 0; i < MAX_WORLD_PLANES; i++) {
-            worldPlane[i] = new Plane();
-        }
+    	
+    // Serialization issues? 
+    // If not used keep it as it or make a new method in frustum class with the code below
+        frustum = new Frustum();
+    	
+   //    this.frustum.worldPlane = new Plane[frustum.getMaxWorldPlanes()];
+   //     for (int i = 0; i < frustum.getMaxWorldPlanes(); i++) {
+    //     this.frustum.worldPlane[i] = new Plane();
+    //    }
     }
 
     /**
@@ -275,7 +284,7 @@ public class Camera implements Savable, Cloneable {
         viewPortBottom = 0.0f; */
         
         //initialize the frustom object
-        frustum = new Frustum();
+        frustum = new Frustum(true);
         
         //camera related
         this.width = width;
@@ -283,8 +292,8 @@ public class Camera implements Savable, Cloneable {
         
         //frustum.frustumForCamera();
         //frustum related
-        //onFrustumChange();  moved to Frustum
-        //onViewPortChange(); moved to Frustum
+        onFrustumChange();  //moved to Frustum
+        onViewPortChange(); //moved to Frustum
         //camera related
         onFrameChange();
         logger.log(Level.INFO, "Camera created (W: {0}, H: {1})", new Object[]{width, height});
@@ -295,17 +304,23 @@ public class Camera implements Savable, Cloneable {
         try {
             Camera cam = (Camera) super.clone();
             cam.viewportChanged = true;
-            cam.planeState = 0;
-
-            cam.worldPlane = new Plane[MAX_WORLD_PLANES];
-            for (int i = 0; i < worldPlane.length; i++) {
-                cam.worldPlane[i] = worldPlane[i].clone();
+            cam.frustum.setPlaneState(0);
+            Plane[] hello;
+            Plane[] hello2;
+        //    cam.frustum.worldPlane = new Plane[6];
+            
+            for (int i = 0; i < this.frustum.getWorldPlane().length; i++) {
+          
+        
+            	cam.frustum.worldPlane[i] = this.frustum.worldPlane[i].clone();
             }
-
-            frustum.coeffLeft = new float[2]; //to keep things in tact
-            frustum.coeffRight = new float[2]; //to keep things in tact
-            frustum.coeffBottom = new float[2]; // to keep things in tact
-            frustum.coeffTop = new float[2];  // to kepp things in tact
+ 
+            //Float[] was changed to float[] !
+            
+            frustum.setCoeffLeft(new float[2]); // = new float[2]; //to keep things in tact
+            frustum.setCoeffRight(new float[2]); //to keep things in tact
+            frustum.setCoeffBottom(new float[2]); // to keep things in tact
+            frustum.setCoeffTop(new float[2]); // to kepp things in tact
 
             cam.location = location.clone();
             cam.rotation = rotation.clone();
@@ -339,35 +354,62 @@ public class Camera implements Savable, Cloneable {
     	location.set(cam.location);
         rotation.set(cam.rotation);
         //frustum related
-        frustumNear = cam.frustumNear;
-        frustumFar = cam.frustumFar;
-        frustumLeft = cam.frustumLeft;
-        frustumRight = cam.frustumRight;
-        frustumTop = cam.frustumTop;
-        frustumBottom = cam.frustumBottom;
+        frustum.setFrustumNear(cam.frustum.getFrustumNear());
+        frustum.setFrustumFar(cam.frustum.getFrustumFar());
+        frustum.setFrustumLeft(cam.frustum.getFrustumLeft());
+        frustum.setFrustumRight(cam.frustum.getFrustumRight());
+        frustum.setFrustumTop(cam.frustum.getFrustumTop());
+        frustum.setFrustumBottom(cam.frustum.getFrustumBottom());
+    //    frustumFar = cam.frustumFar;
+    //    frustumLeft = cam.frustumLeft;
+    //    frustumRight = cam.frustumRight;
+    //    frustumTop = cam.frustumTop;
+    //    frustumBottom = cam.frustumBottom;
 
-        coeffLeft[0] = cam.coeffLeft[0];
-        coeffLeft[1] = cam.coeffLeft[1];
-        coeffRight[0] = cam.coeffRight[0];
-        coeffRight[1] = cam.coeffRight[1];
-        coeffBottom[0] = cam.coeffBottom[0];
-        coeffBottom[1] = cam.coeffBottom[1];
-        coeffTop[0] = cam.coeffTop[0];
-        coeffTop[1] = cam.coeffTop[1];
+        
+        frustum.setCoeffLeftAssignValue(0, cam.frustum.getCoeffLeft()[0]);
+        frustum.setCoeffLeftAssignValue(1, cam.frustum.getCoeffLeft()[1]);  
+        
+        frustum.setCoeffRightAssignValue(0, cam.frustum.getCoeffRight()[0]);
+        frustum.setCoeffRightAssignValue(1, cam.frustum.getCoeffRight()[1]);  
+   
+        frustum.setCoeffBottomAssignValue(0, cam.frustum.getCoeffBottom()[0]);
+        frustum.setCoeffBottomAssignValue(1, cam.frustum.getCoeffBottom()[1]);  
+        
+        frustum.setCoeffTopAssignValue(0, cam.frustum.getCoeffTop()[0]);
+        frustum.setCoeffTopAssignValue(1, cam.frustum.getCoeffTop()[1]);  
+        
+        
+        
+    //    coeffLeft[0] = cam.coeffLeft[0];
+   //     coeffLeft[1] = cam.coeffLeft[1];
+    //    coeffRight[0] = cam.coeffRight[0];
+    //    coeffRight[1] = cam.coeffRight[1];
+    //    coeffBottom[0] = cam.coeffBottom[0];
+     //   coeffBottom[1] = cam.coeffBottom[1];
+     //   coeffTop[0] = cam.coeffTop[0];
+     //   coeffTop[1] = cam.coeffTop[1];
 
-        viewPortLeft = cam.viewPortLeft;
-        viewPortRight = cam.viewPortRight;
-        viewPortTop = cam.viewPortTop;
-        viewPortBottom = cam.viewPortBottom;
+        
+        frustum.setViewPortLeft(cam.frustum.getViewPortLeft());
+        frustum.setViewPortRight(cam.frustum.getViewPortRight());
+        frustum.setViewPortTop(cam.frustum.getViewPortTop());
+        frustum.setViewPortBottom(cam.frustum.getViewPortBottom());
+     //   viewPortLeft = cam.viewPortLeft;
+     //   viewPortRight = cam.viewPortRight;
+     //   viewPortTop = cam.viewPortTop;
+     //   viewPortBottom = cam.viewPortBottom;
         //camera related
         this.width = cam.width;
         this.height = cam.height;
         //frustum related
-        this.planeState = cam.planeState;
+      //  this.planeState = cam.planeState;
+        frustum.setPlaneState(cam.frustum.getPlaneState());
+        
         this.viewportChanged = cam.viewportChanged;
-        for (int i = 0; i < MAX_WORLD_PLANES; ++i) {
-            worldPlane[i].setNormal(cam.worldPlane[i].getNormal());
-            worldPlane[i].setConstant(cam.worldPlane[i].getConstant());
+        for (int i = 0; i < frustum.getMaxWorldPlanes(); ++i) {
+        	frustum.getWorldPlane()[i].setNormal(cam.frustum.getWorldPlane()[i].getNormal());
+        	frustum.getWorldPlane()[i].setConstant(cam.frustum.getWorldPlane()[i].getConstant());
         }
         //camera related
         this.parallelProjection = cam.parallelProjection;
@@ -542,9 +584,9 @@ public class Camera implements Savable, Cloneable {
      * 							so we need to investigate the impact if this method is removed
      * 
      */
-    //public float getFrustumBottom() {
-      //  return frustumBottom;
-    //}
+    public float getFrustumBottom() {
+        return frustum.getFrustumBottom();
+    }
 
     /**
      * <code>setFrustumBottom</code> sets the value of the bottom frustum
@@ -559,10 +601,10 @@ public class Camera implements Savable, Cloneable {
      * 
      * 
      */
-    //public void setFrustumBottom(float frustumBottom) {
-      //  this.frustumBottom = frustumBottom;
-        //onFrustumChange();
-    //}
+    public void setFrustumBottom(float frustumBottom) {
+        this.frustum.setFrustumBottom(frustumBottom);
+        onFrustumChange();
+    }
 
     /**
      * <code>getFrustumFar</code> gets the value of the far frustum plane.
@@ -573,9 +615,9 @@ public class Camera implements Savable, Cloneable {
      * 
      * 
      */
-    //public float getFrustumFar() {
-      //  return frustumFar;
-    //}
+    public float getFrustumFar() {
+        return frustum.getFrustumFar();
+    }
 
     /**
      * <code>setFrustumFar</code> sets the value of the far frustum plane.
@@ -589,10 +631,10 @@ public class Camera implements Savable, Cloneable {
      * 
      * 
      */
-    //public void setFrustumFar(float frustumFar) {
-      //  this.frustumFar = frustumFar;
-        //onFrustumChange();
-    //}
+    public void setFrustumFar(float frustumFar) {
+        this.frustum.setFrustumFar(frustumFar); //frustumFar = frustumFar;
+       onFrustumChange();
+    }
 
     /**
      * <code>getFrustumLeft</code> gets the value of the left frustum plane.
@@ -604,9 +646,9 @@ public class Camera implements Savable, Cloneable {
      *  
      *  
      */
-    //public float getFrustumLeft() {
-      //  return frustumLeft;
-    //}
+    public float getFrustumLeft() {
+        return frustum.getFrustumLeft();
+    }
 
     /**
      * <code>setFrustumLeft</code> sets the value of the left frustum plane.
@@ -616,10 +658,10 @@ public class Camera implements Savable, Cloneable {
      * Used in zoomCamera in FlyByCamera
      * 
      */
-    //public void setFrustumLeft(float frustumLeft) {
-      //  this.frustumLeft = frustumLeft;
-        //onFrustumChange();
-    //}
+    public void setFrustumLeft(float frustumLeft) {
+        this.frustum.setFrustumLeft(frustumLeft);
+        onFrustumChange();
+    }
 
     /**
      * <code>getFrustumNear</code> gets the value of the near frustum plane.
@@ -635,9 +677,9 @@ public class Camera implements Savable, Cloneable {
      * Degree of problem: high , high usage of this method                   
      *                      
      */
-    //public float getFrustumNear() {
-      //  return frustumNear;
-    //}
+    public float getFrustumNear() {
+        return frustum.getFrustumNear();
+    }
 
     /**
      * <code>setFrustumNear</code> sets the value of the near frustum plane.
@@ -646,10 +688,10 @@ public class Camera implements Savable, Cloneable {
      *
      * Exterbnally used in Sceneloader -> parseCameraClipping() 
      */
-    //public void setFrustumNear(float frustumNear) {
-      //  this.frustumNear = frustumNear;
-        //onFrustumChange();
-    //}
+    public void setFrustumNear(float frustumNear) {
+        this.frustum.setFrustumNear(frustumNear);
+        onFrustumChange();
+    }
 
     /**
      * <code>getFrustumRight</code> gets the value of the right frustum plane.
@@ -659,19 +701,19 @@ public class Camera implements Savable, Cloneable {
      * Externally used in zoomCamera() in FlyBycamera, used in ShadowUtil in shadow package
      * 					 used in SimpleWaterProcessor, WaterFiler class
      */
-    //public float getFrustumRight() {
-      //  return frustumRight;
-    //}
+    public float getFrustumRight() {
+       return frustum.getFrustumRight();
+    }
 
     /**
      * <code>setFrustumRight</code> sets the value of the right frustum plane.
      *
      * @param frustumRight the value of the right frustum plane.
      */
-    //public void setFrustumRight(float frustumRight) {
-      //  this.frustumRight = frustumRight;
-        //onFrustumChange();
-    //}
+    public void setFrustumRight(float frustumRight) {
+        this.frustum.setFrustumRight(frustumRight);
+        onFrustumChange();
+    }
 
     /**
      * <code>getFrustumTop</code> gets the value of the top frustum plane.
@@ -681,9 +723,9 @@ public class Camera implements Savable, Cloneable {
      * Same as the other used in many external packages
      * 
      */
-   // public float getFrustumTop() {
-     //   return frustumTop;
-    //}
+    public float getFrustumTop() {
+        return frustum.getFrustumTop();
+    }
 
     /**
      * <code>setFrustumTop</code> sets the value of the top frustum plane.
@@ -692,10 +734,10 @@ public class Camera implements Savable, Cloneable {
      * 
      * Externally used in ZoomCamera() in FlyBycamera
      */
-    //public void setFrustumTop(float frustumTop) {
-      //  this.frustumTop = frustumTop;
-        //onFrustumChange();
-    //}
+    public void setFrustumTop(float frustumTop) {
+        this.frustum.setFrustumTop(frustumTop);
+        onFrustumChange();
+    }
 
     /**
      * <code>getLocation</code> retrieves the location vector of the camera.
@@ -879,8 +921,8 @@ public class Camera implements Savable, Cloneable {
         frustumLeft = left;
         frustumRight = right;
         frustumTop = top;
-        frustumBottom = bottom;
-        onFrustumChange();*/
+        frustumBottom = bottom;*/
+        onFrustumChange();
     }
 
     /**
@@ -917,10 +959,10 @@ public class Camera implements Savable, Cloneable {
         frustumNear = near;
         frustumFar = far;
 
-        // Camera is no longer parallel projection even if it was before
+        // Camera is no longer parallel projection even if it was before */
         parallelProjection = false;
 
-        onFrustumChange();*/
+        onFrustumChange();
     }
 
     /**
@@ -1039,7 +1081,7 @@ public class Camera implements Savable, Cloneable {
      * 
      */
     public int getPlaneState() {
-        return planeState;
+       return frustum.getPlaneState();
     }
 
     /**
@@ -1055,7 +1097,7 @@ public class Camera implements Savable, Cloneable {
      * 
      */
     public void setPlaneState(int planeState) {
-        this.planeState = planeState;
+        frustum.setPlaneState(planeState);
     }
     
 
@@ -1067,8 +1109,8 @@ public class Camera implements Savable, Cloneable {
      * Externally used
      * 
      */
-/*    public float getViewPortLeft() {
-        return viewPortLeft;
+   public float getViewPortLeft() {
+        return frustum.getViewPortLeft();
     }
 
     /**
@@ -1080,8 +1122,8 @@ public class Camera implements Savable, Cloneable {
      * Not used
      * 
      */
-  /*  public void setViewPortLeft(float left) {
-        viewPortLeft = left;
+   public void setViewPortLeft(float left) {
+        frustum.setViewPortLeft(left);
         onViewPortChange();
     }
 
@@ -1093,8 +1135,8 @@ public class Camera implements Savable, Cloneable {
      * Externally used
      * 
      */
-    /*public float getViewPortRight() {
-        return viewPortRight;
+    public float getViewPortRight() {
+        return frustum.getViewPortRight();
     }
 
     /**
@@ -1105,8 +1147,8 @@ public class Camera implements Savable, Cloneable {
      * 
      * Not used
      */
-    /*public void setViewPortRight(float right) {
-        viewPortRight = right;
+    public void setViewPortRight(float right) {
+        frustum.setViewPortRight(right);
         onViewPortChange();
     }
 
@@ -1119,8 +1161,8 @@ public class Camera implements Savable, Cloneable {
      * Externally used
      * 
      */
-    /*public float getViewPortTop() {
-        return viewPortTop;
+    public float getViewPortTop() {
+        return this.frustum.getViewPortTop();
     }
 
     /**
@@ -1132,8 +1174,8 @@ public class Camera implements Savable, Cloneable {
      *Not used
      *
      */
-    /*public void setViewPortTop(float top) {
-        viewPortTop = top;
+    public void setViewPortTop(float top) {
+        this.frustum.setViewPortTop(top);
         onViewPortChange();
     }
 
@@ -1145,8 +1187,8 @@ public class Camera implements Savable, Cloneable {
      * Externally used
      * 
      */
-    /*public float getViewPortBottom() {
-        return viewPortBottom;
+    public float getViewPortBottom() {
+        return this.frustum.getViewPortBottom();
     }
 
     /**
@@ -1158,8 +1200,8 @@ public class Camera implements Savable, Cloneable {
      * Not used
      * 
      */
-    /*public void setViewPortBottom(float bottom) {
-        viewPortBottom = bottom;
+    public void setViewPortBottom(float bottom) {
+        this.frustum.setViewPortBottom(bottom);
         onViewPortChange();
     }
 
@@ -1178,14 +1220,20 @@ public class Camera implements Savable, Cloneable {
      * 
      * 
      */
-    /*public void setViewPort(float left, float right, float bottom, float top) {
-        this.viewPortLeft = left;
-        this.viewPortRight = right;
-        this.viewPortBottom = bottom;
-        this.viewPortTop = top;
+    public void setViewPort(float left, float right, float bottom, float top) {
+               
+    	this.setViewPortLeft(left);
+    	this.setViewPortRight(right);
+    	this.setViewPortBottom(bottom);
+    	this.setViewPortTop(top);
+    	
+    //	this.viewPortLeft = left;
+    //    this.viewPortRight = right;
+    //    this.viewPortBottom = bottom;
+    //    this.viewPortTop = top;
         onViewPortChange();
     }
-*/
+
     /**
      * Returns the pseudo distance from the given position to the near
      * plane of the camera. This is used for render queue sorting.
@@ -1201,7 +1249,7 @@ public class Camera implements Savable, Cloneable {
      * 
      */
     public float distanceToNearPlane(Vector3f pos) {
-        return worldPlane[NEAR_PLANE].pseudoDistance(pos);
+        return this.frustum.distanceToNearPlane(pos);
     }
 
     /**              
@@ -1268,7 +1316,7 @@ public class Camera implements Savable, Cloneable {
         }
                  */  
     	// 	to keep things in tact
-        return frustum.contains(bound); 
+        return this.frustum.contains(bound); 
     }
 
     /**
@@ -1436,9 +1484,13 @@ public class Camera implements Savable, Cloneable {
      * 
      * 90% is fustrum code and the last is camera code
      * 
+     * 
+     * 
+     * 
      */
     public void onFrustumChange() {
-      /* moved  if (!isParallelProjection()) {
+ 
+    /* moved	if (!isParallelProjection()) {
             float nearSquared = frustumNear * frustumNear;
             float leftSquared = frustumLeft * frustumLeft;
             float rightSquared = frustumRight * frustumRight;
@@ -1459,7 +1511,7 @@ public class Camera implements Savable, Cloneable {
 
             inverseLength = FastMath.invSqrt(nearSquared + topSquared);
             coeffTop[0] = -frustumNear * inverseLength;
-            coeffTop[1] = frustumTop * inverseLength;
+            coeffTop[1] = frustumTop * inverseLength; 
         } else {
             coeffLeft[0] = 1;
             coeffLeft[1] = 0;
@@ -1472,18 +1524,20 @@ public class Camera implements Savable, Cloneable {
 
             coeffTop[0] = -1;
             coeffTop[1] = 0;
-        }
-        
+           
+        } */
+    
+      frustum.onFrustrumChange(isParallelProjection());
         
         //Camera code
-        projectionMatrix.fromFrustum(frustumNear, frustumFar, frustumLeft, frustumRight, frustumTop, frustumBottom, parallelProjection);
+        projectionMatrix.fromFrustum(frustum.getFrustumNear(), frustum.getFrustumFar(), frustum.getFrustumLeft(), frustum.getFrustumRight(), frustum.getFrustumTop(), frustum.getFrustumBottom(), parallelProjection);
 //        projectionMatrix.transposeLocal();
 
         // The frame is effected by the frustum values
         // update it as well
-         * 
-         */
-    	frustum.onFrustrumChangefrus();
+          
+         
+    //	frustum.onFrustrumChangefrus();
         onFrameChange();
     }
 
@@ -1504,78 +1558,77 @@ public class Camera implements Savable, Cloneable {
     public void onFrameChange() {
     	
     	//camera code
-     //   TempVars vars = TempVars.get();
-       // Vector3f left = getLeft(vars.vect1);
-        //Vector3f direction = getDirection(vars.vect2);
-        //Vector3f up = getUp(vars.vect3);
+        TempVars vars = TempVars.get();
+        Vector3f left = getLeft(vars.vect1);
+        Vector3f direction = getDirection(vars.vect2);
+        Vector3f up = getUp(vars.vect3);
 
-        //float dirDotLocation = direction.dot(location);
+        float dirDotLocation = direction.dot(location);
 
         //fustrum code
-                /* moved to frustum
+                
         // left plane
-        Vector3f leftPlaneNormal = worldPlane[LEFT_PLANE].getNormal();
-        leftPlaneNormal.x = left.x * coeffLeft[0];
-        leftPlaneNormal.y = left.y * coeffLeft[0];
-        leftPlaneNormal.z = left.z * coeffLeft[0];
-        leftPlaneNormal.addLocal(direction.x * coeffLeft[1], direction.y
-                * coeffLeft[1], direction.z * coeffLeft[1]);
-        worldPlane[LEFT_PLANE].setConstant(location.dot(leftPlaneNormal));
+        Vector3f leftPlaneNormal = frustum.getWorldPlane()[Planes.LEFT_PLANE.getPlaneValue()].getNormal();
+        leftPlaneNormal.x = left.x * frustum.getCoeffLeft()[0];
+        leftPlaneNormal.y = left.y * frustum.getCoeffLeft()[0];
+        leftPlaneNormal.z = left.z * frustum.getCoeffLeft()[0];
+        leftPlaneNormal.addLocal(direction.x * frustum.getCoeffLeft()[1], direction.y
+                * frustum.getCoeffLeft()[1], direction.z * frustum.getCoeffLeft()[1]);
+        frustum.getWorldPlane()[Planes.LEFT_PLANE.getPlaneValue()].setConstant(location.dot(leftPlaneNormal));
 
         // right plane
-        Vector3f rightPlaneNormal = worldPlane[RIGHT_PLANE].getNormal();
-        rightPlaneNormal.x = left.x * coeffRight[0];
-        rightPlaneNormal.y = left.y * coeffRight[0];
-        rightPlaneNormal.z = left.z * coeffRight[0];
-        rightPlaneNormal.addLocal(direction.x * coeffRight[1], direction.y
-                * coeffRight[1], direction.z * coeffRight[1]);
-        worldPlane[RIGHT_PLANE].setConstant(location.dot(rightPlaneNormal));
+        Vector3f rightPlaneNormal = frustum.getWorldPlane()[Planes.RIGHT_PLANE.getPlaneValue()].getNormal();
+        rightPlaneNormal.x = left.x * frustum.getCoeffRight()[0];
+        rightPlaneNormal.y = left.y * frustum.getCoeffRight()[0];
+        rightPlaneNormal.z = left.z * frustum.getCoeffRight()[0];
+        rightPlaneNormal.addLocal(direction.x * frustum.getCoeffRight()[1], direction.y
+                * frustum.getCoeffRight()[1], direction.z * frustum.getCoeffRight()[1]);
+        frustum.getWorldPlane()[Planes.RIGHT_PLANE.getPlaneValue()].setConstant(location.dot(rightPlaneNormal));
 
         // bottom plane
-        Vector3f bottomPlaneNormal = worldPlane[BOTTOM_PLANE].getNormal();
-        bottomPlaneNormal.x = up.x * coeffBottom[0];
-        bottomPlaneNormal.y = up.y * coeffBottom[0];
-        bottomPlaneNormal.z = up.z * coeffBottom[0];
-        bottomPlaneNormal.addLocal(direction.x * coeffBottom[1], direction.y
-                * coeffBottom[1], direction.z * coeffBottom[1]);
-        worldPlane[BOTTOM_PLANE].setConstant(location.dot(bottomPlaneNormal));
+        Vector3f bottomPlaneNormal = frustum.getWorldPlane()[Planes.BOTTOM_PLANE.getPlaneValue()].getNormal();
+        bottomPlaneNormal.x = up.x * frustum.getCoeffBottom()[0];
+        bottomPlaneNormal.y = up.y * frustum.getCoeffBottom()[0];
+        bottomPlaneNormal.z = up.z * frustum.getCoeffBottom()[0];
+        bottomPlaneNormal.addLocal(direction.x * frustum.getCoeffBottom()[1], direction.y
+                * frustum.getCoeffBottom()[1], direction.z * frustum.getCoeffBottom()[1]);
+        frustum.getWorldPlane()[Planes.BOTTOM_PLANE.getPlaneValue()].setConstant(location.dot(bottomPlaneNormal));
 
         // top plane
-        Vector3f topPlaneNormal = worldPlane[TOP_PLANE].getNormal();
-        topPlaneNormal.x = up.x * coeffTop[0];
-        topPlaneNormal.y = up.y * coeffTop[0];
-        topPlaneNormal.z = up.z * coeffTop[0];
-        topPlaneNormal.addLocal(direction.x * coeffTop[1], direction.y
-                * coeffTop[1], direction.z * coeffTop[1]);
-        worldPlane[TOP_PLANE].setConstant(location.dot(topPlaneNormal));
+        Vector3f topPlaneNormal = frustum.getWorldPlane()[Planes.TOP_PLANE.getPlaneValue()].getNormal();
+        topPlaneNormal.x = up.x * frustum.getCoeffTop()[0];
+        topPlaneNormal.y = up.y * frustum.getCoeffTop()[0];
+        topPlaneNormal.z = up.z * frustum.getCoeffTop()[0];
+        topPlaneNormal.addLocal(direction.x * frustum.getCoeffTop()[1], direction.y
+                * frustum.getCoeffTop()[1], direction.z * frustum.getCoeffTop()[1]);
+        frustum.getWorldPlane()[Planes.TOP_PLANE.getPlaneValue()].setConstant(location.dot(topPlaneNormal));
 
         
         //condition: camera code, code inside: fustrum code 
         
         if (isParallelProjection()) {
-            worldPlane[LEFT_PLANE].setConstant(worldPlane[LEFT_PLANE].getConstant() + frustumLeft);
-            worldPlane[RIGHT_PLANE].setConstant(worldPlane[RIGHT_PLANE].getConstant() - frustumRight);
-            worldPlane[TOP_PLANE].setConstant(worldPlane[TOP_PLANE].getConstant() - frustumTop);
-            worldPlane[BOTTOM_PLANE].setConstant(worldPlane[BOTTOM_PLANE].getConstant() + frustumBottom);
+        	frustum.getWorldPlane()[Planes.LEFT_PLANE.getPlaneValue()].setConstant(frustum.getWorldPlane()[Planes.LEFT_PLANE.getPlaneValue()].getConstant() + frustum.getFrustumLeft());
+        	frustum.getWorldPlane()[Planes.RIGHT_PLANE.getPlaneValue()].setConstant(frustum.getWorldPlane()[Planes.RIGHT_PLANE.getPlaneValue()].getConstant() - frustum.getFrustumRight());
+        	frustum.getWorldPlane()[Planes.TOP_PLANE.getPlaneValue()].setConstant(frustum.getWorldPlane()[Planes.TOP_PLANE.getPlaneValue()].getConstant() - frustum.getFrustumTop());
+        	frustum.getWorldPlane()[Planes.BOTTOM_PLANE.getPlaneValue()].setConstant(frustum.getWorldPlane()[Planes.BOTTOM_PLANE.getPlaneValue()].getConstant() + frustum.getFrustumBottom());
         }
 
         // far plane
-        worldPlane[FAR_PLANE].setNormal(left);
-        worldPlane[FAR_PLANE].setNormal(-direction.x, -direction.y, -direction.z);
-        worldPlane[FAR_PLANE].setConstant(-(dirDotLocation + frustumFar));
+        frustum.getWorldPlane()[Planes.FAR_PLANE.getPlaneValue()].setNormal(left);
+        frustum.getWorldPlane()[Planes.FAR_PLANE.getPlaneValue()].setNormal(-direction.x, -direction.y, -direction.z);
+        frustum.getWorldPlane()[Planes.FAR_PLANE.getPlaneValue()].setConstant(-(dirDotLocation + frustum.getFrustumFar()));
 
         // near plane
-        worldPlane[NEAR_PLANE].setNormal(direction.x, direction.y, direction.z);
-        worldPlane[NEAR_PLANE].setConstant(dirDotLocation + frustumNear);  */
+        frustum.getWorldPlane()[Planes.NEAR_PLANE.getPlaneValue()].setNormal(direction.x, direction.y, direction.z);
+        frustum.getWorldPlane()[Planes.NEAR_PLANE.getPlaneValue()].setConstant(dirDotLocation + frustum.getFrustumNear());  
         
         //camera code
         //moving to frustrum 
-       // viewMatrix.fromFrame(location, direction, up, left);
+       viewMatrix.fromFrame(location, direction, up, left);
         
-        //vars.release();
-        
-//      viewMatrix.transposeLocal();
-    	frustum.onFrameChangeFrustrum();
+        vars.release();
+             viewMatrix.transposeLocal();
+           //frustum.onFrameChangeFrustrum();
         updateViewProjection();
     }
 

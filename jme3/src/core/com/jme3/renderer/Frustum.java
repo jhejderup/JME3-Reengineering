@@ -10,8 +10,7 @@ import com.jme3.bounding.BoundingVolume;
 import com.jme3.math.FastMath;
 import com.jme3.math.Plane;
 import com.jme3.math.Vector3f;
-import com.jme3.renderer.Camera.FrustumIntersect;
-import com.jme3.util.TempVars;
+
 
 /**
  * 
@@ -27,28 +26,6 @@ import com.jme3.util.TempVars;
 public class Frustum {
 	
 	private static final Logger logger = Logger.getLogger(Frustum.class.getName());
-	
-	//public enum FrustumIntersect {
-
-        /**
-         * defines a constant assigned to spatials that are completely outside
-         * of this camera's view frustum.
-         */
-      //  Outside,
-        /**
-         * defines a constant assigned to spatials that are completely inside
-         * the camera's view frustum.
-         */
-        //Inside,
-        /**
-         * defines a constant assigned to spatials that are intersecting one of
-         * the six planes that define the view frustum.
-         */
-        //Intersects;
-    //}
-
-
-	//the fields brought from camera class.
 	/**
      * Distance from camera to near frustum plane.
      * used in Camera(), copyFrom(Camera), getFrustumNear(), onFrameChange(), onFrustumChange(), read(), setFrustum()x3, toString(), write()
@@ -75,222 +52,72 @@ public class Frustum {
      * Distance from camera to bottom frustum plane.
      */
     protected float frustumBottom;
-    
     /**
-     * <code>getFrustumBottom</code> returns the value of the bottom frustum
-     * plane.
-     *
-     * @return the value of the bottom frustum plane.
-     * 
-     * 
-     * Used externally in postQueue() in SimpleWaterProcessor in water package
-     * 					  preFrame()  in WaterFilter in water package
-     * Degree of problem: high, since this method will be shifted to the new frustum classes 
-     * 							so we need to investigate the impact if this method is removed
-     * 
+     * A mask value set during contains() that allows fast culling of a Node's
+     * children.
      */
-    public float getFrustumBottom() {
-        return frustumBottom;
-    }
-
-    /**
-     * <code>setFrustumBottom</code> sets the value of the bottom frustum
-     * plane.
-     *
-     * @param frustumBottom the value of the bottom frustum plane.
-     * 
-     * Used externally in zoomCamera(float) in FlyByCamera.java
-     * 
-     * Degree of problem: high, since this method will be shifted to the new frustum classes 
-     * 							so we need to investigate the impact if this method is removed
-     * 
-     * 
-     */
-    public void setFrustumBottom(float frustumBottom) {
-        this.frustumBottom = frustumBottom;
-        camuse.onFrustumChange();//temp
-    }
-
-    /**
-     * <code>getFrustumFar</code> gets the value of the far frustum plane.
-     *
-     * @return the value of the far frustum plane.
-     * 
-     * Not used but could be a problem!
-     * 
-     * 
-     */
-    public float getFrustumFar() {
-        return frustumFar;
-    }
-
-    /**
-     * <code>setFrustumFar</code> sets the value of the far frustum plane.
-     *
-     * @param frustumFar the value of the far frustum plane.
-     * 
-     * 
-     * Externally used in parseCameraClipping in SceneLoader
-     * Good thing used in jme3tests{batching,bullet,effect,light,post,water}!
-     *
-     * 
-     * 
-     */
-    public void setFrustumFar(float frustumFar) {
-        this.frustumFar = frustumFar;
-        camuse.onFrustumChange();//temp
-    }
-
-    /**
-     * <code>getFrustumLeft</code> gets the value of the left frustum plane.
-     *
-     * @return the value of the left frustum plane.
-     * 
-     * 
-     *  Not used but could be a problem!
-     *  
-     *  
-     */
-    public float getFrustumLeft() {
-        return frustumLeft;
-    }
-
-    /**
-     * <code>setFrustumLeft</code> sets the value of the left frustum plane.
-     *
-     * @param frustumLeft the value of the left frustum plane.
-     * 
-     * Used in zoomCamera in FlyByCamera
-     * 
-     */
-    public void setFrustumLeft(float frustumLeft) {
-        this.frustumLeft = frustumLeft;
-        camuse.onFrustumChange();//temp
-    }
-
-    /**
-     * <code>getFrustumNear</code> gets the value of the near frustum plane.
-     *
-     * @return the value of the near frustum plane.
-     * 
-     * Used externally in zoomCamera in FlyByCamera, initFilter() in SSAOFilter, controlRender() in LodControl
-     *                    setCamera in UniformBindingManager, some classes in water and shadow package and
-     *                    perspectiveLodCalculator()
-     * 
-     * internally used in getViewToProjectionZ()                   
-     *                    
-     * Degree of problem: high , high usage of this method                   
-     *                      
-     */
-    public float getFrustumNear() {
-        return frustumNear;
-    }
-
-    /**
-     * <code>setFrustumNear</code> sets the value of the near frustum plane.
-     *
-     * @param frustumNear the value of the near frustum plane.
-     *
-     * Exterbnally used in Sceneloader -> parseCameraClipping() 
-     */
-    public void setFrustumNear(float frustumNear) {
-        this.frustumNear = frustumNear;
-        camuse.onFrustumChange();//temp
-    }
-
-    /**
-     * <code>getFrustumRight</code> gets the value of the right frustum plane.
-     *
-     * @return frustumRight the value of the right frustum plane.
-     * 
-     * Externally used in zoomCamera() in FlyBycamera, used in ShadowUtil in shadow package
-     * 					 used in SimpleWaterProcessor, WaterFiler class
-     */
-    public float getFrustumRight() {
-        return frustumRight;
-    }
-
-    /**
-     * <code>setFrustumRight</code> sets the value of the right frustum plane.
-     *
-     * @param frustumRight the value of the right frustum plane.
-     */
-    public void setFrustumRight(float frustumRight) {
-        this.frustumRight = frustumRight;
-        camuse.onFrustumChange();//temp
-    }
-
-    /**
-     * <code>getFrustumTop</code> gets the value of the top frustum plane.
-     *
-     * @return the value of the top frustum plane.
-     * 
-     * Same as the other used in many external packages
-     * 
-     */
-    public float getFrustumTop() {
-        return frustumTop;
-    }
-
-    /**
-     * <code>setFrustumTop</code> sets the value of the top frustum plane.
-     *
-     * @param frustumTop the value of the top frustum plane.
-     * 
-     * Externally used in ZoomCamera() in FlyBycamera
-     */
-    public void setFrustumTop(float frustumTop) {
-        this.frustumTop = frustumTop;
-        camuse.onFrustumChange();//temp
-    }
-
-    
-    
-    /**      
-     * LEFT_PLANE represents the left plane of the camera frustum.
-     */
-    private static final int LEFT_PLANE = 0;
-    /**
-     * RIGHT_PLANE represents the right plane of the camera frustum.
-     */
-    private static final int RIGHT_PLANE = 1;
-    /**
-     * BOTTOM_PLANE represents the bottom plane of the camera frustum.
-     */
-    private static final int BOTTOM_PLANE = 2;
-    /**
-     * TOP_PLANE represents the top plane of the camera frustum.
-     */
-    private static final int TOP_PLANE = 3;
-    /**
-     * FAR_PLANE represents the far plane of the camera frustum.
-     */
-    private static final int FAR_PLANE = 4;
-    /**
-     * NEAR_PLANE represents the near plane of the camera frustum.
-     */
-    private static final int NEAR_PLANE = 5;
+    private int planeState;
     /**
      * FRUSTUM_PLANES represents the number of planes of the camera frustum.
-     */ //moved to frustum
+     */  
     private static final int FRUSTUM_PLANES = 6;
     /**
      * MAX_WORLD_PLANES holds the maximum planes allowed by the system.
      */
-   // private static final int MAX_WORLD_PLANES = 6;
-    
-    //Temporary values computed in onFrustumChange that are needed if a
-    //call is made to onFrameChange.
+    private static final int MAX_WORLD_PLANES = 6;
     /**
      * Used in Camera(), copyFrom(Camera), onFrameChange(), onFrustumChange(), read(), write()
      * This is valid for all coeff* arrays
      */
     protected float[] coeffLeft;
-    protected float[] coeffRight;
+	protected float[] coeffRight;
     protected float[] coeffBottom;
     protected float[] coeffTop;
-    //view port coordinates
     /**
+     * Array holding the planes that this camera will check for culling.
+     */      
+    public Plane[] worldPlane;
+    /**
+	 * @return the worldPlane
+	 */
+	public Plane[] getWorldPlane() {
+		return worldPlane;
+	}
+	/**
+	 * @param worldPlane the worldPlane to set
+	 */
+	public void setWorldPlane(Plane[] worldPlane) {
+		this.worldPlane = worldPlane;
+	}
+	/**
+	 * Set a value in the worldplane array
+	 * @param index
+	 * @param plane
+	 */
+	public void setWorldPlaneValue(int index, Plane plane){
+		
+		this.worldPlane[index] = plane;
+	}
+	   /**
+     * Returns the pseudo distance from the given position to the near
+     * plane of the camera. This is used for render queue sorting.
+     * @param pos The position to compute a distance to.
+     * @return Distance from the far plane to the point.
+     * 
+     * 
+     * Not used 
+     * 
+     * This uses code that should be in the future fustrum class
+     * 
+     * Degree of Problem: low
+     * 
+     */
+    public float distanceToNearPlane(Vector3f pos) {
+        return worldPlane[Planes.NEAR_PLANE.getPlaneValue()].pseudoDistance(pos);
+    }
+	
+	
+	/**
      * Percent value on display where horizontal viewing starts for this camera.
      * Default is 0.
      * Used in: Camera(), copyFrom(Camera), getScreenCoordinates(),getViewPortLeft(), getWorldCoordinates, 
@@ -313,10 +140,317 @@ public class Frustum {
      */
     protected float viewPortBottom;
     /**
-     * Array holding the planes that this camera will check for culling.
+     * The enum represents all the available planes
+     * in a frustum and each plane has been assigned
      */
+    public enum Planes{
+		/**      
+	     * LEFT_PLANE represents the left plane of the camera frustum.
+	     */
+	    LEFT_PLANE(0),
+	    /**
+	     * RIGHT_PLANE represents the right plane of the camera frustum.
+	     */
+	    RIGHT_PLANE(1),
+	    /**
+	     * BOTTOM_PLANE represents the bottom plane of the camera frustum.
+	     */
+	    BOTTOM_PLANE(2),
+	    /**
+	     * TOP_PLANE represents the top plane of the camera frustum.
+	     */
+	    TOP_PLANE(3),
+	    /**
+	     * FAR_PLANE represents the far plane of the camera frustum.
+	     */
+	    FAR_PLANE(4),
+	    /**
+	     * NEAR_PLANE represents the near plane of the camera frustum.
+	     */
+	    NEAR_PLANE(5);
+	    
+	    private int value;
+	    private Planes(int value){this.value=value;}
+        public int getPlaneValue(){return value;}
+    }  
+    public enum FrustumIntersect {
+
+        /**
+         * defines a constant assigned to spatials that are completely outside
+         * of this camera's view frustum.
+         */
+        Outside,
+        /**
+         * defines a constant assigned to spatials that are completely inside
+         * the camera's view frustum.
+         */
+        Inside,
+        /**
+         * defines a constant assigned to spatials that are intersecting one of
+         * the six planes that define the view frustum.
+         */
+        Intersects;
+    }
+	
+    public Frustum(){
+    	
+    	initPlanes();
+    	
+    }
     
-    //setters and getters for ports
+    //the construcotr as per constructor public Camera(int width, int height) in camera class
+    // can this be placed in the method?
+	
+    
+    
+    public Frustum(boolean a)
+	{
+    	this();
+		frustumNear = 1.0f;
+        frustumFar = 2.0f;
+        frustumLeft = -0.5f;
+        frustumRight = 0.5f;
+        frustumTop = 0.5f;
+        frustumBottom = -0.5f;
+
+        coeffLeft = new float[2];
+        coeffRight = new float[2];
+        coeffBottom = new float[2];
+        coeffTop = new float[2];
+
+        viewPortLeft = 0.0f;
+        viewPortRight = 1.0f;
+        viewPortTop = 1.0f;
+        viewPortBottom = 0.0f;
+
+	}
+	
+	public void initPlanes(){
+		 worldPlane = new Plane[getMaxWorldPlanes()];
+	     for (int i = 0; i < getMaxWorldPlanes(); i++) {
+	           worldPlane[i] = new Plane();
+	      }
+	}
+    /**
+     * <code>getFrustumBottom</code> returns the value of the bottom frustum
+     * plane.
+     *
+     * @return the value of the bottom frustum plane.
+     * 
+     * 
+     * Used externally in postQueue() in SimpleWaterProcessor in water package
+     * 					  preFrame()  in WaterFilter in water package
+     * Degree of problem: high, since this method will be shifted to the new frustum classes 
+     * 							so we need to investigate the impact if this method is removed
+     * 
+     */
+    public float getFrustumBottom() {
+        return frustumBottom;
+    }
+    /**
+     * <code>setFrustumBottom</code> sets the value of the bottom frustum
+     * plane.
+     *
+     * @param frustumBottom the value of the bottom frustum plane.
+     * 
+     * Used externally in zoomCamera(float) in FlyByCamera.java
+     * 
+     * Degree of problem: high, since this method will be shifted to the new frustum classes 
+     * 							so we need to investigate the impact if this method is removed
+     * 
+     * 
+     */
+    public void setFrustumBottom(float frustumBottom) {
+        this.frustumBottom = frustumBottom;
+       
+    }
+    /**
+     * <code>getFrustumFar</code> gets the value of the far frustum plane.
+     *
+     * @return the value of the far frustum plane.
+     * 
+     * Not used but could be a problem!
+     * 
+     * 
+     */
+    public float getFrustumFar() {
+        return frustumFar;
+    }
+    /**
+     * <code>setFrustumFar</code> sets the value of the far frustum plane.
+     *
+     * @param frustumFar the value of the far frustum plane.
+     * 
+     * 
+     * Externally used in parseCameraClipping in SceneLoader
+     * Good thing used in jme3tests{batching,bullet,effect,light,post,water}!
+     *
+     * 
+     * 
+     */
+    public void setFrustumFar(float frustumFar) {
+        this.frustumFar = frustumFar;
+    }
+    /**
+     * <code>getFrustumLeft</code> gets the value of the left frustum plane.
+     *
+     * @return the value of the left frustum plane.
+     * 
+     * 
+     *  Not used but could be a problem!
+     *  
+     *  
+     */
+    public float getFrustumLeft() {
+        return frustumLeft;
+    }
+    /**
+     * <code>setFrustumLeft</code> sets the value of the left frustum plane.
+     *
+     * @param frustumLeft the value of the left frustum plane.
+     * 
+     * Used in zoomCamera in FlyByCamera
+     * 
+     */
+    public void setFrustumLeft(float frustumLeft) {
+        this.frustumLeft = frustumLeft;
+    
+    }
+
+    /**
+     * <code>getFrustumNear</code> gets the value of the near frustum plane.
+     *
+     * @return the value of the near frustum plane.
+     * 
+     * Used externally in zoomCamera in FlyByCamera, initFilter() in SSAOFilter, controlRender() in LodControl
+     *                    setCamera in UniformBindingManager, some classes in water and shadow package and
+     *                    perspectiveLodCalculator()
+     * 
+     * internally used in getViewToProjectionZ()                   
+     *                    
+     * Degree of problem: high , high usage of this method                   
+     *                      
+     */
+    public float getFrustumNear() {
+        return frustumNear;
+    }
+    /**
+     * <code>setFrustumNear</code> sets the value of the near frustum plane.
+     *
+     * @param frustumNear the value of the near frustum plane.
+     *
+     * Exterbnally used in Sceneloader -> parseCameraClipping() 
+     */
+    public void setFrustumNear(float frustumNear) {
+        this.frustumNear = frustumNear;
+      
+    }
+    /**
+     * <code>getFrustumRight</code> gets the value of the right frustum plane.
+     *
+     * @return frustumRight the value of the right frustum plane.
+     * 
+     * Externally used in zoomCamera() in FlyBycamera, used in ShadowUtil in shadow package
+     * 					 used in SimpleWaterProcessor, WaterFiler class
+     */
+    public float getFrustumRight() {
+        return frustumRight;
+    }
+    /**
+     * <code>setFrustumRight</code> sets the value of the right frustum plane.
+     *
+     * @param frustumRight the value of the right frustum plane.
+     */
+    public void setFrustumRight(float frustumRight) {
+        this.frustumRight = frustumRight;
+   
+    }
+    /**
+     * <code>getFrustumTop</code> gets the value of the top frustum plane.
+     *
+     * @return the value of the top frustum plane.
+     * 
+     * Same as the other used in many external packages
+     * 
+     */
+    public float getFrustumTop() {
+        return frustumTop;
+    }
+    /**
+     * <code>setFrustumTop</code> sets the value of the top frustum plane.
+     *
+     * @param frustumTop the value of the top frustum plane.
+     * 
+     * Externally used in ZoomCamera() in FlyBycamera
+     */
+    public void setFrustumTop(float frustumTop) {
+        this.frustumTop = frustumTop;
+  
+    }
+    /**
+     * 
+     * @return
+     */
+    public  int getMaxWorldPlanes() {
+		return MAX_WORLD_PLANES;
+	}
+    public void setCoeffLeftAssignValue(int index,float value){
+    	this.coeffLeft[index] = value;
+    }
+    public void setCoeffRightAssignValue(int index,float value){
+    	this.coeffRight[index] = value;
+    }
+    public void setCoeffBottomAssignValue(int index,float value){
+ 	   this.coeffBottom[index] = value;
+    }    
+    public void setCoeffTopAssignValue(int index,float value){
+	 	this.coeffTop[index] = value;
+	}    
+	public float[] getCoeffLeft() {
+		return coeffLeft;
+	}
+	/**
+	 * @param floats the coeffLeft to set
+	 */
+	public void setCoeffLeft(float[] floats) {
+		this.coeffLeft = floats;
+	}
+	/**
+	 * @return the coeffRight
+	 */
+	public float[] getCoeffRight() {
+		return coeffRight;
+	}
+	/**
+	 * @param floats the coeffRight to set
+	 */
+	public void setCoeffRight(float[] floats) {
+		this.coeffRight = floats;
+	}
+	/**
+	 * @return the coeffBottom
+	 */
+	public float[] getCoeffBottom() {
+		return coeffBottom;
+	}
+	/**
+	 * @param coeffBottom the coeffBottom to set
+	 */
+	public void setCoeffBottom(float[] coeffBottom) {
+		this.coeffBottom = coeffBottom;
+	}
+	/**
+	 * @return the coeffTop
+	 */
+	public float[] getCoeffTop() {
+		return coeffTop;
+	}
+	/**
+	 * @param coeffTop the coeffTop to set
+	 */
+	public void setCoeffTop(float[] coeffTop) {
+		this.coeffTop = coeffTop;
+	}
     /**
      * <code>getViewPortLeft</code> gets the left boundary of the viewport
      *
@@ -328,7 +462,6 @@ public class Frustum {
     public float getViewPortLeft() {
         return viewPortLeft;
     }
-
     /**
      * <code>setViewPortLeft</code> sets the left boundary of the viewport
      *
@@ -340,9 +473,8 @@ public class Frustum {
      */
     public void setViewPortLeft(float left) {
         viewPortLeft = left;
-        camuse.onViewPortChange();//temp
+     
     }
-
     /**
      * <code>getViewPortRight</code> gets the right boundary of the viewport
      *
@@ -354,7 +486,6 @@ public class Frustum {
     public float getViewPortRight() {
         return viewPortRight;
     }
-
     /**
      * <code>setViewPortRight</code> sets the right boundary of the viewport
      *
@@ -365,9 +496,8 @@ public class Frustum {
      */
     public void setViewPortRight(float right) {
         viewPortRight = right;
-        camuse.onViewPortChange();//temp
+        
     }
-
     /**
      * <code>getViewPortTop</code> gets the top boundary of the viewport
      *
@@ -380,7 +510,6 @@ public class Frustum {
     public float getViewPortTop() {
         return viewPortTop;
     }
-
     /**
      * <code>setViewPortTop</code> sets the top boundary of the viewport
      *
@@ -392,9 +521,8 @@ public class Frustum {
      */
     public void setViewPortTop(float top) {
         viewPortTop = top;
-        camuse.onViewPortChange();//temp
+       
     }
-
     /**
      * <code>getViewPortBottom</code> gets the bottom boundary of the viewport
      *
@@ -406,7 +534,6 @@ public class Frustum {
     public float getViewPortBottom() {
         return viewPortBottom;
     }
-
     /**
      * <code>setViewPortBottom</code> sets the bottom boundary of the viewport
      *
@@ -418,9 +545,8 @@ public class Frustum {
      */
     public void setViewPortBottom(float bottom) {
         viewPortBottom = bottom;
-        camuse.onViewPortChange();//temp
+       
     }
-
     /**
      * <code>setViewPort</code> sets the boundaries of the viewport
      *
@@ -441,43 +567,8 @@ public class Frustum {
         this.viewPortRight = right;
         this.viewPortBottom = bottom;
         this.viewPortTop = top;
-        camuse.onViewPortChange();//temp
+       
     }
-
-    //constructor for Frustum
-    //public Frustum(){}
-
-    //object for camera
-    protected Camera camuse=new Camera();
-    
-    		
-	//the construcotr as per constructor public Camera(int width, int height) in camera class
-     
-    // can this be placed in the method?
-	
-	public Frustum()
-	{
-		frustumNear = 1.0f;
-        frustumFar = 2.0f;
-        frustumLeft = -0.5f;
-        frustumRight = 0.5f;
-        frustumTop = 0.5f;
-        frustumBottom = -0.5f;
-
-        coeffLeft = new float[2];
-        coeffRight = new float[2];
-        coeffBottom = new float[2];
-        coeffTop = new float[2];
-
-        viewPortLeft = 0.0f;
-        viewPortRight = 1.0f;
-        viewPortTop = 1.0f;
-        viewPortBottom = 0.0f;
-
-        camuse.onFrustumChange(); //as of know to keep the things in tact
-        camuse.onViewPortChange();// temp to keep things in tact
-	}
-	
 	/**
      * <code>setFrustum</code> sets the frustum of this camera object.
      *
@@ -507,9 +598,8 @@ public class Frustum {
         frustumRight = right;
         frustumTop = top;
         frustumBottom = bottom;
-        camuse.onFrustumChange();//temp as of now to keep things in tact
+      //  camuse.onFrustumChange();//temp as of now to keep things in tact
     }
-  
     /**
      * <code>setFrustumPerspective</code> defines the frustum for the camera.  This
      * frustum is defined by a viewing angle, aspect ratio, and near/far planes
@@ -542,11 +632,38 @@ public class Frustum {
         frustumFar = far;
 
         // Camera is no longer parallel projection even if it was before
-        camuse.setParallelProjection(false);
-
-        camuse.onFrustumChange();
+   
+    }
+    /**
+     * <code>getPlaneState</code> returns the state of the frustum planes. So
+     * checks can be made as to which frustum plane has been examined for
+     * culling thus far.
+     *
+     * @return the current plane state int.
+     * 
+     * Externally called in renderSubScene in RenderManager and ShadowUtil
+     * Degree of Problem: medium (could maybe be decoupled from camera)
+     * 
+     */
+    public int getPlaneState() {
+        return planeState;
     }
 
+    /**
+     * <code>setPlaneState</code> sets the state to keep track of tested
+     * planes for culling.
+     *
+     * @param planeState the updated state.
+     * 
+     * 
+     * Externally used in renderScence,rendeSubScene in RenderManager
+     * 				   also used in the optimize package and shadow package
+     * 
+     * 
+     */
+    public void setPlaneState(int planeState) {
+        this.planeState = planeState;
+    }
     /**
      * <code>contains</code> tests a bounding volume against the planes of the
      * camera's frustum. The frustums planes are set such that the normals all
@@ -592,8 +709,8 @@ public class Frustum {
 //            int planeId = planeCounter;
 
             mask = 1 << (planeId);
-            if ((camuse.getPlaneState()/*planeState*/ & mask) == 0) {
-                Plane.Side side = bound.whichSide(camuse.worldPlane[planeId]);
+            if ((getPlaneState()/*planeState*/ & mask) == 0) {
+                Plane.Side side = bound.whichSide(worldPlane[planeId]);
 
                 if (side == Plane.Side.Negative) {
                     //object is outside of frustum
@@ -602,7 +719,7 @@ public class Frustum {
                 } else if (side == Plane.Side.Positive) {
                     //object is visible on *this* plane, so mark this plane
                     //so that we don't check it for sub nodes.
-                	camuse.setPlaneState(mask);
+                	setPlaneState(mask);
                 } else {
                     rVal = FrustumIntersect.Intersects;
                 }
@@ -611,9 +728,9 @@ public class Frustum {
 
         return rVal;
     }
-public void onFrustrumChangefrus()
+public void onFrustrumChange(boolean isParallelProjection)
 {
-	if (!camuse.isParallelProjection()) {
+	if (!isParallelProjection) {
         float nearSquared = frustumNear * frustumNear;
         float leftSquared = frustumLeft * frustumLeft;
         float rightSquared = frustumRight * frustumRight;
@@ -651,14 +768,14 @@ public void onFrustrumChangefrus()
     
     
     //Camera code
-    camuse.getProjectionMatrix().fromFrustum(frustumNear, frustumFar, frustumLeft, frustumRight, frustumTop, frustumBottom, camuse.isParallelProjection());
+ //   camuse.getProjectionMatrix().fromFrustum(frustumNear, frustumFar, frustumLeft, frustumRight, frustumTop, frustumBottom, camuse.isParallelProjection());
 //    projectionMatrix.transposeLocal();
 
     // The frame is effected by the frustum values
     // update it as well
 
 }
-
+/*
  public void onFrameChangeFrustrum()
  {
 	 
@@ -720,12 +837,12 @@ public void onFrustrumChangefrus()
      camuse.worldPlane[FAR_PLANE].setConstant(-(dirDotLocation + frustumFar));
 
      // near plane
-     camuse.worldPlane[NEAR_PLANE].setNormal(direction.x, direction.y, direction.z);
-     camuse.worldPlane[NEAR_PLANE].setConstant(dirDotLocation + frustumNear);
+     camuse.worldPlane[getNearPlane()].setNormal(direction.x, direction.y, direction.z);
+     camuse.worldPlane[getNearPlane()].setConstant(dirDotLocation + frustumNear);
      camuse.getViewMatrix().fromFrame(camuse.getLocation(), direction, up, left);
     
      vars.release();
 
  }
-
+*/
 }

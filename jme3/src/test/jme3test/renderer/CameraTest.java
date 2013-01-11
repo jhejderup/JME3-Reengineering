@@ -14,7 +14,7 @@ import com.jme3.math.Plane;
 import com.jme3.math.Quaternion;
 import com.jme3.math.Vector2f;
 import com.jme3.math.Vector3f;
-
+import com.jme3.renderer.*;
 /**
  * The class <code>CameraTest</code> contains tests for the class <code>{@link Camera}</code>.
  *
@@ -3037,7 +3037,7 @@ public class CameraTest {
 	}
 
 	/**
-	 * Run the Camera.FrustumIntersect contains(BoundingVolume) method test.
+	 * Run the Frustum.FrustumIntersect contains(BoundingVolume) method test.
 	 *
 	 * @throws Exception
 	 *
@@ -3049,7 +3049,7 @@ public class CameraTest {
 		Camera fixture = getFixture1();
 		BoundingVolume bound = null;
 
-		Camera.FrustumIntersect result = fixture.contains(bound);
+		Frustum.FrustumIntersect result = fixture.contains(bound);
 
 		// add additional test code here
 		assertNotNull(result);
@@ -3059,7 +3059,7 @@ public class CameraTest {
 	}
 
 	/**
-	 * Run the Camera.FrustumIntersect contains(BoundingVolume) method test.
+	 * Run the Frustum.FrustumIntersect contains(BoundingVolume) method test.
 	 *
 	 * @throws Exception
 	 *
@@ -3071,7 +3071,7 @@ public class CameraTest {
 		Camera fixture = getFixture2();
 		BoundingVolume bound = null;
 
-		Camera.FrustumIntersect result = fixture.contains(bound);
+		Frustum.FrustumIntersect result = fixture.contains(bound);
 
 		// add additional test code here
 		assertNotNull(result);
@@ -3081,7 +3081,7 @@ public class CameraTest {
 	}
 
 	/**
-	 * Run the Camera.FrustumIntersect contains(BoundingVolume) method test.
+	 * Run the Frustum.FrustumIntersect contains(BoundingVolume) method test.
 	 *
 	 * @throws Exception
 	 *
@@ -3093,7 +3093,7 @@ public class CameraTest {
 		Camera fixture = getFixture3();
 		BoundingVolume bound = null;
 
-		Camera.FrustumIntersect result = fixture.contains(bound);
+		Frustum.FrustumIntersect result = fixture.contains(bound);
 
 		// add additional test code here
 		assertNotNull(result);
@@ -3103,7 +3103,7 @@ public class CameraTest {
 	}
 
 	/**
-	 * Run the Camera.FrustumIntersect contains(BoundingVolume) method test.
+	 * Run the Frustum.FrustumIntersect contains(BoundingVolume) method test.
 	 *
 	 * @throws Exception
 	 *
@@ -3115,7 +3115,7 @@ public class CameraTest {
 		Camera fixture = getFixture4();
 		BoundingVolume bound = null;
 
-		Camera.FrustumIntersect result = fixture.contains(bound);
+		Frustum.FrustumIntersect result = fixture.contains(bound);
 
 		// add additional test code here
 		assertNotNull(result);
@@ -3125,7 +3125,7 @@ public class CameraTest {
 	}
 
 	/**
-	 * Run the Camera.FrustumIntersect contains(BoundingVolume) method test.
+	 * Run the Frustum.FrustumIntersect contains(BoundingVolume) method test.
 	 *
 	 * @throws Exception
 	 *
@@ -3137,7 +3137,7 @@ public class CameraTest {
 		Camera fixture = getFixture5();
 		BoundingVolume bound = null;
 
-		Camera.FrustumIntersect result = fixture.contains(bound);
+		Frustum.FrustumIntersect result = fixture.contains(bound);
 
 		// add additional test code here
 		assertNotNull(result);
@@ -3147,7 +3147,7 @@ public class CameraTest {
 	}
 
 	/**
-	 * Run the Camera.FrustumIntersect contains(BoundingVolume) method test.
+	 * Run the Frustum.FrustumIntersect contains(BoundingVolume) method test.
 	 *
 	 * @throws Exception
 	 *
@@ -3159,7 +3159,7 @@ public class CameraTest {
 		Camera fixture = getFixture6();
 		BoundingVolume bound = null;
 
-		Camera.FrustumIntersect result = fixture.contains(bound);
+		Frustum.FrustumIntersect result = fixture.contains(bound);
 
 		// add additional test code here
 		assertNotNull(result);
@@ -3169,7 +3169,7 @@ public class CameraTest {
 	}
 
 	/**
-	 * Run the Camera.FrustumIntersect contains(BoundingVolume) method test.
+	 * Run the Frustum.FrustumIntersect contains(BoundingVolume) method test.
 	 *
 	 * @throws Exception
 	 *
@@ -3181,7 +3181,7 @@ public class CameraTest {
 		Camera fixture = getFixture7();
 		BoundingVolume bound = null;
 
-		Camera.FrustumIntersect result = fixture.contains(bound);
+		Frustum.FrustumIntersect result = fixture.contains(bound);
 
 		// add additional test code here
 		assertNotNull(result);
@@ -3191,7 +3191,7 @@ public class CameraTest {
 	}
 
 	/**
-	 * Run the Camera.FrustumIntersect contains(BoundingVolume) method test.
+	 * Run the Frustum.FrustumIntersect contains(BoundingVolume) method test.
 	 *
 	 * @throws Exception
 	 *
@@ -3203,7 +3203,7 @@ public class CameraTest {
 		Camera fixture = getFixture8();
 		BoundingVolume bound = null;
 
-		Camera.FrustumIntersect result = fixture.contains(bound);
+		Frustum.FrustumIntersect result = fixture.contains(bound);
 
 		// add additional test code here
 		assertNotNull(result);
@@ -3213,7 +3213,7 @@ public class CameraTest {
 	}
 
 	/**
-	 * Run the Camera.FrustumIntersect contains(BoundingVolume) method test.
+	 * Run the Frustum.FrustumIntersect contains(BoundingVolume) method test.
 	 *
 	 * @throws Exception
 	 *
@@ -3225,7 +3225,7 @@ public class CameraTest {
 		Camera fixture = getFixture9();
 		BoundingVolume bound = null;
 
-		Camera.FrustumIntersect result = fixture.contains(bound);
+		Frustum.FrustumIntersect result = fixture.contains(bound);
 
 		// add additional test code here
 		assertNotNull(result);
@@ -3235,7 +3235,7 @@ public class CameraTest {
 	}
 
 	/**
-	 * Run the Camera.FrustumIntersect contains(BoundingVolume) method test.
+	 * Run the Frustum.FrustumIntersect contains(BoundingVolume) method test.
 	 *
 	 * @throws Exception
 	 *
@@ -3247,7 +3247,7 @@ public class CameraTest {
 		Camera fixture = getFixture10();
 		BoundingVolume bound = null;
 
-		Camera.FrustumIntersect result = fixture.contains(bound);
+		Frustum.FrustumIntersect result = fixture.contains(bound);
 
 		// add additional test code here
 		assertNotNull(result);
@@ -3257,7 +3257,7 @@ public class CameraTest {
 	}
 
 	/**
-	 * Run the Camera.FrustumIntersect contains(BoundingVolume) method test.
+	 * Run the Frustum.FrustumIntersect contains(BoundingVolume) method test.
 	 *
 	 * @throws Exception
 	 *
@@ -3269,7 +3269,7 @@ public class CameraTest {
 		Camera fixture = getFixture11();
 		BoundingVolume bound = null;
 
-		Camera.FrustumIntersect result = fixture.contains(bound);
+		Frustum.FrustumIntersect result = fixture.contains(bound);
 
 		// add additional test code here
 		assertNotNull(result);
@@ -3279,7 +3279,7 @@ public class CameraTest {
 	}
 
 	/**
-	 * Run the Camera.FrustumIntersect contains(BoundingVolume) method test.
+	 * Run the Frustum.FrustumIntersect contains(BoundingVolume) method test.
 	 *
 	 * @throws Exception
 	 *
@@ -3291,7 +3291,7 @@ public class CameraTest {
 		Camera fixture = getFixture12();
 		BoundingVolume bound = null;
 
-		Camera.FrustumIntersect result = fixture.contains(bound);
+		Frustum.FrustumIntersect result = fixture.contains(bound);
 
 		// add additional test code here
 		assertNotNull(result);
@@ -3301,7 +3301,7 @@ public class CameraTest {
 	}
 
 	/**
-	 * Run the Camera.FrustumIntersect contains(BoundingVolume) method test.
+	 * Run the Frustum.FrustumIntersect contains(BoundingVolume) method test.
 	 *
 	 * @throws Exception
 	 *
@@ -3313,7 +3313,7 @@ public class CameraTest {
 		Camera fixture = getFixture13();
 		BoundingVolume bound = null;
 
-		Camera.FrustumIntersect result = fixture.contains(bound);
+		Frustum.FrustumIntersect result = fixture.contains(bound);
 
 		// add additional test code here
 		assertNotNull(result);
@@ -3323,7 +3323,7 @@ public class CameraTest {
 	}
 
 	/**
-	 * Run the Camera.FrustumIntersect contains(BoundingVolume) method test.
+	 * Run the Frustum.FrustumIntersect contains(BoundingVolume) method test.
 	 *
 	 * @throws Exception
 	 *
@@ -3335,7 +3335,7 @@ public class CameraTest {
 		Camera fixture = getFixture14();
 		BoundingVolume bound = null;
 
-		Camera.FrustumIntersect result = fixture.contains(bound);
+		Frustum.FrustumIntersect result = fixture.contains(bound);
 
 		// add additional test code here
 		assertNotNull(result);
@@ -3345,7 +3345,7 @@ public class CameraTest {
 	}
 
 	/**
-	 * Run the Camera.FrustumIntersect contains(BoundingVolume) method test.
+	 * Run the Frustum.FrustumIntersect contains(BoundingVolume) method test.
 	 *
 	 * @throws Exception
 	 *
@@ -3357,7 +3357,7 @@ public class CameraTest {
 		Camera fixture = getFixture15();
 		BoundingVolume bound = null;
 
-		Camera.FrustumIntersect result = fixture.contains(bound);
+		Frustum.FrustumIntersect result = fixture.contains(bound);
 
 		// add additional test code here
 		assertNotNull(result);
@@ -3367,7 +3367,7 @@ public class CameraTest {
 	}
 
 	/**
-	 * Run the Camera.FrustumIntersect contains(BoundingVolume) method test.
+	 * Run the Frustum.FrustumIntersect contains(BoundingVolume) method test.
 	 *
 	 * @throws Exception
 	 *
@@ -3379,7 +3379,7 @@ public class CameraTest {
 		Camera fixture = getFixture16();
 		BoundingVolume bound = null;
 
-		Camera.FrustumIntersect result = fixture.contains(bound);
+		Frustum.FrustumIntersect result = fixture.contains(bound);
 
 		// add additional test code here
 		assertNotNull(result);
@@ -3389,7 +3389,7 @@ public class CameraTest {
 	}
 
 	/**
-	 * Run the Camera.FrustumIntersect contains(BoundingVolume) method test.
+	 * Run the Frustum.FrustumIntersect contains(BoundingVolume) method test.
 	 *
 	 * @throws Exception
 	 *
@@ -3401,7 +3401,7 @@ public class CameraTest {
 		Camera fixture = getFixture17();
 		BoundingVolume bound = null;
 
-		Camera.FrustumIntersect result = fixture.contains(bound);
+		Frustum.FrustumIntersect result = fixture.contains(bound);
 
 		// add additional test code here
 		assertNotNull(result);
@@ -3411,7 +3411,7 @@ public class CameraTest {
 	}
 
 	/**
-	 * Run the Camera.FrustumIntersect contains(BoundingVolume) method test.
+	 * Run the Frustum.FrustumIntersect contains(BoundingVolume) method test.
 	 *
 	 * @throws Exception
 	 *
@@ -3423,7 +3423,7 @@ public class CameraTest {
 		Camera fixture = getFixture18();
 		BoundingVolume bound = null;
 
-		Camera.FrustumIntersect result = fixture.contains(bound);
+		Frustum.FrustumIntersect result = fixture.contains(bound);
 
 		// add additional test code here
 		assertNotNull(result);
@@ -3433,7 +3433,7 @@ public class CameraTest {
 	}
 
 	/**
-	 * Run the Camera.FrustumIntersect contains(BoundingVolume) method test.
+	 * Run the Frustum.FrustumIntersect contains(BoundingVolume) method test.
 	 *
 	 * @throws Exception
 	 *
@@ -3445,7 +3445,7 @@ public class CameraTest {
 		Camera fixture = getFixture19();
 		BoundingVolume bound = null;
 
-		Camera.FrustumIntersect result = fixture.contains(bound);
+		Frustum.FrustumIntersect result = fixture.contains(bound);
 
 		// add additional test code here
 		assertNotNull(result);
@@ -3455,7 +3455,7 @@ public class CameraTest {
 	}
 
 	/**
-	 * Run the Camera.FrustumIntersect contains(BoundingVolume) method test.
+	 * Run the Frustum.FrustumIntersect contains(BoundingVolume) method test.
 	 *
 	 * @throws Exception
 	 *
@@ -3467,7 +3467,7 @@ public class CameraTest {
 		Camera fixture = getFixture20();
 		BoundingVolume bound = null;
 
-		Camera.FrustumIntersect result = fixture.contains(bound);
+		Frustum.FrustumIntersect result = fixture.contains(bound);
 
 		// add additional test code here
 		assertNotNull(result);
@@ -3477,7 +3477,7 @@ public class CameraTest {
 	}
 
 	/**
-	 * Run the Camera.FrustumIntersect contains(BoundingVolume) method test.
+	 * Run the Frustum.FrustumIntersect contains(BoundingVolume) method test.
 	 *
 	 * @throws Exception
 	 *
@@ -3489,7 +3489,7 @@ public class CameraTest {
 		Camera fixture = getFixture21();
 		BoundingVolume bound = null;
 
-		Camera.FrustumIntersect result = fixture.contains(bound);
+		Frustum.FrustumIntersect result = fixture.contains(bound);
 
 		// add additional test code here
 		assertNotNull(result);
@@ -3499,7 +3499,7 @@ public class CameraTest {
 	}
 
 	/**
-	 * Run the Camera.FrustumIntersect contains(BoundingVolume) method test.
+	 * Run the Frustum.FrustumIntersect contains(BoundingVolume) method test.
 	 *
 	 * @throws Exception
 	 *
@@ -3511,7 +3511,7 @@ public class CameraTest {
 		Camera fixture = getFixture22();
 		BoundingVolume bound = null;
 
-		Camera.FrustumIntersect result = fixture.contains(bound);
+		Frustum.FrustumIntersect result = fixture.contains(bound);
 
 		// add additional test code here
 		assertNotNull(result);
@@ -3521,7 +3521,7 @@ public class CameraTest {
 	}
 
 	/**
-	 * Run the Camera.FrustumIntersect contains(BoundingVolume) method test.
+	 * Run the Frustum.FrustumIntersect contains(BoundingVolume) method test.
 	 *
 	 * @throws Exception
 	 *
@@ -3533,7 +3533,7 @@ public class CameraTest {
 		Camera fixture = getFixture23();
 		BoundingVolume bound = null;
 
-		Camera.FrustumIntersect result = fixture.contains(bound);
+		Frustum.FrustumIntersect result = fixture.contains(bound);
 
 		// add additional test code here
 		assertNotNull(result);
@@ -3543,7 +3543,7 @@ public class CameraTest {
 	}
 
 	/**
-	 * Run the Camera.FrustumIntersect contains(BoundingVolume) method test.
+	 * Run the Frustum.FrustumIntersect contains(BoundingVolume) method test.
 	 *
 	 * @throws Exception
 	 *
@@ -3555,7 +3555,7 @@ public class CameraTest {
 		Camera fixture = getFixture24();
 		BoundingVolume bound = null;
 
-		Camera.FrustumIntersect result = fixture.contains(bound);
+		Frustum.FrustumIntersect result = fixture.contains(bound);
 
 		// add additional test code here
 		assertNotNull(result);
@@ -3565,7 +3565,7 @@ public class CameraTest {
 	}
 
 	/**
-	 * Run the Camera.FrustumIntersect contains(BoundingVolume) method test.
+	 * Run the Frustum.FrustumIntersect contains(BoundingVolume) method test.
 	 *
 	 * @throws Exception
 	 *
@@ -3577,7 +3577,7 @@ public class CameraTest {
 		Camera fixture = getFixture25();
 		BoundingVolume bound = null;
 
-		Camera.FrustumIntersect result = fixture.contains(bound);
+		Frustum.FrustumIntersect result = fixture.contains(bound);
 
 		// add additional test code here
 		assertNotNull(result);
@@ -3587,7 +3587,7 @@ public class CameraTest {
 	}
 
 	/**
-	 * Run the Camera.FrustumIntersect contains(BoundingVolume) method test.
+	 * Run the Frustum.FrustumIntersect contains(BoundingVolume) method test.
 	 *
 	 * @throws Exception
 	 *
@@ -3599,7 +3599,7 @@ public class CameraTest {
 		Camera fixture = getFixture26();
 		BoundingVolume bound = null;
 
-		Camera.FrustumIntersect result = fixture.contains(bound);
+		Frustum.FrustumIntersect result = fixture.contains(bound);
 
 		// add additional test code here
 		assertNotNull(result);
@@ -3609,7 +3609,7 @@ public class CameraTest {
 	}
 
 	/**
-	 * Run the Camera.FrustumIntersect contains(BoundingVolume) method test.
+	 * Run the Frustum.FrustumIntersect contains(BoundingVolume) method test.
 	 *
 	 * @throws Exception
 	 *
@@ -3621,7 +3621,7 @@ public class CameraTest {
 		Camera fixture = getFixture27();
 		BoundingVolume bound = null;
 
-		Camera.FrustumIntersect result = fixture.contains(bound);
+		Frustum.FrustumIntersect result = fixture.contains(bound);
 
 		// add additional test code here
 		assertNotNull(result);
@@ -3631,7 +3631,7 @@ public class CameraTest {
 	}
 
 	/**
-	 * Run the Camera.FrustumIntersect contains(BoundingVolume) method test.
+	 * Run the Frustum.FrustumIntersect contains(BoundingVolume) method test.
 	 *
 	 * @throws Exception
 	 *
@@ -3643,7 +3643,7 @@ public class CameraTest {
 		Camera fixture = getFixture28();
 		BoundingVolume bound = null;
 
-		Camera.FrustumIntersect result = fixture.contains(bound);
+		Frustum.FrustumIntersect result = fixture.contains(bound);
 
 		// add additional test code here
 		assertNotNull(result);
@@ -3653,7 +3653,7 @@ public class CameraTest {
 	}
 
 	/**
-	 * Run the Camera.FrustumIntersect contains(BoundingVolume) method test.
+	 * Run the Frustum.FrustumIntersect contains(BoundingVolume) method test.
 	 *
 	 * @throws Exception
 	 *
@@ -3665,7 +3665,7 @@ public class CameraTest {
 		Camera fixture = getFixture29();
 		BoundingVolume bound = null;
 
-		Camera.FrustumIntersect result = fixture.contains(bound);
+		Frustum.FrustumIntersect result = fixture.contains(bound);
 
 		// add additional test code here
 		assertNotNull(result);
