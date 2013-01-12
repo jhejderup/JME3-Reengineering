@@ -41,6 +41,7 @@ import com.jme3.light.LightList;
 import com.jme3.material.Material;
 import com.jme3.math.*;
 import com.jme3.renderer.Camera;
+import com.jme3.renderer.Frustum;
 import com.jme3.renderer.RenderManager;
 import com.jme3.renderer.ViewPort;
 import com.jme3.renderer.queue.RenderQueue;
@@ -136,7 +137,7 @@ public abstract class Spatial implements Savable, Cloneable, Collidable, Cloneab
      */
     protected String name;
     // scale values
-    protected transient Camera.FrustumIntersect frustrumIntersects = Camera.FrustumIntersect.Intersects;
+    protected transient Frustum.FrustumIntersect frustrumIntersects = Frustum.FrustumIntersect.Intersects;
     protected RenderQueue.Bucket queueBucket = RenderQueue.Bucket.Inherit;
     protected ShadowMode shadowMode = RenderQueue.ShadowMode.Inherit;
     public transient float queueDistance = Float.NEGATIVE_INFINITY;
@@ -254,6 +255,12 @@ public abstract class Spatial implements Savable, Cloneable, Collidable, Cloneab
      * @param cam The camera to check against.
      * @return true if inside or intersecting camera frustum
      * (should be rendered), false if outside.
+     * 
+     * 
+     * Change this to frustum -> code
+     * inpara: Frustum frum
+     * containsGUI should be moved from Camera class to Frustum Class
+     * Done!
      */
     public boolean checkCulling(Camera cam) {
         if (refreshFlags != 0) {
@@ -266,18 +273,18 @@ public abstract class Spatial implements Savable, Cloneable, Collidable, Cloneab
         CullHint cm = getCullHint();
         assert cm != CullHint.Inherit;
         if (cm == Spatial.CullHint.Always) {
-            setLastFrustumIntersection(Camera.FrustumIntersect.Outside);
+            setLastFrustumIntersection(Frustum.FrustumIntersect.Outside);
             return false;
         } else if (cm == Spatial.CullHint.Never) {
-            setLastFrustumIntersection(Camera.FrustumIntersect.Intersects);
+            setLastFrustumIntersection(Frustum.FrustumIntersect.Intersects);
             return true;
         }
 
         // check to see if we can cull this node
         frustrumIntersects = (parent != null ? parent.frustrumIntersects
-                : Camera.FrustumIntersect.Intersects);
+                : Frustum.FrustumIntersect.Intersects);
 
-        if (frustrumIntersects == Camera.FrustumIntersect.Intersects) {
+        if (frustrumIntersects == Frustum.FrustumIntersect.Intersects) {
             if (getQueueBucket() == Bucket.Gui) {
                 return cam.containsGui(getWorldBound());
             } else {
@@ -285,7 +292,7 @@ public abstract class Spatial implements Savable, Cloneable, Collidable, Cloneab
             }
         }
 
-        return frustrumIntersects != Camera.FrustumIntersect.Outside;
+        return frustrumIntersects != Frustum.FrustumIntersect.Outside;
     }
 
     /**
@@ -1421,7 +1428,7 @@ public abstract class Spatial implements Savable, Cloneable, Collidable, Cloneab
      *
      * @return The spatial's last frustum intersection result.
      */
-    public Camera.FrustumIntersect getLastFrustumIntersection() {
+    public Frustum.FrustumIntersect getLastFrustumIntersection() {
         return frustrumIntersects;
     }
 
@@ -1433,7 +1440,7 @@ public abstract class Spatial implements Savable, Cloneable, Collidable, Cloneab
      * @param intersects
      *            the new value
      */
-    public void setLastFrustumIntersection(Camera.FrustumIntersect intersects) {
+    public void setLastFrustumIntersection(Frustum.FrustumIntersect intersects) {
         frustrumIntersects = intersects;
     }
 

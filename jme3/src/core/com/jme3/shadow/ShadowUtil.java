@@ -38,6 +38,7 @@ import com.jme3.math.Transform;
 import com.jme3.math.Vector2f;
 import com.jme3.math.Vector3f;
 import com.jme3.renderer.Camera;
+import com.jme3.renderer.Frustum;
 import com.jme3.renderer.queue.GeometryList;
 import com.jme3.scene.Geometry;
 import com.jme3.util.TempVars;
@@ -509,7 +510,7 @@ public class ShadowUtil {
             Geometry g = inputGeometryList.get(i);
             int planeState = camera.getPlaneState();
             camera.setPlaneState(0);
-            if (camera.contains(g.getWorldBound()) != Camera.FrustumIntersect.Outside) {
+            if (camera.contains(g.getWorldBound()) != Frustum.FrustumIntersect.Outside) {
                 outputGeometryList.add(g);
             }
             camera.setPlaneState(planeState);
@@ -538,7 +539,7 @@ public class ShadowUtil {
                 Camera camera = cameras[j];
                 int planeState = camera.getPlaneState();
                 camera.setPlaneState(0);
-                inFrustum = camera.contains(g.getWorldBound()) != Camera.FrustumIntersect.Outside;
+                inFrustum = camera.contains(g.getWorldBound()) != Frustum.FrustumIntersect.Outside;
                 camera.setPlaneState(planeState);
             }
             if (inFrustum) {
