@@ -31,6 +31,8 @@
  */
 package com.jme3.input.event;
 
+import com.jme3.input.RawInputListener;
+
 /**
  * <code>TouchEvent</code> represents a single event from multi-touch input devices
  * @author larynx
@@ -226,5 +228,11 @@ public class TouchEvent extends InputEvent {
     public void setScaleSpanInProgress(boolean scaleSpanInProgress) {
         this.scaleSpanInProgress = scaleSpanInProgress;
     }
-    
+/*
+	@Override
+	public void onEvent(RawInputListener listener) {
+		  listener.onTouchEvent(this);
+		
+	}
+    */
 }

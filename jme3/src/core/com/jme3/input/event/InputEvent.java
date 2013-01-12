@@ -32,6 +32,7 @@
 package com.jme3.input.event;
 
 import com.jme3.input.Input;
+import com.jme3.input.RawInputListener;
 
 /**
  * An abstract input event.
@@ -79,5 +80,7 @@ public abstract class InputEvent {
     public void setConsumed() {
         this.consumed = true;
     }
+    
+  //  public abstract void onEvent(RawInputListener listener);
     
 }

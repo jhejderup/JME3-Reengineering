@@ -173,6 +173,7 @@ public class Frustum {
 	    private Planes(int value){this.value=value;}
         public int getPlaneValue(){return value;}
     }  
+    
     public enum FrustumIntersect {
 
         /**

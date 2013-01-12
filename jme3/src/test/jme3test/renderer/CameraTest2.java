@@ -1,4 +1,4 @@
-package jme3test.renderer;
+/*package jme3test.renderer;
 
 import static org.junit.Assert.*;
 
@@ -20,11 +20,11 @@ import com.jme3.math.Vector3f;
 
 
 import com.jme3.renderer.Camera;
-/**
+*//**
  * Unit tests for the Camera class
  * @author Joseph
  *
- */
+ *//*
 public class CameraTest2 {
 	
 	
@@ -36,12 +36,12 @@ public class CameraTest2 {
 
 	//////////////   CONSTRUCTOR TESTS
 	
-	/**
+	*//**
 	 * This test will run on the default constructor for Camera class. Even though
 	 * this is only intended for serialization and no other cases, we still need
 	 * test this. This 
 	 * @throws Exception
-	 */
+	 *//*
 	@Test
 	public void testCamera_serializeconstructor(){
 		
@@ -76,9 +76,9 @@ public class CameraTest2 {
 		assertEquals(true, result.isViewportChanged());
 		assertEquals(true, result.isParallelProjection());
 	}
-	/**
+	*//**
 	 * Test constructor with size and width with zero as value
-	 */
+	 *//*
 	@Test
 	public void testCameraIntInt_size_0() {
 		int width = 0;
@@ -106,9 +106,9 @@ public class CameraTest2 {
 		assertEquals(true, result.isViewportChanged());
 		assertEquals(true, result.isParallelProjection());
 	}
-	/**
+	*//**
 	 * Test constructor specifying the width as 75 and height as 100
-	 */
+	 *//*
 	@Test
 	public void testCameraIntInt_size_1() {
 		int width = 75;
@@ -137,9 +137,9 @@ public class CameraTest2 {
 		assertEquals(true, result.isParallelProjection());
 	
 	}
-	/**
+	*//**
 	 * Test constructor specifying the width as 100 and height as 75
-	 */
+	 *//*
 	@Test
 	public void testCameraIntInt_size_2() {
 		int width = 100;
@@ -168,10 +168,10 @@ public class CameraTest2 {
 		assertEquals(true, result.isParallelProjection());
 	
 	}
-	/**
+	*//**
 	 * Test constructor with size and width which has negative value. This should not work
 	 * and this should not be allowed!
-	 */
+	 *//*
 	@Test
 	public void testCameraIntInt_size_3() {
 		int width = -100;
@@ -214,7 +214,7 @@ public class CameraTest2 {
 		
 	}
 	
-	/*
+	
 	@Test
 	public void testCopyFrom() {
 		fail("Not yet implemented");
@@ -584,5 +584,6 @@ public class CameraTest2 {
 	public void testRead() {
 		fail("Not yet implemented");
 	}
-*/
+
 }
+*/
