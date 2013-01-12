@@ -34,6 +34,7 @@ package jme3tools.optimize;
 
 import com.jme3.bounding.BoundingBox;
 import com.jme3.renderer.Camera;
+import com.jme3.renderer.Frustum;
 import com.jme3.scene.Geometry;
 import java.util.Set;
 
@@ -109,8 +110,8 @@ public class FastOctnode {
         
         tempBox.setCheckPlane(0);
         cam.setPlaneState(0);
-        Camera.FrustumIntersect result = cam.contains(tempBox);
-        if (result != Camera.FrustumIntersect.Outside){
+        Frustum.FrustumIntersect result = cam.contains(tempBox);
+        if (result != Frustum.FrustumIntersect.Outside){
             if (length != 0){
                 int start = getOffset();
                 int end   = start + length;
@@ -130,7 +131,7 @@ public class FastOctnode {
             float ext = tempBox.getXExtent();
 
             while (node != null){
-                if (result == Camera.FrustumIntersect.Inside){
+                if (result == Frustum.FrustumIntersect.Inside){
                     node.generateRenderSetNoCheck(globalGeomList, renderSet, cam);
                 }else{
                     node.generateRenderSet(globalGeomList, renderSet, cam, tempBox, false);

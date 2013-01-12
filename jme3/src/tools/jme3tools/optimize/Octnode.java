@@ -41,6 +41,7 @@ import com.jme3.math.Ray;
 import com.jme3.math.Triangle;
 import com.jme3.math.Vector3f;
 import com.jme3.renderer.Camera;
+import com.jme3.renderer.Frustum;
 import com.jme3.renderer.queue.RenderQueue;
 import com.jme3.renderer.queue.RenderQueue.Bucket;
 import com.jme3.scene.Geometry;
@@ -225,14 +226,14 @@ public class Octnode {
 
         bbox.setCheckPlane(0);
         cam.setPlaneState(0);
-        Camera.FrustumIntersect result = cam.contains(bbox);
-        if (result != Camera.FrustumIntersect.Outside){
+        Frustum.FrustumIntersect result = cam.contains(bbox);
+        if (result != Frustum.FrustumIntersect.Outside){
             if (geoms != null){
                 renderSet.addAll(Arrays.asList(geoms));
             }
             for (int i = 0; i < 8; i++){
                 if (children[i] != null){
-                    if (result == Camera.FrustumIntersect.Inside){
+                    if (result == Frustum.FrustumIntersect.Inside){
                         children[i].generateRenderSetNoCheck(renderSet, cam);
                     }else{
                         children[i].generateRenderSet(renderSet, cam);
