@@ -42,7 +42,7 @@ import com.jme3.math.ColorRGBA;
 import com.jme3.math.FastMath;
 import com.jme3.math.Quaternion;
 import com.jme3.math.Vector3f;
-import com.jme3.renderer.Camera;
+import com.jme3.renderer.CameraView;
 import com.jme3.scene.CameraNode;
 import com.jme3.scene.LightNode;
 import com.jme3.scene.Spatial;
@@ -81,7 +81,7 @@ public class SceneLoader extends DefaultHandler implements AssetLoader {
     private com.jme3.scene.Node node;
     private com.jme3.scene.Node entityNode;
     private Light light;
-    private Camera camera;
+    private CameraView camera;
     private CameraNode cameraNode;
     private int nodeIdx = 0;
     private static volatile int sceneIdx = 0;
@@ -246,16 +246,16 @@ public class SceneLoader extends DefaultHandler implements AssetLoader {
     
     private void parseCameraClipping(Attributes attribs) throws SAXException {
         if (attribs.getValue("near") != null) {
-            camera.setFrustumNear(SAXUtil.parseFloat(attribs.getValue("near")));
-            camera.setFrustumFar(SAXUtil.parseFloat(attribs.getValue("far")));
+            camera.updateFrustumNear(SAXUtil.parseFloat(attribs.getValue("near")));
+            camera.updateFrustumFar(SAXUtil.parseFloat(attribs.getValue("far")));
         } else {
-            camera.setFrustumNear(SAXUtil.parseFloat(attribs.getValue("nearPlaneDist")));
-            camera.setFrustumFar(SAXUtil.parseFloat(attribs.getValue("farPlaneDist")));
+            camera.updateFrustumNear(SAXUtil.parseFloat(attribs.getValue("nearPlaneDist")));
+            camera.updateFrustumFar(SAXUtil.parseFloat(attribs.getValue("farPlaneDist")));
         }
     }
     
     private void parseCamera(Attributes attribs) throws SAXException {
-        camera = new Camera(DEFAULT_CAM_WIDTH, DEFAULT_CAM_HEIGHT);
+        camera = new CameraView(DEFAULT_CAM_WIDTH, DEFAULT_CAM_HEIGHT);
         if (SAXUtil.parseString(attribs.getValue("projectionType"), "perspective").equals("parallel")){
             camera.setParallelProjection(true);
         }
@@ -264,7 +264,7 @@ public class SceneLoader extends DefaultHandler implements AssetLoader {
             // XXX: Most likely, it is in radians..
             fov = fov * FastMath.RAD_TO_DEG;
         }
-        camera.setFrustumPerspective(fov, (float)DEFAULT_CAM_WIDTH / DEFAULT_CAM_HEIGHT, 1, 1000);
+        camera.updateFrustumPerspective(fov, (float)DEFAULT_CAM_WIDTH / DEFAULT_CAM_HEIGHT, 1, 1000);
         
         cameraNode = new CameraNode(attribs.getValue("name"), camera);
         cameraNode.setControlDir(ControlDirection.SpatialToCamera);

@@ -39,7 +39,7 @@ import com.jme3.export.OutputCapsule;
 import com.jme3.material.Material;
 import com.jme3.math.Vector3f;
 import com.jme3.post.Filter;
-import com.jme3.renderer.Camera;
+import com.jme3.renderer.CameraView;
 import com.jme3.renderer.RenderManager;
 import com.jme3.renderer.ViewPort;
 import com.jme3.renderer.queue.RenderQueue;
@@ -103,7 +103,7 @@ public class LightScatteringFilter extends Filter {
         //  screenLightPos.x = screenLightPos.x / viewPort.getCamera().getWidth();
         //  screenLightPos.y = screenLightPos.y / viewPort.getCamera().getHeight();
 
-        viewPort.getCamera().getViewMatrix().mult(lightPosition, viewLightPos);
+        viewPort.getCamera().getCamera().getViewMatrix().mult(lightPosition, viewLightPos);
         //System.err.println("viewLightPos "+viewLightPos);
         display = screenLightPos.x < 1.6f && screenLightPos.x > -0.6f && screenLightPos.y < 1.6f && screenLightPos.y > -0.6f && viewLightPos.z < 0;
 //System.err.println("camdir "+viewPort.getCamera().getDirection());
@@ -116,13 +116,13 @@ public class LightScatteringFilter extends Filter {
         }
     }
 
-    private Vector3f getClipCoordinates(Vector3f worldPosition, Vector3f store, Camera cam) {
+    private Vector3f getClipCoordinates(Vector3f worldPosition, Vector3f store, CameraView cam) {
 
-        float w = cam.getViewProjectionMatrix().multProj(worldPosition, store);
+        float w = cam.getCamera().getViewProjectionMatrix().multProj(worldPosition, store);
         store.divideLocal(w);
 
-        store.x = ((store.x + 1f) * (cam.getViewPortRight() - cam.getViewPortLeft()) / 2f + cam.getViewPortLeft());
-        store.y = ((store.y + 1f) * (cam.getViewPortTop() - cam.getViewPortBottom()) / 2f + cam.getViewPortBottom());
+        store.x = ((store.x + 1f) * (cam.getFrustum().getViewPortRight() - cam.getFrustum().getViewPortLeft()) / 2f + cam.getFrustum().getViewPortLeft());
+        store.y = ((store.y + 1f) * (cam.getFrustum().getViewPortTop() - cam.getFrustum().getViewPortBottom()) / 2f + cam.getFrustum().getViewPortBottom());
         store.z = (store.z + 1f) / 2f;
 
         return store;

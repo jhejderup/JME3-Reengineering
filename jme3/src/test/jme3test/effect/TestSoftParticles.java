@@ -65,8 +65,8 @@ public class TestSoftParticles extends SimpleApplication {
     @Override
     public void simpleInitApp() {
 
-        cam.setLocation(new Vector3f(-7.2221026f, 4.1183004f, 7.759811f));
-        cam.setRotation(new Quaternion(0.06152846f, 0.91236454f, -0.1492115f, 0.37621948f));
+        cam.updateLocation(new Vector3f(-7.2221026f, 4.1183004f, 7.759811f));
+        cam.updateRotation(new Quaternion(0.06152846f, 0.91236454f, -0.1492115f, 0.37621948f));
 
         flyCam.setMoveSpeed(10);
 

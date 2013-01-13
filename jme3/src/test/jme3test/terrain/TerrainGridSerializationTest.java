@@ -58,7 +58,7 @@ public class TerrainGridSerializationTest extends SimpleApplication {
         final BulletAppState bulletAppState = new BulletAppState();
         stateManager.attach(bulletAppState);
 
-        this.getCamera().setLocation(new Vector3f(0, 256, 0));
+        this.getCamera().updateLocation(new Vector3f(0, 256, 0));
 
         this.viewPort.setBackgroundColor(new ColorRGBA(0.7f, 0.8f, 1f, 1f));
 
@@ -69,7 +69,7 @@ public class TerrainGridSerializationTest extends SimpleApplication {
             player3.setFallSpeed(10);
             player3.setGravity(10);
 
-            player3.setPhysicsLocation(new Vector3f(cam.getLocation().x, 256, cam.getLocation().z));
+            player3.setPhysicsLocation(new Vector3f(cam.getCamera().getLocation().x, 256, cam.getCamera().getLocation().z));
 
             bulletAppState.getPhysicsSpace().add(player3);
 
@@ -154,8 +154,8 @@ public class TerrainGridSerializationTest extends SimpleApplication {
 
     @Override
     public void simpleUpdate(final float tpf) {
-        Vector3f camDir = this.cam.getDirection().clone().multLocal(0.6f);
-        Vector3f camLeft = this.cam.getLeft().clone().multLocal(0.4f);
+        Vector3f camDir = this.cam.getCamera().getDirection().clone().multLocal(0.6f);
+        Vector3f camLeft = this.cam.getCamera().getLeft().clone().multLocal(0.4f);
         this.walkDirection.set(0, 0, 0);
         if (this.left) {
             this.walkDirection.addLocal(camLeft);
@@ -172,7 +172,7 @@ public class TerrainGridSerializationTest extends SimpleApplication {
 
         if (usePhysics) {
             this.player3.setWalkDirection(this.walkDirection);
-            this.cam.setLocation(this.player3.getPhysicsLocation());
+            this.cam.updateLocation(this.player3.getPhysicsLocation());
         }
     }
 }

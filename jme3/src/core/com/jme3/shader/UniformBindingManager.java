@@ -33,7 +33,7 @@ package com.jme3.shader;
 
 import com.jme3.material.Material;
 import com.jme3.math.*;
-import com.jme3.renderer.Camera;
+import com.jme3.renderer.CameraView;
 import com.jme3.renderer.RenderManager;
 import com.jme3.system.Timer;
 import java.util.List;
@@ -231,18 +231,18 @@ public class UniformBindingManager {
         this.timer = timer;
     }
 
-    public void setCamera(Camera cam, Matrix4f viewMatrix, Matrix4f projMatrix, Matrix4f viewProjMatrix) {
+    public void setCamera(CameraView cam, Matrix4f viewMatrix, Matrix4f projMatrix, Matrix4f viewProjMatrix) {
         this.viewMatrix.set(viewMatrix);
         this.projMatrix.set(projMatrix);
         this.viewProjMatrix.set(viewProjMatrix);
 
-        camLoc.set(cam.getLocation());
-        cam.getLeft(camLeft);
-        cam.getUp(camUp);
-        cam.getDirection(camDir);
+        camLoc.set(cam.getCamera().getLocation());
+        cam.getCamera().getLeft(camLeft);
+        cam.getCamera().getUp(camUp);
+        cam.getCamera().getDirection(camDir);
 
-        near = cam.getFrustumNear();
-        far = cam.getFrustumFar();
+        near = cam.getFrustum().getFrustumNear();
+        far = cam.getFrustum().getFrustumFar();
     }
 
     public void setViewPort(int viewX, int viewY, int viewWidth, int viewHeight) {

@@ -37,7 +37,7 @@ import com.jme3.math.ColorRGBA;
 import com.jme3.math.Matrix4f;
 import com.jme3.math.Vector3f;
 import com.jme3.post.SceneProcessor;
-import com.jme3.renderer.Camera;
+import com.jme3.renderer.CameraView;
 import com.jme3.renderer.Caps;
 import com.jme3.renderer.RenderManager;
 import com.jme3.renderer.Renderer;
@@ -294,7 +294,7 @@ public abstract class AbstractShadowRenderer implements SceneProcessor {
      * it is responsible for updating the shadow cams according to the light view.
      * @param viewCam the scene cam
      */
-    protected abstract void updateShadowCams(Camera viewCam);
+    protected abstract void updateShadowCams(CameraView viewCam);
 
     /**
      * this method must return the geomtryList that contains the oclluders to be rendered in the shadow map
@@ -310,7 +310,7 @@ public abstract class AbstractShadowRenderer implements SceneProcessor {
      * @param shadowMapIndex the index of the shadow map being rendered
      * @return the shadowCam
      */
-    protected abstract Camera getShadowCam(int shadowMapIndex);
+    protected abstract CameraView getShadowCam(int shadowMapIndex);
 
     /**
      * responsible for displaying the frustum of the shadow cam for debug purpose
@@ -356,10 +356,10 @@ public abstract class AbstractShadowRenderer implements SceneProcessor {
 
     protected void renderShadowMap(int shadowMapIndex, GeometryList occluders, GeometryList receivers) {
         shadowMapOccluders = getOccludersToRender(shadowMapIndex, occluders, receivers,shadowMapOccluders);
-        Camera shadowCam = getShadowCam(shadowMapIndex);
+        CameraView shadowCam = getShadowCam(shadowMapIndex);
 
         //saving light view projection matrix for this split            
-        lightViewProjectionsMatrices[shadowMapIndex].set(shadowCam.getViewProjectionMatrix());
+        lightViewProjectionsMatrices[shadowMapIndex].set(shadowCam.getCamera().getViewProjectionMatrix());
         renderManager.setCamera(shadowCam, false);
 
         renderManager.getRenderer().setFrameBuffer(shadowFB[shadowMapIndex]);
@@ -376,7 +376,7 @@ public abstract class AbstractShadowRenderer implements SceneProcessor {
 
     //debug only : displays depth shadow maps
     protected void displayShadowMap(Renderer r) {
-        Camera cam = viewPort.getCamera();
+        CameraView cam = viewPort.getCamera();
         renderManager.setCamera(cam, true);
         int h = cam.getHeight();
         for (int i = 0; i < dispPic.length; i++) {
@@ -411,7 +411,7 @@ public abstract class AbstractShadowRenderer implements SceneProcessor {
             //setting params to recieving geometry list
             setMatParams();
 
-            Camera cam = viewPort.getCamera();
+            CameraView cam = viewPort.getCamera();
             //some materials in the scene does not have a post shadow technique so we're using the fall back material
             if (needsfallBackMaterial) {
                 renderManager.setForcedMaterial(postshadowMat);

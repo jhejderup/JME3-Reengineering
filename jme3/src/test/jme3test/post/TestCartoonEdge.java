@@ -112,11 +112,11 @@ public class TestCartoonEdge extends SimpleApplication {
     public void simpleInitApp() {
         viewPort.setBackgroundColor(ColorRGBA.Gray);
 
-        cam.setLocation(new Vector3f(-5.6310086f, 5.0892987f, -13.000479f));
-        cam.setRotation(new Quaternion(0.1779095f, 0.20036356f, -0.03702727f, 0.96272093f));
+        cam.updateLocation(new Vector3f(-5.6310086f, 5.0892987f, -13.000479f));
+        cam.updateRotation(new Quaternion(0.1779095f, 0.20036356f, -0.03702727f, 0.96272093f));
         cam.update();
 
-        cam.setFrustumFar(300);
+        cam.updateFrustumFar(300);
         flyCam.setMoveSpeed(30);
 
         rootNode.setCullHint(CullHint.Never);

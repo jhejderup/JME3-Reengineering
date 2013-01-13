@@ -151,7 +151,7 @@ public class TerrainTestModifyHeight extends SimpleApplication {
         ambLight.setColor(new ColorRGBA(1f, 1f, 0.8f, 0.2f));
         rootNode.addLight(ambLight);
 
-        cam.setLocation(new Vector3f(0, 256, 0));
+        cam.updateLocation(new Vector3f(0, 256, 0));
         cam.lookAtDirection(new Vector3f(0, -1f, 0).normalizeLocal(), Vector3f.UNIT_X);
     }
     
@@ -163,9 +163,9 @@ public class TerrainTestModifyHeight extends SimpleApplication {
     }
 
     public void updateHintText(Vector3f target) {
-        int x = (int) getCamera().getLocation().x;
-        int y = (int) getCamera().getLocation().y;
-        int z = (int) getCamera().getLocation().z;
+        int x = (int) getCamera().getCamera().getLocation().x;
+        int y = (int) getCamera().getCamera().getLocation().y;
+        int z = (int) getCamera().getCamera().getLocation().z;
         String targetText = "";
         if (target!= null)
             targetText = "  intersect: "+target.toString();

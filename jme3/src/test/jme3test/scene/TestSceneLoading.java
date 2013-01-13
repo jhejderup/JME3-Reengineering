@@ -59,7 +59,7 @@ public class TestSceneLoading extends SimpleApplication {
 
     @Override
     public void simpleUpdate(float tpf){
-        sphere.setLocalTranslation(cam.getLocation());
+        sphere.setLocalTranslation(cam.getCamera().getLocation());
     }
 
     public void simpleInitApp() {

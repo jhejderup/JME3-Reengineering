@@ -818,7 +818,7 @@ public class Material implements CloneableSmartAsset, Cloneable, Savable {
                     //one vec4 less and a vec4 that becomes a vec3
                     //the downside is that spotAngleCos decoding happen now in the frag shader.
                     tmpVec.set(dir2.getX(), dir2.getY(), dir2.getZ(), 0);
-                    rm.getCurrentCamera().getViewMatrix().mult(tmpVec, tmpVec);
+                    rm.getCurrentCamera().getCamera().getViewMatrix().mult(tmpVec, tmpVec);
                     tmpLightDirection.set(tmpVec.getX(), tmpVec.getY(), tmpVec.getZ(), spotAngleCos);
 
                     lightDir.setValue(VarType.Vector4, tmpLightDirection);

@@ -33,7 +33,7 @@
 package jme3tools.optimize;
 
 import com.jme3.bounding.BoundingBox;
-import com.jme3.renderer.Camera;
+import com.jme3.renderer.CameraView;
 import com.jme3.renderer.Frustum;
 import com.jme3.scene.Geometry;
 import java.util.Set;
@@ -69,7 +69,7 @@ public class FastOctnode {
         return this.offset & 0x1FFFFFFF;
     }
 
-    private void generateRenderSetNoCheck(Geometry[] globalGeomList, Set<Geometry> renderSet, Camera cam){
+    private void generateRenderSetNoCheck(Geometry[] globalGeomList, Set<Geometry> renderSet, CameraView cam){
         if (length != 0){
             int start = getOffset();
             int end   = start + length;
@@ -98,7 +98,7 @@ public class FastOctnode {
         bbox.setZExtent(extent);
     }
 
-    public void generateRenderSet(Geometry[] globalGeomList, Set<Geometry> renderSet, Camera cam, BoundingBox parentBox, boolean isRoot){
+    public void generateRenderSet(Geometry[] globalGeomList, Set<Geometry> renderSet, CameraView cam, BoundingBox parentBox, boolean isRoot){
         tempBox.setCenter(parentBox.getCenter());
         tempBox.setXExtent(parentBox.getXExtent());
         tempBox.setYExtent(parentBox.getYExtent());
@@ -109,8 +109,8 @@ public class FastOctnode {
         }
         
         tempBox.setCheckPlane(0);
-        cam.setPlaneState(0);
-        Frustum.FrustumIntersect result = cam.contains(tempBox);
+        cam.getFrustum().setPlaneState(0);
+        Frustum.FrustumIntersect result = cam.getFrustum().contains(tempBox);
         if (result != Frustum.FrustumIntersect.Outside){
             if (length != 0){
                 int start = getOffset();

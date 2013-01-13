@@ -33,7 +33,7 @@ package com.jme3.scene;
 
 import com.jme3.export.JmeExporter;
 import com.jme3.export.JmeImporter;
-import com.jme3.renderer.Camera;
+import com.jme3.renderer.CameraView;
 import com.jme3.scene.control.CameraControl;
 import com.jme3.scene.control.CameraControl.ControlDirection;
 import java.io.IOException;
@@ -54,7 +54,7 @@ public class CameraNode extends Node {
     public CameraNode() {
     }
 
-    public CameraNode(String name, Camera camera) {
+    public CameraNode(String name, CameraView camera) {
         this(name, new CameraControl(camera));
     }
 
@@ -76,7 +76,7 @@ public class CameraNode extends Node {
         camControl.setControlDir(controlDir);
     }
 
-    public void setCamera(Camera camera) {
+    public void setCamera(CameraView camera) {
         camControl.setCamera(camera);
     }
 
@@ -84,7 +84,7 @@ public class CameraNode extends Node {
         return camControl.getControlDir();
     }
 
-    public Camera getCamera() {
+    public CameraView getCamera() {
         return camControl.getCamera();
     }
 

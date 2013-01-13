@@ -33,7 +33,7 @@ package com.jme3.water;
 
 import com.jme3.math.Plane;
 import com.jme3.post.SceneProcessor;
-import com.jme3.renderer.Camera;
+import com.jme3.renderer.CameraView;
 import com.jme3.renderer.RenderManager;
 import com.jme3.renderer.ViewPort;
 import com.jme3.renderer.queue.RenderQueue;
@@ -47,7 +47,7 @@ public class ReflectionProcessor implements SceneProcessor {
 
     private RenderManager rm;
     private ViewPort vp;
-    private Camera reflectionCam;
+    private CameraView reflectionCam;
     private FrameBuffer reflectionBuffer;
     private Plane reflectionClipPlane;
 
@@ -57,7 +57,7 @@ public class ReflectionProcessor implements SceneProcessor {
      * @param reflectionBuffer the FrameBuffer to render to
      * @param reflectionClipPlane the clipping plane
      */
-    public ReflectionProcessor(Camera reflectionCam, FrameBuffer reflectionBuffer, Plane reflectionClipPlane) {
+    public ReflectionProcessor(CameraView reflectionCam, FrameBuffer reflectionBuffer, Plane reflectionClipPlane) {
         this.reflectionCam = reflectionCam;
         this.reflectionBuffer = reflectionBuffer;
         this.reflectionClipPlane = reflectionClipPlane;
@@ -81,7 +81,7 @@ public class ReflectionProcessor implements SceneProcessor {
     public void postQueue(RenderQueue rq) {
         //we need special treatement for the sky because it must not be clipped
         rm.getRenderer().setFrameBuffer(reflectionBuffer);
-        reflectionCam.setProjectionMatrix(null);
+        reflectionCam.getCamera().setProjectionMatrix(null);
         rm.setCamera(reflectionCam, false);
         rm.getRenderer().clearBuffers(true, true, true);
         //Rendering the sky whithout clipping
@@ -122,7 +122,7 @@ public class ReflectionProcessor implements SceneProcessor {
      * returns the reflection cam
      * @return 
      */
-    public Camera getReflectionCam() {
+    public CameraView getReflectionCam() {
         return reflectionCam;
     }
 
@@ -130,7 +130,7 @@ public class ReflectionProcessor implements SceneProcessor {
      * sets the reflection cam
      * @param reflectionCam 
      */
-    public void setReflectionCam(Camera reflectionCam) {
+    public void setReflectionCam(CameraView reflectionCam) {
         this.reflectionCam = reflectionCam;
     }
 

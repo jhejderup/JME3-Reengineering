@@ -37,7 +37,7 @@ import com.jme3.math.Matrix4f;
 import com.jme3.math.Transform;
 import com.jme3.math.Vector2f;
 import com.jme3.math.Vector3f;
-import com.jme3.renderer.Camera;
+import com.jme3.renderer.CameraView;
 import com.jme3.renderer.Frustum;
 import com.jme3.renderer.queue.GeometryList;
 import com.jme3.scene.Geometry;
@@ -65,7 +65,7 @@ public class ShadowUtil {
      * @param viewCam
      * @param points
      */
-    public static void updateFrustumPoints2(Camera viewCam, Vector3f[] points) {
+    public static void updateFrustumPoints2(CameraView viewCam, Vector3f[] points) {
         int w = viewCam.getWidth();
         int h = viewCam.getHeight();
         
@@ -91,21 +91,21 @@ public class ShadowUtil {
      * @param nearOverride
      * @param farOverride
      */
-    public static void updateFrustumPoints(Camera viewCam,
+    public static void updateFrustumPoints(CameraView viewCam,
             float nearOverride,
             float farOverride,
             float scale,
             Vector3f[] points) {
         
-        Vector3f pos = viewCam.getLocation();
-        Vector3f dir = viewCam.getDirection();
-        Vector3f up = viewCam.getUp();
+        Vector3f pos = viewCam.getCamera().getLocation();
+        Vector3f dir = viewCam.getCamera().getDirection();
+        Vector3f up = viewCam.getCamera().getUp();
         
-        float depthHeightRatio = viewCam.getFrustumTop() / viewCam.getFrustumNear();
+        float depthHeightRatio = viewCam.getFrustum().getFrustumTop() / viewCam.getFrustum().getFrustumNear();
         float near = nearOverride;
         float far = farOverride;
-        float ftop = viewCam.getFrustumTop();
-        float fright = viewCam.getFrustumRight();
+        float ftop = viewCam.getFrustum().getFrustumTop();
+        float fright = viewCam.getFrustum().getFrustumRight();
         float ratio = fright / ftop;
         
         float near_height;
@@ -278,18 +278,18 @@ public class ShadowUtil {
      * @param shadowCam
      * @param points
      */
-    public static void updateShadowCamera(Camera shadowCam, Vector3f[] points) {
+    public static void updateShadowCamera(CameraView shadowCam, Vector3f[] points) {
         boolean ortho = shadowCam.isParallelProjection();
-        shadowCam.setProjectionMatrix(null);
+        shadowCam.getCamera().setProjectionMatrix(null);
         
         if (ortho) {
-            shadowCam.setFrustum(-1, 1, -1, 1, 1, -1);
+            shadowCam.updateFrustum(-1, 1, -1, 1, 1, -1);
         } else {
-            shadowCam.setFrustumPerspective(45, 1, 1, 150);
+            shadowCam.updateFrustumPerspective(45, 1, 1, 150);
         }
         
-        Matrix4f viewProjMatrix = shadowCam.getViewProjectionMatrix();
-        Matrix4f projMatrix = shadowCam.getProjectionMatrix();
+        Matrix4f viewProjMatrix = shadowCam.getCamera().getViewProjectionMatrix();
+        Matrix4f projMatrix = shadowCam.getCamera().getProjectionMatrix();
         
         BoundingBox splitBB = computeBoundForPoints(points, viewProjMatrix);
         
@@ -323,7 +323,7 @@ public class ShadowUtil {
         result.multLocal(projMatrix);
         
         vars.release();
-        shadowCam.setProjectionMatrix(result);
+        shadowCam.getCamera().setProjectionMatrix(result);
     }
 
     /**
@@ -337,7 +337,7 @@ public class ShadowUtil {
      */
     public static void updateShadowCamera(GeometryList occluders,
             GeometryList receivers,
-            Camera shadowCam,
+            CameraView shadowCam,
             Vector3f[] points) {
         updateShadowCamera(occluders, receivers, shadowCam, points, null);
     }
@@ -352,20 +352,20 @@ public class ShadowUtil {
      */
     public static void updateShadowCamera(GeometryList occluders,
             GeometryList receivers,
-            Camera shadowCam,
+            CameraView shadowCam,
             Vector3f[] points,
             GeometryList splitOccluders) {
         
         boolean ortho = shadowCam.isParallelProjection();
         
-        shadowCam.setProjectionMatrix(null);
+        shadowCam.getCamera().setProjectionMatrix(null);
         
         if (ortho) {
-            shadowCam.setFrustum(-1, 1, -1, 1, 1, -1);
+            shadowCam.updateFrustum(-1, 1, -1, 1, 1, -1);
         }
 
         // create transform to rotate points to viewspace        
-        Matrix4f viewProjMatrix = shadowCam.getViewProjectionMatrix();
+        Matrix4f viewProjMatrix = shadowCam.getCamera().getViewProjectionMatrix();
         
         BoundingBox splitBB = computeBoundForPoints(points, viewProjMatrix);
         
@@ -442,10 +442,10 @@ public class ShadowUtil {
         splitMin.z = 0;
 
 //        if (!ortho) {
-//            shadowCam.setFrustumPerspective(45, 1, 1, splitMax.z);
+//            shadowCam.updateFrustumPerspective(45, 1, 1, splitMax.z);
 //        }
 
-        Matrix4f projMatrix = shadowCam.getProjectionMatrix();
+        Matrix4f projMatrix = shadowCam.getCamera().getProjectionMatrix();
         
         Vector3f cropMin = vars.vect7;
         Vector3f cropMax = vars.vect8;
@@ -489,7 +489,7 @@ public class ShadowUtil {
         result.multLocal(projMatrix);
         vars.release();
         
-        shadowCam.setProjectionMatrix(result);
+        shadowCam.getCamera().setProjectionMatrix(result);
         
     }
 
@@ -504,16 +504,16 @@ public class ShadowUtil {
      * camera frustum
      */
     public static void getGeometriesInCamFrustum(GeometryList inputGeometryList,
-            Camera camera,
+            CameraView camera,
             GeometryList outputGeometryList) {
         for (int i = 0; i < inputGeometryList.size(); i++) {
             Geometry g = inputGeometryList.get(i);
-            int planeState = camera.getPlaneState();
-            camera.setPlaneState(0);
-            if (camera.contains(g.getWorldBound()) != Frustum.FrustumIntersect.Outside) {
+            int planeState = camera.getFrustum().getPlaneState();
+            camera.getFrustum().setPlaneState(0);
+            if (camera.getFrustum().contains(g.getWorldBound()) != Frustum.FrustumIntersect.Outside) {
                 outputGeometryList.add(g);
             }
-            camera.setPlaneState(planeState);
+            camera.getFrustum().setPlaneState(planeState);
         }
         
     }
@@ -530,17 +530,17 @@ public class ShadowUtil {
      * camera frustum
      */
     public static void getGeometriesInLightRadius(GeometryList inputGeometryList,
-            Camera[] cameras,
+            CameraView[] cameras,
             GeometryList outputGeometryList) {
         for (int i = 0; i < inputGeometryList.size(); i++) {
             Geometry g = inputGeometryList.get(i);
             boolean inFrustum = false;
             for (int j = 0; j < cameras.length && inFrustum == false; j++) {
-                Camera camera = cameras[j];
-                int planeState = camera.getPlaneState();
-                camera.setPlaneState(0);
-                inFrustum = camera.contains(g.getWorldBound()) != Frustum.FrustumIntersect.Outside;
-                camera.setPlaneState(planeState);
+                CameraView camera = cameras[j];
+                int planeState = camera.getFrustum().getPlaneState();
+                camera.getFrustum().setPlaneState(0);
+                inFrustum = camera.getFrustum().contains(g.getWorldBound()) != Frustum.FrustumIntersect.Outside;
+                camera.getFrustum().setPlaneState(planeState);
             }
             if (inFrustum) {
                 outputGeometryList.add(g);

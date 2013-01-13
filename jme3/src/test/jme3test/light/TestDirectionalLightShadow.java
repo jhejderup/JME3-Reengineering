@@ -143,8 +143,8 @@ public class TestDirectionalLightShadow extends SimpleApplication implements Act
     @Override
     public void simpleInitApp() {
         // put the camera in a bad position
-        cam.setLocation(new Vector3f(65.25412f, 44.38738f, 9.087874f));
-        cam.setRotation(new Quaternion(0.078139365f, 0.050241485f, -0.003942559f, 0.9956679f));
+        cam.updateLocation(new Vector3f(65.25412f, 44.38738f, 9.087874f));
+        cam.updateRotation(new Quaternion(0.078139365f, 0.050241485f, -0.003942559f, 0.9956679f));
 
         flyCam.setMoveSpeed(100);
 

@@ -64,7 +64,7 @@ public class FilterPostProcessor implements SceneProcessor, Savable {
     private Texture2D depthTexture;
     private List<Filter> filters = new ArrayList<Filter>();
     private AssetManager assetManager;
-    private Camera filterCam = new Camera(1, 1);
+    private CameraView filterCam = new CameraView(1, 1);
     private Picture fsQuad;
     private boolean computeDepth = false;
     private FrameBuffer outputBuffer;
@@ -136,13 +136,13 @@ public class FilterPostProcessor implements SceneProcessor, Savable {
         viewPort = vp;
         fsQuad = new Picture("filter full screen quad");
 
-        Camera cam = vp.getCamera();
+        CameraView cam = vp.getCamera();
 
         //save view port diensions
-        left = cam.getViewPortLeft();
-        right = cam.getViewPortRight();
-        top = cam.getViewPortTop();
-        bottom = cam.getViewPortBottom();
+        left = cam.getFrustum().getViewPortLeft();
+        right = cam.getFrustum().getViewPortRight();
+        top = cam.getFrustum().getViewPortTop();
+        bottom = cam.getFrustum().getViewPortBottom();
         originalWidth = cam.getWidth();
         originalHeight = cam.getHeight();
         //first call to reshape
@@ -377,14 +377,14 @@ public class FilterPostProcessor implements SceneProcessor, Savable {
 
     public void reshape(ViewPort vp, int w, int h) {
         //this has no effect at first init but is useful when resizing the canvas with multi views
-        Camera cam = vp.getCamera();
+        CameraView cam = vp.getCamera();
         cam.setViewPort(left, right, bottom, top);
         //resizing the camera to fit the new viewport and saving original dimensions
         cam.resize(w, h, false);
-        left = cam.getViewPortLeft();
-        right = cam.getViewPortRight();
-        top = cam.getViewPortTop();
-        bottom = cam.getViewPortBottom();
+        left = cam.getFrustum().getViewPortLeft();
+        right = cam.getFrustum().getViewPortRight();
+        top = cam.getFrustum().getViewPortTop();
+        bottom = cam.getFrustum().getViewPortBottom();
         originalWidth = w;
         originalHeight = h;
         cam.setViewPort(0, 1, 0, 1);

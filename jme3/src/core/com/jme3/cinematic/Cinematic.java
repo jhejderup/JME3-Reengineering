@@ -38,7 +38,7 @@ import com.jme3.app.state.AppStateManager;
 import com.jme3.cinematic.events.AbstractCinematicEvent;
 import com.jme3.cinematic.events.CinematicEvent;
 import com.jme3.export.*;
-import com.jme3.renderer.Camera;
+import com.jme3.renderer.CameraView;
 import com.jme3.renderer.RenderManager;
 import com.jme3.scene.CameraNode;
 import com.jme3.scene.Node;
@@ -331,7 +331,7 @@ public class Cinematic extends AbstractCinematicEvent implements AppState {
         initialDuration = d;
     }
 
-    public CameraNode bindCamera(String cameraName, Camera cam) {
+    public CameraNode bindCamera(String cameraName, CameraView cam) {
         CameraNode node = new CameraNode(cameraName, cam);
         node.setControlDir(ControlDirection.SpatialToCamera);
         node.getControl(CameraControl.class).setEnabled(false);

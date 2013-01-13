@@ -31,7 +31,7 @@
  */
 package com.jme3.renderer.queue;
 
-import com.jme3.renderer.Camera;
+import com.jme3.renderer.CameraView;
 import com.jme3.scene.Geometry;
 import com.jme3.util.SortUtil;
 
@@ -67,11 +67,11 @@ public class GeometryList {
 
     /**
      * Set the camera that will be set on the geometry comparators 
-     * via {@link GeometryComparator#setCamera(com.jme3.renderer.Camera)}.
+     * via {@link GeometryComparator#setCamera(com.jme3.renderer.CameraView)}.
      * 
      * @param cam Camera to use for sorting.
      */
-    public void setCamera(Camera cam){
+    public void setCamera(CameraView cam){
         this.comparator.setCamera(cam);
     }
 

@@ -101,8 +101,8 @@ public class PssmShadowFilter extends Filter {
     @Override
     protected void preFrame(float tpf) {
         pssmRenderer.preFrame(tpf);
-        material.setMatrix4("ViewProjectionMatrixInverse", viewPort.getCamera().getViewProjectionMatrix().invert());
-        Matrix4f m = viewPort.getCamera().getViewProjectionMatrix();
+        material.setMatrix4("ViewProjectionMatrixInverse", viewPort.getCamera().getCamera().getViewProjectionMatrix().invert());
+        Matrix4f m = viewPort.getCamera().getCamera().getViewProjectionMatrix();
         material.setVector4("ViewProjectionMatrixRow2", tmpv.set(m.m20, m.m21, m.m22, m.m23));
 
     }

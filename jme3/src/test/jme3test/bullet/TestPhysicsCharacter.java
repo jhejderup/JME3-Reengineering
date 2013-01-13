@@ -126,8 +126,8 @@ public class TestPhysicsCharacter extends SimpleApplication implements ActionLis
 
    @Override
     public void simpleUpdate(float tpf) {
-        Vector3f camDir = cam.getDirection().mult(0.2f);
-        Vector3f camLeft = cam.getLeft().mult(0.2f);
+        Vector3f camDir = cam.getCamera().getDirection().mult(0.2f);
+        Vector3f camLeft = cam.getCamera().getLeft().mult(0.2f);
         camDir.y = 0;
         camLeft.y = 0;
         viewDirection.set(camDir);

@@ -32,15 +32,15 @@
 package com.jme3.renderer.queue;
 
 import com.jme3.math.Vector3f;
-import com.jme3.renderer.Camera;
+import com.jme3.renderer.CameraView;
 import com.jme3.scene.Geometry;
 
 public class TransparentComparator implements GeometryComparator {
 
-    private Camera cam;
+    private CameraView cam;
     private final Vector3f tempVec = new Vector3f();
 
-    public void setCamera(Camera cam){
+    public void setCamera(CameraView cam){
         this.cam = cam;
     }
 
@@ -59,8 +59,8 @@ public class TransparentComparator implements GeometryComparator {
         if (spat.queueDistance != Float.NEGATIVE_INFINITY)
             return spat.queueDistance;
 
-        Vector3f camPosition = cam.getLocation();
-        Vector3f viewVector = cam.getDirection();
+        Vector3f camPosition = cam.getCamera().getLocation();
+        Vector3f viewVector = cam.getCamera().getDirection();
         Vector3f spatPosition = null;
 
         if (spat.getWorldBound() != null){
@@ -84,7 +84,7 @@ public class TransparentComparator implements GeometryComparator {
     private float distanceToCam(Geometry spat){
         // NOTE: It is best to check the distance
         // to the bound's closest edge vs. the bound's center here.
-        return spat.getWorldBound().distanceToEdge(cam.getLocation());
+        return spat.getWorldBound().distanceToEdge(cam.getCamera().getLocation());
     }
 
     public int compare(Geometry o1, Geometry o2) {

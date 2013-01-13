@@ -31,7 +31,7 @@
  */
 package com.jme3.renderer.queue;
 
-import com.jme3.renderer.Camera;
+import com.jme3.renderer.CameraView;
 import com.jme3.scene.Geometry;
 
 /**
@@ -53,7 +53,7 @@ public class GuiComparator implements GeometryComparator {
             return 0;
     }
 
-    public void setCamera(Camera cam) {
+    public void setCamera(CameraView cam) {
     }
 
 }

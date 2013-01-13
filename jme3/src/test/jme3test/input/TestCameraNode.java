@@ -112,7 +112,7 @@ public class TestCameraNode extends SimpleApplication implements AnalogListener,
 
   public void onAnalog(String name, float value, float tpf) {
     //computing the normalized direction of the cam to move the teaNode
-    direction.set(cam.getDirection()).normalizeLocal();
+    direction.set(cam.getCamera().getDirection()).normalizeLocal();
     if (name.equals("moveForward")) {
       direction.multLocal(5 * tpf);
       teaNode.move(direction);

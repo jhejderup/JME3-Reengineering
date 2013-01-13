@@ -69,7 +69,7 @@ public class TestMotionPath extends SimpleApplication {
     @Override
     public void simpleInitApp() {
         createScene();
-        cam.setLocation(new Vector3f(8.4399185f, 11.189463f, 14.267577f));
+        cam.updateLocation(new Vector3f(8.4399185f, 11.189463f, 14.267577f));
         path = new MotionPath();
         path.addWayPoint(new Vector3f(10, 3, 0));
         path.addWayPoint(new Vector3f(10, 3, 10));

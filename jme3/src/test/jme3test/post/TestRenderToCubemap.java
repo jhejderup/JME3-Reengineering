@@ -38,7 +38,7 @@ import com.jme3.math.ColorRGBA;
 import com.jme3.math.FastMath;
 import com.jme3.math.Quaternion;
 import com.jme3.math.Vector3f;
-import com.jme3.renderer.Camera;
+import com.jme3.renderer.CameraView;
 import com.jme3.renderer.ViewPort;
 import com.jme3.scene.Geometry;
 import com.jme3.scene.shape.Box;
@@ -64,7 +64,7 @@ public class TestRenderToCubemap  extends SimpleApplication {
     }
  
     public Texture setupOffscreenView(){
-        Camera offCamera = new Camera(512, 512);
+        CameraView offCamera = new CameraView(512, 512);
  
         offView = renderManager.createPreView("Offscreen View", offCamera);
         offView.setClearFlags(true, true, true);
@@ -74,8 +74,8 @@ public class TestRenderToCubemap  extends SimpleApplication {
         FrameBuffer offBuffer = new FrameBuffer(512, 512, 1);
  
         //setup framebuffer's cam
-        offCamera.setFrustumPerspective(45f, 1f, 1f, 1000f);
-        offCamera.setLocation(new Vector3f(0f, 0f, -5f));
+        offCamera.updateFrustumPerspective(45f, 1f, 1f, 1000f);
+        offCamera.updateLocation(new Vector3f(0f, 0f, -5f));
         offCamera.lookAt(new Vector3f(0f, 0f, 0f), Vector3f.UNIT_Y);
  
         //setup framebuffer's texture
@@ -110,7 +110,7 @@ public class TestRenderToCubemap  extends SimpleApplication {
  
     @Override
     public void simpleInitApp() {
-        cam.setLocation(new Vector3f(3, 3, 3));
+        cam.updateLocation(new Vector3f(3, 3, 3));
         cam.lookAt(Vector3f.ZERO, Vector3f.UNIT_Y);
  
         Texture offTex = setupOffscreenView();

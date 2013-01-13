@@ -176,7 +176,7 @@ public class TerrainTestCollision extends SimpleApplication {
         dl.setColor(new ColorRGBA(0.50f, 0.40f, 0.50f, 1.0f));
         rootNode.addLight(dl);
 
-        cam.setLocation(new Vector3f(0, 25, -10));
+        cam.updateLocation(new Vector3f(0, 25, -10));
         cam.lookAtDirection(new Vector3f(0, -1, 0).normalizeLocal(), Vector3f.UNIT_Y);
     }
 

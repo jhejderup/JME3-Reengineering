@@ -109,9 +109,9 @@ public class TestBatchNodeTower extends SimpleApplication {
         initTower();
         initFloor();
         initCrossHairs();
-        this.cam.setLocation(new Vector3f(0, 25f, 8f));
+        this.cam.updateLocation(new Vector3f(0, 25f, 8f));
         cam.lookAt(Vector3f.ZERO, new Vector3f(0, 1, 0));
-        cam.setFrustumFar(80);
+        cam.updateFrustumFar(80);
         inputManager.addMapping("shoot", new MouseButtonTrigger(MouseInput.BUTTON_LEFT));
         inputManager.addListener(actionListener, "shoot");
         rootNode.setShadowMode(ShadowMode.Off);
@@ -140,10 +140,10 @@ public class TestBatchNodeTower extends SimpleApplication {
                 Geometry bulletg = new Geometry("bullet", bullet);
                 bulletg.setMaterial(mat2);
                 bulletg.setShadowMode(ShadowMode.CastAndReceive);
-                bulletg.setLocalTranslation(cam.getLocation());
+                bulletg.setLocalTranslation(cam.getCamera().getLocation());
                 RigidBodyControl bulletNode = new BombControl(assetManager, bulletCollisionShape, 1);
 //                RigidBodyControl bulletNode = new RigidBodyControl(bulletCollisionShape, 1);
-                bulletNode.setLinearVelocity(cam.getDirection().mult(25));
+                bulletNode.setLinearVelocity(cam.getCamera().getDirection().mult(25));
                 bulletg.addControl(bulletNode);
                 rootNode.attachChild(bulletg);
                 getPhysicsSpace().add(bulletNode);

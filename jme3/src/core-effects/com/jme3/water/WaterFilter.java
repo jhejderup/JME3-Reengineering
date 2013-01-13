@@ -42,7 +42,7 @@ import com.jme3.material.Material;
 import com.jme3.math.*;
 import com.jme3.post.Filter;
 import com.jme3.post.Filter.Pass;
-import com.jme3.renderer.Camera;
+import com.jme3.renderer.CameraView;
 import com.jme3.renderer.RenderManager;
 import com.jme3.renderer.ViewPort;
 import com.jme3.scene.Node;
@@ -71,7 +71,7 @@ public class WaterFilter extends Filter {
     private Texture2D causticsTexture;
     private Texture2D heightTexture;
     private Plane plane;
-    private Camera reflectionCam;
+    private CameraView reflectionCam;
     protected Ray ray = new Ray();
     private Vector3f targetLocation = new Vector3f();
     private ReflectionProcessor reflectionProcessor;
@@ -147,17 +147,17 @@ public class WaterFilter extends Filter {
     protected void preFrame(float tpf) {
         time = time + (tpf * speed);
         material.setFloat("Time", time);
-        Camera sceneCam = viewPort.getCamera();
-        biasMatrix.mult(sceneCam.getViewProjectionMatrix(), textureProjMatrix);
+        CameraView sceneCam = viewPort.getCamera();
+        biasMatrix.mult(sceneCam.getCamera().getViewProjectionMatrix(), textureProjMatrix);
         material.setMatrix4("TextureProjMatrix", textureProjMatrix);
-        material.setVector3("CameraPosition", sceneCam.getLocation());
-        material.setMatrix4("ViewProjectionMatrixInverse", sceneCam.getViewProjectionMatrix().invert());
+        material.setVector3("CameraPosition", sceneCam.getCamera().getLocation());
+        material.setMatrix4("ViewProjectionMatrixInverse", sceneCam.getCamera().getViewProjectionMatrix().invert());
 
         material.setFloat("WaterHeight", waterHeight);
 
         //update reflection cam
-        ray.setOrigin(sceneCam.getLocation());
-        ray.setDirection(sceneCam.getDirection());
+        ray.setOrigin(sceneCam.getCamera().getLocation());
+        ray.setDirection(sceneCam.getCamera().getDirection());
         plane = new Plane(Vector3f.UNIT_Y, new Vector3f(0, waterHeight, 0).dot(Vector3f.UNIT_Y));
         reflectionProcessor.setReflectionClipPlane(plane);
         boolean inv = false;
@@ -166,19 +166,19 @@ public class WaterFilter extends Filter {
             ray.intersectsWherePlane(plane, targetLocation);
             inv = true;
         }
-        Vector3f loc = plane.reflect(sceneCam.getLocation(), new Vector3f());
-        reflectionCam.setLocation(loc);
-        reflectionCam.setFrustum(sceneCam.getFrustumNear(),
-                sceneCam.getFrustumFar(),
-                sceneCam.getFrustumLeft(),
-                sceneCam.getFrustumRight(),
-                sceneCam.getFrustumTop(),
-                sceneCam.getFrustumBottom());
+        Vector3f loc = plane.reflect(sceneCam.getCamera().getLocation(), new Vector3f());
+        reflectionCam.updateLocation(loc);
+        reflectionCam.updateFrustum(sceneCam.getFrustum().getFrustumNear(),
+                sceneCam.getFrustum().getFrustumFar(),
+                sceneCam.getFrustum().getFrustumLeft(),
+                sceneCam.getFrustum().getFrustumRight(),
+                sceneCam.getFrustum().getFrustumTop(),
+                sceneCam.getFrustum().getFrustumBottom());
         reflectionCam.setParallelProjection(false);
         TempVars vars = TempVars.get();
 
 
-        vars.vect1.set(sceneCam.getLocation()).addLocal(sceneCam.getUp());
+        vars.vect1.set(sceneCam.getCamera().getLocation()).addLocal(sceneCam.getCamera().getUp());
         float planeDistance = plane.pseudoDistance(vars.vect1);
         vars.vect2.set(plane.getNormal()).multLocal(planeDistance * 2.0f);
         vars.vect3.set(vars.vect1.subtractLocal(vars.vect2)).subtractLocal(loc).normalizeLocal().negateLocal();
@@ -187,11 +187,11 @@ public class WaterFilter extends Filter {
         vars.release();
 
         if (inv) {
-            reflectionCam.setAxes(reflectionCam.getLeft().negateLocal(), reflectionCam.getUp(), reflectionCam.getDirection().negateLocal());
+            reflectionCam.updateAxes(reflectionCam.getCamera().getLeft().negateLocal(), reflectionCam.getCamera().getUp(), reflectionCam.getCamera().getDirection().negateLocal());
         }
 
         //if we're under water no need to compute reflection
-        if (sceneCam.getLocation().y >= waterHeight) {
+        if (sceneCam.getCamera().getLocation().y >= waterHeight) {
             boolean rtb = true;
             if (!renderManager.isHandleTranslucentBucket()) {
                 renderManager.setHandleTranslucentBucket(true);
@@ -247,7 +247,7 @@ public class WaterFilter extends Filter {
         this.viewPort = vp;
         reflectionPass = new Pass();
         reflectionPass.init(renderManager.getRenderer(), reflectionMapSize, reflectionMapSize, Format.RGBA8, Format.Depth);
-        reflectionCam = new Camera(reflectionMapSize, reflectionMapSize);
+        reflectionCam = new CameraView(reflectionMapSize, reflectionMapSize);
         reflectionView = new ViewPort("reflectionView", reflectionCam);
         reflectionView.setClearFlags(true, true, true);
         reflectionView.attachScene(reflectionScene);

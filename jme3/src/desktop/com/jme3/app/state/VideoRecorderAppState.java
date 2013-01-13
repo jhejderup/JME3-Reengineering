@@ -33,7 +33,7 @@ package com.jme3.app.state;
 
 import com.jme3.app.Application;
 import com.jme3.post.SceneProcessor;
-import com.jme3.renderer.Camera;
+import com.jme3.renderer.CameraView;
 import com.jme3.renderer.RenderManager;
 import com.jme3.renderer.Renderer;
 import com.jme3.renderer.ViewPort;
@@ -211,7 +211,7 @@ public class VideoRecorderAppState extends AbstractAppState {
 
     private class VideoProcessor implements SceneProcessor {
 
-        private Camera camera;
+        private CameraView camera;
         private int width;
         private int height;
         private RenderManager renderManager;

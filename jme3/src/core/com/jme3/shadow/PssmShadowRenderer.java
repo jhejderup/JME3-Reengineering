@@ -38,7 +38,7 @@ import com.jme3.math.Matrix4f;
 import com.jme3.math.Vector2f;
 import com.jme3.math.Vector3f;
 import com.jme3.post.SceneProcessor;
-import com.jme3.renderer.Camera;
+import com.jme3.renderer.CameraView;
 import com.jme3.renderer.Caps;
 import com.jme3.renderer.RenderManager;
 import com.jme3.renderer.Renderer;
@@ -142,7 +142,7 @@ public class PssmShadowRenderer implements SceneProcessor {
     protected FrameBuffer[] shadowFB;
     protected Texture2D[] shadowMaps;
     protected Texture2D dummyTex;
-    protected Camera shadowCam;
+    protected CameraView shadowCam;
     protected Material preshadowMat;
     protected Material postshadowMat;
     protected GeometryList splitOccluders = new GeometryList(new OpaqueComparator());
@@ -243,7 +243,7 @@ public class PssmShadowRenderer implements SceneProcessor {
         setFilterMode(FilterMode.Bilinear);
         setShadowIntensity(0.7f);
 
-        shadowCam = new Camera(size, size);
+        shadowCam = new CameraView(size, size);
         shadowCam.setParallelProjection(true);
 
         for (int i = 0; i < points.length; i++) {
@@ -395,21 +395,21 @@ public class PssmShadowRenderer implements SceneProcessor {
             return;
         }
 
-        Camera viewCam = viewPort.getCamera();
+        CameraView viewCam = viewPort.getCamera();
 
         float zFar = zFarOverride;
         if (zFar == 0) {
-            zFar = viewCam.getFrustumFar();
+            zFar = viewCam.getFrustum().getFrustumFar();
         }
 
         //We prevent computing the frustum points and splits with zeroed or negative near clip value
-        float frustumNear = Math.max(viewCam.getFrustumNear(), 0.001f);
+        float frustumNear = Math.max(viewCam.getFrustum().getFrustumNear(), 0.001f);
         ShadowUtil.updateFrustumPoints(viewCam, frustumNear, zFar, 1.0f, points);
 
         //shadowCam.setDirection(direction);
-        shadowCam.getRotation().lookAt(direction, shadowCam.getUp());
+        shadowCam.getCamera().getRotation().lookAt(direction, shadowCam.getCamera().getUp());
         shadowCam.update();
-        shadowCam.updateViewProjection();
+        shadowCam.getCamera().updateViewProjection();
 
         PssmShadowUtil.updateFrustumSplits(splitsArray, frustumNear, zFar, lambda);
 
@@ -440,7 +440,7 @@ public class PssmShadowRenderer implements SceneProcessor {
             ShadowUtil.updateShadowCamera(occluders, receivers, shadowCam, points, splitOccluders);
 
             //saving light view projection matrix for this split            
-            lightViewProjectionsMatrices[i].set(shadowCam.getViewProjectionMatrix());
+            lightViewProjectionsMatrices[i].set(shadowCam.getCamera().getViewProjectionMatrix());
             renderManager.setCamera(shadowCam, false);
 
             if (debugfrustums) {
@@ -478,7 +478,7 @@ public class PssmShadowRenderer implements SceneProcessor {
 
     //debug only : displays depth shadow maps
     protected void displayShadowMap(Renderer r) {
-        Camera cam = viewPort.getCamera();
+        CameraView cam = viewPort.getCamera();
         renderManager.setCamera(cam, true);
         int h = cam.getHeight();
         for (int i = 0; i < dispPic.length; i++) {
@@ -508,7 +508,7 @@ public class PssmShadowRenderer implements SceneProcessor {
             //setting params to recieving geometry list
             setMatParams();
 
-            Camera cam = viewPort.getCamera();
+            CameraView cam = viewPort.getCamera();
             //some materials in the scene does not have a post shadow technique so we're using the fall back material
             if (needsfallBackMaterial) {
                 renderManager.setForcedMaterial(postshadowMat);

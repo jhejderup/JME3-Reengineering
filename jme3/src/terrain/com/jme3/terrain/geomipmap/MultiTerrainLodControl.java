@@ -32,7 +32,7 @@
 package com.jme3.terrain.geomipmap;
 
 import com.jme3.math.Vector3f;
-import com.jme3.renderer.Camera;
+import com.jme3.renderer.CameraView;
 import com.jme3.terrain.geomipmap.lodcalc.DistanceLodCalculator;
 import com.jme3.terrain.geomipmap.lodcalc.LodCalculator;
 import java.util.ArrayList;
@@ -53,13 +53,13 @@ public class MultiTerrainLodControl extends TerrainLodControl {
     private List<TerrainQuad> addedTerrains = new ArrayList<TerrainQuad>();
     private List<TerrainQuad> removedTerrains = new ArrayList<TerrainQuad>();
 
-    public MultiTerrainLodControl(List<Camera> cameras) {
+    public MultiTerrainLodControl(List<CameraView> cameras) {
         this.cameras = cameras;
         lodCalculator = new DistanceLodCalculator(65, 2.7f);
     }
 
-    public MultiTerrainLodControl(Camera camera) {
-        List<Camera> cams = new ArrayList<Camera>();
+    public MultiTerrainLodControl(CameraView camera) {
+        List<CameraView> cams = new ArrayList<CameraView>();
         cams.add(camera);
         this.cameras = cams;
         lodCalculator = new DistanceLodCalculator(65, 2.7f);

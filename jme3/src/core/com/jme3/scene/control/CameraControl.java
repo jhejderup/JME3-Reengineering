@@ -37,7 +37,7 @@ import com.jme3.export.JmeImporter;
 import com.jme3.export.OutputCapsule;
 import com.jme3.math.Quaternion;
 import com.jme3.math.Vector3f;
-import com.jme3.renderer.Camera;
+import com.jme3.renderer.CameraView;
 import com.jme3.renderer.RenderManager;
 import com.jme3.renderer.ViewPort;
 import com.jme3.scene.Spatial;
@@ -65,7 +65,7 @@ public class CameraControl extends AbstractControl {
          */
         SpatialToCamera;
     }
-    private Camera camera;
+    private CameraView camera;
     private ControlDirection controlDir = ControlDirection.SpatialToCamera;
 
     /**
@@ -77,23 +77,23 @@ public class CameraControl extends AbstractControl {
     /**
      * @param camera The Camera to be synced.
      */
-    public CameraControl(Camera camera) {
+    public CameraControl(CameraView camera) {
         this.camera = camera;
     }
 
     /**
      * @param camera The Camera to be synced.
      */
-    public CameraControl(Camera camera, ControlDirection controlDir) {
+    public CameraControl(CameraView camera, ControlDirection controlDir) {
         this.camera = camera;
         this.controlDir = controlDir;
     }
 
-    public Camera getCamera() {
+    public CameraView getCamera() {
         return camera;
     }
 
-    public void setCamera(Camera camera) {
+    public void setCamera(CameraView camera) {
         this.camera = camera;
     }
 
@@ -111,19 +111,19 @@ public class CameraControl extends AbstractControl {
         if (spatial != null && camera != null) {
             switch (controlDir) {
                 case SpatialToCamera:
-                    camera.setLocation(spatial.getWorldTranslation());
-                    camera.setRotation(spatial.getWorldRotation());
+                    camera.updateLocation(spatial.getWorldTranslation());
+                    camera.updateRotation(spatial.getWorldRotation());
                     break;
                 case CameraToSpatial:
                     // set the localtransform, so that the worldtransform would be equal to the camera's transform.
                     // Location:
                     TempVars vars = TempVars.get();
 
-                    Vector3f vecDiff = vars.vect1.set(camera.getLocation()).subtractLocal(spatial.getWorldTranslation());
+                    Vector3f vecDiff = vars.vect1.set(camera.getCamera().getLocation()).subtractLocal(spatial.getWorldTranslation());
                     spatial.setLocalTranslation(vecDiff.addLocal(spatial.getLocalTranslation()));
 
                     // Rotation:
-                    Quaternion worldDiff = vars.quat1.set(camera.getRotation()).subtractLocal(spatial.getWorldRotation());
+                    Quaternion worldDiff = vars.quat1.set(camera.getCamera().getRotation()).subtractLocal(spatial.getWorldRotation());
                     spatial.setLocalRotation(worldDiff.addLocal(spatial.getLocalRotation()));
                     vars.release();
                     break;
@@ -151,7 +151,7 @@ public class CameraControl extends AbstractControl {
         super.read(im);
         InputCapsule ic = im.getCapsule(this);
         controlDir = ic.readEnum(CONTROL_DIR_NAME, ControlDirection.class, ControlDirection.SpatialToCamera);
-        camera = (Camera)ic.readSavable(CAMERA_NAME, null);
+        camera = (CameraView)ic.readSavable(CAMERA_NAME, null);
     }
 
     @Override

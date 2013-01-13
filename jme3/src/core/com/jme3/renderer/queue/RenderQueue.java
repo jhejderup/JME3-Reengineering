@@ -32,7 +32,7 @@
 package com.jme3.renderer.queue;
 
 import com.jme3.post.SceneProcessor;
-import com.jme3.renderer.Camera;
+import com.jme3.renderer.CameraView;
 import com.jme3.renderer.RenderManager;
 import com.jme3.scene.Geometry;
 import com.jme3.scene.Spatial;
@@ -292,7 +292,7 @@ public class RenderQueue {
         }
     }
 
-    private void renderGeometryList(GeometryList list, RenderManager rm, Camera cam, boolean clear) {
+    private void renderGeometryList(GeometryList list, RenderManager rm, CameraView cam, boolean clear) {
         list.setCamera(cam); // select camera for sorting
         list.sort();
         for (int i = 0; i < list.size(); i++) {
@@ -306,11 +306,11 @@ public class RenderQueue {
         }
     }
 
-    public void renderShadowQueue(GeometryList list, RenderManager rm, Camera cam, boolean clear) {
+    public void renderShadowQueue(GeometryList list, RenderManager rm, CameraView cam, boolean clear) {
         renderGeometryList(list, rm, cam, clear);
     }
 
-    public void renderShadowQueue(ShadowMode shadBucket, RenderManager rm, Camera cam, boolean clear) {
+    public void renderShadowQueue(ShadowMode shadBucket, RenderManager rm, CameraView cam, boolean clear) {
         switch (shadBucket) {
             case Cast:
                 renderGeometryList(shadowCast, rm, cam, clear);
@@ -340,11 +340,11 @@ public class RenderQueue {
         }
     }
 
-    public void renderQueue(Bucket bucket, RenderManager rm, Camera cam) {
+    public void renderQueue(Bucket bucket, RenderManager rm, CameraView cam) {
         renderQueue(bucket, rm, cam, true);
     }
 
-    public void renderQueue(Bucket bucket, RenderManager rm, Camera cam, boolean clear) {
+    public void renderQueue(Bucket bucket, RenderManager rm, CameraView cam, boolean clear) {
         switch (bucket) {
             case Gui:
                 renderGeometryList(guiList, rm, cam, clear);

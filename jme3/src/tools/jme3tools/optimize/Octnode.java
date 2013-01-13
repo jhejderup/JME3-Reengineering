@@ -40,7 +40,7 @@ import com.jme3.math.Matrix4f;
 import com.jme3.math.Ray;
 import com.jme3.math.Triangle;
 import com.jme3.math.Vector3f;
-import com.jme3.renderer.Camera;
+import com.jme3.renderer.CameraView;
 import com.jme3.renderer.Frustum;
 import com.jme3.renderer.queue.RenderQueue;
 import com.jme3.renderer.queue.RenderQueue.Bucket;
@@ -210,7 +210,7 @@ public class Octnode {
         fastNode.child = prev != null ? prev.fastNode : null;
     }
 
-    private void generateRenderSetNoCheck(Set<Geometry> renderSet, Camera cam){
+    private void generateRenderSetNoCheck(Set<Geometry> renderSet, CameraView cam){
         if (geoms != null){
             renderSet.addAll(Arrays.asList(geoms));
         }
@@ -221,12 +221,12 @@ public class Octnode {
         }
     }
 
-    public void generateRenderSet(Set<Geometry> renderSet, Camera cam){
+    public void generateRenderSet(Set<Geometry> renderSet, CameraView cam){
 //        generateRenderSetNoCheck(renderSet, cam);
 
         bbox.setCheckPlane(0);
-        cam.setPlaneState(0);
-        Frustum.FrustumIntersect result = cam.contains(bbox);
+        cam.getFrustum().setPlaneState(0);
+        Frustum.FrustumIntersect result = cam.getFrustum().contains(bbox);
         if (result != Frustum.FrustumIntersect.Outside){
             if (geoms != null){
                 renderSet.addAll(Arrays.asList(geoms));

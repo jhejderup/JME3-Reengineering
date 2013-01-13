@@ -104,7 +104,7 @@ public class TerrainTestTile extends SimpleApplication {
         ambLight.setColor(new ColorRGBA(1f, 1f, 0.8f, 0.2f));
         rootNode.addLight(ambLight);
 
-        cam.setLocation(new Vector3f(0, 256, 0));
+        cam.updateLocation(new Vector3f(0, 256, 0));
         cam.lookAtDirection(new Vector3f(0, -1, -1).normalizeLocal(), Vector3f.UNIT_Y);
         
         

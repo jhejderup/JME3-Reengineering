@@ -56,8 +56,8 @@ public class TestBlenderObjectAnim extends SimpleApplication {
     @Override
     public void simpleInitApp() {
         flyCam.setMoveSpeed(10f);
-        cam.setLocation(new Vector3f(6.4013605f, 7.488437f, 12.843031f));
-        cam.setRotation(new Quaternion(-0.060740203f, 0.93925786f, -0.2398315f, -0.2378785f));
+        cam.updateLocation(new Vector3f(6.4013605f, 7.488437f, 12.843031f));
+        cam.updateRotation(new Quaternion(-0.060740203f, 0.93925786f, -0.2398315f, -0.2378785f));
 
         DirectionalLight dl = new DirectionalLight();
         dl.setDirection(new Vector3f(-0.1f, -0.7f, -1).normalizeLocal());

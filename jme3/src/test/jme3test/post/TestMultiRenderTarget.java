@@ -68,8 +68,8 @@ public class TestMultiRenderTarget extends SimpleApplication implements ScenePro
         renderManager.setForcedTechnique("GBuf");
 
 //        flyCam.setEnabled(false);
-        cam.setLocation(new Vector3f(4.8037705f, 4.851632f, 10.789033f));
-        cam.setRotation(new Quaternion(-0.05143692f, 0.9483723f, -0.21131563f, -0.230846f));
+        cam.updateLocation(new Vector3f(4.8037705f, 4.851632f, 10.789033f));
+        cam.updateRotation(new Quaternion(-0.05143692f, 0.9483723f, -0.21131563f, -0.230846f));
 
         Node tank = (Node) assetManager.loadModel("Models/HoverTank/Tank2.mesh.xml");
         
@@ -203,7 +203,7 @@ public class TestMultiRenderTarget extends SimpleApplication implements ScenePro
     }
 
     public void preFrame(float tpf) {
-        Matrix4f inverseViewProj = cam.getViewProjectionMatrix().invert();
+        Matrix4f inverseViewProj = cam.getCamera().getViewProjectionMatrix().invert();
         mat.setMatrix4("ViewProjectionMatrixInverse", inverseViewProj);
     }
 

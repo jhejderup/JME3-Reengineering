@@ -32,7 +32,7 @@
 package com.jme3.effect;
 
 import com.jme3.math.Matrix3f;
-import com.jme3.renderer.Camera;
+import com.jme3.renderer.CameraView;
 import com.jme3.scene.VertexBuffer;
 import com.jme3.scene.VertexBuffer.Format;
 import com.jme3.scene.VertexBuffer.Usage;
@@ -113,7 +113,7 @@ public class ParticlePointMesh extends ParticleMesh {
     }
 
     @Override
-    public void updateParticleData(Particle[] particles, Camera cam, Matrix3f inverseRotation) {
+    public void updateParticleData(Particle[] particles, CameraView cam, Matrix3f inverseRotation) {
         VertexBuffer pvb = getBuffer(VertexBuffer.Type.Position);
         FloatBuffer positions = (FloatBuffer) pvb.getData();
 

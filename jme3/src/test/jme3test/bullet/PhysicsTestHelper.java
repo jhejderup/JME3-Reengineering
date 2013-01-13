@@ -216,10 +216,10 @@ public class PhysicsTestHelper {
                     Geometry bulletg = new Geometry("bullet", bullet);
                     bulletg.setMaterial(mat2);
                     bulletg.setShadowMode(ShadowMode.CastAndReceive);
-                    bulletg.setLocalTranslation(app.getCamera().getLocation());
+                    bulletg.setLocalTranslation(app.getCamera().getCamera().getLocation());
                     RigidBodyControl bulletControl = new RigidBodyControl(1);
                     bulletg.addControl(bulletControl);
-                    bulletControl.setLinearVelocity(app.getCamera().getDirection().mult(25));
+                    bulletControl.setLinearVelocity(app.getCamera().getCamera().getDirection().mult(25));
                     bulletg.addControl(bulletControl);
                     rootNode.attachChild(bulletg);
                     space.add(bulletControl);

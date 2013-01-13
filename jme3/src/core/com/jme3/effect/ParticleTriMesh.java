@@ -34,7 +34,7 @@ package com.jme3.effect;
 import com.jme3.math.FastMath;
 import com.jme3.math.Matrix3f;
 import com.jme3.math.Vector3f;
-import com.jme3.renderer.Camera;
+import com.jme3.renderer.CameraView;
 import com.jme3.scene.VertexBuffer;
 import com.jme3.scene.VertexBuffer.Format;
 import com.jme3.scene.VertexBuffer.Usage;
@@ -145,7 +145,7 @@ public class ParticleTriMesh extends ParticleMesh {
     }
 
     @Override
-    public void updateParticleData(Particle[] particles, Camera cam, Matrix3f inverseRotation) {
+    public void updateParticleData(Particle[] particles, CameraView cam, Matrix3f inverseRotation) {
 //        System.arraycopy(particles, 0, particlesCopy, 0, particlesCopy.length);
 //        comparator.setCamera(cam);
 //        Arrays.sort(particlesCopy, comparator);
@@ -162,9 +162,9 @@ public class ParticleTriMesh extends ParticleMesh {
         VertexBuffer tvb = getBuffer(VertexBuffer.Type.TexCoord);
         FloatBuffer texcoords = (FloatBuffer) tvb.getData();
 
-        Vector3f camUp   = cam.getUp();
-        Vector3f camLeft = cam.getLeft();
-        Vector3f camDir  = cam.getDirection();
+        Vector3f camUp   = cam.getCamera().getUp();
+        Vector3f camLeft = cam.getCamera().getLeft();
+        Vector3f camDir  = cam.getCamera().getDirection();
 
         inverseRotation.multLocal(camUp);
         inverseRotation.multLocal(camLeft);

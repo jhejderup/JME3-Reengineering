@@ -6,6 +6,7 @@ package com.jme3.renderer;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+import com.jme3.bounding.BoundingBox;
 import com.jme3.bounding.BoundingVolume;
 import com.jme3.math.FastMath;
 import com.jme3.math.Plane;
@@ -65,7 +66,17 @@ public class Frustum {
      * MAX_WORLD_PLANES holds the maximum planes allowed by the system.
      */
     private static final int MAX_WORLD_PLANES = 6;
-    /**
+    private BoundingBox guiBounding = new BoundingBox();
+   
+    public BoundingBox getGuiBounding() {
+		return guiBounding;
+	}
+	public void setGuiBounding(BoundingBox guiBounding) {
+		this.guiBounding = guiBounding;
+	}
+
+
+	/**
      * Used in Camera(), copyFrom(Camera), onFrameChange(), onFrustumChange(), read(), write()
      * This is valid for all coeff* arrays
      */
@@ -235,6 +246,70 @@ public class Frustum {
 	           worldPlane[i] = new Plane();
 	      }
 	}
+	
+	@Override
+	protected Object clone() throws CloneNotSupportedException {
+		try
+		{
+		Frustum frustum = (Frustum) super.clone();
+		frustum.setPlaneState(0);
+        frustum.worldPlane = new Plane[6];
+        for (int i = 0; i < this.getWorldPlane().length; i++) {
+          
+         	frustum.worldPlane[i] = this.worldPlane[i].clone();
+            }
+ 
+            //Float[] was changed to float[] !
+            
+            frustum.setCoeffLeft(new float[2]); // = new float[2]; //to keep things in tact
+            frustum.setCoeffRight(new float[2]); //to keep things in tact
+            frustum.setCoeffBottom(new float[2]); // to keep things in tact
+            frustum.setCoeffTop(new float[2]); // to kepp things in tact
+            frustum.setGuiBounding((BoundingBox) this.getGuiBounding().clone());
+		return frustum;
+		}
+		catch (CloneNotSupportedException ex) {
+            throw new AssertionError();
+        }
+
+	}
+	/**
+     * <code>containsGui</code> tests a bounding volume against the ortho
+     * bounding box of the camera. A bounding box spanning from
+     * 0, 0 to Width, Height. Constrained by the viewport settings on the
+     * camera.
+     *
+     * @param bound the bound to check for culling
+     * @return True if the camera contains the gui element bounding volume.
+     * 
+     * External call in checkCulling(Camera) in Spatial
+     * 
+     * This fells that this method belongs more to Fustrum
+     * 
+     */
+    public boolean containsGui(BoundingVolume bound) {
+        return guiBounding.intersects(bound);
+    }
+    
+    /**
+     * Only used in the above method, no problem when moving this method
+     * 
+     * no camera code
+     */
+    public void setGuiBounding(int width,int height) {  //need to make it to private later
+        float sx = width * getViewPortLeft();
+        float ex = width * getViewPortRight();
+        float sy = height * getViewPortBottom();
+        float ey = height * getViewPortTop();
+        float xExtent = Math.max(0f, (ex - sx) / 2f);
+        float yExtent = Math.max(0f, (ey - sy) / 2f);
+        guiBounding.setCenter(new Vector3f(sx + xExtent, sy + yExtent, 0));
+        guiBounding.setXExtent(xExtent);
+        guiBounding.setYExtent(yExtent);
+        guiBounding.setZExtent(Float.MAX_VALUE);
+    }
+
+
     /**
      * <code>getFrustumBottom</code> returns the value of the bottom frustum
      * plane.
@@ -582,7 +657,7 @@ public class Frustum {
      * @param right  the right plane.
      * @param top    the top plane.
      * @param bottom the bottom plane.
-     * @see Camera#setFrustum(float, float, float, float,
+     * @see CameraView#setFrustum(float, float, float, float,
      *      float, float)
      *      
      *      

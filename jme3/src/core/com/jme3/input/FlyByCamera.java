@@ -37,7 +37,7 @@ import com.jme3.math.FastMath;
 import com.jme3.math.Matrix3f;
 import com.jme3.math.Quaternion;
 import com.jme3.math.Vector3f;
-import com.jme3.renderer.Camera;
+import com.jme3.renderer.CameraView;
 
 /**
  * A first person view camera controller.
@@ -73,7 +73,7 @@ public class FlyByCamera implements AnalogListener, ActionListener {
             "FLYCAM_InvertY"
         };
 
-    protected Camera cam;
+    protected CameraView cam;
     protected Vector3f initialUpVec;
     protected float rotationSpeed = 1f;
     protected float moveSpeed = 3f;
@@ -89,9 +89,9 @@ public class FlyByCamera implements AnalogListener, ActionListener {
      * Creates a new FlyByCamera to control the given Camera object.
      * @param cam
      */
-    public FlyByCamera(Camera cam){
+    public FlyByCamera(CameraView cam){
         this.cam = cam;
-        initialUpVec = cam.getUp().clone();
+        initialUpVec = cam.getCamera().getUp().clone();
     }
 
     /**
@@ -316,9 +316,9 @@ public class FlyByCamera implements AnalogListener, ActionListener {
         Matrix3f mat = new Matrix3f();
         mat.fromAngleNormalAxis(rotationSpeed * value, axis);
 
-        Vector3f up = cam.getUp();
-        Vector3f left = cam.getLeft();
-        Vector3f dir = cam.getDirection();
+        Vector3f up = cam.getCamera().getUp();
+        Vector3f left = cam.getCamera().getLeft();
+        Vector3f dir = cam.getCamera().getDirection();
 
         mat.mult(up, up);
         mat.mult(left, left);
@@ -328,16 +328,16 @@ public class FlyByCamera implements AnalogListener, ActionListener {
         q.fromAxes(left, up, dir);
         q.normalizeLocal();
 
-        cam.setAxes(q);
+        cam.updateAxes(q);
     }
 
     protected void zoomCamera(float value){
         // derive fovY value
-        float h = cam.getFrustumTop();
-        float w = cam.getFrustumRight();
+        float h = cam.getFrustum().getFrustumTop();
+        float w = cam.getFrustum().getFrustumRight();
         float aspect = w / h;
 
-        float near = cam.getFrustumNear();
+        float near = cam.getFrustum().getFrustumNear();
 
         float fovY = FastMath.atan(h / near)
                   / (FastMath.DEG_TO_RAD * .5f);
@@ -346,32 +346,32 @@ public class FlyByCamera implements AnalogListener, ActionListener {
         h = FastMath.tan( fovY * FastMath.DEG_TO_RAD * .5f) * near;
         w = h * aspect;
 
-        cam.setFrustumTop(h);
-        cam.setFrustumBottom(-h);
-        cam.setFrustumLeft(-w);
-        cam.setFrustumRight(w);
+        cam.updateFrustumTop(h);
+        cam.updateFrustumBottom(-h);
+        cam.updateFrustumLeft(-w);
+        cam.updateFrustumRight(w);
     }
 
     protected void riseCamera(float value){
         Vector3f vel = new Vector3f(0, value * moveSpeed, 0);
-        Vector3f pos = cam.getLocation().clone();
+        Vector3f pos = cam.getCamera().getLocation().clone();
 
         if (motionAllowed != null)
             motionAllowed.checkMotionAllowed(pos, vel);
         else
             pos.addLocal(vel);
 
-        cam.setLocation(pos);
+        cam.updateLocation(pos);
     }
 
     protected void moveCamera(float value, boolean sideways){
         Vector3f vel = new Vector3f();
-        Vector3f pos = cam.getLocation().clone();
+        Vector3f pos = cam.getCamera().getLocation().clone();
 
         if (sideways){
-            cam.getLeft(vel);
+            cam.getCamera().getLeft(vel);
         }else{
-            cam.getDirection(vel);
+            cam.getCamera().getDirection(vel);
         }
         vel.multLocal(value * moveSpeed);
 
@@ -380,7 +380,7 @@ public class FlyByCamera implements AnalogListener, ActionListener {
         else
             pos.addLocal(vel);
 
-        cam.setLocation(pos);
+        cam.updateLocation(pos);
     }
 
     public void onAnalog(String name, float value, float tpf) {
@@ -392,9 +392,9 @@ public class FlyByCamera implements AnalogListener, ActionListener {
         }else if (name.equals("FLYCAM_Right")){
             rotateCamera(-value, initialUpVec);
         }else if (name.equals("FLYCAM_Up")){
-            rotateCamera(-value * (invertY ? -1 : 1), cam.getLeft());
+            rotateCamera(-value * (invertY ? -1 : 1), cam.getCamera().getLeft());
         }else if (name.equals("FLYCAM_Down")){
-            rotateCamera(value * (invertY ? -1 : 1), cam.getLeft());
+            rotateCamera(value * (invertY ? -1 : 1), cam.getCamera().getLeft());
         }else if (name.equals("FLYCAM_Forward")){
             moveCamera(value, false);
         }else if (name.equals("FLYCAM_Backward")){

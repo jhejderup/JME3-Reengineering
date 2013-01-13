@@ -38,7 +38,7 @@ import com.jme3.export.OutputCapsule;
 import com.jme3.input.controls.*;
 import com.jme3.math.FastMath;
 import com.jme3.math.Vector3f;
-import com.jme3.renderer.Camera;
+import com.jme3.renderer.CameraView;
 import com.jme3.renderer.RenderManager;
 import com.jme3.renderer.ViewPort;
 import com.jme3.scene.Spatial;
@@ -88,7 +88,7 @@ public class ChaseCamera implements ActionListener, AnalogListener, Control {
     protected Vector3f prevPos;
     protected boolean targetMoves = false;
     protected boolean enabled = true;
-    protected Camera cam = null;
+    protected CameraView cam = null;
     protected final Vector3f targetDir = new Vector3f();
     protected float previousTargetRotation;
     protected final Vector3f pos = new Vector3f();
@@ -115,7 +115,7 @@ public class ChaseCamera implements ActionListener, AnalogListener, Control {
      * @param cam the application camera
      * @param target the spatial to follow
      */
-    public ChaseCamera(Camera cam, final Spatial target) {
+    public ChaseCamera(CameraView cam, final Spatial target) {
         this(cam);
         target.addControl(this);
     }
@@ -126,9 +126,9 @@ public class ChaseCamera implements ActionListener, AnalogListener, Control {
      * doing spatial.addControl(chaseCamera);
      * @param cam the application camera
      */
-    public ChaseCamera(Camera cam) {
+    public ChaseCamera(CameraView cam) {
         this.cam = cam;
-        initialUpVec = cam.getUp().clone();
+        initialUpVec = cam.getCamera().getUp().clone();
     }
 
     /**
@@ -138,7 +138,7 @@ public class ChaseCamera implements ActionListener, AnalogListener, Control {
      * @param cam the application camera
      * @param inputManager the inputManager of the application to register inputs
      */
-    public ChaseCamera(Camera cam, InputManager inputManager) {
+    public ChaseCamera(CameraView cam, InputManager inputManager) {
         this(cam);
         registerWithInput(inputManager);
     }
@@ -149,7 +149,7 @@ public class ChaseCamera implements ActionListener, AnalogListener, Control {
      * @param target the spatial to follow
      * @param inputManager the inputManager of the application to register inputs
      */
-    public ChaseCamera(Camera cam, final Spatial target, InputManager inputManager) {
+    public ChaseCamera(CameraView cam, final Spatial target, InputManager inputManager) {
         this(cam, target);
         registerWithInput(inputManager);
     }
@@ -418,7 +418,7 @@ public class ChaseCamera implements ActionListener, AnalogListener, Control {
 
                 //linear interpolation of the distance while chasing
                 if (chasing) {
-                    distance = temp.set(targetLocation).subtractLocal(cam.getLocation()).length();
+                    distance = temp.set(targetLocation).subtractLocal(cam.getCamera().getLocation()).length();
                     distanceLerpFactor = Math.min(distanceLerpFactor + (tpf * tpf * chasingSensitivity * 0.05f), 1);
                     distance = FastMath.interpolateLinear(distanceLerpFactor, distance, targetDistance);
                     if (targetDistance + 0.01f >= distance && targetDistance - 0.01f <= distance) {
@@ -459,14 +459,14 @@ public class ChaseCamera implements ActionListener, AnalogListener, Control {
                 //computing the position
                 computePosition();
                 //setting the position at last
-                cam.setLocation(pos.addLocal(lookAtOffset));
+                cam.updateLocation(pos.addLocal(lookAtOffset));
             } else {
                 //easy no smooth motion
                 vRotation = targetVRotation;
                 rotation = targetRotation;
                 distance = targetDistance;
                 computePosition();
-                cam.setLocation(pos.addLocal(lookAtOffset));
+                cam.updateLocation(pos.addLocal(lookAtOffset));
             }
             //keeping track on the previous position of the target
             prevPos.set(targetLocation);
@@ -556,7 +556,7 @@ public class ChaseCamera implements ActionListener, AnalogListener, Control {
         }
         computePosition();
         prevPos = new Vector3f(target.getWorldTranslation());
-        cam.setLocation(pos);
+        cam.updateLocation(pos);
     }
 
     /**

@@ -37,7 +37,7 @@ import com.jme3.input.KeyInput;
 import com.jme3.input.controls.ActionListener;
 import com.jme3.input.controls.KeyTrigger;
 import com.jme3.post.SceneProcessor;
-import com.jme3.renderer.Camera;
+import com.jme3.renderer.CameraView;
 import com.jme3.renderer.RenderManager;
 import com.jme3.renderer.Renderer;
 import com.jme3.renderer.ViewPort;
@@ -151,11 +151,11 @@ public class ScreenshotAppState extends AbstractAppState implements ActionListen
             capture = false;
             shotIndex++;
 
-            Camera curCamera = rm.getCurrentCamera();
-            int viewX = (int) (curCamera.getViewPortLeft() * curCamera.getWidth());
-            int viewY = (int) (curCamera.getViewPortBottom() * curCamera.getHeight());
-            int viewWidth = (int) ((curCamera.getViewPortRight() - curCamera.getViewPortLeft()) * curCamera.getWidth());
-            int viewHeight = (int) ((curCamera.getViewPortTop() - curCamera.getViewPortBottom()) * curCamera.getHeight());
+            CameraView curCamera = rm.getCurrentCamera();
+            int viewX = (int) (curCamera.getFrustum().getViewPortLeft() * curCamera.getWidth());
+            int viewY = (int) (curCamera.getFrustum().getViewPortBottom() * curCamera.getHeight());
+            int viewWidth = (int) ((curCamera.getFrustum().getViewPortRight() - curCamera.getFrustum().getViewPortLeft()) * curCamera.getWidth());
+            int viewHeight = (int) ((curCamera.getFrustum().getViewPortTop() - curCamera.getFrustum().getViewPortBottom()) * curCamera.getHeight());
 
             renderer.setViewPort(0, 0, width, height);
             renderer.readFrameBuffer(out, outBuf);

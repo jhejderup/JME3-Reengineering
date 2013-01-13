@@ -35,7 +35,7 @@ import com.jme3.asset.AssetManager;
 import com.jme3.light.PointLight;
 import com.jme3.material.Material;
 import com.jme3.math.Vector3f;
-import com.jme3.renderer.Camera;
+import com.jme3.renderer.CameraView;
 import com.jme3.renderer.queue.GeometryList;
 import com.jme3.renderer.queue.OpaqueComparator;
 import com.jme3.scene.Geometry;
@@ -50,7 +50,7 @@ public class PointLightShadowRenderer extends AbstractShadowRenderer {
 
     public static final int CAM_NUMBER = 6;
     protected PointLight light;
-    protected Camera[] shadowCams;
+    protected CameraView[] shadowCams;
     private Geometry[] frustums = null;
 
     /**
@@ -62,42 +62,42 @@ public class PointLightShadowRenderer extends AbstractShadowRenderer {
      */
     public PointLightShadowRenderer(AssetManager assetManager, int shadowMapSize) {
         super(assetManager, shadowMapSize, CAM_NUMBER);
-        shadowCams = new Camera[CAM_NUMBER];
+        shadowCams = new CameraView[CAM_NUMBER];
         for (int i = 0; i < CAM_NUMBER; i++) {
-            shadowCams[i] = new Camera(shadowMapSize, shadowMapSize);
+            shadowCams[i] = new CameraView(shadowMapSize, shadowMapSize);
         }
     }
 
     @Override
-    protected void updateShadowCams(Camera viewCam) {
+    protected void updateShadowCams(CameraView viewCam) {
 
         if (light == null) {
             throw new IllegalStateException("The light can't be null for a " + this.getClass().getName());
         }
 
         //bottom
-        shadowCams[0].setAxes(Vector3f.UNIT_X.mult(-1f), Vector3f.UNIT_Z.mult(-1f), Vector3f.UNIT_Y.mult(-1f));
+        shadowCams[0].updateAxes(Vector3f.UNIT_X.mult(-1f), Vector3f.UNIT_Z.mult(-1f), Vector3f.UNIT_Y.mult(-1f));
 
         //top
-        shadowCams[1].setAxes(Vector3f.UNIT_X.mult(-1f), Vector3f.UNIT_Z, Vector3f.UNIT_Y);
+        shadowCams[1].updateAxes(Vector3f.UNIT_X.mult(-1f), Vector3f.UNIT_Z, Vector3f.UNIT_Y);
 
         //forward
-        shadowCams[2].setAxes(Vector3f.UNIT_X.mult(-1f), Vector3f.UNIT_Y, Vector3f.UNIT_Z.mult(-1f));
+        shadowCams[2].updateAxes(Vector3f.UNIT_X.mult(-1f), Vector3f.UNIT_Y, Vector3f.UNIT_Z.mult(-1f));
 
         //backward
-        shadowCams[3].setAxes(Vector3f.UNIT_X, Vector3f.UNIT_Y, Vector3f.UNIT_Z);
+        shadowCams[3].updateAxes(Vector3f.UNIT_X, Vector3f.UNIT_Y, Vector3f.UNIT_Z);
 
         //left
-        shadowCams[4].setAxes(Vector3f.UNIT_Z, Vector3f.UNIT_Y, Vector3f.UNIT_X.mult(-1f));
+        shadowCams[4].updateAxes(Vector3f.UNIT_Z, Vector3f.UNIT_Y, Vector3f.UNIT_X.mult(-1f));
 
         //right
-        shadowCams[5].setAxes(Vector3f.UNIT_Z.mult(-1f), Vector3f.UNIT_Y, Vector3f.UNIT_X);
+        shadowCams[5].updateAxes(Vector3f.UNIT_Z.mult(-1f), Vector3f.UNIT_Y, Vector3f.UNIT_X);
 
         for (int i = 0; i < CAM_NUMBER; i++) {
-            shadowCams[i].setFrustumPerspective(90f, 1f, 0.1f, light.getRadius());
-            shadowCams[i].setLocation(light.getPosition());
+            shadowCams[i].updateFrustumPerspective(90f, 1f, 0.1f, light.getRadius());
+            shadowCams[i].updateLocation(light.getPosition());
             shadowCams[i].update();
-            shadowCams[i].updateViewProjection();
+            shadowCams[i].getCamera().updateViewProjection();
         }
 
     }
@@ -115,7 +115,7 @@ public class PointLightShadowRenderer extends AbstractShadowRenderer {
     }
 
     @Override
-    protected Camera getShadowCam(int shadowMapIndex) {
+    protected CameraView getShadowCam(int shadowMapIndex) {
         return shadowCams[shadowMapIndex];
     }
 

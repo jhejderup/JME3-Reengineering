@@ -40,7 +40,7 @@ import com.jme3.math.FastMath;
 import com.jme3.math.Vector2f;
 import com.jme3.math.Vector3f;
 import com.jme3.math.Vector4f;
-import com.jme3.renderer.Camera;
+import com.jme3.renderer.CameraView;
 import com.jme3.renderer.queue.GeometryList;
 import com.jme3.renderer.queue.OpaqueComparator;
 import com.jme3.scene.Node;
@@ -59,7 +59,7 @@ import com.jme3.scene.Node;
 public class SpotLightShadowRenderer extends AbstractShadowRenderer {
 
     protected float zFarOverride = 0;
-    protected Camera shadowCam;    
+    protected CameraView shadowCam;    
     protected SpotLight light;
     protected Vector3f[] points = new Vector3f[8];
     //Holding the info for fading shadows in the far distance 
@@ -76,7 +76,7 @@ public class SpotLightShadowRenderer extends AbstractShadowRenderer {
     public SpotLightShadowRenderer(AssetManager assetManager, int shadowMapSize) {
         super(assetManager, shadowMapSize, 1);
 
-        shadowCam = new Camera(shadowMapSize, shadowMapSize);
+        shadowCam = new CameraView(shadowMapSize, shadowMapSize);
 
         for (int i = 0; i < points.length; i++) {
             points[i] = new Vector3f();
@@ -102,24 +102,24 @@ public class SpotLightShadowRenderer extends AbstractShadowRenderer {
     }
 
     @Override
-    protected void updateShadowCams(Camera viewCam) {
+    protected void updateShadowCams(CameraView viewCam) {
 
         float zFar = zFarOverride;
         if (zFar == 0) {
-            zFar = viewCam.getFrustumFar();
+            zFar = viewCam.getFrustum().getFrustumFar();
         }
 
         //We prevent computing the frustum points and splits with zeroed or negative near clip value
-        float frustumNear = Math.max(viewCam.getFrustumNear(), 0.001f);
+        float frustumNear = Math.max(viewCam.getFrustum().getFrustumNear(), 0.001f);
         ShadowUtil.updateFrustumPoints(viewCam, frustumNear, zFar, 1.0f, points);
         //shadowCam.setDirection(direction);
 
-        shadowCam.setFrustumPerspective(light.getSpotOuterAngle() * FastMath.RAD_TO_DEG * 2.0f, 1, 1f, light.getSpotRange());
-        shadowCam.getRotation().lookAt(light.getDirection(), shadowCam.getUp());
-        shadowCam.setLocation(light.getPosition());
+        shadowCam.updateFrustumPerspective(light.getSpotOuterAngle() * FastMath.RAD_TO_DEG * 2.0f, 1, 1f, light.getSpotRange());
+        shadowCam.getCamera().getRotation().lookAt(light.getDirection(), shadowCam.getCamera().getUp());
+        shadowCam.updateLocation(light.getPosition());
 
         shadowCam.update();
-        shadowCam.updateViewProjection();
+        shadowCam.getCamera().updateViewProjection();
 
     }
 
@@ -136,7 +136,7 @@ public class SpotLightShadowRenderer extends AbstractShadowRenderer {
     }
     
     @Override
-    protected Camera getShadowCam(int shadowMapIndex) {
+    protected CameraView getShadowCam(int shadowMapIndex) {
         return shadowCam;
     }
 

@@ -181,11 +181,11 @@ public class TestEverything extends SimpleApplication {
 
     @Override
     public void simpleInitApp() {
-        cam.setLocation(new Vector3f(-32.295086f, 54.80136f, 79.59805f));
-        cam.setRotation(new Quaternion(0.074364014f, 0.92519957f, -0.24794696f, 0.27748522f));
+        cam.updateLocation(new Vector3f(-32.295086f, 54.80136f, 79.59805f));
+        cam.updateRotation(new Quaternion(0.074364014f, 0.92519957f, -0.24794696f, 0.27748522f));
         cam.update();
 
-        cam.setFrustumFar(300);
+        cam.updateFrustumFar(300);
         flyCam.setMoveSpeed(30);
 
         rootNode.setCullHint(CullHint.Never);

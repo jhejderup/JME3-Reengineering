@@ -70,7 +70,7 @@ public class RenderManager {
     private ArrayList<ViewPort> preViewPorts = new ArrayList<ViewPort>();
     private ArrayList<ViewPort> viewPorts = new ArrayList<ViewPort>();
     private ArrayList<ViewPort> postViewPorts = new ArrayList<ViewPort>();
-    private Camera prevCam = null;
+    private CameraView prevCam = null;
     private Material forcedMaterial = null;
     private String forcedTechnique = null;
     private RenderState forcedRenderState = null;
@@ -95,7 +95,7 @@ public class RenderManager {
      * @param viewName The name of the pre ViewPort to look up
      * @return The ViewPort, or null if not found.
      * 
-     * @see #createPreView(java.lang.String, com.jme3.renderer.Camera) 
+     * @see #createPreView(java.lang.String, com.jme3.renderer.CameraView) 
      */
     public ViewPort getPreView(String viewName) {
         for (int i = 0; i < preViewPorts.size(); i++) {
@@ -112,7 +112,7 @@ public class RenderManager {
      * @param view The pre ViewPort to remove
      * @return True if the ViewPort was removed successfully.
      * 
-     * @see #createPreView(java.lang.String, com.jme3.renderer.Camera) 
+     * @see #createPreView(java.lang.String, com.jme3.renderer.CameraView) 
      */
     public boolean removePreView(ViewPort view) {
         return preViewPorts.remove(view);
@@ -124,7 +124,7 @@ public class RenderManager {
      * @param viewName The name of the main ViewPort to look up
      * @return The ViewPort, or null if not found.
      * 
-     * @see #createMainView(java.lang.String, com.jme3.renderer.Camera) 
+     * @see #createMainView(java.lang.String, com.jme3.renderer.CameraView) 
      */
     public ViewPort getMainView(String viewName) {
         for (int i = 0; i < viewPorts.size(); i++) {
@@ -141,7 +141,7 @@ public class RenderManager {
      * @param viewName The main ViewPort name to remove
      * @return True if the ViewPort was removed successfully.
      * 
-     * @see #createMainView(java.lang.String, com.jme3.renderer.Camera) 
+     * @see #createMainView(java.lang.String, com.jme3.renderer.CameraView) 
      */
     public boolean removeMainView(String viewName) {
         for (int i = 0; i < viewPorts.size(); i++) {
@@ -159,7 +159,7 @@ public class RenderManager {
      * @param view The main ViewPort to remove
      * @return True if the ViewPort was removed successfully.
      * 
-     * @see #createMainView(java.lang.String, com.jme3.renderer.Camera) 
+     * @see #createMainView(java.lang.String, com.jme3.renderer.CameraView) 
      */
     public boolean removeMainView(ViewPort view) {
         return viewPorts.remove(view);
@@ -171,7 +171,7 @@ public class RenderManager {
      * @param viewName The name of the post ViewPort to look up
      * @return The ViewPort, or null if not found.
      * 
-     * @see #createPostView(java.lang.String, com.jme3.renderer.Camera) 
+     * @see #createPostView(java.lang.String, com.jme3.renderer.CameraView) 
      */
     public ViewPort getPostView(String viewName) {
         for (int i = 0; i < postViewPorts.size(); i++) {
@@ -188,7 +188,7 @@ public class RenderManager {
      * @param viewName The post ViewPort name to remove
      * @return True if the ViewPort was removed successfully.
      * 
-     * @see #createPostView(java.lang.String, com.jme3.renderer.Camera) 
+     * @see #createPostView(java.lang.String, com.jme3.renderer.CameraView) 
      */
     public boolean removePostView(String viewName) {
         for (int i = 0; i < postViewPorts.size(); i++) {
@@ -207,7 +207,7 @@ public class RenderManager {
      * @param view The post ViewPort to remove
      * @return True if the ViewPort was removed successfully.
      * 
-     * @see #createPostView(java.lang.String, com.jme3.renderer.Camera) 
+     * @see #createPostView(java.lang.String, com.jme3.renderer.CameraView) 
      */
     public boolean removePostView(ViewPort view) {
         return postViewPorts.remove(view);
@@ -216,7 +216,7 @@ public class RenderManager {
     /**
      * Returns a read-only list of all pre ViewPorts
      * @return a read-only list of all pre ViewPorts
-     * @see #createPreView(java.lang.String, com.jme3.renderer.Camera) 
+     * @see #createPreView(java.lang.String, com.jme3.renderer.CameraView) 
      */
     public List<ViewPort> getPreViews() {
         return Collections.unmodifiableList(preViewPorts);
@@ -225,7 +225,7 @@ public class RenderManager {
     /**
      * Returns a read-only list of all main ViewPorts
      * @return a read-only list of all main ViewPorts
-     * @see #createMainView(java.lang.String, com.jme3.renderer.Camera) 
+     * @see #createMainView(java.lang.String, com.jme3.renderer.CameraView) 
      */
     public List<ViewPort> getMainViews() {
         return Collections.unmodifiableList(viewPorts);
@@ -234,7 +234,7 @@ public class RenderManager {
     /**
      * Returns a read-only list of all post ViewPorts
      * @return a read-only list of all post ViewPorts
-     * @see #createPostView(java.lang.String, com.jme3.renderer.Camera) 
+     * @see #createPostView(java.lang.String, com.jme3.renderer.CameraView) 
      */
     public List<ViewPort> getPostViews() {
         return Collections.unmodifiableList(postViewPorts);
@@ -245,7 +245,7 @@ public class RenderManager {
      * <p>
      * The view will be processed before the main and post viewports.
      */
-    public ViewPort createPreView(String viewName, Camera cam) {
+    public ViewPort createPreView(String viewName, CameraView cam) {
         ViewPort vp = new ViewPort(viewName, cam);
         preViewPorts.add(vp);
         return vp;
@@ -257,7 +257,7 @@ public class RenderManager {
      * The view will be processed before the post viewports but after
      * the pre viewports.
      */
-    public ViewPort createMainView(String viewName, Camera cam) {
+    public ViewPort createMainView(String viewName, CameraView cam) {
         ViewPort vp = new ViewPort(viewName, cam);
         viewPorts.add(vp);
         return vp;
@@ -268,7 +268,7 @@ public class RenderManager {
      * <p>
      * The view will be processed after the pre and main viewports.
      */
-    public ViewPort createPostView(String viewName, Camera cam) {
+    public ViewPort createPostView(String viewName, CameraView cam) {
         ViewPort vp = new ViewPort(viewName, cam);
         postViewPorts.add(vp);
         return vp;
@@ -293,21 +293,21 @@ public class RenderManager {
     public void notifyReshape(int w, int h) {
         for (ViewPort vp : preViewPorts) {
             if (vp.getOutputFrameBuffer() == null) {
-                Camera cam = vp.getCamera();
+                CameraView cam = vp.getCamera();
                 cam.resize(w, h, true);
             }
             notifyReshape(vp, w, h);
         }
         for (ViewPort vp : viewPorts) {
             if (vp.getOutputFrameBuffer() == null) {
-                Camera cam = vp.getCamera();
+                CameraView cam = vp.getCamera();
                 cam.resize(w, h, true);
             }
             notifyReshape(vp, w, h);
         }
         for (ViewPort vp : postViewPorts) {
             if (vp.getOutputFrameBuffer() == null) {
-                Camera cam = vp.getCamera();
+                CameraView cam = vp.getCamera();
                 cam.resize(w, h, true);
             }
             notifyReshape(vp, w, h);
@@ -635,7 +635,7 @@ public class RenderManager {
      */
     public void renderScene(Spatial scene, ViewPort vp) {
         //reset of the camera plane state for proper culling (must be 0 for the first note of the scene to be rendered)
-        vp.getCamera().setPlaneState(0);
+        vp.getCamera().getFrustum().setPlaneState(0);
         //rendering the scene
         renderSubScene(scene, vp);
     }
@@ -658,10 +658,10 @@ public class RenderManager {
             Node n = (Node) scene;
             List<Spatial> children = n.getChildren();
             // Saving cam state for culling
-            int camState = vp.getCamera().getPlaneState();
+            int camState = vp.getCamera().getFrustum().getPlaneState();
             for (int i = 0; i < children.size(); i++) {
                 // Restoring cam state before proceeding children recusively
-                vp.getCamera().setPlaneState(camState);
+                vp.getCamera().getFrustum().setPlaneState(camState);
                 renderSubScene(children.get(i), vp);
             }
         } else if (scene instanceof Geometry) {
@@ -684,11 +684,11 @@ public class RenderManager {
     /**
      * Returns the camera currently used for rendering.
      * <p>
-     * The camera can be set with {@link #setCamera(com.jme3.renderer.Camera, boolean) }.
+     * The camera can be set with {@link #setCamera(com.jme3.renderer.CameraView, boolean) }.
      * 
      * @return the camera currently used for rendering.
      */
-    public Camera getCurrentCamera() {
+    public CameraView getCurrentCamera() {
         return prevCam;
     }
 
@@ -712,7 +712,7 @@ public class RenderManager {
      * 
      * @param vp The ViewPort of which the queue will be flushed
      * 
-     * @see RenderQueue#renderQueue(com.jme3.renderer.queue.RenderQueue.Bucket, com.jme3.renderer.RenderManager, com.jme3.renderer.Camera) 
+     * @see RenderQueue#renderQueue(com.jme3.renderer.queue.RenderQueue.Bucket, com.jme3.renderer.RenderManager, com.jme3.renderer.CameraView) 
      * @see #renderGeometryList(com.jme3.renderer.queue.GeometryList) 
      */
     public void flushQueue(ViewPort vp) {
@@ -738,7 +738,7 @@ public class RenderManager {
      * <p>
      * Changes the {@link Renderer#setDepthRange(float, float) depth range}
      * appropriately as expected by each queue and then calls 
-     * {@link RenderQueue#renderQueue(com.jme3.renderer.queue.RenderQueue.Bucket, com.jme3.renderer.RenderManager, com.jme3.renderer.Camera, boolean) }
+     * {@link RenderQueue#renderQueue(com.jme3.renderer.queue.RenderQueue.Bucket, com.jme3.renderer.RenderManager, com.jme3.renderer.CameraView, boolean) }
      * on the queue. Makes sure to restore the depth range to [0, 1] 
      * at the end of the call.
      * Note that the {@link Bucket#Translucent translucent bucket} is NOT
@@ -755,7 +755,7 @@ public class RenderManager {
      */
     public void renderViewPortQueues(ViewPort vp, boolean flush) {
         RenderQueue rq = vp.getQueue();
-        Camera cam = vp.getCamera();
+        CameraView cam = vp.getCamera();
         boolean depthRangeChanged = false;
 
         // render opaque objects with default depth range
@@ -815,13 +815,13 @@ public class RenderManager {
         }
     }
 
-    private void setViewPort(Camera cam) {
+    private void setViewPort(CameraView cam) {
         // this will make sure to update viewport only if needed
         if (cam != prevCam || cam.isViewportChanged()) {
-            viewX = (int) (cam.getViewPortLeft() * cam.getWidth());
-            viewY = (int) (cam.getViewPortBottom() * cam.getHeight());
-            viewWidth = (int) ((cam.getViewPortRight() - cam.getViewPortLeft()) * cam.getWidth());
-            viewHeight = (int) ((cam.getViewPortTop() - cam.getViewPortBottom()) * cam.getHeight());
+            viewX = (int) (cam.getFrustum().getViewPortLeft() * cam.getWidth());
+            viewY = (int) (cam.getFrustum().getViewPortBottom() * cam.getHeight());
+            viewWidth = (int) ((cam.getFrustum().getViewPortRight() - cam.getFrustum().getViewPortLeft()) * cam.getWidth());
+            viewHeight = (int) ((cam.getFrustum().getViewPortTop() - cam.getFrustum().getViewPortBottom()) * cam.getHeight());
             uniformBindingManager.setViewPort(viewX, viewY, viewWidth, viewHeight);
             renderer.setViewPort(viewX, viewY, viewWidth, viewHeight);
             renderer.setClipRect(viewX, viewY, viewWidth, viewHeight);
@@ -843,18 +843,18 @@ public class RenderManager {
         }
     }
 
-    private void setViewProjection(Camera cam, boolean ortho) {
+    private void setViewProjection(CameraView cam, boolean ortho) {
         if (shader) {
             if (ortho) {
                 uniformBindingManager.setCamera(cam, Matrix4f.IDENTITY, orthoMatrix, orthoMatrix);
             } else {
-                uniformBindingManager.setCamera(cam, cam.getViewMatrix(), cam.getProjectionMatrix(), cam.getViewProjectionMatrix());
+                uniformBindingManager.setCamera(cam, cam.getCamera().getViewMatrix(), cam.getCamera().getProjectionMatrix(), cam.getCamera().getViewProjectionMatrix());
             }
         } else {
             if (ortho) {
                 renderer.setViewProjectionMatrices(Matrix4f.IDENTITY, orthoMatrix);
             } else {
-                renderer.setViewProjectionMatrices(cam.getViewMatrix(),
+                renderer.setViewProjectionMatrices(cam.getCamera().getViewMatrix(),
                         cam.getProjectionMatrix());
             }
         }
@@ -864,9 +864,9 @@ public class RenderManager {
      * Set the camera to use for rendering.
      * <p>
      * First, the camera's 
-     * {@link Camera#setViewPort(float, float, float, float) view port parameters}
-     * are applied. Then, the camera's {@link Camera#getViewMatrix() view} and 
-     * {@link Camera#getProjectionMatrix() projection} matrices are set
+     * {@link CameraView#setViewPort(float, float, float, float) view port parameters}
+     * are applied. Then, the camera's {@link CameraView#getViewMatrix() view} and 
+     * {@link CameraView#getProjectionMatrix() projection} matrices are set
      * on the renderer. If <code>ortho</code> is <code>true</code>, then
      * instead of using the camera's view and projection matrices, an ortho
      * matrix is computed and used instead of the view projection matrix. 
@@ -877,7 +877,7 @@ public class RenderManager {
      * @param ortho True if to use orthographic projection (for GUI rendering),
      * false if to use the camera's view and projection matrices.
      */
-    public void setCamera(Camera cam, boolean ortho) {
+    public void setCamera(CameraView cam, boolean ortho) {
         setViewPort(cam);
         setViewProjection(cam, ortho);
     }
@@ -914,7 +914,7 @@ public class RenderManager {
      * <li>The ViewPort's {@link ViewPort#getOutputFrameBuffer() output framebuffer}
      * is set on the Renderer</li>
      * <li>The camera is set on the renderer, including its view port parameters.
-     * (see {@link #setCamera(com.jme3.renderer.Camera, boolean) })</li>
+     * (see {@link #setCamera(com.jme3.renderer.CameraView, boolean) })</li>
      * <li>Any buffers that the ViewPort requests to be cleared are cleared
      * and the {@link ViewPort#getBackgroundColor() background color} is set</li>
      * <li>Every scene that is attached to the ViewPort is flattened into 
@@ -932,7 +932,7 @@ public class RenderManager {
      * (see {@link #renderTranslucentQueue(com.jme3.renderer.ViewPort) })</li>
      * <li>If any objects remained in the render queue, they are removed
      * from the queue. This is generally objects added to the 
-     * {@link RenderQueue#renderShadowQueue(com.jme3.renderer.queue.RenderQueue.ShadowMode, com.jme3.renderer.RenderManager, com.jme3.renderer.Camera, boolean) 
+     * {@link RenderQueue#renderShadowQueue(com.jme3.renderer.queue.RenderQueue.ShadowMode, com.jme3.renderer.RenderManager, com.jme3.renderer.CameraView, boolean) 
      * shadow queue}
      * which were not rendered because of a missing shadow renderer.</li>
      * </ul>
@@ -1003,9 +1003,9 @@ public class RenderManager {
      * <p>
      * Renders any viewports that were added using the following methods:
      * <ul>
-     * <li>{@link #createPreView(java.lang.String, com.jme3.renderer.Camera) }</li>
-     * <li>{@link #createMainView(java.lang.String, com.jme3.renderer.Camera) }</li>
-     * <li>{@link #createPostView(java.lang.String, com.jme3.renderer.Camera) }</li>
+     * <li>{@link #createPreView(java.lang.String, com.jme3.renderer.CameraView) }</li>
+     * <li>{@link #createMainView(java.lang.String, com.jme3.renderer.CameraView) }</li>
+     * <li>{@link #createPostView(java.lang.String, com.jme3.renderer.CameraView) }</li>
      * </ul>
      * 
      * @param tpf Time per frame value

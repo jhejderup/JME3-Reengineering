@@ -39,7 +39,7 @@ import com.jme3.math.FastMath;
 import com.jme3.math.Quaternion;
 import com.jme3.math.Vector3f;
 import com.jme3.post.SceneProcessor;
-import com.jme3.renderer.Camera;
+import com.jme3.renderer.CameraView;
 import com.jme3.renderer.RenderManager;
 import com.jme3.renderer.ViewPort;
 import com.jme3.renderer.queue.RenderQueue;
@@ -77,7 +77,7 @@ public class TestRenderToMemory extends SimpleApplication implements SceneProces
     private FrameBuffer offBuffer;
     private ViewPort offView;
     private Texture2D offTex;
-    private Camera offCamera;
+    private CameraView offCamera;
     private ImageDisplay display;
 
     private static final int width = 800, height = 600;
@@ -169,7 +169,7 @@ public class TestRenderToMemory extends SimpleApplication implements SceneProces
     }
 
     public void setupOffscreenView(){
-        offCamera = new Camera(width, height);
+        offCamera = new CameraView(width, height);
 
         // create a pre-view. a view that is rendered before the main view
         offView = renderManager.createPreView("Offscreen View", offCamera);
@@ -184,8 +184,8 @@ public class TestRenderToMemory extends SimpleApplication implements SceneProces
         offBuffer = new FrameBuffer(width, height, 1);
 
         //setup framebuffer's cam
-        offCamera.setFrustumPerspective(45f, 1f, 1f, 1000f);
-        offCamera.setLocation(new Vector3f(0f, 0f, -5f));
+        offCamera.updateFrustumPerspective(45f, 1f, 1f, 1000f);
+        offCamera.updateLocation(new Vector3f(0f, 0f, -5f));
         offCamera.lookAt(new Vector3f(0f, 0f, 0f), Vector3f.UNIT_Y);
 
         //setup framebuffer's texture

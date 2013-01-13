@@ -39,7 +39,7 @@ import com.jme3.math.FastMath;
 import com.jme3.math.Matrix3f;
 import com.jme3.math.Quaternion;
 import com.jme3.math.Vector3f;
-import com.jme3.renderer.Camera;
+import com.jme3.renderer.CameraView;
 import com.jme3.renderer.RenderManager;
 import com.jme3.renderer.ViewPort;
 import com.jme3.scene.Node;
@@ -99,7 +99,7 @@ public class BillboardControl extends AbstractControl {
 
     @Override
     protected void controlRender(RenderManager rm, ViewPort vp) {
-        Camera cam = vp.getCamera();
+        CameraView cam = vp.getCamera();
         rotateBillboard(cam);
     }
     
@@ -121,7 +121,7 @@ public class BillboardControl extends AbstractControl {
      * @param cam
      *            Camera
      */
-    private void rotateBillboard(Camera cam) {
+    private void rotateBillboard(CameraView cam) {
         switch (alignment) {
             case AxialY:
                 rotateAxial(cam, Vector3f.UNIT_Y);
@@ -144,8 +144,8 @@ public class BillboardControl extends AbstractControl {
      * @param camera
      *            Camera
      */
-    private void rotateCameraAligned(Camera camera) {
-        look.set(camera.getLocation()).subtractLocal(
+    private void rotateCameraAligned(CameraView camera) {
+        look.set(camera.getCamera().getLocation()).subtractLocal(
                 spatial.getWorldTranslation());
         // coopt left for our own purposes.
         Vector3f xzp = left;
@@ -185,12 +185,12 @@ public class BillboardControl extends AbstractControl {
      * @param camera
      *            Camera
      */
-    private void rotateScreenAligned(Camera camera) {
+    private void rotateScreenAligned(CameraView camera) {
         // coopt diff for our in direction:
-        look.set(camera.getDirection()).negateLocal();
+        look.set(camera.getCamera().getDirection()).negateLocal();
         // coopt loc for our left direction:
-        left.set(camera.getLeft()).negateLocal();
-        orient.fromAxes(left, camera.getUp(), look);
+        left.set(camera.getCamera().getLeft()).negateLocal();
+        orient.fromAxes(left, camera.getCamera().getUp(), look);
         Node parent = spatial.getParent();
         Quaternion rot=new Quaternion().fromRotationMatrix(orient);
         if ( parent != null ) {
@@ -207,11 +207,11 @@ public class BillboardControl extends AbstractControl {
      * @param camera
      *            Camera
      */
-    private void rotateAxial(Camera camera, Vector3f axis) {
+    private void rotateAxial(CameraView camera, Vector3f axis) {
         // Compute the additional rotation required for the billboard to face
         // the camera. To do this, the camera must be inverse-transformed into
         // the model space of the billboard.
-        look.set(camera.getLocation()).subtractLocal(
+        look.set(camera.getCamera().getLocation()).subtractLocal(
                 spatial.getWorldTranslation());   
         spatial.getParent().getWorldRotation().mult(look, left); // coopt left for our own
         // purposes.

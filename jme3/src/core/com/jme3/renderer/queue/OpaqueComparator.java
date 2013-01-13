@@ -33,16 +33,16 @@ package com.jme3.renderer.queue;
 
 import com.jme3.material.Material;
 import com.jme3.math.Vector3f;
-import com.jme3.renderer.Camera;
+import com.jme3.renderer.CameraView;
 import com.jme3.scene.Geometry;
 
 public class OpaqueComparator implements GeometryComparator {
 
-    private Camera cam;
+    private CameraView cam;
     private final Vector3f tempVec  = new Vector3f();
     private final Vector3f tempVec2 = new Vector3f();
 
-    public void setCamera(Camera cam){
+    public void setCamera(CameraView cam){
         this.cam = cam;
     }
 
@@ -53,8 +53,8 @@ public class OpaqueComparator implements GeometryComparator {
         if (spat.queueDistance != Float.NEGATIVE_INFINITY)
                 return spat.queueDistance;
  
-        Vector3f camPosition = cam.getLocation();
-        Vector3f viewVector = cam.getDirection(tempVec2);
+        Vector3f camPosition = cam.getCamera().getLocation();
+        Vector3f viewVector = cam.getCamera().getDirection(tempVec2);
         Vector3f spatPosition = null;
  
         if (spat.getWorldBound() != null){

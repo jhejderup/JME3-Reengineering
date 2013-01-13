@@ -63,7 +63,7 @@ public class TestParallelProjection  extends SimpleApplication implements Analog
         // Setup first view
         cam.setParallelProjection(true);
         float aspect = (float) cam.getWidth() / cam.getHeight();
-        cam.setFrustum(-1000, 1000, -aspect * frustumSize, aspect * frustumSize, frustumSize, -frustumSize);
+        cam.updateFrustum(-1000, 1000, -aspect * frustumSize, aspect * frustumSize, frustumSize, -frustumSize);
 
         inputManager.addListener(this, "Size+", "Size-");
         inputManager.addMapping("Size+", new KeyTrigger(KeyInput.KEY_W));
@@ -78,6 +78,6 @@ public class TestParallelProjection  extends SimpleApplication implements Analog
             frustumSize -= 0.3f * tpf;
 
         float aspect = (float) cam.getWidth() / cam.getHeight();
-        cam.setFrustum(-1000, 1000, -aspect * frustumSize, aspect * frustumSize, frustumSize, -frustumSize);
+        cam.updateFrustum(-1000, 1000, -aspect * frustumSize, aspect * frustumSize, frustumSize, -frustumSize);
     }
 }

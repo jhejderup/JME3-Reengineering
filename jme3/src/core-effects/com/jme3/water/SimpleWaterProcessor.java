@@ -35,7 +35,7 @@ import com.jme3.asset.AssetManager;
 import com.jme3.material.Material;
 import com.jme3.math.*;
 import com.jme3.post.SceneProcessor;
-import com.jme3.renderer.Camera;
+import com.jme3.renderer.CameraView;
 import com.jme3.renderer.RenderManager;
 import com.jme3.renderer.Renderer;
 import com.jme3.renderer.ViewPort;
@@ -95,8 +95,8 @@ public class SimpleWaterProcessor implements SceneProcessor {
     protected ViewPort refractionView;
     protected FrameBuffer reflectionBuffer;
     protected FrameBuffer refractionBuffer;
-    protected Camera reflectionCam;
-    protected Camera refractionCam;
+    protected CameraView reflectionCam;
+    protected CameraView refractionCam;
     protected Texture2D reflectionTexture;
     protected Texture2D refractionTexture;
     protected Texture2D depthTexture;
@@ -153,7 +153,7 @@ public class SimpleWaterProcessor implements SceneProcessor {
 
         createPreViews();
 
-        material.setVector2("FrustumNearFar", new Vector2f(vp.getCamera().getFrustumNear(), vp.getCamera().getFrustumFar()));
+        material.setVector2("FrustumNearFar", new Vector2f(vp.getCamera().getFrustum().getFrustumNear(), vp.getCamera().getFrustum().getFrustumFar()));
 
         if (debug) {
             dispRefraction = new Picture("dispRefraction");
@@ -184,21 +184,21 @@ public class SimpleWaterProcessor implements SceneProcessor {
     }
 
     public void postQueue(RenderQueue rq) {
-        Camera sceneCam = rm.getCurrentCamera();
+        CameraView sceneCam = rm.getCurrentCamera();
 
         //update ray
-        ray.setOrigin(sceneCam.getLocation());
-        ray.setDirection(sceneCam.getDirection());
+        ray.setOrigin(sceneCam.getCamera().getLocation());
+        ray.setDirection(sceneCam.getCamera().getDirection());
 
         //update refraction cam
-        refractionCam.setLocation(sceneCam.getLocation());
-        refractionCam.setRotation(sceneCam.getRotation());
-        refractionCam.setFrustum(sceneCam.getFrustumNear(),
-                sceneCam.getFrustumFar(),
-                sceneCam.getFrustumLeft(),
-                sceneCam.getFrustumRight(),
-                sceneCam.getFrustumTop(),
-                sceneCam.getFrustumBottom());
+        refractionCam.updateLocation(sceneCam.getCamera().getLocation());
+        refractionCam.updateRotation(sceneCam.getCamera().getRotation());
+        refractionCam.updateFrustum(sceneCam.getFrustum().getFrustumNear(),
+                sceneCam.getFrustum().getFrustumFar(),
+                sceneCam.getFrustum().getFrustumLeft(),
+                sceneCam.getFrustum().getFrustumRight(),
+                sceneCam.getFrustum().getFrustumTop(),
+                sceneCam.getFrustum().getFrustumBottom());
         refractionCam.setParallelProjection(false);
 
         //update reflection cam
@@ -208,24 +208,24 @@ public class SimpleWaterProcessor implements SceneProcessor {
             ray.intersectsWherePlane(plane, targetLocation);
             inv = true;
         }
-        Vector3f loc = plane.reflect(sceneCam.getLocation(), new Vector3f());
-        reflectionCam.setLocation(loc);
-        reflectionCam.setFrustum(sceneCam.getFrustumNear(),
-                sceneCam.getFrustumFar(),
-                sceneCam.getFrustumLeft(),
-                sceneCam.getFrustumRight(),
-                sceneCam.getFrustumTop(),
-                sceneCam.getFrustumBottom());
+        Vector3f loc = plane.reflect(sceneCam.getCamera().getLocation(), new Vector3f());
+        reflectionCam.updateLocation(loc);
+        reflectionCam.updateFrustum(sceneCam.getFrustum().getFrustumNear(),
+                sceneCam.getFrustum().getFrustumFar(),
+                sceneCam.getFrustum().getFrustumLeft(),
+                sceneCam.getFrustum().getFrustumRight(),
+                sceneCam.getFrustum().getFrustumTop(),
+                sceneCam.getFrustum().getFrustumBottom());
         reflectionCam.setParallelProjection(false);
         // tempVec and calcVect are just temporary vector3f objects
-        vect1.set(sceneCam.getLocation()).addLocal(sceneCam.getUp());
+        vect1.set(sceneCam.getCamera().getLocation()).addLocal(sceneCam.getCamera().getUp());
         float planeDistance = plane.pseudoDistance(vect1);
         vect2.set(plane.getNormal()).multLocal(planeDistance * 2.0f);
         vect3.set(vect1.subtractLocal(vect2)).subtractLocal(loc).normalizeLocal().negateLocal();
         // now set the up vector
         reflectionCam.lookAt(targetLocation, vect3);
         if (inv) {
-            reflectionCam.setAxes(reflectionCam.getLeft().negateLocal(), reflectionCam.getUp(), reflectionCam.getDirection().negateLocal());
+            reflectionCam.updateAxes(reflectionCam.getCamera().getLeft().negateLocal(), reflectionCam.getCamera().getUp(), reflectionCam.getCamera().getDirection().negateLocal());
         }
 
         //we are rendering a sub part of the scene so the camera planeState may never be reseted to 0.
@@ -254,7 +254,7 @@ public class SimpleWaterProcessor implements SceneProcessor {
 
     //debug only : displays maps
     protected void displayMap(Renderer r, Picture pic, int left) {
-        Camera cam = vp.getCamera();
+        CameraView cam = vp.getCamera();
         rm.setCamera(cam, true);
         int h = cam.getHeight();
 
@@ -289,8 +289,8 @@ public class SimpleWaterProcessor implements SceneProcessor {
     }
 
     protected void createPreViews() {
-        reflectionCam = new Camera(renderWidth, renderHeight);
-        refractionCam = new Camera(renderWidth, renderHeight);
+        reflectionCam = new CameraView(renderWidth, renderHeight);
+        refractionCam = new CameraView(renderWidth, renderHeight);
 
         // create a pre-view. a view that is rendered before the main view
         reflectionView = new ViewPort("Reflection View", reflectionCam);

@@ -170,8 +170,8 @@ public class TestSpotLightShadows extends SimpleApplication {
 
     @Override
     public void simpleInitApp() {
-        cam.setLocation(new Vector3f(27.492603f, 29.138166f, -13.232513f));
-        cam.setRotation(new Quaternion(0.25168246f, -0.10547892f, 0.02760565f, 0.96164864f));
+        cam.updateLocation(new Vector3f(27.492603f, 29.138166f, -13.232513f));
+        cam.updateRotation(new Quaternion(0.25168246f, -0.10547892f, 0.02760565f, 0.96164864f));
         flyCam.setMoveSpeed(30);
 
         setupLighting();

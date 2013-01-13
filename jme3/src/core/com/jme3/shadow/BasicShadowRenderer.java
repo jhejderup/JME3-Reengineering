@@ -35,7 +35,7 @@ import com.jme3.asset.AssetManager;
 import com.jme3.material.Material;
 import com.jme3.math.Vector3f;
 import com.jme3.post.SceneProcessor;
-import com.jme3.renderer.Camera;
+import com.jme3.renderer.CameraView;
 import com.jme3.renderer.RenderManager;
 import com.jme3.renderer.Renderer;
 import com.jme3.renderer.ViewPort;
@@ -61,7 +61,7 @@ public class BasicShadowRenderer implements SceneProcessor {
     private ViewPort viewPort;
     private FrameBuffer shadowFB;
     private Texture2D shadowMap;
-    private Camera shadowCam;
+    private CameraView shadowCam;
     private Material preshadowMat;
     private Material postshadowMat;
     private Picture dispPic = new Picture("Picture");
@@ -79,7 +79,7 @@ public class BasicShadowRenderer implements SceneProcessor {
         shadowFB = new FrameBuffer(size, size, 1);
         shadowMap = new Texture2D(size, size, Format.Depth);
         shadowFB.setDepthTexture(shadowMap);
-        shadowCam = new Camera(size, size);
+        shadowCam = new CameraView(size, size);
         
          //DO NOT COMMENT THIS (it prevent the OSX incomplete read buffer crash)
         dummyTex = new Texture2D(size, size, Format.RGBA8);        
@@ -136,7 +136,7 @@ public class BasicShadowRenderer implements SceneProcessor {
      * returns the shadow camera 
      * @return 
      */
-    public Camera getShadowCamera() {
+    public CameraView getShadowCamera() {
         return shadowCam;
     }
 
@@ -152,10 +152,10 @@ public class BasicShadowRenderer implements SceneProcessor {
         GeometryList receivers = rq.getShadowQueueContent(ShadowMode.Receive);
 
         // update frustum points based on current camera
-        Camera viewCam = viewPort.getCamera();
+        CameraView viewCam = viewPort.getCamera();
         ShadowUtil.updateFrustumPoints(viewCam,
-                viewCam.getFrustumNear(),
-                viewCam.getFrustumFar(),
+                viewCam.getFrustum().getFrustumNear(),
+                viewCam.getFrustum().getFrustumFar(),
                 1.0f,
                 points);
 
@@ -166,15 +166,15 @@ public class BasicShadowRenderer implements SceneProcessor {
         frustaCenter.multLocal(1f / 8f);
 
         // update light direction
-        shadowCam.setProjectionMatrix(null);
+        shadowCam.getCamera().setProjectionMatrix(null);
         shadowCam.setParallelProjection(true);
 //        shadowCam.setFrustumPerspective(45, 1, 1, 20);
 
         shadowCam.lookAtDirection(direction, Vector3f.UNIT_Y);
         shadowCam.update();
-        shadowCam.setLocation(frustaCenter);
+        shadowCam.updateLocation(frustaCenter);
         shadowCam.update();
-        shadowCam.updateViewProjection();
+        shadowCam.getCamera().updateViewProjection();
 
         // render shadow casters to shadow map
         ShadowUtil.updateShadowCamera(occluders, receivers, shadowCam, points);
@@ -202,7 +202,7 @@ public class BasicShadowRenderer implements SceneProcessor {
 
     public void postFrame(FrameBuffer out) {
         if (!noOccluders) {
-            postshadowMat.setMatrix4("LightViewProjectionMatrix", shadowCam.getViewProjectionMatrix());
+            postshadowMat.setMatrix4("LightViewProjectionMatrix", shadowCam.getCamera().getViewProjectionMatrix());
             renderManager.setForcedMaterial(postshadowMat);
             viewPort.getQueue().renderShadowQueue(ShadowMode.Receive, renderManager, viewPort.getCamera(), true);
             renderManager.setForcedMaterial(null);

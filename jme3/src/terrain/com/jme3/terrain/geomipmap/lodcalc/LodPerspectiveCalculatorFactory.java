@@ -33,7 +33,7 @@ package com.jme3.terrain.geomipmap.lodcalc;
 
 import com.jme3.export.JmeExporter;
 import com.jme3.export.JmeImporter;
-import com.jme3.renderer.Camera;
+import com.jme3.renderer.CameraView;
 import com.jme3.terrain.geomipmap.TerrainPatch;
 import java.io.IOException;
 
@@ -45,10 +45,10 @@ import java.io.IOException;
  */
 public class LodPerspectiveCalculatorFactory implements LodCalculatorFactory {
 
-    private Camera cam;
+    private CameraView cam;
     private float pixelError;
 
-    public LodPerspectiveCalculatorFactory(Camera cam, float pixelError){
+    public LodPerspectiveCalculatorFactory(CameraView cam, float pixelError){
         this.cam = cam;
         this.pixelError = pixelError;
     }

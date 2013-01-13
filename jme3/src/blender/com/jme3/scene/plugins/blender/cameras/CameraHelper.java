@@ -2,7 +2,7 @@ package com.jme3.scene.plugins.blender.cameras;
 
 import com.jme3.asset.BlenderKey.FeaturesToLoad;
 import com.jme3.math.FastMath;
-import com.jme3.renderer.Camera;
+import com.jme3.renderer.CameraView;
 import com.jme3.scene.CameraNode;
 import com.jme3.scene.plugins.blender.AbstractBlenderHelper;
 import com.jme3.scene.plugins.blender.BlenderContext;
@@ -71,7 +71,7 @@ public class CameraHelper extends AbstractBlenderHelper {
             width = ((Number)renderData.getFieldValue("xsch")).shortValue();
             height = ((Number)renderData.getFieldValue("ysch")).shortValue();
         }
-        Camera camera = new Camera(width, height);
+        CameraView camera = new CameraView(width, height);
         int type = ((Number) structure.getFieldValue("type")).intValue();
         if (type != 0 && type != 1) {
             LOGGER.log(Level.WARNING, "Unknown camera type: {0}. Perspective camera is being used!", type);
@@ -110,7 +110,7 @@ public class CameraHelper extends AbstractBlenderHelper {
             // This probably is not correct.
             fovY = ((Number) structure.getFieldValue("ortho_scale")).floatValue();
         }
-        camera.setFrustumPerspective(fovY, aspect, clipsta, clipend);
+        camera.updateFrustumPerspective(fovY, aspect, clipsta, clipend);
         return new CameraNode(null, camera);
     }
     
@@ -125,7 +125,7 @@ public class CameraHelper extends AbstractBlenderHelper {
 	 *             blender file
 	 */
     private CameraNode toCamera249(Structure structure) throws BlenderFileException {
-        Camera camera = new Camera(DEFAULT_CAM_WIDTH, DEFAULT_CAM_HEIGHT);
+        CameraView camera = new CameraView(DEFAULT_CAM_WIDTH, DEFAULT_CAM_HEIGHT);
         int type = ((Number) structure.getFieldValue("type")).intValue();
         if (type != 0 && type != 1) {
             LOGGER.log(Level.WARNING, "Unknown camera type: {0}. Perspective camera is being used!", type);
@@ -141,7 +141,7 @@ public class CameraHelper extends AbstractBlenderHelper {
         } else {
             aspect = ((Number) structure.getFieldValue("ortho_scale")).floatValue();
         }
-        camera.setFrustumPerspective(aspect, camera.getWidth() / camera.getHeight(), clipsta, clipend);
+        camera.updateFrustumPerspective(aspect, camera.getWidth() / camera.getHeight(), clipsta, clipend);
         return new CameraNode(null, camera);
     }
 

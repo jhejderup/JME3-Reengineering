@@ -38,7 +38,7 @@ import com.jme3.audio.AudioRenderer;
 import com.jme3.audio.Listener;
 import com.jme3.input.*;
 import com.jme3.math.Vector3f;
-import com.jme3.renderer.Camera;
+import com.jme3.renderer.CameraView;
 import com.jme3.renderer.RenderManager;
 import com.jme3.renderer.Renderer;
 import com.jme3.renderer.ViewPort;
@@ -78,7 +78,7 @@ public class Application implements SystemListener {
     protected JmeContext context;
     protected AppSettings settings;
     protected Timer timer = new NanoTimer();
-    protected Camera cam;
+    protected CameraView cam;
     protected Listener listener;
 
     protected boolean inputEnabled = true;
@@ -242,10 +242,10 @@ public class Application implements SystemListener {
      * units respectively.
      */
     private void initCamera(){
-        cam = new Camera(settings.getWidth(), settings.getHeight());
+        cam = new CameraView(settings.getWidth(), settings.getHeight());
 
-        cam.setFrustumPerspective(45f, (float)cam.getWidth() / cam.getHeight(), 1f, 1000f);
-        cam.setLocation(new Vector3f(0f, 0f, 10f));
+        cam.updateFrustumPerspective(45f, (float)cam.getWidth() / cam.getHeight(), 1f, 1000f);
+        cam.updateLocation(new Vector3f(0f, 0f, 10f));
         cam.lookAt(new Vector3f(0f, 0f, 0f), Vector3f.UNIT_Y);
 
         renderManager = new RenderManager(renderer);
@@ -255,7 +255,7 @@ public class Application implements SystemListener {
         viewPort.setClearFlags(true, true, true);
 
         // Create a new cam for the gui
-        Camera guiCam = new Camera(settings.getWidth(), settings.getHeight());
+        CameraView guiCam = new CameraView(settings.getWidth(), settings.getHeight());
         guiViewPort = renderManager.createPostView("Gui Default", guiCam);
         guiViewPort.setClearFlags(false, false, false);
     }
@@ -352,9 +352,9 @@ public class Application implements SystemListener {
     }
 
     /**
-     * @return The {@link Camera camera} for the application
+     * @return The {@link CameraView camera} for the application
      */
-    public Camera getCamera(){
+    public CameraView getCamera(){
         return cam;
     }
 

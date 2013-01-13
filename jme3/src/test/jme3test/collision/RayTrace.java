@@ -36,7 +36,7 @@ import com.jme3.collision.CollisionResults;
 import com.jme3.math.Ray;
 import com.jme3.math.Vector2f;
 import com.jme3.math.Vector3f;
-import com.jme3.renderer.Camera;
+import com.jme3.renderer.CameraView;
 import com.jme3.scene.Spatial;
 import java.awt.FlowLayout;
 import java.awt.image.BufferedImage;
@@ -47,13 +47,13 @@ import javax.swing.JLabel;
 public class RayTrace {
 
     private BufferedImage image;
-    private Camera cam;
+    private CameraView cam;
     private Spatial scene;
     private CollisionResults results = new CollisionResults();
     private JFrame frame;
     private JLabel label;
 
-    public RayTrace(Spatial scene, Camera cam, int width, int height){
+    public RayTrace(Spatial scene, CameraView cam, int width, int height){
         image = new BufferedImage(width, height, BufferedImage.TYPE_INT_ARGB);
         this.scene = scene;
         this.cam = cam;

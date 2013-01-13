@@ -36,7 +36,7 @@ import com.jme3.export.JmeExporter;
 import com.jme3.export.JmeImporter;
 import com.jme3.export.OutputCapsule;
 import com.jme3.math.Vector3f;
-import com.jme3.renderer.Camera;
+import com.jme3.renderer.CameraView;
 import com.jme3.renderer.RenderManager;
 import com.jme3.renderer.ViewPort;
 import com.jme3.scene.Node;
@@ -78,7 +78,7 @@ import java.util.logging.Logger;
 public class TerrainLodControl extends AbstractControl {
 
     private Terrain terrain;
-    protected List<Camera> cameras;
+    protected List<CameraView> cameras;
     private List<Vector3f> cameraLocations = new ArrayList<Vector3f>();
     protected LodCalculator lodCalculator;
     private boolean hasResetLod = false; // used when enabled is set to false
@@ -96,8 +96,8 @@ public class TerrainLodControl extends AbstractControl {
     public TerrainLodControl() {
     }
 
-    public TerrainLodControl(Terrain terrain, Camera camera) {
-        List<Camera> cams = new ArrayList<Camera>();
+    public TerrainLodControl(Terrain terrain, CameraView camera) {
+        List<CameraView> cams = new ArrayList<CameraView>();
         cams.add(camera);
         this.terrain = terrain;
         this.cameras = cams;
@@ -109,7 +109,7 @@ public class TerrainLodControl extends AbstractControl {
      * @param terrain to act upon (must be a Spatial)
      * @param cameras one or more cameras to reference for LOD calc
      */
-    public TerrainLodControl(Terrain terrain, List<Camera> cameras) {
+    public TerrainLodControl(Terrain terrain, List<CameraView> cameras) {
         this.terrain = terrain;
         this.cameras = cameras;
         lodCalculator = new DistanceLodCalculator(65, 2.7f); // a default calculator
@@ -147,9 +147,9 @@ public class TerrainLodControl extends AbstractControl {
         
         if (cameras != null) {
             if (cameraLocations.isEmpty() && !cameras.isEmpty()) {
-                for (Camera c : cameras) // populate them
+                for (CameraView c : cameras) // populate them
                 {
-                    cameraLocations.add(c.getLocation());
+                    cameraLocations.add(c.getCamera().getLocation());
                 }
             }
             updateLOD(cameraLocations, lodCalculator);
@@ -291,9 +291,9 @@ public class TerrainLodControl extends AbstractControl {
     
     public Control cloneForSpatial(Spatial spatial) {
         if (spatial instanceof Terrain) {
-            List<Camera> cameraClone = new ArrayList<Camera>();
+            List<CameraView> cameraClone = new ArrayList<CameraView>();
             if (cameras != null) {
-                for (Camera c : cameras) {
+                for (CameraView c : cameras) {
                     cameraClone.add(c);
                 }
             }
@@ -304,17 +304,17 @@ public class TerrainLodControl extends AbstractControl {
         return null;
     }
 
-    public void setCamera(Camera camera) {
-        List<Camera> cams = new ArrayList<Camera>();
+    public void setCamera(CameraView camera) {
+        List<CameraView> cams = new ArrayList<CameraView>();
         cams.add(camera);
         setCameras(cams);
     }
     
-    public void setCameras(List<Camera> cameras) {
+    public void setCameras(List<CameraView> cameras) {
         this.cameras = cameras;
         cameraLocations.clear();
-        for (Camera c : cameras) {
-            cameraLocations.add(c.getLocation());
+        for (CameraView c : cameras) {
+            cameraLocations.add(c.getCamera().getLocation());
         }
     }
 

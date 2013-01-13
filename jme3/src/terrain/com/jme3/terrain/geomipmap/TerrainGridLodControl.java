@@ -32,7 +32,7 @@
 package com.jme3.terrain.geomipmap;
 
 import com.jme3.math.Vector3f;
-import com.jme3.renderer.Camera;
+import com.jme3.renderer.CameraView;
 import com.jme3.terrain.Terrain;
 import com.jme3.terrain.geomipmap.lodcalc.LodCalculator;
 import java.util.List;
@@ -45,7 +45,7 @@ import java.util.List;
  */
 public class TerrainGridLodControl extends TerrainLodControl {
     
-    public TerrainGridLodControl(Terrain terrain, Camera camera) {
+    public TerrainGridLodControl(Terrain terrain, CameraView camera) {
         super(terrain, camera);
     }
     

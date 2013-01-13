@@ -50,7 +50,7 @@ import com.jme3.light.DirectionalLight;
 import com.jme3.light.PointLight;
 import com.jme3.material.Material;
 import com.jme3.math.*;
-import com.jme3.renderer.Camera;
+import com.jme3.renderer.CameraView;
 import com.jme3.renderer.queue.RenderQueue.ShadowMode;
 import com.jme3.scene.Geometry;
 import com.jme3.scene.Spatial;
@@ -237,7 +237,7 @@ public class TestHoveringTank extends SimpleApplication implements AnalogListene
         // add Y distance
         camPos.setY(2);
         camPos.addLocal(pos);
-        cam.setLocation(camPos);
+        cam.updateLocation(camPos);
 
         Vector3f lookAt = new Vector3f(dir);
         lookAt.multLocal(7); // look at dist
@@ -285,7 +285,7 @@ public class TestHoveringTank extends SimpleApplication implements AnalogListene
             e.printStackTrace();
         }
         terrain = new TerrainQuad("terrain", 65, 513, heightmap.getHeightMap());
-        List<Camera> cameras = new ArrayList<Camera>();
+        List<CameraView> cameras = new ArrayList<CameraView>();
         cameras.add(getCamera());
         TerrainLodControl control = new TerrainLodControl(terrain, cameras);
         terrain.addControl(control);

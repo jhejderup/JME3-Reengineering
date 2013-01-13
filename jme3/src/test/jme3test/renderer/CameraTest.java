@@ -17,7 +17,7 @@ import com.jme3.math.Vector2f;
 import com.jme3.math.Vector3f;
 import com.jme3.renderer.*;
 /**
- * The class <code>CameraTest</code> contains tests for the class <code>{@link Camera}</code>.
+ * The class <code>CameraTest</code> contains tests for the class <code>{@link CameraView}</code>.
  *
  * @generatedBy CodePro at 2013-01-07 19:30
  * @author Joseph
@@ -27,277 +27,277 @@ public class CameraTest {
 	/**
 	 * An instance of the class being tested.
 	 *
-	 * @see Camera
+	 * @see CameraView
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
-	private Camera fixture1;
+	private CameraView fixture1;
 
 	/**
 	 * An instance of the class being tested.
 	 *
-	 * @see Camera
+	 * @see CameraView
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
-	private Camera fixture2;
+	private CameraView fixture2;
 
 	/**
 	 * An instance of the class being tested.
 	 *
-	 * @see Camera
+	 * @see CameraView
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
-	private Camera fixture3;
+	private CameraView fixture3;
 
 	/**
 	 * An instance of the class being tested.
 	 *
-	 * @see Camera
+	 * @see CameraView
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
-	private Camera fixture4;
+	private CameraView fixture4;
 
 	/**
 	 * An instance of the class being tested.
 	 *
-	 * @see Camera
+	 * @see CameraView
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
-	private Camera fixture5;
+	private CameraView fixture5;
 
 	/**
 	 * An instance of the class being tested.
 	 *
-	 * @see Camera
+	 * @see CameraView
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
-	private Camera fixture6;
+	private CameraView fixture6;
 
 	/**
 	 * An instance of the class being tested.
 	 *
-	 * @see Camera
+	 * @see CameraView
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
-	private Camera fixture7;
+	private CameraView fixture7;
 
 	/**
 	 * An instance of the class being tested.
 	 *
-	 * @see Camera
+	 * @see CameraView
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
-	private Camera fixture8;
+	private CameraView fixture8;
 
 	/**
 	 * An instance of the class being tested.
 	 *
-	 * @see Camera
+	 * @see CameraView
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
-	private Camera fixture9;
+	private CameraView fixture9;
 
 	/**
 	 * An instance of the class being tested.
 	 *
-	 * @see Camera
+	 * @see CameraView
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
-	private Camera fixture10;
+	private CameraView fixture10;
 
 	/**
 	 * An instance of the class being tested.
 	 *
-	 * @see Camera
+	 * @see CameraView
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
-	private Camera fixture11;
+	private CameraView fixture11;
 
 	/**
 	 * An instance of the class being tested.
 	 *
-	 * @see Camera
+	 * @see CameraView
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
-	private Camera fixture12;
+	private CameraView fixture12;
 
 	/**
 	 * An instance of the class being tested.
 	 *
-	 * @see Camera
+	 * @see CameraView
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
-	private Camera fixture13;
+	private CameraView fixture13;
 
 	/**
 	 * An instance of the class being tested.
 	 *
-	 * @see Camera
+	 * @see CameraView
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
-	private Camera fixture14;
+	private CameraView fixture14;
 
 	/**
 	 * An instance of the class being tested.
 	 *
-	 * @see Camera
+	 * @see CameraView
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
-	private Camera fixture15;
+	private CameraView fixture15;
 
 	/**
 	 * An instance of the class being tested.
 	 *
-	 * @see Camera
+	 * @see CameraView
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
-	private Camera fixture16;
+	private CameraView fixture16;
 
 	/**
 	 * An instance of the class being tested.
 	 *
-	 * @see Camera
+	 * @see CameraView
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
-	private Camera fixture17;
+	private CameraView fixture17;
 
 	/**
 	 * An instance of the class being tested.
 	 *
-	 * @see Camera
+	 * @see CameraView
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
-	private Camera fixture18;
+	private CameraView fixture18;
 
 	/**
 	 * An instance of the class being tested.
 	 *
-	 * @see Camera
+	 * @see CameraView
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
-	private Camera fixture19;
+	private CameraView fixture19;
 
 	/**
 	 * An instance of the class being tested.
 	 *
-	 * @see Camera
+	 * @see CameraView
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
-	private Camera fixture20;
+	private CameraView fixture20;
 
 	/**
 	 * An instance of the class being tested.
 	 *
-	 * @see Camera
+	 * @see CameraView
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
-	private Camera fixture21;
+	private CameraView fixture21;
 
 	/**
 	 * An instance of the class being tested.
 	 *
-	 * @see Camera
+	 * @see CameraView
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
-	private Camera fixture22;
+	private CameraView fixture22;
 
 	/**
 	 * An instance of the class being tested.
 	 *
-	 * @see Camera
+	 * @see CameraView
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
-	private Camera fixture23;
+	private CameraView fixture23;
 
 	/**
 	 * An instance of the class being tested.
 	 *
-	 * @see Camera
+	 * @see CameraView
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
-	private Camera fixture24;
+	private CameraView fixture24;
 
 	/**
 	 * An instance of the class being tested.
 	 *
-	 * @see Camera
+	 * @see CameraView
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
-	private Camera fixture25;
+	private CameraView fixture25;
 
 	/**
 	 * An instance of the class being tested.
 	 *
-	 * @see Camera
+	 * @see CameraView
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
-	private Camera fixture26;
+	private CameraView fixture26;
 
 	/**
 	 * An instance of the class being tested.
 	 *
-	 * @see Camera
+	 * @see CameraView
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
-	private Camera fixture27;
+	private CameraView fixture27;
 
 	/**
 	 * An instance of the class being tested.
 	 *
-	 * @see Camera
+	 * @see CameraView
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
-	private Camera fixture28;
+	private CameraView fixture28;
 
 	/**
 	 * An instance of the class being tested.
 	 *
-	 * @see Camera
+	 * @see CameraView
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
-	private Camera fixture29;
+	private CameraView fixture29;
 
 	/**
 	 * Return an instance of the class being tested.
 	 *
 	 * @return an instance of the class being tested
 	 *
-	 * @see Camera
+	 * @see CameraView
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
-	public Camera getFixture1()
+	public CameraView getFixture1()
 		throws Exception {
 		if (fixture1 == null) {
-			fixture1 = new Camera();
+			fixture1 = new CameraView();
 		}
 		return fixture1;
 	}
@@ -307,14 +307,14 @@ public class CameraTest {
 	 *
 	 * @return an instance of the class being tested
 	 *
-	 * @see Camera
+	 * @see CameraView
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
-	public Camera getFixture2()
+	public CameraView getFixture2()
 		throws Exception {
 		if (fixture2 == null) {
-			fixture2 = new Camera(0, 0);
+			fixture2 = new CameraView(0, 0);
 		}
 		return fixture2;
 	}
@@ -324,21 +324,21 @@ public class CameraTest {
 	 *
 	 * @return an instance of the class being tested
 	 *
-	 * @see Camera
+	 * @see CameraView
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
-	public Camera getFixture3()
+	public CameraView getFixture3()
 		throws Exception {
 		if (fixture3 == null) {
-			fixture3 = new Camera(0, 0);
+			fixture3 = new CameraView(0, 0);
 			fixture3.setFrame(Vector3f.NAN, Quaternion.DIRECTION_Z);
-			fixture3.setFrustumBottom(-1.0f);
-			fixture3.setFrustumFar(-1.0f);
-			fixture3.setFrustumLeft(-1.0f);
-			fixture3.setFrustumNear(-1.0f);
-			fixture3.setFrustumRight(-1.0f);
-			fixture3.setFrustumTop(-1.0f);
+			fixture3.updateFrustumBottom(-1.0f);
+			fixture3.updateFrustumFar(-1.0f);
+			fixture3.updateFrustumLeft(-1.0f);
+			fixture3.updateFrustumNear(-1.0f);
+			fixture3.updateFrustumRight(-1.0f);
+			fixture3.updateFrustumTop(-1.0f);
 			fixture3.setName("");
 			fixture3.setParallelProjection(false);
 			fixture3.setPlaneState(0);
@@ -356,21 +356,21 @@ public class CameraTest {
 	 *
 	 * @return an instance of the class being tested
 	 *
-	 * @see Camera
+	 * @see CameraView
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
-	public Camera getFixture4()
+	public CameraView getFixture4()
 		throws Exception {
 		if (fixture4 == null) {
-			fixture4 = new Camera(0, 0);
+			fixture4 = new CameraView(0, 0);
 			fixture4.setFrame(Vector3f.NEGATIVE_INFINITY, Quaternion.IDENTITY);
-			fixture4.setFrustumBottom(0.0f);
-			fixture4.setFrustumFar(-1.0f);
-			fixture4.setFrustumLeft(-1.0f);
-			fixture4.setFrustumNear(0.0f);
-			fixture4.setFrustumRight(0.0f);
-			fixture4.setFrustumTop(-1.0f);
+			fixture4.updateFrustumBottom(0.0f);
+			fixture4.updateFrustumFar(-1.0f);
+			fixture4.updateFrustumLeft(-1.0f);
+			fixture4.updateFrustumNear(0.0f);
+			fixture4.updateFrustumRight(0.0f);
+			fixture4.updateFrustumTop(-1.0f);
 			fixture4.setName("0123456789");
 			fixture4.setParallelProjection(true);
 			fixture4.setPlaneState(0);
@@ -388,21 +388,21 @@ public class CameraTest {
 	 *
 	 * @return an instance of the class being tested
 	 *
-	 * @see Camera
+	 * @see CameraView
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
-	public Camera getFixture5()
+	public CameraView getFixture5()
 		throws Exception {
 		if (fixture5 == null) {
-			fixture5 = new Camera(0, 0);
+			fixture5 = new CameraView(0, 0);
 			fixture5.setFrame(Vector3f.NEGATIVE_INFINITY, Quaternion.IDENTITY);
-			fixture5.setFrustumBottom(0.0f);
-			fixture5.setFrustumFar(-1.0f);
-			fixture5.setFrustumLeft(-1.0f);
-			fixture5.setFrustumNear(0.0f);
-			fixture5.setFrustumRight(0.0f);
-			fixture5.setFrustumTop(-1.0f);
+			fixture5.updateFrustumBottom(0.0f);
+			fixture5.updateFrustumFar(-1.0f);
+			fixture5.updateFrustumLeft(-1.0f);
+			fixture5.updateFrustumNear(0.0f);
+			fixture5.updateFrustumRight(0.0f);
+			fixture5.updateFrustumTop(-1.0f);
 			fixture5.setName("0123456789");
 			fixture5.setParallelProjection(true);
 			fixture5.setPlaneState(1);
@@ -420,21 +420,21 @@ public class CameraTest {
 	 *
 	 * @return an instance of the class being tested
 	 *
-	 * @see Camera
+	 * @see CameraView
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
-	public Camera getFixture6()
+	public CameraView getFixture6()
 		throws Exception {
 		if (fixture6 == null) {
-			fixture6 = new Camera(0, 0);
+			fixture6 = new CameraView(0, 0);
 			fixture6.setFrame(Vector3f.NEGATIVE_INFINITY, Quaternion.IDENTITY);
-			fixture6.setFrustumBottom(0.0f);
-			fixture6.setFrustumFar(-1.0f);
-			fixture6.setFrustumLeft(-1.0f);
-			fixture6.setFrustumNear(0.0f);
-			fixture6.setFrustumRight(0.0f);
-			fixture6.setFrustumTop(0.0f);
+			fixture6.updateFrustumBottom(0.0f);
+			fixture6.updateFrustumFar(-1.0f);
+			fixture6.updateFrustumLeft(-1.0f);
+			fixture6.updateFrustumNear(0.0f);
+			fixture6.updateFrustumRight(0.0f);
+			fixture6.updateFrustumTop(0.0f);
 			fixture6.setName("");
 			fixture6.setParallelProjection(true);
 			fixture6.setPlaneState(1);
@@ -452,21 +452,21 @@ public class CameraTest {
 	 *
 	 * @return an instance of the class being tested
 	 *
-	 * @see Camera
+	 * @see CameraView
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
-	public Camera getFixture7()
+	public CameraView getFixture7()
 		throws Exception {
 		if (fixture7 == null) {
-			fixture7 = new Camera(0, 0);
+			fixture7 = new CameraView(0, 0);
 			fixture7.setFrame(Vector3f.NEGATIVE_INFINITY, Quaternion.IDENTITY);
-			fixture7.setFrustumBottom(0.0f);
-			fixture7.setFrustumFar(-1.0f);
-			fixture7.setFrustumLeft(-1.0f);
-			fixture7.setFrustumNear(0.0f);
-			fixture7.setFrustumRight(0.0f);
-			fixture7.setFrustumTop(0.0f);
+			fixture7.updateFrustumBottom(0.0f);
+			fixture7.updateFrustumFar(-1.0f);
+			fixture7.updateFrustumLeft(-1.0f);
+			fixture7.updateFrustumNear(0.0f);
+			fixture7.updateFrustumRight(0.0f);
+			fixture7.updateFrustumTop(0.0f);
 			fixture7.setName("0123456789");
 			fixture7.setParallelProjection(true);
 			fixture7.setPlaneState(0);
@@ -484,21 +484,21 @@ public class CameraTest {
 	 *
 	 * @return an instance of the class being tested
 	 *
-	 * @see Camera
+	 * @see CameraView
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
-	public Camera getFixture8()
+	public CameraView getFixture8()
 		throws Exception {
 		if (fixture8 == null) {
-			fixture8 = new Camera(0, 0);
+			fixture8 = new CameraView(0, 0);
 			fixture8.setFrame(Vector3f.NEGATIVE_INFINITY, Quaternion.IDENTITY);
-			fixture8.setFrustumBottom(0.0f);
-			fixture8.setFrustumFar(-1.0f);
-			fixture8.setFrustumLeft(-1.0f);
-			fixture8.setFrustumNear(0.0f);
-			fixture8.setFrustumRight(0.0f);
-			fixture8.setFrustumTop(0.0f);
+			fixture8.updateFrustumBottom(0.0f);
+			fixture8.updateFrustumFar(-1.0f);
+			fixture8.updateFrustumLeft(-1.0f);
+			fixture8.updateFrustumNear(0.0f);
+			fixture8.updateFrustumRight(0.0f);
+			fixture8.updateFrustumTop(0.0f);
 			fixture8.setName("0123456789");
 			fixture8.setParallelProjection(true);
 			fixture8.setPlaneState(1);
@@ -516,21 +516,21 @@ public class CameraTest {
 	 *
 	 * @return an instance of the class being tested
 	 *
-	 * @see Camera
+	 * @see CameraView
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
-	public Camera getFixture9()
+	public CameraView getFixture9()
 		throws Exception {
 		if (fixture9 == null) {
-			fixture9 = new Camera(0, 0);
+			fixture9 = new CameraView(0, 0);
 			fixture9.setFrame(Vector3f.NEGATIVE_INFINITY, Quaternion.IDENTITY);
-			fixture9.setFrustumBottom(0.0f);
-			fixture9.setFrustumFar(-1.0f);
-			fixture9.setFrustumLeft(0.0f);
-			fixture9.setFrustumNear(0.0f);
-			fixture9.setFrustumRight(0.0f);
-			fixture9.setFrustumTop(-1.0f);
+			fixture9.updateFrustumBottom(0.0f);
+			fixture9.updateFrustumFar(-1.0f);
+			fixture9.updateFrustumLeft(0.0f);
+			fixture9.updateFrustumNear(0.0f);
+			fixture9.updateFrustumRight(0.0f);
+			fixture9.updateFrustumTop(-1.0f);
 			fixture9.setName("");
 			fixture9.setParallelProjection(true);
 			fixture9.setPlaneState(0);
@@ -548,21 +548,21 @@ public class CameraTest {
 	 *
 	 * @return an instance of the class being tested
 	 *
-	 * @see Camera
+	 * @see CameraView
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
-	public Camera getFixture10()
+	public CameraView getFixture10()
 		throws Exception {
 		if (fixture10 == null) {
-			fixture10 = new Camera(0, 0);
+			fixture10 = new CameraView(0, 0);
 			fixture10.setFrame(Vector3f.NEGATIVE_INFINITY, Quaternion.IDENTITY);
-			fixture10.setFrustumBottom(0.0f);
-			fixture10.setFrustumFar(-1.0f);
-			fixture10.setFrustumLeft(0.0f);
-			fixture10.setFrustumNear(0.0f);
-			fixture10.setFrustumRight(0.0f);
-			fixture10.setFrustumTop(-1.0f);
+			fixture10.updateFrustumBottom(0.0f);
+			fixture10.updateFrustumFar(-1.0f);
+			fixture10.updateFrustumLeft(0.0f);
+			fixture10.updateFrustumNear(0.0f);
+			fixture10.updateFrustumRight(0.0f);
+			fixture10.updateFrustumTop(-1.0f);
 			fixture10.setName("");
 			fixture10.setParallelProjection(true);
 			fixture10.setPlaneState(1);
@@ -580,21 +580,21 @@ public class CameraTest {
 	 *
 	 * @return an instance of the class being tested
 	 *
-	 * @see Camera
+	 * @see CameraView
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
-	public Camera getFixture11()
+	public CameraView getFixture11()
 		throws Exception {
 		if (fixture11 == null) {
-			fixture11 = new Camera(0, 0);
+			fixture11 = new CameraView(0, 0);
 			fixture11.setFrame(Vector3f.NEGATIVE_INFINITY, Quaternion.IDENTITY);
-			fixture11.setFrustumBottom(0.0f);
-			fixture11.setFrustumFar(-1.0f);
-			fixture11.setFrustumLeft(0.0f);
-			fixture11.setFrustumNear(0.0f);
-			fixture11.setFrustumRight(0.0f);
-			fixture11.setFrustumTop(-1.0f);
+			fixture11.updateFrustumBottom(0.0f);
+			fixture11.updateFrustumFar(-1.0f);
+			fixture11.updateFrustumLeft(0.0f);
+			fixture11.updateFrustumNear(0.0f);
+			fixture11.updateFrustumRight(0.0f);
+			fixture11.updateFrustumTop(-1.0f);
 			fixture11.setName("0123456789");
 			fixture11.setParallelProjection(true);
 			fixture11.setPlaneState(0);
@@ -612,21 +612,21 @@ public class CameraTest {
 	 *
 	 * @return an instance of the class being tested
 	 *
-	 * @see Camera
+	 * @see CameraView
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
-	public Camera getFixture12()
+	public CameraView getFixture12()
 		throws Exception {
 		if (fixture12 == null) {
-			fixture12 = new Camera(0, 0);
+			fixture12 = new CameraView(0, 0);
 			fixture12.setFrame(Vector3f.NEGATIVE_INFINITY, Quaternion.IDENTITY);
-			fixture12.setFrustumBottom(0.0f);
-			fixture12.setFrustumFar(-1.0f);
-			fixture12.setFrustumLeft(0.0f);
-			fixture12.setFrustumNear(0.0f);
-			fixture12.setFrustumRight(0.0f);
-			fixture12.setFrustumTop(-1.0f);
+			fixture12.updateFrustumBottom(0.0f);
+			fixture12.updateFrustumFar(-1.0f);
+			fixture12.updateFrustumLeft(0.0f);
+			fixture12.updateFrustumNear(0.0f);
+			fixture12.updateFrustumRight(0.0f);
+			fixture12.updateFrustumTop(-1.0f);
 			fixture12.setName("0123456789");
 			fixture12.setParallelProjection(true);
 			fixture12.setPlaneState(1);
@@ -644,21 +644,21 @@ public class CameraTest {
 	 *
 	 * @return an instance of the class being tested
 	 *
-	 * @see Camera
+	 * @see CameraView
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
-	public Camera getFixture13()
+	public CameraView getFixture13()
 		throws Exception {
 		if (fixture13 == null) {
-			fixture13 = new Camera(0, 0);
+			fixture13 = new CameraView(0, 0);
 			fixture13.setFrame(Vector3f.NEGATIVE_INFINITY, Quaternion.IDENTITY);
-			fixture13.setFrustumBottom(0.0f);
-			fixture13.setFrustumFar(-1.0f);
-			fixture13.setFrustumLeft(0.0f);
-			fixture13.setFrustumNear(0.0f);
-			fixture13.setFrustumRight(0.0f);
-			fixture13.setFrustumTop(0.0f);
+			fixture13.updateFrustumBottom(0.0f);
+			fixture13.updateFrustumFar(-1.0f);
+			fixture13.updateFrustumLeft(0.0f);
+			fixture13.updateFrustumNear(0.0f);
+			fixture13.updateFrustumRight(0.0f);
+			fixture13.updateFrustumTop(0.0f);
 			fixture13.setName("");
 			fixture13.setParallelProjection(true);
 			fixture13.setPlaneState(0);
@@ -676,21 +676,21 @@ public class CameraTest {
 	 *
 	 * @return an instance of the class being tested
 	 *
-	 * @see Camera
+	 * @see CameraView
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
-	public Camera getFixture14()
+	public CameraView getFixture14()
 		throws Exception {
 		if (fixture14 == null) {
-			fixture14 = new Camera(0, 0);
+			fixture14 = new CameraView(0, 0);
 			fixture14.setFrame(Vector3f.NEGATIVE_INFINITY, Quaternion.IDENTITY);
-			fixture14.setFrustumBottom(0.0f);
-			fixture14.setFrustumFar(-1.0f);
-			fixture14.setFrustumLeft(0.0f);
-			fixture14.setFrustumNear(0.0f);
-			fixture14.setFrustumRight(0.0f);
-			fixture14.setFrustumTop(0.0f);
+			fixture14.updateFrustumBottom(0.0f);
+			fixture14.updateFrustumFar(-1.0f);
+			fixture14.updateFrustumLeft(0.0f);
+			fixture14.updateFrustumNear(0.0f);
+			fixture14.updateFrustumRight(0.0f);
+			fixture14.updateFrustumTop(0.0f);
 			fixture14.setName("");
 			fixture14.setParallelProjection(true);
 			fixture14.setPlaneState(1);
@@ -708,21 +708,21 @@ public class CameraTest {
 	 *
 	 * @return an instance of the class being tested
 	 *
-	 * @see Camera
+	 * @see CameraView
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
-	public Camera getFixture15()
+	public CameraView getFixture15()
 		throws Exception {
 		if (fixture15 == null) {
-			fixture15 = new Camera(0, 0);
+			fixture15 = new CameraView(0, 0);
 			fixture15.setFrame(Vector3f.NEGATIVE_INFINITY, Quaternion.IDENTITY);
-			fixture15.setFrustumBottom(0.0f);
-			fixture15.setFrustumFar(-1.0f);
-			fixture15.setFrustumLeft(0.0f);
-			fixture15.setFrustumNear(0.0f);
-			fixture15.setFrustumRight(0.0f);
-			fixture15.setFrustumTop(0.0f);
+			fixture15.updateFrustumBottom(0.0f);
+			fixture15.updateFrustumFar(-1.0f);
+			fixture15.updateFrustumLeft(0.0f);
+			fixture15.updateFrustumNear(0.0f);
+			fixture15.updateFrustumRight(0.0f);
+			fixture15.updateFrustumTop(0.0f);
 			fixture15.setName("0123456789");
 			fixture15.setParallelProjection(true);
 			fixture15.setPlaneState(0);
@@ -740,21 +740,21 @@ public class CameraTest {
 	 *
 	 * @return an instance of the class being tested
 	 *
-	 * @see Camera
+	 * @see CameraView
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
-	public Camera getFixture16()
+	public CameraView getFixture16()
 		throws Exception {
 		if (fixture16 == null) {
-			fixture16 = new Camera(0, 0);
+			fixture16 = new CameraView(0, 0);
 			fixture16.setFrame(Vector3f.NEGATIVE_INFINITY, Quaternion.IDENTITY);
-			fixture16.setFrustumBottom(0.0f);
-			fixture16.setFrustumFar(-1.0f);
-			fixture16.setFrustumLeft(0.0f);
-			fixture16.setFrustumNear(0.0f);
-			fixture16.setFrustumRight(0.0f);
-			fixture16.setFrustumTop(0.0f);
+			fixture16.updateFrustumBottom(0.0f);
+			fixture16.updateFrustumFar(-1.0f);
+			fixture16.updateFrustumLeft(0.0f);
+			fixture16.updateFrustumNear(0.0f);
+			fixture16.updateFrustumRight(0.0f);
+			fixture16.updateFrustumTop(0.0f);
 			fixture16.setName("0123456789");
 			fixture16.setParallelProjection(true);
 			fixture16.setPlaneState(1);
@@ -772,21 +772,21 @@ public class CameraTest {
 	 *
 	 * @return an instance of the class being tested
 	 *
-	 * @see Camera
+	 * @see CameraView
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
-	public Camera getFixture17()
+	public CameraView getFixture17()
 		throws Exception {
 		if (fixture17 == null) {
-			fixture17 = new Camera(0, 0);
+			fixture17 = new CameraView(0, 0);
 			fixture17.setFrame(Vector3f.NEGATIVE_INFINITY, Quaternion.IDENTITY);
-			fixture17.setFrustumBottom(0.0f);
-			fixture17.setFrustumFar(0.0f);
-			fixture17.setFrustumLeft(-1.0f);
-			fixture17.setFrustumNear(0.0f);
-			fixture17.setFrustumRight(0.0f);
-			fixture17.setFrustumTop(-1.0f);
+			fixture17.updateFrustumBottom(0.0f);
+			fixture17.updateFrustumFar(0.0f);
+			fixture17.updateFrustumLeft(-1.0f);
+			fixture17.updateFrustumNear(0.0f);
+			fixture17.updateFrustumRight(0.0f);
+			fixture17.updateFrustumTop(-1.0f);
 			fixture17.setName("0123456789");
 			fixture17.setParallelProjection(true);
 			fixture17.setPlaneState(0);
@@ -804,21 +804,21 @@ public class CameraTest {
 	 *
 	 * @return an instance of the class being tested
 	 *
-	 * @see Camera
+	 * @see CameraView
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
-	public Camera getFixture18()
+	public CameraView getFixture18()
 		throws Exception {
 		if (fixture18 == null) {
-			fixture18 = new Camera(0, 0);
+			fixture18 = new CameraView(0, 0);
 			fixture18.setFrame(Vector3f.NEGATIVE_INFINITY, Quaternion.IDENTITY);
-			fixture18.setFrustumBottom(0.0f);
-			fixture18.setFrustumFar(0.0f);
-			fixture18.setFrustumLeft(-1.0f);
-			fixture18.setFrustumNear(0.0f);
-			fixture18.setFrustumRight(0.0f);
-			fixture18.setFrustumTop(-1.0f);
+			fixture18.updateFrustumBottom(0.0f);
+			fixture18.updateFrustumFar(0.0f);
+			fixture18.updateFrustumLeft(-1.0f);
+			fixture18.updateFrustumNear(0.0f);
+			fixture18.updateFrustumRight(0.0f);
+			fixture18.updateFrustumTop(-1.0f);
 			fixture18.setName("0123456789");
 			fixture18.setParallelProjection(true);
 			fixture18.setPlaneState(1);
@@ -836,21 +836,21 @@ public class CameraTest {
 	 *
 	 * @return an instance of the class being tested
 	 *
-	 * @see Camera
+	 * @see CameraView
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
-	public Camera getFixture19()
+	public CameraView getFixture19()
 		throws Exception {
 		if (fixture19 == null) {
-			fixture19 = new Camera(0, 0);
+			fixture19 = new CameraView(0, 0);
 			fixture19.setFrame(Vector3f.NEGATIVE_INFINITY, Quaternion.IDENTITY);
-			fixture19.setFrustumBottom(0.0f);
-			fixture19.setFrustumFar(0.0f);
-			fixture19.setFrustumLeft(-1.0f);
-			fixture19.setFrustumNear(0.0f);
-			fixture19.setFrustumRight(0.0f);
-			fixture19.setFrustumTop(0.0f);
+			fixture19.updateFrustumBottom(0.0f);
+			fixture19.updateFrustumFar(0.0f);
+			fixture19.updateFrustumLeft(-1.0f);
+			fixture19.updateFrustumNear(0.0f);
+			fixture19.updateFrustumRight(0.0f);
+			fixture19.updateFrustumTop(0.0f);
 			fixture19.setName("");
 			fixture19.setParallelProjection(true);
 			fixture19.setPlaneState(1);
@@ -868,21 +868,21 @@ public class CameraTest {
 	 *
 	 * @return an instance of the class being tested
 	 *
-	 * @see Camera
+	 * @see CameraView
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
-	public Camera getFixture20()
+	public CameraView getFixture20()
 		throws Exception {
 		if (fixture20 == null) {
-			fixture20 = new Camera(0, 0);
+			fixture20 = new CameraView(0, 0);
 			fixture20.setFrame(Vector3f.NEGATIVE_INFINITY, Quaternion.IDENTITY);
-			fixture20.setFrustumBottom(0.0f);
-			fixture20.setFrustumFar(0.0f);
-			fixture20.setFrustumLeft(-1.0f);
-			fixture20.setFrustumNear(0.0f);
-			fixture20.setFrustumRight(0.0f);
-			fixture20.setFrustumTop(0.0f);
+			fixture20.updateFrustumBottom(0.0f);
+			fixture20.updateFrustumFar(0.0f);
+			fixture20.updateFrustumLeft(-1.0f);
+			fixture20.updateFrustumNear(0.0f);
+			fixture20.updateFrustumRight(0.0f);
+			fixture20.updateFrustumTop(0.0f);
 			fixture20.setName("0123456789");
 			fixture20.setParallelProjection(true);
 			fixture20.setPlaneState(0);
@@ -900,21 +900,21 @@ public class CameraTest {
 	 *
 	 * @return an instance of the class being tested
 	 *
-	 * @see Camera
+	 * @see CameraView
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
-	public Camera getFixture21()
+	public CameraView getFixture21()
 		throws Exception {
 		if (fixture21 == null) {
-			fixture21 = new Camera(0, 0);
+			fixture21 = new CameraView(0, 0);
 			fixture21.setFrame(Vector3f.NEGATIVE_INFINITY, Quaternion.IDENTITY);
-			fixture21.setFrustumBottom(0.0f);
-			fixture21.setFrustumFar(0.0f);
-			fixture21.setFrustumLeft(-1.0f);
-			fixture21.setFrustumNear(0.0f);
-			fixture21.setFrustumRight(0.0f);
-			fixture21.setFrustumTop(0.0f);
+			fixture21.updateFrustumBottom(0.0f);
+			fixture21.updateFrustumFar(0.0f);
+			fixture21.updateFrustumLeft(-1.0f);
+			fixture21.updateFrustumNear(0.0f);
+			fixture21.updateFrustumRight(0.0f);
+			fixture21.updateFrustumTop(0.0f);
 			fixture21.setName("0123456789");
 			fixture21.setParallelProjection(true);
 			fixture21.setPlaneState(1);
@@ -932,21 +932,21 @@ public class CameraTest {
 	 *
 	 * @return an instance of the class being tested
 	 *
-	 * @see Camera
+	 * @see CameraView
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
-	public Camera getFixture22()
+	public CameraView getFixture22()
 		throws Exception {
 		if (fixture22 == null) {
-			fixture22 = new Camera(0, 0);
+			fixture22 = new CameraView(0, 0);
 			fixture22.setFrame(Vector3f.NEGATIVE_INFINITY, Quaternion.IDENTITY);
-			fixture22.setFrustumBottom(0.0f);
-			fixture22.setFrustumFar(0.0f);
-			fixture22.setFrustumLeft(0.0f);
-			fixture22.setFrustumNear(0.0f);
-			fixture22.setFrustumRight(0.0f);
-			fixture22.setFrustumTop(-1.0f);
+			fixture22.updateFrustumBottom(0.0f);
+			fixture22.updateFrustumFar(0.0f);
+			fixture22.updateFrustumLeft(0.0f);
+			fixture22.updateFrustumNear(0.0f);
+			fixture22.updateFrustumRight(0.0f);
+			fixture22.updateFrustumTop(-1.0f);
 			fixture22.setName("");
 			fixture22.setParallelProjection(true);
 			fixture22.setPlaneState(0);
@@ -964,21 +964,21 @@ public class CameraTest {
 	 *
 	 * @return an instance of the class being tested
 	 *
-	 * @see Camera
+	 * @see CameraView
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
-	public Camera getFixture23()
+	public CameraView getFixture23()
 		throws Exception {
 		if (fixture23 == null) {
-			fixture23 = new Camera(0, 0);
+			fixture23 = new CameraView(0, 0);
 			fixture23.setFrame(Vector3f.NEGATIVE_INFINITY, Quaternion.IDENTITY);
-			fixture23.setFrustumBottom(0.0f);
-			fixture23.setFrustumFar(0.0f);
-			fixture23.setFrustumLeft(0.0f);
-			fixture23.setFrustumNear(0.0f);
-			fixture23.setFrustumRight(0.0f);
-			fixture23.setFrustumTop(-1.0f);
+			fixture23.updateFrustumBottom(0.0f);
+			fixture23.updateFrustumFar(0.0f);
+			fixture23.updateFrustumLeft(0.0f);
+			fixture23.updateFrustumNear(0.0f);
+			fixture23.updateFrustumRight(0.0f);
+			fixture23.updateFrustumTop(-1.0f);
 			fixture23.setName("");
 			fixture23.setParallelProjection(true);
 			fixture23.setPlaneState(1);
@@ -996,21 +996,21 @@ public class CameraTest {
 	 *
 	 * @return an instance of the class being tested
 	 *
-	 * @see Camera
+	 * @see CameraView
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
-	public Camera getFixture24()
+	public CameraView getFixture24()
 		throws Exception {
 		if (fixture24 == null) {
-			fixture24 = new Camera(0, 0);
+			fixture24 = new CameraView(0, 0);
 			fixture24.setFrame(Vector3f.NEGATIVE_INFINITY, Quaternion.IDENTITY);
-			fixture24.setFrustumBottom(0.0f);
-			fixture24.setFrustumFar(0.0f);
-			fixture24.setFrustumLeft(0.0f);
-			fixture24.setFrustumNear(0.0f);
-			fixture24.setFrustumRight(0.0f);
-			fixture24.setFrustumTop(-1.0f);
+			fixture24.updateFrustumBottom(0.0f);
+			fixture24.updateFrustumFar(0.0f);
+			fixture24.updateFrustumLeft(0.0f);
+			fixture24.updateFrustumNear(0.0f);
+			fixture24.updateFrustumRight(0.0f);
+			fixture24.updateFrustumTop(-1.0f);
 			fixture24.setName("0123456789");
 			fixture24.setParallelProjection(true);
 			fixture24.setPlaneState(0);
@@ -1028,21 +1028,21 @@ public class CameraTest {
 	 *
 	 * @return an instance of the class being tested
 	 *
-	 * @see Camera
+	 * @see CameraView
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
-	public Camera getFixture25()
+	public CameraView getFixture25()
 		throws Exception {
 		if (fixture25 == null) {
-			fixture25 = new Camera(0, 0);
+			fixture25 = new CameraView(0, 0);
 			fixture25.setFrame(Vector3f.NEGATIVE_INFINITY, Quaternion.IDENTITY);
-			fixture25.setFrustumBottom(0.0f);
-			fixture25.setFrustumFar(0.0f);
-			fixture25.setFrustumLeft(0.0f);
-			fixture25.setFrustumNear(0.0f);
-			fixture25.setFrustumRight(0.0f);
-			fixture25.setFrustumTop(-1.0f);
+			fixture25.updateFrustumBottom(0.0f);
+			fixture25.updateFrustumFar(0.0f);
+			fixture25.updateFrustumLeft(0.0f);
+			fixture25.updateFrustumNear(0.0f);
+			fixture25.updateFrustumRight(0.0f);
+			fixture25.updateFrustumTop(-1.0f);
 			fixture25.setName("0123456789");
 			fixture25.setParallelProjection(true);
 			fixture25.setPlaneState(1);
@@ -1060,21 +1060,21 @@ public class CameraTest {
 	 *
 	 * @return an instance of the class being tested
 	 *
-	 * @see Camera
+	 * @see CameraView
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
-	public Camera getFixture26()
+	public CameraView getFixture26()
 		throws Exception {
 		if (fixture26 == null) {
-			fixture26 = new Camera(0, 0);
+			fixture26 = new CameraView(0, 0);
 			fixture26.setFrame(Vector3f.NEGATIVE_INFINITY, Quaternion.IDENTITY);
-			fixture26.setFrustumBottom(0.0f);
-			fixture26.setFrustumFar(0.0f);
-			fixture26.setFrustumLeft(0.0f);
-			fixture26.setFrustumNear(0.0f);
-			fixture26.setFrustumRight(0.0f);
-			fixture26.setFrustumTop(0.0f);
+			fixture26.updateFrustumBottom(0.0f);
+			fixture26.updateFrustumFar(0.0f);
+			fixture26.updateFrustumLeft(0.0f);
+			fixture26.updateFrustumNear(0.0f);
+			fixture26.updateFrustumRight(0.0f);
+			fixture26.updateFrustumTop(0.0f);
 			fixture26.setName("");
 			fixture26.setParallelProjection(true);
 			fixture26.setPlaneState(0);
@@ -1092,21 +1092,21 @@ public class CameraTest {
 	 *
 	 * @return an instance of the class being tested
 	 *
-	 * @see Camera
+	 * @see CameraView
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
-	public Camera getFixture27()
+	public CameraView getFixture27()
 		throws Exception {
 		if (fixture27 == null) {
-			fixture27 = new Camera(0, 0);
+			fixture27 = new CameraView(0, 0);
 			fixture27.setFrame(Vector3f.NEGATIVE_INFINITY, Quaternion.IDENTITY);
-			fixture27.setFrustumBottom(0.0f);
-			fixture27.setFrustumFar(0.0f);
-			fixture27.setFrustumLeft(0.0f);
-			fixture27.setFrustumNear(0.0f);
-			fixture27.setFrustumRight(0.0f);
-			fixture27.setFrustumTop(0.0f);
+			fixture27.updateFrustumBottom(0.0f);
+			fixture27.updateFrustumFar(0.0f);
+			fixture27.updateFrustumLeft(0.0f);
+			fixture27.updateFrustumNear(0.0f);
+			fixture27.updateFrustumRight(0.0f);
+			fixture27.updateFrustumTop(0.0f);
 			fixture27.setName("");
 			fixture27.setParallelProjection(true);
 			fixture27.setPlaneState(1);
@@ -1124,21 +1124,21 @@ public class CameraTest {
 	 *
 	 * @return an instance of the class being tested
 	 *
-	 * @see Camera
+	 * @see CameraView
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
-	public Camera getFixture28()
+	public CameraView getFixture28()
 		throws Exception {
 		if (fixture28 == null) {
-			fixture28 = new Camera(0, 0);
+			fixture28 = new CameraView(0, 0);
 			fixture28.setFrame(Vector3f.NEGATIVE_INFINITY, Quaternion.IDENTITY);
-			fixture28.setFrustumBottom(0.0f);
-			fixture28.setFrustumFar(0.0f);
-			fixture28.setFrustumLeft(0.0f);
-			fixture28.setFrustumNear(0.0f);
-			fixture28.setFrustumRight(0.0f);
-			fixture28.setFrustumTop(0.0f);
+			fixture28.updateFrustumBottom(0.0f);
+			fixture28.updateFrustumFar(0.0f);
+			fixture28.updateFrustumLeft(0.0f);
+			fixture28.updateFrustumNear(0.0f);
+			fixture28.updateFrustumRight(0.0f);
+			fixture28.updateFrustumTop(0.0f);
 			fixture28.setName("0123456789");
 			fixture28.setParallelProjection(true);
 			fixture28.setPlaneState(0);
@@ -1156,21 +1156,21 @@ public class CameraTest {
 	 *
 	 * @return an instance of the class being tested
 	 *
-	 * @see Camera
+	 * @see CameraView
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
-	public Camera getFixture29()
+	public CameraView getFixture29()
 		throws Exception {
 		if (fixture29 == null) {
-			fixture29 = new Camera(0, 0);
+			fixture29 = new CameraView(0, 0);
 			fixture29.setFrame(Vector3f.NEGATIVE_INFINITY, Quaternion.IDENTITY);
-			fixture29.setFrustumBottom(0.0f);
-			fixture29.setFrustumFar(0.0f);
-			fixture29.setFrustumLeft(0.0f);
-			fixture29.setFrustumNear(0.0f);
-			fixture29.setFrustumRight(0.0f);
-			fixture29.setFrustumTop(0.0f);
+			fixture29.updateFrustumBottom(0.0f);
+			fixture29.updateFrustumFar(0.0f);
+			fixture29.updateFrustumLeft(0.0f);
+			fixture29.updateFrustumNear(0.0f);
+			fixture29.updateFrustumRight(0.0f);
+			fixture29.updateFrustumTop(0.0f);
 			fixture29.setName("0123456789");
 			fixture29.setParallelProjection(true);
 			fixture29.setPlaneState(1);
@@ -1194,7 +1194,7 @@ public class CameraTest {
 	public void testCamera_1()
 		throws Exception {
 
-		Camera result = new Camera();
+		CameraView result = new CameraView();
 
 		// add additional test code here
 		assertNotNull(result);
@@ -1202,12 +1202,12 @@ public class CameraTest {
 //		assertEquals(null, result.getLocation());
 		assertEquals(0, result.getHeight());
 		assertEquals(0, result.getWidth());
-		assertEquals(0.0f, result.getFrustumBottom(), 1.0f);
-		assertEquals(0.0f, result.getFrustumFar(), 1.0f);
-		assertEquals(0.0f, result.getFrustumLeft(), 1.0f);
-		assertEquals(0.0f, result.getFrustumNear(), 1.0f);
-		assertEquals(0.0f, result.getFrustumRight(), 1.0f);
-		assertEquals(0.0f, result.getFrustumTop(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumBottom(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumFar(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumLeft(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumNear(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumRight(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumTop(), 1.0f);
 	//	assertEquals(null, result.getRotation());
 		assertEquals(0, result.getPlaneState());
 		assertEquals(0.0f, result.getViewPortLeft(), 1.0f);
@@ -1231,7 +1231,7 @@ public class CameraTest {
 		int width = 0;
 		int height = 0;
 
-		Camera result = new Camera(width, height);
+		CameraView result = new CameraView(width, height);
 
 		// add additional test code here
 		assertNotNull(result);
@@ -1239,10 +1239,10 @@ public class CameraTest {
 		assertEquals(null, result.getName());
 		assertEquals(0, result.getHeight());
 		assertEquals(0, result.getWidth());
-		assertEquals(-0.5f, result.getFrustumBottom(), 1.0f);
-		assertEquals(2.0f, result.getFrustumFar(), 1.0f);
-		assertEquals(-0.5f, result.getFrustumLeft(), 1.0f);
-		assertEquals(1.0f, result.getFrustumNear(), 1.0f);
+		assertEquals(-0.5f, result.getFrustum().getFrustumBottom(), 1.0f);
+		assertEquals(2.0f, result.getFrustum().getFrustumFar(), 1.0f);
+		assertEquals(-0.5f, result.getFrustum().getFrustumLeft(), 1.0f);
+		assertEquals(1.0f, result.getFrustum().getFrustumNear(), 1.0f);
 		assertEquals(0.5f, result.getFrustumRight(), 1.0f);
 		assertEquals(0.5f, result.getFrustumTop(), 1.0f);
 		assertEquals(0, result.getPlaneState());
@@ -1267,7 +1267,7 @@ public class CameraTest {
 		int width = 1;
 		int height = 1;
 
-		Camera result = new Camera(width, height);
+		CameraView result = new CameraView(width, height);
 
 		// add additional test code here
 		assertNotNull(result);
@@ -1275,10 +1275,10 @@ public class CameraTest {
 		assertEquals(null, result.getName());
 		assertEquals(1, result.getHeight());
 		assertEquals(1, result.getWidth());
-		assertEquals(-0.5f, result.getFrustumBottom(), 1.0f);
-		assertEquals(2.0f, result.getFrustumFar(), 1.0f);
-		assertEquals(-0.5f, result.getFrustumLeft(), 1.0f);
-		assertEquals(1.0f, result.getFrustumNear(), 1.0f);
+		assertEquals(-0.5f, result.getFrustum().getFrustumBottom(), 1.0f);
+		assertEquals(2.0f, result.getFrustum().getFrustumFar(), 1.0f);
+		assertEquals(-0.5f, result.getFrustum().getFrustumLeft(), 1.0f);
+		assertEquals(1.0f, result.getFrustum().getFrustumNear(), 1.0f);
 		assertEquals(0.5f, result.getFrustumRight(), 1.0f);
 		assertEquals(0.5f, result.getFrustumTop(), 1.0f);
 		assertEquals(0, result.getPlaneState());
@@ -1303,7 +1303,7 @@ public class CameraTest {
 		int width = 7;
 		int height = 7;
 
-		Camera result = new Camera(width, height);
+		CameraView result = new CameraView(width, height);
 
 		// add additional test code here
 		assertNotNull(result);
@@ -1311,10 +1311,10 @@ public class CameraTest {
 		assertEquals(null, result.getName());
 		assertEquals(7, result.getHeight());
 		assertEquals(7, result.getWidth());
-		assertEquals(-0.5f, result.getFrustumBottom(), 1.0f);
-		assertEquals(2.0f, result.getFrustumFar(), 1.0f);
-		assertEquals(-0.5f, result.getFrustumLeft(), 1.0f);
-		assertEquals(1.0f, result.getFrustumNear(), 1.0f);
+		assertEquals(-0.5f, result.getFrustum().getFrustumBottom(), 1.0f);
+		assertEquals(2.0f, result.getFrustum().getFrustumFar(), 1.0f);
+		assertEquals(-0.5f, result.getFrustum().getFrustumLeft(), 1.0f);
+		assertEquals(1.0f, result.getFrustum().getFrustumNear(), 1.0f);
 		assertEquals(0.5f, result.getFrustumRight(), 1.0f);
 		assertEquals(0.5f, result.getFrustumTop(), 1.0f);
 		assertEquals(0, result.getPlaneState());
@@ -1339,7 +1339,7 @@ public class CameraTest {
 		int width = 1;
 		int height = 0;
 
-		Camera result = new Camera(width, height);
+		CameraView result = new CameraView(width, height);
 
 		// add additional test code here
 		assertNotNull(result);
@@ -1347,10 +1347,10 @@ public class CameraTest {
 		assertEquals(null, result.getName());
 		assertEquals(0, result.getHeight());
 		assertEquals(1, result.getWidth());
-		assertEquals(-0.5f, result.getFrustumBottom(), 1.0f);
-		assertEquals(2.0f, result.getFrustumFar(), 1.0f);
-		assertEquals(-0.5f, result.getFrustumLeft(), 1.0f);
-		assertEquals(1.0f, result.getFrustumNear(), 1.0f);
+		assertEquals(-0.5f, result.getFrustum().getFrustumBottom(), 1.0f);
+		assertEquals(2.0f, result.getFrustum().getFrustumFar(), 1.0f);
+		assertEquals(-0.5f, result.getFrustum().getFrustumLeft(), 1.0f);
+		assertEquals(1.0f, result.getFrustum().getFrustumNear(), 1.0f);
 		assertEquals(0.5f, result.getFrustumRight(), 1.0f);
 		assertEquals(0.5f, result.getFrustumTop(), 1.0f);
 		assertEquals(0, result.getPlaneState());
@@ -1375,7 +1375,7 @@ public class CameraTest {
 		int width = 7;
 		int height = 1;
 
-		Camera result = new Camera(width, height);
+		CameraView result = new CameraView(width, height);
 
 		// add additional test code here
 		assertNotNull(result);
@@ -1383,10 +1383,10 @@ public class CameraTest {
 		assertEquals(null, result.getName());
 		assertEquals(1, result.getHeight());
 		assertEquals(7, result.getWidth());
-		assertEquals(-0.5f, result.getFrustumBottom(), 1.0f);
-		assertEquals(2.0f, result.getFrustumFar(), 1.0f);
-		assertEquals(-0.5f, result.getFrustumLeft(), 1.0f);
-		assertEquals(1.0f, result.getFrustumNear(), 1.0f);
+		assertEquals(-0.5f, result.getFrustum().getFrustumBottom(), 1.0f);
+		assertEquals(2.0f, result.getFrustum().getFrustumFar(), 1.0f);
+		assertEquals(-0.5f, result.getFrustum().getFrustumLeft(), 1.0f);
+		assertEquals(1.0f, result.getFrustum().getFrustumNear(), 1.0f);
 		assertEquals(0.5f, result.getFrustumRight(), 1.0f);
 		assertEquals(0.5f, result.getFrustumTop(), 1.0f);
 		assertEquals(0, result.getPlaneState());
@@ -1411,7 +1411,7 @@ public class CameraTest {
 		int width = 0;
 		int height = 7;
 
-		Camera result = new Camera(width, height);
+		CameraView result = new CameraView(width, height);
 
 		// add additional test code here
 		assertNotNull(result);
@@ -1419,10 +1419,10 @@ public class CameraTest {
 		assertEquals(null, result.getName());
 		assertEquals(7, result.getHeight());
 		assertEquals(0, result.getWidth());
-		assertEquals(-0.5f, result.getFrustumBottom(), 1.0f);
-		assertEquals(2.0f, result.getFrustumFar(), 1.0f);
-		assertEquals(-0.5f, result.getFrustumLeft(), 1.0f);
-		assertEquals(1.0f, result.getFrustumNear(), 1.0f);
+		assertEquals(-0.5f, result.getFrustum().getFrustumBottom(), 1.0f);
+		assertEquals(2.0f, result.getFrustum().getFrustumFar(), 1.0f);
+		assertEquals(-0.5f, result.getFrustum().getFrustumLeft(), 1.0f);
+		assertEquals(1.0f, result.getFrustum().getFrustumNear(), 1.0f);
 		assertEquals(0.5f, result.getFrustumRight(), 1.0f);
 		assertEquals(0.5f, result.getFrustumTop(), 1.0f);
 		assertEquals(0, result.getPlaneState());
@@ -1447,7 +1447,7 @@ public class CameraTest {
 		int width = 7;
 		int height = 0;
 
-		Camera result = new Camera(width, height);
+		CameraView result = new CameraView(width, height);
 
 		// add additional test code here
 		assertNotNull(result);
@@ -1455,10 +1455,10 @@ public class CameraTest {
 		assertEquals(null, result.getName());
 		assertEquals(0, result.getHeight());
 		assertEquals(7, result.getWidth());
-		assertEquals(-0.5f, result.getFrustumBottom(), 1.0f);
-		assertEquals(2.0f, result.getFrustumFar(), 1.0f);
-		assertEquals(-0.5f, result.getFrustumLeft(), 1.0f);
-		assertEquals(1.0f, result.getFrustumNear(), 1.0f);
+		assertEquals(-0.5f, result.getFrustum().getFrustumBottom(), 1.0f);
+		assertEquals(2.0f, result.getFrustum().getFrustumFar(), 1.0f);
+		assertEquals(-0.5f, result.getFrustum().getFrustumLeft(), 1.0f);
+		assertEquals(1.0f, result.getFrustum().getFrustumNear(), 1.0f);
 		assertEquals(0.5f, result.getFrustumRight(), 1.0f);
 		assertEquals(0.5f, result.getFrustumTop(), 1.0f);
 		assertEquals(0, result.getPlaneState());
@@ -1483,7 +1483,7 @@ public class CameraTest {
 		int width = 0;
 		int height = 1;
 
-		Camera result = new Camera(width, height);
+		CameraView result = new CameraView(width, height);
 
 		// add additional test code here
 		assertNotNull(result);
@@ -1491,10 +1491,10 @@ public class CameraTest {
 		assertEquals(null, result.getName());
 		assertEquals(1, result.getHeight());
 		assertEquals(0, result.getWidth());
-		assertEquals(-0.5f, result.getFrustumBottom(), 1.0f);
-		assertEquals(2.0f, result.getFrustumFar(), 1.0f);
-		assertEquals(-0.5f, result.getFrustumLeft(), 1.0f);
-		assertEquals(1.0f, result.getFrustumNear(), 1.0f);
+		assertEquals(-0.5f, result.getFrustum().getFrustumBottom(), 1.0f);
+		assertEquals(2.0f, result.getFrustum().getFrustumFar(), 1.0f);
+		assertEquals(-0.5f, result.getFrustum().getFrustumLeft(), 1.0f);
+		assertEquals(1.0f, result.getFrustum().getFrustumNear(), 1.0f);
 		assertEquals(0.5f, result.getFrustumRight(), 1.0f);
 		assertEquals(0.5f, result.getFrustumTop(), 1.0f);
 		assertEquals(0, result.getPlaneState());
@@ -1519,7 +1519,7 @@ public class CameraTest {
 		int width = 1;
 		int height = 7;
 
-		Camera result = new Camera(width, height);
+		CameraView result = new CameraView(width, height);
 
 		// add additional test code here
 		assertNotNull(result);
@@ -1527,10 +1527,10 @@ public class CameraTest {
 		assertEquals(null, result.getName());
 		assertEquals(7, result.getHeight());
 		assertEquals(1, result.getWidth());
-		assertEquals(-0.5f, result.getFrustumBottom(), 1.0f);
-		assertEquals(2.0f, result.getFrustumFar(), 1.0f);
-		assertEquals(-0.5f, result.getFrustumLeft(), 1.0f);
-		assertEquals(1.0f, result.getFrustumNear(), 1.0f);
+		assertEquals(-0.5f, result.getFrustum().getFrustumBottom(), 1.0f);
+		assertEquals(2.0f, result.getFrustum().getFrustumFar(), 1.0f);
+		assertEquals(-0.5f, result.getFrustum().getFrustumLeft(), 1.0f);
+		assertEquals(1.0f, result.getFrustum().getFrustumNear(), 1.0f);
 		assertEquals(0.5f, result.getFrustumRight(), 1.0f);
 		assertEquals(0.5f, result.getFrustumTop(), 1.0f);
 		assertEquals(0, result.getPlaneState());
@@ -1552,7 +1552,7 @@ public class CameraTest {
 	@Test
 	public void testClearViewportChanged_fixture1_1()
 		throws Exception {
-		Camera fixture = getFixture1();
+		CameraView fixture = getFixture1();
 
 		fixture.clearViewportChanged();
 
@@ -1569,7 +1569,7 @@ public class CameraTest {
 	@Test
 	public void testClearViewportChanged_fixture2_1()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 
 		fixture.clearViewportChanged();
 
@@ -1586,7 +1586,7 @@ public class CameraTest {
 	@Test
 	public void testClearViewportChanged_fixture3_1()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 
 		fixture.clearViewportChanged();
 
@@ -1603,7 +1603,7 @@ public class CameraTest {
 	@Test
 	public void testClearViewportChanged_fixture4_1()
 		throws Exception {
-		Camera fixture = getFixture4();
+		CameraView fixture = getFixture4();
 
 		fixture.clearViewportChanged();
 
@@ -1620,7 +1620,7 @@ public class CameraTest {
 	@Test
 	public void testClearViewportChanged_fixture5_1()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 
 		fixture.clearViewportChanged();
 
@@ -1637,7 +1637,7 @@ public class CameraTest {
 	@Test
 	public void testClearViewportChanged_fixture6_1()
 		throws Exception {
-		Camera fixture = getFixture6();
+		CameraView fixture = getFixture6();
 
 		fixture.clearViewportChanged();
 
@@ -1654,7 +1654,7 @@ public class CameraTest {
 	@Test
 	public void testClearViewportChanged_fixture7_1()
 		throws Exception {
-		Camera fixture = getFixture7();
+		CameraView fixture = getFixture7();
 
 		fixture.clearViewportChanged();
 
@@ -1671,7 +1671,7 @@ public class CameraTest {
 	@Test
 	public void testClearViewportChanged_fixture8_1()
 		throws Exception {
-		Camera fixture = getFixture8();
+		CameraView fixture = getFixture8();
 
 		fixture.clearViewportChanged();
 
@@ -1688,7 +1688,7 @@ public class CameraTest {
 	@Test
 	public void testClearViewportChanged_fixture9_1()
 		throws Exception {
-		Camera fixture = getFixture9();
+		CameraView fixture = getFixture9();
 
 		fixture.clearViewportChanged();
 
@@ -1705,7 +1705,7 @@ public class CameraTest {
 	@Test
 	public void testClearViewportChanged_fixture10_1()
 		throws Exception {
-		Camera fixture = getFixture10();
+		CameraView fixture = getFixture10();
 
 		fixture.clearViewportChanged();
 
@@ -1722,7 +1722,7 @@ public class CameraTest {
 	@Test
 	public void testClearViewportChanged_fixture11_1()
 		throws Exception {
-		Camera fixture = getFixture11();
+		CameraView fixture = getFixture11();
 
 		fixture.clearViewportChanged();
 
@@ -1739,7 +1739,7 @@ public class CameraTest {
 	@Test
 	public void testClearViewportChanged_fixture12_1()
 		throws Exception {
-		Camera fixture = getFixture12();
+		CameraView fixture = getFixture12();
 
 		fixture.clearViewportChanged();
 
@@ -1756,7 +1756,7 @@ public class CameraTest {
 	@Test
 	public void testClearViewportChanged_fixture13_1()
 		throws Exception {
-		Camera fixture = getFixture13();
+		CameraView fixture = getFixture13();
 
 		fixture.clearViewportChanged();
 
@@ -1773,7 +1773,7 @@ public class CameraTest {
 	@Test
 	public void testClearViewportChanged_fixture14_1()
 		throws Exception {
-		Camera fixture = getFixture14();
+		CameraView fixture = getFixture14();
 
 		fixture.clearViewportChanged();
 
@@ -1790,7 +1790,7 @@ public class CameraTest {
 	@Test
 	public void testClearViewportChanged_fixture15_1()
 		throws Exception {
-		Camera fixture = getFixture15();
+		CameraView fixture = getFixture15();
 
 		fixture.clearViewportChanged();
 
@@ -1807,7 +1807,7 @@ public class CameraTest {
 	@Test
 	public void testClearViewportChanged_fixture16_1()
 		throws Exception {
-		Camera fixture = getFixture16();
+		CameraView fixture = getFixture16();
 
 		fixture.clearViewportChanged();
 
@@ -1824,7 +1824,7 @@ public class CameraTest {
 	@Test
 	public void testClearViewportChanged_fixture17_1()
 		throws Exception {
-		Camera fixture = getFixture17();
+		CameraView fixture = getFixture17();
 
 		fixture.clearViewportChanged();
 
@@ -1841,7 +1841,7 @@ public class CameraTest {
 	@Test
 	public void testClearViewportChanged_fixture18_1()
 		throws Exception {
-		Camera fixture = getFixture18();
+		CameraView fixture = getFixture18();
 
 		fixture.clearViewportChanged();
 
@@ -1858,7 +1858,7 @@ public class CameraTest {
 	@Test
 	public void testClearViewportChanged_fixture19_1()
 		throws Exception {
-		Camera fixture = getFixture19();
+		CameraView fixture = getFixture19();
 
 		fixture.clearViewportChanged();
 
@@ -1875,7 +1875,7 @@ public class CameraTest {
 	@Test
 	public void testClearViewportChanged_fixture20_1()
 		throws Exception {
-		Camera fixture = getFixture20();
+		CameraView fixture = getFixture20();
 
 		fixture.clearViewportChanged();
 
@@ -1892,7 +1892,7 @@ public class CameraTest {
 	@Test
 	public void testClearViewportChanged_fixture21_1()
 		throws Exception {
-		Camera fixture = getFixture21();
+		CameraView fixture = getFixture21();
 
 		fixture.clearViewportChanged();
 
@@ -1909,7 +1909,7 @@ public class CameraTest {
 	@Test
 	public void testClearViewportChanged_fixture22_1()
 		throws Exception {
-		Camera fixture = getFixture22();
+		CameraView fixture = getFixture22();
 
 		fixture.clearViewportChanged();
 
@@ -1926,7 +1926,7 @@ public class CameraTest {
 	@Test
 	public void testClearViewportChanged_fixture23_1()
 		throws Exception {
-		Camera fixture = getFixture23();
+		CameraView fixture = getFixture23();
 
 		fixture.clearViewportChanged();
 
@@ -1943,7 +1943,7 @@ public class CameraTest {
 	@Test
 	public void testClearViewportChanged_fixture24_1()
 		throws Exception {
-		Camera fixture = getFixture24();
+		CameraView fixture = getFixture24();
 
 		fixture.clearViewportChanged();
 
@@ -1960,7 +1960,7 @@ public class CameraTest {
 	@Test
 	public void testClearViewportChanged_fixture25_1()
 		throws Exception {
-		Camera fixture = getFixture25();
+		CameraView fixture = getFixture25();
 
 		fixture.clearViewportChanged();
 
@@ -1977,7 +1977,7 @@ public class CameraTest {
 	@Test
 	public void testClearViewportChanged_fixture26_1()
 		throws Exception {
-		Camera fixture = getFixture26();
+		CameraView fixture = getFixture26();
 
 		fixture.clearViewportChanged();
 
@@ -1994,7 +1994,7 @@ public class CameraTest {
 	@Test
 	public void testClearViewportChanged_fixture27_1()
 		throws Exception {
-		Camera fixture = getFixture27();
+		CameraView fixture = getFixture27();
 
 		fixture.clearViewportChanged();
 
@@ -2011,7 +2011,7 @@ public class CameraTest {
 	@Test
 	public void testClearViewportChanged_fixture28_1()
 		throws Exception {
-		Camera fixture = getFixture28();
+		CameraView fixture = getFixture28();
 
 		fixture.clearViewportChanged();
 
@@ -2028,7 +2028,7 @@ public class CameraTest {
 	@Test
 	public void testClearViewportChanged_fixture29_1()
 		throws Exception {
-		Camera fixture = getFixture29();
+		CameraView fixture = getFixture29();
 
 		fixture.clearViewportChanged();
 
@@ -2067,9 +2067,9 @@ public class CameraTest {
 	@Test
 	public void testClone_fixture2_1()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 
-		Camera result = fixture.clone();
+		CameraView result = fixture.clone();
 
 		// add additional test code here
 		assertNotNull(result);
@@ -2077,10 +2077,10 @@ public class CameraTest {
 		assertEquals(null, result.getName());
 		assertEquals(0, result.getHeight());
 		assertEquals(0, result.getWidth());
-		assertEquals(-0.5f, result.getFrustumBottom(), 1.0f);
-		assertEquals(2.0f, result.getFrustumFar(), 1.0f);
-		assertEquals(-0.5f, result.getFrustumLeft(), 1.0f);
-		assertEquals(1.0f, result.getFrustumNear(), 1.0f);
+		assertEquals(-0.5f, result.getFrustum().getFrustumBottom(), 1.0f);
+		assertEquals(2.0f, result.getFrustum().getFrustumFar(), 1.0f);
+		assertEquals(-0.5f, result.getFrustum().getFrustumLeft(), 1.0f);
+		assertEquals(1.0f, result.getFrustum().getFrustumNear(), 1.0f);
 		assertEquals(0.5f, result.getFrustumRight(), 1.0f);
 		assertEquals(0.5f, result.getFrustumTop(), 1.0f);
 		assertEquals(0, result.getPlaneState());
@@ -2102,9 +2102,9 @@ public class CameraTest {
 	@Test
 	public void testClone_fixture3_1()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 
-		Camera result = fixture.clone();
+		CameraView result = fixture.clone();
 
 		// add additional test code here
 		assertNotNull(result);
@@ -2112,10 +2112,10 @@ public class CameraTest {
 		assertEquals("", result.getName());
 		assertEquals(0, result.getHeight());
 		assertEquals(0, result.getWidth());
-		assertEquals(-1.0f, result.getFrustumBottom(), 1.0f);
-		assertEquals(-1.0f, result.getFrustumFar(), 1.0f);
-		assertEquals(-1.0f, result.getFrustumLeft(), 1.0f);
-		assertEquals(-1.0f, result.getFrustumNear(), 1.0f);
+		assertEquals(-1.0f, result.getFrustum().getFrustumBottom(), 1.0f);
+		assertEquals(-1.0f, result.getFrustum().getFrustumFar(), 1.0f);
+		assertEquals(-1.0f, result.getFrustum().getFrustumLeft(), 1.0f);
+		assertEquals(-1.0f, result.getFrustum().getFrustumNear(), 1.0f);
 		assertEquals(-1.0f, result.getFrustumRight(), 1.0f);
 		assertEquals(-1.0f, result.getFrustumTop(), 1.0f);
 		assertEquals(0, result.getPlaneState());
@@ -2137,9 +2137,9 @@ public class CameraTest {
 	@Test
 	public void testClone_fixture4_1()
 		throws Exception {
-		Camera fixture = getFixture4();
+		CameraView fixture = getFixture4();
 
-		Camera result = fixture.clone();
+		CameraView result = fixture.clone();
 
 		// add additional test code here
 		assertNotNull(result);
@@ -2147,10 +2147,10 @@ public class CameraTest {
 		assertEquals("0123456789", result.getName());
 		assertEquals(0, result.getHeight());
 		assertEquals(0, result.getWidth());
-		assertEquals(0.0f, result.getFrustumBottom(), 1.0f);
-		assertEquals(-1.0f, result.getFrustumFar(), 1.0f);
-		assertEquals(-1.0f, result.getFrustumLeft(), 1.0f);
-		assertEquals(0.0f, result.getFrustumNear(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumBottom(), 1.0f);
+		assertEquals(-1.0f, result.getFrustum().getFrustumFar(), 1.0f);
+		assertEquals(-1.0f, result.getFrustum().getFrustumLeft(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumNear(), 1.0f);
 		assertEquals(0.0f, result.getFrustumRight(), 1.0f);
 		assertEquals(-1.0f, result.getFrustumTop(), 1.0f);
 		assertEquals(0, result.getPlaneState());
@@ -2172,9 +2172,9 @@ public class CameraTest {
 	@Test
 	public void testClone_fixture5_1()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 
-		Camera result = fixture.clone();
+		CameraView result = fixture.clone();
 
 		// add additional test code here
 		assertNotNull(result);
@@ -2182,10 +2182,10 @@ public class CameraTest {
 		assertEquals("0123456789", result.getName());
 		assertEquals(0, result.getHeight());
 		assertEquals(0, result.getWidth());
-		assertEquals(0.0f, result.getFrustumBottom(), 1.0f);
-		assertEquals(-1.0f, result.getFrustumFar(), 1.0f);
-		assertEquals(-1.0f, result.getFrustumLeft(), 1.0f);
-		assertEquals(0.0f, result.getFrustumNear(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumBottom(), 1.0f);
+		assertEquals(-1.0f, result.getFrustum().getFrustumFar(), 1.0f);
+		assertEquals(-1.0f, result.getFrustum().getFrustumLeft(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumNear(), 1.0f);
 		assertEquals(0.0f, result.getFrustumRight(), 1.0f);
 		assertEquals(-1.0f, result.getFrustumTop(), 1.0f);
 		assertEquals(0, result.getPlaneState());
@@ -2207,9 +2207,9 @@ public class CameraTest {
 	@Test
 	public void testClone_fixture6_1()
 		throws Exception {
-		Camera fixture = getFixture6();
+		CameraView fixture = getFixture6();
 
-		Camera result = fixture.clone();
+		CameraView result = fixture.clone();
 
 		// add additional test code here
 		assertNotNull(result);
@@ -2217,10 +2217,10 @@ public class CameraTest {
 		assertEquals("", result.getName());
 		assertEquals(0, result.getHeight());
 		assertEquals(0, result.getWidth());
-		assertEquals(0.0f, result.getFrustumBottom(), 1.0f);
-		assertEquals(-1.0f, result.getFrustumFar(), 1.0f);
-		assertEquals(-1.0f, result.getFrustumLeft(), 1.0f);
-		assertEquals(0.0f, result.getFrustumNear(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumBottom(), 1.0f);
+		assertEquals(-1.0f, result.getFrustum().getFrustumFar(), 1.0f);
+		assertEquals(-1.0f, result.getFrustum().getFrustumLeft(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumNear(), 1.0f);
 		assertEquals(0.0f, result.getFrustumRight(), 1.0f);
 		assertEquals(0.0f, result.getFrustumTop(), 1.0f);
 		assertEquals(0, result.getPlaneState());
@@ -2242,9 +2242,9 @@ public class CameraTest {
 	@Test
 	public void testClone_fixture7_1()
 		throws Exception {
-		Camera fixture = getFixture7();
+		CameraView fixture = getFixture7();
 
-		Camera result = fixture.clone();
+		CameraView result = fixture.clone();
 
 		// add additional test code here
 		assertNotNull(result);
@@ -2252,10 +2252,10 @@ public class CameraTest {
 		assertEquals("0123456789", result.getName());
 		assertEquals(0, result.getHeight());
 		assertEquals(0, result.getWidth());
-		assertEquals(0.0f, result.getFrustumBottom(), 1.0f);
-		assertEquals(-1.0f, result.getFrustumFar(), 1.0f);
-		assertEquals(-1.0f, result.getFrustumLeft(), 1.0f);
-		assertEquals(0.0f, result.getFrustumNear(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumBottom(), 1.0f);
+		assertEquals(-1.0f, result.getFrustum().getFrustumFar(), 1.0f);
+		assertEquals(-1.0f, result.getFrustum().getFrustumLeft(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumNear(), 1.0f);
 		assertEquals(0.0f, result.getFrustumRight(), 1.0f);
 		assertEquals(0.0f, result.getFrustumTop(), 1.0f);
 		assertEquals(0, result.getPlaneState());
@@ -2277,9 +2277,9 @@ public class CameraTest {
 	@Test
 	public void testClone_fixture8_1()
 		throws Exception {
-		Camera fixture = getFixture8();
+		CameraView fixture = getFixture8();
 
-		Camera result = fixture.clone();
+		CameraView result = fixture.clone();
 
 		// add additional test code here
 		assertNotNull(result);
@@ -2287,10 +2287,10 @@ public class CameraTest {
 		assertEquals("0123456789", result.getName());
 		assertEquals(0, result.getHeight());
 		assertEquals(0, result.getWidth());
-		assertEquals(0.0f, result.getFrustumBottom(), 1.0f);
-		assertEquals(-1.0f, result.getFrustumFar(), 1.0f);
-		assertEquals(-1.0f, result.getFrustumLeft(), 1.0f);
-		assertEquals(0.0f, result.getFrustumNear(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumBottom(), 1.0f);
+		assertEquals(-1.0f, result.getFrustum().getFrustumFar(), 1.0f);
+		assertEquals(-1.0f, result.getFrustum().getFrustumLeft(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumNear(), 1.0f);
 		assertEquals(0.0f, result.getFrustumRight(), 1.0f);
 		assertEquals(0.0f, result.getFrustumTop(), 1.0f);
 		assertEquals(0, result.getPlaneState());
@@ -2312,9 +2312,9 @@ public class CameraTest {
 	@Test
 	public void testClone_fixture9_1()
 		throws Exception {
-		Camera fixture = getFixture9();
+		CameraView fixture = getFixture9();
 
-		Camera result = fixture.clone();
+		CameraView result = fixture.clone();
 
 		// add additional test code here
 		assertNotNull(result);
@@ -2322,10 +2322,10 @@ public class CameraTest {
 		assertEquals("", result.getName());
 		assertEquals(0, result.getHeight());
 		assertEquals(0, result.getWidth());
-		assertEquals(0.0f, result.getFrustumBottom(), 1.0f);
-		assertEquals(-1.0f, result.getFrustumFar(), 1.0f);
-		assertEquals(0.0f, result.getFrustumLeft(), 1.0f);
-		assertEquals(0.0f, result.getFrustumNear(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumBottom(), 1.0f);
+		assertEquals(-1.0f, result.getFrustum().getFrustumFar(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumLeft(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumNear(), 1.0f);
 		assertEquals(0.0f, result.getFrustumRight(), 1.0f);
 		assertEquals(-1.0f, result.getFrustumTop(), 1.0f);
 		assertEquals(0, result.getPlaneState());
@@ -2347,9 +2347,9 @@ public class CameraTest {
 	@Test
 	public void testClone_fixture10_1()
 		throws Exception {
-		Camera fixture = getFixture10();
+		CameraView fixture = getFixture10();
 
-		Camera result = fixture.clone();
+		CameraView result = fixture.clone();
 
 		// add additional test code here
 		assertNotNull(result);
@@ -2357,10 +2357,10 @@ public class CameraTest {
 		assertEquals("", result.getName());
 		assertEquals(0, result.getHeight());
 		assertEquals(0, result.getWidth());
-		assertEquals(0.0f, result.getFrustumBottom(), 1.0f);
-		assertEquals(-1.0f, result.getFrustumFar(), 1.0f);
-		assertEquals(0.0f, result.getFrustumLeft(), 1.0f);
-		assertEquals(0.0f, result.getFrustumNear(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumBottom(), 1.0f);
+		assertEquals(-1.0f, result.getFrustum().getFrustumFar(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumLeft(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumNear(), 1.0f);
 		assertEquals(0.0f, result.getFrustumRight(), 1.0f);
 		assertEquals(-1.0f, result.getFrustumTop(), 1.0f);
 		assertEquals(0, result.getPlaneState());
@@ -2382,9 +2382,9 @@ public class CameraTest {
 	@Test
 	public void testClone_fixture11_1()
 		throws Exception {
-		Camera fixture = getFixture11();
+		CameraView fixture = getFixture11();
 
-		Camera result = fixture.clone();
+		CameraView result = fixture.clone();
 
 		// add additional test code here
 		assertNotNull(result);
@@ -2392,10 +2392,10 @@ public class CameraTest {
 		assertEquals("0123456789", result.getName());
 		assertEquals(0, result.getHeight());
 		assertEquals(0, result.getWidth());
-		assertEquals(0.0f, result.getFrustumBottom(), 1.0f);
-		assertEquals(-1.0f, result.getFrustumFar(), 1.0f);
-		assertEquals(0.0f, result.getFrustumLeft(), 1.0f);
-		assertEquals(0.0f, result.getFrustumNear(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumBottom(), 1.0f);
+		assertEquals(-1.0f, result.getFrustum().getFrustumFar(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumLeft(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumNear(), 1.0f);
 		assertEquals(0.0f, result.getFrustumRight(), 1.0f);
 		assertEquals(-1.0f, result.getFrustumTop(), 1.0f);
 		assertEquals(0, result.getPlaneState());
@@ -2417,9 +2417,9 @@ public class CameraTest {
 	@Test
 	public void testClone_fixture12_1()
 		throws Exception {
-		Camera fixture = getFixture12();
+		CameraView fixture = getFixture12();
 
-		Camera result = fixture.clone();
+		CameraView result = fixture.clone();
 
 		// add additional test code here
 		assertNotNull(result);
@@ -2427,10 +2427,10 @@ public class CameraTest {
 		assertEquals("0123456789", result.getName());
 		assertEquals(0, result.getHeight());
 		assertEquals(0, result.getWidth());
-		assertEquals(0.0f, result.getFrustumBottom(), 1.0f);
-		assertEquals(-1.0f, result.getFrustumFar(), 1.0f);
-		assertEquals(0.0f, result.getFrustumLeft(), 1.0f);
-		assertEquals(0.0f, result.getFrustumNear(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumBottom(), 1.0f);
+		assertEquals(-1.0f, result.getFrustum().getFrustumFar(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumLeft(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumNear(), 1.0f);
 		assertEquals(0.0f, result.getFrustumRight(), 1.0f);
 		assertEquals(-1.0f, result.getFrustumTop(), 1.0f);
 		assertEquals(0, result.getPlaneState());
@@ -2452,9 +2452,9 @@ public class CameraTest {
 	@Test
 	public void testClone_fixture13_1()
 		throws Exception {
-		Camera fixture = getFixture13();
+		CameraView fixture = getFixture13();
 
-		Camera result = fixture.clone();
+		CameraView result = fixture.clone();
 
 		// add additional test code here
 		assertNotNull(result);
@@ -2462,10 +2462,10 @@ public class CameraTest {
 		assertEquals("", result.getName());
 		assertEquals(0, result.getHeight());
 		assertEquals(0, result.getWidth());
-		assertEquals(0.0f, result.getFrustumBottom(), 1.0f);
-		assertEquals(-1.0f, result.getFrustumFar(), 1.0f);
-		assertEquals(0.0f, result.getFrustumLeft(), 1.0f);
-		assertEquals(0.0f, result.getFrustumNear(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumBottom(), 1.0f);
+		assertEquals(-1.0f, result.getFrustum().getFrustumFar(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumLeft(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumNear(), 1.0f);
 		assertEquals(0.0f, result.getFrustumRight(), 1.0f);
 		assertEquals(0.0f, result.getFrustumTop(), 1.0f);
 		assertEquals(0, result.getPlaneState());
@@ -2487,9 +2487,9 @@ public class CameraTest {
 	@Test
 	public void testClone_fixture14_1()
 		throws Exception {
-		Camera fixture = getFixture14();
+		CameraView fixture = getFixture14();
 
-		Camera result = fixture.clone();
+		CameraView result = fixture.clone();
 
 		// add additional test code here
 		assertNotNull(result);
@@ -2497,10 +2497,10 @@ public class CameraTest {
 		assertEquals("", result.getName());
 		assertEquals(0, result.getHeight());
 		assertEquals(0, result.getWidth());
-		assertEquals(0.0f, result.getFrustumBottom(), 1.0f);
-		assertEquals(-1.0f, result.getFrustumFar(), 1.0f);
-		assertEquals(0.0f, result.getFrustumLeft(), 1.0f);
-		assertEquals(0.0f, result.getFrustumNear(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumBottom(), 1.0f);
+		assertEquals(-1.0f, result.getFrustum().getFrustumFar(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumLeft(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumNear(), 1.0f);
 		assertEquals(0.0f, result.getFrustumRight(), 1.0f);
 		assertEquals(0.0f, result.getFrustumTop(), 1.0f);
 		assertEquals(0, result.getPlaneState());
@@ -2522,9 +2522,9 @@ public class CameraTest {
 	@Test
 	public void testClone_fixture15_1()
 		throws Exception {
-		Camera fixture = getFixture15();
+		CameraView fixture = getFixture15();
 
-		Camera result = fixture.clone();
+		CameraView result = fixture.clone();
 
 		// add additional test code here
 		assertNotNull(result);
@@ -2532,10 +2532,10 @@ public class CameraTest {
 		assertEquals("0123456789", result.getName());
 		assertEquals(0, result.getHeight());
 		assertEquals(0, result.getWidth());
-		assertEquals(0.0f, result.getFrustumBottom(), 1.0f);
-		assertEquals(-1.0f, result.getFrustumFar(), 1.0f);
-		assertEquals(0.0f, result.getFrustumLeft(), 1.0f);
-		assertEquals(0.0f, result.getFrustumNear(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumBottom(), 1.0f);
+		assertEquals(-1.0f, result.getFrustum().getFrustumFar(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumLeft(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumNear(), 1.0f);
 		assertEquals(0.0f, result.getFrustumRight(), 1.0f);
 		assertEquals(0.0f, result.getFrustumTop(), 1.0f);
 		assertEquals(0, result.getPlaneState());
@@ -2557,9 +2557,9 @@ public class CameraTest {
 	@Test
 	public void testClone_fixture16_1()
 		throws Exception {
-		Camera fixture = getFixture16();
+		CameraView fixture = getFixture16();
 
-		Camera result = fixture.clone();
+		CameraView result = fixture.clone();
 
 		// add additional test code here
 		assertNotNull(result);
@@ -2567,10 +2567,10 @@ public class CameraTest {
 		assertEquals("0123456789", result.getName());
 		assertEquals(0, result.getHeight());
 		assertEquals(0, result.getWidth());
-		assertEquals(0.0f, result.getFrustumBottom(), 1.0f);
-		assertEquals(-1.0f, result.getFrustumFar(), 1.0f);
-		assertEquals(0.0f, result.getFrustumLeft(), 1.0f);
-		assertEquals(0.0f, result.getFrustumNear(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumBottom(), 1.0f);
+		assertEquals(-1.0f, result.getFrustum().getFrustumFar(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumLeft(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumNear(), 1.0f);
 		assertEquals(0.0f, result.getFrustumRight(), 1.0f);
 		assertEquals(0.0f, result.getFrustumTop(), 1.0f);
 		assertEquals(0, result.getPlaneState());
@@ -2592,9 +2592,9 @@ public class CameraTest {
 	@Test
 	public void testClone_fixture17_1()
 		throws Exception {
-		Camera fixture = getFixture17();
+		CameraView fixture = getFixture17();
 
-		Camera result = fixture.clone();
+		CameraView result = fixture.clone();
 
 		// add additional test code here
 		assertNotNull(result);
@@ -2602,10 +2602,10 @@ public class CameraTest {
 		assertEquals("0123456789", result.getName());
 		assertEquals(0, result.getHeight());
 		assertEquals(0, result.getWidth());
-		assertEquals(0.0f, result.getFrustumBottom(), 1.0f);
-		assertEquals(0.0f, result.getFrustumFar(), 1.0f);
-		assertEquals(-1.0f, result.getFrustumLeft(), 1.0f);
-		assertEquals(0.0f, result.getFrustumNear(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumBottom(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumFar(), 1.0f);
+		assertEquals(-1.0f, result.getFrustum().getFrustumLeft(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumNear(), 1.0f);
 		assertEquals(0.0f, result.getFrustumRight(), 1.0f);
 		assertEquals(-1.0f, result.getFrustumTop(), 1.0f);
 		assertEquals(0, result.getPlaneState());
@@ -2627,9 +2627,9 @@ public class CameraTest {
 	@Test
 	public void testClone_fixture18_1()
 		throws Exception {
-		Camera fixture = getFixture18();
+		CameraView fixture = getFixture18();
 
-		Camera result = fixture.clone();
+		CameraView result = fixture.clone();
 
 		// add additional test code here
 		assertNotNull(result);
@@ -2637,10 +2637,10 @@ public class CameraTest {
 		assertEquals("0123456789", result.getName());
 		assertEquals(0, result.getHeight());
 		assertEquals(0, result.getWidth());
-		assertEquals(0.0f, result.getFrustumBottom(), 1.0f);
-		assertEquals(0.0f, result.getFrustumFar(), 1.0f);
-		assertEquals(-1.0f, result.getFrustumLeft(), 1.0f);
-		assertEquals(0.0f, result.getFrustumNear(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumBottom(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumFar(), 1.0f);
+		assertEquals(-1.0f, result.getFrustum().getFrustumLeft(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumNear(), 1.0f);
 		assertEquals(0.0f, result.getFrustumRight(), 1.0f);
 		assertEquals(-1.0f, result.getFrustumTop(), 1.0f);
 		assertEquals(0, result.getPlaneState());
@@ -2662,9 +2662,9 @@ public class CameraTest {
 	@Test
 	public void testClone_fixture19_1()
 		throws Exception {
-		Camera fixture = getFixture19();
+		CameraView fixture = getFixture19();
 
-		Camera result = fixture.clone();
+		CameraView result = fixture.clone();
 
 		// add additional test code here
 		assertNotNull(result);
@@ -2672,10 +2672,10 @@ public class CameraTest {
 		assertEquals("", result.getName());
 		assertEquals(0, result.getHeight());
 		assertEquals(0, result.getWidth());
-		assertEquals(0.0f, result.getFrustumBottom(), 1.0f);
-		assertEquals(0.0f, result.getFrustumFar(), 1.0f);
-		assertEquals(-1.0f, result.getFrustumLeft(), 1.0f);
-		assertEquals(0.0f, result.getFrustumNear(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumBottom(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumFar(), 1.0f);
+		assertEquals(-1.0f, result.getFrustum().getFrustumLeft(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumNear(), 1.0f);
 		assertEquals(0.0f, result.getFrustumRight(), 1.0f);
 		assertEquals(0.0f, result.getFrustumTop(), 1.0f);
 		assertEquals(0, result.getPlaneState());
@@ -2697,9 +2697,9 @@ public class CameraTest {
 	@Test
 	public void testClone_fixture20_1()
 		throws Exception {
-		Camera fixture = getFixture20();
+		CameraView fixture = getFixture20();
 
-		Camera result = fixture.clone();
+		CameraView result = fixture.clone();
 
 		// add additional test code here
 		assertNotNull(result);
@@ -2707,10 +2707,10 @@ public class CameraTest {
 		assertEquals("0123456789", result.getName());
 		assertEquals(0, result.getHeight());
 		assertEquals(0, result.getWidth());
-		assertEquals(0.0f, result.getFrustumBottom(), 1.0f);
-		assertEquals(0.0f, result.getFrustumFar(), 1.0f);
-		assertEquals(-1.0f, result.getFrustumLeft(), 1.0f);
-		assertEquals(0.0f, result.getFrustumNear(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumBottom(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumFar(), 1.0f);
+		assertEquals(-1.0f, result.getFrustum().getFrustumLeft(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumNear(), 1.0f);
 		assertEquals(0.0f, result.getFrustumRight(), 1.0f);
 		assertEquals(0.0f, result.getFrustumTop(), 1.0f);
 		assertEquals(0, result.getPlaneState());
@@ -2732,9 +2732,9 @@ public class CameraTest {
 	@Test
 	public void testClone_fixture21_1()
 		throws Exception {
-		Camera fixture = getFixture21();
+		CameraView fixture = getFixture21();
 
-		Camera result = fixture.clone();
+		CameraView result = fixture.clone();
 
 		// add additional test code here
 		assertNotNull(result);
@@ -2742,10 +2742,10 @@ public class CameraTest {
 		assertEquals("0123456789", result.getName());
 		assertEquals(0, result.getHeight());
 		assertEquals(0, result.getWidth());
-		assertEquals(0.0f, result.getFrustumBottom(), 1.0f);
-		assertEquals(0.0f, result.getFrustumFar(), 1.0f);
-		assertEquals(-1.0f, result.getFrustumLeft(), 1.0f);
-		assertEquals(0.0f, result.getFrustumNear(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumBottom(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumFar(), 1.0f);
+		assertEquals(-1.0f, result.getFrustum().getFrustumLeft(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumNear(), 1.0f);
 		assertEquals(0.0f, result.getFrustumRight(), 1.0f);
 		assertEquals(0.0f, result.getFrustumTop(), 1.0f);
 		assertEquals(0, result.getPlaneState());
@@ -2767,9 +2767,9 @@ public class CameraTest {
 	@Test
 	public void testClone_fixture22_1()
 		throws Exception {
-		Camera fixture = getFixture22();
+		CameraView fixture = getFixture22();
 
-		Camera result = fixture.clone();
+		CameraView result = fixture.clone();
 
 		// add additional test code here
 		assertNotNull(result);
@@ -2777,10 +2777,10 @@ public class CameraTest {
 		assertEquals("", result.getName());
 		assertEquals(0, result.getHeight());
 		assertEquals(0, result.getWidth());
-		assertEquals(0.0f, result.getFrustumBottom(), 1.0f);
-		assertEquals(0.0f, result.getFrustumFar(), 1.0f);
-		assertEquals(0.0f, result.getFrustumLeft(), 1.0f);
-		assertEquals(0.0f, result.getFrustumNear(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumBottom(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumFar(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumLeft(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumNear(), 1.0f);
 		assertEquals(0.0f, result.getFrustumRight(), 1.0f);
 		assertEquals(-1.0f, result.getFrustumTop(), 1.0f);
 		assertEquals(0, result.getPlaneState());
@@ -2802,9 +2802,9 @@ public class CameraTest {
 	@Test
 	public void testClone_fixture23_1()
 		throws Exception {
-		Camera fixture = getFixture23();
+		CameraView fixture = getFixture23();
 
-		Camera result = fixture.clone();
+		CameraView result = fixture.clone();
 
 		// add additional test code here
 		assertNotNull(result);
@@ -2812,10 +2812,10 @@ public class CameraTest {
 		assertEquals("", result.getName());
 		assertEquals(0, result.getHeight());
 		assertEquals(0, result.getWidth());
-		assertEquals(0.0f, result.getFrustumBottom(), 1.0f);
-		assertEquals(0.0f, result.getFrustumFar(), 1.0f);
-		assertEquals(0.0f, result.getFrustumLeft(), 1.0f);
-		assertEquals(0.0f, result.getFrustumNear(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumBottom(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumFar(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumLeft(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumNear(), 1.0f);
 		assertEquals(0.0f, result.getFrustumRight(), 1.0f);
 		assertEquals(-1.0f, result.getFrustumTop(), 1.0f);
 		assertEquals(0, result.getPlaneState());
@@ -2837,9 +2837,9 @@ public class CameraTest {
 	@Test
 	public void testClone_fixture24_1()
 		throws Exception {
-		Camera fixture = getFixture24();
+		CameraView fixture = getFixture24();
 
-		Camera result = fixture.clone();
+		CameraView result = fixture.clone();
 
 		// add additional test code here
 		assertNotNull(result);
@@ -2847,10 +2847,10 @@ public class CameraTest {
 		assertEquals("0123456789", result.getName());
 		assertEquals(0, result.getHeight());
 		assertEquals(0, result.getWidth());
-		assertEquals(0.0f, result.getFrustumBottom(), 1.0f);
-		assertEquals(0.0f, result.getFrustumFar(), 1.0f);
-		assertEquals(0.0f, result.getFrustumLeft(), 1.0f);
-		assertEquals(0.0f, result.getFrustumNear(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumBottom(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumFar(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumLeft(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumNear(), 1.0f);
 		assertEquals(0.0f, result.getFrustumRight(), 1.0f);
 		assertEquals(-1.0f, result.getFrustumTop(), 1.0f);
 		assertEquals(0, result.getPlaneState());
@@ -2872,9 +2872,9 @@ public class CameraTest {
 	@Test
 	public void testClone_fixture25_1()
 		throws Exception {
-		Camera fixture = getFixture25();
+		CameraView fixture = getFixture25();
 
-		Camera result = fixture.clone();
+		CameraView result = fixture.clone();
 
 		// add additional test code here
 		assertNotNull(result);
@@ -2882,10 +2882,10 @@ public class CameraTest {
 		assertEquals("0123456789", result.getName());
 		assertEquals(0, result.getHeight());
 		assertEquals(0, result.getWidth());
-		assertEquals(0.0f, result.getFrustumBottom(), 1.0f);
-		assertEquals(0.0f, result.getFrustumFar(), 1.0f);
-		assertEquals(0.0f, result.getFrustumLeft(), 1.0f);
-		assertEquals(0.0f, result.getFrustumNear(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumBottom(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumFar(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumLeft(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumNear(), 1.0f);
 		assertEquals(0.0f, result.getFrustumRight(), 1.0f);
 		assertEquals(-1.0f, result.getFrustumTop(), 1.0f);
 		assertEquals(0, result.getPlaneState());
@@ -2907,9 +2907,9 @@ public class CameraTest {
 	@Test
 	public void testClone_fixture26_1()
 		throws Exception {
-		Camera fixture = getFixture26();
+		CameraView fixture = getFixture26();
 
-		Camera result = fixture.clone();
+		CameraView result = fixture.clone();
 
 		// add additional test code here
 		assertNotNull(result);
@@ -2917,10 +2917,10 @@ public class CameraTest {
 		assertEquals("", result.getName());
 		assertEquals(0, result.getHeight());
 		assertEquals(0, result.getWidth());
-		assertEquals(0.0f, result.getFrustumBottom(), 1.0f);
-		assertEquals(0.0f, result.getFrustumFar(), 1.0f);
-		assertEquals(0.0f, result.getFrustumLeft(), 1.0f);
-		assertEquals(0.0f, result.getFrustumNear(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumBottom(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumFar(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumLeft(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumNear(), 1.0f);
 		assertEquals(0.0f, result.getFrustumRight(), 1.0f);
 		assertEquals(0.0f, result.getFrustumTop(), 1.0f);
 		assertEquals(0, result.getPlaneState());
@@ -2942,9 +2942,9 @@ public class CameraTest {
 	@Test
 	public void testClone_fixture27_1()
 		throws Exception {
-		Camera fixture = getFixture27();
+		CameraView fixture = getFixture27();
 
-		Camera result = fixture.clone();
+		CameraView result = fixture.clone();
 
 		// add additional test code here
 		assertNotNull(result);
@@ -2952,10 +2952,10 @@ public class CameraTest {
 		assertEquals("", result.getName());
 		assertEquals(0, result.getHeight());
 		assertEquals(0, result.getWidth());
-		assertEquals(0.0f, result.getFrustumBottom(), 1.0f);
-		assertEquals(0.0f, result.getFrustumFar(), 1.0f);
-		assertEquals(0.0f, result.getFrustumLeft(), 1.0f);
-		assertEquals(0.0f, result.getFrustumNear(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumBottom(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumFar(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumLeft(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumNear(), 1.0f);
 		assertEquals(0.0f, result.getFrustumRight(), 1.0f);
 		assertEquals(0.0f, result.getFrustumTop(), 1.0f);
 		assertEquals(0, result.getPlaneState());
@@ -2977,9 +2977,9 @@ public class CameraTest {
 	@Test
 	public void testClone_fixture28_1()
 		throws Exception {
-		Camera fixture = getFixture28();
+		CameraView fixture = getFixture28();
 
-		Camera result = fixture.clone();
+		CameraView result = fixture.clone();
 
 		// add additional test code here
 		assertNotNull(result);
@@ -2987,10 +2987,10 @@ public class CameraTest {
 		assertEquals("0123456789", result.getName());
 		assertEquals(0, result.getHeight());
 		assertEquals(0, result.getWidth());
-		assertEquals(0.0f, result.getFrustumBottom(), 1.0f);
-		assertEquals(0.0f, result.getFrustumFar(), 1.0f);
-		assertEquals(0.0f, result.getFrustumLeft(), 1.0f);
-		assertEquals(0.0f, result.getFrustumNear(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumBottom(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumFar(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumLeft(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumNear(), 1.0f);
 		assertEquals(0.0f, result.getFrustumRight(), 1.0f);
 		assertEquals(0.0f, result.getFrustumTop(), 1.0f);
 		assertEquals(0, result.getPlaneState());
@@ -3012,9 +3012,9 @@ public class CameraTest {
 	@Test
 	public void testClone_fixture29_1()
 		throws Exception {
-		Camera fixture = getFixture29();
+		CameraView fixture = getFixture29();
 
-		Camera result = fixture.clone();
+		CameraView result = fixture.clone();
 
 		// add additional test code here
 		assertNotNull(result);
@@ -3022,10 +3022,10 @@ public class CameraTest {
 		assertEquals("0123456789", result.getName());
 		assertEquals(0, result.getHeight());
 		assertEquals(0, result.getWidth());
-		assertEquals(0.0f, result.getFrustumBottom(), 1.0f);
-		assertEquals(0.0f, result.getFrustumFar(), 1.0f);
-		assertEquals(0.0f, result.getFrustumLeft(), 1.0f);
-		assertEquals(0.0f, result.getFrustumNear(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumBottom(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumFar(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumLeft(), 1.0f);
+		assertEquals(0.0f, result.getFrustum().getFrustumNear(), 1.0f);
 		assertEquals(0.0f, result.getFrustumRight(), 1.0f);
 		assertEquals(0.0f, result.getFrustumTop(), 1.0f);
 		assertEquals(0, result.getPlaneState());
@@ -3047,7 +3047,7 @@ public class CameraTest {
 	@Test
 	public void testContains_fixture1_1()
 		throws Exception {
-		Camera fixture = getFixture1();
+		CameraView fixture = getFixture1();
 		BoundingVolume bound = null;
 
 		Frustum.FrustumIntersect result = fixture.contains(bound);
@@ -3069,7 +3069,7 @@ public class CameraTest {
 	@Test
 	public void testContains_fixture2_1()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 		BoundingVolume bound = null;
 
 		Frustum.FrustumIntersect result = fixture.contains(bound);
@@ -3091,7 +3091,7 @@ public class CameraTest {
 	@Test
 	public void testContains_fixture3_1()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 		BoundingVolume bound = null;
 
 		Frustum.FrustumIntersect result = fixture.contains(bound);
@@ -3113,7 +3113,7 @@ public class CameraTest {
 	@Test
 	public void testContains_fixture4_1()
 		throws Exception {
-		Camera fixture = getFixture4();
+		CameraView fixture = getFixture4();
 		BoundingVolume bound = null;
 
 		Frustum.FrustumIntersect result = fixture.contains(bound);
@@ -3135,7 +3135,7 @@ public class CameraTest {
 	@Test
 	public void testContains_fixture5_1()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 		BoundingVolume bound = null;
 
 		Frustum.FrustumIntersect result = fixture.contains(bound);
@@ -3157,7 +3157,7 @@ public class CameraTest {
 	@Test
 	public void testContains_fixture6_1()
 		throws Exception {
-		Camera fixture = getFixture6();
+		CameraView fixture = getFixture6();
 		BoundingVolume bound = null;
 
 		Frustum.FrustumIntersect result = fixture.contains(bound);
@@ -3179,7 +3179,7 @@ public class CameraTest {
 	@Test
 	public void testContains_fixture7_1()
 		throws Exception {
-		Camera fixture = getFixture7();
+		CameraView fixture = getFixture7();
 		BoundingVolume bound = null;
 
 		Frustum.FrustumIntersect result = fixture.contains(bound);
@@ -3201,7 +3201,7 @@ public class CameraTest {
 	@Test
 	public void testContains_fixture8_1()
 		throws Exception {
-		Camera fixture = getFixture8();
+		CameraView fixture = getFixture8();
 		BoundingVolume bound = null;
 
 		Frustum.FrustumIntersect result = fixture.contains(bound);
@@ -3223,7 +3223,7 @@ public class CameraTest {
 	@Test
 	public void testContains_fixture9_1()
 		throws Exception {
-		Camera fixture = getFixture9();
+		CameraView fixture = getFixture9();
 		BoundingVolume bound = null;
 
 		Frustum.FrustumIntersect result = fixture.contains(bound);
@@ -3245,7 +3245,7 @@ public class CameraTest {
 	@Test
 	public void testContains_fixture10_1()
 		throws Exception {
-		Camera fixture = getFixture10();
+		CameraView fixture = getFixture10();
 		BoundingVolume bound = null;
 
 		Frustum.FrustumIntersect result = fixture.contains(bound);
@@ -3267,7 +3267,7 @@ public class CameraTest {
 	@Test
 	public void testContains_fixture11_1()
 		throws Exception {
-		Camera fixture = getFixture11();
+		CameraView fixture = getFixture11();
 		BoundingVolume bound = null;
 
 		Frustum.FrustumIntersect result = fixture.contains(bound);
@@ -3289,7 +3289,7 @@ public class CameraTest {
 	@Test
 	public void testContains_fixture12_1()
 		throws Exception {
-		Camera fixture = getFixture12();
+		CameraView fixture = getFixture12();
 		BoundingVolume bound = null;
 
 		Frustum.FrustumIntersect result = fixture.contains(bound);
@@ -3311,7 +3311,7 @@ public class CameraTest {
 	@Test
 	public void testContains_fixture13_1()
 		throws Exception {
-		Camera fixture = getFixture13();
+		CameraView fixture = getFixture13();
 		BoundingVolume bound = null;
 
 		Frustum.FrustumIntersect result = fixture.contains(bound);
@@ -3333,7 +3333,7 @@ public class CameraTest {
 	@Test
 	public void testContains_fixture14_1()
 		throws Exception {
-		Camera fixture = getFixture14();
+		CameraView fixture = getFixture14();
 		BoundingVolume bound = null;
 
 		Frustum.FrustumIntersect result = fixture.contains(bound);
@@ -3355,7 +3355,7 @@ public class CameraTest {
 	@Test
 	public void testContains_fixture15_1()
 		throws Exception {
-		Camera fixture = getFixture15();
+		CameraView fixture = getFixture15();
 		BoundingVolume bound = null;
 
 		Frustum.FrustumIntersect result = fixture.contains(bound);
@@ -3377,7 +3377,7 @@ public class CameraTest {
 	@Test
 	public void testContains_fixture16_1()
 		throws Exception {
-		Camera fixture = getFixture16();
+		CameraView fixture = getFixture16();
 		BoundingVolume bound = null;
 
 		Frustum.FrustumIntersect result = fixture.contains(bound);
@@ -3399,7 +3399,7 @@ public class CameraTest {
 	@Test
 	public void testContains_fixture17_1()
 		throws Exception {
-		Camera fixture = getFixture17();
+		CameraView fixture = getFixture17();
 		BoundingVolume bound = null;
 
 		Frustum.FrustumIntersect result = fixture.contains(bound);
@@ -3421,7 +3421,7 @@ public class CameraTest {
 	@Test
 	public void testContains_fixture18_1()
 		throws Exception {
-		Camera fixture = getFixture18();
+		CameraView fixture = getFixture18();
 		BoundingVolume bound = null;
 
 		Frustum.FrustumIntersect result = fixture.contains(bound);
@@ -3443,7 +3443,7 @@ public class CameraTest {
 	@Test
 	public void testContains_fixture19_1()
 		throws Exception {
-		Camera fixture = getFixture19();
+		CameraView fixture = getFixture19();
 		BoundingVolume bound = null;
 
 		Frustum.FrustumIntersect result = fixture.contains(bound);
@@ -3465,7 +3465,7 @@ public class CameraTest {
 	@Test
 	public void testContains_fixture20_1()
 		throws Exception {
-		Camera fixture = getFixture20();
+		CameraView fixture = getFixture20();
 		BoundingVolume bound = null;
 
 		Frustum.FrustumIntersect result = fixture.contains(bound);
@@ -3487,7 +3487,7 @@ public class CameraTest {
 	@Test
 	public void testContains_fixture21_1()
 		throws Exception {
-		Camera fixture = getFixture21();
+		CameraView fixture = getFixture21();
 		BoundingVolume bound = null;
 
 		Frustum.FrustumIntersect result = fixture.contains(bound);
@@ -3509,7 +3509,7 @@ public class CameraTest {
 	@Test
 	public void testContains_fixture22_1()
 		throws Exception {
-		Camera fixture = getFixture22();
+		CameraView fixture = getFixture22();
 		BoundingVolume bound = null;
 
 		Frustum.FrustumIntersect result = fixture.contains(bound);
@@ -3531,7 +3531,7 @@ public class CameraTest {
 	@Test
 	public void testContains_fixture23_1()
 		throws Exception {
-		Camera fixture = getFixture23();
+		CameraView fixture = getFixture23();
 		BoundingVolume bound = null;
 
 		Frustum.FrustumIntersect result = fixture.contains(bound);
@@ -3553,7 +3553,7 @@ public class CameraTest {
 	@Test
 	public void testContains_fixture24_1()
 		throws Exception {
-		Camera fixture = getFixture24();
+		CameraView fixture = getFixture24();
 		BoundingVolume bound = null;
 
 		Frustum.FrustumIntersect result = fixture.contains(bound);
@@ -3575,7 +3575,7 @@ public class CameraTest {
 	@Test
 	public void testContains_fixture25_1()
 		throws Exception {
-		Camera fixture = getFixture25();
+		CameraView fixture = getFixture25();
 		BoundingVolume bound = null;
 
 		Frustum.FrustumIntersect result = fixture.contains(bound);
@@ -3597,7 +3597,7 @@ public class CameraTest {
 	@Test
 	public void testContains_fixture26_1()
 		throws Exception {
-		Camera fixture = getFixture26();
+		CameraView fixture = getFixture26();
 		BoundingVolume bound = null;
 
 		Frustum.FrustumIntersect result = fixture.contains(bound);
@@ -3619,7 +3619,7 @@ public class CameraTest {
 	@Test
 	public void testContains_fixture27_1()
 		throws Exception {
-		Camera fixture = getFixture27();
+		CameraView fixture = getFixture27();
 		BoundingVolume bound = null;
 
 		Frustum.FrustumIntersect result = fixture.contains(bound);
@@ -3641,7 +3641,7 @@ public class CameraTest {
 	@Test
 	public void testContains_fixture28_1()
 		throws Exception {
-		Camera fixture = getFixture28();
+		CameraView fixture = getFixture28();
 		BoundingVolume bound = null;
 
 		Frustum.FrustumIntersect result = fixture.contains(bound);
@@ -3663,7 +3663,7 @@ public class CameraTest {
 	@Test
 	public void testContains_fixture29_1()
 		throws Exception {
-		Camera fixture = getFixture29();
+		CameraView fixture = getFixture29();
 		BoundingVolume bound = null;
 
 		Frustum.FrustumIntersect result = fixture.contains(bound);
@@ -3685,7 +3685,7 @@ public class CameraTest {
 	@Test
 	public void testContainsGui_fixture1_1()
 		throws Exception {
-		Camera fixture = getFixture1();
+		CameraView fixture = getFixture1();
 		BoundingVolume bound = new BoundingBox();
 
 		boolean result = fixture.containsGui(bound);
@@ -3704,7 +3704,7 @@ public class CameraTest {
 	@Test
 	public void testContainsGui_fixture2_1()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 		BoundingVolume bound = new BoundingBox(Vector3f.NAN, Vector3f.NAN);
 
 		boolean result = fixture.containsGui(bound);
@@ -3723,7 +3723,7 @@ public class CameraTest {
 	@Test
 	public void testContainsGui_fixture3_1()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 		BoundingVolume bound = new BoundingBox(Vector3f.NEGATIVE_INFINITY, Vector3f.NEGATIVE_INFINITY);
 
 		boolean result = fixture.containsGui(bound);
@@ -3764,7 +3764,7 @@ public class CameraTest {
 	@Test
 	public void testContainsGui_fixture5_1()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 		BoundingVolume bound = new BoundingSphere();
 
 		boolean result = fixture.containsGui(bound);
@@ -3783,7 +3783,7 @@ public class CameraTest {
 	@Test
 	public void testContainsGui_fixture6_1()
 		throws Exception {
-		Camera fixture = getFixture6();
+		CameraView fixture = getFixture6();
 		BoundingVolume bound = new BoundingSphere();
 
 		boolean result = fixture.containsGui(bound);
@@ -3802,7 +3802,7 @@ public class CameraTest {
 	@Test
 	public void testContainsGui_fixture7_1()
 		throws Exception {
-		Camera fixture = getFixture7();
+		CameraView fixture = getFixture7();
 		BoundingVolume bound = new BoundingSphere();
 
 		boolean result = fixture.containsGui(bound);
@@ -3821,7 +3821,7 @@ public class CameraTest {
 	@Test
 	public void testContainsGui_fixture8_1()
 		throws Exception {
-		Camera fixture = getFixture8();
+		CameraView fixture = getFixture8();
 		BoundingVolume bound = new BoundingSphere();
 
 		boolean result = fixture.containsGui(bound);
@@ -3840,7 +3840,7 @@ public class CameraTest {
 	@Test
 	public void testContainsGui_fixture9_1()
 		throws Exception {
-		Camera fixture = getFixture9();
+		CameraView fixture = getFixture9();
 		BoundingVolume bound = new BoundingSphere();
 
 		boolean result = fixture.containsGui(bound);
@@ -3859,7 +3859,7 @@ public class CameraTest {
 	@Test
 	public void testContainsGui_fixture10_1()
 		throws Exception {
-		Camera fixture = getFixture10();
+		CameraView fixture = getFixture10();
 		BoundingVolume bound = new BoundingSphere();
 
 		boolean result = fixture.containsGui(bound);
@@ -3878,7 +3878,7 @@ public class CameraTest {
 	@Test
 	public void testContainsGui_fixture11_1()
 		throws Exception {
-		Camera fixture = getFixture11();
+		CameraView fixture = getFixture11();
 		BoundingVolume bound = new BoundingSphere();
 
 		boolean result = fixture.containsGui(bound);
@@ -3897,7 +3897,7 @@ public class CameraTest {
 	@Test
 	public void testContainsGui_fixture12_1()
 		throws Exception {
-		Camera fixture = getFixture12();
+		CameraView fixture = getFixture12();
 		BoundingVolume bound = new BoundingSphere();
 
 		boolean result = fixture.containsGui(bound);
@@ -3916,7 +3916,7 @@ public class CameraTest {
 	@Test
 	public void testContainsGui_fixture13_1()
 		throws Exception {
-		Camera fixture = getFixture13();
+		CameraView fixture = getFixture13();
 		BoundingVolume bound = new BoundingSphere();
 
 		boolean result = fixture.containsGui(bound);
@@ -3935,7 +3935,7 @@ public class CameraTest {
 	@Test
 	public void testContainsGui_fixture14_1()
 		throws Exception {
-		Camera fixture = getFixture14();
+		CameraView fixture = getFixture14();
 		BoundingVolume bound = new BoundingSphere();
 
 		boolean result = fixture.containsGui(bound);
@@ -3954,7 +3954,7 @@ public class CameraTest {
 	@Test
 	public void testContainsGui_fixture15_1()
 		throws Exception {
-		Camera fixture = getFixture15();
+		CameraView fixture = getFixture15();
 		BoundingVolume bound = new BoundingSphere();
 
 		boolean result = fixture.containsGui(bound);
@@ -3973,7 +3973,7 @@ public class CameraTest {
 	@Test
 	public void testContainsGui_fixture16_1()
 		throws Exception {
-		Camera fixture = getFixture16();
+		CameraView fixture = getFixture16();
 		BoundingVolume bound = new BoundingSphere();
 
 		boolean result = fixture.containsGui(bound);
@@ -3992,7 +3992,7 @@ public class CameraTest {
 	@Test
 	public void testContainsGui_fixture17_1()
 		throws Exception {
-		Camera fixture = getFixture17();
+		CameraView fixture = getFixture17();
 		BoundingVolume bound = new BoundingSphere();
 
 		boolean result = fixture.containsGui(bound);
@@ -4011,7 +4011,7 @@ public class CameraTest {
 	@Test
 	public void testContainsGui_fixture18_1()
 		throws Exception {
-		Camera fixture = getFixture18();
+		CameraView fixture = getFixture18();
 		BoundingVolume bound = new BoundingSphere();
 
 		boolean result = fixture.containsGui(bound);
@@ -4030,7 +4030,7 @@ public class CameraTest {
 	@Test
 	public void testContainsGui_fixture19_1()
 		throws Exception {
-		Camera fixture = getFixture19();
+		CameraView fixture = getFixture19();
 		BoundingVolume bound = new BoundingSphere();
 
 		boolean result = fixture.containsGui(bound);
@@ -4049,7 +4049,7 @@ public class CameraTest {
 	@Test
 	public void testContainsGui_fixture20_1()
 		throws Exception {
-		Camera fixture = getFixture20();
+		CameraView fixture = getFixture20();
 		BoundingVolume bound = new BoundingSphere();
 
 		boolean result = fixture.containsGui(bound);
@@ -4068,7 +4068,7 @@ public class CameraTest {
 	@Test
 	public void testContainsGui_fixture21_1()
 		throws Exception {
-		Camera fixture = getFixture21();
+		CameraView fixture = getFixture21();
 		BoundingVolume bound = new BoundingSphere();
 
 		boolean result = fixture.containsGui(bound);
@@ -4087,7 +4087,7 @@ public class CameraTest {
 	@Test
 	public void testContainsGui_fixture22_1()
 		throws Exception {
-		Camera fixture = getFixture22();
+		CameraView fixture = getFixture22();
 		BoundingVolume bound = new BoundingSphere();
 
 		boolean result = fixture.containsGui(bound);
@@ -4106,7 +4106,7 @@ public class CameraTest {
 	@Test
 	public void testContainsGui_fixture23_1()
 		throws Exception {
-		Camera fixture = getFixture23();
+		CameraView fixture = getFixture23();
 		BoundingVolume bound = new BoundingSphere();
 
 		boolean result = fixture.containsGui(bound);
@@ -4125,7 +4125,7 @@ public class CameraTest {
 	@Test
 	public void testContainsGui_fixture24_1()
 		throws Exception {
-		Camera fixture = getFixture24();
+		CameraView fixture = getFixture24();
 		BoundingVolume bound = new BoundingSphere();
 
 		boolean result = fixture.containsGui(bound);
@@ -4144,7 +4144,7 @@ public class CameraTest {
 	@Test
 	public void testContainsGui_fixture25_1()
 		throws Exception {
-		Camera fixture = getFixture25();
+		CameraView fixture = getFixture25();
 		BoundingVolume bound = new BoundingSphere();
 
 		boolean result = fixture.containsGui(bound);
@@ -4163,7 +4163,7 @@ public class CameraTest {
 	@Test
 	public void testContainsGui_fixture26_1()
 		throws Exception {
-		Camera fixture = getFixture26();
+		CameraView fixture = getFixture26();
 		BoundingVolume bound = new BoundingSphere();
 
 		boolean result = fixture.containsGui(bound);
@@ -4182,7 +4182,7 @@ public class CameraTest {
 	@Test
 	public void testContainsGui_fixture27_1()
 		throws Exception {
-		Camera fixture = getFixture27();
+		CameraView fixture = getFixture27();
 		BoundingVolume bound = new BoundingSphere();
 
 		boolean result = fixture.containsGui(bound);
@@ -4201,7 +4201,7 @@ public class CameraTest {
 	@Test
 	public void testContainsGui_fixture28_1()
 		throws Exception {
-		Camera fixture = getFixture28();
+		CameraView fixture = getFixture28();
 		BoundingVolume bound = new BoundingSphere();
 
 		boolean result = fixture.containsGui(bound);
@@ -4220,7 +4220,7 @@ public class CameraTest {
 	@Test
 	public void testContainsGui_fixture29_1()
 		throws Exception {
-		Camera fixture = getFixture29();
+		CameraView fixture = getFixture29();
 		BoundingVolume bound = new BoundingSphere();
 
 		boolean result = fixture.containsGui(bound);
@@ -4239,7 +4239,7 @@ public class CameraTest {
 	@Test
 	public void testContainsGui_fixture2_2()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 		BoundingVolume bound = new BoundingBox();
 
 		boolean result = fixture.containsGui(bound);
@@ -4281,8 +4281,8 @@ public class CameraTest {
 	@Test
 	public void testCopyFrom_fixture2_1()
 		throws Exception {
-		Camera fixture = getFixture2();
-		Camera cam = new Camera(0, 1);
+		CameraView fixture = getFixture2();
+		CameraView cam = new CameraView(0, 1);
 
 		fixture.copyFrom(cam);
 
@@ -4299,8 +4299,8 @@ public class CameraTest {
 	@Test
 	public void testCopyFrom_fixture3_1()
 		throws Exception {
-		Camera fixture = getFixture3();
-		Camera cam = new Camera(0, 2);
+		CameraView fixture = getFixture3();
+		CameraView cam = new CameraView(0, 2);
 
 		fixture.copyFrom(cam);
 
@@ -4317,8 +4317,8 @@ public class CameraTest {
 	@Test
 	public void testCopyFrom_fixture4_1()
 		throws Exception {
-		Camera fixture = getFixture4();
-		Camera cam = new Camera(1, 0);
+		CameraView fixture = getFixture4();
+		CameraView cam = new CameraView(1, 0);
 
 		fixture.copyFrom(cam);
 
@@ -4335,8 +4335,8 @@ public class CameraTest {
 	@Test
 	public void testCopyFrom_fixture5_1()
 		throws Exception {
-		Camera fixture = getFixture5();
-		Camera cam = new Camera(1, 1);
+		CameraView fixture = getFixture5();
+		CameraView cam = new CameraView(1, 1);
 
 		fixture.copyFrom(cam);
 
@@ -4353,8 +4353,8 @@ public class CameraTest {
 	@Test
 	public void testCopyFrom_fixture6_1()
 		throws Exception {
-		Camera fixture = getFixture6();
-		Camera cam = new Camera(1, 2);
+		CameraView fixture = getFixture6();
+		CameraView cam = new CameraView(1, 2);
 
 		fixture.copyFrom(cam);
 
@@ -4371,8 +4371,8 @@ public class CameraTest {
 	@Test
 	public void testCopyFrom_fixture7_1()
 		throws Exception {
-		Camera fixture = getFixture7();
-		Camera cam = new Camera(2, 0);
+		CameraView fixture = getFixture7();
+		CameraView cam = new CameraView(2, 0);
 
 		fixture.copyFrom(cam);
 
@@ -4389,8 +4389,8 @@ public class CameraTest {
 	@Test
 	public void testCopyFrom_fixture8_1()
 		throws Exception {
-		Camera fixture = getFixture8();
-		Camera cam = new Camera(2, 1);
+		CameraView fixture = getFixture8();
+		CameraView cam = new CameraView(2, 1);
 
 		fixture.copyFrom(cam);
 
@@ -4407,8 +4407,8 @@ public class CameraTest {
 	@Test
 	public void testCopyFrom_fixture9_1()
 		throws Exception {
-		Camera fixture = getFixture9();
-		Camera cam = new Camera(2, 2);
+		CameraView fixture = getFixture9();
+		CameraView cam = new CameraView(2, 2);
 
 		fixture.copyFrom(cam);
 
@@ -4425,8 +4425,8 @@ public class CameraTest {
 	@Test
 	public void testCopyFrom_fixture10_1()
 		throws Exception {
-		Camera fixture = getFixture10();
-		Camera cam = new Camera(2, 2);
+		CameraView fixture = getFixture10();
+		CameraView cam = new CameraView(2, 2);
 
 		fixture.copyFrom(cam);
 
@@ -4443,8 +4443,8 @@ public class CameraTest {
 	@Test
 	public void testCopyFrom_fixture11_1()
 		throws Exception {
-		Camera fixture = getFixture11();
-		Camera cam = new Camera(2, 2);
+		CameraView fixture = getFixture11();
+		CameraView cam = new CameraView(2, 2);
 
 		fixture.copyFrom(cam);
 
@@ -4461,8 +4461,8 @@ public class CameraTest {
 	@Test
 	public void testCopyFrom_fixture12_1()
 		throws Exception {
-		Camera fixture = getFixture12();
-		Camera cam = new Camera(2, 2);
+		CameraView fixture = getFixture12();
+		CameraView cam = new CameraView(2, 2);
 
 		fixture.copyFrom(cam);
 
@@ -4479,8 +4479,8 @@ public class CameraTest {
 	@Test
 	public void testCopyFrom_fixture13_1()
 		throws Exception {
-		Camera fixture = getFixture13();
-		Camera cam = new Camera(2, 2);
+		CameraView fixture = getFixture13();
+		CameraView cam = new CameraView(2, 2);
 
 		fixture.copyFrom(cam);
 
@@ -4497,8 +4497,8 @@ public class CameraTest {
 	@Test
 	public void testCopyFrom_fixture14_1()
 		throws Exception {
-		Camera fixture = getFixture14();
-		Camera cam = new Camera(2, 2);
+		CameraView fixture = getFixture14();
+		CameraView cam = new CameraView(2, 2);
 
 		fixture.copyFrom(cam);
 
@@ -4515,8 +4515,8 @@ public class CameraTest {
 	@Test
 	public void testCopyFrom_fixture15_1()
 		throws Exception {
-		Camera fixture = getFixture15();
-		Camera cam = new Camera(2, 2);
+		CameraView fixture = getFixture15();
+		CameraView cam = new CameraView(2, 2);
 
 		fixture.copyFrom(cam);
 
@@ -4533,8 +4533,8 @@ public class CameraTest {
 	@Test
 	public void testCopyFrom_fixture16_1()
 		throws Exception {
-		Camera fixture = getFixture16();
-		Camera cam = new Camera(2, 2);
+		CameraView fixture = getFixture16();
+		CameraView cam = new CameraView(2, 2);
 
 		fixture.copyFrom(cam);
 
@@ -4551,8 +4551,8 @@ public class CameraTest {
 	@Test
 	public void testCopyFrom_fixture17_1()
 		throws Exception {
-		Camera fixture = getFixture17();
-		Camera cam = new Camera(2, 2);
+		CameraView fixture = getFixture17();
+		CameraView cam = new CameraView(2, 2);
 
 		fixture.copyFrom(cam);
 
@@ -4569,8 +4569,8 @@ public class CameraTest {
 	@Test
 	public void testCopyFrom_fixture18_1()
 		throws Exception {
-		Camera fixture = getFixture18();
-		Camera cam = new Camera(2, 2);
+		CameraView fixture = getFixture18();
+		CameraView cam = new CameraView(2, 2);
 
 		fixture.copyFrom(cam);
 
@@ -4587,8 +4587,8 @@ public class CameraTest {
 	@Test
 	public void testCopyFrom_fixture19_1()
 		throws Exception {
-		Camera fixture = getFixture19();
-		Camera cam = new Camera(2, 2);
+		CameraView fixture = getFixture19();
+		CameraView cam = new CameraView(2, 2);
 
 		fixture.copyFrom(cam);
 
@@ -4605,8 +4605,8 @@ public class CameraTest {
 	@Test
 	public void testCopyFrom_fixture20_1()
 		throws Exception {
-		Camera fixture = getFixture20();
-		Camera cam = new Camera(2, 2);
+		CameraView fixture = getFixture20();
+		CameraView cam = new CameraView(2, 2);
 
 		fixture.copyFrom(cam);
 
@@ -4623,8 +4623,8 @@ public class CameraTest {
 	@Test
 	public void testCopyFrom_fixture21_1()
 		throws Exception {
-		Camera fixture = getFixture21();
-		Camera cam = new Camera(2, 2);
+		CameraView fixture = getFixture21();
+		CameraView cam = new CameraView(2, 2);
 
 		fixture.copyFrom(cam);
 
@@ -4641,8 +4641,8 @@ public class CameraTest {
 	@Test
 	public void testCopyFrom_fixture22_1()
 		throws Exception {
-		Camera fixture = getFixture22();
-		Camera cam = new Camera(2, 2);
+		CameraView fixture = getFixture22();
+		CameraView cam = new CameraView(2, 2);
 
 		fixture.copyFrom(cam);
 
@@ -4659,8 +4659,8 @@ public class CameraTest {
 	@Test
 	public void testCopyFrom_fixture23_1()
 		throws Exception {
-		Camera fixture = getFixture23();
-		Camera cam = new Camera(2, 2);
+		CameraView fixture = getFixture23();
+		CameraView cam = new CameraView(2, 2);
 
 		fixture.copyFrom(cam);
 
@@ -4677,8 +4677,8 @@ public class CameraTest {
 	@Test
 	public void testCopyFrom_fixture24_1()
 		throws Exception {
-		Camera fixture = getFixture24();
-		Camera cam = new Camera(2, 2);
+		CameraView fixture = getFixture24();
+		CameraView cam = new CameraView(2, 2);
 
 		fixture.copyFrom(cam);
 
@@ -4695,8 +4695,8 @@ public class CameraTest {
 	@Test
 	public void testCopyFrom_fixture25_1()
 		throws Exception {
-		Camera fixture = getFixture25();
-		Camera cam = new Camera(2, 2);
+		CameraView fixture = getFixture25();
+		CameraView cam = new CameraView(2, 2);
 
 		fixture.copyFrom(cam);
 
@@ -4713,8 +4713,8 @@ public class CameraTest {
 	@Test
 	public void testCopyFrom_fixture26_1()
 		throws Exception {
-		Camera fixture = getFixture26();
-		Camera cam = new Camera(2, 2);
+		CameraView fixture = getFixture26();
+		CameraView cam = new CameraView(2, 2);
 
 		fixture.copyFrom(cam);
 
@@ -4731,8 +4731,8 @@ public class CameraTest {
 	@Test
 	public void testCopyFrom_fixture27_1()
 		throws Exception {
-		Camera fixture = getFixture27();
-		Camera cam = new Camera(2, 2);
+		CameraView fixture = getFixture27();
+		CameraView cam = new CameraView(2, 2);
 
 		fixture.copyFrom(cam);
 
@@ -4749,8 +4749,8 @@ public class CameraTest {
 	@Test
 	public void testCopyFrom_fixture28_1()
 		throws Exception {
-		Camera fixture = getFixture28();
-		Camera cam = new Camera(2, 2);
+		CameraView fixture = getFixture28();
+		CameraView cam = new CameraView(2, 2);
 
 		fixture.copyFrom(cam);
 
@@ -4767,8 +4767,8 @@ public class CameraTest {
 	@Test
 	public void testCopyFrom_fixture29_1()
 		throws Exception {
-		Camera fixture = getFixture29();
-		Camera cam = new Camera(2, 2);
+		CameraView fixture = getFixture29();
+		CameraView cam = new CameraView(2, 2);
 
 		fixture.copyFrom(cam);
 
@@ -4785,8 +4785,8 @@ public class CameraTest {
 	@Test
 	public void testCopyFrom_fixture2_2()
 		throws Exception {
-		Camera fixture = getFixture2();
-		Camera cam = new Camera(0, 0);
+		CameraView fixture = getFixture2();
+		CameraView cam = new CameraView(0, 0);
 
 		fixture.copyFrom(cam);
 
@@ -4822,7 +4822,7 @@ public class CameraTest {
 	@Test
 	public void testDistanceToNearPlane_fixture2_1()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 		Vector3f pos = Vector3f.NEGATIVE_INFINITY;
 
 		float result = fixture.distanceToNearPlane(pos);
@@ -4841,7 +4841,7 @@ public class CameraTest {
 	@Test
 	public void testDistanceToNearPlane_fixture3_1()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 		Vector3f pos = Vector3f.POSITIVE_INFINITY;
 
 		float result = fixture.distanceToNearPlane(pos);
@@ -4860,7 +4860,7 @@ public class CameraTest {
 	@Test
 	public void testDistanceToNearPlane_fixture4_1()
 		throws Exception {
-		Camera fixture = getFixture4();
+		CameraView fixture = getFixture4();
 		Vector3f pos = Vector3f.UNIT_X;
 
 		float result = fixture.distanceToNearPlane(pos);
@@ -4879,7 +4879,7 @@ public class CameraTest {
 	@Test
 	public void testDistanceToNearPlane_fixture5_1()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 		Vector3f pos = Vector3f.UNIT_XYZ;
 
 		float result = fixture.distanceToNearPlane(pos);
@@ -4898,7 +4898,7 @@ public class CameraTest {
 	@Test
 	public void testDistanceToNearPlane_fixture6_1()
 		throws Exception {
-		Camera fixture = getFixture6();
+		CameraView fixture = getFixture6();
 		Vector3f pos = Vector3f.UNIT_Y;
 
 		float result = fixture.distanceToNearPlane(pos);
@@ -4917,7 +4917,7 @@ public class CameraTest {
 	@Test
 	public void testDistanceToNearPlane_fixture7_1()
 		throws Exception {
-		Camera fixture = getFixture7();
+		CameraView fixture = getFixture7();
 		Vector3f pos = Vector3f.UNIT_Z;
 
 		float result = fixture.distanceToNearPlane(pos);
@@ -4936,7 +4936,7 @@ public class CameraTest {
 	@Test
 	public void testDistanceToNearPlane_fixture8_1()
 		throws Exception {
-		Camera fixture = getFixture8();
+		CameraView fixture = getFixture8();
 		Vector3f pos = Vector3f.ZERO;
 
 		float result = fixture.distanceToNearPlane(pos);
@@ -4955,7 +4955,7 @@ public class CameraTest {
 	@Test
 	public void testDistanceToNearPlane_fixture9_1()
 		throws Exception {
-		Camera fixture = getFixture9();
+		CameraView fixture = getFixture9();
 		Vector3f pos = new Vector3f();
 
 		float result = fixture.distanceToNearPlane(pos);
@@ -5438,7 +5438,7 @@ public class CameraTest {
 	@Test
 	public void testDistanceToNearPlane_fixture2_2()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 		Vector3f pos = Vector3f.NAN;
 
 		float result = fixture.distanceToNearPlane(pos);
@@ -5477,7 +5477,7 @@ public class CameraTest {
 	@Test
 	public void testGetDirection_fixture2_1()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 
 		Vector3f result = fixture.getDirection();
 
@@ -5502,7 +5502,7 @@ public class CameraTest {
 	@Test
 	public void testGetDirection_fixture3_1()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 
 		Vector3f result = fixture.getDirection();
 
@@ -5527,7 +5527,7 @@ public class CameraTest {
 	@Test
 	public void testGetDirection_fixture4_1()
 		throws Exception {
-		Camera fixture = getFixture4();
+		CameraView fixture = getFixture4();
 
 		Vector3f result = fixture.getDirection();
 
@@ -5552,7 +5552,7 @@ public class CameraTest {
 	@Test
 	public void testGetDirection_fixture5_1()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 
 		Vector3f result = fixture.getDirection();
 
@@ -5577,7 +5577,7 @@ public class CameraTest {
 	@Test
 	public void testGetDirection_fixture6_1()
 		throws Exception {
-		Camera fixture = getFixture6();
+		CameraView fixture = getFixture6();
 
 		Vector3f result = fixture.getDirection();
 
@@ -5602,7 +5602,7 @@ public class CameraTest {
 	@Test
 	public void testGetDirection_fixture7_1()
 		throws Exception {
-		Camera fixture = getFixture7();
+		CameraView fixture = getFixture7();
 
 		Vector3f result = fixture.getDirection();
 
@@ -5627,7 +5627,7 @@ public class CameraTest {
 	@Test
 	public void testGetDirection_fixture8_1()
 		throws Exception {
-		Camera fixture = getFixture8();
+		CameraView fixture = getFixture8();
 
 		Vector3f result = fixture.getDirection();
 
@@ -5652,7 +5652,7 @@ public class CameraTest {
 	@Test
 	public void testGetDirection_fixture9_1()
 		throws Exception {
-		Camera fixture = getFixture9();
+		CameraView fixture = getFixture9();
 
 		Vector3f result = fixture.getDirection();
 
@@ -5677,7 +5677,7 @@ public class CameraTest {
 	@Test
 	public void testGetDirection_fixture10_1()
 		throws Exception {
-		Camera fixture = getFixture10();
+		CameraView fixture = getFixture10();
 
 		Vector3f result = fixture.getDirection();
 
@@ -5702,7 +5702,7 @@ public class CameraTest {
 	@Test
 	public void testGetDirection_fixture11_1()
 		throws Exception {
-		Camera fixture = getFixture11();
+		CameraView fixture = getFixture11();
 
 		Vector3f result = fixture.getDirection();
 
@@ -5727,7 +5727,7 @@ public class CameraTest {
 	@Test
 	public void testGetDirection_fixture12_1()
 		throws Exception {
-		Camera fixture = getFixture12();
+		CameraView fixture = getFixture12();
 
 		Vector3f result = fixture.getDirection();
 
@@ -5752,7 +5752,7 @@ public class CameraTest {
 	@Test
 	public void testGetDirection_fixture13_1()
 		throws Exception {
-		Camera fixture = getFixture13();
+		CameraView fixture = getFixture13();
 
 		Vector3f result = fixture.getDirection();
 
@@ -5777,7 +5777,7 @@ public class CameraTest {
 	@Test
 	public void testGetDirection_fixture14_1()
 		throws Exception {
-		Camera fixture = getFixture14();
+		CameraView fixture = getFixture14();
 
 		Vector3f result = fixture.getDirection();
 
@@ -5802,7 +5802,7 @@ public class CameraTest {
 	@Test
 	public void testGetDirection_fixture15_1()
 		throws Exception {
-		Camera fixture = getFixture15();
+		CameraView fixture = getFixture15();
 
 		Vector3f result = fixture.getDirection();
 
@@ -5827,7 +5827,7 @@ public class CameraTest {
 	@Test
 	public void testGetDirection_fixture16_1()
 		throws Exception {
-		Camera fixture = getFixture16();
+		CameraView fixture = getFixture16();
 
 		Vector3f result = fixture.getDirection();
 
@@ -5852,7 +5852,7 @@ public class CameraTest {
 	@Test
 	public void testGetDirection_fixture17_1()
 		throws Exception {
-		Camera fixture = getFixture17();
+		CameraView fixture = getFixture17();
 
 		Vector3f result = fixture.getDirection();
 
@@ -5877,7 +5877,7 @@ public class CameraTest {
 	@Test
 	public void testGetDirection_fixture18_1()
 		throws Exception {
-		Camera fixture = getFixture18();
+		CameraView fixture = getFixture18();
 
 		Vector3f result = fixture.getDirection();
 
@@ -5902,7 +5902,7 @@ public class CameraTest {
 	@Test
 	public void testGetDirection_fixture19_1()
 		throws Exception {
-		Camera fixture = getFixture19();
+		CameraView fixture = getFixture19();
 
 		Vector3f result = fixture.getDirection();
 
@@ -5927,7 +5927,7 @@ public class CameraTest {
 	@Test
 	public void testGetDirection_fixture20_1()
 		throws Exception {
-		Camera fixture = getFixture20();
+		CameraView fixture = getFixture20();
 
 		Vector3f result = fixture.getDirection();
 
@@ -5952,7 +5952,7 @@ public class CameraTest {
 	@Test
 	public void testGetDirection_fixture21_1()
 		throws Exception {
-		Camera fixture = getFixture21();
+		CameraView fixture = getFixture21();
 
 		Vector3f result = fixture.getDirection();
 
@@ -5977,7 +5977,7 @@ public class CameraTest {
 	@Test
 	public void testGetDirection_fixture22_1()
 		throws Exception {
-		Camera fixture = getFixture22();
+		CameraView fixture = getFixture22();
 
 		Vector3f result = fixture.getDirection();
 
@@ -6002,7 +6002,7 @@ public class CameraTest {
 	@Test
 	public void testGetDirection_fixture23_1()
 		throws Exception {
-		Camera fixture = getFixture23();
+		CameraView fixture = getFixture23();
 
 		Vector3f result = fixture.getDirection();
 
@@ -6027,7 +6027,7 @@ public class CameraTest {
 	@Test
 	public void testGetDirection_fixture24_1()
 		throws Exception {
-		Camera fixture = getFixture24();
+		CameraView fixture = getFixture24();
 
 		Vector3f result = fixture.getDirection();
 
@@ -6052,7 +6052,7 @@ public class CameraTest {
 	@Test
 	public void testGetDirection_fixture25_1()
 		throws Exception {
-		Camera fixture = getFixture25();
+		CameraView fixture = getFixture25();
 
 		Vector3f result = fixture.getDirection();
 
@@ -6077,7 +6077,7 @@ public class CameraTest {
 	@Test
 	public void testGetDirection_fixture26_1()
 		throws Exception {
-		Camera fixture = getFixture26();
+		CameraView fixture = getFixture26();
 
 		Vector3f result = fixture.getDirection();
 
@@ -6102,7 +6102,7 @@ public class CameraTest {
 	@Test
 	public void testGetDirection_fixture27_1()
 		throws Exception {
-		Camera fixture = getFixture27();
+		CameraView fixture = getFixture27();
 
 		Vector3f result = fixture.getDirection();
 
@@ -6127,7 +6127,7 @@ public class CameraTest {
 	@Test
 	public void testGetDirection_fixture28_1()
 		throws Exception {
-		Camera fixture = getFixture28();
+		CameraView fixture = getFixture28();
 
 		Vector3f result = fixture.getDirection();
 
@@ -6152,7 +6152,7 @@ public class CameraTest {
 	@Test
 	public void testGetDirection_fixture29_1()
 		throws Exception {
-		Camera fixture = getFixture29();
+		CameraView fixture = getFixture29();
 
 		Vector3f result = fixture.getDirection();
 
@@ -6202,7 +6202,7 @@ public class CameraTest {
 	@Test
 	public void testGetDirection_fixture2_2()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 		Vector3f store = Vector3f.NEGATIVE_INFINITY;
 
 		Vector3f result = fixture.getDirection(store);
@@ -6228,7 +6228,7 @@ public class CameraTest {
 	@Test
 	public void testGetDirection_fixture3_2()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 		Vector3f store = Vector3f.POSITIVE_INFINITY;
 
 		Vector3f result = fixture.getDirection(store);
@@ -6254,7 +6254,7 @@ public class CameraTest {
 	@Test
 	public void testGetDirection_fixture4_2()
 		throws Exception {
-		Camera fixture = getFixture4();
+		CameraView fixture = getFixture4();
 		Vector3f store = Vector3f.UNIT_X;
 
 		Vector3f result = fixture.getDirection(store);
@@ -6280,7 +6280,7 @@ public class CameraTest {
 	@Test
 	public void testGetDirection_fixture5_2()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 		Vector3f store = Vector3f.UNIT_XYZ;
 
 		Vector3f result = fixture.getDirection(store);
@@ -6306,7 +6306,7 @@ public class CameraTest {
 	@Test
 	public void testGetDirection_fixture6_2()
 		throws Exception {
-		Camera fixture = getFixture6();
+		CameraView fixture = getFixture6();
 		Vector3f store = Vector3f.UNIT_Y;
 
 		Vector3f result = fixture.getDirection(store);
@@ -6332,7 +6332,7 @@ public class CameraTest {
 	@Test
 	public void testGetDirection_fixture7_2()
 		throws Exception {
-		Camera fixture = getFixture7();
+		CameraView fixture = getFixture7();
 		Vector3f store = Vector3f.UNIT_Z;
 
 		Vector3f result = fixture.getDirection(store);
@@ -6358,7 +6358,7 @@ public class CameraTest {
 	@Test
 	public void testGetDirection_fixture8_2()
 		throws Exception {
-		Camera fixture = getFixture8();
+		CameraView fixture = getFixture8();
 		Vector3f store = Vector3f.ZERO;
 
 		Vector3f result = fixture.getDirection(store);
@@ -6384,7 +6384,7 @@ public class CameraTest {
 	@Test
 	public void testGetDirection_fixture9_2()
 		throws Exception {
-		Camera fixture = getFixture9();
+		CameraView fixture = getFixture9();
 		Vector3f store = new Vector3f();
 
 		Vector3f result = fixture.getDirection(store);
@@ -6870,7 +6870,7 @@ public class CameraTest {
 	@Test
 	public void testGetDirection_fixture2_3()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 		Vector3f store = Vector3f.NAN;
 
 		Vector3f result = fixture.getDirection(store);
@@ -6887,7 +6887,7 @@ public class CameraTest {
 	}
 
 	/**
-	 * Run the float getFrustumBottom() method test.
+	 * Run the float getFrustum().getFrustumBottom() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -6896,16 +6896,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumBottom_fixture1_1()
 		throws Exception {
-		Camera fixture = getFixture1();
+		CameraView fixture = getFixture1();
 
-		float result = fixture.getFrustumBottom();
+		float result = fixture.getFrustum().getFrustumBottom();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumBottom() method test.
+	 * Run the float getFrustum().getFrustumBottom() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -6914,16 +6914,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumBottom_fixture2_1()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 
-		float result = fixture.getFrustumBottom();
+		float result = fixture.getFrustum().getFrustumBottom();
 
 		// add additional test code here
 		assertEquals(-0.5f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumBottom() method test.
+	 * Run the float getFrustum().getFrustumBottom() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -6932,16 +6932,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumBottom_fixture3_1()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 
-		float result = fixture.getFrustumBottom();
+		float result = fixture.getFrustum().getFrustumBottom();
 
 		// add additional test code here
 		assertEquals(-1.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumBottom() method test.
+	 * Run the float getFrustum().getFrustumBottom() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -6950,16 +6950,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumBottom_fixture4_1()
 		throws Exception {
-		Camera fixture = getFixture4();
+		CameraView fixture = getFixture4();
 
-		float result = fixture.getFrustumBottom();
+		float result = fixture.getFrustum().getFrustumBottom();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumBottom() method test.
+	 * Run the float getFrustum().getFrustumBottom() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -6968,16 +6968,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumBottom_fixture5_1()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 
-		float result = fixture.getFrustumBottom();
+		float result = fixture.getFrustum().getFrustumBottom();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumBottom() method test.
+	 * Run the float getFrustum().getFrustumBottom() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -6986,16 +6986,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumBottom_fixture6_1()
 		throws Exception {
-		Camera fixture = getFixture6();
+		CameraView fixture = getFixture6();
 
-		float result = fixture.getFrustumBottom();
+		float result = fixture.getFrustum().getFrustumBottom();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumBottom() method test.
+	 * Run the float getFrustum().getFrustumBottom() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -7004,16 +7004,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumBottom_fixture7_1()
 		throws Exception {
-		Camera fixture = getFixture7();
+		CameraView fixture = getFixture7();
 
-		float result = fixture.getFrustumBottom();
+		float result = fixture.getFrustum().getFrustumBottom();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumBottom() method test.
+	 * Run the float getFrustum().getFrustumBottom() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -7022,16 +7022,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumBottom_fixture8_1()
 		throws Exception {
-		Camera fixture = getFixture8();
+		CameraView fixture = getFixture8();
 
-		float result = fixture.getFrustumBottom();
+		float result = fixture.getFrustum().getFrustumBottom();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumBottom() method test.
+	 * Run the float getFrustum().getFrustumBottom() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -7040,16 +7040,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumBottom_fixture9_1()
 		throws Exception {
-		Camera fixture = getFixture9();
+		CameraView fixture = getFixture9();
 
-		float result = fixture.getFrustumBottom();
+		float result = fixture.getFrustum().getFrustumBottom();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumBottom() method test.
+	 * Run the float getFrustum().getFrustumBottom() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -7058,16 +7058,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumBottom_fixture10_1()
 		throws Exception {
-		Camera fixture = getFixture10();
+		CameraView fixture = getFixture10();
 
-		float result = fixture.getFrustumBottom();
+		float result = fixture.getFrustum().getFrustumBottom();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumBottom() method test.
+	 * Run the float getFrustum().getFrustumBottom() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -7076,16 +7076,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumBottom_fixture11_1()
 		throws Exception {
-		Camera fixture = getFixture11();
+		CameraView fixture = getFixture11();
 
-		float result = fixture.getFrustumBottom();
+		float result = fixture.getFrustum().getFrustumBottom();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumBottom() method test.
+	 * Run the float getFrustum().getFrustumBottom() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -7094,16 +7094,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumBottom_fixture12_1()
 		throws Exception {
-		Camera fixture = getFixture12();
+		CameraView fixture = getFixture12();
 
-		float result = fixture.getFrustumBottom();
+		float result = fixture.getFrustum().getFrustumBottom();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumBottom() method test.
+	 * Run the float getFrustum().getFrustumBottom() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -7112,16 +7112,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumBottom_fixture13_1()
 		throws Exception {
-		Camera fixture = getFixture13();
+		CameraView fixture = getFixture13();
 
-		float result = fixture.getFrustumBottom();
+		float result = fixture.getFrustum().getFrustumBottom();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumBottom() method test.
+	 * Run the float getFrustum().getFrustumBottom() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -7130,16 +7130,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumBottom_fixture14_1()
 		throws Exception {
-		Camera fixture = getFixture14();
+		CameraView fixture = getFixture14();
 
-		float result = fixture.getFrustumBottom();
+		float result = fixture.getFrustum().getFrustumBottom();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumBottom() method test.
+	 * Run the float getFrustum().getFrustumBottom() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -7148,16 +7148,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumBottom_fixture15_1()
 		throws Exception {
-		Camera fixture = getFixture15();
+		CameraView fixture = getFixture15();
 
-		float result = fixture.getFrustumBottom();
+		float result = fixture.getFrustum().getFrustumBottom();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumBottom() method test.
+	 * Run the float getFrustum().getFrustumBottom() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -7166,16 +7166,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumBottom_fixture16_1()
 		throws Exception {
-		Camera fixture = getFixture16();
+		CameraView fixture = getFixture16();
 
-		float result = fixture.getFrustumBottom();
+		float result = fixture.getFrustum().getFrustumBottom();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumBottom() method test.
+	 * Run the float getFrustum().getFrustumBottom() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -7184,16 +7184,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumBottom_fixture17_1()
 		throws Exception {
-		Camera fixture = getFixture17();
+		CameraView fixture = getFixture17();
 
-		float result = fixture.getFrustumBottom();
+		float result = fixture.getFrustum().getFrustumBottom();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumBottom() method test.
+	 * Run the float getFrustum().getFrustumBottom() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -7202,16 +7202,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumBottom_fixture18_1()
 		throws Exception {
-		Camera fixture = getFixture18();
+		CameraView fixture = getFixture18();
 
-		float result = fixture.getFrustumBottom();
+		float result = fixture.getFrustum().getFrustumBottom();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumBottom() method test.
+	 * Run the float getFrustum().getFrustumBottom() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -7220,16 +7220,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumBottom_fixture19_1()
 		throws Exception {
-		Camera fixture = getFixture19();
+		CameraView fixture = getFixture19();
 
-		float result = fixture.getFrustumBottom();
+		float result = fixture.getFrustum().getFrustumBottom();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumBottom() method test.
+	 * Run the float getFrustum().getFrustumBottom() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -7238,16 +7238,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumBottom_fixture20_1()
 		throws Exception {
-		Camera fixture = getFixture20();
+		CameraView fixture = getFixture20();
 
-		float result = fixture.getFrustumBottom();
+		float result = fixture.getFrustum().getFrustumBottom();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumBottom() method test.
+	 * Run the float getFrustum().getFrustumBottom() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -7256,16 +7256,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumBottom_fixture21_1()
 		throws Exception {
-		Camera fixture = getFixture21();
+		CameraView fixture = getFixture21();
 
-		float result = fixture.getFrustumBottom();
+		float result = fixture.getFrustum().getFrustumBottom();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumBottom() method test.
+	 * Run the float getFrustum().getFrustumBottom() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -7274,16 +7274,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumBottom_fixture22_1()
 		throws Exception {
-		Camera fixture = getFixture22();
+		CameraView fixture = getFixture22();
 
-		float result = fixture.getFrustumBottom();
+		float result = fixture.getFrustum().getFrustumBottom();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumBottom() method test.
+	 * Run the float getFrustum().getFrustumBottom() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -7292,16 +7292,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumBottom_fixture23_1()
 		throws Exception {
-		Camera fixture = getFixture23();
+		CameraView fixture = getFixture23();
 
-		float result = fixture.getFrustumBottom();
+		float result = fixture.getFrustum().getFrustumBottom();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumBottom() method test.
+	 * Run the float getFrustum().getFrustumBottom() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -7310,16 +7310,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumBottom_fixture24_1()
 		throws Exception {
-		Camera fixture = getFixture24();
+		CameraView fixture = getFixture24();
 
-		float result = fixture.getFrustumBottom();
+		float result = fixture.getFrustum().getFrustumBottom();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumBottom() method test.
+	 * Run the float getFrustum().getFrustumBottom() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -7328,16 +7328,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumBottom_fixture25_1()
 		throws Exception {
-		Camera fixture = getFixture25();
+		CameraView fixture = getFixture25();
 
-		float result = fixture.getFrustumBottom();
+		float result = fixture.getFrustum().getFrustumBottom();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumBottom() method test.
+	 * Run the float getFrustum().getFrustumBottom() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -7346,16 +7346,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumBottom_fixture26_1()
 		throws Exception {
-		Camera fixture = getFixture26();
+		CameraView fixture = getFixture26();
 
-		float result = fixture.getFrustumBottom();
+		float result = fixture.getFrustum().getFrustumBottom();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumBottom() method test.
+	 * Run the float getFrustum().getFrustumBottom() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -7364,16 +7364,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumBottom_fixture27_1()
 		throws Exception {
-		Camera fixture = getFixture27();
+		CameraView fixture = getFixture27();
 
-		float result = fixture.getFrustumBottom();
+		float result = fixture.getFrustum().getFrustumBottom();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumBottom() method test.
+	 * Run the float getFrustum().getFrustumBottom() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -7382,16 +7382,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumBottom_fixture28_1()
 		throws Exception {
-		Camera fixture = getFixture28();
+		CameraView fixture = getFixture28();
 
-		float result = fixture.getFrustumBottom();
+		float result = fixture.getFrustum().getFrustumBottom();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumBottom() method test.
+	 * Run the float getFrustum().getFrustumBottom() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -7400,16 +7400,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumBottom_fixture29_1()
 		throws Exception {
-		Camera fixture = getFixture29();
+		CameraView fixture = getFixture29();
 
-		float result = fixture.getFrustumBottom();
+		float result = fixture.getFrustum().getFrustumBottom();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumFar() method test.
+	 * Run the float getFrustum().getFrustumFar() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -7418,16 +7418,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumFar_fixture1_1()
 		throws Exception {
-		Camera fixture = getFixture1();
+		CameraView fixture = getFixture1();
 
-		float result = fixture.getFrustumFar();
+		float result = fixture.getFrustum().getFrustumFar();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumFar() method test.
+	 * Run the float getFrustum().getFrustumFar() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -7436,16 +7436,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumFar_fixture2_1()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 
-		float result = fixture.getFrustumFar();
+		float result = fixture.getFrustum().getFrustumFar();
 
 		// add additional test code here
 		assertEquals(2.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumFar() method test.
+	 * Run the float getFrustum().getFrustumFar() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -7454,16 +7454,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumFar_fixture3_1()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 
-		float result = fixture.getFrustumFar();
+		float result = fixture.getFrustum().getFrustumFar();
 
 		// add additional test code here
 		assertEquals(-1.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumFar() method test.
+	 * Run the float getFrustum().getFrustumFar() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -7472,16 +7472,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumFar_fixture4_1()
 		throws Exception {
-		Camera fixture = getFixture4();
+		CameraView fixture = getFixture4();
 
-		float result = fixture.getFrustumFar();
+		float result = fixture.getFrustum().getFrustumFar();
 
 		// add additional test code here
 		assertEquals(-1.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumFar() method test.
+	 * Run the float getFrustum().getFrustumFar() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -7490,16 +7490,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumFar_fixture5_1()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 
-		float result = fixture.getFrustumFar();
+		float result = fixture.getFrustum().getFrustumFar();
 
 		// add additional test code here
 		assertEquals(-1.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumFar() method test.
+	 * Run the float getFrustum().getFrustumFar() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -7508,16 +7508,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumFar_fixture6_1()
 		throws Exception {
-		Camera fixture = getFixture6();
+		CameraView fixture = getFixture6();
 
-		float result = fixture.getFrustumFar();
+		float result = fixture.getFrustum().getFrustumFar();
 
 		// add additional test code here
 		assertEquals(-1.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumFar() method test.
+	 * Run the float getFrustum().getFrustumFar() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -7526,16 +7526,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumFar_fixture7_1()
 		throws Exception {
-		Camera fixture = getFixture7();
+		CameraView fixture = getFixture7();
 
-		float result = fixture.getFrustumFar();
+		float result = fixture.getFrustum().getFrustumFar();
 
 		// add additional test code here
 		assertEquals(-1.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumFar() method test.
+	 * Run the float getFrustum().getFrustumFar() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -7544,16 +7544,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumFar_fixture8_1()
 		throws Exception {
-		Camera fixture = getFixture8();
+		CameraView fixture = getFixture8();
 
-		float result = fixture.getFrustumFar();
+		float result = fixture.getFrustum().getFrustumFar();
 
 		// add additional test code here
 		assertEquals(-1.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumFar() method test.
+	 * Run the float getFrustum().getFrustumFar() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -7562,16 +7562,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumFar_fixture9_1()
 		throws Exception {
-		Camera fixture = getFixture9();
+		CameraView fixture = getFixture9();
 
-		float result = fixture.getFrustumFar();
+		float result = fixture.getFrustum().getFrustumFar();
 
 		// add additional test code here
 		assertEquals(-1.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumFar() method test.
+	 * Run the float getFrustum().getFrustumFar() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -7580,16 +7580,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumFar_fixture10_1()
 		throws Exception {
-		Camera fixture = getFixture10();
+		CameraView fixture = getFixture10();
 
-		float result = fixture.getFrustumFar();
+		float result = fixture.getFrustum().getFrustumFar();
 
 		// add additional test code here
 		assertEquals(-1.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumFar() method test.
+	 * Run the float getFrustum().getFrustumFar() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -7598,16 +7598,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumFar_fixture11_1()
 		throws Exception {
-		Camera fixture = getFixture11();
+		CameraView fixture = getFixture11();
 
-		float result = fixture.getFrustumFar();
+		float result = fixture.getFrustum().getFrustumFar();
 
 		// add additional test code here
 		assertEquals(-1.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumFar() method test.
+	 * Run the float getFrustum().getFrustumFar() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -7616,16 +7616,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumFar_fixture12_1()
 		throws Exception {
-		Camera fixture = getFixture12();
+		CameraView fixture = getFixture12();
 
-		float result = fixture.getFrustumFar();
+		float result = fixture.getFrustum().getFrustumFar();
 
 		// add additional test code here
 		assertEquals(-1.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumFar() method test.
+	 * Run the float getFrustum().getFrustumFar() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -7634,16 +7634,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumFar_fixture13_1()
 		throws Exception {
-		Camera fixture = getFixture13();
+		CameraView fixture = getFixture13();
 
-		float result = fixture.getFrustumFar();
+		float result = fixture.getFrustum().getFrustumFar();
 
 		// add additional test code here
 		assertEquals(-1.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumFar() method test.
+	 * Run the float getFrustum().getFrustumFar() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -7652,16 +7652,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumFar_fixture14_1()
 		throws Exception {
-		Camera fixture = getFixture14();
+		CameraView fixture = getFixture14();
 
-		float result = fixture.getFrustumFar();
+		float result = fixture.getFrustum().getFrustumFar();
 
 		// add additional test code here
 		assertEquals(-1.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumFar() method test.
+	 * Run the float getFrustum().getFrustumFar() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -7670,16 +7670,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumFar_fixture15_1()
 		throws Exception {
-		Camera fixture = getFixture15();
+		CameraView fixture = getFixture15();
 
-		float result = fixture.getFrustumFar();
+		float result = fixture.getFrustum().getFrustumFar();
 
 		// add additional test code here
 		assertEquals(-1.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumFar() method test.
+	 * Run the float getFrustum().getFrustumFar() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -7688,16 +7688,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumFar_fixture16_1()
 		throws Exception {
-		Camera fixture = getFixture16();
+		CameraView fixture = getFixture16();
 
-		float result = fixture.getFrustumFar();
+		float result = fixture.getFrustum().getFrustumFar();
 
 		// add additional test code here
 		assertEquals(-1.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumFar() method test.
+	 * Run the float getFrustum().getFrustumFar() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -7706,16 +7706,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumFar_fixture17_1()
 		throws Exception {
-		Camera fixture = getFixture17();
+		CameraView fixture = getFixture17();
 
-		float result = fixture.getFrustumFar();
+		float result = fixture.getFrustum().getFrustumFar();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumFar() method test.
+	 * Run the float getFrustum().getFrustumFar() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -7724,16 +7724,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumFar_fixture18_1()
 		throws Exception {
-		Camera fixture = getFixture18();
+		CameraView fixture = getFixture18();
 
-		float result = fixture.getFrustumFar();
+		float result = fixture.getFrustum().getFrustumFar();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumFar() method test.
+	 * Run the float getFrustum().getFrustumFar() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -7742,16 +7742,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumFar_fixture19_1()
 		throws Exception {
-		Camera fixture = getFixture19();
+		CameraView fixture = getFixture19();
 
-		float result = fixture.getFrustumFar();
+		float result = fixture.getFrustum().getFrustumFar();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumFar() method test.
+	 * Run the float getFrustum().getFrustumFar() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -7760,16 +7760,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumFar_fixture20_1()
 		throws Exception {
-		Camera fixture = getFixture20();
+		CameraView fixture = getFixture20();
 
-		float result = fixture.getFrustumFar();
+		float result = fixture.getFrustum().getFrustumFar();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumFar() method test.
+	 * Run the float getFrustum().getFrustumFar() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -7778,16 +7778,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumFar_fixture21_1()
 		throws Exception {
-		Camera fixture = getFixture21();
+		CameraView fixture = getFixture21();
 
-		float result = fixture.getFrustumFar();
+		float result = fixture.getFrustum().getFrustumFar();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumFar() method test.
+	 * Run the float getFrustum().getFrustumFar() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -7796,16 +7796,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumFar_fixture22_1()
 		throws Exception {
-		Camera fixture = getFixture22();
+		CameraView fixture = getFixture22();
 
-		float result = fixture.getFrustumFar();
+		float result = fixture.getFrustum().getFrustumFar();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumFar() method test.
+	 * Run the float getFrustum().getFrustumFar() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -7814,16 +7814,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumFar_fixture23_1()
 		throws Exception {
-		Camera fixture = getFixture23();
+		CameraView fixture = getFixture23();
 
-		float result = fixture.getFrustumFar();
+		float result = fixture.getFrustum().getFrustumFar();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumFar() method test.
+	 * Run the float getFrustum().getFrustumFar() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -7832,16 +7832,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumFar_fixture24_1()
 		throws Exception {
-		Camera fixture = getFixture24();
+		CameraView fixture = getFixture24();
 
-		float result = fixture.getFrustumFar();
+		float result = fixture.getFrustum().getFrustumFar();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumFar() method test.
+	 * Run the float getFrustum().getFrustumFar() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -7850,16 +7850,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumFar_fixture25_1()
 		throws Exception {
-		Camera fixture = getFixture25();
+		CameraView fixture = getFixture25();
 
-		float result = fixture.getFrustumFar();
+		float result = fixture.getFrustum().getFrustumFar();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumFar() method test.
+	 * Run the float getFrustum().getFrustumFar() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -7868,16 +7868,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumFar_fixture26_1()
 		throws Exception {
-		Camera fixture = getFixture26();
+		CameraView fixture = getFixture26();
 
-		float result = fixture.getFrustumFar();
+		float result = fixture.getFrustum().getFrustumFar();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumFar() method test.
+	 * Run the float getFrustum().getFrustumFar() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -7886,16 +7886,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumFar_fixture27_1()
 		throws Exception {
-		Camera fixture = getFixture27();
+		CameraView fixture = getFixture27();
 
-		float result = fixture.getFrustumFar();
+		float result = fixture.getFrustum().getFrustumFar();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumFar() method test.
+	 * Run the float getFrustum().getFrustumFar() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -7904,16 +7904,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumFar_fixture28_1()
 		throws Exception {
-		Camera fixture = getFixture28();
+		CameraView fixture = getFixture28();
 
-		float result = fixture.getFrustumFar();
+		float result = fixture.getFrustum().getFrustumFar();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumFar() method test.
+	 * Run the float getFrustum().getFrustumFar() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -7922,16 +7922,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumFar_fixture29_1()
 		throws Exception {
-		Camera fixture = getFixture29();
+		CameraView fixture = getFixture29();
 
-		float result = fixture.getFrustumFar();
+		float result = fixture.getFrustum().getFrustumFar();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumLeft() method test.
+	 * Run the float getFrustum().getFrustumLeft() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -7940,16 +7940,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumLeft_fixture1_1()
 		throws Exception {
-		Camera fixture = getFixture1();
+		CameraView fixture = getFixture1();
 
-		float result = fixture.getFrustumLeft();
+		float result = fixture.getFrustum().getFrustumLeft();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumLeft() method test.
+	 * Run the float getFrustum().getFrustumLeft() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -7958,16 +7958,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumLeft_fixture2_1()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 
-		float result = fixture.getFrustumLeft();
+		float result = fixture.getFrustum().getFrustumLeft();
 
 		// add additional test code here
 		assertEquals(-0.5f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumLeft() method test.
+	 * Run the float getFrustum().getFrustumLeft() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -7976,16 +7976,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumLeft_fixture3_1()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 
-		float result = fixture.getFrustumLeft();
+		float result = fixture.getFrustum().getFrustumLeft();
 
 		// add additional test code here
 		assertEquals(-1.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumLeft() method test.
+	 * Run the float getFrustum().getFrustumLeft() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -7994,16 +7994,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumLeft_fixture4_1()
 		throws Exception {
-		Camera fixture = getFixture4();
+		CameraView fixture = getFixture4();
 
-		float result = fixture.getFrustumLeft();
+		float result = fixture.getFrustum().getFrustumLeft();
 
 		// add additional test code here
 		assertEquals(-1.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumLeft() method test.
+	 * Run the float getFrustum().getFrustumLeft() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -8012,16 +8012,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumLeft_fixture5_1()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 
-		float result = fixture.getFrustumLeft();
+		float result = fixture.getFrustum().getFrustumLeft();
 
 		// add additional test code here
 		assertEquals(-1.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumLeft() method test.
+	 * Run the float getFrustum().getFrustumLeft() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -8030,16 +8030,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumLeft_fixture6_1()
 		throws Exception {
-		Camera fixture = getFixture6();
+		CameraView fixture = getFixture6();
 
-		float result = fixture.getFrustumLeft();
+		float result = fixture.getFrustum().getFrustumLeft();
 
 		// add additional test code here
 		assertEquals(-1.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumLeft() method test.
+	 * Run the float getFrustum().getFrustumLeft() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -8048,16 +8048,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumLeft_fixture7_1()
 		throws Exception {
-		Camera fixture = getFixture7();
+		CameraView fixture = getFixture7();
 
-		float result = fixture.getFrustumLeft();
+		float result = fixture.getFrustum().getFrustumLeft();
 
 		// add additional test code here
 		assertEquals(-1.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumLeft() method test.
+	 * Run the float getFrustum().getFrustumLeft() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -8066,16 +8066,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumLeft_fixture8_1()
 		throws Exception {
-		Camera fixture = getFixture8();
+		CameraView fixture = getFixture8();
 
-		float result = fixture.getFrustumLeft();
+		float result = fixture.getFrustum().getFrustumLeft();
 
 		// add additional test code here
 		assertEquals(-1.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumLeft() method test.
+	 * Run the float getFrustum().getFrustumLeft() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -8084,16 +8084,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumLeft_fixture9_1()
 		throws Exception {
-		Camera fixture = getFixture9();
+		CameraView fixture = getFixture9();
 
-		float result = fixture.getFrustumLeft();
+		float result = fixture.getFrustum().getFrustumLeft();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumLeft() method test.
+	 * Run the float getFrustum().getFrustumLeft() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -8102,16 +8102,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumLeft_fixture10_1()
 		throws Exception {
-		Camera fixture = getFixture10();
+		CameraView fixture = getFixture10();
 
-		float result = fixture.getFrustumLeft();
+		float result = fixture.getFrustum().getFrustumLeft();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumLeft() method test.
+	 * Run the float getFrustum().getFrustumLeft() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -8120,16 +8120,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumLeft_fixture11_1()
 		throws Exception {
-		Camera fixture = getFixture11();
+		CameraView fixture = getFixture11();
 
-		float result = fixture.getFrustumLeft();
+		float result = fixture.getFrustum().getFrustumLeft();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumLeft() method test.
+	 * Run the float getFrustum().getFrustumLeft() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -8138,16 +8138,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumLeft_fixture12_1()
 		throws Exception {
-		Camera fixture = getFixture12();
+		CameraView fixture = getFixture12();
 
-		float result = fixture.getFrustumLeft();
+		float result = fixture.getFrustum().getFrustumLeft();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumLeft() method test.
+	 * Run the float getFrustum().getFrustumLeft() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -8156,16 +8156,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumLeft_fixture13_1()
 		throws Exception {
-		Camera fixture = getFixture13();
+		CameraView fixture = getFixture13();
 
-		float result = fixture.getFrustumLeft();
+		float result = fixture.getFrustum().getFrustumLeft();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumLeft() method test.
+	 * Run the float getFrustum().getFrustumLeft() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -8174,16 +8174,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumLeft_fixture14_1()
 		throws Exception {
-		Camera fixture = getFixture14();
+		CameraView fixture = getFixture14();
 
-		float result = fixture.getFrustumLeft();
+		float result = fixture.getFrustum().getFrustumLeft();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumLeft() method test.
+	 * Run the float getFrustum().getFrustumLeft() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -8192,16 +8192,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumLeft_fixture15_1()
 		throws Exception {
-		Camera fixture = getFixture15();
+		CameraView fixture = getFixture15();
 
-		float result = fixture.getFrustumLeft();
+		float result = fixture.getFrustum().getFrustumLeft();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumLeft() method test.
+	 * Run the float getFrustum().getFrustumLeft() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -8210,16 +8210,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumLeft_fixture16_1()
 		throws Exception {
-		Camera fixture = getFixture16();
+		CameraView fixture = getFixture16();
 
-		float result = fixture.getFrustumLeft();
+		float result = fixture.getFrustum().getFrustumLeft();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumLeft() method test.
+	 * Run the float getFrustum().getFrustumLeft() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -8228,16 +8228,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumLeft_fixture17_1()
 		throws Exception {
-		Camera fixture = getFixture17();
+		CameraView fixture = getFixture17();
 
-		float result = fixture.getFrustumLeft();
+		float result = fixture.getFrustum().getFrustumLeft();
 
 		// add additional test code here
 		assertEquals(-1.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumLeft() method test.
+	 * Run the float getFrustum().getFrustumLeft() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -8246,16 +8246,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumLeft_fixture18_1()
 		throws Exception {
-		Camera fixture = getFixture18();
+		CameraView fixture = getFixture18();
 
-		float result = fixture.getFrustumLeft();
+		float result = fixture.getFrustum().getFrustumLeft();
 
 		// add additional test code here
 		assertEquals(-1.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumLeft() method test.
+	 * Run the float getFrustum().getFrustumLeft() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -8264,16 +8264,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumLeft_fixture19_1()
 		throws Exception {
-		Camera fixture = getFixture19();
+		CameraView fixture = getFixture19();
 
-		float result = fixture.getFrustumLeft();
+		float result = fixture.getFrustum().getFrustumLeft();
 
 		// add additional test code here
 		assertEquals(-1.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumLeft() method test.
+	 * Run the float getFrustum().getFrustumLeft() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -8282,16 +8282,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumLeft_fixture20_1()
 		throws Exception {
-		Camera fixture = getFixture20();
+		CameraView fixture = getFixture20();
 
-		float result = fixture.getFrustumLeft();
+		float result = fixture.getFrustum().getFrustumLeft();
 
 		// add additional test code here
 		assertEquals(-1.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumLeft() method test.
+	 * Run the float getFrustum().getFrustumLeft() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -8300,16 +8300,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumLeft_fixture21_1()
 		throws Exception {
-		Camera fixture = getFixture21();
+		CameraView fixture = getFixture21();
 
-		float result = fixture.getFrustumLeft();
+		float result = fixture.getFrustum().getFrustumLeft();
 
 		// add additional test code here
 		assertEquals(-1.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumLeft() method test.
+	 * Run the float getFrustum().getFrustumLeft() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -8318,16 +8318,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumLeft_fixture22_1()
 		throws Exception {
-		Camera fixture = getFixture22();
+		CameraView fixture = getFixture22();
 
-		float result = fixture.getFrustumLeft();
+		float result = fixture.getFrustum().getFrustumLeft();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumLeft() method test.
+	 * Run the float getFrustum().getFrustumLeft() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -8336,16 +8336,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumLeft_fixture23_1()
 		throws Exception {
-		Camera fixture = getFixture23();
+		CameraView fixture = getFixture23();
 
-		float result = fixture.getFrustumLeft();
+		float result = fixture.getFrustum().getFrustumLeft();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumLeft() method test.
+	 * Run the float getFrustum().getFrustumLeft() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -8354,16 +8354,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumLeft_fixture24_1()
 		throws Exception {
-		Camera fixture = getFixture24();
+		CameraView fixture = getFixture24();
 
-		float result = fixture.getFrustumLeft();
+		float result = fixture.getFrustum().getFrustumLeft();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumLeft() method test.
+	 * Run the float getFrustum().getFrustumLeft() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -8372,16 +8372,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumLeft_fixture25_1()
 		throws Exception {
-		Camera fixture = getFixture25();
+		CameraView fixture = getFixture25();
 
-		float result = fixture.getFrustumLeft();
+		float result = fixture.getFrustum().getFrustumLeft();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumLeft() method test.
+	 * Run the float getFrustum().getFrustumLeft() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -8390,16 +8390,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumLeft_fixture26_1()
 		throws Exception {
-		Camera fixture = getFixture26();
+		CameraView fixture = getFixture26();
 
-		float result = fixture.getFrustumLeft();
+		float result = fixture.getFrustum().getFrustumLeft();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumLeft() method test.
+	 * Run the float getFrustum().getFrustumLeft() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -8408,16 +8408,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumLeft_fixture27_1()
 		throws Exception {
-		Camera fixture = getFixture27();
+		CameraView fixture = getFixture27();
 
-		float result = fixture.getFrustumLeft();
+		float result = fixture.getFrustum().getFrustumLeft();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumLeft() method test.
+	 * Run the float getFrustum().getFrustumLeft() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -8426,16 +8426,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumLeft_fixture28_1()
 		throws Exception {
-		Camera fixture = getFixture28();
+		CameraView fixture = getFixture28();
 
-		float result = fixture.getFrustumLeft();
+		float result = fixture.getFrustum().getFrustumLeft();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumLeft() method test.
+	 * Run the float getFrustum().getFrustumLeft() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -8444,16 +8444,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumLeft_fixture29_1()
 		throws Exception {
-		Camera fixture = getFixture29();
+		CameraView fixture = getFixture29();
 
-		float result = fixture.getFrustumLeft();
+		float result = fixture.getFrustum().getFrustumLeft();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumNear() method test.
+	 * Run the float getFrustum().getFrustumNear() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -8462,16 +8462,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumNear_fixture1_1()
 		throws Exception {
-		Camera fixture = getFixture1();
+		CameraView fixture = getFixture1();
 
-		float result = fixture.getFrustumNear();
+		float result = fixture.getFrustum().getFrustumNear();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumNear() method test.
+	 * Run the float getFrustum().getFrustumNear() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -8480,16 +8480,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumNear_fixture2_1()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 
-		float result = fixture.getFrustumNear();
+		float result = fixture.getFrustum().getFrustumNear();
 
 		// add additional test code here
 		assertEquals(1.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumNear() method test.
+	 * Run the float getFrustum().getFrustumNear() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -8498,16 +8498,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumNear_fixture3_1()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 
-		float result = fixture.getFrustumNear();
+		float result = fixture.getFrustum().getFrustumNear();
 
 		// add additional test code here
 		assertEquals(-1.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumNear() method test.
+	 * Run the float getFrustum().getFrustumNear() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -8516,16 +8516,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumNear_fixture4_1()
 		throws Exception {
-		Camera fixture = getFixture4();
+		CameraView fixture = getFixture4();
 
-		float result = fixture.getFrustumNear();
+		float result = fixture.getFrustum().getFrustumNear();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumNear() method test.
+	 * Run the float getFrustum().getFrustumNear() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -8534,16 +8534,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumNear_fixture5_1()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 
-		float result = fixture.getFrustumNear();
+		float result = fixture.getFrustum().getFrustumNear();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumNear() method test.
+	 * Run the float getFrustum().getFrustumNear() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -8552,16 +8552,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumNear_fixture6_1()
 		throws Exception {
-		Camera fixture = getFixture6();
+		CameraView fixture = getFixture6();
 
-		float result = fixture.getFrustumNear();
+		float result = fixture.getFrustum().getFrustumNear();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumNear() method test.
+	 * Run the float getFrustum().getFrustumNear() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -8570,16 +8570,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumNear_fixture7_1()
 		throws Exception {
-		Camera fixture = getFixture7();
+		CameraView fixture = getFixture7();
 
-		float result = fixture.getFrustumNear();
+		float result = fixture.getFrustum().getFrustumNear();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumNear() method test.
+	 * Run the float getFrustum().getFrustumNear() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -8588,16 +8588,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumNear_fixture8_1()
 		throws Exception {
-		Camera fixture = getFixture8();
+		CameraView fixture = getFixture8();
 
-		float result = fixture.getFrustumNear();
+		float result = fixture.getFrustum().getFrustumNear();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumNear() method test.
+	 * Run the float getFrustum().getFrustumNear() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -8606,16 +8606,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumNear_fixture9_1()
 		throws Exception {
-		Camera fixture = getFixture9();
+		CameraView fixture = getFixture9();
 
-		float result = fixture.getFrustumNear();
+		float result = fixture.getFrustum().getFrustumNear();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumNear() method test.
+	 * Run the float getFrustum().getFrustumNear() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -8624,16 +8624,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumNear_fixture10_1()
 		throws Exception {
-		Camera fixture = getFixture10();
+		CameraView fixture = getFixture10();
 
-		float result = fixture.getFrustumNear();
+		float result = fixture.getFrustum().getFrustumNear();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumNear() method test.
+	 * Run the float getFrustum().getFrustumNear() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -8642,16 +8642,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumNear_fixture11_1()
 		throws Exception {
-		Camera fixture = getFixture11();
+		CameraView fixture = getFixture11();
 
-		float result = fixture.getFrustumNear();
+		float result = fixture.getFrustum().getFrustumNear();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumNear() method test.
+	 * Run the float getFrustum().getFrustumNear() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -8660,16 +8660,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumNear_fixture12_1()
 		throws Exception {
-		Camera fixture = getFixture12();
+		CameraView fixture = getFixture12();
 
-		float result = fixture.getFrustumNear();
+		float result = fixture.getFrustum().getFrustumNear();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumNear() method test.
+	 * Run the float getFrustum().getFrustumNear() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -8678,16 +8678,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumNear_fixture13_1()
 		throws Exception {
-		Camera fixture = getFixture13();
+		CameraView fixture = getFixture13();
 
-		float result = fixture.getFrustumNear();
+		float result = fixture.getFrustum().getFrustumNear();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumNear() method test.
+	 * Run the float getFrustum().getFrustumNear() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -8696,16 +8696,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumNear_fixture14_1()
 		throws Exception {
-		Camera fixture = getFixture14();
+		CameraView fixture = getFixture14();
 
-		float result = fixture.getFrustumNear();
+		float result = fixture.getFrustum().getFrustumNear();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumNear() method test.
+	 * Run the float getFrustum().getFrustumNear() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -8714,16 +8714,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumNear_fixture15_1()
 		throws Exception {
-		Camera fixture = getFixture15();
+		CameraView fixture = getFixture15();
 
-		float result = fixture.getFrustumNear();
+		float result = fixture.getFrustum().getFrustumNear();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumNear() method test.
+	 * Run the float getFrustum().getFrustumNear() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -8732,16 +8732,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumNear_fixture16_1()
 		throws Exception {
-		Camera fixture = getFixture16();
+		CameraView fixture = getFixture16();
 
-		float result = fixture.getFrustumNear();
+		float result = fixture.getFrustum().getFrustumNear();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumNear() method test.
+	 * Run the float getFrustum().getFrustumNear() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -8750,16 +8750,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumNear_fixture17_1()
 		throws Exception {
-		Camera fixture = getFixture17();
+		CameraView fixture = getFixture17();
 
-		float result = fixture.getFrustumNear();
+		float result = fixture.getFrustum().getFrustumNear();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumNear() method test.
+	 * Run the float getFrustum().getFrustumNear() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -8768,16 +8768,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumNear_fixture18_1()
 		throws Exception {
-		Camera fixture = getFixture18();
+		CameraView fixture = getFixture18();
 
-		float result = fixture.getFrustumNear();
+		float result = fixture.getFrustum().getFrustumNear();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumNear() method test.
+	 * Run the float getFrustum().getFrustumNear() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -8786,16 +8786,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumNear_fixture19_1()
 		throws Exception {
-		Camera fixture = getFixture19();
+		CameraView fixture = getFixture19();
 
-		float result = fixture.getFrustumNear();
+		float result = fixture.getFrustum().getFrustumNear();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumNear() method test.
+	 * Run the float getFrustum().getFrustumNear() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -8804,16 +8804,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumNear_fixture20_1()
 		throws Exception {
-		Camera fixture = getFixture20();
+		CameraView fixture = getFixture20();
 
-		float result = fixture.getFrustumNear();
+		float result = fixture.getFrustum().getFrustumNear();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumNear() method test.
+	 * Run the float getFrustum().getFrustumNear() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -8822,16 +8822,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumNear_fixture21_1()
 		throws Exception {
-		Camera fixture = getFixture21();
+		CameraView fixture = getFixture21();
 
-		float result = fixture.getFrustumNear();
+		float result = fixture.getFrustum().getFrustumNear();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumNear() method test.
+	 * Run the float getFrustum().getFrustumNear() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -8840,16 +8840,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumNear_fixture22_1()
 		throws Exception {
-		Camera fixture = getFixture22();
+		CameraView fixture = getFixture22();
 
-		float result = fixture.getFrustumNear();
+		float result = fixture.getFrustum().getFrustumNear();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumNear() method test.
+	 * Run the float getFrustum().getFrustumNear() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -8858,16 +8858,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumNear_fixture23_1()
 		throws Exception {
-		Camera fixture = getFixture23();
+		CameraView fixture = getFixture23();
 
-		float result = fixture.getFrustumNear();
+		float result = fixture.getFrustum().getFrustumNear();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumNear() method test.
+	 * Run the float getFrustum().getFrustumNear() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -8876,16 +8876,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumNear_fixture24_1()
 		throws Exception {
-		Camera fixture = getFixture24();
+		CameraView fixture = getFixture24();
 
-		float result = fixture.getFrustumNear();
+		float result = fixture.getFrustum().getFrustumNear();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumNear() method test.
+	 * Run the float getFrustum().getFrustumNear() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -8894,16 +8894,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumNear_fixture25_1()
 		throws Exception {
-		Camera fixture = getFixture25();
+		CameraView fixture = getFixture25();
 
-		float result = fixture.getFrustumNear();
+		float result = fixture.getFrustum().getFrustumNear();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumNear() method test.
+	 * Run the float getFrustum().getFrustumNear() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -8912,16 +8912,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumNear_fixture26_1()
 		throws Exception {
-		Camera fixture = getFixture26();
+		CameraView fixture = getFixture26();
 
-		float result = fixture.getFrustumNear();
+		float result = fixture.getFrustum().getFrustumNear();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumNear() method test.
+	 * Run the float getFrustum().getFrustumNear() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -8930,16 +8930,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumNear_fixture27_1()
 		throws Exception {
-		Camera fixture = getFixture27();
+		CameraView fixture = getFixture27();
 
-		float result = fixture.getFrustumNear();
+		float result = fixture.getFrustum().getFrustumNear();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumNear() method test.
+	 * Run the float getFrustum().getFrustumNear() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -8948,16 +8948,16 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumNear_fixture28_1()
 		throws Exception {
-		Camera fixture = getFixture28();
+		CameraView fixture = getFixture28();
 
-		float result = fixture.getFrustumNear();
+		float result = fixture.getFrustum().getFrustumNear();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
 	}
 
 	/**
-	 * Run the float getFrustumNear() method test.
+	 * Run the float getFrustum().getFrustumNear() method test.
 	 *
 	 * @throws Exception
 	 *
@@ -8966,9 +8966,9 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumNear_fixture29_1()
 		throws Exception {
-		Camera fixture = getFixture29();
+		CameraView fixture = getFixture29();
 
-		float result = fixture.getFrustumNear();
+		float result = fixture.getFrustum().getFrustumNear();
 
 		// add additional test code here
 		assertEquals(0.0f, result, 0.1f);
@@ -8984,7 +8984,7 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumRight_fixture1_1()
 		throws Exception {
-		Camera fixture = getFixture1();
+		CameraView fixture = getFixture1();
 
 		float result = fixture.getFrustumRight();
 
@@ -9002,7 +9002,7 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumRight_fixture2_1()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 
 		float result = fixture.getFrustumRight();
 
@@ -9020,7 +9020,7 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumRight_fixture3_1()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 
 		float result = fixture.getFrustumRight();
 
@@ -9038,7 +9038,7 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumRight_fixture4_1()
 		throws Exception {
-		Camera fixture = getFixture4();
+		CameraView fixture = getFixture4();
 
 		float result = fixture.getFrustumRight();
 
@@ -9056,7 +9056,7 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumRight_fixture5_1()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 
 		float result = fixture.getFrustumRight();
 
@@ -9074,7 +9074,7 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumRight_fixture6_1()
 		throws Exception {
-		Camera fixture = getFixture6();
+		CameraView fixture = getFixture6();
 
 		float result = fixture.getFrustumRight();
 
@@ -9092,7 +9092,7 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumRight_fixture7_1()
 		throws Exception {
-		Camera fixture = getFixture7();
+		CameraView fixture = getFixture7();
 
 		float result = fixture.getFrustumRight();
 
@@ -9110,7 +9110,7 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumRight_fixture8_1()
 		throws Exception {
-		Camera fixture = getFixture8();
+		CameraView fixture = getFixture8();
 
 		float result = fixture.getFrustumRight();
 
@@ -9128,7 +9128,7 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumRight_fixture9_1()
 		throws Exception {
-		Camera fixture = getFixture9();
+		CameraView fixture = getFixture9();
 
 		float result = fixture.getFrustumRight();
 
@@ -9146,7 +9146,7 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumRight_fixture10_1()
 		throws Exception {
-		Camera fixture = getFixture10();
+		CameraView fixture = getFixture10();
 
 		float result = fixture.getFrustumRight();
 
@@ -9164,7 +9164,7 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumRight_fixture11_1()
 		throws Exception {
-		Camera fixture = getFixture11();
+		CameraView fixture = getFixture11();
 
 		float result = fixture.getFrustumRight();
 
@@ -9182,7 +9182,7 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumRight_fixture12_1()
 		throws Exception {
-		Camera fixture = getFixture12();
+		CameraView fixture = getFixture12();
 
 		float result = fixture.getFrustumRight();
 
@@ -9200,7 +9200,7 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumRight_fixture13_1()
 		throws Exception {
-		Camera fixture = getFixture13();
+		CameraView fixture = getFixture13();
 
 		float result = fixture.getFrustumRight();
 
@@ -9218,7 +9218,7 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumRight_fixture14_1()
 		throws Exception {
-		Camera fixture = getFixture14();
+		CameraView fixture = getFixture14();
 
 		float result = fixture.getFrustumRight();
 
@@ -9236,7 +9236,7 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumRight_fixture15_1()
 		throws Exception {
-		Camera fixture = getFixture15();
+		CameraView fixture = getFixture15();
 
 		float result = fixture.getFrustumRight();
 
@@ -9254,7 +9254,7 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumRight_fixture16_1()
 		throws Exception {
-		Camera fixture = getFixture16();
+		CameraView fixture = getFixture16();
 
 		float result = fixture.getFrustumRight();
 
@@ -9272,7 +9272,7 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumRight_fixture17_1()
 		throws Exception {
-		Camera fixture = getFixture17();
+		CameraView fixture = getFixture17();
 
 		float result = fixture.getFrustumRight();
 
@@ -9290,7 +9290,7 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumRight_fixture18_1()
 		throws Exception {
-		Camera fixture = getFixture18();
+		CameraView fixture = getFixture18();
 
 		float result = fixture.getFrustumRight();
 
@@ -9308,7 +9308,7 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumRight_fixture19_1()
 		throws Exception {
-		Camera fixture = getFixture19();
+		CameraView fixture = getFixture19();
 
 		float result = fixture.getFrustumRight();
 
@@ -9326,7 +9326,7 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumRight_fixture20_1()
 		throws Exception {
-		Camera fixture = getFixture20();
+		CameraView fixture = getFixture20();
 
 		float result = fixture.getFrustumRight();
 
@@ -9344,7 +9344,7 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumRight_fixture21_1()
 		throws Exception {
-		Camera fixture = getFixture21();
+		CameraView fixture = getFixture21();
 
 		float result = fixture.getFrustumRight();
 
@@ -9362,7 +9362,7 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumRight_fixture22_1()
 		throws Exception {
-		Camera fixture = getFixture22();
+		CameraView fixture = getFixture22();
 
 		float result = fixture.getFrustumRight();
 
@@ -9380,7 +9380,7 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumRight_fixture23_1()
 		throws Exception {
-		Camera fixture = getFixture23();
+		CameraView fixture = getFixture23();
 
 		float result = fixture.getFrustumRight();
 
@@ -9398,7 +9398,7 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumRight_fixture24_1()
 		throws Exception {
-		Camera fixture = getFixture24();
+		CameraView fixture = getFixture24();
 
 		float result = fixture.getFrustumRight();
 
@@ -9416,7 +9416,7 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumRight_fixture25_1()
 		throws Exception {
-		Camera fixture = getFixture25();
+		CameraView fixture = getFixture25();
 
 		float result = fixture.getFrustumRight();
 
@@ -9434,7 +9434,7 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumRight_fixture26_1()
 		throws Exception {
-		Camera fixture = getFixture26();
+		CameraView fixture = getFixture26();
 
 		float result = fixture.getFrustumRight();
 
@@ -9452,7 +9452,7 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumRight_fixture27_1()
 		throws Exception {
-		Camera fixture = getFixture27();
+		CameraView fixture = getFixture27();
 
 		float result = fixture.getFrustumRight();
 
@@ -9470,7 +9470,7 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumRight_fixture28_1()
 		throws Exception {
-		Camera fixture = getFixture28();
+		CameraView fixture = getFixture28();
 
 		float result = fixture.getFrustumRight();
 
@@ -9488,7 +9488,7 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumRight_fixture29_1()
 		throws Exception {
-		Camera fixture = getFixture29();
+		CameraView fixture = getFixture29();
 
 		float result = fixture.getFrustumRight();
 
@@ -9506,7 +9506,7 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumTop_fixture1_1()
 		throws Exception {
-		Camera fixture = getFixture1();
+		CameraView fixture = getFixture1();
 
 		float result = fixture.getFrustumTop();
 
@@ -9524,7 +9524,7 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumTop_fixture2_1()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 
 		float result = fixture.getFrustumTop();
 
@@ -9542,7 +9542,7 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumTop_fixture3_1()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 
 		float result = fixture.getFrustumTop();
 
@@ -9560,7 +9560,7 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumTop_fixture4_1()
 		throws Exception {
-		Camera fixture = getFixture4();
+		CameraView fixture = getFixture4();
 
 		float result = fixture.getFrustumTop();
 
@@ -9578,7 +9578,7 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumTop_fixture5_1()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 
 		float result = fixture.getFrustumTop();
 
@@ -9596,7 +9596,7 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumTop_fixture6_1()
 		throws Exception {
-		Camera fixture = getFixture6();
+		CameraView fixture = getFixture6();
 
 		float result = fixture.getFrustumTop();
 
@@ -9614,7 +9614,7 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumTop_fixture7_1()
 		throws Exception {
-		Camera fixture = getFixture7();
+		CameraView fixture = getFixture7();
 
 		float result = fixture.getFrustumTop();
 
@@ -9632,7 +9632,7 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumTop_fixture8_1()
 		throws Exception {
-		Camera fixture = getFixture8();
+		CameraView fixture = getFixture8();
 
 		float result = fixture.getFrustumTop();
 
@@ -9650,7 +9650,7 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumTop_fixture9_1()
 		throws Exception {
-		Camera fixture = getFixture9();
+		CameraView fixture = getFixture9();
 
 		float result = fixture.getFrustumTop();
 
@@ -9668,7 +9668,7 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumTop_fixture10_1()
 		throws Exception {
-		Camera fixture = getFixture10();
+		CameraView fixture = getFixture10();
 
 		float result = fixture.getFrustumTop();
 
@@ -9686,7 +9686,7 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumTop_fixture11_1()
 		throws Exception {
-		Camera fixture = getFixture11();
+		CameraView fixture = getFixture11();
 
 		float result = fixture.getFrustumTop();
 
@@ -9704,7 +9704,7 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumTop_fixture12_1()
 		throws Exception {
-		Camera fixture = getFixture12();
+		CameraView fixture = getFixture12();
 
 		float result = fixture.getFrustumTop();
 
@@ -9722,7 +9722,7 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumTop_fixture13_1()
 		throws Exception {
-		Camera fixture = getFixture13();
+		CameraView fixture = getFixture13();
 
 		float result = fixture.getFrustumTop();
 
@@ -9740,7 +9740,7 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumTop_fixture14_1()
 		throws Exception {
-		Camera fixture = getFixture14();
+		CameraView fixture = getFixture14();
 
 		float result = fixture.getFrustumTop();
 
@@ -9758,7 +9758,7 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumTop_fixture15_1()
 		throws Exception {
-		Camera fixture = getFixture15();
+		CameraView fixture = getFixture15();
 
 		float result = fixture.getFrustumTop();
 
@@ -9776,7 +9776,7 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumTop_fixture16_1()
 		throws Exception {
-		Camera fixture = getFixture16();
+		CameraView fixture = getFixture16();
 
 		float result = fixture.getFrustumTop();
 
@@ -9794,7 +9794,7 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumTop_fixture17_1()
 		throws Exception {
-		Camera fixture = getFixture17();
+		CameraView fixture = getFixture17();
 
 		float result = fixture.getFrustumTop();
 
@@ -9812,7 +9812,7 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumTop_fixture18_1()
 		throws Exception {
-		Camera fixture = getFixture18();
+		CameraView fixture = getFixture18();
 
 		float result = fixture.getFrustumTop();
 
@@ -9830,7 +9830,7 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumTop_fixture19_1()
 		throws Exception {
-		Camera fixture = getFixture19();
+		CameraView fixture = getFixture19();
 
 		float result = fixture.getFrustumTop();
 
@@ -9848,7 +9848,7 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumTop_fixture20_1()
 		throws Exception {
-		Camera fixture = getFixture20();
+		CameraView fixture = getFixture20();
 
 		float result = fixture.getFrustumTop();
 
@@ -9866,7 +9866,7 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumTop_fixture21_1()
 		throws Exception {
-		Camera fixture = getFixture21();
+		CameraView fixture = getFixture21();
 
 		float result = fixture.getFrustumTop();
 
@@ -9884,7 +9884,7 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumTop_fixture22_1()
 		throws Exception {
-		Camera fixture = getFixture22();
+		CameraView fixture = getFixture22();
 
 		float result = fixture.getFrustumTop();
 
@@ -9902,7 +9902,7 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumTop_fixture23_1()
 		throws Exception {
-		Camera fixture = getFixture23();
+		CameraView fixture = getFixture23();
 
 		float result = fixture.getFrustumTop();
 
@@ -9920,7 +9920,7 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumTop_fixture24_1()
 		throws Exception {
-		Camera fixture = getFixture24();
+		CameraView fixture = getFixture24();
 
 		float result = fixture.getFrustumTop();
 
@@ -9938,7 +9938,7 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumTop_fixture25_1()
 		throws Exception {
-		Camera fixture = getFixture25();
+		CameraView fixture = getFixture25();
 
 		float result = fixture.getFrustumTop();
 
@@ -9956,7 +9956,7 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumTop_fixture26_1()
 		throws Exception {
-		Camera fixture = getFixture26();
+		CameraView fixture = getFixture26();
 
 		float result = fixture.getFrustumTop();
 
@@ -9974,7 +9974,7 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumTop_fixture27_1()
 		throws Exception {
-		Camera fixture = getFixture27();
+		CameraView fixture = getFixture27();
 
 		float result = fixture.getFrustumTop();
 
@@ -9992,7 +9992,7 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumTop_fixture28_1()
 		throws Exception {
-		Camera fixture = getFixture28();
+		CameraView fixture = getFixture28();
 
 		float result = fixture.getFrustumTop();
 
@@ -10010,7 +10010,7 @@ public class CameraTest {
 	@Test
 	public void testGetFrustumTop_fixture29_1()
 		throws Exception {
-		Camera fixture = getFixture29();
+		CameraView fixture = getFixture29();
 
 		float result = fixture.getFrustumTop();
 
@@ -10028,7 +10028,7 @@ public class CameraTest {
 	@Test
 	public void testGetHeight_fixture1_1()
 		throws Exception {
-		Camera fixture = getFixture1();
+		CameraView fixture = getFixture1();
 
 		int result = fixture.getHeight();
 
@@ -10046,7 +10046,7 @@ public class CameraTest {
 	@Test
 	public void testGetHeight_fixture2_1()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 
 		int result = fixture.getHeight();
 
@@ -10064,7 +10064,7 @@ public class CameraTest {
 	@Test
 	public void testGetHeight_fixture3_1()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 
 		int result = fixture.getHeight();
 
@@ -10082,7 +10082,7 @@ public class CameraTest {
 	@Test
 	public void testGetHeight_fixture4_1()
 		throws Exception {
-		Camera fixture = getFixture4();
+		CameraView fixture = getFixture4();
 
 		int result = fixture.getHeight();
 
@@ -10100,7 +10100,7 @@ public class CameraTest {
 	@Test
 	public void testGetHeight_fixture5_1()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 
 		int result = fixture.getHeight();
 
@@ -10118,7 +10118,7 @@ public class CameraTest {
 	@Test
 	public void testGetHeight_fixture6_1()
 		throws Exception {
-		Camera fixture = getFixture6();
+		CameraView fixture = getFixture6();
 
 		int result = fixture.getHeight();
 
@@ -10136,7 +10136,7 @@ public class CameraTest {
 	@Test
 	public void testGetHeight_fixture7_1()
 		throws Exception {
-		Camera fixture = getFixture7();
+		CameraView fixture = getFixture7();
 
 		int result = fixture.getHeight();
 
@@ -10154,7 +10154,7 @@ public class CameraTest {
 	@Test
 	public void testGetHeight_fixture8_1()
 		throws Exception {
-		Camera fixture = getFixture8();
+		CameraView fixture = getFixture8();
 
 		int result = fixture.getHeight();
 
@@ -10172,7 +10172,7 @@ public class CameraTest {
 	@Test
 	public void testGetHeight_fixture9_1()
 		throws Exception {
-		Camera fixture = getFixture9();
+		CameraView fixture = getFixture9();
 
 		int result = fixture.getHeight();
 
@@ -10190,7 +10190,7 @@ public class CameraTest {
 	@Test
 	public void testGetHeight_fixture10_1()
 		throws Exception {
-		Camera fixture = getFixture10();
+		CameraView fixture = getFixture10();
 
 		int result = fixture.getHeight();
 
@@ -10208,7 +10208,7 @@ public class CameraTest {
 	@Test
 	public void testGetHeight_fixture11_1()
 		throws Exception {
-		Camera fixture = getFixture11();
+		CameraView fixture = getFixture11();
 
 		int result = fixture.getHeight();
 
@@ -10226,7 +10226,7 @@ public class CameraTest {
 	@Test
 	public void testGetHeight_fixture12_1()
 		throws Exception {
-		Camera fixture = getFixture12();
+		CameraView fixture = getFixture12();
 
 		int result = fixture.getHeight();
 
@@ -10244,7 +10244,7 @@ public class CameraTest {
 	@Test
 	public void testGetHeight_fixture13_1()
 		throws Exception {
-		Camera fixture = getFixture13();
+		CameraView fixture = getFixture13();
 
 		int result = fixture.getHeight();
 
@@ -10262,7 +10262,7 @@ public class CameraTest {
 	@Test
 	public void testGetHeight_fixture14_1()
 		throws Exception {
-		Camera fixture = getFixture14();
+		CameraView fixture = getFixture14();
 
 		int result = fixture.getHeight();
 
@@ -10280,7 +10280,7 @@ public class CameraTest {
 	@Test
 	public void testGetHeight_fixture15_1()
 		throws Exception {
-		Camera fixture = getFixture15();
+		CameraView fixture = getFixture15();
 
 		int result = fixture.getHeight();
 
@@ -10298,7 +10298,7 @@ public class CameraTest {
 	@Test
 	public void testGetHeight_fixture16_1()
 		throws Exception {
-		Camera fixture = getFixture16();
+		CameraView fixture = getFixture16();
 
 		int result = fixture.getHeight();
 
@@ -10316,7 +10316,7 @@ public class CameraTest {
 	@Test
 	public void testGetHeight_fixture17_1()
 		throws Exception {
-		Camera fixture = getFixture17();
+		CameraView fixture = getFixture17();
 
 		int result = fixture.getHeight();
 
@@ -10334,7 +10334,7 @@ public class CameraTest {
 	@Test
 	public void testGetHeight_fixture18_1()
 		throws Exception {
-		Camera fixture = getFixture18();
+		CameraView fixture = getFixture18();
 
 		int result = fixture.getHeight();
 
@@ -10352,7 +10352,7 @@ public class CameraTest {
 	@Test
 	public void testGetHeight_fixture19_1()
 		throws Exception {
-		Camera fixture = getFixture19();
+		CameraView fixture = getFixture19();
 
 		int result = fixture.getHeight();
 
@@ -10370,7 +10370,7 @@ public class CameraTest {
 	@Test
 	public void testGetHeight_fixture20_1()
 		throws Exception {
-		Camera fixture = getFixture20();
+		CameraView fixture = getFixture20();
 
 		int result = fixture.getHeight();
 
@@ -10388,7 +10388,7 @@ public class CameraTest {
 	@Test
 	public void testGetHeight_fixture21_1()
 		throws Exception {
-		Camera fixture = getFixture21();
+		CameraView fixture = getFixture21();
 
 		int result = fixture.getHeight();
 
@@ -10406,7 +10406,7 @@ public class CameraTest {
 	@Test
 	public void testGetHeight_fixture22_1()
 		throws Exception {
-		Camera fixture = getFixture22();
+		CameraView fixture = getFixture22();
 
 		int result = fixture.getHeight();
 
@@ -10424,7 +10424,7 @@ public class CameraTest {
 	@Test
 	public void testGetHeight_fixture23_1()
 		throws Exception {
-		Camera fixture = getFixture23();
+		CameraView fixture = getFixture23();
 
 		int result = fixture.getHeight();
 
@@ -10442,7 +10442,7 @@ public class CameraTest {
 	@Test
 	public void testGetHeight_fixture24_1()
 		throws Exception {
-		Camera fixture = getFixture24();
+		CameraView fixture = getFixture24();
 
 		int result = fixture.getHeight();
 
@@ -10460,7 +10460,7 @@ public class CameraTest {
 	@Test
 	public void testGetHeight_fixture25_1()
 		throws Exception {
-		Camera fixture = getFixture25();
+		CameraView fixture = getFixture25();
 
 		int result = fixture.getHeight();
 
@@ -10478,7 +10478,7 @@ public class CameraTest {
 	@Test
 	public void testGetHeight_fixture26_1()
 		throws Exception {
-		Camera fixture = getFixture26();
+		CameraView fixture = getFixture26();
 
 		int result = fixture.getHeight();
 
@@ -10496,7 +10496,7 @@ public class CameraTest {
 	@Test
 	public void testGetHeight_fixture27_1()
 		throws Exception {
-		Camera fixture = getFixture27();
+		CameraView fixture = getFixture27();
 
 		int result = fixture.getHeight();
 
@@ -10514,7 +10514,7 @@ public class CameraTest {
 	@Test
 	public void testGetHeight_fixture28_1()
 		throws Exception {
-		Camera fixture = getFixture28();
+		CameraView fixture = getFixture28();
 
 		int result = fixture.getHeight();
 
@@ -10532,7 +10532,7 @@ public class CameraTest {
 	@Test
 	public void testGetHeight_fixture29_1()
 		throws Exception {
-		Camera fixture = getFixture29();
+		CameraView fixture = getFixture29();
 
 		int result = fixture.getHeight();
 
@@ -10571,7 +10571,7 @@ public class CameraTest {
 	@Test
 	public void testGetLeft_fixture2_1()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 
 		Vector3f result = fixture.getLeft();
 
@@ -10596,7 +10596,7 @@ public class CameraTest {
 	@Test
 	public void testGetLeft_fixture3_1()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 
 		Vector3f result = fixture.getLeft();
 
@@ -10621,7 +10621,7 @@ public class CameraTest {
 	@Test
 	public void testGetLeft_fixture4_1()
 		throws Exception {
-		Camera fixture = getFixture4();
+		CameraView fixture = getFixture4();
 
 		Vector3f result = fixture.getLeft();
 
@@ -10646,7 +10646,7 @@ public class CameraTest {
 	@Test
 	public void testGetLeft_fixture5_1()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 
 		Vector3f result = fixture.getLeft();
 
@@ -10671,7 +10671,7 @@ public class CameraTest {
 	@Test
 	public void testGetLeft_fixture6_1()
 		throws Exception {
-		Camera fixture = getFixture6();
+		CameraView fixture = getFixture6();
 
 		Vector3f result = fixture.getLeft();
 
@@ -10696,7 +10696,7 @@ public class CameraTest {
 	@Test
 	public void testGetLeft_fixture7_1()
 		throws Exception {
-		Camera fixture = getFixture7();
+		CameraView fixture = getFixture7();
 
 		Vector3f result = fixture.getLeft();
 
@@ -10721,7 +10721,7 @@ public class CameraTest {
 	@Test
 	public void testGetLeft_fixture8_1()
 		throws Exception {
-		Camera fixture = getFixture8();
+		CameraView fixture = getFixture8();
 
 		Vector3f result = fixture.getLeft();
 
@@ -10746,7 +10746,7 @@ public class CameraTest {
 	@Test
 	public void testGetLeft_fixture9_1()
 		throws Exception {
-		Camera fixture = getFixture9();
+		CameraView fixture = getFixture9();
 
 		Vector3f result = fixture.getLeft();
 
@@ -10771,7 +10771,7 @@ public class CameraTest {
 	@Test
 	public void testGetLeft_fixture10_1()
 		throws Exception {
-		Camera fixture = getFixture10();
+		CameraView fixture = getFixture10();
 
 		Vector3f result = fixture.getLeft();
 
@@ -10796,7 +10796,7 @@ public class CameraTest {
 	@Test
 	public void testGetLeft_fixture11_1()
 		throws Exception {
-		Camera fixture = getFixture11();
+		CameraView fixture = getFixture11();
 
 		Vector3f result = fixture.getLeft();
 
@@ -10821,7 +10821,7 @@ public class CameraTest {
 	@Test
 	public void testGetLeft_fixture12_1()
 		throws Exception {
-		Camera fixture = getFixture12();
+		CameraView fixture = getFixture12();
 
 		Vector3f result = fixture.getLeft();
 
@@ -10846,7 +10846,7 @@ public class CameraTest {
 	@Test
 	public void testGetLeft_fixture13_1()
 		throws Exception {
-		Camera fixture = getFixture13();
+		CameraView fixture = getFixture13();
 
 		Vector3f result = fixture.getLeft();
 
@@ -10871,7 +10871,7 @@ public class CameraTest {
 	@Test
 	public void testGetLeft_fixture14_1()
 		throws Exception {
-		Camera fixture = getFixture14();
+		CameraView fixture = getFixture14();
 
 		Vector3f result = fixture.getLeft();
 
@@ -10896,7 +10896,7 @@ public class CameraTest {
 	@Test
 	public void testGetLeft_fixture15_1()
 		throws Exception {
-		Camera fixture = getFixture15();
+		CameraView fixture = getFixture15();
 
 		Vector3f result = fixture.getLeft();
 
@@ -10921,7 +10921,7 @@ public class CameraTest {
 	@Test
 	public void testGetLeft_fixture16_1()
 		throws Exception {
-		Camera fixture = getFixture16();
+		CameraView fixture = getFixture16();
 
 		Vector3f result = fixture.getLeft();
 
@@ -10946,7 +10946,7 @@ public class CameraTest {
 	@Test
 	public void testGetLeft_fixture17_1()
 		throws Exception {
-		Camera fixture = getFixture17();
+		CameraView fixture = getFixture17();
 
 		Vector3f result = fixture.getLeft();
 
@@ -10971,7 +10971,7 @@ public class CameraTest {
 	@Test
 	public void testGetLeft_fixture18_1()
 		throws Exception {
-		Camera fixture = getFixture18();
+		CameraView fixture = getFixture18();
 
 		Vector3f result = fixture.getLeft();
 
@@ -10996,7 +10996,7 @@ public class CameraTest {
 	@Test
 	public void testGetLeft_fixture19_1()
 		throws Exception {
-		Camera fixture = getFixture19();
+		CameraView fixture = getFixture19();
 
 		Vector3f result = fixture.getLeft();
 
@@ -11021,7 +11021,7 @@ public class CameraTest {
 	@Test
 	public void testGetLeft_fixture20_1()
 		throws Exception {
-		Camera fixture = getFixture20();
+		CameraView fixture = getFixture20();
 
 		Vector3f result = fixture.getLeft();
 
@@ -11046,7 +11046,7 @@ public class CameraTest {
 	@Test
 	public void testGetLeft_fixture21_1()
 		throws Exception {
-		Camera fixture = getFixture21();
+		CameraView fixture = getFixture21();
 
 		Vector3f result = fixture.getLeft();
 
@@ -11071,7 +11071,7 @@ public class CameraTest {
 	@Test
 	public void testGetLeft_fixture22_1()
 		throws Exception {
-		Camera fixture = getFixture22();
+		CameraView fixture = getFixture22();
 
 		Vector3f result = fixture.getLeft();
 
@@ -11096,7 +11096,7 @@ public class CameraTest {
 	@Test
 	public void testGetLeft_fixture23_1()
 		throws Exception {
-		Camera fixture = getFixture23();
+		CameraView fixture = getFixture23();
 
 		Vector3f result = fixture.getLeft();
 
@@ -11121,7 +11121,7 @@ public class CameraTest {
 	@Test
 	public void testGetLeft_fixture24_1()
 		throws Exception {
-		Camera fixture = getFixture24();
+		CameraView fixture = getFixture24();
 
 		Vector3f result = fixture.getLeft();
 
@@ -11146,7 +11146,7 @@ public class CameraTest {
 	@Test
 	public void testGetLeft_fixture25_1()
 		throws Exception {
-		Camera fixture = getFixture25();
+		CameraView fixture = getFixture25();
 
 		Vector3f result = fixture.getLeft();
 
@@ -11171,7 +11171,7 @@ public class CameraTest {
 	@Test
 	public void testGetLeft_fixture26_1()
 		throws Exception {
-		Camera fixture = getFixture26();
+		CameraView fixture = getFixture26();
 
 		Vector3f result = fixture.getLeft();
 
@@ -11196,7 +11196,7 @@ public class CameraTest {
 	@Test
 	public void testGetLeft_fixture27_1()
 		throws Exception {
-		Camera fixture = getFixture27();
+		CameraView fixture = getFixture27();
 
 		Vector3f result = fixture.getLeft();
 
@@ -11221,7 +11221,7 @@ public class CameraTest {
 	@Test
 	public void testGetLeft_fixture28_1()
 		throws Exception {
-		Camera fixture = getFixture28();
+		CameraView fixture = getFixture28();
 
 		Vector3f result = fixture.getLeft();
 
@@ -11246,7 +11246,7 @@ public class CameraTest {
 	@Test
 	public void testGetLeft_fixture29_1()
 		throws Exception {
-		Camera fixture = getFixture29();
+		CameraView fixture = getFixture29();
 
 		Vector3f result = fixture.getLeft();
 
@@ -11293,7 +11293,7 @@ public class CameraTest {
 	@Test
 	public void testGetLeft_fixture2_2()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 		Vector3f store = Vector3f.NEGATIVE_INFINITY;
 
 		Vector3f result = fixture.getLeft(store);
@@ -11319,7 +11319,7 @@ public class CameraTest {
 	@Test
 	public void testGetLeft_fixture3_2()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 		Vector3f store = Vector3f.POSITIVE_INFINITY;
 
 		Vector3f result = fixture.getLeft(store);
@@ -11345,7 +11345,7 @@ public class CameraTest {
 	@Test
 	public void testGetLeft_fixture4_2()
 		throws Exception {
-		Camera fixture = getFixture4();
+		CameraView fixture = getFixture4();
 		Vector3f store = Vector3f.UNIT_X;
 
 		Vector3f result = fixture.getLeft(store);
@@ -11371,7 +11371,7 @@ public class CameraTest {
 	@Test
 	public void testGetLeft_fixture5_2()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 		Vector3f store = Vector3f.UNIT_XYZ;
 
 		Vector3f result = fixture.getLeft(store);
@@ -11397,7 +11397,7 @@ public class CameraTest {
 	@Test
 	public void testGetLeft_fixture6_2()
 		throws Exception {
-		Camera fixture = getFixture6();
+		CameraView fixture = getFixture6();
 		Vector3f store = Vector3f.UNIT_Y;
 
 		Vector3f result = fixture.getLeft(store);
@@ -11423,7 +11423,7 @@ public class CameraTest {
 	@Test
 	public void testGetLeft_fixture7_2()
 		throws Exception {
-		Camera fixture = getFixture7();
+		CameraView fixture = getFixture7();
 		Vector3f store = Vector3f.UNIT_Z;
 
 		Vector3f result = fixture.getLeft(store);
@@ -11449,7 +11449,7 @@ public class CameraTest {
 	@Test
 	public void testGetLeft_fixture8_2()
 		throws Exception {
-		Camera fixture = getFixture8();
+		CameraView fixture = getFixture8();
 		Vector3f store = Vector3f.ZERO;
 
 		Vector3f result = fixture.getLeft(store);
@@ -11475,7 +11475,7 @@ public class CameraTest {
 	@Test
 	public void testGetLeft_fixture9_2()
 		throws Exception {
-		Camera fixture = getFixture9();
+		CameraView fixture = getFixture9();
 		Vector3f store = new Vector3f();
 
 		Vector3f result = fixture.getLeft(store);
@@ -11961,7 +11961,7 @@ public class CameraTest {
 	@Test
 	public void testGetLeft_fixture2_3()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 		Vector3f store = Vector3f.NAN;
 
 		Vector3f result = fixture.getLeft(store);
@@ -12005,7 +12005,7 @@ public class CameraTest {
 	@Test
 	public void testGetLocation_fixture2_1()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 
 		Vector3f result = fixture.getLocation();
 
@@ -12030,7 +12030,7 @@ public class CameraTest {
 	@Test
 	public void testGetLocation_fixture3_1()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 
 		Vector3f result = fixture.getLocation();
 
@@ -12055,7 +12055,7 @@ public class CameraTest {
 	@Test
 	public void testGetLocation_fixture4_1()
 		throws Exception {
-		Camera fixture = getFixture4();
+		CameraView fixture = getFixture4();
 
 		Vector3f result = fixture.getLocation();
 
@@ -12080,7 +12080,7 @@ public class CameraTest {
 	@Test
 	public void testGetLocation_fixture5_1()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 
 		Vector3f result = fixture.getLocation();
 
@@ -12105,7 +12105,7 @@ public class CameraTest {
 	@Test
 	public void testGetLocation_fixture6_1()
 		throws Exception {
-		Camera fixture = getFixture6();
+		CameraView fixture = getFixture6();
 
 		Vector3f result = fixture.getLocation();
 
@@ -12130,7 +12130,7 @@ public class CameraTest {
 	@Test
 	public void testGetLocation_fixture7_1()
 		throws Exception {
-		Camera fixture = getFixture7();
+		CameraView fixture = getFixture7();
 
 		Vector3f result = fixture.getLocation();
 
@@ -12155,7 +12155,7 @@ public class CameraTest {
 	@Test
 	public void testGetLocation_fixture8_1()
 		throws Exception {
-		Camera fixture = getFixture8();
+		CameraView fixture = getFixture8();
 
 		Vector3f result = fixture.getLocation();
 
@@ -12180,7 +12180,7 @@ public class CameraTest {
 	@Test
 	public void testGetLocation_fixture9_1()
 		throws Exception {
-		Camera fixture = getFixture9();
+		CameraView fixture = getFixture9();
 
 		Vector3f result = fixture.getLocation();
 
@@ -12205,7 +12205,7 @@ public class CameraTest {
 	@Test
 	public void testGetLocation_fixture10_1()
 		throws Exception {
-		Camera fixture = getFixture10();
+		CameraView fixture = getFixture10();
 
 		Vector3f result = fixture.getLocation();
 
@@ -12230,7 +12230,7 @@ public class CameraTest {
 	@Test
 	public void testGetLocation_fixture11_1()
 		throws Exception {
-		Camera fixture = getFixture11();
+		CameraView fixture = getFixture11();
 
 		Vector3f result = fixture.getLocation();
 
@@ -12255,7 +12255,7 @@ public class CameraTest {
 	@Test
 	public void testGetLocation_fixture12_1()
 		throws Exception {
-		Camera fixture = getFixture12();
+		CameraView fixture = getFixture12();
 
 		Vector3f result = fixture.getLocation();
 
@@ -12280,7 +12280,7 @@ public class CameraTest {
 	@Test
 	public void testGetLocation_fixture13_1()
 		throws Exception {
-		Camera fixture = getFixture13();
+		CameraView fixture = getFixture13();
 
 		Vector3f result = fixture.getLocation();
 
@@ -12305,7 +12305,7 @@ public class CameraTest {
 	@Test
 	public void testGetLocation_fixture14_1()
 		throws Exception {
-		Camera fixture = getFixture14();
+		CameraView fixture = getFixture14();
 
 		Vector3f result = fixture.getLocation();
 
@@ -12330,7 +12330,7 @@ public class CameraTest {
 	@Test
 	public void testGetLocation_fixture15_1()
 		throws Exception {
-		Camera fixture = getFixture15();
+		CameraView fixture = getFixture15();
 
 		Vector3f result = fixture.getLocation();
 
@@ -12355,7 +12355,7 @@ public class CameraTest {
 	@Test
 	public void testGetLocation_fixture16_1()
 		throws Exception {
-		Camera fixture = getFixture16();
+		CameraView fixture = getFixture16();
 
 		Vector3f result = fixture.getLocation();
 
@@ -12380,7 +12380,7 @@ public class CameraTest {
 	@Test
 	public void testGetLocation_fixture17_1()
 		throws Exception {
-		Camera fixture = getFixture17();
+		CameraView fixture = getFixture17();
 
 		Vector3f result = fixture.getLocation();
 
@@ -12405,7 +12405,7 @@ public class CameraTest {
 	@Test
 	public void testGetLocation_fixture18_1()
 		throws Exception {
-		Camera fixture = getFixture18();
+		CameraView fixture = getFixture18();
 
 		Vector3f result = fixture.getLocation();
 
@@ -12430,7 +12430,7 @@ public class CameraTest {
 	@Test
 	public void testGetLocation_fixture19_1()
 		throws Exception {
-		Camera fixture = getFixture19();
+		CameraView fixture = getFixture19();
 
 		Vector3f result = fixture.getLocation();
 
@@ -12455,7 +12455,7 @@ public class CameraTest {
 	@Test
 	public void testGetLocation_fixture20_1()
 		throws Exception {
-		Camera fixture = getFixture20();
+		CameraView fixture = getFixture20();
 
 		Vector3f result = fixture.getLocation();
 
@@ -12480,7 +12480,7 @@ public class CameraTest {
 	@Test
 	public void testGetLocation_fixture21_1()
 		throws Exception {
-		Camera fixture = getFixture21();
+		CameraView fixture = getFixture21();
 
 		Vector3f result = fixture.getLocation();
 
@@ -12505,7 +12505,7 @@ public class CameraTest {
 	@Test
 	public void testGetLocation_fixture22_1()
 		throws Exception {
-		Camera fixture = getFixture22();
+		CameraView fixture = getFixture22();
 
 		Vector3f result = fixture.getLocation();
 
@@ -12530,7 +12530,7 @@ public class CameraTest {
 	@Test
 	public void testGetLocation_fixture23_1()
 		throws Exception {
-		Camera fixture = getFixture23();
+		CameraView fixture = getFixture23();
 
 		Vector3f result = fixture.getLocation();
 
@@ -12555,7 +12555,7 @@ public class CameraTest {
 	@Test
 	public void testGetLocation_fixture24_1()
 		throws Exception {
-		Camera fixture = getFixture24();
+		CameraView fixture = getFixture24();
 
 		Vector3f result = fixture.getLocation();
 
@@ -12580,7 +12580,7 @@ public class CameraTest {
 	@Test
 	public void testGetLocation_fixture25_1()
 		throws Exception {
-		Camera fixture = getFixture25();
+		CameraView fixture = getFixture25();
 
 		Vector3f result = fixture.getLocation();
 
@@ -12605,7 +12605,7 @@ public class CameraTest {
 	@Test
 	public void testGetLocation_fixture26_1()
 		throws Exception {
-		Camera fixture = getFixture26();
+		CameraView fixture = getFixture26();
 
 		Vector3f result = fixture.getLocation();
 
@@ -12630,7 +12630,7 @@ public class CameraTest {
 	@Test
 	public void testGetLocation_fixture27_1()
 		throws Exception {
-		Camera fixture = getFixture27();
+		CameraView fixture = getFixture27();
 
 		Vector3f result = fixture.getLocation();
 
@@ -12655,7 +12655,7 @@ public class CameraTest {
 	@Test
 	public void testGetLocation_fixture28_1()
 		throws Exception {
-		Camera fixture = getFixture28();
+		CameraView fixture = getFixture28();
 
 		Vector3f result = fixture.getLocation();
 
@@ -12682,7 +12682,7 @@ public class CameraTest {
 	@Test
 	public void testGetLocation_fixture29_1()
 		throws Exception {
-		Camera fixture = getFixture29();
+		CameraView fixture = getFixture29();
 
 		Vector3f result = fixture.getLocation();
 
@@ -12707,7 +12707,7 @@ public class CameraTest {
 	@Test
 	public void testGetName_fixture1_1()
 		throws Exception {
-		Camera fixture = getFixture1();
+		CameraView fixture = getFixture1();
 
 		String result = fixture.getName();
 
@@ -12725,7 +12725,7 @@ public class CameraTest {
 	@Test
 	public void testGetName_fixture2_1()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 
 		String result = fixture.getName();
 
@@ -12743,7 +12743,7 @@ public class CameraTest {
 	@Test
 	public void testGetName_fixture3_1()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 
 		String result = fixture.getName();
 
@@ -12761,7 +12761,7 @@ public class CameraTest {
 	@Test
 	public void testGetName_fixture4_1()
 		throws Exception {
-		Camera fixture = getFixture4();
+		CameraView fixture = getFixture4();
 
 		String result = fixture.getName();
 
@@ -12779,7 +12779,7 @@ public class CameraTest {
 	@Test
 	public void testGetName_fixture5_1()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 
 		String result = fixture.getName();
 
@@ -12797,7 +12797,7 @@ public class CameraTest {
 	@Test
 	public void testGetName_fixture6_1()
 		throws Exception {
-		Camera fixture = getFixture6();
+		CameraView fixture = getFixture6();
 
 		String result = fixture.getName();
 
@@ -12815,7 +12815,7 @@ public class CameraTest {
 	@Test
 	public void testGetName_fixture7_1()
 		throws Exception {
-		Camera fixture = getFixture7();
+		CameraView fixture = getFixture7();
 
 		String result = fixture.getName();
 
@@ -12833,7 +12833,7 @@ public class CameraTest {
 	@Test
 	public void testGetName_fixture8_1()
 		throws Exception {
-		Camera fixture = getFixture8();
+		CameraView fixture = getFixture8();
 
 		String result = fixture.getName();
 
@@ -12851,7 +12851,7 @@ public class CameraTest {
 	@Test
 	public void testGetName_fixture9_1()
 		throws Exception {
-		Camera fixture = getFixture9();
+		CameraView fixture = getFixture9();
 
 		String result = fixture.getName();
 
@@ -12869,7 +12869,7 @@ public class CameraTest {
 	@Test
 	public void testGetName_fixture10_1()
 		throws Exception {
-		Camera fixture = getFixture10();
+		CameraView fixture = getFixture10();
 
 		String result = fixture.getName();
 
@@ -12887,7 +12887,7 @@ public class CameraTest {
 	@Test
 	public void testGetName_fixture11_1()
 		throws Exception {
-		Camera fixture = getFixture11();
+		CameraView fixture = getFixture11();
 
 		String result = fixture.getName();
 
@@ -12905,7 +12905,7 @@ public class CameraTest {
 	@Test
 	public void testGetName_fixture12_1()
 		throws Exception {
-		Camera fixture = getFixture12();
+		CameraView fixture = getFixture12();
 
 		String result = fixture.getName();
 
@@ -12923,7 +12923,7 @@ public class CameraTest {
 	@Test
 	public void testGetName_fixture13_1()
 		throws Exception {
-		Camera fixture = getFixture13();
+		CameraView fixture = getFixture13();
 
 		String result = fixture.getName();
 
@@ -12941,7 +12941,7 @@ public class CameraTest {
 	@Test
 	public void testGetName_fixture14_1()
 		throws Exception {
-		Camera fixture = getFixture14();
+		CameraView fixture = getFixture14();
 
 		String result = fixture.getName();
 
@@ -12959,7 +12959,7 @@ public class CameraTest {
 	@Test
 	public void testGetName_fixture15_1()
 		throws Exception {
-		Camera fixture = getFixture15();
+		CameraView fixture = getFixture15();
 
 		String result = fixture.getName();
 
@@ -12977,7 +12977,7 @@ public class CameraTest {
 	@Test
 	public void testGetName_fixture16_1()
 		throws Exception {
-		Camera fixture = getFixture16();
+		CameraView fixture = getFixture16();
 
 		String result = fixture.getName();
 
@@ -12995,7 +12995,7 @@ public class CameraTest {
 	@Test
 	public void testGetName_fixture17_1()
 		throws Exception {
-		Camera fixture = getFixture17();
+		CameraView fixture = getFixture17();
 
 		String result = fixture.getName();
 
@@ -13013,7 +13013,7 @@ public class CameraTest {
 	@Test
 	public void testGetName_fixture18_1()
 		throws Exception {
-		Camera fixture = getFixture18();
+		CameraView fixture = getFixture18();
 
 		String result = fixture.getName();
 
@@ -13031,7 +13031,7 @@ public class CameraTest {
 	@Test
 	public void testGetName_fixture19_1()
 		throws Exception {
-		Camera fixture = getFixture19();
+		CameraView fixture = getFixture19();
 
 		String result = fixture.getName();
 
@@ -13049,7 +13049,7 @@ public class CameraTest {
 	@Test
 	public void testGetName_fixture20_1()
 		throws Exception {
-		Camera fixture = getFixture20();
+		CameraView fixture = getFixture20();
 
 		String result = fixture.getName();
 
@@ -13067,7 +13067,7 @@ public class CameraTest {
 	@Test
 	public void testGetName_fixture21_1()
 		throws Exception {
-		Camera fixture = getFixture21();
+		CameraView fixture = getFixture21();
 
 		String result = fixture.getName();
 
@@ -13085,7 +13085,7 @@ public class CameraTest {
 	@Test
 	public void testGetName_fixture22_1()
 		throws Exception {
-		Camera fixture = getFixture22();
+		CameraView fixture = getFixture22();
 
 		String result = fixture.getName();
 
@@ -13103,7 +13103,7 @@ public class CameraTest {
 	@Test
 	public void testGetName_fixture23_1()
 		throws Exception {
-		Camera fixture = getFixture23();
+		CameraView fixture = getFixture23();
 
 		String result = fixture.getName();
 
@@ -13121,7 +13121,7 @@ public class CameraTest {
 	@Test
 	public void testGetName_fixture24_1()
 		throws Exception {
-		Camera fixture = getFixture24();
+		CameraView fixture = getFixture24();
 
 		String result = fixture.getName();
 
@@ -13139,7 +13139,7 @@ public class CameraTest {
 	@Test
 	public void testGetName_fixture25_1()
 		throws Exception {
-		Camera fixture = getFixture25();
+		CameraView fixture = getFixture25();
 
 		String result = fixture.getName();
 
@@ -13157,7 +13157,7 @@ public class CameraTest {
 	@Test
 	public void testGetName_fixture26_1()
 		throws Exception {
-		Camera fixture = getFixture26();
+		CameraView fixture = getFixture26();
 
 		String result = fixture.getName();
 
@@ -13175,7 +13175,7 @@ public class CameraTest {
 	@Test
 	public void testGetName_fixture27_1()
 		throws Exception {
-		Camera fixture = getFixture27();
+		CameraView fixture = getFixture27();
 
 		String result = fixture.getName();
 
@@ -13193,7 +13193,7 @@ public class CameraTest {
 	@Test
 	public void testGetName_fixture28_1()
 		throws Exception {
-		Camera fixture = getFixture28();
+		CameraView fixture = getFixture28();
 
 		String result = fixture.getName();
 
@@ -13211,7 +13211,7 @@ public class CameraTest {
 	@Test
 	public void testGetName_fixture29_1()
 		throws Exception {
-		Camera fixture = getFixture29();
+		CameraView fixture = getFixture29();
 
 		String result = fixture.getName();
 
@@ -13229,7 +13229,7 @@ public class CameraTest {
 	@Test
 	public void testGetPlaneState_fixture1_1()
 		throws Exception {
-		Camera fixture = getFixture1();
+		CameraView fixture = getFixture1();
 
 		int result = fixture.getPlaneState();
 
@@ -13247,7 +13247,7 @@ public class CameraTest {
 	@Test
 	public void testGetPlaneState_fixture2_1()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 
 		int result = fixture.getPlaneState();
 
@@ -13265,7 +13265,7 @@ public class CameraTest {
 	@Test
 	public void testGetPlaneState_fixture3_1()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 
 		int result = fixture.getPlaneState();
 
@@ -13283,7 +13283,7 @@ public class CameraTest {
 	@Test
 	public void testGetPlaneState_fixture4_1()
 		throws Exception {
-		Camera fixture = getFixture4();
+		CameraView fixture = getFixture4();
 
 		int result = fixture.getPlaneState();
 
@@ -13301,7 +13301,7 @@ public class CameraTest {
 	@Test
 	public void testGetPlaneState_fixture5_1()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 
 		int result = fixture.getPlaneState();
 
@@ -13319,7 +13319,7 @@ public class CameraTest {
 	@Test
 	public void testGetPlaneState_fixture6_1()
 		throws Exception {
-		Camera fixture = getFixture6();
+		CameraView fixture = getFixture6();
 
 		int result = fixture.getPlaneState();
 
@@ -13337,7 +13337,7 @@ public class CameraTest {
 	@Test
 	public void testGetPlaneState_fixture7_1()
 		throws Exception {
-		Camera fixture = getFixture7();
+		CameraView fixture = getFixture7();
 
 		int result = fixture.getPlaneState();
 
@@ -13355,7 +13355,7 @@ public class CameraTest {
 	@Test
 	public void testGetPlaneState_fixture8_1()
 		throws Exception {
-		Camera fixture = getFixture8();
+		CameraView fixture = getFixture8();
 
 		int result = fixture.getPlaneState();
 
@@ -13373,7 +13373,7 @@ public class CameraTest {
 	@Test
 	public void testGetPlaneState_fixture9_1()
 		throws Exception {
-		Camera fixture = getFixture9();
+		CameraView fixture = getFixture9();
 
 		int result = fixture.getPlaneState();
 
@@ -13391,7 +13391,7 @@ public class CameraTest {
 	@Test
 	public void testGetPlaneState_fixture10_1()
 		throws Exception {
-		Camera fixture = getFixture10();
+		CameraView fixture = getFixture10();
 
 		int result = fixture.getPlaneState();
 
@@ -13409,7 +13409,7 @@ public class CameraTest {
 	@Test
 	public void testGetPlaneState_fixture11_1()
 		throws Exception {
-		Camera fixture = getFixture11();
+		CameraView fixture = getFixture11();
 
 		int result = fixture.getPlaneState();
 
@@ -13427,7 +13427,7 @@ public class CameraTest {
 	@Test
 	public void testGetPlaneState_fixture12_1()
 		throws Exception {
-		Camera fixture = getFixture12();
+		CameraView fixture = getFixture12();
 
 		int result = fixture.getPlaneState();
 
@@ -13445,7 +13445,7 @@ public class CameraTest {
 	@Test
 	public void testGetPlaneState_fixture13_1()
 		throws Exception {
-		Camera fixture = getFixture13();
+		CameraView fixture = getFixture13();
 
 		int result = fixture.getPlaneState();
 
@@ -13463,7 +13463,7 @@ public class CameraTest {
 	@Test
 	public void testGetPlaneState_fixture14_1()
 		throws Exception {
-		Camera fixture = getFixture14();
+		CameraView fixture = getFixture14();
 
 		int result = fixture.getPlaneState();
 
@@ -13481,7 +13481,7 @@ public class CameraTest {
 	@Test
 	public void testGetPlaneState_fixture15_1()
 		throws Exception {
-		Camera fixture = getFixture15();
+		CameraView fixture = getFixture15();
 
 		int result = fixture.getPlaneState();
 
@@ -13499,7 +13499,7 @@ public class CameraTest {
 	@Test
 	public void testGetPlaneState_fixture16_1()
 		throws Exception {
-		Camera fixture = getFixture16();
+		CameraView fixture = getFixture16();
 
 		int result = fixture.getPlaneState();
 
@@ -13517,7 +13517,7 @@ public class CameraTest {
 	@Test
 	public void testGetPlaneState_fixture17_1()
 		throws Exception {
-		Camera fixture = getFixture17();
+		CameraView fixture = getFixture17();
 
 		int result = fixture.getPlaneState();
 
@@ -13535,7 +13535,7 @@ public class CameraTest {
 	@Test
 	public void testGetPlaneState_fixture18_1()
 		throws Exception {
-		Camera fixture = getFixture18();
+		CameraView fixture = getFixture18();
 
 		int result = fixture.getPlaneState();
 
@@ -13553,7 +13553,7 @@ public class CameraTest {
 	@Test
 	public void testGetPlaneState_fixture19_1()
 		throws Exception {
-		Camera fixture = getFixture19();
+		CameraView fixture = getFixture19();
 
 		int result = fixture.getPlaneState();
 
@@ -13571,7 +13571,7 @@ public class CameraTest {
 	@Test
 	public void testGetPlaneState_fixture20_1()
 		throws Exception {
-		Camera fixture = getFixture20();
+		CameraView fixture = getFixture20();
 
 		int result = fixture.getPlaneState();
 
@@ -13589,7 +13589,7 @@ public class CameraTest {
 	@Test
 	public void testGetPlaneState_fixture21_1()
 		throws Exception {
-		Camera fixture = getFixture21();
+		CameraView fixture = getFixture21();
 
 		int result = fixture.getPlaneState();
 
@@ -13607,7 +13607,7 @@ public class CameraTest {
 	@Test
 	public void testGetPlaneState_fixture22_1()
 		throws Exception {
-		Camera fixture = getFixture22();
+		CameraView fixture = getFixture22();
 
 		int result = fixture.getPlaneState();
 
@@ -13625,7 +13625,7 @@ public class CameraTest {
 	@Test
 	public void testGetPlaneState_fixture23_1()
 		throws Exception {
-		Camera fixture = getFixture23();
+		CameraView fixture = getFixture23();
 
 		int result = fixture.getPlaneState();
 
@@ -13643,7 +13643,7 @@ public class CameraTest {
 	@Test
 	public void testGetPlaneState_fixture24_1()
 		throws Exception {
-		Camera fixture = getFixture24();
+		CameraView fixture = getFixture24();
 
 		int result = fixture.getPlaneState();
 
@@ -13661,7 +13661,7 @@ public class CameraTest {
 	@Test
 	public void testGetPlaneState_fixture25_1()
 		throws Exception {
-		Camera fixture = getFixture25();
+		CameraView fixture = getFixture25();
 
 		int result = fixture.getPlaneState();
 
@@ -13679,7 +13679,7 @@ public class CameraTest {
 	@Test
 	public void testGetPlaneState_fixture26_1()
 		throws Exception {
-		Camera fixture = getFixture26();
+		CameraView fixture = getFixture26();
 
 		int result = fixture.getPlaneState();
 
@@ -13697,7 +13697,7 @@ public class CameraTest {
 	@Test
 	public void testGetPlaneState_fixture27_1()
 		throws Exception {
-		Camera fixture = getFixture27();
+		CameraView fixture = getFixture27();
 
 		int result = fixture.getPlaneState();
 
@@ -13715,7 +13715,7 @@ public class CameraTest {
 	@Test
 	public void testGetPlaneState_fixture28_1()
 		throws Exception {
-		Camera fixture = getFixture28();
+		CameraView fixture = getFixture28();
 
 		int result = fixture.getPlaneState();
 
@@ -13733,7 +13733,7 @@ public class CameraTest {
 	@Test
 	public void testGetPlaneState_fixture29_1()
 		throws Exception {
-		Camera fixture = getFixture29();
+		CameraView fixture = getFixture29();
 
 		int result = fixture.getPlaneState();
 
@@ -13772,7 +13772,7 @@ public class CameraTest {
 	@Test
 	public void testGetProjectionMatrix_fixture2_1()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 
 		Matrix4f result = fixture.getProjectionMatrix();
 
@@ -13793,7 +13793,7 @@ public class CameraTest {
 	@Test
 	public void testGetProjectionMatrix_fixture3_1()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 
 		Matrix4f result = fixture.getProjectionMatrix();
 
@@ -13814,7 +13814,7 @@ public class CameraTest {
 	@Test
 	public void testGetProjectionMatrix_fixture4_1()
 		throws Exception {
-		Camera fixture = getFixture4();
+		CameraView fixture = getFixture4();
 
 		Matrix4f result = fixture.getProjectionMatrix();
 
@@ -13835,7 +13835,7 @@ public class CameraTest {
 	@Test
 	public void testGetProjectionMatrix_fixture5_1()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 
 		Matrix4f result = fixture.getProjectionMatrix();
 
@@ -13856,7 +13856,7 @@ public class CameraTest {
 	@Test
 	public void testGetProjectionMatrix_fixture6_1()
 		throws Exception {
-		Camera fixture = getFixture6();
+		CameraView fixture = getFixture6();
 
 		Matrix4f result = fixture.getProjectionMatrix();
 
@@ -13877,7 +13877,7 @@ public class CameraTest {
 	@Test
 	public void testGetProjectionMatrix_fixture7_1()
 		throws Exception {
-		Camera fixture = getFixture7();
+		CameraView fixture = getFixture7();
 
 		Matrix4f result = fixture.getProjectionMatrix();
 
@@ -13898,7 +13898,7 @@ public class CameraTest {
 	@Test
 	public void testGetProjectionMatrix_fixture8_1()
 		throws Exception {
-		Camera fixture = getFixture8();
+		CameraView fixture = getFixture8();
 
 		Matrix4f result = fixture.getProjectionMatrix();
 
@@ -13919,7 +13919,7 @@ public class CameraTest {
 	@Test
 	public void testGetProjectionMatrix_fixture9_1()
 		throws Exception {
-		Camera fixture = getFixture9();
+		CameraView fixture = getFixture9();
 
 		Matrix4f result = fixture.getProjectionMatrix();
 
@@ -13940,7 +13940,7 @@ public class CameraTest {
 	@Test
 	public void testGetProjectionMatrix_fixture10_1()
 		throws Exception {
-		Camera fixture = getFixture10();
+		CameraView fixture = getFixture10();
 
 		Matrix4f result = fixture.getProjectionMatrix();
 
@@ -13961,7 +13961,7 @@ public class CameraTest {
 	@Test
 	public void testGetProjectionMatrix_fixture11_1()
 		throws Exception {
-		Camera fixture = getFixture11();
+		CameraView fixture = getFixture11();
 
 		Matrix4f result = fixture.getProjectionMatrix();
 
@@ -13982,7 +13982,7 @@ public class CameraTest {
 	@Test
 	public void testGetProjectionMatrix_fixture12_1()
 		throws Exception {
-		Camera fixture = getFixture12();
+		CameraView fixture = getFixture12();
 
 		Matrix4f result = fixture.getProjectionMatrix();
 
@@ -14003,7 +14003,7 @@ public class CameraTest {
 	@Test
 	public void testGetProjectionMatrix_fixture13_1()
 		throws Exception {
-		Camera fixture = getFixture13();
+		CameraView fixture = getFixture13();
 
 		Matrix4f result = fixture.getProjectionMatrix();
 
@@ -14024,7 +14024,7 @@ public class CameraTest {
 	@Test
 	public void testGetProjectionMatrix_fixture14_1()
 		throws Exception {
-		Camera fixture = getFixture14();
+		CameraView fixture = getFixture14();
 
 		Matrix4f result = fixture.getProjectionMatrix();
 
@@ -14045,7 +14045,7 @@ public class CameraTest {
 	@Test
 	public void testGetProjectionMatrix_fixture15_1()
 		throws Exception {
-		Camera fixture = getFixture15();
+		CameraView fixture = getFixture15();
 
 		Matrix4f result = fixture.getProjectionMatrix();
 
@@ -14066,7 +14066,7 @@ public class CameraTest {
 	@Test
 	public void testGetProjectionMatrix_fixture16_1()
 		throws Exception {
-		Camera fixture = getFixture16();
+		CameraView fixture = getFixture16();
 
 		Matrix4f result = fixture.getProjectionMatrix();
 
@@ -14087,7 +14087,7 @@ public class CameraTest {
 	@Test
 	public void testGetProjectionMatrix_fixture17_1()
 		throws Exception {
-		Camera fixture = getFixture17();
+		CameraView fixture = getFixture17();
 
 		Matrix4f result = fixture.getProjectionMatrix();
 
@@ -14108,7 +14108,7 @@ public class CameraTest {
 	@Test
 	public void testGetProjectionMatrix_fixture18_1()
 		throws Exception {
-		Camera fixture = getFixture18();
+		CameraView fixture = getFixture18();
 
 		Matrix4f result = fixture.getProjectionMatrix();
 
@@ -14129,7 +14129,7 @@ public class CameraTest {
 	@Test
 	public void testGetProjectionMatrix_fixture19_1()
 		throws Exception {
-		Camera fixture = getFixture19();
+		CameraView fixture = getFixture19();
 
 		Matrix4f result = fixture.getProjectionMatrix();
 
@@ -14150,7 +14150,7 @@ public class CameraTest {
 	@Test
 	public void testGetProjectionMatrix_fixture20_1()
 		throws Exception {
-		Camera fixture = getFixture20();
+		CameraView fixture = getFixture20();
 
 		Matrix4f result = fixture.getProjectionMatrix();
 
@@ -14171,7 +14171,7 @@ public class CameraTest {
 	@Test
 	public void testGetProjectionMatrix_fixture21_1()
 		throws Exception {
-		Camera fixture = getFixture21();
+		CameraView fixture = getFixture21();
 
 		Matrix4f result = fixture.getProjectionMatrix();
 
@@ -14192,7 +14192,7 @@ public class CameraTest {
 	@Test
 	public void testGetProjectionMatrix_fixture22_1()
 		throws Exception {
-		Camera fixture = getFixture22();
+		CameraView fixture = getFixture22();
 
 		Matrix4f result = fixture.getProjectionMatrix();
 
@@ -14213,7 +14213,7 @@ public class CameraTest {
 	@Test
 	public void testGetProjectionMatrix_fixture23_1()
 		throws Exception {
-		Camera fixture = getFixture23();
+		CameraView fixture = getFixture23();
 
 		Matrix4f result = fixture.getProjectionMatrix();
 
@@ -14234,7 +14234,7 @@ public class CameraTest {
 	@Test
 	public void testGetProjectionMatrix_fixture24_1()
 		throws Exception {
-		Camera fixture = getFixture24();
+		CameraView fixture = getFixture24();
 
 		Matrix4f result = fixture.getProjectionMatrix();
 
@@ -14255,7 +14255,7 @@ public class CameraTest {
 	@Test
 	public void testGetProjectionMatrix_fixture25_1()
 		throws Exception {
-		Camera fixture = getFixture25();
+		CameraView fixture = getFixture25();
 
 		Matrix4f result = fixture.getProjectionMatrix();
 
@@ -14276,7 +14276,7 @@ public class CameraTest {
 	@Test
 	public void testGetProjectionMatrix_fixture26_1()
 		throws Exception {
-		Camera fixture = getFixture26();
+		CameraView fixture = getFixture26();
 
 		Matrix4f result = fixture.getProjectionMatrix();
 
@@ -14297,7 +14297,7 @@ public class CameraTest {
 	@Test
 	public void testGetProjectionMatrix_fixture27_1()
 		throws Exception {
-		Camera fixture = getFixture27();
+		CameraView fixture = getFixture27();
 
 		Matrix4f result = fixture.getProjectionMatrix();
 
@@ -14318,7 +14318,7 @@ public class CameraTest {
 	@Test
 	public void testGetProjectionMatrix_fixture28_1()
 		throws Exception {
-		Camera fixture = getFixture28();
+		CameraView fixture = getFixture28();
 
 		Matrix4f result = fixture.getProjectionMatrix();
 
@@ -14339,7 +14339,7 @@ public class CameraTest {
 	@Test
 	public void testGetProjectionMatrix_fixture29_1()
 		throws Exception {
-		Camera fixture = getFixture29();
+		CameraView fixture = getFixture29();
 
 		Matrix4f result = fixture.getProjectionMatrix();
 
@@ -14378,7 +14378,7 @@ public class CameraTest {
 	@Test
 	public void testGetRotation_fixture2_1()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 
 		Quaternion result = fixture.getRotation();
 
@@ -14403,7 +14403,7 @@ public class CameraTest {
 	@Test
 	public void testGetRotation_fixture3_1()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 
 		Quaternion result = fixture.getRotation();
 
@@ -14428,7 +14428,7 @@ public class CameraTest {
 	@Test
 	public void testGetRotation_fixture4_1()
 		throws Exception {
-		Camera fixture = getFixture4();
+		CameraView fixture = getFixture4();
 
 		Quaternion result = fixture.getRotation();
 
@@ -14453,7 +14453,7 @@ public class CameraTest {
 	@Test
 	public void testGetRotation_fixture5_1()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 
 		Quaternion result = fixture.getRotation();
 
@@ -14478,7 +14478,7 @@ public class CameraTest {
 	@Test
 	public void testGetRotation_fixture6_1()
 		throws Exception {
-		Camera fixture = getFixture6();
+		CameraView fixture = getFixture6();
 
 		Quaternion result = fixture.getRotation();
 
@@ -14503,7 +14503,7 @@ public class CameraTest {
 	@Test
 	public void testGetRotation_fixture7_1()
 		throws Exception {
-		Camera fixture = getFixture7();
+		CameraView fixture = getFixture7();
 
 		Quaternion result = fixture.getRotation();
 
@@ -14528,7 +14528,7 @@ public class CameraTest {
 	@Test
 	public void testGetRotation_fixture8_1()
 		throws Exception {
-		Camera fixture = getFixture8();
+		CameraView fixture = getFixture8();
 
 		Quaternion result = fixture.getRotation();
 
@@ -14553,7 +14553,7 @@ public class CameraTest {
 	@Test
 	public void testGetRotation_fixture9_1()
 		throws Exception {
-		Camera fixture = getFixture9();
+		CameraView fixture = getFixture9();
 
 		Quaternion result = fixture.getRotation();
 
@@ -14578,7 +14578,7 @@ public class CameraTest {
 	@Test
 	public void testGetRotation_fixture10_1()
 		throws Exception {
-		Camera fixture = getFixture10();
+		CameraView fixture = getFixture10();
 
 		Quaternion result = fixture.getRotation();
 
@@ -14603,7 +14603,7 @@ public class CameraTest {
 	@Test
 	public void testGetRotation_fixture11_1()
 		throws Exception {
-		Camera fixture = getFixture11();
+		CameraView fixture = getFixture11();
 
 		Quaternion result = fixture.getRotation();
 
@@ -14628,7 +14628,7 @@ public class CameraTest {
 	@Test
 	public void testGetRotation_fixture12_1()
 		throws Exception {
-		Camera fixture = getFixture12();
+		CameraView fixture = getFixture12();
 
 		Quaternion result = fixture.getRotation();
 
@@ -14653,7 +14653,7 @@ public class CameraTest {
 	@Test
 	public void testGetRotation_fixture13_1()
 		throws Exception {
-		Camera fixture = getFixture13();
+		CameraView fixture = getFixture13();
 
 		Quaternion result = fixture.getRotation();
 
@@ -14678,7 +14678,7 @@ public class CameraTest {
 	@Test
 	public void testGetRotation_fixture14_1()
 		throws Exception {
-		Camera fixture = getFixture14();
+		CameraView fixture = getFixture14();
 
 		Quaternion result = fixture.getRotation();
 
@@ -14703,7 +14703,7 @@ public class CameraTest {
 	@Test
 	public void testGetRotation_fixture15_1()
 		throws Exception {
-		Camera fixture = getFixture15();
+		CameraView fixture = getFixture15();
 
 		Quaternion result = fixture.getRotation();
 
@@ -14728,7 +14728,7 @@ public class CameraTest {
 	@Test
 	public void testGetRotation_fixture16_1()
 		throws Exception {
-		Camera fixture = getFixture16();
+		CameraView fixture = getFixture16();
 
 		Quaternion result = fixture.getRotation();
 
@@ -14753,7 +14753,7 @@ public class CameraTest {
 	@Test
 	public void testGetRotation_fixture17_1()
 		throws Exception {
-		Camera fixture = getFixture17();
+		CameraView fixture = getFixture17();
 
 		Quaternion result = fixture.getRotation();
 
@@ -14778,7 +14778,7 @@ public class CameraTest {
 	@Test
 	public void testGetRotation_fixture18_1()
 		throws Exception {
-		Camera fixture = getFixture18();
+		CameraView fixture = getFixture18();
 
 		Quaternion result = fixture.getRotation();
 
@@ -14803,7 +14803,7 @@ public class CameraTest {
 	@Test
 	public void testGetRotation_fixture19_1()
 		throws Exception {
-		Camera fixture = getFixture19();
+		CameraView fixture = getFixture19();
 
 		Quaternion result = fixture.getRotation();
 
@@ -14828,7 +14828,7 @@ public class CameraTest {
 	@Test
 	public void testGetRotation_fixture20_1()
 		throws Exception {
-		Camera fixture = getFixture20();
+		CameraView fixture = getFixture20();
 
 		Quaternion result = fixture.getRotation();
 
@@ -14853,7 +14853,7 @@ public class CameraTest {
 	@Test
 	public void testGetRotation_fixture21_1()
 		throws Exception {
-		Camera fixture = getFixture21();
+		CameraView fixture = getFixture21();
 
 		Quaternion result = fixture.getRotation();
 
@@ -14878,7 +14878,7 @@ public class CameraTest {
 	@Test
 	public void testGetRotation_fixture22_1()
 		throws Exception {
-		Camera fixture = getFixture22();
+		CameraView fixture = getFixture22();
 
 		Quaternion result = fixture.getRotation();
 
@@ -14903,7 +14903,7 @@ public class CameraTest {
 	@Test
 	public void testGetRotation_fixture23_1()
 		throws Exception {
-		Camera fixture = getFixture23();
+		CameraView fixture = getFixture23();
 
 		Quaternion result = fixture.getRotation();
 
@@ -14928,7 +14928,7 @@ public class CameraTest {
 	@Test
 	public void testGetRotation_fixture24_1()
 		throws Exception {
-		Camera fixture = getFixture24();
+		CameraView fixture = getFixture24();
 
 		Quaternion result = fixture.getRotation();
 
@@ -14953,7 +14953,7 @@ public class CameraTest {
 	@Test
 	public void testGetRotation_fixture25_1()
 		throws Exception {
-		Camera fixture = getFixture25();
+		CameraView fixture = getFixture25();
 
 		Quaternion result = fixture.getRotation();
 
@@ -14978,7 +14978,7 @@ public class CameraTest {
 	@Test
 	public void testGetRotation_fixture26_1()
 		throws Exception {
-		Camera fixture = getFixture26();
+		CameraView fixture = getFixture26();
 
 		Quaternion result = fixture.getRotation();
 
@@ -15003,7 +15003,7 @@ public class CameraTest {
 	@Test
 	public void testGetRotation_fixture27_1()
 		throws Exception {
-		Camera fixture = getFixture27();
+		CameraView fixture = getFixture27();
 
 		Quaternion result = fixture.getRotation();
 
@@ -15028,7 +15028,7 @@ public class CameraTest {
 	@Test
 	public void testGetRotation_fixture28_1()
 		throws Exception {
-		Camera fixture = getFixture28();
+		CameraView fixture = getFixture28();
 
 		Quaternion result = fixture.getRotation();
 
@@ -15053,7 +15053,7 @@ public class CameraTest {
 	@Test
 	public void testGetRotation_fixture29_1()
 		throws Exception {
-		Camera fixture = getFixture29();
+		CameraView fixture = getFixture29();
 
 		Quaternion result = fixture.getRotation();
 
@@ -15104,7 +15104,7 @@ public class CameraTest {
 	@Test
 	public void testGetScreenCoordinates_fixture2_1()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 		Vector3f worldPos = Vector3f.NEGATIVE_INFINITY;
 
 		Vector3f result = fixture.getScreenCoordinates(worldPos);
@@ -15130,7 +15130,7 @@ public class CameraTest {
 	@Test
 	public void testGetScreenCoordinates_fixture3_1()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 		Vector3f worldPos = Vector3f.POSITIVE_INFINITY;
 
 		Vector3f result = fixture.getScreenCoordinates(worldPos);
@@ -15156,7 +15156,7 @@ public class CameraTest {
 	@Test
 	public void testGetScreenCoordinates_fixture4_1()
 		throws Exception {
-		Camera fixture = getFixture4();
+		CameraView fixture = getFixture4();
 		Vector3f worldPos = Vector3f.UNIT_X;
 
 		Vector3f result = fixture.getScreenCoordinates(worldPos);
@@ -15182,7 +15182,7 @@ public class CameraTest {
 	@Test
 	public void testGetScreenCoordinates_fixture5_1()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 		Vector3f worldPos = Vector3f.UNIT_XYZ;
 
 		Vector3f result = fixture.getScreenCoordinates(worldPos);
@@ -15208,7 +15208,7 @@ public class CameraTest {
 	@Test
 	public void testGetScreenCoordinates_fixture6_1()
 		throws Exception {
-		Camera fixture = getFixture6();
+		CameraView fixture = getFixture6();
 		Vector3f worldPos = Vector3f.UNIT_Y;
 
 		Vector3f result = fixture.getScreenCoordinates(worldPos);
@@ -15234,7 +15234,7 @@ public class CameraTest {
 	@Test
 	public void testGetScreenCoordinates_fixture7_1()
 		throws Exception {
-		Camera fixture = getFixture7();
+		CameraView fixture = getFixture7();
 		Vector3f worldPos = Vector3f.UNIT_Z;
 
 		Vector3f result = fixture.getScreenCoordinates(worldPos);
@@ -15260,7 +15260,7 @@ public class CameraTest {
 	@Test
 	public void testGetScreenCoordinates_fixture8_1()
 		throws Exception {
-		Camera fixture = getFixture8();
+		CameraView fixture = getFixture8();
 		Vector3f worldPos = Vector3f.ZERO;
 
 		Vector3f result = fixture.getScreenCoordinates(worldPos);
@@ -15286,7 +15286,7 @@ public class CameraTest {
 	@Test
 	public void testGetScreenCoordinates_fixture9_1()
 		throws Exception {
-		Camera fixture = getFixture9();
+		CameraView fixture = getFixture9();
 		Vector3f worldPos = new Vector3f();
 
 		Vector3f result = fixture.getScreenCoordinates(worldPos);
@@ -15772,7 +15772,7 @@ public class CameraTest {
 	@Test
 	public void testGetScreenCoordinates_fixture2_2()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 		Vector3f worldPos = Vector3f.NAN;
 
 		Vector3f result = fixture.getScreenCoordinates(worldPos);
@@ -15825,7 +15825,7 @@ public class CameraTest {
 	@Test
 	public void testGetScreenCoordinates_fixture2_3()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 		Vector3f worldPosition = Vector3f.NEGATIVE_INFINITY;
 		Vector3f store = null;
 
@@ -15852,7 +15852,7 @@ public class CameraTest {
 	@Test
 	public void testGetScreenCoordinates_fixture3_2()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 		Vector3f worldPosition = Vector3f.POSITIVE_INFINITY;
 		Vector3f store = null;
 
@@ -15879,7 +15879,7 @@ public class CameraTest {
 	@Test
 	public void testGetScreenCoordinates_fixture4_2()
 		throws Exception {
-		Camera fixture = getFixture4();
+		CameraView fixture = getFixture4();
 		Vector3f worldPosition = Vector3f.UNIT_X;
 		Vector3f store = null;
 
@@ -15906,7 +15906,7 @@ public class CameraTest {
 	@Test
 	public void testGetScreenCoordinates_fixture5_2()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 		Vector3f worldPosition = Vector3f.UNIT_XYZ;
 		Vector3f store = null;
 
@@ -15933,7 +15933,7 @@ public class CameraTest {
 	@Test
 	public void testGetScreenCoordinates_fixture6_2()
 		throws Exception {
-		Camera fixture = getFixture6();
+		CameraView fixture = getFixture6();
 		Vector3f worldPosition = Vector3f.UNIT_Y;
 		Vector3f store = null;
 
@@ -15960,7 +15960,7 @@ public class CameraTest {
 	@Test
 	public void testGetScreenCoordinates_fixture7_2()
 		throws Exception {
-		Camera fixture = getFixture7();
+		CameraView fixture = getFixture7();
 		Vector3f worldPosition = Vector3f.UNIT_Z;
 		Vector3f store = null;
 
@@ -15987,7 +15987,7 @@ public class CameraTest {
 	@Test
 	public void testGetScreenCoordinates_fixture8_2()
 		throws Exception {
-		Camera fixture = getFixture8();
+		CameraView fixture = getFixture8();
 		Vector3f worldPosition = Vector3f.ZERO;
 		Vector3f store = null;
 
@@ -16014,7 +16014,7 @@ public class CameraTest {
 	@Test
 	public void testGetScreenCoordinates_fixture9_2()
 		throws Exception {
-		Camera fixture = getFixture9();
+		CameraView fixture = getFixture9();
 		Vector3f worldPosition = new Vector3f();
 		Vector3f store = null;
 
@@ -16521,7 +16521,7 @@ public class CameraTest {
 	@Test
 	public void testGetScreenCoordinates_fixture2_4()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 		Vector3f worldPosition = Vector3f.NAN;
 		Vector3f store = null;
 
@@ -16571,7 +16571,7 @@ public class CameraTest {
 	@Test
 	public void testGetUp_fixture2_1()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 
 		Vector3f result = fixture.getUp();
 
@@ -16596,7 +16596,7 @@ public class CameraTest {
 	@Test
 	public void testGetUp_fixture3_1()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 
 		Vector3f result = fixture.getUp();
 
@@ -16621,7 +16621,7 @@ public class CameraTest {
 	@Test
 	public void testGetUp_fixture4_1()
 		throws Exception {
-		Camera fixture = getFixture4();
+		CameraView fixture = getFixture4();
 
 		Vector3f result = fixture.getUp();
 
@@ -16646,7 +16646,7 @@ public class CameraTest {
 	@Test
 	public void testGetUp_fixture5_1()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 
 		Vector3f result = fixture.getUp();
 
@@ -16671,7 +16671,7 @@ public class CameraTest {
 	@Test
 	public void testGetUp_fixture6_1()
 		throws Exception {
-		Camera fixture = getFixture6();
+		CameraView fixture = getFixture6();
 
 		Vector3f result = fixture.getUp();
 
@@ -16696,7 +16696,7 @@ public class CameraTest {
 	@Test
 	public void testGetUp_fixture7_1()
 		throws Exception {
-		Camera fixture = getFixture7();
+		CameraView fixture = getFixture7();
 
 		Vector3f result = fixture.getUp();
 
@@ -16721,7 +16721,7 @@ public class CameraTest {
 	@Test
 	public void testGetUp_fixture8_1()
 		throws Exception {
-		Camera fixture = getFixture8();
+		CameraView fixture = getFixture8();
 
 		Vector3f result = fixture.getUp();
 
@@ -16746,7 +16746,7 @@ public class CameraTest {
 	@Test
 	public void testGetUp_fixture9_1()
 		throws Exception {
-		Camera fixture = getFixture9();
+		CameraView fixture = getFixture9();
 
 		Vector3f result = fixture.getUp();
 
@@ -16771,7 +16771,7 @@ public class CameraTest {
 	@Test
 	public void testGetUp_fixture10_1()
 		throws Exception {
-		Camera fixture = getFixture10();
+		CameraView fixture = getFixture10();
 
 		Vector3f result = fixture.getUp();
 
@@ -16796,7 +16796,7 @@ public class CameraTest {
 	@Test
 	public void testGetUp_fixture11_1()
 		throws Exception {
-		Camera fixture = getFixture11();
+		CameraView fixture = getFixture11();
 
 		Vector3f result = fixture.getUp();
 
@@ -16821,7 +16821,7 @@ public class CameraTest {
 	@Test
 	public void testGetUp_fixture12_1()
 		throws Exception {
-		Camera fixture = getFixture12();
+		CameraView fixture = getFixture12();
 
 		Vector3f result = fixture.getUp();
 
@@ -16846,7 +16846,7 @@ public class CameraTest {
 	@Test
 	public void testGetUp_fixture13_1()
 		throws Exception {
-		Camera fixture = getFixture13();
+		CameraView fixture = getFixture13();
 
 		Vector3f result = fixture.getUp();
 
@@ -16871,7 +16871,7 @@ public class CameraTest {
 	@Test
 	public void testGetUp_fixture14_1()
 		throws Exception {
-		Camera fixture = getFixture14();
+		CameraView fixture = getFixture14();
 
 		Vector3f result = fixture.getUp();
 
@@ -16896,7 +16896,7 @@ public class CameraTest {
 	@Test
 	public void testGetUp_fixture15_1()
 		throws Exception {
-		Camera fixture = getFixture15();
+		CameraView fixture = getFixture15();
 
 		Vector3f result = fixture.getUp();
 
@@ -16921,7 +16921,7 @@ public class CameraTest {
 	@Test
 	public void testGetUp_fixture16_1()
 		throws Exception {
-		Camera fixture = getFixture16();
+		CameraView fixture = getFixture16();
 
 		Vector3f result = fixture.getUp();
 
@@ -16946,7 +16946,7 @@ public class CameraTest {
 	@Test
 	public void testGetUp_fixture17_1()
 		throws Exception {
-		Camera fixture = getFixture17();
+		CameraView fixture = getFixture17();
 
 		Vector3f result = fixture.getUp();
 
@@ -16971,7 +16971,7 @@ public class CameraTest {
 	@Test
 	public void testGetUp_fixture18_1()
 		throws Exception {
-		Camera fixture = getFixture18();
+		CameraView fixture = getFixture18();
 
 		Vector3f result = fixture.getUp();
 
@@ -16996,7 +16996,7 @@ public class CameraTest {
 	@Test
 	public void testGetUp_fixture19_1()
 		throws Exception {
-		Camera fixture = getFixture19();
+		CameraView fixture = getFixture19();
 
 		Vector3f result = fixture.getUp();
 
@@ -17021,7 +17021,7 @@ public class CameraTest {
 	@Test
 	public void testGetUp_fixture20_1()
 		throws Exception {
-		Camera fixture = getFixture20();
+		CameraView fixture = getFixture20();
 
 		Vector3f result = fixture.getUp();
 
@@ -17046,7 +17046,7 @@ public class CameraTest {
 	@Test
 	public void testGetUp_fixture21_1()
 		throws Exception {
-		Camera fixture = getFixture21();
+		CameraView fixture = getFixture21();
 
 		Vector3f result = fixture.getUp();
 
@@ -17071,7 +17071,7 @@ public class CameraTest {
 	@Test
 	public void testGetUp_fixture22_1()
 		throws Exception {
-		Camera fixture = getFixture22();
+		CameraView fixture = getFixture22();
 
 		Vector3f result = fixture.getUp();
 
@@ -17096,7 +17096,7 @@ public class CameraTest {
 	@Test
 	public void testGetUp_fixture23_1()
 		throws Exception {
-		Camera fixture = getFixture23();
+		CameraView fixture = getFixture23();
 
 		Vector3f result = fixture.getUp();
 
@@ -17121,7 +17121,7 @@ public class CameraTest {
 	@Test
 	public void testGetUp_fixture24_1()
 		throws Exception {
-		Camera fixture = getFixture24();
+		CameraView fixture = getFixture24();
 
 		Vector3f result = fixture.getUp();
 
@@ -17146,7 +17146,7 @@ public class CameraTest {
 	@Test
 	public void testGetUp_fixture25_1()
 		throws Exception {
-		Camera fixture = getFixture25();
+		CameraView fixture = getFixture25();
 
 		Vector3f result = fixture.getUp();
 
@@ -17171,7 +17171,7 @@ public class CameraTest {
 	@Test
 	public void testGetUp_fixture26_1()
 		throws Exception {
-		Camera fixture = getFixture26();
+		CameraView fixture = getFixture26();
 
 		Vector3f result = fixture.getUp();
 
@@ -17196,7 +17196,7 @@ public class CameraTest {
 	@Test
 	public void testGetUp_fixture27_1()
 		throws Exception {
-		Camera fixture = getFixture27();
+		CameraView fixture = getFixture27();
 
 		Vector3f result = fixture.getUp();
 
@@ -17221,7 +17221,7 @@ public class CameraTest {
 	@Test
 	public void testGetUp_fixture28_1()
 		throws Exception {
-		Camera fixture = getFixture28();
+		CameraView fixture = getFixture28();
 
 		Vector3f result = fixture.getUp();
 
@@ -17246,7 +17246,7 @@ public class CameraTest {
 	@Test
 	public void testGetUp_fixture29_1()
 		throws Exception {
-		Camera fixture = getFixture29();
+		CameraView fixture = getFixture29();
 
 		Vector3f result = fixture.getUp();
 
@@ -17295,7 +17295,7 @@ public class CameraTest {
 	@Test
 	public void testGetUp_fixture2_2()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 		Vector3f store = Vector3f.NEGATIVE_INFINITY;
 
 		Vector3f result = fixture.getUp(store);
@@ -17321,7 +17321,7 @@ public class CameraTest {
 	@Test
 	public void testGetUp_fixture3_2()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 		Vector3f store = Vector3f.POSITIVE_INFINITY;
 
 		Vector3f result = fixture.getUp(store);
@@ -17347,7 +17347,7 @@ public class CameraTest {
 	@Test
 	public void testGetUp_fixture4_2()
 		throws Exception {
-		Camera fixture = getFixture4();
+		CameraView fixture = getFixture4();
 		Vector3f store = Vector3f.UNIT_X;
 
 		Vector3f result = fixture.getUp(store);
@@ -17373,7 +17373,7 @@ public class CameraTest {
 	@Test
 	public void testGetUp_fixture5_2()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 		Vector3f store = Vector3f.UNIT_XYZ;
 
 		Vector3f result = fixture.getUp(store);
@@ -17399,7 +17399,7 @@ public class CameraTest {
 	@Test
 	public void testGetUp_fixture6_2()
 		throws Exception {
-		Camera fixture = getFixture6();
+		CameraView fixture = getFixture6();
 		Vector3f store = Vector3f.UNIT_Y;
 
 		Vector3f result = fixture.getUp(store);
@@ -17425,7 +17425,7 @@ public class CameraTest {
 	@Test
 	public void testGetUp_fixture7_2()
 		throws Exception {
-		Camera fixture = getFixture7();
+		CameraView fixture = getFixture7();
 		Vector3f store = Vector3f.UNIT_Z;
 
 		Vector3f result = fixture.getUp(store);
@@ -17451,7 +17451,7 @@ public class CameraTest {
 	@Test
 	public void testGetUp_fixture8_2()
 		throws Exception {
-		Camera fixture = getFixture8();
+		CameraView fixture = getFixture8();
 		Vector3f store = Vector3f.ZERO;
 
 		Vector3f result = fixture.getUp(store);
@@ -17477,7 +17477,7 @@ public class CameraTest {
 	@Test
 	public void testGetUp_fixture9_2()
 		throws Exception {
-		Camera fixture = getFixture9();
+		CameraView fixture = getFixture9();
 		Vector3f store = new Vector3f();
 
 		Vector3f result = fixture.getUp(store);
@@ -17963,7 +17963,7 @@ public class CameraTest {
 	@Test
 	public void testGetUp_fixture2_3()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 		Vector3f store = Vector3f.NAN;
 
 		Vector3f result = fixture.getUp(store);
@@ -18010,7 +18010,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewMatrix_fixture2_1()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 
 		Matrix4f result = fixture.getViewMatrix();
 
@@ -18031,7 +18031,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewMatrix_fixture3_1()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 
 		Matrix4f result = fixture.getViewMatrix();
 
@@ -18052,7 +18052,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewMatrix_fixture4_1()
 		throws Exception {
-		Camera fixture = getFixture4();
+		CameraView fixture = getFixture4();
 
 		Matrix4f result = fixture.getViewMatrix();
 
@@ -18073,7 +18073,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewMatrix_fixture5_1()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 
 		Matrix4f result = fixture.getViewMatrix();
 
@@ -18094,7 +18094,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewMatrix_fixture6_1()
 		throws Exception {
-		Camera fixture = getFixture6();
+		CameraView fixture = getFixture6();
 
 		Matrix4f result = fixture.getViewMatrix();
 
@@ -18115,7 +18115,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewMatrix_fixture7_1()
 		throws Exception {
-		Camera fixture = getFixture7();
+		CameraView fixture = getFixture7();
 
 		Matrix4f result = fixture.getViewMatrix();
 
@@ -18136,7 +18136,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewMatrix_fixture8_1()
 		throws Exception {
-		Camera fixture = getFixture8();
+		CameraView fixture = getFixture8();
 
 		Matrix4f result = fixture.getViewMatrix();
 
@@ -18157,7 +18157,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewMatrix_fixture9_1()
 		throws Exception {
-		Camera fixture = getFixture9();
+		CameraView fixture = getFixture9();
 
 		Matrix4f result = fixture.getViewMatrix();
 
@@ -18178,7 +18178,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewMatrix_fixture10_1()
 		throws Exception {
-		Camera fixture = getFixture10();
+		CameraView fixture = getFixture10();
 
 		Matrix4f result = fixture.getViewMatrix();
 
@@ -18199,7 +18199,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewMatrix_fixture11_1()
 		throws Exception {
-		Camera fixture = getFixture11();
+		CameraView fixture = getFixture11();
 
 		Matrix4f result = fixture.getViewMatrix();
 
@@ -18220,7 +18220,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewMatrix_fixture12_1()
 		throws Exception {
-		Camera fixture = getFixture12();
+		CameraView fixture = getFixture12();
 
 		Matrix4f result = fixture.getViewMatrix();
 
@@ -18241,7 +18241,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewMatrix_fixture13_1()
 		throws Exception {
-		Camera fixture = getFixture13();
+		CameraView fixture = getFixture13();
 
 		Matrix4f result = fixture.getViewMatrix();
 
@@ -18262,7 +18262,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewMatrix_fixture14_1()
 		throws Exception {
-		Camera fixture = getFixture14();
+		CameraView fixture = getFixture14();
 
 		Matrix4f result = fixture.getViewMatrix();
 
@@ -18283,7 +18283,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewMatrix_fixture15_1()
 		throws Exception {
-		Camera fixture = getFixture15();
+		CameraView fixture = getFixture15();
 
 		Matrix4f result = fixture.getViewMatrix();
 
@@ -18304,7 +18304,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewMatrix_fixture16_1()
 		throws Exception {
-		Camera fixture = getFixture16();
+		CameraView fixture = getFixture16();
 
 		Matrix4f result = fixture.getViewMatrix();
 
@@ -18325,7 +18325,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewMatrix_fixture17_1()
 		throws Exception {
-		Camera fixture = getFixture17();
+		CameraView fixture = getFixture17();
 
 		Matrix4f result = fixture.getViewMatrix();
 
@@ -18346,7 +18346,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewMatrix_fixture18_1()
 		throws Exception {
-		Camera fixture = getFixture18();
+		CameraView fixture = getFixture18();
 
 		Matrix4f result = fixture.getViewMatrix();
 
@@ -18367,7 +18367,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewMatrix_fixture19_1()
 		throws Exception {
-		Camera fixture = getFixture19();
+		CameraView fixture = getFixture19();
 
 		Matrix4f result = fixture.getViewMatrix();
 
@@ -18388,7 +18388,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewMatrix_fixture20_1()
 		throws Exception {
-		Camera fixture = getFixture20();
+		CameraView fixture = getFixture20();
 
 		Matrix4f result = fixture.getViewMatrix();
 
@@ -18409,7 +18409,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewMatrix_fixture21_1()
 		throws Exception {
-		Camera fixture = getFixture21();
+		CameraView fixture = getFixture21();
 
 		Matrix4f result = fixture.getViewMatrix();
 
@@ -18430,7 +18430,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewMatrix_fixture22_1()
 		throws Exception {
-		Camera fixture = getFixture22();
+		CameraView fixture = getFixture22();
 
 		Matrix4f result = fixture.getViewMatrix();
 
@@ -18451,7 +18451,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewMatrix_fixture23_1()
 		throws Exception {
-		Camera fixture = getFixture23();
+		CameraView fixture = getFixture23();
 
 		Matrix4f result = fixture.getViewMatrix();
 
@@ -18472,7 +18472,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewMatrix_fixture24_1()
 		throws Exception {
-		Camera fixture = getFixture24();
+		CameraView fixture = getFixture24();
 
 		Matrix4f result = fixture.getViewMatrix();
 
@@ -18493,7 +18493,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewMatrix_fixture25_1()
 		throws Exception {
-		Camera fixture = getFixture25();
+		CameraView fixture = getFixture25();
 
 		Matrix4f result = fixture.getViewMatrix();
 
@@ -18514,7 +18514,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewMatrix_fixture26_1()
 		throws Exception {
-		Camera fixture = getFixture26();
+		CameraView fixture = getFixture26();
 
 		Matrix4f result = fixture.getViewMatrix();
 
@@ -18535,7 +18535,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewMatrix_fixture27_1()
 		throws Exception {
-		Camera fixture = getFixture27();
+		CameraView fixture = getFixture27();
 
 		Matrix4f result = fixture.getViewMatrix();
 
@@ -18556,7 +18556,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewMatrix_fixture28_1()
 		throws Exception {
-		Camera fixture = getFixture28();
+		CameraView fixture = getFixture28();
 
 		Matrix4f result = fixture.getViewMatrix();
 
@@ -18577,7 +18577,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewMatrix_fixture29_1()
 		throws Exception {
-		Camera fixture = getFixture29();
+		CameraView fixture = getFixture29();
 
 		Matrix4f result = fixture.getViewMatrix();
 
@@ -18598,7 +18598,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortBottom_fixture1_1()
 		throws Exception {
-		Camera fixture = getFixture1();
+		CameraView fixture = getFixture1();
 
 		float result = fixture.getViewPortBottom();
 
@@ -18616,7 +18616,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortBottom_fixture2_1()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 
 		float result = fixture.getViewPortBottom();
 
@@ -18634,7 +18634,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortBottom_fixture3_1()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 
 		float result = fixture.getViewPortBottom();
 
@@ -18652,7 +18652,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortBottom_fixture4_1()
 		throws Exception {
-		Camera fixture = getFixture4();
+		CameraView fixture = getFixture4();
 
 		float result = fixture.getViewPortBottom();
 
@@ -18670,7 +18670,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortBottom_fixture5_1()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 
 		float result = fixture.getViewPortBottom();
 
@@ -18688,7 +18688,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortBottom_fixture6_1()
 		throws Exception {
-		Camera fixture = getFixture6();
+		CameraView fixture = getFixture6();
 
 		float result = fixture.getViewPortBottom();
 
@@ -18706,7 +18706,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortBottom_fixture7_1()
 		throws Exception {
-		Camera fixture = getFixture7();
+		CameraView fixture = getFixture7();
 
 		float result = fixture.getViewPortBottom();
 
@@ -18724,7 +18724,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortBottom_fixture8_1()
 		throws Exception {
-		Camera fixture = getFixture8();
+		CameraView fixture = getFixture8();
 
 		float result = fixture.getViewPortBottom();
 
@@ -18742,7 +18742,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortBottom_fixture9_1()
 		throws Exception {
-		Camera fixture = getFixture9();
+		CameraView fixture = getFixture9();
 
 		float result = fixture.getViewPortBottom();
 
@@ -18760,7 +18760,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortBottom_fixture10_1()
 		throws Exception {
-		Camera fixture = getFixture10();
+		CameraView fixture = getFixture10();
 
 		float result = fixture.getViewPortBottom();
 
@@ -18778,7 +18778,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortBottom_fixture11_1()
 		throws Exception {
-		Camera fixture = getFixture11();
+		CameraView fixture = getFixture11();
 
 		float result = fixture.getViewPortBottom();
 
@@ -18796,7 +18796,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortBottom_fixture12_1()
 		throws Exception {
-		Camera fixture = getFixture12();
+		CameraView fixture = getFixture12();
 
 		float result = fixture.getViewPortBottom();
 
@@ -18814,7 +18814,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortBottom_fixture13_1()
 		throws Exception {
-		Camera fixture = getFixture13();
+		CameraView fixture = getFixture13();
 
 		float result = fixture.getViewPortBottom();
 
@@ -18832,7 +18832,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortBottom_fixture14_1()
 		throws Exception {
-		Camera fixture = getFixture14();
+		CameraView fixture = getFixture14();
 
 		float result = fixture.getViewPortBottom();
 
@@ -18850,7 +18850,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortBottom_fixture15_1()
 		throws Exception {
-		Camera fixture = getFixture15();
+		CameraView fixture = getFixture15();
 
 		float result = fixture.getViewPortBottom();
 
@@ -18868,7 +18868,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortBottom_fixture16_1()
 		throws Exception {
-		Camera fixture = getFixture16();
+		CameraView fixture = getFixture16();
 
 		float result = fixture.getViewPortBottom();
 
@@ -18886,7 +18886,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortBottom_fixture17_1()
 		throws Exception {
-		Camera fixture = getFixture17();
+		CameraView fixture = getFixture17();
 
 		float result = fixture.getViewPortBottom();
 
@@ -18904,7 +18904,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortBottom_fixture18_1()
 		throws Exception {
-		Camera fixture = getFixture18();
+		CameraView fixture = getFixture18();
 
 		float result = fixture.getViewPortBottom();
 
@@ -18922,7 +18922,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortBottom_fixture19_1()
 		throws Exception {
-		Camera fixture = getFixture19();
+		CameraView fixture = getFixture19();
 
 		float result = fixture.getViewPortBottom();
 
@@ -18940,7 +18940,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortBottom_fixture20_1()
 		throws Exception {
-		Camera fixture = getFixture20();
+		CameraView fixture = getFixture20();
 
 		float result = fixture.getViewPortBottom();
 
@@ -18958,7 +18958,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortBottom_fixture21_1()
 		throws Exception {
-		Camera fixture = getFixture21();
+		CameraView fixture = getFixture21();
 
 		float result = fixture.getViewPortBottom();
 
@@ -18976,7 +18976,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortBottom_fixture22_1()
 		throws Exception {
-		Camera fixture = getFixture22();
+		CameraView fixture = getFixture22();
 
 		float result = fixture.getViewPortBottom();
 
@@ -18994,7 +18994,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortBottom_fixture23_1()
 		throws Exception {
-		Camera fixture = getFixture23();
+		CameraView fixture = getFixture23();
 
 		float result = fixture.getViewPortBottom();
 
@@ -19012,7 +19012,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortBottom_fixture24_1()
 		throws Exception {
-		Camera fixture = getFixture24();
+		CameraView fixture = getFixture24();
 
 		float result = fixture.getViewPortBottom();
 
@@ -19030,7 +19030,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortBottom_fixture25_1()
 		throws Exception {
-		Camera fixture = getFixture25();
+		CameraView fixture = getFixture25();
 
 		float result = fixture.getViewPortBottom();
 
@@ -19048,7 +19048,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortBottom_fixture26_1()
 		throws Exception {
-		Camera fixture = getFixture26();
+		CameraView fixture = getFixture26();
 
 		float result = fixture.getViewPortBottom();
 
@@ -19066,7 +19066,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortBottom_fixture27_1()
 		throws Exception {
-		Camera fixture = getFixture27();
+		CameraView fixture = getFixture27();
 
 		float result = fixture.getViewPortBottom();
 
@@ -19084,7 +19084,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortBottom_fixture28_1()
 		throws Exception {
-		Camera fixture = getFixture28();
+		CameraView fixture = getFixture28();
 
 		float result = fixture.getViewPortBottom();
 
@@ -19102,7 +19102,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortBottom_fixture29_1()
 		throws Exception {
-		Camera fixture = getFixture29();
+		CameraView fixture = getFixture29();
 
 		float result = fixture.getViewPortBottom();
 
@@ -19120,7 +19120,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortLeft_fixture1_1()
 		throws Exception {
-		Camera fixture = getFixture1();
+		CameraView fixture = getFixture1();
 
 		float result = fixture.getViewPortLeft();
 
@@ -19138,7 +19138,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortLeft_fixture2_1()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 
 		float result = fixture.getViewPortLeft();
 
@@ -19156,7 +19156,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortLeft_fixture3_1()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 
 		float result = fixture.getViewPortLeft();
 
@@ -19174,7 +19174,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortLeft_fixture4_1()
 		throws Exception {
-		Camera fixture = getFixture4();
+		CameraView fixture = getFixture4();
 
 		float result = fixture.getViewPortLeft();
 
@@ -19192,7 +19192,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortLeft_fixture5_1()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 
 		float result = fixture.getViewPortLeft();
 
@@ -19210,7 +19210,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortLeft_fixture6_1()
 		throws Exception {
-		Camera fixture = getFixture6();
+		CameraView fixture = getFixture6();
 
 		float result = fixture.getViewPortLeft();
 
@@ -19228,7 +19228,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortLeft_fixture7_1()
 		throws Exception {
-		Camera fixture = getFixture7();
+		CameraView fixture = getFixture7();
 
 		float result = fixture.getViewPortLeft();
 
@@ -19246,7 +19246,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortLeft_fixture8_1()
 		throws Exception {
-		Camera fixture = getFixture8();
+		CameraView fixture = getFixture8();
 
 		float result = fixture.getViewPortLeft();
 
@@ -19264,7 +19264,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortLeft_fixture9_1()
 		throws Exception {
-		Camera fixture = getFixture9();
+		CameraView fixture = getFixture9();
 
 		float result = fixture.getViewPortLeft();
 
@@ -19282,7 +19282,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortLeft_fixture10_1()
 		throws Exception {
-		Camera fixture = getFixture10();
+		CameraView fixture = getFixture10();
 
 		float result = fixture.getViewPortLeft();
 
@@ -19300,7 +19300,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortLeft_fixture11_1()
 		throws Exception {
-		Camera fixture = getFixture11();
+		CameraView fixture = getFixture11();
 
 		float result = fixture.getViewPortLeft();
 
@@ -19318,7 +19318,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortLeft_fixture12_1()
 		throws Exception {
-		Camera fixture = getFixture12();
+		CameraView fixture = getFixture12();
 
 		float result = fixture.getViewPortLeft();
 
@@ -19336,7 +19336,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortLeft_fixture13_1()
 		throws Exception {
-		Camera fixture = getFixture13();
+		CameraView fixture = getFixture13();
 
 		float result = fixture.getViewPortLeft();
 
@@ -19354,7 +19354,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortLeft_fixture14_1()
 		throws Exception {
-		Camera fixture = getFixture14();
+		CameraView fixture = getFixture14();
 
 		float result = fixture.getViewPortLeft();
 
@@ -19372,7 +19372,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortLeft_fixture15_1()
 		throws Exception {
-		Camera fixture = getFixture15();
+		CameraView fixture = getFixture15();
 
 		float result = fixture.getViewPortLeft();
 
@@ -19390,7 +19390,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortLeft_fixture16_1()
 		throws Exception {
-		Camera fixture = getFixture16();
+		CameraView fixture = getFixture16();
 
 		float result = fixture.getViewPortLeft();
 
@@ -19408,7 +19408,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortLeft_fixture17_1()
 		throws Exception {
-		Camera fixture = getFixture17();
+		CameraView fixture = getFixture17();
 
 		float result = fixture.getViewPortLeft();
 
@@ -19426,7 +19426,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortLeft_fixture18_1()
 		throws Exception {
-		Camera fixture = getFixture18();
+		CameraView fixture = getFixture18();
 
 		float result = fixture.getViewPortLeft();
 
@@ -19444,7 +19444,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortLeft_fixture19_1()
 		throws Exception {
-		Camera fixture = getFixture19();
+		CameraView fixture = getFixture19();
 
 		float result = fixture.getViewPortLeft();
 
@@ -19462,7 +19462,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortLeft_fixture20_1()
 		throws Exception {
-		Camera fixture = getFixture20();
+		CameraView fixture = getFixture20();
 
 		float result = fixture.getViewPortLeft();
 
@@ -19480,7 +19480,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortLeft_fixture21_1()
 		throws Exception {
-		Camera fixture = getFixture21();
+		CameraView fixture = getFixture21();
 
 		float result = fixture.getViewPortLeft();
 
@@ -19498,7 +19498,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortLeft_fixture22_1()
 		throws Exception {
-		Camera fixture = getFixture22();
+		CameraView fixture = getFixture22();
 
 		float result = fixture.getViewPortLeft();
 
@@ -19516,7 +19516,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortLeft_fixture23_1()
 		throws Exception {
-		Camera fixture = getFixture23();
+		CameraView fixture = getFixture23();
 
 		float result = fixture.getViewPortLeft();
 
@@ -19534,7 +19534,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortLeft_fixture24_1()
 		throws Exception {
-		Camera fixture = getFixture24();
+		CameraView fixture = getFixture24();
 
 		float result = fixture.getViewPortLeft();
 
@@ -19552,7 +19552,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortLeft_fixture25_1()
 		throws Exception {
-		Camera fixture = getFixture25();
+		CameraView fixture = getFixture25();
 
 		float result = fixture.getViewPortLeft();
 
@@ -19570,7 +19570,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortLeft_fixture26_1()
 		throws Exception {
-		Camera fixture = getFixture26();
+		CameraView fixture = getFixture26();
 
 		float result = fixture.getViewPortLeft();
 
@@ -19588,7 +19588,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortLeft_fixture27_1()
 		throws Exception {
-		Camera fixture = getFixture27();
+		CameraView fixture = getFixture27();
 
 		float result = fixture.getViewPortLeft();
 
@@ -19606,7 +19606,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortLeft_fixture28_1()
 		throws Exception {
-		Camera fixture = getFixture28();
+		CameraView fixture = getFixture28();
 
 		float result = fixture.getViewPortLeft();
 
@@ -19624,7 +19624,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortLeft_fixture29_1()
 		throws Exception {
-		Camera fixture = getFixture29();
+		CameraView fixture = getFixture29();
 
 		float result = fixture.getViewPortLeft();
 
@@ -19642,7 +19642,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortRight_fixture1_1()
 		throws Exception {
-		Camera fixture = getFixture1();
+		CameraView fixture = getFixture1();
 
 		float result = fixture.getViewPortRight();
 
@@ -19660,7 +19660,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortRight_fixture2_1()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 
 		float result = fixture.getViewPortRight();
 
@@ -19678,7 +19678,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortRight_fixture3_1()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 
 		float result = fixture.getViewPortRight();
 
@@ -19696,7 +19696,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortRight_fixture4_1()
 		throws Exception {
-		Camera fixture = getFixture4();
+		CameraView fixture = getFixture4();
 
 		float result = fixture.getViewPortRight();
 
@@ -19714,7 +19714,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortRight_fixture5_1()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 
 		float result = fixture.getViewPortRight();
 
@@ -19732,7 +19732,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortRight_fixture6_1()
 		throws Exception {
-		Camera fixture = getFixture6();
+		CameraView fixture = getFixture6();
 
 		float result = fixture.getViewPortRight();
 
@@ -19750,7 +19750,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortRight_fixture7_1()
 		throws Exception {
-		Camera fixture = getFixture7();
+		CameraView fixture = getFixture7();
 
 		float result = fixture.getViewPortRight();
 
@@ -19768,7 +19768,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortRight_fixture8_1()
 		throws Exception {
-		Camera fixture = getFixture8();
+		CameraView fixture = getFixture8();
 
 		float result = fixture.getViewPortRight();
 
@@ -19786,7 +19786,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortRight_fixture9_1()
 		throws Exception {
-		Camera fixture = getFixture9();
+		CameraView fixture = getFixture9();
 
 		float result = fixture.getViewPortRight();
 
@@ -19804,7 +19804,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortRight_fixture10_1()
 		throws Exception {
-		Camera fixture = getFixture10();
+		CameraView fixture = getFixture10();
 
 		float result = fixture.getViewPortRight();
 
@@ -19822,7 +19822,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortRight_fixture11_1()
 		throws Exception {
-		Camera fixture = getFixture11();
+		CameraView fixture = getFixture11();
 
 		float result = fixture.getViewPortRight();
 
@@ -19840,7 +19840,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortRight_fixture12_1()
 		throws Exception {
-		Camera fixture = getFixture12();
+		CameraView fixture = getFixture12();
 
 		float result = fixture.getViewPortRight();
 
@@ -19858,7 +19858,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortRight_fixture13_1()
 		throws Exception {
-		Camera fixture = getFixture13();
+		CameraView fixture = getFixture13();
 
 		float result = fixture.getViewPortRight();
 
@@ -19876,7 +19876,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortRight_fixture14_1()
 		throws Exception {
-		Camera fixture = getFixture14();
+		CameraView fixture = getFixture14();
 
 		float result = fixture.getViewPortRight();
 
@@ -19894,7 +19894,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortRight_fixture15_1()
 		throws Exception {
-		Camera fixture = getFixture15();
+		CameraView fixture = getFixture15();
 
 		float result = fixture.getViewPortRight();
 
@@ -19912,7 +19912,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortRight_fixture16_1()
 		throws Exception {
-		Camera fixture = getFixture16();
+		CameraView fixture = getFixture16();
 
 		float result = fixture.getViewPortRight();
 
@@ -19930,7 +19930,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortRight_fixture17_1()
 		throws Exception {
-		Camera fixture = getFixture17();
+		CameraView fixture = getFixture17();
 
 		float result = fixture.getViewPortRight();
 
@@ -19948,7 +19948,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortRight_fixture18_1()
 		throws Exception {
-		Camera fixture = getFixture18();
+		CameraView fixture = getFixture18();
 
 		float result = fixture.getViewPortRight();
 
@@ -19966,7 +19966,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortRight_fixture19_1()
 		throws Exception {
-		Camera fixture = getFixture19();
+		CameraView fixture = getFixture19();
 
 		float result = fixture.getViewPortRight();
 
@@ -19984,7 +19984,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortRight_fixture20_1()
 		throws Exception {
-		Camera fixture = getFixture20();
+		CameraView fixture = getFixture20();
 
 		float result = fixture.getViewPortRight();
 
@@ -20002,7 +20002,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortRight_fixture21_1()
 		throws Exception {
-		Camera fixture = getFixture21();
+		CameraView fixture = getFixture21();
 
 		float result = fixture.getViewPortRight();
 
@@ -20020,7 +20020,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortRight_fixture22_1()
 		throws Exception {
-		Camera fixture = getFixture22();
+		CameraView fixture = getFixture22();
 
 		float result = fixture.getViewPortRight();
 
@@ -20038,7 +20038,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortRight_fixture23_1()
 		throws Exception {
-		Camera fixture = getFixture23();
+		CameraView fixture = getFixture23();
 
 		float result = fixture.getViewPortRight();
 
@@ -20056,7 +20056,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortRight_fixture24_1()
 		throws Exception {
-		Camera fixture = getFixture24();
+		CameraView fixture = getFixture24();
 
 		float result = fixture.getViewPortRight();
 
@@ -20074,7 +20074,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortRight_fixture25_1()
 		throws Exception {
-		Camera fixture = getFixture25();
+		CameraView fixture = getFixture25();
 
 		float result = fixture.getViewPortRight();
 
@@ -20092,7 +20092,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortRight_fixture26_1()
 		throws Exception {
-		Camera fixture = getFixture26();
+		CameraView fixture = getFixture26();
 
 		float result = fixture.getViewPortRight();
 
@@ -20110,7 +20110,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortRight_fixture27_1()
 		throws Exception {
-		Camera fixture = getFixture27();
+		CameraView fixture = getFixture27();
 
 		float result = fixture.getViewPortRight();
 
@@ -20128,7 +20128,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortRight_fixture28_1()
 		throws Exception {
-		Camera fixture = getFixture28();
+		CameraView fixture = getFixture28();
 
 		float result = fixture.getViewPortRight();
 
@@ -20146,7 +20146,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortRight_fixture29_1()
 		throws Exception {
-		Camera fixture = getFixture29();
+		CameraView fixture = getFixture29();
 
 		float result = fixture.getViewPortRight();
 
@@ -20164,7 +20164,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortTop_fixture1_1()
 		throws Exception {
-		Camera fixture = getFixture1();
+		CameraView fixture = getFixture1();
 
 		float result = fixture.getViewPortTop();
 
@@ -20182,7 +20182,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortTop_fixture2_1()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 
 		float result = fixture.getViewPortTop();
 
@@ -20200,7 +20200,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortTop_fixture3_1()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 
 		float result = fixture.getViewPortTop();
 
@@ -20218,7 +20218,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortTop_fixture4_1()
 		throws Exception {
-		Camera fixture = getFixture4();
+		CameraView fixture = getFixture4();
 
 		float result = fixture.getViewPortTop();
 
@@ -20236,7 +20236,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortTop_fixture5_1()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 
 		float result = fixture.getViewPortTop();
 
@@ -20254,7 +20254,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortTop_fixture6_1()
 		throws Exception {
-		Camera fixture = getFixture6();
+		CameraView fixture = getFixture6();
 
 		float result = fixture.getViewPortTop();
 
@@ -20272,7 +20272,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortTop_fixture7_1()
 		throws Exception {
-		Camera fixture = getFixture7();
+		CameraView fixture = getFixture7();
 
 		float result = fixture.getViewPortTop();
 
@@ -20290,7 +20290,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortTop_fixture8_1()
 		throws Exception {
-		Camera fixture = getFixture8();
+		CameraView fixture = getFixture8();
 
 		float result = fixture.getViewPortTop();
 
@@ -20308,7 +20308,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortTop_fixture9_1()
 		throws Exception {
-		Camera fixture = getFixture9();
+		CameraView fixture = getFixture9();
 
 		float result = fixture.getViewPortTop();
 
@@ -20326,7 +20326,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortTop_fixture10_1()
 		throws Exception {
-		Camera fixture = getFixture10();
+		CameraView fixture = getFixture10();
 
 		float result = fixture.getViewPortTop();
 
@@ -20344,7 +20344,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortTop_fixture11_1()
 		throws Exception {
-		Camera fixture = getFixture11();
+		CameraView fixture = getFixture11();
 
 		float result = fixture.getViewPortTop();
 
@@ -20362,7 +20362,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortTop_fixture12_1()
 		throws Exception {
-		Camera fixture = getFixture12();
+		CameraView fixture = getFixture12();
 
 		float result = fixture.getViewPortTop();
 
@@ -20380,7 +20380,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortTop_fixture13_1()
 		throws Exception {
-		Camera fixture = getFixture13();
+		CameraView fixture = getFixture13();
 
 		float result = fixture.getViewPortTop();
 
@@ -20398,7 +20398,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortTop_fixture14_1()
 		throws Exception {
-		Camera fixture = getFixture14();
+		CameraView fixture = getFixture14();
 
 		float result = fixture.getViewPortTop();
 
@@ -20416,7 +20416,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortTop_fixture15_1()
 		throws Exception {
-		Camera fixture = getFixture15();
+		CameraView fixture = getFixture15();
 
 		float result = fixture.getViewPortTop();
 
@@ -20434,7 +20434,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortTop_fixture16_1()
 		throws Exception {
-		Camera fixture = getFixture16();
+		CameraView fixture = getFixture16();
 
 		float result = fixture.getViewPortTop();
 
@@ -20452,7 +20452,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortTop_fixture17_1()
 		throws Exception {
-		Camera fixture = getFixture17();
+		CameraView fixture = getFixture17();
 
 		float result = fixture.getViewPortTop();
 
@@ -20470,7 +20470,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortTop_fixture18_1()
 		throws Exception {
-		Camera fixture = getFixture18();
+		CameraView fixture = getFixture18();
 
 		float result = fixture.getViewPortTop();
 
@@ -20488,7 +20488,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortTop_fixture19_1()
 		throws Exception {
-		Camera fixture = getFixture19();
+		CameraView fixture = getFixture19();
 
 		float result = fixture.getViewPortTop();
 
@@ -20506,7 +20506,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortTop_fixture20_1()
 		throws Exception {
-		Camera fixture = getFixture20();
+		CameraView fixture = getFixture20();
 
 		float result = fixture.getViewPortTop();
 
@@ -20524,7 +20524,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortTop_fixture21_1()
 		throws Exception {
-		Camera fixture = getFixture21();
+		CameraView fixture = getFixture21();
 
 		float result = fixture.getViewPortTop();
 
@@ -20542,7 +20542,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortTop_fixture22_1()
 		throws Exception {
-		Camera fixture = getFixture22();
+		CameraView fixture = getFixture22();
 
 		float result = fixture.getViewPortTop();
 
@@ -20560,7 +20560,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortTop_fixture23_1()
 		throws Exception {
-		Camera fixture = getFixture23();
+		CameraView fixture = getFixture23();
 
 		float result = fixture.getViewPortTop();
 
@@ -20578,7 +20578,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortTop_fixture24_1()
 		throws Exception {
-		Camera fixture = getFixture24();
+		CameraView fixture = getFixture24();
 
 		float result = fixture.getViewPortTop();
 
@@ -20596,7 +20596,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortTop_fixture25_1()
 		throws Exception {
-		Camera fixture = getFixture25();
+		CameraView fixture = getFixture25();
 
 		float result = fixture.getViewPortTop();
 
@@ -20614,7 +20614,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortTop_fixture26_1()
 		throws Exception {
-		Camera fixture = getFixture26();
+		CameraView fixture = getFixture26();
 
 		float result = fixture.getViewPortTop();
 
@@ -20632,7 +20632,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortTop_fixture27_1()
 		throws Exception {
-		Camera fixture = getFixture27();
+		CameraView fixture = getFixture27();
 
 		float result = fixture.getViewPortTop();
 
@@ -20650,7 +20650,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortTop_fixture28_1()
 		throws Exception {
-		Camera fixture = getFixture28();
+		CameraView fixture = getFixture28();
 
 		float result = fixture.getViewPortTop();
 
@@ -20668,7 +20668,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewPortTop_fixture29_1()
 		throws Exception {
-		Camera fixture = getFixture29();
+		CameraView fixture = getFixture29();
 
 		float result = fixture.getViewPortTop();
 
@@ -20707,7 +20707,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewProjectionMatrix_fixture2_1()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 
 		Matrix4f result = fixture.getViewProjectionMatrix();
 
@@ -20728,7 +20728,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewProjectionMatrix_fixture3_1()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 
 		Matrix4f result = fixture.getViewProjectionMatrix();
 
@@ -20749,7 +20749,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewProjectionMatrix_fixture4_1()
 		throws Exception {
-		Camera fixture = getFixture4();
+		CameraView fixture = getFixture4();
 
 		Matrix4f result = fixture.getViewProjectionMatrix();
 
@@ -20770,7 +20770,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewProjectionMatrix_fixture5_1()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 
 		Matrix4f result = fixture.getViewProjectionMatrix();
 
@@ -20791,7 +20791,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewProjectionMatrix_fixture6_1()
 		throws Exception {
-		Camera fixture = getFixture6();
+		CameraView fixture = getFixture6();
 
 		Matrix4f result = fixture.getViewProjectionMatrix();
 
@@ -20812,7 +20812,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewProjectionMatrix_fixture7_1()
 		throws Exception {
-		Camera fixture = getFixture7();
+		CameraView fixture = getFixture7();
 
 		Matrix4f result = fixture.getViewProjectionMatrix();
 
@@ -20833,7 +20833,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewProjectionMatrix_fixture8_1()
 		throws Exception {
-		Camera fixture = getFixture8();
+		CameraView fixture = getFixture8();
 
 		Matrix4f result = fixture.getViewProjectionMatrix();
 
@@ -20854,7 +20854,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewProjectionMatrix_fixture9_1()
 		throws Exception {
-		Camera fixture = getFixture9();
+		CameraView fixture = getFixture9();
 
 		Matrix4f result = fixture.getViewProjectionMatrix();
 
@@ -20875,7 +20875,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewProjectionMatrix_fixture10_1()
 		throws Exception {
-		Camera fixture = getFixture10();
+		CameraView fixture = getFixture10();
 
 		Matrix4f result = fixture.getViewProjectionMatrix();
 
@@ -20896,7 +20896,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewProjectionMatrix_fixture11_1()
 		throws Exception {
-		Camera fixture = getFixture11();
+		CameraView fixture = getFixture11();
 
 		Matrix4f result = fixture.getViewProjectionMatrix();
 
@@ -20917,7 +20917,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewProjectionMatrix_fixture12_1()
 		throws Exception {
-		Camera fixture = getFixture12();
+		CameraView fixture = getFixture12();
 
 		Matrix4f result = fixture.getViewProjectionMatrix();
 
@@ -20938,7 +20938,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewProjectionMatrix_fixture13_1()
 		throws Exception {
-		Camera fixture = getFixture13();
+		CameraView fixture = getFixture13();
 
 		Matrix4f result = fixture.getViewProjectionMatrix();
 
@@ -20959,7 +20959,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewProjectionMatrix_fixture14_1()
 		throws Exception {
-		Camera fixture = getFixture14();
+		CameraView fixture = getFixture14();
 
 		Matrix4f result = fixture.getViewProjectionMatrix();
 
@@ -20980,7 +20980,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewProjectionMatrix_fixture15_1()
 		throws Exception {
-		Camera fixture = getFixture15();
+		CameraView fixture = getFixture15();
 
 		Matrix4f result = fixture.getViewProjectionMatrix();
 
@@ -21001,7 +21001,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewProjectionMatrix_fixture16_1()
 		throws Exception {
-		Camera fixture = getFixture16();
+		CameraView fixture = getFixture16();
 
 		Matrix4f result = fixture.getViewProjectionMatrix();
 
@@ -21022,7 +21022,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewProjectionMatrix_fixture17_1()
 		throws Exception {
-		Camera fixture = getFixture17();
+		CameraView fixture = getFixture17();
 
 		Matrix4f result = fixture.getViewProjectionMatrix();
 
@@ -21043,7 +21043,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewProjectionMatrix_fixture18_1()
 		throws Exception {
-		Camera fixture = getFixture18();
+		CameraView fixture = getFixture18();
 
 		Matrix4f result = fixture.getViewProjectionMatrix();
 
@@ -21064,7 +21064,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewProjectionMatrix_fixture19_1()
 		throws Exception {
-		Camera fixture = getFixture19();
+		CameraView fixture = getFixture19();
 
 		Matrix4f result = fixture.getViewProjectionMatrix();
 
@@ -21085,7 +21085,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewProjectionMatrix_fixture20_1()
 		throws Exception {
-		Camera fixture = getFixture20();
+		CameraView fixture = getFixture20();
 
 		Matrix4f result = fixture.getViewProjectionMatrix();
 
@@ -21106,7 +21106,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewProjectionMatrix_fixture21_1()
 		throws Exception {
-		Camera fixture = getFixture21();
+		CameraView fixture = getFixture21();
 
 		Matrix4f result = fixture.getViewProjectionMatrix();
 
@@ -21127,7 +21127,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewProjectionMatrix_fixture22_1()
 		throws Exception {
-		Camera fixture = getFixture22();
+		CameraView fixture = getFixture22();
 
 		Matrix4f result = fixture.getViewProjectionMatrix();
 
@@ -21148,7 +21148,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewProjectionMatrix_fixture23_1()
 		throws Exception {
-		Camera fixture = getFixture23();
+		CameraView fixture = getFixture23();
 
 		Matrix4f result = fixture.getViewProjectionMatrix();
 
@@ -21169,7 +21169,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewProjectionMatrix_fixture24_1()
 		throws Exception {
-		Camera fixture = getFixture24();
+		CameraView fixture = getFixture24();
 
 		Matrix4f result = fixture.getViewProjectionMatrix();
 
@@ -21190,7 +21190,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewProjectionMatrix_fixture25_1()
 		throws Exception {
-		Camera fixture = getFixture25();
+		CameraView fixture = getFixture25();
 
 		Matrix4f result = fixture.getViewProjectionMatrix();
 
@@ -21211,7 +21211,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewProjectionMatrix_fixture26_1()
 		throws Exception {
-		Camera fixture = getFixture26();
+		CameraView fixture = getFixture26();
 
 		Matrix4f result = fixture.getViewProjectionMatrix();
 
@@ -21232,7 +21232,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewProjectionMatrix_fixture27_1()
 		throws Exception {
-		Camera fixture = getFixture27();
+		CameraView fixture = getFixture27();
 
 		Matrix4f result = fixture.getViewProjectionMatrix();
 
@@ -21253,7 +21253,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewProjectionMatrix_fixture28_1()
 		throws Exception {
-		Camera fixture = getFixture28();
+		CameraView fixture = getFixture28();
 
 		Matrix4f result = fixture.getViewProjectionMatrix();
 
@@ -21274,7 +21274,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewProjectionMatrix_fixture29_1()
 		throws Exception {
-		Camera fixture = getFixture29();
+		CameraView fixture = getFixture29();
 
 		Matrix4f result = fixture.getViewProjectionMatrix();
 
@@ -21295,7 +21295,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewToProjectionZ_fixture1_1()
 		throws Exception {
-		Camera fixture = getFixture1();
+		CameraView fixture = getFixture1();
 		float viewZPos = 0;
 
 		float result = fixture.getViewToProjectionZ(viewZPos);
@@ -21314,7 +21314,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewToProjectionZ_fixture2_1()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 		float viewZPos = 0.0f;
 
 		float result = fixture.getViewToProjectionZ(viewZPos);
@@ -21333,7 +21333,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewToProjectionZ_fixture3_1()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 		float viewZPos = 0.0f;
 
 		float result = fixture.getViewToProjectionZ(viewZPos);
@@ -21352,7 +21352,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewToProjectionZ_fixture4_1()
 		throws Exception {
-		Camera fixture = getFixture4();
+		CameraView fixture = getFixture4();
 		float viewZPos = 0.0f;
 
 		float result = fixture.getViewToProjectionZ(viewZPos);
@@ -21371,7 +21371,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewToProjectionZ_fixture5_1()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 		float viewZPos = 0.0f;
 
 		float result = fixture.getViewToProjectionZ(viewZPos);
@@ -21390,7 +21390,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewToProjectionZ_fixture6_1()
 		throws Exception {
-		Camera fixture = getFixture6();
+		CameraView fixture = getFixture6();
 		float viewZPos = 0.0f;
 
 		float result = fixture.getViewToProjectionZ(viewZPos);
@@ -21409,7 +21409,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewToProjectionZ_fixture7_1()
 		throws Exception {
-		Camera fixture = getFixture7();
+		CameraView fixture = getFixture7();
 		float viewZPos = 0.0f;
 
 		float result = fixture.getViewToProjectionZ(viewZPos);
@@ -21428,7 +21428,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewToProjectionZ_fixture8_1()
 		throws Exception {
-		Camera fixture = getFixture8();
+		CameraView fixture = getFixture8();
 		float viewZPos = 0.0f;
 
 		float result = fixture.getViewToProjectionZ(viewZPos);
@@ -21447,7 +21447,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewToProjectionZ_fixture9_1()
 		throws Exception {
-		Camera fixture = getFixture9();
+		CameraView fixture = getFixture9();
 		float viewZPos = 0.0f;
 
 		float result = fixture.getViewToProjectionZ(viewZPos);
@@ -21466,7 +21466,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewToProjectionZ_fixture10_1()
 		throws Exception {
-		Camera fixture = getFixture10();
+		CameraView fixture = getFixture10();
 		float viewZPos = 0.0f;
 
 		float result = fixture.getViewToProjectionZ(viewZPos);
@@ -21485,7 +21485,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewToProjectionZ_fixture11_1()
 		throws Exception {
-		Camera fixture = getFixture11();
+		CameraView fixture = getFixture11();
 		float viewZPos = 0.0f;
 
 		float result = fixture.getViewToProjectionZ(viewZPos);
@@ -21504,7 +21504,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewToProjectionZ_fixture12_1()
 		throws Exception {
-		Camera fixture = getFixture12();
+		CameraView fixture = getFixture12();
 		float viewZPos = 0.0f;
 
 		float result = fixture.getViewToProjectionZ(viewZPos);
@@ -21523,7 +21523,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewToProjectionZ_fixture13_1()
 		throws Exception {
-		Camera fixture = getFixture13();
+		CameraView fixture = getFixture13();
 		float viewZPos = 0.0f;
 
 		float result = fixture.getViewToProjectionZ(viewZPos);
@@ -21542,7 +21542,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewToProjectionZ_fixture14_1()
 		throws Exception {
-		Camera fixture = getFixture14();
+		CameraView fixture = getFixture14();
 		float viewZPos = 0.0f;
 
 		float result = fixture.getViewToProjectionZ(viewZPos);
@@ -21561,7 +21561,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewToProjectionZ_fixture15_1()
 		throws Exception {
-		Camera fixture = getFixture15();
+		CameraView fixture = getFixture15();
 		float viewZPos = 0.0f;
 
 		float result = fixture.getViewToProjectionZ(viewZPos);
@@ -21580,7 +21580,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewToProjectionZ_fixture16_1()
 		throws Exception {
-		Camera fixture = getFixture16();
+		CameraView fixture = getFixture16();
 		float viewZPos = 0.0f;
 
 		float result = fixture.getViewToProjectionZ(viewZPos);
@@ -21599,7 +21599,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewToProjectionZ_fixture17_1()
 		throws Exception {
-		Camera fixture = getFixture17();
+		CameraView fixture = getFixture17();
 		float viewZPos = 0.0f;
 
 		float result = fixture.getViewToProjectionZ(viewZPos);
@@ -21618,7 +21618,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewToProjectionZ_fixture18_1()
 		throws Exception {
-		Camera fixture = getFixture18();
+		CameraView fixture = getFixture18();
 		float viewZPos = 0.0f;
 
 		float result = fixture.getViewToProjectionZ(viewZPos);
@@ -21637,7 +21637,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewToProjectionZ_fixture19_1()
 		throws Exception {
-		Camera fixture = getFixture19();
+		CameraView fixture = getFixture19();
 		float viewZPos = 0.0f;
 
 		float result = fixture.getViewToProjectionZ(viewZPos);
@@ -21656,7 +21656,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewToProjectionZ_fixture20_1()
 		throws Exception {
-		Camera fixture = getFixture20();
+		CameraView fixture = getFixture20();
 		float viewZPos = 0.0f;
 
 		float result = fixture.getViewToProjectionZ(viewZPos);
@@ -21675,7 +21675,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewToProjectionZ_fixture21_1()
 		throws Exception {
-		Camera fixture = getFixture21();
+		CameraView fixture = getFixture21();
 		float viewZPos = 0.0f;
 
 		float result = fixture.getViewToProjectionZ(viewZPos);
@@ -21694,7 +21694,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewToProjectionZ_fixture22_1()
 		throws Exception {
-		Camera fixture = getFixture22();
+		CameraView fixture = getFixture22();
 		float viewZPos = 0.0f;
 
 		float result = fixture.getViewToProjectionZ(viewZPos);
@@ -21713,7 +21713,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewToProjectionZ_fixture23_1()
 		throws Exception {
-		Camera fixture = getFixture23();
+		CameraView fixture = getFixture23();
 		float viewZPos = 0.0f;
 
 		float result = fixture.getViewToProjectionZ(viewZPos);
@@ -21732,7 +21732,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewToProjectionZ_fixture24_1()
 		throws Exception {
-		Camera fixture = getFixture24();
+		CameraView fixture = getFixture24();
 		float viewZPos = 0.0f;
 
 		float result = fixture.getViewToProjectionZ(viewZPos);
@@ -21751,7 +21751,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewToProjectionZ_fixture25_1()
 		throws Exception {
-		Camera fixture = getFixture25();
+		CameraView fixture = getFixture25();
 		float viewZPos = 0.0f;
 
 		float result = fixture.getViewToProjectionZ(viewZPos);
@@ -21770,7 +21770,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewToProjectionZ_fixture26_1()
 		throws Exception {
-		Camera fixture = getFixture26();
+		CameraView fixture = getFixture26();
 		float viewZPos = 0.0f;
 
 		float result = fixture.getViewToProjectionZ(viewZPos);
@@ -21789,7 +21789,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewToProjectionZ_fixture27_1()
 		throws Exception {
-		Camera fixture = getFixture27();
+		CameraView fixture = getFixture27();
 		float viewZPos = 0.0f;
 
 		float result = fixture.getViewToProjectionZ(viewZPos);
@@ -21808,7 +21808,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewToProjectionZ_fixture28_1()
 		throws Exception {
-		Camera fixture = getFixture28();
+		CameraView fixture = getFixture28();
 		float viewZPos = 0.0f;
 
 		float result = fixture.getViewToProjectionZ(viewZPos);
@@ -21827,7 +21827,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewToProjectionZ_fixture29_1()
 		throws Exception {
-		Camera fixture = getFixture29();
+		CameraView fixture = getFixture29();
 		float viewZPos = 0.0f;
 
 		float result = fixture.getViewToProjectionZ(viewZPos);
@@ -21846,7 +21846,7 @@ public class CameraTest {
 	@Test
 	public void testGetViewToProjectionZ_fixture2_2()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 		float viewZPos = 0;
 
 		float result = fixture.getViewToProjectionZ(viewZPos);
@@ -21865,7 +21865,7 @@ public class CameraTest {
 	@Test
 	public void testGetWidth_fixture1_1()
 		throws Exception {
-		Camera fixture = getFixture1();
+		CameraView fixture = getFixture1();
 
 		int result = fixture.getWidth();
 
@@ -21883,7 +21883,7 @@ public class CameraTest {
 	@Test
 	public void testGetWidth_fixture2_1()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 
 		int result = fixture.getWidth();
 
@@ -21901,7 +21901,7 @@ public class CameraTest {
 	@Test
 	public void testGetWidth_fixture3_1()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 
 		int result = fixture.getWidth();
 
@@ -21919,7 +21919,7 @@ public class CameraTest {
 	@Test
 	public void testGetWidth_fixture4_1()
 		throws Exception {
-		Camera fixture = getFixture4();
+		CameraView fixture = getFixture4();
 
 		int result = fixture.getWidth();
 
@@ -21937,7 +21937,7 @@ public class CameraTest {
 	@Test
 	public void testGetWidth_fixture5_1()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 
 		int result = fixture.getWidth();
 
@@ -21955,7 +21955,7 @@ public class CameraTest {
 	@Test
 	public void testGetWidth_fixture6_1()
 		throws Exception {
-		Camera fixture = getFixture6();
+		CameraView fixture = getFixture6();
 
 		int result = fixture.getWidth();
 
@@ -21973,7 +21973,7 @@ public class CameraTest {
 	@Test
 	public void testGetWidth_fixture7_1()
 		throws Exception {
-		Camera fixture = getFixture7();
+		CameraView fixture = getFixture7();
 
 		int result = fixture.getWidth();
 
@@ -21991,7 +21991,7 @@ public class CameraTest {
 	@Test
 	public void testGetWidth_fixture8_1()
 		throws Exception {
-		Camera fixture = getFixture8();
+		CameraView fixture = getFixture8();
 
 		int result = fixture.getWidth();
 
@@ -22009,7 +22009,7 @@ public class CameraTest {
 	@Test
 	public void testGetWidth_fixture9_1()
 		throws Exception {
-		Camera fixture = getFixture9();
+		CameraView fixture = getFixture9();
 
 		int result = fixture.getWidth();
 
@@ -22027,7 +22027,7 @@ public class CameraTest {
 	@Test
 	public void testGetWidth_fixture10_1()
 		throws Exception {
-		Camera fixture = getFixture10();
+		CameraView fixture = getFixture10();
 
 		int result = fixture.getWidth();
 
@@ -22045,7 +22045,7 @@ public class CameraTest {
 	@Test
 	public void testGetWidth_fixture11_1()
 		throws Exception {
-		Camera fixture = getFixture11();
+		CameraView fixture = getFixture11();
 
 		int result = fixture.getWidth();
 
@@ -22063,7 +22063,7 @@ public class CameraTest {
 	@Test
 	public void testGetWidth_fixture12_1()
 		throws Exception {
-		Camera fixture = getFixture12();
+		CameraView fixture = getFixture12();
 
 		int result = fixture.getWidth();
 
@@ -22081,7 +22081,7 @@ public class CameraTest {
 	@Test
 	public void testGetWidth_fixture13_1()
 		throws Exception {
-		Camera fixture = getFixture13();
+		CameraView fixture = getFixture13();
 
 		int result = fixture.getWidth();
 
@@ -22099,7 +22099,7 @@ public class CameraTest {
 	@Test
 	public void testGetWidth_fixture14_1()
 		throws Exception {
-		Camera fixture = getFixture14();
+		CameraView fixture = getFixture14();
 
 		int result = fixture.getWidth();
 
@@ -22117,7 +22117,7 @@ public class CameraTest {
 	@Test
 	public void testGetWidth_fixture15_1()
 		throws Exception {
-		Camera fixture = getFixture15();
+		CameraView fixture = getFixture15();
 
 		int result = fixture.getWidth();
 
@@ -22135,7 +22135,7 @@ public class CameraTest {
 	@Test
 	public void testGetWidth_fixture16_1()
 		throws Exception {
-		Camera fixture = getFixture16();
+		CameraView fixture = getFixture16();
 
 		int result = fixture.getWidth();
 
@@ -22153,7 +22153,7 @@ public class CameraTest {
 	@Test
 	public void testGetWidth_fixture17_1()
 		throws Exception {
-		Camera fixture = getFixture17();
+		CameraView fixture = getFixture17();
 
 		int result = fixture.getWidth();
 
@@ -22171,7 +22171,7 @@ public class CameraTest {
 	@Test
 	public void testGetWidth_fixture18_1()
 		throws Exception {
-		Camera fixture = getFixture18();
+		CameraView fixture = getFixture18();
 
 		int result = fixture.getWidth();
 
@@ -22189,7 +22189,7 @@ public class CameraTest {
 	@Test
 	public void testGetWidth_fixture19_1()
 		throws Exception {
-		Camera fixture = getFixture19();
+		CameraView fixture = getFixture19();
 
 		int result = fixture.getWidth();
 
@@ -22207,7 +22207,7 @@ public class CameraTest {
 	@Test
 	public void testGetWidth_fixture20_1()
 		throws Exception {
-		Camera fixture = getFixture20();
+		CameraView fixture = getFixture20();
 
 		int result = fixture.getWidth();
 
@@ -22225,7 +22225,7 @@ public class CameraTest {
 	@Test
 	public void testGetWidth_fixture21_1()
 		throws Exception {
-		Camera fixture = getFixture21();
+		CameraView fixture = getFixture21();
 
 		int result = fixture.getWidth();
 
@@ -22243,7 +22243,7 @@ public class CameraTest {
 	@Test
 	public void testGetWidth_fixture22_1()
 		throws Exception {
-		Camera fixture = getFixture22();
+		CameraView fixture = getFixture22();
 
 		int result = fixture.getWidth();
 
@@ -22261,7 +22261,7 @@ public class CameraTest {
 	@Test
 	public void testGetWidth_fixture23_1()
 		throws Exception {
-		Camera fixture = getFixture23();
+		CameraView fixture = getFixture23();
 
 		int result = fixture.getWidth();
 
@@ -22279,7 +22279,7 @@ public class CameraTest {
 	@Test
 	public void testGetWidth_fixture24_1()
 		throws Exception {
-		Camera fixture = getFixture24();
+		CameraView fixture = getFixture24();
 
 		int result = fixture.getWidth();
 
@@ -22297,7 +22297,7 @@ public class CameraTest {
 	@Test
 	public void testGetWidth_fixture25_1()
 		throws Exception {
-		Camera fixture = getFixture25();
+		CameraView fixture = getFixture25();
 
 		int result = fixture.getWidth();
 
@@ -22315,7 +22315,7 @@ public class CameraTest {
 	@Test
 	public void testGetWidth_fixture26_1()
 		throws Exception {
-		Camera fixture = getFixture26();
+		CameraView fixture = getFixture26();
 
 		int result = fixture.getWidth();
 
@@ -22333,7 +22333,7 @@ public class CameraTest {
 	@Test
 	public void testGetWidth_fixture27_1()
 		throws Exception {
-		Camera fixture = getFixture27();
+		CameraView fixture = getFixture27();
 
 		int result = fixture.getWidth();
 
@@ -22351,7 +22351,7 @@ public class CameraTest {
 	@Test
 	public void testGetWidth_fixture28_1()
 		throws Exception {
-		Camera fixture = getFixture28();
+		CameraView fixture = getFixture28();
 
 		int result = fixture.getWidth();
 
@@ -22369,7 +22369,7 @@ public class CameraTest {
 	@Test
 	public void testGetWidth_fixture29_1()
 		throws Exception {
-		Camera fixture = getFixture29();
+		CameraView fixture = getFixture29();
 
 		int result = fixture.getWidth();
 
@@ -22414,7 +22414,7 @@ public class CameraTest {
 	@Test
 	public void testGetWorldCoordinates_fixture2_1()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 		Vector2f screenPos = Vector2f.ZERO;
 		float projectionZPos = 0.0f;
 
@@ -22441,7 +22441,7 @@ public class CameraTest {
 	@Test
 	public void testGetWorldCoordinates_fixture3_1()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 		Vector2f screenPos = new Vector2f();
 		float projectionZPos = 1.0f;
 
@@ -22468,7 +22468,7 @@ public class CameraTest {
 	@Test
 	public void testGetWorldCoordinates_fixture4_1()
 		throws Exception {
-		Camera fixture = getFixture4();
+		CameraView fixture = getFixture4();
 		Vector2f screenPos = new Vector2f(-1.0f, -1.0f);
 		float projectionZPos = 1.0f;
 
@@ -22495,7 +22495,7 @@ public class CameraTest {
 	@Test
 	public void testGetWorldCoordinates_fixture5_1()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 		Vector2f screenPos = new Vector2f(0.0f, 0.0f);
 		float projectionZPos = 1.0f;
 
@@ -22547,7 +22547,7 @@ public class CameraTest {
 	@Test
 	public void testGetWorldCoordinates_fixture8_1()
 		throws Exception {
-		Camera fixture = getFixture8();
+		CameraView fixture = getFixture8();
 		Vector2f screenPos = Vector2f.UNIT_XY;
 		float projectionZPos = 1.0f;
 
@@ -22574,7 +22574,7 @@ public class CameraTest {
 	@Test
 	public void testGetWorldCoordinates_fixture9_1()
 		throws Exception {
-		Camera fixture = getFixture9();
+		CameraView fixture = getFixture9();
 		Vector2f screenPos = Vector2f.ZERO;
 		float projectionZPos = 1.0f;
 
@@ -22601,7 +22601,7 @@ public class CameraTest {
 	@Test
 	public void testGetWorldCoordinates_fixture10_1()
 		throws Exception {
-		Camera fixture = getFixture10();
+		CameraView fixture = getFixture10();
 		Vector2f screenPos = Vector2f.ZERO;
 		float projectionZPos = 1.0f;
 
@@ -22628,7 +22628,7 @@ public class CameraTest {
 	@Test
 	public void testGetWorldCoordinates_fixture11_1()
 		throws Exception {
-		Camera fixture = getFixture11();
+		CameraView fixture = getFixture11();
 		Vector2f screenPos = Vector2f.ZERO;
 		float projectionZPos = 1.0f;
 
@@ -22655,7 +22655,7 @@ public class CameraTest {
 	@Test
 	public void testGetWorldCoordinates_fixture12_1()
 		throws Exception {
-		Camera fixture = getFixture12();
+		CameraView fixture = getFixture12();
 		Vector2f screenPos = Vector2f.ZERO;
 		float projectionZPos = 1.0f;
 
@@ -22682,7 +22682,7 @@ public class CameraTest {
 	@Test
 	public void testGetWorldCoordinates_fixture13_1()
 		throws Exception {
-		Camera fixture = getFixture13();
+		CameraView fixture = getFixture13();
 		Vector2f screenPos = Vector2f.ZERO;
 		float projectionZPos = 1.0f;
 
@@ -22709,7 +22709,7 @@ public class CameraTest {
 	@Test
 	public void testGetWorldCoordinates_fixture14_1()
 		throws Exception {
-		Camera fixture = getFixture14();
+		CameraView fixture = getFixture14();
 		Vector2f screenPos = Vector2f.ZERO;
 		float projectionZPos = 1.0f;
 
@@ -22736,7 +22736,7 @@ public class CameraTest {
 	@Test
 	public void testGetWorldCoordinates_fixture15_1()
 		throws Exception {
-		Camera fixture = getFixture15();
+		CameraView fixture = getFixture15();
 		Vector2f screenPos = Vector2f.ZERO;
 		float projectionZPos = 1.0f;
 
@@ -22763,7 +22763,7 @@ public class CameraTest {
 	@Test
 	public void testGetWorldCoordinates_fixture16_1()
 		throws Exception {
-		Camera fixture = getFixture16();
+		CameraView fixture = getFixture16();
 		Vector2f screenPos = Vector2f.ZERO;
 		float projectionZPos = 1.0f;
 
@@ -22790,7 +22790,7 @@ public class CameraTest {
 	@Test
 	public void testGetWorldCoordinates_fixture17_1()
 		throws Exception {
-		Camera fixture = getFixture17();
+		CameraView fixture = getFixture17();
 		Vector2f screenPos = Vector2f.ZERO;
 		float projectionZPos = 1.0f;
 
@@ -22817,7 +22817,7 @@ public class CameraTest {
 	@Test
 	public void testGetWorldCoordinates_fixture18_1()
 		throws Exception {
-		Camera fixture = getFixture18();
+		CameraView fixture = getFixture18();
 		Vector2f screenPos = Vector2f.ZERO;
 		float projectionZPos = 1.0f;
 
@@ -22844,7 +22844,7 @@ public class CameraTest {
 	@Test
 	public void testGetWorldCoordinates_fixture19_1()
 		throws Exception {
-		Camera fixture = getFixture19();
+		CameraView fixture = getFixture19();
 		Vector2f screenPos = Vector2f.ZERO;
 		float projectionZPos = 1.0f;
 
@@ -22871,7 +22871,7 @@ public class CameraTest {
 	@Test
 	public void testGetWorldCoordinates_fixture20_1()
 		throws Exception {
-		Camera fixture = getFixture20();
+		CameraView fixture = getFixture20();
 		Vector2f screenPos = Vector2f.ZERO;
 		float projectionZPos = 1.0f;
 
@@ -22898,7 +22898,7 @@ public class CameraTest {
 	@Test
 	public void testGetWorldCoordinates_fixture21_1()
 		throws Exception {
-		Camera fixture = getFixture21();
+		CameraView fixture = getFixture21();
 		Vector2f screenPos = Vector2f.ZERO;
 		float projectionZPos = 1.0f;
 
@@ -22925,7 +22925,7 @@ public class CameraTest {
 	@Test
 	public void testGetWorldCoordinates_fixture22_1()
 		throws Exception {
-		Camera fixture = getFixture22();
+		CameraView fixture = getFixture22();
 		Vector2f screenPos = Vector2f.ZERO;
 		float projectionZPos = 1.0f;
 
@@ -22952,7 +22952,7 @@ public class CameraTest {
 	@Test
 	public void testGetWorldCoordinates_fixture23_1()
 		throws Exception {
-		Camera fixture = getFixture23();
+		CameraView fixture = getFixture23();
 		Vector2f screenPos = Vector2f.ZERO;
 		float projectionZPos = 1.0f;
 
@@ -22979,7 +22979,7 @@ public class CameraTest {
 	@Test
 	public void testGetWorldCoordinates_fixture24_1()
 		throws Exception {
-		Camera fixture = getFixture24();
+		CameraView fixture = getFixture24();
 		Vector2f screenPos = Vector2f.ZERO;
 		float projectionZPos = 1.0f;
 
@@ -23006,7 +23006,7 @@ public class CameraTest {
 	@Test
 	public void testGetWorldCoordinates_fixture25_1()
 		throws Exception {
-		Camera fixture = getFixture25();
+		CameraView fixture = getFixture25();
 		Vector2f screenPos = Vector2f.ZERO;
 		float projectionZPos = 1.0f;
 
@@ -23033,7 +23033,7 @@ public class CameraTest {
 	@Test
 	public void testGetWorldCoordinates_fixture26_1()
 		throws Exception {
-		Camera fixture = getFixture26();
+		CameraView fixture = getFixture26();
 		Vector2f screenPos = Vector2f.ZERO;
 		float projectionZPos = 1.0f;
 
@@ -23060,7 +23060,7 @@ public class CameraTest {
 	@Test
 	public void testGetWorldCoordinates_fixture27_1()
 		throws Exception {
-		Camera fixture = getFixture27();
+		CameraView fixture = getFixture27();
 		Vector2f screenPos = Vector2f.ZERO;
 		float projectionZPos = 1.0f;
 
@@ -23087,7 +23087,7 @@ public class CameraTest {
 	@Test
 	public void testGetWorldCoordinates_fixture28_1()
 		throws Exception {
-		Camera fixture = getFixture28();
+		CameraView fixture = getFixture28();
 		Vector2f screenPos = Vector2f.ZERO;
 		float projectionZPos = 1.0f;
 
@@ -23114,7 +23114,7 @@ public class CameraTest {
 	@Test
 	public void testGetWorldCoordinates_fixture29_1()
 		throws Exception {
-		Camera fixture = getFixture29();
+		CameraView fixture = getFixture29();
 		Vector2f screenPos = Vector2f.ZERO;
 		float projectionZPos = 1.0f;
 
@@ -23168,7 +23168,7 @@ public class CameraTest {
 	@Test
 	public void testGetWorldCoordinates_fixture2_2()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 		Vector2f screenPos = new Vector2f(-1.0f, -1.0f);
 		float projectionZPos = -1.0f;
 
@@ -23223,7 +23223,7 @@ public class CameraTest {
 	@Test
 	public void testGetWorldCoordinates_fixture2_3()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 		Vector2f screenPosition = new Vector2f(0.0f, 1.0f);
 		float projectionZPos = 0.0f;
 		Vector3f store = null;
@@ -23251,7 +23251,7 @@ public class CameraTest {
 	@Test
 	public void testGetWorldCoordinates_fixture3_2()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 		Vector2f screenPosition = new Vector2f(1.0f, 0.0f);
 		float projectionZPos = 1.0f;
 		Vector3f store = null;
@@ -23279,7 +23279,7 @@ public class CameraTest {
 	@Test
 	public void testGetWorldCoordinates_fixture4_2()
 		throws Exception {
-		Camera fixture = getFixture4();
+		CameraView fixture = getFixture4();
 		Vector2f screenPosition = new Vector2f(1.0f, 1.0f);
 		float projectionZPos = 1.0f;
 		Vector3f store = null;
@@ -23307,7 +23307,7 @@ public class CameraTest {
 	@Test
 	public void testGetWorldCoordinates_fixture6_2()
 		throws Exception {
-		Camera fixture = getFixture6();
+		CameraView fixture = getFixture6();
 		Vector2f screenPosition = new Vector2f(0.0f, 0.0f);
 		float projectionZPos = 1.0f;
 		Vector3f store = null;
@@ -23335,7 +23335,7 @@ public class CameraTest {
 	@Test
 	public void testGetWorldCoordinates_fixture7_1()
 		throws Exception {
-		Camera fixture = getFixture7();
+		CameraView fixture = getFixture7();
 		Vector2f screenPosition = new Vector2f(0.0f, 1.0f);
 		float projectionZPos = 1.0f;
 		Vector3f store = null;
@@ -23363,7 +23363,7 @@ public class CameraTest {
 	@Test
 	public void testGetWorldCoordinates_fixture8_2()
 		throws Exception {
-		Camera fixture = getFixture8();
+		CameraView fixture = getFixture8();
 		Vector2f screenPosition = new Vector2f(0.0f, 1.0f);
 		float projectionZPos = 1.0f;
 		Vector3f store = null;
@@ -23391,7 +23391,7 @@ public class CameraTest {
 	@Test
 	public void testGetWorldCoordinates_fixture9_2()
 		throws Exception {
-		Camera fixture = getFixture9();
+		CameraView fixture = getFixture9();
 		Vector2f screenPosition = new Vector2f(0.0f, 1.0f);
 		float projectionZPos = 1.0f;
 		Vector3f store = null;
@@ -23419,7 +23419,7 @@ public class CameraTest {
 	@Test
 	public void testGetWorldCoordinates_fixture10_2()
 		throws Exception {
-		Camera fixture = getFixture10();
+		CameraView fixture = getFixture10();
 		Vector2f screenPosition = new Vector2f(0.0f, 1.0f);
 		float projectionZPos = 1.0f;
 		Vector3f store = null;
@@ -23447,7 +23447,7 @@ public class CameraTest {
 	@Test
 	public void testGetWorldCoordinates_fixture11_2()
 		throws Exception {
-		Camera fixture = getFixture11();
+		CameraView fixture = getFixture11();
 		Vector2f screenPosition = new Vector2f(0.0f, 1.0f);
 		float projectionZPos = 1.0f;
 		Vector3f store = null;
@@ -23475,7 +23475,7 @@ public class CameraTest {
 	@Test
 	public void testGetWorldCoordinates_fixture12_2()
 		throws Exception {
-		Camera fixture = getFixture12();
+		CameraView fixture = getFixture12();
 		Vector2f screenPosition = new Vector2f(0.0f, 1.0f);
 		float projectionZPos = 1.0f;
 		Vector3f store = null;
@@ -23503,7 +23503,7 @@ public class CameraTest {
 	@Test
 	public void testGetWorldCoordinates_fixture13_2()
 		throws Exception {
-		Camera fixture = getFixture13();
+		CameraView fixture = getFixture13();
 		Vector2f screenPosition = new Vector2f(0.0f, 1.0f);
 		float projectionZPos = 1.0f;
 		Vector3f store = null;
@@ -23531,7 +23531,7 @@ public class CameraTest {
 	@Test
 	public void testGetWorldCoordinates_fixture14_2()
 		throws Exception {
-		Camera fixture = getFixture14();
+		CameraView fixture = getFixture14();
 		Vector2f screenPosition = new Vector2f(0.0f, 1.0f);
 		float projectionZPos = 1.0f;
 		Vector3f store = null;
@@ -23559,7 +23559,7 @@ public class CameraTest {
 	@Test
 	public void testGetWorldCoordinates_fixture15_2()
 		throws Exception {
-		Camera fixture = getFixture15();
+		CameraView fixture = getFixture15();
 		Vector2f screenPosition = new Vector2f(0.0f, 1.0f);
 		float projectionZPos = 1.0f;
 		Vector3f store = null;
@@ -23587,7 +23587,7 @@ public class CameraTest {
 	@Test
 	public void testGetWorldCoordinates_fixture16_2()
 		throws Exception {
-		Camera fixture = getFixture16();
+		CameraView fixture = getFixture16();
 		Vector2f screenPosition = new Vector2f(0.0f, 1.0f);
 		float projectionZPos = 1.0f;
 		Vector3f store = null;
@@ -23615,7 +23615,7 @@ public class CameraTest {
 	@Test
 	public void testGetWorldCoordinates_fixture17_2()
 		throws Exception {
-		Camera fixture = getFixture17();
+		CameraView fixture = getFixture17();
 		Vector2f screenPosition = new Vector2f(0.0f, 1.0f);
 		float projectionZPos = 1.0f;
 		Vector3f store = null;
@@ -23643,7 +23643,7 @@ public class CameraTest {
 	@Test
 	public void testGetWorldCoordinates_fixture18_2()
 		throws Exception {
-		Camera fixture = getFixture18();
+		CameraView fixture = getFixture18();
 		Vector2f screenPosition = new Vector2f(0.0f, 1.0f);
 		float projectionZPos = 1.0f;
 		Vector3f store = null;
@@ -23671,7 +23671,7 @@ public class CameraTest {
 	@Test
 	public void testGetWorldCoordinates_fixture19_2()
 		throws Exception {
-		Camera fixture = getFixture19();
+		CameraView fixture = getFixture19();
 		Vector2f screenPosition = new Vector2f(0.0f, 1.0f);
 		float projectionZPos = 1.0f;
 		Vector3f store = null;
@@ -23699,7 +23699,7 @@ public class CameraTest {
 	@Test
 	public void testGetWorldCoordinates_fixture20_2()
 		throws Exception {
-		Camera fixture = getFixture20();
+		CameraView fixture = getFixture20();
 		Vector2f screenPosition = new Vector2f(0.0f, 1.0f);
 		float projectionZPos = 1.0f;
 		Vector3f store = null;
@@ -23727,7 +23727,7 @@ public class CameraTest {
 	@Test
 	public void testGetWorldCoordinates_fixture21_2()
 		throws Exception {
-		Camera fixture = getFixture21();
+		CameraView fixture = getFixture21();
 		Vector2f screenPosition = new Vector2f(0.0f, 1.0f);
 		float projectionZPos = 1.0f;
 		Vector3f store = null;
@@ -23755,7 +23755,7 @@ public class CameraTest {
 	@Test
 	public void testGetWorldCoordinates_fixture22_2()
 		throws Exception {
-		Camera fixture = getFixture22();
+		CameraView fixture = getFixture22();
 		Vector2f screenPosition = new Vector2f(0.0f, 1.0f);
 		float projectionZPos = 1.0f;
 		Vector3f store = null;
@@ -23783,7 +23783,7 @@ public class CameraTest {
 	@Test
 	public void testGetWorldCoordinates_fixture23_2()
 		throws Exception {
-		Camera fixture = getFixture23();
+		CameraView fixture = getFixture23();
 		Vector2f screenPosition = new Vector2f(0.0f, 1.0f);
 		float projectionZPos = 1.0f;
 		Vector3f store = null;
@@ -23811,7 +23811,7 @@ public class CameraTest {
 	@Test
 	public void testGetWorldCoordinates_fixture24_2()
 		throws Exception {
-		Camera fixture = getFixture24();
+		CameraView fixture = getFixture24();
 		Vector2f screenPosition = new Vector2f(0.0f, 1.0f);
 		float projectionZPos = 1.0f;
 		Vector3f store = null;
@@ -23839,7 +23839,7 @@ public class CameraTest {
 	@Test
 	public void testGetWorldCoordinates_fixture25_2()
 		throws Exception {
-		Camera fixture = getFixture25();
+		CameraView fixture = getFixture25();
 		Vector2f screenPosition = new Vector2f(0.0f, 1.0f);
 		float projectionZPos = 1.0f;
 		Vector3f store = null;
@@ -23867,7 +23867,7 @@ public class CameraTest {
 	@Test
 	public void testGetWorldCoordinates_fixture26_2()
 		throws Exception {
-		Camera fixture = getFixture26();
+		CameraView fixture = getFixture26();
 		Vector2f screenPosition = new Vector2f(0.0f, 1.0f);
 		float projectionZPos = 1.0f;
 		Vector3f store = null;
@@ -23895,7 +23895,7 @@ public class CameraTest {
 	@Test
 	public void testGetWorldCoordinates_fixture27_2()
 		throws Exception {
-		Camera fixture = getFixture27();
+		CameraView fixture = getFixture27();
 		Vector2f screenPosition = new Vector2f(0.0f, 1.0f);
 		float projectionZPos = 1.0f;
 		Vector3f store = null;
@@ -23923,7 +23923,7 @@ public class CameraTest {
 	@Test
 	public void testGetWorldCoordinates_fixture28_2()
 		throws Exception {
-		Camera fixture = getFixture28();
+		CameraView fixture = getFixture28();
 		Vector2f screenPosition = new Vector2f(0.0f, 1.0f);
 		float projectionZPos = 1.0f;
 		Vector3f store = null;
@@ -23951,7 +23951,7 @@ public class CameraTest {
 	@Test
 	public void testGetWorldCoordinates_fixture29_2()
 		throws Exception {
-		Camera fixture = getFixture29();
+		CameraView fixture = getFixture29();
 		Vector2f screenPosition = new Vector2f(0.0f, 1.0f);
 		float projectionZPos = 1.0f;
 		Vector3f store = null;
@@ -24007,7 +24007,7 @@ public class CameraTest {
 	@Test
 	public void testGetWorldCoordinates_fixture2_4()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 		Vector2f screenPosition = new Vector2f(1.0f, 1.0f);
 		float projectionZPos = -1.0f;
 		Vector3f store = null;
@@ -24035,7 +24035,7 @@ public class CameraTest {
 	@Test
 	public void testIsParallelProjection_fixture1_1()
 		throws Exception {
-		Camera fixture = getFixture1();
+		CameraView fixture = getFixture1();
 
 		boolean result = fixture.isParallelProjection();
 
@@ -24053,7 +24053,7 @@ public class CameraTest {
 	@Test
 	public void testIsParallelProjection_fixture2_1()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 
 		boolean result = fixture.isParallelProjection();
 
@@ -24071,7 +24071,7 @@ public class CameraTest {
 	@Test
 	public void testIsParallelProjection_fixture3_1()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 
 		boolean result = fixture.isParallelProjection();
 
@@ -24089,7 +24089,7 @@ public class CameraTest {
 	@Test
 	public void testIsParallelProjection_fixture4_1()
 		throws Exception {
-		Camera fixture = getFixture4();
+		CameraView fixture = getFixture4();
 
 		boolean result = fixture.isParallelProjection();
 
@@ -24107,7 +24107,7 @@ public class CameraTest {
 	@Test
 	public void testIsParallelProjection_fixture5_1()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 
 		boolean result = fixture.isParallelProjection();
 
@@ -24125,7 +24125,7 @@ public class CameraTest {
 	@Test
 	public void testIsParallelProjection_fixture6_1()
 		throws Exception {
-		Camera fixture = getFixture6();
+		CameraView fixture = getFixture6();
 
 		boolean result = fixture.isParallelProjection();
 
@@ -24143,7 +24143,7 @@ public class CameraTest {
 	@Test
 	public void testIsParallelProjection_fixture7_1()
 		throws Exception {
-		Camera fixture = getFixture7();
+		CameraView fixture = getFixture7();
 
 		boolean result = fixture.isParallelProjection();
 
@@ -24161,7 +24161,7 @@ public class CameraTest {
 	@Test
 	public void testIsParallelProjection_fixture8_1()
 		throws Exception {
-		Camera fixture = getFixture8();
+		CameraView fixture = getFixture8();
 
 		boolean result = fixture.isParallelProjection();
 
@@ -24179,7 +24179,7 @@ public class CameraTest {
 	@Test
 	public void testIsParallelProjection_fixture9_1()
 		throws Exception {
-		Camera fixture = getFixture9();
+		CameraView fixture = getFixture9();
 
 		boolean result = fixture.isParallelProjection();
 
@@ -24197,7 +24197,7 @@ public class CameraTest {
 	@Test
 	public void testIsParallelProjection_fixture10_1()
 		throws Exception {
-		Camera fixture = getFixture10();
+		CameraView fixture = getFixture10();
 
 		boolean result = fixture.isParallelProjection();
 
@@ -24215,7 +24215,7 @@ public class CameraTest {
 	@Test
 	public void testIsParallelProjection_fixture11_1()
 		throws Exception {
-		Camera fixture = getFixture11();
+		CameraView fixture = getFixture11();
 
 		boolean result = fixture.isParallelProjection();
 
@@ -24233,7 +24233,7 @@ public class CameraTest {
 	@Test
 	public void testIsParallelProjection_fixture12_1()
 		throws Exception {
-		Camera fixture = getFixture12();
+		CameraView fixture = getFixture12();
 
 		boolean result = fixture.isParallelProjection();
 
@@ -24251,7 +24251,7 @@ public class CameraTest {
 	@Test
 	public void testIsParallelProjection_fixture13_1()
 		throws Exception {
-		Camera fixture = getFixture13();
+		CameraView fixture = getFixture13();
 
 		boolean result = fixture.isParallelProjection();
 
@@ -24269,7 +24269,7 @@ public class CameraTest {
 	@Test
 	public void testIsParallelProjection_fixture14_1()
 		throws Exception {
-		Camera fixture = getFixture14();
+		CameraView fixture = getFixture14();
 
 		boolean result = fixture.isParallelProjection();
 
@@ -24287,7 +24287,7 @@ public class CameraTest {
 	@Test
 	public void testIsParallelProjection_fixture15_1()
 		throws Exception {
-		Camera fixture = getFixture15();
+		CameraView fixture = getFixture15();
 
 		boolean result = fixture.isParallelProjection();
 
@@ -24305,7 +24305,7 @@ public class CameraTest {
 	@Test
 	public void testIsParallelProjection_fixture16_1()
 		throws Exception {
-		Camera fixture = getFixture16();
+		CameraView fixture = getFixture16();
 
 		boolean result = fixture.isParallelProjection();
 
@@ -24323,7 +24323,7 @@ public class CameraTest {
 	@Test
 	public void testIsParallelProjection_fixture17_1()
 		throws Exception {
-		Camera fixture = getFixture17();
+		CameraView fixture = getFixture17();
 
 		boolean result = fixture.isParallelProjection();
 
@@ -24341,7 +24341,7 @@ public class CameraTest {
 	@Test
 	public void testIsParallelProjection_fixture18_1()
 		throws Exception {
-		Camera fixture = getFixture18();
+		CameraView fixture = getFixture18();
 
 		boolean result = fixture.isParallelProjection();
 
@@ -24359,7 +24359,7 @@ public class CameraTest {
 	@Test
 	public void testIsParallelProjection_fixture19_1()
 		throws Exception {
-		Camera fixture = getFixture19();
+		CameraView fixture = getFixture19();
 
 		boolean result = fixture.isParallelProjection();
 
@@ -24377,7 +24377,7 @@ public class CameraTest {
 	@Test
 	public void testIsParallelProjection_fixture20_1()
 		throws Exception {
-		Camera fixture = getFixture20();
+		CameraView fixture = getFixture20();
 
 		boolean result = fixture.isParallelProjection();
 
@@ -24395,7 +24395,7 @@ public class CameraTest {
 	@Test
 	public void testIsParallelProjection_fixture21_1()
 		throws Exception {
-		Camera fixture = getFixture21();
+		CameraView fixture = getFixture21();
 
 		boolean result = fixture.isParallelProjection();
 
@@ -24413,7 +24413,7 @@ public class CameraTest {
 	@Test
 	public void testIsParallelProjection_fixture22_1()
 		throws Exception {
-		Camera fixture = getFixture22();
+		CameraView fixture = getFixture22();
 
 		boolean result = fixture.isParallelProjection();
 
@@ -24431,7 +24431,7 @@ public class CameraTest {
 	@Test
 	public void testIsParallelProjection_fixture23_1()
 		throws Exception {
-		Camera fixture = getFixture23();
+		CameraView fixture = getFixture23();
 
 		boolean result = fixture.isParallelProjection();
 
@@ -24449,7 +24449,7 @@ public class CameraTest {
 	@Test
 	public void testIsParallelProjection_fixture24_1()
 		throws Exception {
-		Camera fixture = getFixture24();
+		CameraView fixture = getFixture24();
 
 		boolean result = fixture.isParallelProjection();
 
@@ -24467,7 +24467,7 @@ public class CameraTest {
 	@Test
 	public void testIsParallelProjection_fixture25_1()
 		throws Exception {
-		Camera fixture = getFixture25();
+		CameraView fixture = getFixture25();
 
 		boolean result = fixture.isParallelProjection();
 
@@ -24485,7 +24485,7 @@ public class CameraTest {
 	@Test
 	public void testIsParallelProjection_fixture26_1()
 		throws Exception {
-		Camera fixture = getFixture26();
+		CameraView fixture = getFixture26();
 
 		boolean result = fixture.isParallelProjection();
 
@@ -24503,7 +24503,7 @@ public class CameraTest {
 	@Test
 	public void testIsParallelProjection_fixture27_1()
 		throws Exception {
-		Camera fixture = getFixture27();
+		CameraView fixture = getFixture27();
 
 		boolean result = fixture.isParallelProjection();
 
@@ -24521,7 +24521,7 @@ public class CameraTest {
 	@Test
 	public void testIsParallelProjection_fixture28_1()
 		throws Exception {
-		Camera fixture = getFixture28();
+		CameraView fixture = getFixture28();
 
 		boolean result = fixture.isParallelProjection();
 
@@ -24539,7 +24539,7 @@ public class CameraTest {
 	@Test
 	public void testIsParallelProjection_fixture29_1()
 		throws Exception {
-		Camera fixture = getFixture29();
+		CameraView fixture = getFixture29();
 
 		boolean result = fixture.isParallelProjection();
 
@@ -24557,7 +24557,7 @@ public class CameraTest {
 	@Test
 	public void testIsViewportChanged_fixture1_1()
 		throws Exception {
-		Camera fixture = getFixture1();
+		CameraView fixture = getFixture1();
 
 		boolean result = fixture.isViewportChanged();
 
@@ -24575,7 +24575,7 @@ public class CameraTest {
 	@Test
 	public void testIsViewportChanged_fixture2_1()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 
 		boolean result = fixture.isViewportChanged();
 
@@ -24593,7 +24593,7 @@ public class CameraTest {
 	@Test
 	public void testIsViewportChanged_fixture3_1()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 
 		boolean result = fixture.isViewportChanged();
 
@@ -24611,7 +24611,7 @@ public class CameraTest {
 	@Test
 	public void testIsViewportChanged_fixture4_1()
 		throws Exception {
-		Camera fixture = getFixture4();
+		CameraView fixture = getFixture4();
 
 		boolean result = fixture.isViewportChanged();
 
@@ -24629,7 +24629,7 @@ public class CameraTest {
 	@Test
 	public void testIsViewportChanged_fixture5_1()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 
 		boolean result = fixture.isViewportChanged();
 
@@ -24647,7 +24647,7 @@ public class CameraTest {
 	@Test
 	public void testIsViewportChanged_fixture6_1()
 		throws Exception {
-		Camera fixture = getFixture6();
+		CameraView fixture = getFixture6();
 
 		boolean result = fixture.isViewportChanged();
 
@@ -24665,7 +24665,7 @@ public class CameraTest {
 	@Test
 	public void testIsViewportChanged_fixture7_1()
 		throws Exception {
-		Camera fixture = getFixture7();
+		CameraView fixture = getFixture7();
 
 		boolean result = fixture.isViewportChanged();
 
@@ -24683,7 +24683,7 @@ public class CameraTest {
 	@Test
 	public void testIsViewportChanged_fixture8_1()
 		throws Exception {
-		Camera fixture = getFixture8();
+		CameraView fixture = getFixture8();
 
 		boolean result = fixture.isViewportChanged();
 
@@ -24701,7 +24701,7 @@ public class CameraTest {
 	@Test
 	public void testIsViewportChanged_fixture9_1()
 		throws Exception {
-		Camera fixture = getFixture9();
+		CameraView fixture = getFixture9();
 
 		boolean result = fixture.isViewportChanged();
 
@@ -24719,7 +24719,7 @@ public class CameraTest {
 	@Test
 	public void testIsViewportChanged_fixture10_1()
 		throws Exception {
-		Camera fixture = getFixture10();
+		CameraView fixture = getFixture10();
 
 		boolean result = fixture.isViewportChanged();
 
@@ -24737,7 +24737,7 @@ public class CameraTest {
 	@Test
 	public void testIsViewportChanged_fixture11_1()
 		throws Exception {
-		Camera fixture = getFixture11();
+		CameraView fixture = getFixture11();
 
 		boolean result = fixture.isViewportChanged();
 
@@ -24755,7 +24755,7 @@ public class CameraTest {
 	@Test
 	public void testIsViewportChanged_fixture12_1()
 		throws Exception {
-		Camera fixture = getFixture12();
+		CameraView fixture = getFixture12();
 
 		boolean result = fixture.isViewportChanged();
 
@@ -24773,7 +24773,7 @@ public class CameraTest {
 	@Test
 	public void testIsViewportChanged_fixture13_1()
 		throws Exception {
-		Camera fixture = getFixture13();
+		CameraView fixture = getFixture13();
 
 		boolean result = fixture.isViewportChanged();
 
@@ -24791,7 +24791,7 @@ public class CameraTest {
 	@Test
 	public void testIsViewportChanged_fixture14_1()
 		throws Exception {
-		Camera fixture = getFixture14();
+		CameraView fixture = getFixture14();
 
 		boolean result = fixture.isViewportChanged();
 
@@ -24809,7 +24809,7 @@ public class CameraTest {
 	@Test
 	public void testIsViewportChanged_fixture15_1()
 		throws Exception {
-		Camera fixture = getFixture15();
+		CameraView fixture = getFixture15();
 
 		boolean result = fixture.isViewportChanged();
 
@@ -24827,7 +24827,7 @@ public class CameraTest {
 	@Test
 	public void testIsViewportChanged_fixture16_1()
 		throws Exception {
-		Camera fixture = getFixture16();
+		CameraView fixture = getFixture16();
 
 		boolean result = fixture.isViewportChanged();
 
@@ -24845,7 +24845,7 @@ public class CameraTest {
 	@Test
 	public void testIsViewportChanged_fixture17_1()
 		throws Exception {
-		Camera fixture = getFixture17();
+		CameraView fixture = getFixture17();
 
 		boolean result = fixture.isViewportChanged();
 
@@ -24863,7 +24863,7 @@ public class CameraTest {
 	@Test
 	public void testIsViewportChanged_fixture18_1()
 		throws Exception {
-		Camera fixture = getFixture18();
+		CameraView fixture = getFixture18();
 
 		boolean result = fixture.isViewportChanged();
 
@@ -24881,7 +24881,7 @@ public class CameraTest {
 	@Test
 	public void testIsViewportChanged_fixture19_1()
 		throws Exception {
-		Camera fixture = getFixture19();
+		CameraView fixture = getFixture19();
 
 		boolean result = fixture.isViewportChanged();
 
@@ -24899,7 +24899,7 @@ public class CameraTest {
 	@Test
 	public void testIsViewportChanged_fixture20_1()
 		throws Exception {
-		Camera fixture = getFixture20();
+		CameraView fixture = getFixture20();
 
 		boolean result = fixture.isViewportChanged();
 
@@ -24917,7 +24917,7 @@ public class CameraTest {
 	@Test
 	public void testIsViewportChanged_fixture21_1()
 		throws Exception {
-		Camera fixture = getFixture21();
+		CameraView fixture = getFixture21();
 
 		boolean result = fixture.isViewportChanged();
 
@@ -24935,7 +24935,7 @@ public class CameraTest {
 	@Test
 	public void testIsViewportChanged_fixture22_1()
 		throws Exception {
-		Camera fixture = getFixture22();
+		CameraView fixture = getFixture22();
 
 		boolean result = fixture.isViewportChanged();
 
@@ -24953,7 +24953,7 @@ public class CameraTest {
 	@Test
 	public void testIsViewportChanged_fixture23_1()
 		throws Exception {
-		Camera fixture = getFixture23();
+		CameraView fixture = getFixture23();
 
 		boolean result = fixture.isViewportChanged();
 
@@ -24971,7 +24971,7 @@ public class CameraTest {
 	@Test
 	public void testIsViewportChanged_fixture24_1()
 		throws Exception {
-		Camera fixture = getFixture24();
+		CameraView fixture = getFixture24();
 
 		boolean result = fixture.isViewportChanged();
 
@@ -24989,7 +24989,7 @@ public class CameraTest {
 	@Test
 	public void testIsViewportChanged_fixture25_1()
 		throws Exception {
-		Camera fixture = getFixture25();
+		CameraView fixture = getFixture25();
 
 		boolean result = fixture.isViewportChanged();
 
@@ -25007,7 +25007,7 @@ public class CameraTest {
 	@Test
 	public void testIsViewportChanged_fixture26_1()
 		throws Exception {
-		Camera fixture = getFixture26();
+		CameraView fixture = getFixture26();
 
 		boolean result = fixture.isViewportChanged();
 
@@ -25025,7 +25025,7 @@ public class CameraTest {
 	@Test
 	public void testIsViewportChanged_fixture27_1()
 		throws Exception {
-		Camera fixture = getFixture27();
+		CameraView fixture = getFixture27();
 
 		boolean result = fixture.isViewportChanged();
 
@@ -25043,7 +25043,7 @@ public class CameraTest {
 	@Test
 	public void testIsViewportChanged_fixture28_1()
 		throws Exception {
-		Camera fixture = getFixture28();
+		CameraView fixture = getFixture28();
 
 		boolean result = fixture.isViewportChanged();
 
@@ -25061,7 +25061,7 @@ public class CameraTest {
 	@Test
 	public void testIsViewportChanged_fixture29_1()
 		throws Exception {
-		Camera fixture = getFixture29();
+		CameraView fixture = getFixture29();
 
 		boolean result = fixture.isViewportChanged();
 
@@ -25102,7 +25102,7 @@ public class CameraTest {
 	@Test
 	public void testLookAt_fixture2_1()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 		Vector3f pos = Vector3f.NEGATIVE_INFINITY;
 		Vector3f worldUpVector = Vector3f.NEGATIVE_INFINITY;
 
@@ -25121,7 +25121,7 @@ public class CameraTest {
 	@Test
 	public void testLookAt_fixture3_1()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 		Vector3f pos = Vector3f.POSITIVE_INFINITY;
 		Vector3f worldUpVector = Vector3f.POSITIVE_INFINITY;
 
@@ -25140,7 +25140,7 @@ public class CameraTest {
 	@Test
 	public void testLookAt_fixture4_1()
 		throws Exception {
-		Camera fixture = getFixture4();
+		CameraView fixture = getFixture4();
 		Vector3f pos = Vector3f.UNIT_X;
 		Vector3f worldUpVector = Vector3f.UNIT_X;
 
@@ -25159,7 +25159,7 @@ public class CameraTest {
 	@Test
 	public void testLookAt_fixture5_1()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 		Vector3f pos = Vector3f.UNIT_XYZ;
 		Vector3f worldUpVector = Vector3f.UNIT_XYZ;
 
@@ -25178,7 +25178,7 @@ public class CameraTest {
 	@Test
 	public void testLookAt_fixture6_1()
 		throws Exception {
-		Camera fixture = getFixture6();
+		CameraView fixture = getFixture6();
 		Vector3f pos = Vector3f.UNIT_Y;
 		Vector3f worldUpVector = Vector3f.UNIT_Y;
 
@@ -25197,7 +25197,7 @@ public class CameraTest {
 	@Test
 	public void testLookAt_fixture7_1()
 		throws Exception {
-		Camera fixture = getFixture7();
+		CameraView fixture = getFixture7();
 		Vector3f pos = Vector3f.UNIT_Z;
 		Vector3f worldUpVector = Vector3f.UNIT_Z;
 
@@ -25216,7 +25216,7 @@ public class CameraTest {
 	@Test
 	public void testLookAt_fixture8_1()
 		throws Exception {
-		Camera fixture = getFixture8();
+		CameraView fixture = getFixture8();
 		Vector3f pos = Vector3f.ZERO;
 		Vector3f worldUpVector = Vector3f.ZERO;
 
@@ -25235,7 +25235,7 @@ public class CameraTest {
 	@Test
 	public void testLookAt_fixture9_1()
 		throws Exception {
-		Camera fixture = getFixture9();
+		CameraView fixture = getFixture9();
 		Vector3f pos = new Vector3f();
 		Vector3f worldUpVector = new Vector3f();
 
@@ -25714,7 +25714,7 @@ public class CameraTest {
 	@Test
 	public void testLookAt_fixture3_2()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 		Vector3f pos = Vector3f.NAN;
 		Vector3f worldUpVector = Vector3f.NAN;
 
@@ -25755,7 +25755,7 @@ public class CameraTest {
 	@Test
 	public void testLookAtDirection_fixture2_1()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 		Vector3f direction = Vector3f.NEGATIVE_INFINITY;
 		Vector3f up = Vector3f.NEGATIVE_INFINITY;
 
@@ -25774,7 +25774,7 @@ public class CameraTest {
 	@Test
 	public void testLookAtDirection_fixture3_1()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 		Vector3f direction = Vector3f.POSITIVE_INFINITY;
 		Vector3f up = Vector3f.POSITIVE_INFINITY;
 
@@ -25793,7 +25793,7 @@ public class CameraTest {
 	@Test
 	public void testLookAtDirection_fixture4_1()
 		throws Exception {
-		Camera fixture = getFixture4();
+		CameraView fixture = getFixture4();
 		Vector3f direction = Vector3f.UNIT_X;
 		Vector3f up = Vector3f.UNIT_X;
 
@@ -25812,7 +25812,7 @@ public class CameraTest {
 	@Test
 	public void testLookAtDirection_fixture5_1()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 		Vector3f direction = Vector3f.UNIT_XYZ;
 		Vector3f up = Vector3f.UNIT_XYZ;
 
@@ -25831,7 +25831,7 @@ public class CameraTest {
 	@Test
 	public void testLookAtDirection_fixture6_1()
 		throws Exception {
-		Camera fixture = getFixture6();
+		CameraView fixture = getFixture6();
 		Vector3f direction = Vector3f.UNIT_Y;
 		Vector3f up = Vector3f.UNIT_Y;
 
@@ -25850,7 +25850,7 @@ public class CameraTest {
 	@Test
 	public void testLookAtDirection_fixture7_1()
 		throws Exception {
-		Camera fixture = getFixture7();
+		CameraView fixture = getFixture7();
 		Vector3f direction = Vector3f.UNIT_Z;
 		Vector3f up = Vector3f.UNIT_Z;
 
@@ -25869,7 +25869,7 @@ public class CameraTest {
 	@Test
 	public void testLookAtDirection_fixture8_1()
 		throws Exception {
-		Camera fixture = getFixture8();
+		CameraView fixture = getFixture8();
 		Vector3f direction = Vector3f.ZERO;
 		Vector3f up = Vector3f.ZERO;
 
@@ -25888,7 +25888,7 @@ public class CameraTest {
 	@Test
 	public void testLookAtDirection_fixture9_1()
 		throws Exception {
-		Camera fixture = getFixture9();
+		CameraView fixture = getFixture9();
 		Vector3f direction = new Vector3f();
 		Vector3f up = new Vector3f();
 
@@ -26367,7 +26367,7 @@ public class CameraTest {
 	@Test
 	public void testLookAtDirection_fixture3_2()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 		Vector3f direction = Vector3f.NAN;
 		Vector3f up = Vector3f.NAN;
 
@@ -26406,7 +26406,7 @@ public class CameraTest {
 	@Test
 	public void testNormalize_fixture2_1()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 
 		fixture.normalize();
 
@@ -26423,7 +26423,7 @@ public class CameraTest {
 	@Test
 	public void testNormalize_fixture3_1()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 
 		fixture.normalize();
 
@@ -26440,7 +26440,7 @@ public class CameraTest {
 	@Test
 	public void testNormalize_fixture4_1()
 		throws Exception {
-		Camera fixture = getFixture4();
+		CameraView fixture = getFixture4();
 
 		fixture.normalize();
 
@@ -26457,7 +26457,7 @@ public class CameraTest {
 	@Test
 	public void testNormalize_fixture5_1()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 
 		fixture.normalize();
 
@@ -26474,7 +26474,7 @@ public class CameraTest {
 	@Test
 	public void testNormalize_fixture6_1()
 		throws Exception {
-		Camera fixture = getFixture6();
+		CameraView fixture = getFixture6();
 
 		fixture.normalize();
 
@@ -26491,7 +26491,7 @@ public class CameraTest {
 	@Test
 	public void testNormalize_fixture7_1()
 		throws Exception {
-		Camera fixture = getFixture7();
+		CameraView fixture = getFixture7();
 
 		fixture.normalize();
 
@@ -26508,7 +26508,7 @@ public class CameraTest {
 	@Test
 	public void testNormalize_fixture8_1()
 		throws Exception {
-		Camera fixture = getFixture8();
+		CameraView fixture = getFixture8();
 
 		fixture.normalize();
 
@@ -26525,7 +26525,7 @@ public class CameraTest {
 	@Test
 	public void testNormalize_fixture9_1()
 		throws Exception {
-		Camera fixture = getFixture9();
+		CameraView fixture = getFixture9();
 
 		fixture.normalize();
 
@@ -26542,7 +26542,7 @@ public class CameraTest {
 	@Test
 	public void testNormalize_fixture10_1()
 		throws Exception {
-		Camera fixture = getFixture10();
+		CameraView fixture = getFixture10();
 
 		fixture.normalize();
 
@@ -26559,7 +26559,7 @@ public class CameraTest {
 	@Test
 	public void testNormalize_fixture11_1()
 		throws Exception {
-		Camera fixture = getFixture11();
+		CameraView fixture = getFixture11();
 
 		fixture.normalize();
 
@@ -26576,7 +26576,7 @@ public class CameraTest {
 	@Test
 	public void testNormalize_fixture12_1()
 		throws Exception {
-		Camera fixture = getFixture12();
+		CameraView fixture = getFixture12();
 
 		fixture.normalize();
 
@@ -26593,7 +26593,7 @@ public class CameraTest {
 	@Test
 	public void testNormalize_fixture13_1()
 		throws Exception {
-		Camera fixture = getFixture13();
+		CameraView fixture = getFixture13();
 
 		fixture.normalize();
 
@@ -26610,7 +26610,7 @@ public class CameraTest {
 	@Test
 	public void testNormalize_fixture14_1()
 		throws Exception {
-		Camera fixture = getFixture14();
+		CameraView fixture = getFixture14();
 
 		fixture.normalize();
 
@@ -26627,7 +26627,7 @@ public class CameraTest {
 	@Test
 	public void testNormalize_fixture15_1()
 		throws Exception {
-		Camera fixture = getFixture15();
+		CameraView fixture = getFixture15();
 
 		fixture.normalize();
 
@@ -26644,7 +26644,7 @@ public class CameraTest {
 	@Test
 	public void testNormalize_fixture16_1()
 		throws Exception {
-		Camera fixture = getFixture16();
+		CameraView fixture = getFixture16();
 
 		fixture.normalize();
 
@@ -26661,7 +26661,7 @@ public class CameraTest {
 	@Test
 	public void testNormalize_fixture17_1()
 		throws Exception {
-		Camera fixture = getFixture17();
+		CameraView fixture = getFixture17();
 
 		fixture.normalize();
 
@@ -26678,7 +26678,7 @@ public class CameraTest {
 	@Test
 	public void testNormalize_fixture18_1()
 		throws Exception {
-		Camera fixture = getFixture18();
+		CameraView fixture = getFixture18();
 
 		fixture.normalize();
 
@@ -26695,7 +26695,7 @@ public class CameraTest {
 	@Test
 	public void testNormalize_fixture19_1()
 		throws Exception {
-		Camera fixture = getFixture19();
+		CameraView fixture = getFixture19();
 
 		fixture.normalize();
 
@@ -26712,7 +26712,7 @@ public class CameraTest {
 	@Test
 	public void testNormalize_fixture20_1()
 		throws Exception {
-		Camera fixture = getFixture20();
+		CameraView fixture = getFixture20();
 
 		fixture.normalize();
 
@@ -26729,7 +26729,7 @@ public class CameraTest {
 	@Test
 	public void testNormalize_fixture21_1()
 		throws Exception {
-		Camera fixture = getFixture21();
+		CameraView fixture = getFixture21();
 
 		fixture.normalize();
 
@@ -26746,7 +26746,7 @@ public class CameraTest {
 	@Test
 	public void testNormalize_fixture22_1()
 		throws Exception {
-		Camera fixture = getFixture22();
+		CameraView fixture = getFixture22();
 
 		fixture.normalize();
 
@@ -26763,7 +26763,7 @@ public class CameraTest {
 	@Test
 	public void testNormalize_fixture23_1()
 		throws Exception {
-		Camera fixture = getFixture23();
+		CameraView fixture = getFixture23();
 
 		fixture.normalize();
 
@@ -26780,7 +26780,7 @@ public class CameraTest {
 	@Test
 	public void testNormalize_fixture24_1()
 		throws Exception {
-		Camera fixture = getFixture24();
+		CameraView fixture = getFixture24();
 
 		fixture.normalize();
 
@@ -26797,7 +26797,7 @@ public class CameraTest {
 	@Test
 	public void testNormalize_fixture25_1()
 		throws Exception {
-		Camera fixture = getFixture25();
+		CameraView fixture = getFixture25();
 
 		fixture.normalize();
 
@@ -26814,7 +26814,7 @@ public class CameraTest {
 	@Test
 	public void testNormalize_fixture26_1()
 		throws Exception {
-		Camera fixture = getFixture26();
+		CameraView fixture = getFixture26();
 
 		fixture.normalize();
 
@@ -26831,7 +26831,7 @@ public class CameraTest {
 	@Test
 	public void testNormalize_fixture27_1()
 		throws Exception {
-		Camera fixture = getFixture27();
+		CameraView fixture = getFixture27();
 
 		fixture.normalize();
 
@@ -26848,7 +26848,7 @@ public class CameraTest {
 	@Test
 	public void testNormalize_fixture28_1()
 		throws Exception {
-		Camera fixture = getFixture28();
+		CameraView fixture = getFixture28();
 
 		fixture.normalize();
 
@@ -26865,7 +26865,7 @@ public class CameraTest {
 	@Test
 	public void testNormalize_fixture29_1()
 		throws Exception {
-		Camera fixture = getFixture29();
+		CameraView fixture = getFixture29();
 
 		fixture.normalize();
 
@@ -26903,7 +26903,7 @@ public class CameraTest {
 	@Test
 	public void testOnFrameChange_fixture2_1()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 
 		fixture.onFrameChange();
 
@@ -26920,7 +26920,7 @@ public class CameraTest {
 	@Test
 	public void testOnFrameChange_fixture3_1()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 
 		fixture.onFrameChange();
 
@@ -26937,7 +26937,7 @@ public class CameraTest {
 	@Test
 	public void testOnFrameChange_fixture4_1()
 		throws Exception {
-		Camera fixture = getFixture4();
+		CameraView fixture = getFixture4();
 
 		fixture.onFrameChange();
 
@@ -26954,7 +26954,7 @@ public class CameraTest {
 	@Test
 	public void testOnFrameChange_fixture5_1()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 
 		fixture.onFrameChange();
 
@@ -26971,7 +26971,7 @@ public class CameraTest {
 	@Test
 	public void testOnFrameChange_fixture6_1()
 		throws Exception {
-		Camera fixture = getFixture6();
+		CameraView fixture = getFixture6();
 
 		fixture.onFrameChange();
 
@@ -26988,7 +26988,7 @@ public class CameraTest {
 	@Test
 	public void testOnFrameChange_fixture7_1()
 		throws Exception {
-		Camera fixture = getFixture7();
+		CameraView fixture = getFixture7();
 
 		fixture.onFrameChange();
 
@@ -27005,7 +27005,7 @@ public class CameraTest {
 	@Test
 	public void testOnFrameChange_fixture8_1()
 		throws Exception {
-		Camera fixture = getFixture8();
+		CameraView fixture = getFixture8();
 
 		fixture.onFrameChange();
 
@@ -27022,7 +27022,7 @@ public class CameraTest {
 	@Test
 	public void testOnFrameChange_fixture9_1()
 		throws Exception {
-		Camera fixture = getFixture9();
+		CameraView fixture = getFixture9();
 
 		fixture.onFrameChange();
 
@@ -27039,7 +27039,7 @@ public class CameraTest {
 	@Test
 	public void testOnFrameChange_fixture10_1()
 		throws Exception {
-		Camera fixture = getFixture10();
+		CameraView fixture = getFixture10();
 
 		fixture.onFrameChange();
 
@@ -27056,7 +27056,7 @@ public class CameraTest {
 	@Test
 	public void testOnFrameChange_fixture11_1()
 		throws Exception {
-		Camera fixture = getFixture11();
+		CameraView fixture = getFixture11();
 
 		fixture.onFrameChange();
 
@@ -27073,7 +27073,7 @@ public class CameraTest {
 	@Test
 	public void testOnFrameChange_fixture12_1()
 		throws Exception {
-		Camera fixture = getFixture12();
+		CameraView fixture = getFixture12();
 
 		fixture.onFrameChange();
 
@@ -27090,7 +27090,7 @@ public class CameraTest {
 	@Test
 	public void testOnFrameChange_fixture13_1()
 		throws Exception {
-		Camera fixture = getFixture13();
+		CameraView fixture = getFixture13();
 
 		fixture.onFrameChange();
 
@@ -27107,7 +27107,7 @@ public class CameraTest {
 	@Test
 	public void testOnFrameChange_fixture14_1()
 		throws Exception {
-		Camera fixture = getFixture14();
+		CameraView fixture = getFixture14();
 
 		fixture.onFrameChange();
 
@@ -27124,7 +27124,7 @@ public class CameraTest {
 	@Test
 	public void testOnFrameChange_fixture15_1()
 		throws Exception {
-		Camera fixture = getFixture15();
+		CameraView fixture = getFixture15();
 
 		fixture.onFrameChange();
 
@@ -27141,7 +27141,7 @@ public class CameraTest {
 	@Test
 	public void testOnFrameChange_fixture16_1()
 		throws Exception {
-		Camera fixture = getFixture16();
+		CameraView fixture = getFixture16();
 
 		fixture.onFrameChange();
 
@@ -27158,7 +27158,7 @@ public class CameraTest {
 	@Test
 	public void testOnFrameChange_fixture17_1()
 		throws Exception {
-		Camera fixture = getFixture17();
+		CameraView fixture = getFixture17();
 
 		fixture.onFrameChange();
 
@@ -27175,7 +27175,7 @@ public class CameraTest {
 	@Test
 	public void testOnFrameChange_fixture18_1()
 		throws Exception {
-		Camera fixture = getFixture18();
+		CameraView fixture = getFixture18();
 
 		fixture.onFrameChange();
 
@@ -27192,7 +27192,7 @@ public class CameraTest {
 	@Test
 	public void testOnFrameChange_fixture19_1()
 		throws Exception {
-		Camera fixture = getFixture19();
+		CameraView fixture = getFixture19();
 
 		fixture.onFrameChange();
 
@@ -27209,7 +27209,7 @@ public class CameraTest {
 	@Test
 	public void testOnFrameChange_fixture20_1()
 		throws Exception {
-		Camera fixture = getFixture20();
+		CameraView fixture = getFixture20();
 
 		fixture.onFrameChange();
 
@@ -27226,7 +27226,7 @@ public class CameraTest {
 	@Test
 	public void testOnFrameChange_fixture21_1()
 		throws Exception {
-		Camera fixture = getFixture21();
+		CameraView fixture = getFixture21();
 
 		fixture.onFrameChange();
 
@@ -27243,7 +27243,7 @@ public class CameraTest {
 	@Test
 	public void testOnFrameChange_fixture22_1()
 		throws Exception {
-		Camera fixture = getFixture22();
+		CameraView fixture = getFixture22();
 
 		fixture.onFrameChange();
 
@@ -27260,7 +27260,7 @@ public class CameraTest {
 	@Test
 	public void testOnFrameChange_fixture23_1()
 		throws Exception {
-		Camera fixture = getFixture23();
+		CameraView fixture = getFixture23();
 
 		fixture.onFrameChange();
 
@@ -27277,7 +27277,7 @@ public class CameraTest {
 	@Test
 	public void testOnFrameChange_fixture24_1()
 		throws Exception {
-		Camera fixture = getFixture24();
+		CameraView fixture = getFixture24();
 
 		fixture.onFrameChange();
 
@@ -27294,7 +27294,7 @@ public class CameraTest {
 	@Test
 	public void testOnFrameChange_fixture25_1()
 		throws Exception {
-		Camera fixture = getFixture25();
+		CameraView fixture = getFixture25();
 
 		fixture.onFrameChange();
 
@@ -27311,7 +27311,7 @@ public class CameraTest {
 	@Test
 	public void testOnFrameChange_fixture26_1()
 		throws Exception {
-		Camera fixture = getFixture26();
+		CameraView fixture = getFixture26();
 
 		fixture.onFrameChange();
 
@@ -27328,7 +27328,7 @@ public class CameraTest {
 	@Test
 	public void testOnFrameChange_fixture27_1()
 		throws Exception {
-		Camera fixture = getFixture27();
+		CameraView fixture = getFixture27();
 
 		fixture.onFrameChange();
 
@@ -27345,7 +27345,7 @@ public class CameraTest {
 	@Test
 	public void testOnFrameChange_fixture28_1()
 		throws Exception {
-		Camera fixture = getFixture28();
+		CameraView fixture = getFixture28();
 
 		fixture.onFrameChange();
 
@@ -27362,7 +27362,7 @@ public class CameraTest {
 	@Test
 	public void testOnFrameChange_fixture29_1()
 		throws Exception {
-		Camera fixture = getFixture29();
+		CameraView fixture = getFixture29();
 
 		fixture.onFrameChange();
 
@@ -27399,7 +27399,7 @@ public class CameraTest {
 	@Test
 	public void testOnFrustumChange_fixture2_1()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 
 		fixture.onFrustumChange();
 
@@ -27416,7 +27416,7 @@ public class CameraTest {
 	@Test
 	public void testOnFrustumChange_fixture3_1()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 
 		fixture.onFrustumChange();
 
@@ -27433,7 +27433,7 @@ public class CameraTest {
 	@Test
 	public void testOnFrustumChange_fixture4_1()
 		throws Exception {
-		Camera fixture = getFixture4();
+		CameraView fixture = getFixture4();
 
 		fixture.onFrustumChange();
 
@@ -27450,7 +27450,7 @@ public class CameraTest {
 	@Test
 	public void testOnFrustumChange_fixture5_1()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 
 		fixture.onFrustumChange();
 
@@ -27467,7 +27467,7 @@ public class CameraTest {
 	@Test
 	public void testOnFrustumChange_fixture6_1()
 		throws Exception {
-		Camera fixture = getFixture6();
+		CameraView fixture = getFixture6();
 
 		fixture.onFrustumChange();
 
@@ -27484,7 +27484,7 @@ public class CameraTest {
 	@Test
 	public void testOnFrustumChange_fixture7_1()
 		throws Exception {
-		Camera fixture = getFixture7();
+		CameraView fixture = getFixture7();
 
 		fixture.onFrustumChange();
 
@@ -27501,7 +27501,7 @@ public class CameraTest {
 	@Test
 	public void testOnFrustumChange_fixture8_1()
 		throws Exception {
-		Camera fixture = getFixture8();
+		CameraView fixture = getFixture8();
 
 		fixture.onFrustumChange();
 
@@ -27518,7 +27518,7 @@ public class CameraTest {
 	@Test
 	public void testOnFrustumChange_fixture9_1()
 		throws Exception {
-		Camera fixture = getFixture9();
+		CameraView fixture = getFixture9();
 
 		fixture.onFrustumChange();
 
@@ -27535,7 +27535,7 @@ public class CameraTest {
 	@Test
 	public void testOnFrustumChange_fixture10_1()
 		throws Exception {
-		Camera fixture = getFixture10();
+		CameraView fixture = getFixture10();
 
 		fixture.onFrustumChange();
 
@@ -27552,7 +27552,7 @@ public class CameraTest {
 	@Test
 	public void testOnFrustumChange_fixture11_1()
 		throws Exception {
-		Camera fixture = getFixture11();
+		CameraView fixture = getFixture11();
 
 		fixture.onFrustumChange();
 
@@ -27569,7 +27569,7 @@ public class CameraTest {
 	@Test
 	public void testOnFrustumChange_fixture12_1()
 		throws Exception {
-		Camera fixture = getFixture12();
+		CameraView fixture = getFixture12();
 
 		fixture.onFrustumChange();
 
@@ -27586,7 +27586,7 @@ public class CameraTest {
 	@Test
 	public void testOnFrustumChange_fixture13_1()
 		throws Exception {
-		Camera fixture = getFixture13();
+		CameraView fixture = getFixture13();
 
 		fixture.onFrustumChange();
 
@@ -27603,7 +27603,7 @@ public class CameraTest {
 	@Test
 	public void testOnFrustumChange_fixture14_1()
 		throws Exception {
-		Camera fixture = getFixture14();
+		CameraView fixture = getFixture14();
 
 		fixture.onFrustumChange();
 
@@ -27620,7 +27620,7 @@ public class CameraTest {
 	@Test
 	public void testOnFrustumChange_fixture15_1()
 		throws Exception {
-		Camera fixture = getFixture15();
+		CameraView fixture = getFixture15();
 
 		fixture.onFrustumChange();
 
@@ -27637,7 +27637,7 @@ public class CameraTest {
 	@Test
 	public void testOnFrustumChange_fixture16_1()
 		throws Exception {
-		Camera fixture = getFixture16();
+		CameraView fixture = getFixture16();
 
 		fixture.onFrustumChange();
 
@@ -27654,7 +27654,7 @@ public class CameraTest {
 	@Test
 	public void testOnFrustumChange_fixture17_1()
 		throws Exception {
-		Camera fixture = getFixture17();
+		CameraView fixture = getFixture17();
 
 		fixture.onFrustumChange();
 
@@ -27671,7 +27671,7 @@ public class CameraTest {
 	@Test
 	public void testOnFrustumChange_fixture18_1()
 		throws Exception {
-		Camera fixture = getFixture18();
+		CameraView fixture = getFixture18();
 
 		fixture.onFrustumChange();
 
@@ -27688,7 +27688,7 @@ public class CameraTest {
 	@Test
 	public void testOnFrustumChange_fixture19_1()
 		throws Exception {
-		Camera fixture = getFixture19();
+		CameraView fixture = getFixture19();
 
 		fixture.onFrustumChange();
 
@@ -27705,7 +27705,7 @@ public class CameraTest {
 	@Test
 	public void testOnFrustumChange_fixture20_1()
 		throws Exception {
-		Camera fixture = getFixture20();
+		CameraView fixture = getFixture20();
 
 		fixture.onFrustumChange();
 
@@ -27722,7 +27722,7 @@ public class CameraTest {
 	@Test
 	public void testOnFrustumChange_fixture21_1()
 		throws Exception {
-		Camera fixture = getFixture21();
+		CameraView fixture = getFixture21();
 
 		fixture.onFrustumChange();
 
@@ -27739,7 +27739,7 @@ public class CameraTest {
 	@Test
 	public void testOnFrustumChange_fixture22_1()
 		throws Exception {
-		Camera fixture = getFixture22();
+		CameraView fixture = getFixture22();
 
 		fixture.onFrustumChange();
 
@@ -27756,7 +27756,7 @@ public class CameraTest {
 	@Test
 	public void testOnFrustumChange_fixture23_1()
 		throws Exception {
-		Camera fixture = getFixture23();
+		CameraView fixture = getFixture23();
 
 		fixture.onFrustumChange();
 
@@ -27773,7 +27773,7 @@ public class CameraTest {
 	@Test
 	public void testOnFrustumChange_fixture24_1()
 		throws Exception {
-		Camera fixture = getFixture24();
+		CameraView fixture = getFixture24();
 
 		fixture.onFrustumChange();
 
@@ -27790,7 +27790,7 @@ public class CameraTest {
 	@Test
 	public void testOnFrustumChange_fixture25_1()
 		throws Exception {
-		Camera fixture = getFixture25();
+		CameraView fixture = getFixture25();
 
 		fixture.onFrustumChange();
 
@@ -27807,7 +27807,7 @@ public class CameraTest {
 	@Test
 	public void testOnFrustumChange_fixture26_1()
 		throws Exception {
-		Camera fixture = getFixture26();
+		CameraView fixture = getFixture26();
 
 		fixture.onFrustumChange();
 
@@ -27824,7 +27824,7 @@ public class CameraTest {
 	@Test
 	public void testOnFrustumChange_fixture27_1()
 		throws Exception {
-		Camera fixture = getFixture27();
+		CameraView fixture = getFixture27();
 
 		fixture.onFrustumChange();
 
@@ -27841,7 +27841,7 @@ public class CameraTest {
 	@Test
 	public void testOnFrustumChange_fixture28_1()
 		throws Exception {
-		Camera fixture = getFixture28();
+		CameraView fixture = getFixture28();
 
 		fixture.onFrustumChange();
 
@@ -27858,7 +27858,7 @@ public class CameraTest {
 	@Test
 	public void testOnFrustumChange_fixture29_1()
 		throws Exception {
-		Camera fixture = getFixture29();
+		CameraView fixture = getFixture29();
 
 		fixture.onFrustumChange();
 
@@ -27875,7 +27875,7 @@ public class CameraTest {
 	@Test
 	public void testOnViewPortChange_fixture1_1()
 		throws Exception {
-		Camera fixture = getFixture1();
+		CameraView fixture = getFixture1();
 
 		fixture.onViewPortChange();
 
@@ -27892,7 +27892,7 @@ public class CameraTest {
 	@Test
 	public void testOnViewPortChange_fixture2_1()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 
 		fixture.onViewPortChange();
 
@@ -27909,7 +27909,7 @@ public class CameraTest {
 	@Test
 	public void testOnViewPortChange_fixture3_1()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 
 		fixture.onViewPortChange();
 
@@ -27926,7 +27926,7 @@ public class CameraTest {
 	@Test
 	public void testOnViewPortChange_fixture4_1()
 		throws Exception {
-		Camera fixture = getFixture4();
+		CameraView fixture = getFixture4();
 
 		fixture.onViewPortChange();
 
@@ -27943,7 +27943,7 @@ public class CameraTest {
 	@Test
 	public void testOnViewPortChange_fixture5_1()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 
 		fixture.onViewPortChange();
 
@@ -27960,7 +27960,7 @@ public class CameraTest {
 	@Test
 	public void testOnViewPortChange_fixture6_1()
 		throws Exception {
-		Camera fixture = getFixture6();
+		CameraView fixture = getFixture6();
 
 		fixture.onViewPortChange();
 
@@ -27977,7 +27977,7 @@ public class CameraTest {
 	@Test
 	public void testOnViewPortChange_fixture7_1()
 		throws Exception {
-		Camera fixture = getFixture7();
+		CameraView fixture = getFixture7();
 
 		fixture.onViewPortChange();
 
@@ -27994,7 +27994,7 @@ public class CameraTest {
 	@Test
 	public void testOnViewPortChange_fixture8_1()
 		throws Exception {
-		Camera fixture = getFixture8();
+		CameraView fixture = getFixture8();
 
 		fixture.onViewPortChange();
 
@@ -28011,7 +28011,7 @@ public class CameraTest {
 	@Test
 	public void testOnViewPortChange_fixture9_1()
 		throws Exception {
-		Camera fixture = getFixture9();
+		CameraView fixture = getFixture9();
 
 		fixture.onViewPortChange();
 
@@ -28028,7 +28028,7 @@ public class CameraTest {
 	@Test
 	public void testOnViewPortChange_fixture10_1()
 		throws Exception {
-		Camera fixture = getFixture10();
+		CameraView fixture = getFixture10();
 
 		fixture.onViewPortChange();
 
@@ -28045,7 +28045,7 @@ public class CameraTest {
 	@Test
 	public void testOnViewPortChange_fixture11_1()
 		throws Exception {
-		Camera fixture = getFixture11();
+		CameraView fixture = getFixture11();
 
 		fixture.onViewPortChange();
 
@@ -28062,7 +28062,7 @@ public class CameraTest {
 	@Test
 	public void testOnViewPortChange_fixture12_1()
 		throws Exception {
-		Camera fixture = getFixture12();
+		CameraView fixture = getFixture12();
 
 		fixture.onViewPortChange();
 
@@ -28079,7 +28079,7 @@ public class CameraTest {
 	@Test
 	public void testOnViewPortChange_fixture13_1()
 		throws Exception {
-		Camera fixture = getFixture13();
+		CameraView fixture = getFixture13();
 
 		fixture.onViewPortChange();
 
@@ -28096,7 +28096,7 @@ public class CameraTest {
 	@Test
 	public void testOnViewPortChange_fixture14_1()
 		throws Exception {
-		Camera fixture = getFixture14();
+		CameraView fixture = getFixture14();
 
 		fixture.onViewPortChange();
 
@@ -28113,7 +28113,7 @@ public class CameraTest {
 	@Test
 	public void testOnViewPortChange_fixture15_1()
 		throws Exception {
-		Camera fixture = getFixture15();
+		CameraView fixture = getFixture15();
 
 		fixture.onViewPortChange();
 
@@ -28130,7 +28130,7 @@ public class CameraTest {
 	@Test
 	public void testOnViewPortChange_fixture16_1()
 		throws Exception {
-		Camera fixture = getFixture16();
+		CameraView fixture = getFixture16();
 
 		fixture.onViewPortChange();
 
@@ -28147,7 +28147,7 @@ public class CameraTest {
 	@Test
 	public void testOnViewPortChange_fixture17_1()
 		throws Exception {
-		Camera fixture = getFixture17();
+		CameraView fixture = getFixture17();
 
 		fixture.onViewPortChange();
 
@@ -28164,7 +28164,7 @@ public class CameraTest {
 	@Test
 	public void testOnViewPortChange_fixture18_1()
 		throws Exception {
-		Camera fixture = getFixture18();
+		CameraView fixture = getFixture18();
 
 		fixture.onViewPortChange();
 
@@ -28181,7 +28181,7 @@ public class CameraTest {
 	@Test
 	public void testOnViewPortChange_fixture19_1()
 		throws Exception {
-		Camera fixture = getFixture19();
+		CameraView fixture = getFixture19();
 
 		fixture.onViewPortChange();
 
@@ -28198,7 +28198,7 @@ public class CameraTest {
 	@Test
 	public void testOnViewPortChange_fixture20_1()
 		throws Exception {
-		Camera fixture = getFixture20();
+		CameraView fixture = getFixture20();
 
 		fixture.onViewPortChange();
 
@@ -28215,7 +28215,7 @@ public class CameraTest {
 	@Test
 	public void testOnViewPortChange_fixture21_1()
 		throws Exception {
-		Camera fixture = getFixture21();
+		CameraView fixture = getFixture21();
 
 		fixture.onViewPortChange();
 
@@ -28232,7 +28232,7 @@ public class CameraTest {
 	@Test
 	public void testOnViewPortChange_fixture22_1()
 		throws Exception {
-		Camera fixture = getFixture22();
+		CameraView fixture = getFixture22();
 
 		fixture.onViewPortChange();
 
@@ -28249,7 +28249,7 @@ public class CameraTest {
 	@Test
 	public void testOnViewPortChange_fixture23_1()
 		throws Exception {
-		Camera fixture = getFixture23();
+		CameraView fixture = getFixture23();
 
 		fixture.onViewPortChange();
 
@@ -28266,7 +28266,7 @@ public class CameraTest {
 	@Test
 	public void testOnViewPortChange_fixture24_1()
 		throws Exception {
-		Camera fixture = getFixture24();
+		CameraView fixture = getFixture24();
 
 		fixture.onViewPortChange();
 
@@ -28283,7 +28283,7 @@ public class CameraTest {
 	@Test
 	public void testOnViewPortChange_fixture25_1()
 		throws Exception {
-		Camera fixture = getFixture25();
+		CameraView fixture = getFixture25();
 
 		fixture.onViewPortChange();
 
@@ -28300,7 +28300,7 @@ public class CameraTest {
 	@Test
 	public void testOnViewPortChange_fixture26_1()
 		throws Exception {
-		Camera fixture = getFixture26();
+		CameraView fixture = getFixture26();
 
 		fixture.onViewPortChange();
 
@@ -28317,7 +28317,7 @@ public class CameraTest {
 	@Test
 	public void testOnViewPortChange_fixture27_1()
 		throws Exception {
-		Camera fixture = getFixture27();
+		CameraView fixture = getFixture27();
 
 		fixture.onViewPortChange();
 
@@ -28334,7 +28334,7 @@ public class CameraTest {
 	@Test
 	public void testOnViewPortChange_fixture28_1()
 		throws Exception {
-		Camera fixture = getFixture28();
+		CameraView fixture = getFixture28();
 
 		fixture.onViewPortChange();
 
@@ -28351,7 +28351,7 @@ public class CameraTest {
 	@Test
 	public void testOnViewPortChange_fixture29_1()
 		throws Exception {
-		Camera fixture = getFixture29();
+		CameraView fixture = getFixture29();
 
 		fixture.onViewPortChange();
 
@@ -28393,7 +28393,7 @@ public class CameraTest {
 	@Test
 	public void testRead_fixture2_1()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 		JmeImporter e = EasyMock.createMock(JmeImporter.class);
 		// add mock object expectations here
 
@@ -28418,7 +28418,7 @@ public class CameraTest {
 	@Test
 	public void testRead_fixture3_1()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 		JmeImporter e = EasyMock.createMock(JmeImporter.class);
 		// add mock object expectations here
 
@@ -28443,7 +28443,7 @@ public class CameraTest {
 	@Test
 	public void testRead_fixture4_1()
 		throws Exception {
-		Camera fixture = getFixture4();
+		CameraView fixture = getFixture4();
 		JmeImporter e = EasyMock.createMock(JmeImporter.class);
 		// add mock object expectations here
 
@@ -28468,7 +28468,7 @@ public class CameraTest {
 	@Test
 	public void testRead_fixture5_1()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 		JmeImporter e = EasyMock.createMock(JmeImporter.class);
 		// add mock object expectations here
 
@@ -28493,7 +28493,7 @@ public class CameraTest {
 	@Test
 	public void testRead_fixture6_1()
 		throws Exception {
-		Camera fixture = getFixture6();
+		CameraView fixture = getFixture6();
 		JmeImporter e = EasyMock.createMock(JmeImporter.class);
 		// add mock object expectations here
 
@@ -28518,7 +28518,7 @@ public class CameraTest {
 	@Test
 	public void testRead_fixture7_1()
 		throws Exception {
-		Camera fixture = getFixture7();
+		CameraView fixture = getFixture7();
 		JmeImporter e = EasyMock.createMock(JmeImporter.class);
 		// add mock object expectations here
 
@@ -28543,7 +28543,7 @@ public class CameraTest {
 	@Test
 	public void testRead_fixture8_1()
 		throws Exception {
-		Camera fixture = getFixture8();
+		CameraView fixture = getFixture8();
 		JmeImporter e = EasyMock.createMock(JmeImporter.class);
 		// add mock object expectations here
 
@@ -28568,7 +28568,7 @@ public class CameraTest {
 	@Test
 	public void testRead_fixture9_1()
 		throws Exception {
-		Camera fixture = getFixture9();
+		CameraView fixture = getFixture9();
 		JmeImporter e = EasyMock.createMock(JmeImporter.class);
 		// add mock object expectations here
 
@@ -28593,7 +28593,7 @@ public class CameraTest {
 	@Test
 	public void testRead_fixture10_1()
 		throws Exception {
-		Camera fixture = getFixture10();
+		CameraView fixture = getFixture10();
 		JmeImporter e = EasyMock.createMock(JmeImporter.class);
 		// add mock object expectations here
 
@@ -28618,7 +28618,7 @@ public class CameraTest {
 	@Test
 	public void testRead_fixture11_1()
 		throws Exception {
-		Camera fixture = getFixture11();
+		CameraView fixture = getFixture11();
 		JmeImporter e = EasyMock.createMock(JmeImporter.class);
 		// add mock object expectations here
 
@@ -28643,7 +28643,7 @@ public class CameraTest {
 	@Test
 	public void testRead_fixture12_1()
 		throws Exception {
-		Camera fixture = getFixture12();
+		CameraView fixture = getFixture12();
 		JmeImporter e = EasyMock.createMock(JmeImporter.class);
 		// add mock object expectations here
 
@@ -28668,7 +28668,7 @@ public class CameraTest {
 	@Test
 	public void testRead_fixture13_1()
 		throws Exception {
-		Camera fixture = getFixture13();
+		CameraView fixture = getFixture13();
 		JmeImporter e = EasyMock.createMock(JmeImporter.class);
 		// add mock object expectations here
 
@@ -28693,7 +28693,7 @@ public class CameraTest {
 	@Test
 	public void testRead_fixture14_1()
 		throws Exception {
-		Camera fixture = getFixture14();
+		CameraView fixture = getFixture14();
 		JmeImporter e = EasyMock.createMock(JmeImporter.class);
 		// add mock object expectations here
 
@@ -28718,7 +28718,7 @@ public class CameraTest {
 	@Test
 	public void testRead_fixture15_1()
 		throws Exception {
-		Camera fixture = getFixture15();
+		CameraView fixture = getFixture15();
 		JmeImporter e = EasyMock.createMock(JmeImporter.class);
 		// add mock object expectations here
 
@@ -28743,7 +28743,7 @@ public class CameraTest {
 	@Test
 	public void testRead_fixture16_1()
 		throws Exception {
-		Camera fixture = getFixture16();
+		CameraView fixture = getFixture16();
 		JmeImporter e = EasyMock.createMock(JmeImporter.class);
 		// add mock object expectations here
 
@@ -28768,7 +28768,7 @@ public class CameraTest {
 	@Test
 	public void testRead_fixture17_1()
 		throws Exception {
-		Camera fixture = getFixture17();
+		CameraView fixture = getFixture17();
 		JmeImporter e = EasyMock.createMock(JmeImporter.class);
 		// add mock object expectations here
 
@@ -28793,7 +28793,7 @@ public class CameraTest {
 	@Test
 	public void testRead_fixture18_1()
 		throws Exception {
-		Camera fixture = getFixture18();
+		CameraView fixture = getFixture18();
 		JmeImporter e = EasyMock.createMock(JmeImporter.class);
 		// add mock object expectations here
 
@@ -28818,7 +28818,7 @@ public class CameraTest {
 	@Test
 	public void testRead_fixture19_1()
 		throws Exception {
-		Camera fixture = getFixture19();
+		CameraView fixture = getFixture19();
 		JmeImporter e = EasyMock.createMock(JmeImporter.class);
 		// add mock object expectations here
 
@@ -28843,7 +28843,7 @@ public class CameraTest {
 	@Test
 	public void testRead_fixture20_1()
 		throws Exception {
-		Camera fixture = getFixture20();
+		CameraView fixture = getFixture20();
 		JmeImporter e = EasyMock.createMock(JmeImporter.class);
 		// add mock object expectations here
 
@@ -28868,7 +28868,7 @@ public class CameraTest {
 	@Test
 	public void testRead_fixture21_1()
 		throws Exception {
-		Camera fixture = getFixture21();
+		CameraView fixture = getFixture21();
 		JmeImporter e = EasyMock.createMock(JmeImporter.class);
 		// add mock object expectations here
 
@@ -28893,7 +28893,7 @@ public class CameraTest {
 	@Test
 	public void testRead_fixture22_1()
 		throws Exception {
-		Camera fixture = getFixture22();
+		CameraView fixture = getFixture22();
 		JmeImporter e = EasyMock.createMock(JmeImporter.class);
 		// add mock object expectations here
 
@@ -28918,7 +28918,7 @@ public class CameraTest {
 	@Test
 	public void testRead_fixture23_1()
 		throws Exception {
-		Camera fixture = getFixture23();
+		CameraView fixture = getFixture23();
 		JmeImporter e = EasyMock.createMock(JmeImporter.class);
 		// add mock object expectations here
 
@@ -28943,7 +28943,7 @@ public class CameraTest {
 	@Test
 	public void testRead_fixture24_1()
 		throws Exception {
-		Camera fixture = getFixture24();
+		CameraView fixture = getFixture24();
 		JmeImporter e = EasyMock.createMock(JmeImporter.class);
 		// add mock object expectations here
 
@@ -28968,7 +28968,7 @@ public class CameraTest {
 	@Test
 	public void testRead_fixture25_1()
 		throws Exception {
-		Camera fixture = getFixture25();
+		CameraView fixture = getFixture25();
 		JmeImporter e = EasyMock.createMock(JmeImporter.class);
 		// add mock object expectations here
 
@@ -28993,7 +28993,7 @@ public class CameraTest {
 	@Test
 	public void testRead_fixture26_1()
 		throws Exception {
-		Camera fixture = getFixture26();
+		CameraView fixture = getFixture26();
 		JmeImporter e = EasyMock.createMock(JmeImporter.class);
 		// add mock object expectations here
 
@@ -29018,7 +29018,7 @@ public class CameraTest {
 	@Test
 	public void testRead_fixture27_1()
 		throws Exception {
-		Camera fixture = getFixture27();
+		CameraView fixture = getFixture27();
 		JmeImporter e = EasyMock.createMock(JmeImporter.class);
 		// add mock object expectations here
 
@@ -29043,7 +29043,7 @@ public class CameraTest {
 	@Test
 	public void testRead_fixture28_1()
 		throws Exception {
-		Camera fixture = getFixture28();
+		CameraView fixture = getFixture28();
 		JmeImporter e = EasyMock.createMock(JmeImporter.class);
 		// add mock object expectations here
 
@@ -29068,7 +29068,7 @@ public class CameraTest {
 	@Test
 	public void testRead_fixture29_1()
 		throws Exception {
-		Camera fixture = getFixture29();
+		CameraView fixture = getFixture29();
 		JmeImporter e = EasyMock.createMock(JmeImporter.class);
 		// add mock object expectations here
 
@@ -29093,7 +29093,7 @@ public class CameraTest {
 	@Test
 	public void testResize_fixture1_1()
 		throws Exception {
-		Camera fixture = getFixture1();
+		CameraView fixture = getFixture1();
 		int width = 0;
 		int height = 0;
 		boolean fixAspect = false;
@@ -29113,7 +29113,7 @@ public class CameraTest {
 	@Test
 	public void testResize_fixture2_1()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 		int width = 1;
 		int height = 1;
 		boolean fixAspect = true;
@@ -29133,7 +29133,7 @@ public class CameraTest {
 	@Test
 	public void testResize_fixture4_1()
 		throws Exception {
-		Camera fixture = getFixture4();
+		CameraView fixture = getFixture4();
 		int width = 0;
 		int height = 0;
 		boolean fixAspect = true;
@@ -29153,7 +29153,7 @@ public class CameraTest {
 	@Test
 	public void testResize_fixture5_1()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 		int width = 1;
 		int height = 0;
 		boolean fixAspect = true;
@@ -29173,7 +29173,7 @@ public class CameraTest {
 	@Test
 	public void testResize_fixture6_1()
 		throws Exception {
-		Camera fixture = getFixture6();
+		CameraView fixture = getFixture6();
 		int width = 7;
 		int height = 0;
 		boolean fixAspect = true;
@@ -29193,7 +29193,7 @@ public class CameraTest {
 	@Test
 	public void testResize_fixture7_1()
 		throws Exception {
-		Camera fixture = getFixture7();
+		CameraView fixture = getFixture7();
 		int width = 7;
 		int height = 0;
 		boolean fixAspect = true;
@@ -29213,7 +29213,7 @@ public class CameraTest {
 	@Test
 	public void testResize_fixture8_1()
 		throws Exception {
-		Camera fixture = getFixture8();
+		CameraView fixture = getFixture8();
 		int width = 7;
 		int height = 0;
 		boolean fixAspect = true;
@@ -29233,7 +29233,7 @@ public class CameraTest {
 	@Test
 	public void testResize_fixture9_1()
 		throws Exception {
-		Camera fixture = getFixture9();
+		CameraView fixture = getFixture9();
 		int width = 7;
 		int height = 0;
 		boolean fixAspect = true;
@@ -29253,7 +29253,7 @@ public class CameraTest {
 	@Test
 	public void testResize_fixture10_1()
 		throws Exception {
-		Camera fixture = getFixture10();
+		CameraView fixture = getFixture10();
 		int width = 7;
 		int height = 0;
 		boolean fixAspect = true;
@@ -29273,7 +29273,7 @@ public class CameraTest {
 	@Test
 	public void testResize_fixture11_1()
 		throws Exception {
-		Camera fixture = getFixture11();
+		CameraView fixture = getFixture11();
 		int width = 7;
 		int height = 0;
 		boolean fixAspect = true;
@@ -29293,7 +29293,7 @@ public class CameraTest {
 	@Test
 	public void testResize_fixture12_1()
 		throws Exception {
-		Camera fixture = getFixture12();
+		CameraView fixture = getFixture12();
 		int width = 7;
 		int height = 0;
 		boolean fixAspect = true;
@@ -29313,7 +29313,7 @@ public class CameraTest {
 	@Test
 	public void testResize_fixture13_1()
 		throws Exception {
-		Camera fixture = getFixture13();
+		CameraView fixture = getFixture13();
 		int width = 7;
 		int height = 0;
 		boolean fixAspect = true;
@@ -29333,7 +29333,7 @@ public class CameraTest {
 	@Test
 	public void testResize_fixture14_1()
 		throws Exception {
-		Camera fixture = getFixture14();
+		CameraView fixture = getFixture14();
 		int width = 7;
 		int height = 0;
 		boolean fixAspect = true;
@@ -29353,7 +29353,7 @@ public class CameraTest {
 	@Test
 	public void testResize_fixture15_1()
 		throws Exception {
-		Camera fixture = getFixture15();
+		CameraView fixture = getFixture15();
 		int width = 7;
 		int height = 0;
 		boolean fixAspect = true;
@@ -29373,7 +29373,7 @@ public class CameraTest {
 	@Test
 	public void testResize_fixture16_1()
 		throws Exception {
-		Camera fixture = getFixture16();
+		CameraView fixture = getFixture16();
 		int width = 7;
 		int height = 0;
 		boolean fixAspect = true;
@@ -29393,7 +29393,7 @@ public class CameraTest {
 	@Test
 	public void testResize_fixture17_1()
 		throws Exception {
-		Camera fixture = getFixture17();
+		CameraView fixture = getFixture17();
 		int width = 7;
 		int height = 0;
 		boolean fixAspect = true;
@@ -29413,7 +29413,7 @@ public class CameraTest {
 	@Test
 	public void testResize_fixture18_1()
 		throws Exception {
-		Camera fixture = getFixture18();
+		CameraView fixture = getFixture18();
 		int width = 7;
 		int height = 0;
 		boolean fixAspect = true;
@@ -29433,7 +29433,7 @@ public class CameraTest {
 	@Test
 	public void testResize_fixture19_1()
 		throws Exception {
-		Camera fixture = getFixture19();
+		CameraView fixture = getFixture19();
 		int width = 7;
 		int height = 0;
 		boolean fixAspect = true;
@@ -29453,7 +29453,7 @@ public class CameraTest {
 	@Test
 	public void testResize_fixture20_1()
 		throws Exception {
-		Camera fixture = getFixture20();
+		CameraView fixture = getFixture20();
 		int width = 7;
 		int height = 0;
 		boolean fixAspect = true;
@@ -29473,7 +29473,7 @@ public class CameraTest {
 	@Test
 	public void testResize_fixture21_1()
 		throws Exception {
-		Camera fixture = getFixture21();
+		CameraView fixture = getFixture21();
 		int width = 7;
 		int height = 0;
 		boolean fixAspect = true;
@@ -29493,7 +29493,7 @@ public class CameraTest {
 	@Test
 	public void testResize_fixture22_1()
 		throws Exception {
-		Camera fixture = getFixture22();
+		CameraView fixture = getFixture22();
 		int width = 7;
 		int height = 0;
 		boolean fixAspect = true;
@@ -29513,7 +29513,7 @@ public class CameraTest {
 	@Test
 	public void testResize_fixture23_1()
 		throws Exception {
-		Camera fixture = getFixture23();
+		CameraView fixture = getFixture23();
 		int width = 7;
 		int height = 0;
 		boolean fixAspect = true;
@@ -29533,7 +29533,7 @@ public class CameraTest {
 	@Test
 	public void testResize_fixture24_1()
 		throws Exception {
-		Camera fixture = getFixture24();
+		CameraView fixture = getFixture24();
 		int width = 7;
 		int height = 0;
 		boolean fixAspect = true;
@@ -29553,7 +29553,7 @@ public class CameraTest {
 	@Test
 	public void testResize_fixture25_1()
 		throws Exception {
-		Camera fixture = getFixture25();
+		CameraView fixture = getFixture25();
 		int width = 7;
 		int height = 0;
 		boolean fixAspect = true;
@@ -29573,7 +29573,7 @@ public class CameraTest {
 	@Test
 	public void testResize_fixture26_1()
 		throws Exception {
-		Camera fixture = getFixture26();
+		CameraView fixture = getFixture26();
 		int width = 7;
 		int height = 0;
 		boolean fixAspect = true;
@@ -29593,7 +29593,7 @@ public class CameraTest {
 	@Test
 	public void testResize_fixture27_1()
 		throws Exception {
-		Camera fixture = getFixture27();
+		CameraView fixture = getFixture27();
 		int width = 7;
 		int height = 0;
 		boolean fixAspect = true;
@@ -29613,7 +29613,7 @@ public class CameraTest {
 	@Test
 	public void testResize_fixture28_1()
 		throws Exception {
-		Camera fixture = getFixture28();
+		CameraView fixture = getFixture28();
 		int width = 7;
 		int height = 0;
 		boolean fixAspect = true;
@@ -29633,7 +29633,7 @@ public class CameraTest {
 	@Test
 	public void testResize_fixture29_1()
 		throws Exception {
-		Camera fixture = getFixture29();
+		CameraView fixture = getFixture29();
 		int width = 7;
 		int height = 0;
 		boolean fixAspect = true;
@@ -29677,7 +29677,7 @@ public class CameraTest {
 	@Test
 	public void testResize_fixture3_1()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 		int width = 1;
 		int height = 0;
 		boolean fixAspect = false;
@@ -29718,7 +29718,7 @@ public class CameraTest {
 	@Test
 	public void testSetAxes_fixture2_1()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 		Quaternion axes = Quaternion.IDENTITY;
 
 		fixture.setAxes(axes);
@@ -29736,7 +29736,7 @@ public class CameraTest {
 	@Test
 	public void testSetAxes_fixture3_1()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 		Quaternion axes = Quaternion.ZERO;
 
 		fixture.setAxes(axes);
@@ -29754,7 +29754,7 @@ public class CameraTest {
 	@Test
 	public void testSetAxes_fixture4_1()
 		throws Exception {
-		Camera fixture = getFixture4();
+		CameraView fixture = getFixture4();
 		Quaternion axes = new Quaternion();
 
 		fixture.setAxes(axes);
@@ -29772,7 +29772,7 @@ public class CameraTest {
 	@Test
 	public void testSetAxes_fixture5_1()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 		Quaternion axes = new Quaternion(-0.5f, -0.5f, -0.5f, -0.5f);
 
 		fixture.setAxes(axes);
@@ -29790,7 +29790,7 @@ public class CameraTest {
 	@Test
 	public void testSetAxes_fixture6_1()
 		throws Exception {
-		Camera fixture = getFixture6();
+		CameraView fixture = getFixture6();
 		Quaternion axes = new Quaternion(-1.0f, -1.0f, -1.0f, -1.0f);
 
 		fixture.setAxes(axes);
@@ -29808,7 +29808,7 @@ public class CameraTest {
 	@Test
 	public void testSetAxes_fixture7_1()
 		throws Exception {
-		Camera fixture = getFixture7();
+		CameraView fixture = getFixture7();
 		Quaternion axes = new Quaternion(0.0f, 0.0f, 0.0f, 0.0f);
 
 		fixture.setAxes(axes);
@@ -29826,7 +29826,7 @@ public class CameraTest {
 	@Test
 	public void testSetAxes_fixture8_1()
 		throws Exception {
-		Camera fixture = getFixture8();
+		CameraView fixture = getFixture8();
 		Quaternion axes = new Quaternion(1.0f, 1.0f, 1.0f, 1.0f);
 
 		fixture.setAxes(axes);
@@ -29844,7 +29844,7 @@ public class CameraTest {
 	@Test(expected=java.lang.IllegalArgumentException.class)
 	public void testSetAxes_fixture9_1()
 		throws Exception {
-		Camera fixture = getFixture9();
+		CameraView fixture = getFixture9();
 		Quaternion axes = new Quaternion(new float[] {-1.0f, 0.0f, 1.0f, -0.5f, 0.5f, Float.MAX_VALUE, Float.MIN_VALUE});
 
 		fixture.setAxes(axes);
@@ -30305,7 +30305,7 @@ public class CameraTest {
 	@Test
 	public void testSetAxes_fixture2_2()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 		Quaternion axes = Quaternion.DIRECTION_Z;
 
 		fixture.setAxes(axes);
@@ -30346,7 +30346,7 @@ public class CameraTest {
 	@Test
 	public void testSetAxes_fixture2_3()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 		Vector3f left = Vector3f.NEGATIVE_INFINITY;
 		Vector3f up = Vector3f.NEGATIVE_INFINITY;
 		Vector3f direction = Vector3f.NEGATIVE_INFINITY;
@@ -30366,7 +30366,7 @@ public class CameraTest {
 	@Test
 	public void testSetAxes_fixture3_2()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 		Vector3f left = Vector3f.POSITIVE_INFINITY;
 		Vector3f up = Vector3f.POSITIVE_INFINITY;
 		Vector3f direction = Vector3f.POSITIVE_INFINITY;
@@ -30386,7 +30386,7 @@ public class CameraTest {
 	@Test
 	public void testSetAxes_fixture4_2()
 		throws Exception {
-		Camera fixture = getFixture4();
+		CameraView fixture = getFixture4();
 		Vector3f left = Vector3f.UNIT_X;
 		Vector3f up = Vector3f.UNIT_X;
 		Vector3f direction = Vector3f.UNIT_X;
@@ -30406,7 +30406,7 @@ public class CameraTest {
 	@Test
 	public void testSetAxes_fixture5_2()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 		Vector3f left = Vector3f.UNIT_XYZ;
 		Vector3f up = Vector3f.UNIT_XYZ;
 		Vector3f direction = Vector3f.UNIT_XYZ;
@@ -30426,7 +30426,7 @@ public class CameraTest {
 	@Test
 	public void testSetAxes_fixture6_2()
 		throws Exception {
-		Camera fixture = getFixture6();
+		CameraView fixture = getFixture6();
 		Vector3f left = Vector3f.UNIT_Y;
 		Vector3f up = Vector3f.UNIT_Y;
 		Vector3f direction = Vector3f.UNIT_Y;
@@ -30446,7 +30446,7 @@ public class CameraTest {
 	@Test
 	public void testSetAxes_fixture7_2()
 		throws Exception {
-		Camera fixture = getFixture7();
+		CameraView fixture = getFixture7();
 		Vector3f left = Vector3f.UNIT_Z;
 		Vector3f up = Vector3f.UNIT_Z;
 		Vector3f direction = Vector3f.UNIT_Z;
@@ -30466,7 +30466,7 @@ public class CameraTest {
 	@Test
 	public void testSetAxes_fixture8_2()
 		throws Exception {
-		Camera fixture = getFixture8();
+		CameraView fixture = getFixture8();
 		Vector3f left = Vector3f.ZERO;
 		Vector3f up = Vector3f.ZERO;
 		Vector3f direction = Vector3f.ZERO;
@@ -30486,7 +30486,7 @@ public class CameraTest {
 	@Test
 	public void testSetAxes_fixture9_2()
 		throws Exception {
-		Camera fixture = getFixture9();
+		CameraView fixture = getFixture9();
 		Vector3f left = new Vector3f();
 		Vector3f up = new Vector3f();
 		Vector3f direction = new Vector3f();
@@ -30986,7 +30986,7 @@ public class CameraTest {
 	@Test
 	public void testSetAxes_fixture4_3()
 		throws Exception {
-		Camera fixture = getFixture4();
+		CameraView fixture = getFixture4();
 		Vector3f left = Vector3f.NAN;
 		Vector3f up = Vector3f.NAN;
 		Vector3f direction = Vector3f.NAN;
@@ -31024,7 +31024,7 @@ public class CameraTest {
 	@Test
 	public void testSetClipPlane_fixture2_1()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 		Plane clipPlane = new Plane(Vector3f.NAN, -1.0f);
 
 		fixture.setClipPlane(clipPlane);
@@ -31042,7 +31042,7 @@ public class CameraTest {
 	@Test
 	public void testSetClipPlane_fixture3_1()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 		Plane clipPlane = new Plane(Vector3f.NEGATIVE_INFINITY, 0.0f);
 
 		fixture.setClipPlane(clipPlane);
@@ -31060,7 +31060,7 @@ public class CameraTest {
 	@Test
 	public void testSetClipPlane_fixture4_1()
 		throws Exception {
-		Camera fixture = getFixture4();
+		CameraView fixture = getFixture4();
 		Plane clipPlane = new Plane(Vector3f.NEGATIVE_INFINITY, 0.0f);
 
 		fixture.setClipPlane(clipPlane);
@@ -31078,7 +31078,7 @@ public class CameraTest {
 	@Test
 	public void testSetClipPlane_fixture5_1()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 		Plane clipPlane = new Plane(Vector3f.NEGATIVE_INFINITY, 0.0f);
 
 		fixture.setClipPlane(clipPlane);
@@ -31096,7 +31096,7 @@ public class CameraTest {
 	@Test
 	public void testSetClipPlane_fixture6_1()
 		throws Exception {
-		Camera fixture = getFixture6();
+		CameraView fixture = getFixture6();
 		Plane clipPlane = new Plane(Vector3f.NEGATIVE_INFINITY, 0.0f);
 
 		fixture.setClipPlane(clipPlane);
@@ -31114,7 +31114,7 @@ public class CameraTest {
 	@Test
 	public void testSetClipPlane_fixture7_1()
 		throws Exception {
-		Camera fixture = getFixture7();
+		CameraView fixture = getFixture7();
 		Plane clipPlane = new Plane(Vector3f.NEGATIVE_INFINITY, 0.0f);
 
 		fixture.setClipPlane(clipPlane);
@@ -31132,7 +31132,7 @@ public class CameraTest {
 	@Test
 	public void testSetClipPlane_fixture8_1()
 		throws Exception {
-		Camera fixture = getFixture8();
+		CameraView fixture = getFixture8();
 		Plane clipPlane = new Plane(Vector3f.NEGATIVE_INFINITY, 0.0f);
 
 		fixture.setClipPlane(clipPlane);
@@ -31150,7 +31150,7 @@ public class CameraTest {
 	@Test
 	public void testSetClipPlane_fixture9_1()
 		throws Exception {
-		Camera fixture = getFixture9();
+		CameraView fixture = getFixture9();
 		Plane clipPlane = new Plane(Vector3f.NEGATIVE_INFINITY, 0.0f);
 
 		fixture.setClipPlane(clipPlane);
@@ -31168,7 +31168,7 @@ public class CameraTest {
 	@Test
 	public void testSetClipPlane_fixture10_1()
 		throws Exception {
-		Camera fixture = getFixture10();
+		CameraView fixture = getFixture10();
 		Plane clipPlane = new Plane(Vector3f.NEGATIVE_INFINITY, 0.0f);
 
 		fixture.setClipPlane(clipPlane);
@@ -31186,7 +31186,7 @@ public class CameraTest {
 	@Test
 	public void testSetClipPlane_fixture11_1()
 		throws Exception {
-		Camera fixture = getFixture11();
+		CameraView fixture = getFixture11();
 		Plane clipPlane = new Plane(Vector3f.NEGATIVE_INFINITY, 0.0f);
 
 		fixture.setClipPlane(clipPlane);
@@ -31204,7 +31204,7 @@ public class CameraTest {
 	@Test
 	public void testSetClipPlane_fixture12_1()
 		throws Exception {
-		Camera fixture = getFixture12();
+		CameraView fixture = getFixture12();
 		Plane clipPlane = new Plane(Vector3f.NEGATIVE_INFINITY, 0.0f);
 
 		fixture.setClipPlane(clipPlane);
@@ -31222,7 +31222,7 @@ public class CameraTest {
 	@Test
 	public void testSetClipPlane_fixture13_1()
 		throws Exception {
-		Camera fixture = getFixture13();
+		CameraView fixture = getFixture13();
 		Plane clipPlane = new Plane(Vector3f.NEGATIVE_INFINITY, 0.0f);
 
 		fixture.setClipPlane(clipPlane);
@@ -31240,7 +31240,7 @@ public class CameraTest {
 	@Test
 	public void testSetClipPlane_fixture14_1()
 		throws Exception {
-		Camera fixture = getFixture14();
+		CameraView fixture = getFixture14();
 		Plane clipPlane = new Plane(Vector3f.NEGATIVE_INFINITY, 0.0f);
 
 		fixture.setClipPlane(clipPlane);
@@ -31258,7 +31258,7 @@ public class CameraTest {
 	@Test
 	public void testSetClipPlane_fixture15_1()
 		throws Exception {
-		Camera fixture = getFixture15();
+		CameraView fixture = getFixture15();
 		Plane clipPlane = new Plane(Vector3f.NEGATIVE_INFINITY, 0.0f);
 
 		fixture.setClipPlane(clipPlane);
@@ -31276,7 +31276,7 @@ public class CameraTest {
 	@Test
 	public void testSetClipPlane_fixture16_1()
 		throws Exception {
-		Camera fixture = getFixture16();
+		CameraView fixture = getFixture16();
 		Plane clipPlane = new Plane(Vector3f.NEGATIVE_INFINITY, 0.0f);
 
 		fixture.setClipPlane(clipPlane);
@@ -31294,7 +31294,7 @@ public class CameraTest {
 	@Test
 	public void testSetClipPlane_fixture17_1()
 		throws Exception {
-		Camera fixture = getFixture17();
+		CameraView fixture = getFixture17();
 		Plane clipPlane = new Plane(Vector3f.NEGATIVE_INFINITY, 0.0f);
 
 		fixture.setClipPlane(clipPlane);
@@ -31312,7 +31312,7 @@ public class CameraTest {
 	@Test
 	public void testSetClipPlane_fixture18_1()
 		throws Exception {
-		Camera fixture = getFixture18();
+		CameraView fixture = getFixture18();
 		Plane clipPlane = new Plane(Vector3f.NEGATIVE_INFINITY, 0.0f);
 
 		fixture.setClipPlane(clipPlane);
@@ -31330,7 +31330,7 @@ public class CameraTest {
 	@Test
 	public void testSetClipPlane_fixture19_1()
 		throws Exception {
-		Camera fixture = getFixture19();
+		CameraView fixture = getFixture19();
 		Plane clipPlane = new Plane(Vector3f.NEGATIVE_INFINITY, 0.0f);
 
 		fixture.setClipPlane(clipPlane);
@@ -31348,7 +31348,7 @@ public class CameraTest {
 	@Test
 	public void testSetClipPlane_fixture20_1()
 		throws Exception {
-		Camera fixture = getFixture20();
+		CameraView fixture = getFixture20();
 		Plane clipPlane = new Plane(Vector3f.NEGATIVE_INFINITY, 0.0f);
 
 		fixture.setClipPlane(clipPlane);
@@ -31366,7 +31366,7 @@ public class CameraTest {
 	@Test
 	public void testSetClipPlane_fixture21_1()
 		throws Exception {
-		Camera fixture = getFixture21();
+		CameraView fixture = getFixture21();
 		Plane clipPlane = new Plane(Vector3f.NEGATIVE_INFINITY, 0.0f);
 
 		fixture.setClipPlane(clipPlane);
@@ -31384,7 +31384,7 @@ public class CameraTest {
 	@Test
 	public void testSetClipPlane_fixture22_1()
 		throws Exception {
-		Camera fixture = getFixture22();
+		CameraView fixture = getFixture22();
 		Plane clipPlane = new Plane(Vector3f.NEGATIVE_INFINITY, 0.0f);
 
 		fixture.setClipPlane(clipPlane);
@@ -31402,7 +31402,7 @@ public class CameraTest {
 	@Test
 	public void testSetClipPlane_fixture23_1()
 		throws Exception {
-		Camera fixture = getFixture23();
+		CameraView fixture = getFixture23();
 		Plane clipPlane = new Plane(Vector3f.NEGATIVE_INFINITY, 0.0f);
 
 		fixture.setClipPlane(clipPlane);
@@ -31420,7 +31420,7 @@ public class CameraTest {
 	@Test
 	public void testSetClipPlane_fixture24_1()
 		throws Exception {
-		Camera fixture = getFixture24();
+		CameraView fixture = getFixture24();
 		Plane clipPlane = new Plane(Vector3f.NEGATIVE_INFINITY, 0.0f);
 
 		fixture.setClipPlane(clipPlane);
@@ -31438,7 +31438,7 @@ public class CameraTest {
 	@Test
 	public void testSetClipPlane_fixture25_1()
 		throws Exception {
-		Camera fixture = getFixture25();
+		CameraView fixture = getFixture25();
 		Plane clipPlane = new Plane(Vector3f.NEGATIVE_INFINITY, 0.0f);
 
 		fixture.setClipPlane(clipPlane);
@@ -31456,7 +31456,7 @@ public class CameraTest {
 	@Test
 	public void testSetClipPlane_fixture26_1()
 		throws Exception {
-		Camera fixture = getFixture26();
+		CameraView fixture = getFixture26();
 		Plane clipPlane = new Plane(Vector3f.NEGATIVE_INFINITY, 0.0f);
 
 		fixture.setClipPlane(clipPlane);
@@ -31474,7 +31474,7 @@ public class CameraTest {
 	@Test
 	public void testSetClipPlane_fixture27_1()
 		throws Exception {
-		Camera fixture = getFixture27();
+		CameraView fixture = getFixture27();
 		Plane clipPlane = new Plane(Vector3f.NEGATIVE_INFINITY, 0.0f);
 
 		fixture.setClipPlane(clipPlane);
@@ -31492,7 +31492,7 @@ public class CameraTest {
 	@Test
 	public void testSetClipPlane_fixture28_1()
 		throws Exception {
-		Camera fixture = getFixture28();
+		CameraView fixture = getFixture28();
 		Plane clipPlane = new Plane(Vector3f.NEGATIVE_INFINITY, 0.0f);
 
 		fixture.setClipPlane(clipPlane);
@@ -31510,7 +31510,7 @@ public class CameraTest {
 	@Test
 	public void testSetClipPlane_fixture29_1()
 		throws Exception {
-		Camera fixture = getFixture29();
+		CameraView fixture = getFixture29();
 		Plane clipPlane = new Plane(Vector3f.NEGATIVE_INFINITY, 0.0f);
 
 		fixture.setClipPlane(clipPlane);
@@ -31528,7 +31528,7 @@ public class CameraTest {
 	@Test
 	public void testSetClipPlane_fixture2_2()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 		Plane clipPlane = new Plane();
 
 		fixture.setClipPlane(clipPlane);
@@ -31565,7 +31565,7 @@ public class CameraTest {
 	@Test
 	public void testSetClipPlane_fixture2_3()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 		Plane clipPlane = new Plane(Vector3f.NAN, -1.0f);
 		com.jme3.math.Plane.Side side = com.jme3.math.Plane.Side.None;
 
@@ -31584,7 +31584,7 @@ public class CameraTest {
 	@Test
 	public void testSetClipPlane_fixture3_2()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 		Plane clipPlane = new Plane(Vector3f.NEGATIVE_INFINITY, 0.0f);
 		com.jme3.math.Plane.Side side = com.jme3.math.Plane.Side.Positive;
 
@@ -31603,7 +31603,7 @@ public class CameraTest {
 	@Test
 	public void testSetClipPlane_fixture5_2()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 		Plane clipPlane = new Plane();
 		com.jme3.math.Plane.Side side = com.jme3.math.Plane.Side.Positive;
 
@@ -31622,7 +31622,7 @@ public class CameraTest {
 	@Test
 	public void testSetClipPlane_fixture6_2()
 		throws Exception {
-		Camera fixture = getFixture6();
+		CameraView fixture = getFixture6();
 		Plane clipPlane = new Plane(Vector3f.NAN, -1.0f);
 		com.jme3.math.Plane.Side side = com.jme3.math.Plane.Side.Positive;
 
@@ -31641,7 +31641,7 @@ public class CameraTest {
 	@Test
 	public void testSetClipPlane_fixture7_2()
 		throws Exception {
-		Camera fixture = getFixture7();
+		CameraView fixture = getFixture7();
 		Plane clipPlane = new Plane(Vector3f.NAN, -1.0f);
 		com.jme3.math.Plane.Side side = com.jme3.math.Plane.Side.Positive;
 
@@ -31660,7 +31660,7 @@ public class CameraTest {
 	@Test
 	public void testSetClipPlane_fixture8_2()
 		throws Exception {
-		Camera fixture = getFixture8();
+		CameraView fixture = getFixture8();
 		Plane clipPlane = new Plane(Vector3f.NAN, -1.0f);
 		com.jme3.math.Plane.Side side = com.jme3.math.Plane.Side.Positive;
 
@@ -31679,7 +31679,7 @@ public class CameraTest {
 	@Test
 	public void testSetClipPlane_fixture9_2()
 		throws Exception {
-		Camera fixture = getFixture9();
+		CameraView fixture = getFixture9();
 		Plane clipPlane = new Plane(Vector3f.NAN, -1.0f);
 		com.jme3.math.Plane.Side side = com.jme3.math.Plane.Side.Positive;
 
@@ -31698,7 +31698,7 @@ public class CameraTest {
 	@Test
 	public void testSetClipPlane_fixture10_2()
 		throws Exception {
-		Camera fixture = getFixture10();
+		CameraView fixture = getFixture10();
 		Plane clipPlane = new Plane(Vector3f.NAN, -1.0f);
 		com.jme3.math.Plane.Side side = com.jme3.math.Plane.Side.Positive;
 
@@ -31717,7 +31717,7 @@ public class CameraTest {
 	@Test
 	public void testSetClipPlane_fixture11_2()
 		throws Exception {
-		Camera fixture = getFixture11();
+		CameraView fixture = getFixture11();
 		Plane clipPlane = new Plane(Vector3f.NAN, -1.0f);
 		com.jme3.math.Plane.Side side = com.jme3.math.Plane.Side.Positive;
 
@@ -31736,7 +31736,7 @@ public class CameraTest {
 	@Test
 	public void testSetClipPlane_fixture12_2()
 		throws Exception {
-		Camera fixture = getFixture12();
+		CameraView fixture = getFixture12();
 		Plane clipPlane = new Plane(Vector3f.NAN, -1.0f);
 		com.jme3.math.Plane.Side side = com.jme3.math.Plane.Side.Positive;
 
@@ -31755,7 +31755,7 @@ public class CameraTest {
 	@Test
 	public void testSetClipPlane_fixture13_2()
 		throws Exception {
-		Camera fixture = getFixture13();
+		CameraView fixture = getFixture13();
 		Plane clipPlane = new Plane(Vector3f.NAN, -1.0f);
 		com.jme3.math.Plane.Side side = com.jme3.math.Plane.Side.Positive;
 
@@ -31774,7 +31774,7 @@ public class CameraTest {
 	@Test
 	public void testSetClipPlane_fixture14_2()
 		throws Exception {
-		Camera fixture = getFixture14();
+		CameraView fixture = getFixture14();
 		Plane clipPlane = new Plane(Vector3f.NAN, -1.0f);
 		com.jme3.math.Plane.Side side = com.jme3.math.Plane.Side.Positive;
 
@@ -31793,7 +31793,7 @@ public class CameraTest {
 	@Test
 	public void testSetClipPlane_fixture15_2()
 		throws Exception {
-		Camera fixture = getFixture15();
+		CameraView fixture = getFixture15();
 		Plane clipPlane = new Plane(Vector3f.NAN, -1.0f);
 		com.jme3.math.Plane.Side side = com.jme3.math.Plane.Side.Positive;
 
@@ -31812,7 +31812,7 @@ public class CameraTest {
 	@Test
 	public void testSetClipPlane_fixture16_2()
 		throws Exception {
-		Camera fixture = getFixture16();
+		CameraView fixture = getFixture16();
 		Plane clipPlane = new Plane(Vector3f.NAN, -1.0f);
 		com.jme3.math.Plane.Side side = com.jme3.math.Plane.Side.Positive;
 
@@ -31831,7 +31831,7 @@ public class CameraTest {
 	@Test
 	public void testSetClipPlane_fixture17_2()
 		throws Exception {
-		Camera fixture = getFixture17();
+		CameraView fixture = getFixture17();
 		Plane clipPlane = new Plane(Vector3f.NAN, -1.0f);
 		com.jme3.math.Plane.Side side = com.jme3.math.Plane.Side.Positive;
 
@@ -31850,7 +31850,7 @@ public class CameraTest {
 	@Test
 	public void testSetClipPlane_fixture18_2()
 		throws Exception {
-		Camera fixture = getFixture18();
+		CameraView fixture = getFixture18();
 		Plane clipPlane = new Plane(Vector3f.NAN, -1.0f);
 		com.jme3.math.Plane.Side side = com.jme3.math.Plane.Side.Positive;
 
@@ -31869,7 +31869,7 @@ public class CameraTest {
 	@Test
 	public void testSetClipPlane_fixture19_2()
 		throws Exception {
-		Camera fixture = getFixture19();
+		CameraView fixture = getFixture19();
 		Plane clipPlane = new Plane(Vector3f.NAN, -1.0f);
 		com.jme3.math.Plane.Side side = com.jme3.math.Plane.Side.Positive;
 
@@ -31888,7 +31888,7 @@ public class CameraTest {
 	@Test
 	public void testSetClipPlane_fixture20_2()
 		throws Exception {
-		Camera fixture = getFixture20();
+		CameraView fixture = getFixture20();
 		Plane clipPlane = new Plane(Vector3f.NAN, -1.0f);
 		com.jme3.math.Plane.Side side = com.jme3.math.Plane.Side.Positive;
 
@@ -31907,7 +31907,7 @@ public class CameraTest {
 	@Test
 	public void testSetClipPlane_fixture21_2()
 		throws Exception {
-		Camera fixture = getFixture21();
+		CameraView fixture = getFixture21();
 		Plane clipPlane = new Plane(Vector3f.NAN, -1.0f);
 		com.jme3.math.Plane.Side side = com.jme3.math.Plane.Side.Positive;
 
@@ -31926,7 +31926,7 @@ public class CameraTest {
 	@Test
 	public void testSetClipPlane_fixture22_2()
 		throws Exception {
-		Camera fixture = getFixture22();
+		CameraView fixture = getFixture22();
 		Plane clipPlane = new Plane(Vector3f.NAN, -1.0f);
 		com.jme3.math.Plane.Side side = com.jme3.math.Plane.Side.Positive;
 
@@ -31945,7 +31945,7 @@ public class CameraTest {
 	@Test
 	public void testSetClipPlane_fixture23_2()
 		throws Exception {
-		Camera fixture = getFixture23();
+		CameraView fixture = getFixture23();
 		Plane clipPlane = new Plane(Vector3f.NAN, -1.0f);
 		com.jme3.math.Plane.Side side = com.jme3.math.Plane.Side.Positive;
 
@@ -31964,7 +31964,7 @@ public class CameraTest {
 	@Test
 	public void testSetClipPlane_fixture24_2()
 		throws Exception {
-		Camera fixture = getFixture24();
+		CameraView fixture = getFixture24();
 		Plane clipPlane = new Plane(Vector3f.NAN, -1.0f);
 		com.jme3.math.Plane.Side side = com.jme3.math.Plane.Side.Positive;
 
@@ -31983,7 +31983,7 @@ public class CameraTest {
 	@Test
 	public void testSetClipPlane_fixture25_2()
 		throws Exception {
-		Camera fixture = getFixture25();
+		CameraView fixture = getFixture25();
 		Plane clipPlane = new Plane(Vector3f.NAN, -1.0f);
 		com.jme3.math.Plane.Side side = com.jme3.math.Plane.Side.Positive;
 
@@ -32002,7 +32002,7 @@ public class CameraTest {
 	@Test
 	public void testSetClipPlane_fixture26_2()
 		throws Exception {
-		Camera fixture = getFixture26();
+		CameraView fixture = getFixture26();
 		Plane clipPlane = new Plane(Vector3f.NAN, -1.0f);
 		com.jme3.math.Plane.Side side = com.jme3.math.Plane.Side.Positive;
 
@@ -32021,7 +32021,7 @@ public class CameraTest {
 	@Test
 	public void testSetClipPlane_fixture27_2()
 		throws Exception {
-		Camera fixture = getFixture27();
+		CameraView fixture = getFixture27();
 		Plane clipPlane = new Plane(Vector3f.NAN, -1.0f);
 		com.jme3.math.Plane.Side side = com.jme3.math.Plane.Side.Positive;
 
@@ -32040,7 +32040,7 @@ public class CameraTest {
 	@Test
 	public void testSetClipPlane_fixture28_2()
 		throws Exception {
-		Camera fixture = getFixture28();
+		CameraView fixture = getFixture28();
 		Plane clipPlane = new Plane(Vector3f.NAN, -1.0f);
 		com.jme3.math.Plane.Side side = com.jme3.math.Plane.Side.Positive;
 
@@ -32059,7 +32059,7 @@ public class CameraTest {
 	@Test
 	public void testSetClipPlane_fixture29_2()
 		throws Exception {
-		Camera fixture = getFixture29();
+		CameraView fixture = getFixture29();
 		Plane clipPlane = new Plane(Vector3f.NAN, -1.0f);
 		com.jme3.math.Plane.Side side = com.jme3.math.Plane.Side.Positive;
 
@@ -32097,7 +32097,7 @@ public class CameraTest {
 	@Test
 	public void testSetClipPlane_fixture3_3()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 		Plane clipPlane = new Plane();
 		com.jme3.math.Plane.Side side = com.jme3.math.Plane.Side.Negative;
 
@@ -32138,7 +32138,7 @@ public class CameraTest {
 	@Test
 	public void testSetFrame_fixture2_1()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 		Vector3f location = Vector3f.NEGATIVE_INFINITY;
 		Quaternion axes = Quaternion.IDENTITY;
 
@@ -32157,7 +32157,7 @@ public class CameraTest {
 	@Test
 	public void testSetFrame_fixture3_1()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 		Vector3f location = Vector3f.POSITIVE_INFINITY;
 		Quaternion axes = Quaternion.ZERO;
 
@@ -32176,7 +32176,7 @@ public class CameraTest {
 	@Test
 	public void testSetFrame_fixture4_1()
 		throws Exception {
-		Camera fixture = getFixture4();
+		CameraView fixture = getFixture4();
 		Vector3f location = Vector3f.UNIT_X;
 		Quaternion axes = new Quaternion();
 
@@ -32195,7 +32195,7 @@ public class CameraTest {
 	@Test
 	public void testSetFrame_fixture5_1()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 		Vector3f location = Vector3f.UNIT_XYZ;
 		Quaternion axes = new Quaternion(-0.5f, -0.5f, -0.5f, -0.5f);
 
@@ -32214,7 +32214,7 @@ public class CameraTest {
 	@Test
 	public void testSetFrame_fixture6_1()
 		throws Exception {
-		Camera fixture = getFixture6();
+		CameraView fixture = getFixture6();
 		Vector3f location = Vector3f.UNIT_Y;
 		Quaternion axes = new Quaternion(-1.0f, -1.0f, -1.0f, -1.0f);
 
@@ -32233,7 +32233,7 @@ public class CameraTest {
 	@Test
 	public void testSetFrame_fixture7_1()
 		throws Exception {
-		Camera fixture = getFixture7();
+		CameraView fixture = getFixture7();
 		Vector3f location = Vector3f.UNIT_Z;
 		Quaternion axes = new Quaternion(0.0f, 0.0f, 0.0f, 0.0f);
 
@@ -32252,7 +32252,7 @@ public class CameraTest {
 	@Test
 	public void testSetFrame_fixture8_1()
 		throws Exception {
-		Camera fixture = getFixture8();
+		CameraView fixture = getFixture8();
 		Vector3f location = Vector3f.ZERO;
 		Quaternion axes = new Quaternion(1.0f, 1.0f, 1.0f, 1.0f);
 
@@ -32271,7 +32271,7 @@ public class CameraTest {
 	@Test(expected=IllegalArgumentException.class)
 	public void testSetFrame_fixture9_1()
 		throws Exception {
-		Camera fixture = getFixture9();
+		CameraView fixture = getFixture9();
 		Vector3f location = new Vector3f();
 		Quaternion axes = new Quaternion(new float[] {-1.0f, 0.0f, 1.0f, -0.5f, 0.5f, Float.MAX_VALUE, Float.MIN_VALUE});
 
@@ -32754,7 +32754,7 @@ public class CameraTest {
 	@Test
 	public void testSetFrame_fixture3_2()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 		Vector3f location = Vector3f.UNIT_X;
 		Quaternion axes = Quaternion.DIRECTION_Z;
 
@@ -32797,7 +32797,7 @@ public class CameraTest {
 	@Test
 	public void testSetFrame_fixture2_3()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 		Vector3f location = Vector3f.NEGATIVE_INFINITY;
 		Vector3f left = Vector3f.NEGATIVE_INFINITY;
 		Vector3f up = Vector3f.NEGATIVE_INFINITY;
@@ -32818,7 +32818,7 @@ public class CameraTest {
 	@Test
 	public void testSetFrame_fixture3_3()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 		Vector3f location = Vector3f.POSITIVE_INFINITY;
 		Vector3f left = Vector3f.POSITIVE_INFINITY;
 		Vector3f up = Vector3f.POSITIVE_INFINITY;
@@ -32839,7 +32839,7 @@ public class CameraTest {
 	@Test
 	public void testSetFrame_fixture4_2()
 		throws Exception {
-		Camera fixture = getFixture4();
+		CameraView fixture = getFixture4();
 		Vector3f location = Vector3f.UNIT_X;
 		Vector3f left = Vector3f.UNIT_X;
 		Vector3f up = Vector3f.UNIT_X;
@@ -32860,7 +32860,7 @@ public class CameraTest {
 	@Test
 	public void testSetFrame_fixture5_2()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 		Vector3f location = Vector3f.UNIT_XYZ;
 		Vector3f left = Vector3f.UNIT_XYZ;
 		Vector3f up = Vector3f.UNIT_XYZ;
@@ -32881,7 +32881,7 @@ public class CameraTest {
 	@Test
 	public void testSetFrame_fixture6_2()
 		throws Exception {
-		Camera fixture = getFixture6();
+		CameraView fixture = getFixture6();
 		Vector3f location = Vector3f.UNIT_Y;
 		Vector3f left = Vector3f.UNIT_Y;
 		Vector3f up = Vector3f.UNIT_Y;
@@ -32902,7 +32902,7 @@ public class CameraTest {
 	@Test
 	public void testSetFrame_fixture7_2()
 		throws Exception {
-		Camera fixture = getFixture7();
+		CameraView fixture = getFixture7();
 		Vector3f location = Vector3f.UNIT_Z;
 		Vector3f left = Vector3f.UNIT_Z;
 		Vector3f up = Vector3f.UNIT_Z;
@@ -32923,7 +32923,7 @@ public class CameraTest {
 	@Test
 	public void testSetFrame_fixture8_2()
 		throws Exception {
-		Camera fixture = getFixture8();
+		CameraView fixture = getFixture8();
 		Vector3f location = Vector3f.ZERO;
 		Vector3f left = Vector3f.ZERO;
 		Vector3f up = Vector3f.ZERO;
@@ -32944,7 +32944,7 @@ public class CameraTest {
 	@Test
 	public void testSetFrame_fixture9_2()
 		throws Exception {
-		Camera fixture = getFixture9();
+		CameraView fixture = getFixture9();
 		Vector3f location = new Vector3f();
 		Vector3f left = new Vector3f();
 		Vector3f up = new Vector3f();
@@ -32965,7 +32965,7 @@ public class CameraTest {
 	@Test
 	public void testSetFrame_fixture2_4()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 		Vector3f location = Vector3f.NEGATIVE_INFINITY;
 		Vector3f left = Vector3f.NEGATIVE_INFINITY;
 		Vector3f up = Vector3f.NEGATIVE_INFINITY;
@@ -32986,7 +32986,7 @@ public class CameraTest {
 	@Test
 	public void testSetFrame_fixture3_4()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 		Vector3f location = Vector3f.POSITIVE_INFINITY;
 		Vector3f left = Vector3f.POSITIVE_INFINITY;
 		Vector3f up = Vector3f.POSITIVE_INFINITY;
@@ -33007,7 +33007,7 @@ public class CameraTest {
 	@Test
 	public void testSetFrame_fixture4_3()
 		throws Exception {
-		Camera fixture = getFixture4();
+		CameraView fixture = getFixture4();
 		Vector3f location = Vector3f.UNIT_X;
 		Vector3f left = Vector3f.UNIT_X;
 		Vector3f up = Vector3f.UNIT_X;
@@ -33028,7 +33028,7 @@ public class CameraTest {
 	@Test
 	public void testSetFrame_fixture5_3()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 		Vector3f location = Vector3f.UNIT_XYZ;
 		Vector3f left = Vector3f.UNIT_XYZ;
 		Vector3f up = Vector3f.UNIT_XYZ;
@@ -33049,7 +33049,7 @@ public class CameraTest {
 	@Test
 	public void testSetFrame_fixture6_3()
 		throws Exception {
-		Camera fixture = getFixture6();
+		CameraView fixture = getFixture6();
 		Vector3f location = Vector3f.UNIT_Y;
 		Vector3f left = Vector3f.UNIT_Y;
 		Vector3f up = Vector3f.UNIT_Y;
@@ -33070,7 +33070,7 @@ public class CameraTest {
 	@Test
 	public void testSetFrame_fixture7_3()
 		throws Exception {
-		Camera fixture = getFixture7();
+		CameraView fixture = getFixture7();
 		Vector3f location = Vector3f.UNIT_Z;
 		Vector3f left = Vector3f.UNIT_Z;
 		Vector3f up = Vector3f.UNIT_Z;
@@ -33091,7 +33091,7 @@ public class CameraTest {
 	@Test
 	public void testSetFrame_fixture8_3()
 		throws Exception {
-		Camera fixture = getFixture8();
+		CameraView fixture = getFixture8();
 		Vector3f location = Vector3f.ZERO;
 		Vector3f left = Vector3f.ZERO;
 		Vector3f up = Vector3f.ZERO;
@@ -33112,7 +33112,7 @@ public class CameraTest {
 	@Test
 	public void testSetFrame_fixture9_3()
 		throws Exception {
-		Camera fixture = getFixture9();
+		CameraView fixture = getFixture9();
 		Vector3f location = new Vector3f();
 		Vector3f left = new Vector3f();
 		Vector3f up = new Vector3f();
@@ -33133,7 +33133,7 @@ public class CameraTest {
 	@Test
 	public void testSetFrame_fixture2_5()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 		Vector3f location = Vector3f.NEGATIVE_INFINITY;
 		Vector3f left = Vector3f.NEGATIVE_INFINITY;
 		Vector3f up = Vector3f.NAN;
@@ -33154,7 +33154,7 @@ public class CameraTest {
 	@Test
 	public void testSetFrame_fixture3_5()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 		Vector3f location = Vector3f.POSITIVE_INFINITY;
 		Vector3f left = Vector3f.POSITIVE_INFINITY;
 		Vector3f up = Vector3f.POSITIVE_INFINITY;
@@ -33175,7 +33175,7 @@ public class CameraTest {
 	@Test
 	public void testSetFrame_fixture4_4()
 		throws Exception {
-		Camera fixture = getFixture4();
+		CameraView fixture = getFixture4();
 		Vector3f location = Vector3f.UNIT_X;
 		Vector3f left = Vector3f.UNIT_X;
 		Vector3f up = Vector3f.UNIT_X;
@@ -33196,7 +33196,7 @@ public class CameraTest {
 	@Test
 	public void testSetFrame_fixture5_4()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 		Vector3f location = Vector3f.UNIT_XYZ;
 		Vector3f left = Vector3f.UNIT_XYZ;
 		Vector3f up = Vector3f.UNIT_XYZ;
@@ -33217,7 +33217,7 @@ public class CameraTest {
 	@Test
 	public void testSetFrame_fixture6_4()
 		throws Exception {
-		Camera fixture = getFixture6();
+		CameraView fixture = getFixture6();
 		Vector3f location = Vector3f.UNIT_Y;
 		Vector3f left = Vector3f.UNIT_Y;
 		Vector3f up = Vector3f.UNIT_Y;
@@ -33238,7 +33238,7 @@ public class CameraTest {
 	@Test
 	public void testSetFrame_fixture7_4()
 		throws Exception {
-		Camera fixture = getFixture7();
+		CameraView fixture = getFixture7();
 		Vector3f location = Vector3f.UNIT_Z;
 		Vector3f left = Vector3f.UNIT_Z;
 		Vector3f up = Vector3f.UNIT_Z;
@@ -33259,7 +33259,7 @@ public class CameraTest {
 	@Test
 	public void testSetFrame_fixture8_4()
 		throws Exception {
-		Camera fixture = getFixture8();
+		CameraView fixture = getFixture8();
 		Vector3f location = Vector3f.ZERO;
 		Vector3f left = Vector3f.ZERO;
 		Vector3f up = Vector3f.ZERO;
@@ -33280,7 +33280,7 @@ public class CameraTest {
 	@Test
 	public void testSetFrame_fixture9_4()
 		throws Exception {
-		Camera fixture = getFixture9();
+		CameraView fixture = getFixture9();
 		Vector3f location = new Vector3f();
 		Vector3f left = new Vector3f();
 		Vector3f up = new Vector3f();
@@ -33301,7 +33301,7 @@ public class CameraTest {
 	@Test
 	public void testSetFrame_fixture2_6()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 		Vector3f location = Vector3f.NEGATIVE_INFINITY;
 		Vector3f left = Vector3f.NEGATIVE_INFINITY;
 		Vector3f up = Vector3f.NAN;
@@ -33322,7 +33322,7 @@ public class CameraTest {
 	@Test
 	public void testSetFrame_fixture3_6()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 		Vector3f location = Vector3f.POSITIVE_INFINITY;
 		Vector3f left = Vector3f.POSITIVE_INFINITY;
 		Vector3f up = Vector3f.NEGATIVE_INFINITY;
@@ -33343,7 +33343,7 @@ public class CameraTest {
 	@Test
 	public void testSetFrame_fixture4_5()
 		throws Exception {
-		Camera fixture = getFixture4();
+		CameraView fixture = getFixture4();
 		Vector3f location = Vector3f.UNIT_X;
 		Vector3f left = Vector3f.UNIT_X;
 		Vector3f up = Vector3f.UNIT_X;
@@ -33364,7 +33364,7 @@ public class CameraTest {
 	@Test
 	public void testSetFrame_fixture5_5()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 		Vector3f location = Vector3f.UNIT_XYZ;
 		Vector3f left = Vector3f.UNIT_XYZ;
 		Vector3f up = Vector3f.UNIT_XYZ;
@@ -33385,7 +33385,7 @@ public class CameraTest {
 	@Test
 	public void testSetFrame_fixture6_5()
 		throws Exception {
-		Camera fixture = getFixture6();
+		CameraView fixture = getFixture6();
 		Vector3f location = Vector3f.UNIT_Y;
 		Vector3f left = Vector3f.UNIT_Y;
 		Vector3f up = Vector3f.UNIT_Y;
@@ -33397,14 +33397,14 @@ public class CameraTest {
 	}
 
 	/**
-	 * Run the void setFrustum(float,float,float,float,float,float) method test.
+	 * Run the void updateFrustum(float,float,float,float,float,float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	/*@Test
-	public void testSetFrustum_fixture1_1()
+	public void testupdateFrustum_fixture1_1()
 		throws Exception {
 		Camera fixture = getFixture1();
 		float near = -1.0f;
@@ -33414,26 +33414,26 @@ public class CameraTest {
 		float top = -1.0f;
 		float bottom = -1.0f;
 
-		fixture.setFrustum(near, far, left, right, top, bottom);
+		fixture.updateFrustum(near, far, left, right, top, bottom);
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
 		//       at com.jme3.renderer.Camera.onFrustumChange(Camera.java:1440)
-		//       at com.jme3.renderer.Camera.setFrustum(Camera.java:865)
+		//       at com.jme3.renderer.Camera.updateFrustum(Camera.java:865)
 	}*/
 
 	/**
-	 * Run the void setFrustum(float,float,float,float,float,float) method test.
+	 * Run the void updateFrustum(float,float,float,float,float,float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustum_fixture2_1()
+	public void testupdateFrustum_fixture2_1()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 		float near = 0.0f;
 		float far = 0.0f;
 		float left = 0.0f;
@@ -33441,22 +33441,22 @@ public class CameraTest {
 		float top = 0.0f;
 		float bottom = 0.0f;
 
-		fixture.setFrustum(near, far, left, right, top, bottom);
+		fixture.updateFrustum(near, far, left, right, top, bottom);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustum(float,float,float,float,float,float) method test.
+	 * Run the void updateFrustum(float,float,float,float,float,float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustum_fixture3_1()
+	public void testupdateFrustum_fixture3_1()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 		float near = 1.0f;
 		float far = 1.0f;
 		float left = 1.0f;
@@ -33464,22 +33464,22 @@ public class CameraTest {
 		float top = 1.0f;
 		float bottom = 1.0f;
 
-		fixture.setFrustum(near, far, left, right, top, bottom);
+		fixture.updateFrustum(near, far, left, right, top, bottom);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustum(float,float,float,float,float,float) method test.
+	 * Run the void updateFrustum(float,float,float,float,float,float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustum_fixture5_1()
+	public void testupdateFrustum_fixture5_1()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 		float near = 0.0f;
 		float far = 0.0f;
 		float left = 0.0f;
@@ -33487,22 +33487,22 @@ public class CameraTest {
 		float top = -1.0f;
 		float bottom = 1.0f;
 
-		fixture.setFrustum(near, far, left, right, top, bottom);
+		fixture.updateFrustum(near, far, left, right, top, bottom);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustum(float,float,float,float,float,float) method test.
+	 * Run the void updateFrustum(float,float,float,float,float,float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustum_fixture6_1()
+	public void testupdateFrustum_fixture6_1()
 		throws Exception {
-		Camera fixture = getFixture6();
+		CameraView fixture = getFixture6();
 		float near = 1.0f;
 		float far = 1.0f;
 		float left = 1.0f;
@@ -33510,22 +33510,22 @@ public class CameraTest {
 		float top = 0.0f;
 		float bottom = 1.0f;
 
-		fixture.setFrustum(near, far, left, right, top, bottom);
+		fixture.updateFrustum(near, far, left, right, top, bottom);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustum(float,float,float,float,float,float) method test.
+	 * Run the void updateFrustum(float,float,float,float,float,float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustum_fixture8_1()
+	public void testupdateFrustum_fixture8_1()
 		throws Exception {
-		Camera fixture = getFixture8();
+		CameraView fixture = getFixture8();
 		float near = 0.0f;
 		float far = 0.0f;
 		float left = 0.0f;
@@ -33533,22 +33533,22 @@ public class CameraTest {
 		float top = 0.0f;
 		float bottom = 1.0f;
 
-		fixture.setFrustum(near, far, left, right, top, bottom);
+		fixture.updateFrustum(near, far, left, right, top, bottom);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustum(float,float,float,float,float,float) method test.
+	 * Run the void updateFrustum(float,float,float,float,float,float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustum_fixture9_1()
+	public void testupdateFrustum_fixture9_1()
 		throws Exception {
-		Camera fixture = getFixture9();
+		CameraView fixture = getFixture9();
 		float near = 1.0f;
 		float far = 1.0f;
 		float left = 1.0f;
@@ -33556,22 +33556,22 @@ public class CameraTest {
 		float top = 0.0f;
 		float bottom = 1.0f;
 
-		fixture.setFrustum(near, far, left, right, top, bottom);
+		fixture.updateFrustum(near, far, left, right, top, bottom);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustum(float,float,float,float,float,float) method test.
+	 * Run the void updateFrustum(float,float,float,float,float,float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustum_fixture11_1()
+	public void testupdateFrustum_fixture11_1()
 		throws Exception {
-		Camera fixture = getFixture11();
+		CameraView fixture = getFixture11();
 		float near = 0.0f;
 		float far = 0.0f;
 		float left = -1.0f;
@@ -33579,22 +33579,22 @@ public class CameraTest {
 		float top = 0.0f;
 		float bottom = 1.0f;
 
-		fixture.setFrustum(near, far, left, right, top, bottom);
+		fixture.updateFrustum(near, far, left, right, top, bottom);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustum(float,float,float,float,float,float) method test.
+	 * Run the void updateFrustum(float,float,float,float,float,float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustum_fixture12_1()
+	public void testupdateFrustum_fixture12_1()
 		throws Exception {
-		Camera fixture = getFixture12();
+		CameraView fixture = getFixture12();
 		float near = 1.0f;
 		float far = 1.0f;
 		float left = 0.0f;
@@ -33602,22 +33602,22 @@ public class CameraTest {
 		float top = 0.0f;
 		float bottom = 1.0f;
 
-		fixture.setFrustum(near, far, left, right, top, bottom);
+		fixture.updateFrustum(near, far, left, right, top, bottom);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustum(float,float,float,float,float,float) method test.
+	 * Run the void updateFrustum(float,float,float,float,float,float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustum_fixture14_1()
+	public void testupdateFrustum_fixture14_1()
 		throws Exception {
-		Camera fixture = getFixture14();
+		CameraView fixture = getFixture14();
 		float near = 0.0f;
 		float far = -1.0f;
 		float left = 0.0f;
@@ -33625,22 +33625,22 @@ public class CameraTest {
 		float top = 0.0f;
 		float bottom = 1.0f;
 
-		fixture.setFrustum(near, far, left, right, top, bottom);
+		fixture.updateFrustum(near, far, left, right, top, bottom);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustum(float,float,float,float,float,float) method test.
+	 * Run the void updateFrustum(float,float,float,float,float,float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustum_fixture15_1()
+	public void testupdateFrustum_fixture15_1()
 		throws Exception {
-		Camera fixture = getFixture15();
+		CameraView fixture = getFixture15();
 		float near = 1.0f;
 		float far = 0.0f;
 		float left = 0.0f;
@@ -33648,22 +33648,22 @@ public class CameraTest {
 		float top = 0.0f;
 		float bottom = 1.0f;
 
-		fixture.setFrustum(near, far, left, right, top, bottom);
+		fixture.updateFrustum(near, far, left, right, top, bottom);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustum(float,float,float,float,float,float) method test.
+	 * Run the void updateFrustum(float,float,float,float,float,float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustum_fixture17_1()
+	public void testupdateFrustum_fixture17_1()
 		throws Exception {
-		Camera fixture = getFixture17();
+		CameraView fixture = getFixture17();
 		float near = -1.0f;
 		float far = 0.0f;
 		float left = 0.0f;
@@ -33671,22 +33671,22 @@ public class CameraTest {
 		float top = 0.0f;
 		float bottom = 1.0f;
 
-		fixture.setFrustum(near, far, left, right, top, bottom);
+		fixture.updateFrustum(near, far, left, right, top, bottom);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustum(float,float,float,float,float,float) method test.
+	 * Run the void updateFrustum(float,float,float,float,float,float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustum_fixture18_1()
+	public void testupdateFrustum_fixture18_1()
 		throws Exception {
-		Camera fixture = getFixture18();
+		CameraView fixture = getFixture18();
 		float near = 0.0f;
 		float far = 0.0f;
 		float left = 0.0f;
@@ -33694,22 +33694,22 @@ public class CameraTest {
 		float top = 0.0f;
 		float bottom = 1.0f;
 
-		fixture.setFrustum(near, far, left, right, top, bottom);
+		fixture.updateFrustum(near, far, left, right, top, bottom);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustum(float,float,float,float,float,float) method test.
+	 * Run the void updateFrustum(float,float,float,float,float,float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustum_fixture19_1()
+	public void testupdateFrustum_fixture19_1()
 		throws Exception {
-		Camera fixture = getFixture19();
+		CameraView fixture = getFixture19();
 		float near = 0.0f;
 		float far = 0.0f;
 		float left = 0.0f;
@@ -33717,22 +33717,22 @@ public class CameraTest {
 		float top = 0.0f;
 		float bottom = 1.0f;
 
-		fixture.setFrustum(near, far, left, right, top, bottom);
+		fixture.updateFrustum(near, far, left, right, top, bottom);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustum(float,float,float,float,float,float) method test.
+	 * Run the void updateFrustum(float,float,float,float,float,float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustum_fixture20_1()
+	public void testupdateFrustum_fixture20_1()
 		throws Exception {
-		Camera fixture = getFixture20();
+		CameraView fixture = getFixture20();
 		float near = 0.0f;
 		float far = 0.0f;
 		float left = 0.0f;
@@ -33740,22 +33740,22 @@ public class CameraTest {
 		float top = 0.0f;
 		float bottom = 1.0f;
 
-		fixture.setFrustum(near, far, left, right, top, bottom);
+		fixture.updateFrustum(near, far, left, right, top, bottom);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustum(float,float,float,float,float,float) method test.
+	 * Run the void updateFrustum(float,float,float,float,float,float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustum_fixture21_1()
+	public void testupdateFrustum_fixture21_1()
 		throws Exception {
-		Camera fixture = getFixture21();
+		CameraView fixture = getFixture21();
 		float near = 0.0f;
 		float far = 0.0f;
 		float left = 0.0f;
@@ -33763,22 +33763,22 @@ public class CameraTest {
 		float top = 0.0f;
 		float bottom = 1.0f;
 
-		fixture.setFrustum(near, far, left, right, top, bottom);
+		fixture.updateFrustum(near, far, left, right, top, bottom);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustum(float,float,float,float,float,float) method test.
+	 * Run the void updateFrustum(float,float,float,float,float,float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustum_fixture22_1()
+	public void testupdateFrustum_fixture22_1()
 		throws Exception {
-		Camera fixture = getFixture22();
+		CameraView fixture = getFixture22();
 		float near = 0.0f;
 		float far = 0.0f;
 		float left = 0.0f;
@@ -33786,22 +33786,22 @@ public class CameraTest {
 		float top = 0.0f;
 		float bottom = 1.0f;
 
-		fixture.setFrustum(near, far, left, right, top, bottom);
+		fixture.updateFrustum(near, far, left, right, top, bottom);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustum(float,float,float,float,float,float) method test.
+	 * Run the void updateFrustum(float,float,float,float,float,float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustum_fixture23_1()
+	public void testupdateFrustum_fixture23_1()
 		throws Exception {
-		Camera fixture = getFixture23();
+		CameraView fixture = getFixture23();
 		float near = 0.0f;
 		float far = 0.0f;
 		float left = 0.0f;
@@ -33809,22 +33809,22 @@ public class CameraTest {
 		float top = 0.0f;
 		float bottom = 1.0f;
 
-		fixture.setFrustum(near, far, left, right, top, bottom);
+		fixture.updateFrustum(near, far, left, right, top, bottom);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustum(float,float,float,float,float,float) method test.
+	 * Run the void updateFrustum(float,float,float,float,float,float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustum_fixture24_1()
+	public void testupdateFrustum_fixture24_1()
 		throws Exception {
-		Camera fixture = getFixture24();
+		CameraView fixture = getFixture24();
 		float near = 0.0f;
 		float far = 0.0f;
 		float left = 0.0f;
@@ -33832,22 +33832,22 @@ public class CameraTest {
 		float top = 0.0f;
 		float bottom = 1.0f;
 
-		fixture.setFrustum(near, far, left, right, top, bottom);
+		fixture.updateFrustum(near, far, left, right, top, bottom);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustum(float,float,float,float,float,float) method test.
+	 * Run the void updateFrustum(float,float,float,float,float,float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustum_fixture25_1()
+	public void testupdateFrustum_fixture25_1()
 		throws Exception {
-		Camera fixture = getFixture25();
+		CameraView fixture = getFixture25();
 		float near = 0.0f;
 		float far = 0.0f;
 		float left = 0.0f;
@@ -33855,22 +33855,22 @@ public class CameraTest {
 		float top = 0.0f;
 		float bottom = 1.0f;
 
-		fixture.setFrustum(near, far, left, right, top, bottom);
+		fixture.updateFrustum(near, far, left, right, top, bottom);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustum(float,float,float,float,float,float) method test.
+	 * Run the void updateFrustum(float,float,float,float,float,float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustum_fixture26_1()
+	public void testupdateFrustum_fixture26_1()
 		throws Exception {
-		Camera fixture = getFixture26();
+		CameraView fixture = getFixture26();
 		float near = 0.0f;
 		float far = 0.0f;
 		float left = 0.0f;
@@ -33878,22 +33878,22 @@ public class CameraTest {
 		float top = 0.0f;
 		float bottom = 1.0f;
 
-		fixture.setFrustum(near, far, left, right, top, bottom);
+		fixture.updateFrustum(near, far, left, right, top, bottom);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustum(float,float,float,float,float,float) method test.
+	 * Run the void updateFrustum(float,float,float,float,float,float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustum_fixture27_1()
+	public void testupdateFrustum_fixture27_1()
 		throws Exception {
-		Camera fixture = getFixture27();
+		CameraView fixture = getFixture27();
 		float near = 0.0f;
 		float far = 0.0f;
 		float left = 0.0f;
@@ -33901,22 +33901,22 @@ public class CameraTest {
 		float top = 0.0f;
 		float bottom = 1.0f;
 
-		fixture.setFrustum(near, far, left, right, top, bottom);
+		fixture.updateFrustum(near, far, left, right, top, bottom);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustum(float,float,float,float,float,float) method test.
+	 * Run the void updateFrustum(float,float,float,float,float,float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustum_fixture28_1()
+	public void testupdateFrustum_fixture28_1()
 		throws Exception {
-		Camera fixture = getFixture28();
+		CameraView fixture = getFixture28();
 		float near = 0.0f;
 		float far = 0.0f;
 		float left = 0.0f;
@@ -33924,22 +33924,22 @@ public class CameraTest {
 		float top = 0.0f;
 		float bottom = 1.0f;
 
-		fixture.setFrustum(near, far, left, right, top, bottom);
+		fixture.updateFrustum(near, far, left, right, top, bottom);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustum(float,float,float,float,float,float) method test.
+	 * Run the void updateFrustum(float,float,float,float,float,float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustum_fixture29_1()
+	public void testupdateFrustum_fixture29_1()
 		throws Exception {
-		Camera fixture = getFixture29();
+		CameraView fixture = getFixture29();
 		float near = 0.0f;
 		float far = 0.0f;
 		float left = 0.0f;
@@ -33947,20 +33947,20 @@ public class CameraTest {
 		float top = 0.0f;
 		float bottom = 1.0f;
 
-		fixture.setFrustum(near, far, left, right, top, bottom);
+		fixture.updateFrustum(near, far, left, right, top, bottom);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustum(float,float,float,float,float,float) method test.
+	 * Run the void updateFrustum(float,float,float,float,float,float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	/*@Test
-	public void testSetFrustum_fixture1_2()
+	public void testupdateFrustum_fixture1_2()
 		throws Exception {
 		Camera fixture = getFixture1();
 		float near = 0.0f;
@@ -33970,26 +33970,26 @@ public class CameraTest {
 		float top = 0.0f;
 		float bottom = 1.0f;
 
-		fixture.setFrustum(near, far, left, right, top, bottom);
+		fixture.updateFrustum(near, far, left, right, top, bottom);
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
 		//       at com.jme3.renderer.Camera.onFrustumChange(Camera.java:1440)
-		//       at com.jme3.renderer.Camera.setFrustum(Camera.java:865)
+		//       at com.jme3.renderer.Camera.updateFrustum(Camera.java:865)
 	}*/
 
 	/**
-	 * Run the void setFrustum(float,float,float,float,float,float) method test.
+	 * Run the void updateFrustum(float,float,float,float,float,float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustum_fixture2_2()
+	public void testupdateFrustum_fixture2_2()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 		float near = 0.0f;
 		float far = 0.0f;
 		float left = 0.0f;
@@ -33997,22 +33997,22 @@ public class CameraTest {
 		float top = 0.0f;
 		float bottom = 1.0f;
 
-		fixture.setFrustum(near, far, left, right, top, bottom);
+		fixture.updateFrustum(near, far, left, right, top, bottom);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustum(float,float,float,float,float,float) method test.
+	 * Run the void updateFrustum(float,float,float,float,float,float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustum_fixture3_2()
+	public void testupdateFrustum_fixture3_2()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 		float near = 0.0f;
 		float far = 0.0f;
 		float left = 0.0f;
@@ -34020,22 +34020,22 @@ public class CameraTest {
 		float top = 0.0f;
 		float bottom = 1.0f;
 
-		fixture.setFrustum(near, far, left, right, top, bottom);
+		fixture.updateFrustum(near, far, left, right, top, bottom);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustum(float,float,float,float,float,float) method test.
+	 * Run the void updateFrustum(float,float,float,float,float,float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustum_fixture4_1()
+	public void testupdateFrustum_fixture4_1()
 		throws Exception {
-		Camera fixture = getFixture4();
+		CameraView fixture = getFixture4();
 		float near = 0.0f;
 		float far = 0.0f;
 		float left = 0.0f;
@@ -34043,22 +34043,22 @@ public class CameraTest {
 		float top = 0.0f;
 		float bottom = 1.0f;
 
-		fixture.setFrustum(near, far, left, right, top, bottom);
+		fixture.updateFrustum(near, far, left, right, top, bottom);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustum(float,float,float,float,float,float) method test.
+	 * Run the void updateFrustum(float,float,float,float,float,float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustum_fixture5_2()
+	public void testupdateFrustum_fixture5_2()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 		float near = 0.0f;
 		float far = 0.0f;
 		float left = 0.0f;
@@ -34066,22 +34066,22 @@ public class CameraTest {
 		float top = 0.0f;
 		float bottom = 1.0f;
 
-		fixture.setFrustum(near, far, left, right, top, bottom);
+		fixture.updateFrustum(near, far, left, right, top, bottom);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustum(float,float,float,float,float,float) method test.
+	 * Run the void updateFrustum(float,float,float,float,float,float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustum_fixture7_1()
+	public void testupdateFrustum_fixture7_1()
 		throws Exception {
-		Camera fixture = getFixture7();
+		CameraView fixture = getFixture7();
 		float near = -1.0f;
 		float far = -1.0f;
 		float left = -1.0f;
@@ -34089,2196 +34089,2196 @@ public class CameraTest {
 		float top = -1.0f;
 		float bottom = -1.0f;
 
-		fixture.setFrustum(near, far, left, right, top, bottom);
+		fixture.updateFrustum(near, far, left, right, top, bottom);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumBottom(float) method test.
+	 * Run the void updateFrustumBottom(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 /*	@Test
-	public void testSetFrustumBottom_fixture1_1()
+	public void testupdateFrustumBottom_fixture1_1()
 		throws Exception {
 		Camera fixture = getFixture1();
 		float frustumBottom = -1.0f;
 
-		fixture.setFrustumBottom(frustumBottom);
+		fixture.updateFrustumBottom(frustumBottom);
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
 		//       at com.jme3.renderer.Camera.onFrustumChange(Camera.java:1440)
-		//       at com.jme3.renderer.Camera.setFrustumBottom(Camera.java:548)
+		//       at com.jme3.renderer.Camera.updateFrustumBottom(Camera.java:548)
 	}
 */
 	/**
-	 * Run the void setFrustumBottom(float) method test.
+	 * Run the void updateFrustumBottom(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumBottom_fixture2_1()
+	public void testupdateFrustumBottom_fixture2_1()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 		float frustumBottom = 0.0f;
 
-		fixture.setFrustumBottom(frustumBottom);
+		fixture.updateFrustumBottom(frustumBottom);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumBottom(float) method test.
+	 * Run the void updateFrustumBottom(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumBottom_fixture3_1()
+	public void testupdateFrustumBottom_fixture3_1()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 		float frustumBottom = 1.0f;
 
-		fixture.setFrustumBottom(frustumBottom);
+		fixture.updateFrustumBottom(frustumBottom);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumBottom(float) method test.
+	 * Run the void updateFrustumBottom(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumBottom_fixture4_1()
+	public void testupdateFrustumBottom_fixture4_1()
 		throws Exception {
-		Camera fixture = getFixture4();
+		CameraView fixture = getFixture4();
 		float frustumBottom = 1.0f;
 
-		fixture.setFrustumBottom(frustumBottom);
+		fixture.updateFrustumBottom(frustumBottom);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumBottom(float) method test.
+	 * Run the void updateFrustumBottom(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumBottom_fixture5_1()
+	public void testupdateFrustumBottom_fixture5_1()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 		float frustumBottom = 1.0f;
 
-		fixture.setFrustumBottom(frustumBottom);
+		fixture.updateFrustumBottom(frustumBottom);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumBottom(float) method test.
+	 * Run the void updateFrustumBottom(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumBottom_fixture6_1()
+	public void testupdateFrustumBottom_fixture6_1()
 		throws Exception {
-		Camera fixture = getFixture6();
+		CameraView fixture = getFixture6();
 		float frustumBottom = 1.0f;
 
-		fixture.setFrustumBottom(frustumBottom);
+		fixture.updateFrustumBottom(frustumBottom);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumBottom(float) method test.
+	 * Run the void updateFrustumBottom(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumBottom_fixture7_1()
+	public void testupdateFrustumBottom_fixture7_1()
 		throws Exception {
-		Camera fixture = getFixture7();
+		CameraView fixture = getFixture7();
 		float frustumBottom = 1.0f;
 
-		fixture.setFrustumBottom(frustumBottom);
+		fixture.updateFrustumBottom(frustumBottom);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumBottom(float) method test.
+	 * Run the void updateFrustumBottom(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumBottom_fixture8_1()
+	public void testupdateFrustumBottom_fixture8_1()
 		throws Exception {
-		Camera fixture = getFixture8();
+		CameraView fixture = getFixture8();
 		float frustumBottom = 1.0f;
 
-		fixture.setFrustumBottom(frustumBottom);
+		fixture.updateFrustumBottom(frustumBottom);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumBottom(float) method test.
+	 * Run the void updateFrustumBottom(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumBottom_fixture9_1()
+	public void testupdateFrustumBottom_fixture9_1()
 		throws Exception {
-		Camera fixture = getFixture9();
+		CameraView fixture = getFixture9();
 		float frustumBottom = 1.0f;
 
-		fixture.setFrustumBottom(frustumBottom);
+		fixture.updateFrustumBottom(frustumBottom);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumBottom(float) method test.
+	 * Run the void updateFrustumBottom(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumBottom_fixture10_1()
+	public void testupdateFrustumBottom_fixture10_1()
 		throws Exception {
-		Camera fixture = getFixture10();
+		CameraView fixture = getFixture10();
 		float frustumBottom = 1.0f;
 
-		fixture.setFrustumBottom(frustumBottom);
+		fixture.updateFrustumBottom(frustumBottom);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumBottom(float) method test.
+	 * Run the void updateFrustumBottom(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumBottom_fixture11_1()
+	public void testupdateFrustumBottom_fixture11_1()
 		throws Exception {
-		Camera fixture = getFixture11();
+		CameraView fixture = getFixture11();
 		float frustumBottom = 1.0f;
 
-		fixture.setFrustumBottom(frustumBottom);
+		fixture.updateFrustumBottom(frustumBottom);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumBottom(float) method test.
+	 * Run the void updateFrustumBottom(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumBottom_fixture12_1()
+	public void testupdateFrustumBottom_fixture12_1()
 		throws Exception {
-		Camera fixture = getFixture12();
+		CameraView fixture = getFixture12();
 		float frustumBottom = 1.0f;
 
-		fixture.setFrustumBottom(frustumBottom);
+		fixture.updateFrustumBottom(frustumBottom);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumBottom(float) method test.
+	 * Run the void updateFrustumBottom(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumBottom_fixture13_1()
+	public void testupdateFrustumBottom_fixture13_1()
 		throws Exception {
-		Camera fixture = getFixture13();
+		CameraView fixture = getFixture13();
 		float frustumBottom = 1.0f;
 
-		fixture.setFrustumBottom(frustumBottom);
+		fixture.updateFrustumBottom(frustumBottom);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumBottom(float) method test.
+	 * Run the void updateFrustumBottom(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumBottom_fixture14_1()
+	public void testupdateFrustumBottom_fixture14_1()
 		throws Exception {
-		Camera fixture = getFixture14();
+		CameraView fixture = getFixture14();
 		float frustumBottom = 1.0f;
 
-		fixture.setFrustumBottom(frustumBottom);
+		fixture.updateFrustumBottom(frustumBottom);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumBottom(float) method test.
+	 * Run the void updateFrustumBottom(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumBottom_fixture15_1()
+	public void testupdateFrustumBottom_fixture15_1()
 		throws Exception {
-		Camera fixture = getFixture15();
+		CameraView fixture = getFixture15();
 		float frustumBottom = 1.0f;
 
-		fixture.setFrustumBottom(frustumBottom);
+		fixture.updateFrustumBottom(frustumBottom);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumBottom(float) method test.
+	 * Run the void updateFrustumBottom(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumBottom_fixture16_1()
+	public void testupdateFrustumBottom_fixture16_1()
 		throws Exception {
-		Camera fixture = getFixture16();
+		CameraView fixture = getFixture16();
 		float frustumBottom = 1.0f;
 
-		fixture.setFrustumBottom(frustumBottom);
+		fixture.updateFrustumBottom(frustumBottom);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumBottom(float) method test.
+	 * Run the void updateFrustumBottom(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumBottom_fixture17_1()
+	public void testupdateFrustumBottom_fixture17_1()
 		throws Exception {
-		Camera fixture = getFixture17();
+		CameraView fixture = getFixture17();
 		float frustumBottom = 1.0f;
 
-		fixture.setFrustumBottom(frustumBottom);
+		fixture.updateFrustumBottom(frustumBottom);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumBottom(float) method test.
+	 * Run the void updateFrustumBottom(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumBottom_fixture18_1()
+	public void testupdateFrustumBottom_fixture18_1()
 		throws Exception {
-		Camera fixture = getFixture18();
+		CameraView fixture = getFixture18();
 		float frustumBottom = 1.0f;
 
-		fixture.setFrustumBottom(frustumBottom);
+		fixture.updateFrustumBottom(frustumBottom);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumBottom(float) method test.
+	 * Run the void updateFrustumBottom(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumBottom_fixture19_1()
+	public void testupdateFrustumBottom_fixture19_1()
 		throws Exception {
-		Camera fixture = getFixture19();
+		CameraView fixture = getFixture19();
 		float frustumBottom = 1.0f;
 
-		fixture.setFrustumBottom(frustumBottom);
+		fixture.updateFrustumBottom(frustumBottom);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumBottom(float) method test.
+	 * Run the void updateFrustumBottom(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumBottom_fixture20_1()
+	public void testupdateFrustumBottom_fixture20_1()
 		throws Exception {
-		Camera fixture = getFixture20();
+		CameraView fixture = getFixture20();
 		float frustumBottom = 1.0f;
 
-		fixture.setFrustumBottom(frustumBottom);
+		fixture.updateFrustumBottom(frustumBottom);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumBottom(float) method test.
+	 * Run the void updateFrustumBottom(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumBottom_fixture21_1()
+	public void testupdateFrustumBottom_fixture21_1()
 		throws Exception {
-		Camera fixture = getFixture21();
+		CameraView fixture = getFixture21();
 		float frustumBottom = 1.0f;
 
-		fixture.setFrustumBottom(frustumBottom);
+		fixture.updateFrustumBottom(frustumBottom);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumBottom(float) method test.
+	 * Run the void updateFrustumBottom(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumBottom_fixture22_1()
+	public void testupdateFrustumBottom_fixture22_1()
 		throws Exception {
-		Camera fixture = getFixture22();
+		CameraView fixture = getFixture22();
 		float frustumBottom = 1.0f;
 
-		fixture.setFrustumBottom(frustumBottom);
+		fixture.updateFrustumBottom(frustumBottom);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumBottom(float) method test.
+	 * Run the void updateFrustumBottom(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumBottom_fixture23_1()
+	public void testupdateFrustumBottom_fixture23_1()
 		throws Exception {
-		Camera fixture = getFixture23();
+		CameraView fixture = getFixture23();
 		float frustumBottom = 1.0f;
 
-		fixture.setFrustumBottom(frustumBottom);
+		fixture.updateFrustumBottom(frustumBottom);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumBottom(float) method test.
+	 * Run the void updateFrustumBottom(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumBottom_fixture24_1()
+	public void testupdateFrustumBottom_fixture24_1()
 		throws Exception {
-		Camera fixture = getFixture24();
+		CameraView fixture = getFixture24();
 		float frustumBottom = 1.0f;
 
-		fixture.setFrustumBottom(frustumBottom);
+		fixture.updateFrustumBottom(frustumBottom);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumBottom(float) method test.
+	 * Run the void updateFrustumBottom(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumBottom_fixture25_1()
+	public void testupdateFrustumBottom_fixture25_1()
 		throws Exception {
-		Camera fixture = getFixture25();
+		CameraView fixture = getFixture25();
 		float frustumBottom = 1.0f;
 
-		fixture.setFrustumBottom(frustumBottom);
+		fixture.updateFrustumBottom(frustumBottom);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumBottom(float) method test.
+	 * Run the void updateFrustumBottom(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumBottom_fixture26_1()
+	public void testupdateFrustumBottom_fixture26_1()
 		throws Exception {
-		Camera fixture = getFixture26();
+		CameraView fixture = getFixture26();
 		float frustumBottom = 1.0f;
 
-		fixture.setFrustumBottom(frustumBottom);
+		fixture.updateFrustumBottom(frustumBottom);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumBottom(float) method test.
+	 * Run the void updateFrustumBottom(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumBottom_fixture27_1()
+	public void testupdateFrustumBottom_fixture27_1()
 		throws Exception {
-		Camera fixture = getFixture27();
+		CameraView fixture = getFixture27();
 		float frustumBottom = 1.0f;
 
-		fixture.setFrustumBottom(frustumBottom);
+		fixture.updateFrustumBottom(frustumBottom);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumBottom(float) method test.
+	 * Run the void updateFrustumBottom(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumBottom_fixture28_1()
+	public void testupdateFrustumBottom_fixture28_1()
 		throws Exception {
-		Camera fixture = getFixture28();
+		CameraView fixture = getFixture28();
 		float frustumBottom = 1.0f;
 
-		fixture.setFrustumBottom(frustumBottom);
+		fixture.updateFrustumBottom(frustumBottom);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumBottom(float) method test.
+	 * Run the void updateFrustumBottom(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumBottom_fixture29_1()
+	public void testupdateFrustumBottom_fixture29_1()
 		throws Exception {
-		Camera fixture = getFixture29();
+		CameraView fixture = getFixture29();
 		float frustumBottom = 1.0f;
 
-		fixture.setFrustumBottom(frustumBottom);
+		fixture.updateFrustumBottom(frustumBottom);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumBottom(float) method test.
+	 * Run the void updateFrustumBottom(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumBottom_fixture2_2()
+	public void testupdateFrustumBottom_fixture2_2()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 		float frustumBottom = -1.0f;
 
-		fixture.setFrustumBottom(frustumBottom);
+		fixture.updateFrustumBottom(frustumBottom);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumFar(float) method test.
+	 * Run the void updateFrustumFar(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	/*@Test
-	public void testSetFrustumFar_fixture1_1()
+	public void testupdateFrustumFar_fixture1_1()
 		throws Exception {
 		Camera fixture = getFixture1();
 		float frustumFar = -1.0f;
 
-		fixture.setFrustumFar(frustumFar);
+		fixture.updateFrustumFar(frustumFar);
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
 		//       at com.jme3.renderer.Camera.onFrustumChange(Camera.java:1440)
-		//       at com.jme3.renderer.Camera.setFrustumFar(Camera.java:578)
+		//       at com.jme3.renderer.Camera.updateFrustumFar(Camera.java:578)
 	}*/
 
 	/**
-	 * Run the void setFrustumFar(float) method test.
+	 * Run the void updateFrustumFar(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumFar_fixture2_1()
+	public void testupdateFrustumFar_fixture2_1()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 		float frustumFar = 0.0f;
 
-		fixture.setFrustumFar(frustumFar);
+		fixture.updateFrustumFar(frustumFar);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumFar(float) method test.
+	 * Run the void updateFrustumFar(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumFar_fixture3_1()
+	public void testupdateFrustumFar_fixture3_1()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 		float frustumFar = 1.0f;
 
-		fixture.setFrustumFar(frustumFar);
+		fixture.updateFrustumFar(frustumFar);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumFar(float) method test.
+	 * Run the void updateFrustumFar(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumFar_fixture4_1()
+	public void testupdateFrustumFar_fixture4_1()
 		throws Exception {
-		Camera fixture = getFixture4();
+		CameraView fixture = getFixture4();
 		float frustumFar = 1.0f;
 
-		fixture.setFrustumFar(frustumFar);
+		fixture.updateFrustumFar(frustumFar);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumFar(float) method test.
+	 * Run the void updateFrustumFar(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumFar_fixture5_1()
+	public void testupdateFrustumFar_fixture5_1()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 		float frustumFar = 1.0f;
 
-		fixture.setFrustumFar(frustumFar);
+		fixture.updateFrustumFar(frustumFar);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumFar(float) method test.
+	 * Run the void updateFrustumFar(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumFar_fixture6_1()
+	public void testupdateFrustumFar_fixture6_1()
 		throws Exception {
-		Camera fixture = getFixture6();
+		CameraView fixture = getFixture6();
 		float frustumFar = 1.0f;
 
-		fixture.setFrustumFar(frustumFar);
+		fixture.updateFrustumFar(frustumFar);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumFar(float) method test.
+	 * Run the void updateFrustumFar(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumFar_fixture7_1()
+	public void testupdateFrustumFar_fixture7_1()
 		throws Exception {
-		Camera fixture = getFixture7();
+		CameraView fixture = getFixture7();
 		float frustumFar = 1.0f;
 
-		fixture.setFrustumFar(frustumFar);
+		fixture.updateFrustumFar(frustumFar);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumFar(float) method test.
+	 * Run the void updateFrustumFar(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumFar_fixture8_1()
+	public void testupdateFrustumFar_fixture8_1()
 		throws Exception {
-		Camera fixture = getFixture8();
+		CameraView fixture = getFixture8();
 		float frustumFar = 1.0f;
 
-		fixture.setFrustumFar(frustumFar);
+		fixture.updateFrustumFar(frustumFar);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumFar(float) method test.
+	 * Run the void updateFrustumFar(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumFar_fixture9_1()
+	public void testupdateFrustumFar_fixture9_1()
 		throws Exception {
-		Camera fixture = getFixture9();
+		CameraView fixture = getFixture9();
 		float frustumFar = 1.0f;
 
-		fixture.setFrustumFar(frustumFar);
+		fixture.updateFrustumFar(frustumFar);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumFar(float) method test.
+	 * Run the void updateFrustumFar(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumFar_fixture10_1()
+	public void testupdateFrustumFar_fixture10_1()
 		throws Exception {
-		Camera fixture = getFixture10();
+		CameraView fixture = getFixture10();
 		float frustumFar = 1.0f;
 
-		fixture.setFrustumFar(frustumFar);
+		fixture.updateFrustumFar(frustumFar);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumFar(float) method test.
+	 * Run the void updateFrustumFar(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumFar_fixture11_1()
+	public void testupdateFrustumFar_fixture11_1()
 		throws Exception {
-		Camera fixture = getFixture11();
+		CameraView fixture = getFixture11();
 		float frustumFar = 1.0f;
 
-		fixture.setFrustumFar(frustumFar);
+		fixture.updateFrustumFar(frustumFar);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumFar(float) method test.
+	 * Run the void updateFrustumFar(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumFar_fixture12_1()
+	public void testupdateFrustumFar_fixture12_1()
 		throws Exception {
-		Camera fixture = getFixture12();
+		CameraView fixture = getFixture12();
 		float frustumFar = 1.0f;
 
-		fixture.setFrustumFar(frustumFar);
+		fixture.updateFrustumFar(frustumFar);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumFar(float) method test.
+	 * Run the void updateFrustumFar(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumFar_fixture13_1()
+	public void testupdateFrustumFar_fixture13_1()
 		throws Exception {
-		Camera fixture = getFixture13();
+		CameraView fixture = getFixture13();
 		float frustumFar = 1.0f;
 
-		fixture.setFrustumFar(frustumFar);
+		fixture.updateFrustumFar(frustumFar);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumFar(float) method test.
+	 * Run the void updateFrustumFar(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumFar_fixture14_1()
+	public void testupdateFrustumFar_fixture14_1()
 		throws Exception {
-		Camera fixture = getFixture14();
+		CameraView fixture = getFixture14();
 		float frustumFar = 1.0f;
 
-		fixture.setFrustumFar(frustumFar);
+		fixture.updateFrustumFar(frustumFar);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumFar(float) method test.
+	 * Run the void updateFrustumFar(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumFar_fixture15_1()
+	public void testupdateFrustumFar_fixture15_1()
 		throws Exception {
-		Camera fixture = getFixture15();
+		CameraView fixture = getFixture15();
 		float frustumFar = 1.0f;
 
-		fixture.setFrustumFar(frustumFar);
+		fixture.updateFrustumFar(frustumFar);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumFar(float) method test.
+	 * Run the void updateFrustumFar(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumFar_fixture16_1()
+	public void testupdateFrustumFar_fixture16_1()
 		throws Exception {
-		Camera fixture = getFixture16();
+		CameraView fixture = getFixture16();
 		float frustumFar = 1.0f;
 
-		fixture.setFrustumFar(frustumFar);
+		fixture.updateFrustumFar(frustumFar);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumFar(float) method test.
+	 * Run the void updateFrustumFar(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumFar_fixture17_1()
+	public void testupdateFrustumFar_fixture17_1()
 		throws Exception {
-		Camera fixture = getFixture17();
+		CameraView fixture = getFixture17();
 		float frustumFar = 1.0f;
 
-		fixture.setFrustumFar(frustumFar);
+		fixture.updateFrustumFar(frustumFar);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumFar(float) method test.
+	 * Run the void updateFrustumFar(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumFar_fixture18_1()
+	public void testupdateFrustumFar_fixture18_1()
 		throws Exception {
-		Camera fixture = getFixture18();
+		CameraView fixture = getFixture18();
 		float frustumFar = 1.0f;
 
-		fixture.setFrustumFar(frustumFar);
+		fixture.updateFrustumFar(frustumFar);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumFar(float) method test.
+	 * Run the void updateFrustumFar(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumFar_fixture19_1()
+	public void testupdateFrustumFar_fixture19_1()
 		throws Exception {
-		Camera fixture = getFixture19();
+		CameraView fixture = getFixture19();
 		float frustumFar = 1.0f;
 
-		fixture.setFrustumFar(frustumFar);
+		fixture.updateFrustumFar(frustumFar);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumFar(float) method test.
+	 * Run the void updateFrustumFar(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumFar_fixture20_1()
+	public void testupdateFrustumFar_fixture20_1()
 		throws Exception {
-		Camera fixture = getFixture20();
+		CameraView fixture = getFixture20();
 		float frustumFar = 1.0f;
 
-		fixture.setFrustumFar(frustumFar);
+		fixture.updateFrustumFar(frustumFar);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumFar(float) method test.
+	 * Run the void updateFrustumFar(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumFar_fixture21_1()
+	public void testupdateFrustumFar_fixture21_1()
 		throws Exception {
-		Camera fixture = getFixture21();
+		CameraView fixture = getFixture21();
 		float frustumFar = 1.0f;
 
-		fixture.setFrustumFar(frustumFar);
+		fixture.updateFrustumFar(frustumFar);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumFar(float) method test.
+	 * Run the void updateFrustumFar(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumFar_fixture22_1()
+	public void testupdateFrustumFar_fixture22_1()
 		throws Exception {
-		Camera fixture = getFixture22();
+		CameraView fixture = getFixture22();
 		float frustumFar = 1.0f;
 
-		fixture.setFrustumFar(frustumFar);
+		fixture.updateFrustumFar(frustumFar);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumFar(float) method test.
+	 * Run the void updateFrustumFar(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumFar_fixture23_1()
+	public void testupdateFrustumFar_fixture23_1()
 		throws Exception {
-		Camera fixture = getFixture23();
+		CameraView fixture = getFixture23();
 		float frustumFar = 1.0f;
 
-		fixture.setFrustumFar(frustumFar);
+		fixture.updateFrustumFar(frustumFar);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumFar(float) method test.
+	 * Run the void updateFrustumFar(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumFar_fixture24_1()
+	public void testupdateFrustumFar_fixture24_1()
 		throws Exception {
-		Camera fixture = getFixture24();
+		CameraView fixture = getFixture24();
 		float frustumFar = 1.0f;
 
-		fixture.setFrustumFar(frustumFar);
+		fixture.updateFrustumFar(frustumFar);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumFar(float) method test.
+	 * Run the void updateFrustumFar(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumFar_fixture25_1()
+	public void testupdateFrustumFar_fixture25_1()
 		throws Exception {
-		Camera fixture = getFixture25();
+		CameraView fixture = getFixture25();
 		float frustumFar = 1.0f;
 
-		fixture.setFrustumFar(frustumFar);
+		fixture.updateFrustumFar(frustumFar);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumFar(float) method test.
+	 * Run the void updateFrustumFar(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumFar_fixture26_1()
+	public void testupdateFrustumFar_fixture26_1()
 		throws Exception {
-		Camera fixture = getFixture26();
+		CameraView fixture = getFixture26();
 		float frustumFar = 1.0f;
 
-		fixture.setFrustumFar(frustumFar);
+		fixture.updateFrustumFar(frustumFar);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumFar(float) method test.
+	 * Run the void updateFrustumFar(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumFar_fixture27_1()
+	public void testupdateFrustumFar_fixture27_1()
 		throws Exception {
-		Camera fixture = getFixture27();
+		CameraView fixture = getFixture27();
 		float frustumFar = 1.0f;
 
-		fixture.setFrustumFar(frustumFar);
+		fixture.updateFrustumFar(frustumFar);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumFar(float) method test.
+	 * Run the void updateFrustumFar(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumFar_fixture28_1()
+	public void testupdateFrustumFar_fixture28_1()
 		throws Exception {
-		Camera fixture = getFixture28();
+		CameraView fixture = getFixture28();
 		float frustumFar = 1.0f;
 
-		fixture.setFrustumFar(frustumFar);
+		fixture.updateFrustumFar(frustumFar);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumFar(float) method test.
+	 * Run the void updateFrustumFar(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumFar_fixture29_1()
+	public void testupdateFrustumFar_fixture29_1()
 		throws Exception {
-		Camera fixture = getFixture29();
+		CameraView fixture = getFixture29();
 		float frustumFar = 1.0f;
 
-		fixture.setFrustumFar(frustumFar);
+		fixture.updateFrustumFar(frustumFar);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumFar(float) method test.
+	 * Run the void updateFrustumFar(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumFar_fixture2_2()
+	public void testupdateFrustumFar_fixture2_2()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 		float frustumFar = -1.0f;
 
-		fixture.setFrustumFar(frustumFar);
+		fixture.updateFrustumFar(frustumFar);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumLeft(float) method test.
+	 * Run the void updateFrustumLeft(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 /*	@Test
-	public void testSetFrustumLeft_fixture1_1()
+	public void testupdateFrustumLeft_fixture1_1()
 		throws Exception {
 		Camera fixture = getFixture1();
 		float frustumLeft = -1.0f;
 
-		fixture.setFrustumLeft(frustumLeft);
+		fixture.updateFrustumLeft(frustumLeft);
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
 		//       at com.jme3.renderer.Camera.onFrustumChange(Camera.java:1440)
-		//       at com.jme3.renderer.Camera.setFrustumLeft(Camera.java:605)
+		//       at com.jme3.renderer.Camera.updateFrustumLeft(Camera.java:605)
 	}*/
 
 	/**
-	 * Run the void setFrustumLeft(float) method test.
+	 * Run the void updateFrustumLeft(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumLeft_fixture2_1()
+	public void testupdateFrustumLeft_fixture2_1()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 		float frustumLeft = 0.0f;
 
-		fixture.setFrustumLeft(frustumLeft);
+		fixture.updateFrustumLeft(frustumLeft);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumLeft(float) method test.
+	 * Run the void updateFrustumLeft(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumLeft_fixture3_1()
+	public void testupdateFrustumLeft_fixture3_1()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 		float frustumLeft = 1.0f;
 
-		fixture.setFrustumLeft(frustumLeft);
+		fixture.updateFrustumLeft(frustumLeft);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumLeft(float) method test.
+	 * Run the void updateFrustumLeft(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumLeft_fixture4_1()
+	public void testupdateFrustumLeft_fixture4_1()
 		throws Exception {
-		Camera fixture = getFixture4();
+		CameraView fixture = getFixture4();
 		float frustumLeft = 1.0f;
 
-		fixture.setFrustumLeft(frustumLeft);
+		fixture.updateFrustumLeft(frustumLeft);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumLeft(float) method test.
+	 * Run the void updateFrustumLeft(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumLeft_fixture5_1()
+	public void testupdateFrustumLeft_fixture5_1()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 		float frustumLeft = 1.0f;
 
-		fixture.setFrustumLeft(frustumLeft);
+		fixture.updateFrustumLeft(frustumLeft);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumLeft(float) method test.
+	 * Run the void updateFrustumLeft(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumLeft_fixture6_1()
+	public void testupdateFrustumLeft_fixture6_1()
 		throws Exception {
-		Camera fixture = getFixture6();
+		CameraView fixture = getFixture6();
 		float frustumLeft = 1.0f;
 
-		fixture.setFrustumLeft(frustumLeft);
+		fixture.updateFrustumLeft(frustumLeft);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumLeft(float) method test.
+	 * Run the void updateFrustumLeft(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumLeft_fixture7_1()
+	public void testupdateFrustumLeft_fixture7_1()
 		throws Exception {
-		Camera fixture = getFixture7();
+		CameraView fixture = getFixture7();
 		float frustumLeft = 1.0f;
 
-		fixture.setFrustumLeft(frustumLeft);
+		fixture.updateFrustumLeft(frustumLeft);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumLeft(float) method test.
+	 * Run the void updateFrustumLeft(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumLeft_fixture8_1()
+	public void testupdateFrustumLeft_fixture8_1()
 		throws Exception {
-		Camera fixture = getFixture8();
+		CameraView fixture = getFixture8();
 		float frustumLeft = 1.0f;
 
-		fixture.setFrustumLeft(frustumLeft);
+		fixture.updateFrustumLeft(frustumLeft);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumLeft(float) method test.
+	 * Run the void updateFrustumLeft(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumLeft_fixture9_1()
+	public void testupdateFrustumLeft_fixture9_1()
 		throws Exception {
-		Camera fixture = getFixture9();
+		CameraView fixture = getFixture9();
 		float frustumLeft = 1.0f;
 
-		fixture.setFrustumLeft(frustumLeft);
+		fixture.updateFrustumLeft(frustumLeft);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumLeft(float) method test.
+	 * Run the void updateFrustumLeft(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumLeft_fixture10_1()
+	public void testupdateFrustumLeft_fixture10_1()
 		throws Exception {
-		Camera fixture = getFixture10();
+		CameraView fixture = getFixture10();
 		float frustumLeft = 1.0f;
 
-		fixture.setFrustumLeft(frustumLeft);
+		fixture.updateFrustumLeft(frustumLeft);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumLeft(float) method test.
+	 * Run the void updateFrustumLeft(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumLeft_fixture11_1()
+	public void testupdateFrustumLeft_fixture11_1()
 		throws Exception {
-		Camera fixture = getFixture11();
+		CameraView fixture = getFixture11();
 		float frustumLeft = 1.0f;
 
-		fixture.setFrustumLeft(frustumLeft);
+		fixture.updateFrustumLeft(frustumLeft);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumLeft(float) method test.
+	 * Run the void updateFrustumLeft(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumLeft_fixture12_1()
+	public void testupdateFrustumLeft_fixture12_1()
 		throws Exception {
-		Camera fixture = getFixture12();
+		CameraView fixture = getFixture12();
 		float frustumLeft = 1.0f;
 
-		fixture.setFrustumLeft(frustumLeft);
+		fixture.updateFrustumLeft(frustumLeft);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumLeft(float) method test.
+	 * Run the void updateFrustumLeft(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumLeft_fixture13_1()
+	public void testupdateFrustumLeft_fixture13_1()
 		throws Exception {
-		Camera fixture = getFixture13();
+		CameraView fixture = getFixture13();
 		float frustumLeft = 1.0f;
 
-		fixture.setFrustumLeft(frustumLeft);
+		fixture.updateFrustumLeft(frustumLeft);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumLeft(float) method test.
+	 * Run the void updateFrustumLeft(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumLeft_fixture14_1()
+	public void testupdateFrustumLeft_fixture14_1()
 		throws Exception {
-		Camera fixture = getFixture14();
+		CameraView fixture = getFixture14();
 		float frustumLeft = 1.0f;
 
-		fixture.setFrustumLeft(frustumLeft);
+		fixture.updateFrustumLeft(frustumLeft);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumLeft(float) method test.
+	 * Run the void updateFrustumLeft(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumLeft_fixture15_1()
+	public void testupdateFrustumLeft_fixture15_1()
 		throws Exception {
-		Camera fixture = getFixture15();
+		CameraView fixture = getFixture15();
 		float frustumLeft = 1.0f;
 
-		fixture.setFrustumLeft(frustumLeft);
+		fixture.updateFrustumLeft(frustumLeft);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumLeft(float) method test.
+	 * Run the void updateFrustumLeft(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumLeft_fixture16_1()
+	public void testupdateFrustumLeft_fixture16_1()
 		throws Exception {
-		Camera fixture = getFixture16();
+		CameraView fixture = getFixture16();
 		float frustumLeft = 1.0f;
 
-		fixture.setFrustumLeft(frustumLeft);
+		fixture.updateFrustumLeft(frustumLeft);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumLeft(float) method test.
+	 * Run the void updateFrustumLeft(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumLeft_fixture17_1()
+	public void testupdateFrustumLeft_fixture17_1()
 		throws Exception {
-		Camera fixture = getFixture17();
+		CameraView fixture = getFixture17();
 		float frustumLeft = 1.0f;
 
-		fixture.setFrustumLeft(frustumLeft);
+		fixture.updateFrustumLeft(frustumLeft);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumLeft(float) method test.
+	 * Run the void updateFrustumLeft(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumLeft_fixture18_1()
+	public void testupdateFrustumLeft_fixture18_1()
 		throws Exception {
-		Camera fixture = getFixture18();
+		CameraView fixture = getFixture18();
 		float frustumLeft = 1.0f;
 
-		fixture.setFrustumLeft(frustumLeft);
+		fixture.updateFrustumLeft(frustumLeft);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumLeft(float) method test.
+	 * Run the void updateFrustumLeft(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumLeft_fixture19_1()
+	public void testupdateFrustumLeft_fixture19_1()
 		throws Exception {
-		Camera fixture = getFixture19();
+		CameraView fixture = getFixture19();
 		float frustumLeft = 1.0f;
 
-		fixture.setFrustumLeft(frustumLeft);
+		fixture.updateFrustumLeft(frustumLeft);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumLeft(float) method test.
+	 * Run the void updateFrustumLeft(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumLeft_fixture20_1()
+	public void testupdateFrustumLeft_fixture20_1()
 		throws Exception {
-		Camera fixture = getFixture20();
+		CameraView fixture = getFixture20();
 		float frustumLeft = 1.0f;
 
-		fixture.setFrustumLeft(frustumLeft);
+		fixture.updateFrustumLeft(frustumLeft);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumLeft(float) method test.
+	 * Run the void updateFrustumLeft(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumLeft_fixture21_1()
+	public void testupdateFrustumLeft_fixture21_1()
 		throws Exception {
-		Camera fixture = getFixture21();
+		CameraView fixture = getFixture21();
 		float frustumLeft = 1.0f;
 
-		fixture.setFrustumLeft(frustumLeft);
+		fixture.updateFrustumLeft(frustumLeft);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumLeft(float) method test.
+	 * Run the void updateFrustumLeft(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumLeft_fixture22_1()
+	public void testupdateFrustumLeft_fixture22_1()
 		throws Exception {
-		Camera fixture = getFixture22();
+		CameraView fixture = getFixture22();
 		float frustumLeft = 1.0f;
 
-		fixture.setFrustumLeft(frustumLeft);
+		fixture.updateFrustumLeft(frustumLeft);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumLeft(float) method test.
+	 * Run the void updateFrustumLeft(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumLeft_fixture23_1()
+	public void testupdateFrustumLeft_fixture23_1()
 		throws Exception {
-		Camera fixture = getFixture23();
+		CameraView fixture = getFixture23();
 		float frustumLeft = 1.0f;
 
-		fixture.setFrustumLeft(frustumLeft);
+		fixture.updateFrustumLeft(frustumLeft);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumLeft(float) method test.
+	 * Run the void updateFrustumLeft(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumLeft_fixture24_1()
+	public void testupdateFrustumLeft_fixture24_1()
 		throws Exception {
-		Camera fixture = getFixture24();
+		CameraView fixture = getFixture24();
 		float frustumLeft = 1.0f;
 
-		fixture.setFrustumLeft(frustumLeft);
+		fixture.updateFrustumLeft(frustumLeft);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumLeft(float) method test.
+	 * Run the void updateFrustumLeft(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumLeft_fixture25_1()
+	public void testupdateFrustumLeft_fixture25_1()
 		throws Exception {
-		Camera fixture = getFixture25();
+		CameraView fixture = getFixture25();
 		float frustumLeft = 1.0f;
 
-		fixture.setFrustumLeft(frustumLeft);
+		fixture.updateFrustumLeft(frustumLeft);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumLeft(float) method test.
+	 * Run the void updateFrustumLeft(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumLeft_fixture26_1()
+	public void testupdateFrustumLeft_fixture26_1()
 		throws Exception {
-		Camera fixture = getFixture26();
+		CameraView fixture = getFixture26();
 		float frustumLeft = 1.0f;
 
-		fixture.setFrustumLeft(frustumLeft);
+		fixture.updateFrustumLeft(frustumLeft);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumLeft(float) method test.
+	 * Run the void updateFrustumLeft(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumLeft_fixture27_1()
+	public void testupdateFrustumLeft_fixture27_1()
 		throws Exception {
-		Camera fixture = getFixture27();
+		CameraView fixture = getFixture27();
 		float frustumLeft = 1.0f;
 
-		fixture.setFrustumLeft(frustumLeft);
+		fixture.updateFrustumLeft(frustumLeft);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumLeft(float) method test.
+	 * Run the void updateFrustumLeft(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumLeft_fixture28_1()
+	public void testupdateFrustumLeft_fixture28_1()
 		throws Exception {
-		Camera fixture = getFixture28();
+		CameraView fixture = getFixture28();
 		float frustumLeft = 1.0f;
 
-		fixture.setFrustumLeft(frustumLeft);
+		fixture.updateFrustumLeft(frustumLeft);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumLeft(float) method test.
+	 * Run the void updateFrustumLeft(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumLeft_fixture29_1()
+	public void testupdateFrustumLeft_fixture29_1()
 		throws Exception {
-		Camera fixture = getFixture29();
+		CameraView fixture = getFixture29();
 		float frustumLeft = 1.0f;
 
-		fixture.setFrustumLeft(frustumLeft);
+		fixture.updateFrustumLeft(frustumLeft);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumLeft(float) method test.
+	 * Run the void updateFrustumLeft(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumLeft_fixture2_2()
+	public void testupdateFrustumLeft_fixture2_2()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 		float frustumLeft = -1.0f;
 
-		fixture.setFrustumLeft(frustumLeft);
+		fixture.updateFrustumLeft(frustumLeft);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumNear(float) method test.
+	 * Run the void updateFrustumNear(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 /*	@Test
-	public void testSetFrustumNear_fixture1_1()
+	public void testupdateFrustumNear_fixture1_1()
 		throws Exception {
 		Camera fixture = getFixture1();
 		float frustumNear = -1.0f;
 
-		fixture.setFrustumNear(frustumNear);
+		fixture.updateFrustumNear(frustumNear);
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
 		//       at com.jme3.renderer.Camera.onFrustumChange(Camera.java:1440)
-		//       at com.jme3.renderer.Camera.setFrustumNear(Camera.java:635)
+		//       at com.jme3.renderer.Camera.updateFrustumNear(Camera.java:635)
 	}*/
 
 	/**
-	 * Run the void setFrustumNear(float) method test.
+	 * Run the void updateFrustumNear(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumNear_fixture2_1()
+	public void testupdateFrustumNear_fixture2_1()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 		float frustumNear = 0.0f;
 
-		fixture.setFrustumNear(frustumNear);
+		fixture.updateFrustumNear(frustumNear);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumNear(float) method test.
+	 * Run the void updateFrustumNear(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumNear_fixture3_1()
+	public void testupdateFrustumNear_fixture3_1()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 		float frustumNear = 1.0f;
 
-		fixture.setFrustumNear(frustumNear);
+		fixture.updateFrustumNear(frustumNear);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumNear(float) method test.
+	 * Run the void updateFrustumNear(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumNear_fixture4_1()
+	public void testupdateFrustumNear_fixture4_1()
 		throws Exception {
-		Camera fixture = getFixture4();
+		CameraView fixture = getFixture4();
 		float frustumNear = 1.0f;
 
-		fixture.setFrustumNear(frustumNear);
+		fixture.updateFrustumNear(frustumNear);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumNear(float) method test.
+	 * Run the void updateFrustumNear(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumNear_fixture5_1()
+	public void testupdateFrustumNear_fixture5_1()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 		float frustumNear = 1.0f;
 
-		fixture.setFrustumNear(frustumNear);
+		fixture.updateFrustumNear(frustumNear);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumNear(float) method test.
+	 * Run the void updateFrustumNear(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumNear_fixture6_1()
+	public void testupdateFrustumNear_fixture6_1()
 		throws Exception {
-		Camera fixture = getFixture6();
+		CameraView fixture = getFixture6();
 		float frustumNear = 1.0f;
 
-		fixture.setFrustumNear(frustumNear);
+		fixture.updateFrustumNear(frustumNear);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumNear(float) method test.
+	 * Run the void updateFrustumNear(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumNear_fixture7_1()
+	public void testupdateFrustumNear_fixture7_1()
 		throws Exception {
-		Camera fixture = getFixture7();
+		CameraView fixture = getFixture7();
 		float frustumNear = 1.0f;
 
-		fixture.setFrustumNear(frustumNear);
+		fixture.updateFrustumNear(frustumNear);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumNear(float) method test.
+	 * Run the void updateFrustumNear(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumNear_fixture8_1()
+	public void testupdateFrustumNear_fixture8_1()
 		throws Exception {
-		Camera fixture = getFixture8();
+		CameraView fixture = getFixture8();
 		float frustumNear = 1.0f;
 
-		fixture.setFrustumNear(frustumNear);
+		fixture.updateFrustumNear(frustumNear);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumNear(float) method test.
+	 * Run the void updateFrustumNear(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumNear_fixture9_1()
+	public void testupdateFrustumNear_fixture9_1()
 		throws Exception {
-		Camera fixture = getFixture9();
+		CameraView fixture = getFixture9();
 		float frustumNear = 1.0f;
 
-		fixture.setFrustumNear(frustumNear);
+		fixture.updateFrustumNear(frustumNear);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumNear(float) method test.
+	 * Run the void updateFrustumNear(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumNear_fixture10_1()
+	public void testupdateFrustumNear_fixture10_1()
 		throws Exception {
-		Camera fixture = getFixture10();
+		CameraView fixture = getFixture10();
 		float frustumNear = 1.0f;
 
-		fixture.setFrustumNear(frustumNear);
+		fixture.updateFrustumNear(frustumNear);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumNear(float) method test.
+	 * Run the void updateFrustumNear(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumNear_fixture11_1()
+	public void testupdateFrustumNear_fixture11_1()
 		throws Exception {
-		Camera fixture = getFixture11();
+		CameraView fixture = getFixture11();
 		float frustumNear = 1.0f;
 
-		fixture.setFrustumNear(frustumNear);
+		fixture.updateFrustumNear(frustumNear);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumNear(float) method test.
+	 * Run the void updateFrustumNear(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumNear_fixture12_1()
+	public void testupdateFrustumNear_fixture12_1()
 		throws Exception {
-		Camera fixture = getFixture12();
+		CameraView fixture = getFixture12();
 		float frustumNear = 1.0f;
 
-		fixture.setFrustumNear(frustumNear);
+		fixture.updateFrustumNear(frustumNear);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumNear(float) method test.
+	 * Run the void updateFrustumNear(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumNear_fixture13_1()
+	public void testupdateFrustumNear_fixture13_1()
 		throws Exception {
-		Camera fixture = getFixture13();
+		CameraView fixture = getFixture13();
 		float frustumNear = 1.0f;
 
-		fixture.setFrustumNear(frustumNear);
+		fixture.updateFrustumNear(frustumNear);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumNear(float) method test.
+	 * Run the void updateFrustumNear(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumNear_fixture14_1()
+	public void testupdateFrustumNear_fixture14_1()
 		throws Exception {
-		Camera fixture = getFixture14();
+		CameraView fixture = getFixture14();
 		float frustumNear = 1.0f;
 
-		fixture.setFrustumNear(frustumNear);
+		fixture.updateFrustumNear(frustumNear);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumNear(float) method test.
+	 * Run the void updateFrustumNear(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumNear_fixture15_1()
+	public void testupdateFrustumNear_fixture15_1()
 		throws Exception {
-		Camera fixture = getFixture15();
+		CameraView fixture = getFixture15();
 		float frustumNear = 1.0f;
 
-		fixture.setFrustumNear(frustumNear);
+		fixture.updateFrustumNear(frustumNear);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumNear(float) method test.
+	 * Run the void updateFrustumNear(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumNear_fixture16_1()
+	public void testupdateFrustumNear_fixture16_1()
 		throws Exception {
-		Camera fixture = getFixture16();
+		CameraView fixture = getFixture16();
 		float frustumNear = 1.0f;
 
-		fixture.setFrustumNear(frustumNear);
+		fixture.updateFrustumNear(frustumNear);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumNear(float) method test.
+	 * Run the void updateFrustumNear(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumNear_fixture17_1()
+	public void testupdateFrustumNear_fixture17_1()
 		throws Exception {
-		Camera fixture = getFixture17();
+		CameraView fixture = getFixture17();
 		float frustumNear = 1.0f;
 
-		fixture.setFrustumNear(frustumNear);
+		fixture.updateFrustumNear(frustumNear);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumNear(float) method test.
+	 * Run the void updateFrustumNear(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumNear_fixture18_1()
+	public void testupdateFrustumNear_fixture18_1()
 		throws Exception {
-		Camera fixture = getFixture18();
+		CameraView fixture = getFixture18();
 		float frustumNear = 1.0f;
 
-		fixture.setFrustumNear(frustumNear);
+		fixture.updateFrustumNear(frustumNear);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumNear(float) method test.
+	 * Run the void updateFrustumNear(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumNear_fixture19_1()
+	public void testupdateFrustumNear_fixture19_1()
 		throws Exception {
-		Camera fixture = getFixture19();
+		CameraView fixture = getFixture19();
 		float frustumNear = 1.0f;
 
-		fixture.setFrustumNear(frustumNear);
+		fixture.updateFrustumNear(frustumNear);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumNear(float) method test.
+	 * Run the void updateFrustumNear(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumNear_fixture20_1()
+	public void testupdateFrustumNear_fixture20_1()
 		throws Exception {
-		Camera fixture = getFixture20();
+		CameraView fixture = getFixture20();
 		float frustumNear = 1.0f;
 
-		fixture.setFrustumNear(frustumNear);
+		fixture.updateFrustumNear(frustumNear);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumNear(float) method test.
+	 * Run the void updateFrustumNear(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumNear_fixture21_1()
+	public void testupdateFrustumNear_fixture21_1()
 		throws Exception {
-		Camera fixture = getFixture21();
+		CameraView fixture = getFixture21();
 		float frustumNear = 1.0f;
 
-		fixture.setFrustumNear(frustumNear);
+		fixture.updateFrustumNear(frustumNear);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumNear(float) method test.
+	 * Run the void updateFrustumNear(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumNear_fixture22_1()
+	public void testupdateFrustumNear_fixture22_1()
 		throws Exception {
-		Camera fixture = getFixture22();
+		CameraView fixture = getFixture22();
 		float frustumNear = 1.0f;
 
-		fixture.setFrustumNear(frustumNear);
+		fixture.updateFrustumNear(frustumNear);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumNear(float) method test.
+	 * Run the void updateFrustumNear(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumNear_fixture23_1()
+	public void testupdateFrustumNear_fixture23_1()
 		throws Exception {
-		Camera fixture = getFixture23();
+		CameraView fixture = getFixture23();
 		float frustumNear = 1.0f;
 
-		fixture.setFrustumNear(frustumNear);
+		fixture.updateFrustumNear(frustumNear);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumNear(float) method test.
+	 * Run the void updateFrustumNear(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumNear_fixture24_1()
+	public void testupdateFrustumNear_fixture24_1()
 		throws Exception {
-		Camera fixture = getFixture24();
+		CameraView fixture = getFixture24();
 		float frustumNear = 1.0f;
 
-		fixture.setFrustumNear(frustumNear);
+		fixture.updateFrustumNear(frustumNear);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumNear(float) method test.
+	 * Run the void updateFrustumNear(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumNear_fixture25_1()
+	public void testupdateFrustumNear_fixture25_1()
 		throws Exception {
-		Camera fixture = getFixture25();
+		CameraView fixture = getFixture25();
 		float frustumNear = 1.0f;
 
-		fixture.setFrustumNear(frustumNear);
+		fixture.updateFrustumNear(frustumNear);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumNear(float) method test.
+	 * Run the void updateFrustumNear(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumNear_fixture26_1()
+	public void testupdateFrustumNear_fixture26_1()
 		throws Exception {
-		Camera fixture = getFixture26();
+		CameraView fixture = getFixture26();
 		float frustumNear = 1.0f;
 
-		fixture.setFrustumNear(frustumNear);
+		fixture.updateFrustumNear(frustumNear);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumNear(float) method test.
+	 * Run the void updateFrustumNear(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumNear_fixture27_1()
+	public void testupdateFrustumNear_fixture27_1()
 		throws Exception {
-		Camera fixture = getFixture27();
+		CameraView fixture = getFixture27();
 		float frustumNear = 1.0f;
 
-		fixture.setFrustumNear(frustumNear);
+		fixture.updateFrustumNear(frustumNear);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumNear(float) method test.
+	 * Run the void updateFrustumNear(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumNear_fixture28_1()
+	public void testupdateFrustumNear_fixture28_1()
 		throws Exception {
-		Camera fixture = getFixture28();
+		CameraView fixture = getFixture28();
 		float frustumNear = 1.0f;
 
-		fixture.setFrustumNear(frustumNear);
+		fixture.updateFrustumNear(frustumNear);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumNear(float) method test.
+	 * Run the void updateFrustumNear(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumNear_fixture29_1()
+	public void testupdateFrustumNear_fixture29_1()
 		throws Exception {
-		Camera fixture = getFixture29();
+		CameraView fixture = getFixture29();
 		float frustumNear = 1.0f;
 
-		fixture.setFrustumNear(frustumNear);
+		fixture.updateFrustumNear(frustumNear);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumNear(float) method test.
+	 * Run the void updateFrustumNear(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumNear_fixture2_2()
+	public void testupdateFrustumNear_fixture2_2()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 		float frustumNear = -1.0f;
 
-		fixture.setFrustumNear(frustumNear);
+		fixture.updateFrustumNear(frustumNear);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumPerspective(float,float,float,float) method test.
+	 * Run the void updateFrustumPerspective(float,float,float,float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 /*	@Test
-	public void testSetFrustumPerspective_fixture1_1()
+	public void testupdateFrustumPerspective_fixture1_1()
 		throws Exception {
 		Camera fixture = getFixture1();
 		float fovY = -1.0f;
@@ -36286,549 +36286,549 @@ public class CameraTest {
 		float near = -1.0f;
 		float far = -1.0f;
 
-		fixture.setFrustumPerspective(fovY, aspect, near, far);
+		fixture.updateFrustumPerspective(fovY, aspect, near, far);
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
 		//       at com.jme3.renderer.Camera.onFrustumChange(Camera.java:1425)
-		//       at com.jme3.renderer.Camera.setFrustumPerspective(Camera.java:902)
+		//       at com.jme3.renderer.Camera.updateFrustumPerspective(Camera.java:902)
 	}*/
 
 	/**
-	 * Run the void setFrustumPerspective(float,float,float,float) method test.
+	 * Run the void updateFrustumPerspective(float,float,float,float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumPerspective_fixture2_1()
+	public void testupdateFrustumPerspective_fixture2_1()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 		float fovY = 0.0f;
 		float aspect = 0.0f;
 		float near = 0.0f;
 		float far = 0.0f;
 
-		fixture.setFrustumPerspective(fovY, aspect, near, far);
+		fixture.updateFrustumPerspective(fovY, aspect, near, far);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumPerspective(float,float,float,float) method test.
+	 * Run the void updateFrustumPerspective(float,float,float,float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumPerspective_fixture3_1()
+	public void testupdateFrustumPerspective_fixture3_1()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 		float fovY = 1.0f;
 		float aspect = 1.0f;
 		float near = 1.0f;
 		float far = 1.0f;
 
-		fixture.setFrustumPerspective(fovY, aspect, near, far);
+		fixture.updateFrustumPerspective(fovY, aspect, near, far);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumPerspective(float,float,float,float) method test.
+	 * Run the void updateFrustumPerspective(float,float,float,float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumPerspective_fixture5_1()
+	public void testupdateFrustumPerspective_fixture5_1()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 		float fovY = 0.0f;
 		float aspect = 0.0f;
 		float near = -1.0f;
 		float far = 1.0f;
 
-		fixture.setFrustumPerspective(fovY, aspect, near, far);
+		fixture.updateFrustumPerspective(fovY, aspect, near, far);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumPerspective(float,float,float,float) method test.
+	 * Run the void updateFrustumPerspective(float,float,float,float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumPerspective_fixture6_1()
+	public void testupdateFrustumPerspective_fixture6_1()
 		throws Exception {
-		Camera fixture = getFixture6();
+		CameraView fixture = getFixture6();
 		float fovY = 1.0f;
 		float aspect = 1.0f;
 		float near = 0.0f;
 		float far = 1.0f;
 
-		fixture.setFrustumPerspective(fovY, aspect, near, far);
+		fixture.updateFrustumPerspective(fovY, aspect, near, far);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumPerspective(float,float,float,float) method test.
+	 * Run the void updateFrustumPerspective(float,float,float,float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumPerspective_fixture8_1()
+	public void testupdateFrustumPerspective_fixture8_1()
 		throws Exception {
-		Camera fixture = getFixture8();
+		CameraView fixture = getFixture8();
 		float fovY = 0.0f;
 		float aspect = -1.0f;
 		float near = 0.0f;
 		float far = 1.0f;
 
-		fixture.setFrustumPerspective(fovY, aspect, near, far);
+		fixture.updateFrustumPerspective(fovY, aspect, near, far);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumPerspective(float,float,float,float) method test.
+	 * Run the void updateFrustumPerspective(float,float,float,float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumPerspective_fixture9_1()
+	public void testupdateFrustumPerspective_fixture9_1()
 		throws Exception {
-		Camera fixture = getFixture9();
+		CameraView fixture = getFixture9();
 		float fovY = 1.0f;
 		float aspect = 0.0f;
 		float near = 0.0f;
 		float far = 1.0f;
 
-		fixture.setFrustumPerspective(fovY, aspect, near, far);
+		fixture.updateFrustumPerspective(fovY, aspect, near, far);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumPerspective(float,float,float,float) method test.
+	 * Run the void updateFrustumPerspective(float,float,float,float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumPerspective_fixture11_1()
+	public void testupdateFrustumPerspective_fixture11_1()
 		throws Exception {
-		Camera fixture = getFixture11();
+		CameraView fixture = getFixture11();
 		float fovY = -1.0f;
 		float aspect = 0.0f;
 		float near = 0.0f;
 		float far = 1.0f;
 
-		fixture.setFrustumPerspective(fovY, aspect, near, far);
+		fixture.updateFrustumPerspective(fovY, aspect, near, far);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumPerspective(float,float,float,float) method test.
+	 * Run the void updateFrustumPerspective(float,float,float,float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumPerspective_fixture12_1()
+	public void testupdateFrustumPerspective_fixture12_1()
 		throws Exception {
-		Camera fixture = getFixture12();
+		CameraView fixture = getFixture12();
 		float fovY = 0.0f;
 		float aspect = 0.0f;
 		float near = 0.0f;
 		float far = 1.0f;
 
-		fixture.setFrustumPerspective(fovY, aspect, near, far);
+		fixture.updateFrustumPerspective(fovY, aspect, near, far);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumPerspective(float,float,float,float) method test.
+	 * Run the void updateFrustumPerspective(float,float,float,float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumPerspective_fixture13_1()
+	public void testupdateFrustumPerspective_fixture13_1()
 		throws Exception {
-		Camera fixture = getFixture13();
+		CameraView fixture = getFixture13();
 		float fovY = 0.0f;
 		float aspect = 0.0f;
 		float near = 0.0f;
 		float far = 1.0f;
 
-		fixture.setFrustumPerspective(fovY, aspect, near, far);
+		fixture.updateFrustumPerspective(fovY, aspect, near, far);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumPerspective(float,float,float,float) method test.
+	 * Run the void updateFrustumPerspective(float,float,float,float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumPerspective_fixture14_1()
+	public void testupdateFrustumPerspective_fixture14_1()
 		throws Exception {
-		Camera fixture = getFixture14();
+		CameraView fixture = getFixture14();
 		float fovY = 0.0f;
 		float aspect = 0.0f;
 		float near = 0.0f;
 		float far = 1.0f;
 
-		fixture.setFrustumPerspective(fovY, aspect, near, far);
+		fixture.updateFrustumPerspective(fovY, aspect, near, far);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumPerspective(float,float,float,float) method test.
+	 * Run the void updateFrustumPerspective(float,float,float,float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumPerspective_fixture15_1()
+	public void testupdateFrustumPerspective_fixture15_1()
 		throws Exception {
-		Camera fixture = getFixture15();
+		CameraView fixture = getFixture15();
 		float fovY = 0.0f;
 		float aspect = 0.0f;
 		float near = 0.0f;
 		float far = 1.0f;
 
-		fixture.setFrustumPerspective(fovY, aspect, near, far);
+		fixture.updateFrustumPerspective(fovY, aspect, near, far);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumPerspective(float,float,float,float) method test.
+	 * Run the void updateFrustumPerspective(float,float,float,float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumPerspective_fixture16_1()
+	public void testupdateFrustumPerspective_fixture16_1()
 		throws Exception {
-		Camera fixture = getFixture16();
+		CameraView fixture = getFixture16();
 		float fovY = 0.0f;
 		float aspect = 0.0f;
 		float near = 0.0f;
 		float far = 1.0f;
 
-		fixture.setFrustumPerspective(fovY, aspect, near, far);
+		fixture.updateFrustumPerspective(fovY, aspect, near, far);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumPerspective(float,float,float,float) method test.
+	 * Run the void updateFrustumPerspective(float,float,float,float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumPerspective_fixture17_1()
+	public void testupdateFrustumPerspective_fixture17_1()
 		throws Exception {
-		Camera fixture = getFixture17();
+		CameraView fixture = getFixture17();
 		float fovY = 0.0f;
 		float aspect = 0.0f;
 		float near = 0.0f;
 		float far = 1.0f;
 
-		fixture.setFrustumPerspective(fovY, aspect, near, far);
+		fixture.updateFrustumPerspective(fovY, aspect, near, far);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumPerspective(float,float,float,float) method test.
+	 * Run the void updateFrustumPerspective(float,float,float,float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumPerspective_fixture18_1()
+	public void testupdateFrustumPerspective_fixture18_1()
 		throws Exception {
-		Camera fixture = getFixture18();
+		CameraView fixture = getFixture18();
 		float fovY = 0.0f;
 		float aspect = 0.0f;
 		float near = 0.0f;
 		float far = 1.0f;
 
-		fixture.setFrustumPerspective(fovY, aspect, near, far);
+		fixture.updateFrustumPerspective(fovY, aspect, near, far);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumPerspective(float,float,float,float) method test.
+	 * Run the void updateFrustumPerspective(float,float,float,float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumPerspective_fixture19_1()
+	public void testupdateFrustumPerspective_fixture19_1()
 		throws Exception {
-		Camera fixture = getFixture19();
+		CameraView fixture = getFixture19();
 		float fovY = 0.0f;
 		float aspect = 0.0f;
 		float near = 0.0f;
 		float far = 1.0f;
 
-		fixture.setFrustumPerspective(fovY, aspect, near, far);
+		fixture.updateFrustumPerspective(fovY, aspect, near, far);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumPerspective(float,float,float,float) method test.
+	 * Run the void updateFrustumPerspective(float,float,float,float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumPerspective_fixture20_1()
+	public void testupdateFrustumPerspective_fixture20_1()
 		throws Exception {
-		Camera fixture = getFixture20();
+		CameraView fixture = getFixture20();
 		float fovY = 0.0f;
 		float aspect = 0.0f;
 		float near = 0.0f;
 		float far = 1.0f;
 
-		fixture.setFrustumPerspective(fovY, aspect, near, far);
+		fixture.updateFrustumPerspective(fovY, aspect, near, far);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumPerspective(float,float,float,float) method test.
+	 * Run the void updateFrustumPerspective(float,float,float,float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumPerspective_fixture21_1()
+	public void testupdateFrustumPerspective_fixture21_1()
 		throws Exception {
-		Camera fixture = getFixture21();
+		CameraView fixture = getFixture21();
 		float fovY = 0.0f;
 		float aspect = 0.0f;
 		float near = 0.0f;
 		float far = 1.0f;
 
-		fixture.setFrustumPerspective(fovY, aspect, near, far);
+		fixture.updateFrustumPerspective(fovY, aspect, near, far);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumPerspective(float,float,float,float) method test.
+	 * Run the void updateFrustumPerspective(float,float,float,float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumPerspective_fixture22_1()
+	public void testupdateFrustumPerspective_fixture22_1()
 		throws Exception {
-		Camera fixture = getFixture22();
+		CameraView fixture = getFixture22();
 		float fovY = 0.0f;
 		float aspect = 0.0f;
 		float near = 0.0f;
 		float far = 1.0f;
 
-		fixture.setFrustumPerspective(fovY, aspect, near, far);
+		fixture.updateFrustumPerspective(fovY, aspect, near, far);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumPerspective(float,float,float,float) method test.
+	 * Run the void updateFrustumPerspective(float,float,float,float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumPerspective_fixture23_1()
+	public void testupdateFrustumPerspective_fixture23_1()
 		throws Exception {
-		Camera fixture = getFixture23();
+		CameraView fixture = getFixture23();
 		float fovY = 0.0f;
 		float aspect = 0.0f;
 		float near = 0.0f;
 		float far = 1.0f;
 
-		fixture.setFrustumPerspective(fovY, aspect, near, far);
+		fixture.updateFrustumPerspective(fovY, aspect, near, far);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumPerspective(float,float,float,float) method test.
+	 * Run the void updateFrustumPerspective(float,float,float,float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumPerspective_fixture24_1()
+	public void testupdateFrustumPerspective_fixture24_1()
 		throws Exception {
-		Camera fixture = getFixture24();
+		CameraView fixture = getFixture24();
 		float fovY = 0.0f;
 		float aspect = 0.0f;
 		float near = 0.0f;
 		float far = 1.0f;
 
-		fixture.setFrustumPerspective(fovY, aspect, near, far);
+		fixture.updateFrustumPerspective(fovY, aspect, near, far);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumPerspective(float,float,float,float) method test.
+	 * Run the void updateFrustumPerspective(float,float,float,float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumPerspective_fixture25_1()
+	public void testupdateFrustumPerspective_fixture25_1()
 		throws Exception {
-		Camera fixture = getFixture25();
+		CameraView fixture = getFixture25();
 		float fovY = 0.0f;
 		float aspect = 0.0f;
 		float near = 0.0f;
 		float far = 1.0f;
 
-		fixture.setFrustumPerspective(fovY, aspect, near, far);
+		fixture.updateFrustumPerspective(fovY, aspect, near, far);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumPerspective(float,float,float,float) method test.
+	 * Run the void updateFrustumPerspective(float,float,float,float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumPerspective_fixture26_1()
+	public void testupdateFrustumPerspective_fixture26_1()
 		throws Exception {
-		Camera fixture = getFixture26();
+		CameraView fixture = getFixture26();
 		float fovY = 0.0f;
 		float aspect = 0.0f;
 		float near = 0.0f;
 		float far = 1.0f;
 
-		fixture.setFrustumPerspective(fovY, aspect, near, far);
+		fixture.updateFrustumPerspective(fovY, aspect, near, far);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumPerspective(float,float,float,float) method test.
+	 * Run the void updateFrustumPerspective(float,float,float,float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumPerspective_fixture27_1()
+	public void testupdateFrustumPerspective_fixture27_1()
 		throws Exception {
-		Camera fixture = getFixture27();
+		CameraView fixture = getFixture27();
 		float fovY = 0.0f;
 		float aspect = 0.0f;
 		float near = 0.0f;
 		float far = 1.0f;
 
-		fixture.setFrustumPerspective(fovY, aspect, near, far);
+		fixture.updateFrustumPerspective(fovY, aspect, near, far);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumPerspective(float,float,float,float) method test.
+	 * Run the void updateFrustumPerspective(float,float,float,float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumPerspective_fixture28_1()
+	public void testupdateFrustumPerspective_fixture28_1()
 		throws Exception {
-		Camera fixture = getFixture28();
+		CameraView fixture = getFixture28();
 		float fovY = 0.0f;
 		float aspect = 0.0f;
 		float near = 0.0f;
 		float far = 1.0f;
 
-		fixture.setFrustumPerspective(fovY, aspect, near, far);
+		fixture.updateFrustumPerspective(fovY, aspect, near, far);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumPerspective(float,float,float,float) method test.
+	 * Run the void updateFrustumPerspective(float,float,float,float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumPerspective_fixture29_1()
+	public void testupdateFrustumPerspective_fixture29_1()
 		throws Exception {
-		Camera fixture = getFixture29();
+		CameraView fixture = getFixture29();
 		float fovY = 0.0f;
 		float aspect = 0.0f;
 		float near = 0.0f;
 		float far = 1.0f;
 
-		fixture.setFrustumPerspective(fovY, aspect, near, far);
+		fixture.updateFrustumPerspective(fovY, aspect, near, far);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumPerspective(float,float,float,float) method test.
+	 * Run the void updateFrustumPerspective(float,float,float,float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 /*	@Test
-	public void testSetFrustumPerspective_fixture1_2()
+	public void testupdateFrustumPerspective_fixture1_2()
 		throws Exception {
 		Camera fixture = getFixture1();
 		float fovY = 0.0f;
@@ -36836,1162 +36836,1162 @@ public class CameraTest {
 		float near = 0.0f;
 		float far = 1.0f;
 
-		fixture.setFrustumPerspective(fovY, aspect, near, far);
+		fixture.updateFrustumPerspective(fovY, aspect, near, far);
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
 		//       at com.jme3.renderer.Camera.onFrustumChange(Camera.java:1425)
-		//       at com.jme3.renderer.Camera.setFrustumPerspective(Camera.java:902)
+		//       at com.jme3.renderer.Camera.updateFrustumPerspective(Camera.java:902)
 	}
 */
 	/**
-	 * Run the void setFrustumPerspective(float,float,float,float) method test.
+	 * Run the void updateFrustumPerspective(float,float,float,float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumPerspective_fixture2_2()
+	public void testupdateFrustumPerspective_fixture2_2()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 		float fovY = 0.0f;
 		float aspect = 0.0f;
 		float near = 0.0f;
 		float far = 1.0f;
 
-		fixture.setFrustumPerspective(fovY, aspect, near, far);
+		fixture.updateFrustumPerspective(fovY, aspect, near, far);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumPerspective(float,float,float,float) method test.
+	 * Run the void updateFrustumPerspective(float,float,float,float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumPerspective_fixture3_2()
+	public void testupdateFrustumPerspective_fixture3_2()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 		float fovY = 0.0f;
 		float aspect = 0.0f;
 		float near = 0.0f;
 		float far = 1.0f;
 
-		fixture.setFrustumPerspective(fovY, aspect, near, far);
+		fixture.updateFrustumPerspective(fovY, aspect, near, far);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumPerspective(float,float,float,float) method test.
+	 * Run the void updateFrustumPerspective(float,float,float,float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumPerspective_fixture5_2()
+	public void testupdateFrustumPerspective_fixture5_2()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 		float fovY = -1.0f;
 		float aspect = -1.0f;
 		float near = -1.0f;
 		float far = -1.0f;
 
-		fixture.setFrustumPerspective(fovY, aspect, near, far);
+		fixture.updateFrustumPerspective(fovY, aspect, near, far);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumRight(float) method test.
+	 * Run the void updateFrustumRight(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 /*	@Test
-	public void testSetFrustumRight_fixture1_1()
+	public void testupdateFrustumRight_fixture1_1()
 		throws Exception {
 		Camera fixture = getFixture1();
 		float frustumRight = -1.0f;
 
-		fixture.setFrustumRight(frustumRight);
+		fixture.updateFrustumRight(frustumRight);
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
 		//       at com.jme3.renderer.Camera.onFrustumChange(Camera.java:1440)
-		//       at com.jme3.renderer.Camera.setFrustumRight(Camera.java:657)
+		//       at com.jme3.renderer.Camera.updateFrustumRight(Camera.java:657)
 	}
 */
 	/**
-	 * Run the void setFrustumRight(float) method test.
+	 * Run the void updateFrustumRight(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumRight_fixture2_1()
+	public void testupdateFrustumRight_fixture2_1()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 		float frustumRight = 0.0f;
 
-		fixture.setFrustumRight(frustumRight);
+		fixture.updateFrustumRight(frustumRight);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumRight(float) method test.
+	 * Run the void updateFrustumRight(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumRight_fixture3_1()
+	public void testupdateFrustumRight_fixture3_1()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 		float frustumRight = 1.0f;
 
-		fixture.setFrustumRight(frustumRight);
+		fixture.updateFrustumRight(frustumRight);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumRight(float) method test.
+	 * Run the void updateFrustumRight(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumRight_fixture4_1()
+	public void testupdateFrustumRight_fixture4_1()
 		throws Exception {
-		Camera fixture = getFixture4();
+		CameraView fixture = getFixture4();
 		float frustumRight = 1.0f;
 
-		fixture.setFrustumRight(frustumRight);
+		fixture.updateFrustumRight(frustumRight);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumRight(float) method test.
+	 * Run the void updateFrustumRight(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumRight_fixture5_1()
+	public void testupdateFrustumRight_fixture5_1()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 		float frustumRight = 1.0f;
 
-		fixture.setFrustumRight(frustumRight);
+		fixture.updateFrustumRight(frustumRight);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumRight(float) method test.
+	 * Run the void updateFrustumRight(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumRight_fixture6_1()
+	public void testupdateFrustumRight_fixture6_1()
 		throws Exception {
-		Camera fixture = getFixture6();
+		CameraView fixture = getFixture6();
 		float frustumRight = 1.0f;
 
-		fixture.setFrustumRight(frustumRight);
+		fixture.updateFrustumRight(frustumRight);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumRight(float) method test.
+	 * Run the void updateFrustumRight(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumRight_fixture7_1()
+	public void testupdateFrustumRight_fixture7_1()
 		throws Exception {
-		Camera fixture = getFixture7();
+		CameraView fixture = getFixture7();
 		float frustumRight = 1.0f;
 
-		fixture.setFrustumRight(frustumRight);
+		fixture.updateFrustumRight(frustumRight);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumRight(float) method test.
+	 * Run the void updateFrustumRight(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumRight_fixture8_1()
+	public void testupdateFrustumRight_fixture8_1()
 		throws Exception {
-		Camera fixture = getFixture8();
+		CameraView fixture = getFixture8();
 		float frustumRight = 1.0f;
 
-		fixture.setFrustumRight(frustumRight);
+		fixture.updateFrustumRight(frustumRight);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumRight(float) method test.
+	 * Run the void updateFrustumRight(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumRight_fixture9_1()
+	public void testupdateFrustumRight_fixture9_1()
 		throws Exception {
-		Camera fixture = getFixture9();
+		CameraView fixture = getFixture9();
 		float frustumRight = 1.0f;
 
-		fixture.setFrustumRight(frustumRight);
+		fixture.updateFrustumRight(frustumRight);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumRight(float) method test.
+	 * Run the void updateFrustumRight(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumRight_fixture10_1()
+	public void testupdateFrustumRight_fixture10_1()
 		throws Exception {
-		Camera fixture = getFixture10();
+		CameraView fixture = getFixture10();
 		float frustumRight = 1.0f;
 
-		fixture.setFrustumRight(frustumRight);
+		fixture.updateFrustumRight(frustumRight);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumRight(float) method test.
+	 * Run the void updateFrustumRight(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumRight_fixture11_1()
+	public void testupdateFrustumRight_fixture11_1()
 		throws Exception {
-		Camera fixture = getFixture11();
+		CameraView fixture = getFixture11();
 		float frustumRight = 1.0f;
 
-		fixture.setFrustumRight(frustumRight);
+		fixture.updateFrustumRight(frustumRight);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumRight(float) method test.
+	 * Run the void updateFrustumRight(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumRight_fixture12_1()
+	public void testupdateFrustumRight_fixture12_1()
 		throws Exception {
-		Camera fixture = getFixture12();
+		CameraView fixture = getFixture12();
 		float frustumRight = 1.0f;
 
-		fixture.setFrustumRight(frustumRight);
+		fixture.updateFrustumRight(frustumRight);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumRight(float) method test.
+	 * Run the void updateFrustumRight(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumRight_fixture13_1()
+	public void testupdateFrustumRight_fixture13_1()
 		throws Exception {
-		Camera fixture = getFixture13();
+		CameraView fixture = getFixture13();
 		float frustumRight = 1.0f;
 
-		fixture.setFrustumRight(frustumRight);
+		fixture.updateFrustumRight(frustumRight);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumRight(float) method test.
+	 * Run the void updateFrustumRight(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumRight_fixture14_1()
+	public void testupdateFrustumRight_fixture14_1()
 		throws Exception {
-		Camera fixture = getFixture14();
+		CameraView fixture = getFixture14();
 		float frustumRight = 1.0f;
 
-		fixture.setFrustumRight(frustumRight);
+		fixture.updateFrustumRight(frustumRight);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumRight(float) method test.
+	 * Run the void updateFrustumRight(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumRight_fixture15_1()
+	public void testupdateFrustumRight_fixture15_1()
 		throws Exception {
-		Camera fixture = getFixture15();
+		CameraView fixture = getFixture15();
 		float frustumRight = 1.0f;
 
-		fixture.setFrustumRight(frustumRight);
+		fixture.updateFrustumRight(frustumRight);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumRight(float) method test.
+	 * Run the void updateFrustumRight(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumRight_fixture16_1()
+	public void testupdateFrustumRight_fixture16_1()
 		throws Exception {
-		Camera fixture = getFixture16();
+		CameraView fixture = getFixture16();
 		float frustumRight = 1.0f;
 
-		fixture.setFrustumRight(frustumRight);
+		fixture.updateFrustumRight(frustumRight);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumRight(float) method test.
+	 * Run the void updateFrustumRight(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumRight_fixture17_1()
+	public void testupdateFrustumRight_fixture17_1()
 		throws Exception {
-		Camera fixture = getFixture17();
+		CameraView fixture = getFixture17();
 		float frustumRight = 1.0f;
 
-		fixture.setFrustumRight(frustumRight);
+		fixture.updateFrustumRight(frustumRight);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumRight(float) method test.
+	 * Run the void updateFrustumRight(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumRight_fixture18_1()
+	public void testupdateFrustumRight_fixture18_1()
 		throws Exception {
-		Camera fixture = getFixture18();
+		CameraView fixture = getFixture18();
 		float frustumRight = 1.0f;
 
-		fixture.setFrustumRight(frustumRight);
+		fixture.updateFrustumRight(frustumRight);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumRight(float) method test.
+	 * Run the void updateFrustumRight(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumRight_fixture19_1()
+	public void testupdateFrustumRight_fixture19_1()
 		throws Exception {
-		Camera fixture = getFixture19();
+		CameraView fixture = getFixture19();
 		float frustumRight = 1.0f;
 
-		fixture.setFrustumRight(frustumRight);
+		fixture.updateFrustumRight(frustumRight);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumRight(float) method test.
+	 * Run the void updateFrustumRight(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumRight_fixture20_1()
+	public void testupdateFrustumRight_fixture20_1()
 		throws Exception {
-		Camera fixture = getFixture20();
+		CameraView fixture = getFixture20();
 		float frustumRight = 1.0f;
 
-		fixture.setFrustumRight(frustumRight);
+		fixture.updateFrustumRight(frustumRight);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumRight(float) method test.
+	 * Run the void updateFrustumRight(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumRight_fixture21_1()
+	public void testupdateFrustumRight_fixture21_1()
 		throws Exception {
-		Camera fixture = getFixture21();
+		CameraView fixture = getFixture21();
 		float frustumRight = 1.0f;
 
-		fixture.setFrustumRight(frustumRight);
+		fixture.updateFrustumRight(frustumRight);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumRight(float) method test.
+	 * Run the void updateFrustumRight(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumRight_fixture22_1()
+	public void testupdateFrustumRight_fixture22_1()
 		throws Exception {
-		Camera fixture = getFixture22();
+		CameraView fixture = getFixture22();
 		float frustumRight = 1.0f;
 
-		fixture.setFrustumRight(frustumRight);
+		fixture.updateFrustumRight(frustumRight);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumRight(float) method test.
+	 * Run the void updateFrustumRight(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumRight_fixture23_1()
+	public void testupdateFrustumRight_fixture23_1()
 		throws Exception {
-		Camera fixture = getFixture23();
+		CameraView fixture = getFixture23();
 		float frustumRight = 1.0f;
 
-		fixture.setFrustumRight(frustumRight);
+		fixture.updateFrustumRight(frustumRight);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumRight(float) method test.
+	 * Run the void updateFrustumRight(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumRight_fixture24_1()
+	public void testupdateFrustumRight_fixture24_1()
 		throws Exception {
-		Camera fixture = getFixture24();
+		CameraView fixture = getFixture24();
 		float frustumRight = 1.0f;
 
-		fixture.setFrustumRight(frustumRight);
+		fixture.updateFrustumRight(frustumRight);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumRight(float) method test.
+	 * Run the void updateFrustumRight(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumRight_fixture25_1()
+	public void testupdateFrustumRight_fixture25_1()
 		throws Exception {
-		Camera fixture = getFixture25();
+		CameraView fixture = getFixture25();
 		float frustumRight = 1.0f;
 
-		fixture.setFrustumRight(frustumRight);
+		fixture.updateFrustumRight(frustumRight);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumRight(float) method test.
+	 * Run the void updateFrustumRight(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumRight_fixture26_1()
+	public void testupdateFrustumRight_fixture26_1()
 		throws Exception {
-		Camera fixture = getFixture26();
+		CameraView fixture = getFixture26();
 		float frustumRight = 1.0f;
 
-		fixture.setFrustumRight(frustumRight);
+		fixture.updateFrustumRight(frustumRight);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumRight(float) method test.
+	 * Run the void updateFrustumRight(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumRight_fixture27_1()
+	public void testupdateFrustumRight_fixture27_1()
 		throws Exception {
-		Camera fixture = getFixture27();
+		CameraView fixture = getFixture27();
 		float frustumRight = 1.0f;
 
-		fixture.setFrustumRight(frustumRight);
+		fixture.updateFrustumRight(frustumRight);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumRight(float) method test.
+	 * Run the void updateFrustumRight(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumRight_fixture28_1()
+	public void testupdateFrustumRight_fixture28_1()
 		throws Exception {
-		Camera fixture = getFixture28();
+		CameraView fixture = getFixture28();
 		float frustumRight = 1.0f;
 
-		fixture.setFrustumRight(frustumRight);
+		fixture.updateFrustumRight(frustumRight);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumRight(float) method test.
+	 * Run the void updateFrustumRight(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumRight_fixture29_1()
+	public void testupdateFrustumRight_fixture29_1()
 		throws Exception {
-		Camera fixture = getFixture29();
+		CameraView fixture = getFixture29();
 		float frustumRight = 1.0f;
 
-		fixture.setFrustumRight(frustumRight);
+		fixture.updateFrustumRight(frustumRight);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumRight(float) method test.
+	 * Run the void updateFrustumRight(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumRight_fixture2_2()
+	public void testupdateFrustumRight_fixture2_2()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 		float frustumRight = -1.0f;
 
-		fixture.setFrustumRight(frustumRight);
+		fixture.updateFrustumRight(frustumRight);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumTop(float) method test.
+	 * Run the void updateFrustumTop(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 /*	@Test
-	public void testSetFrustumTop_fixture1_1()
+	public void testupdateFrustumTop_fixture1_1()
 		throws Exception {
 		Camera fixture = getFixture1();
 		float frustumTop = -1.0f;
 
-		fixture.setFrustumTop(frustumTop);
+		fixture.updateFrustumTop(frustumTop);
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
 		//       at com.jme3.renderer.Camera.onFrustumChange(Camera.java:1440)
-		//       at com.jme3.renderer.Camera.setFrustumTop(Camera.java:681)
+		//       at com.jme3.renderer.Camera.updateFrustumTop(Camera.java:681)
 	}
 */
 	/**
-	 * Run the void setFrustumTop(float) method test.
+	 * Run the void updateFrustumTop(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumTop_fixture2_1()
+	public void testupdateFrustumTop_fixture2_1()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 		float frustumTop = 0.0f;
 
-		fixture.setFrustumTop(frustumTop);
+		fixture.updateFrustumTop(frustumTop);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumTop(float) method test.
+	 * Run the void updateFrustumTop(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumTop_fixture3_1()
+	public void testupdateFrustumTop_fixture3_1()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 		float frustumTop = 1.0f;
 
-		fixture.setFrustumTop(frustumTop);
+		fixture.updateFrustumTop(frustumTop);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumTop(float) method test.
+	 * Run the void updateFrustumTop(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumTop_fixture4_1()
+	public void testupdateFrustumTop_fixture4_1()
 		throws Exception {
-		Camera fixture = getFixture4();
+		CameraView fixture = getFixture4();
 		float frustumTop = 1.0f;
 
-		fixture.setFrustumTop(frustumTop);
+		fixture.updateFrustumTop(frustumTop);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumTop(float) method test.
+	 * Run the void updateFrustumTop(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumTop_fixture5_1()
+	public void testupdateFrustumTop_fixture5_1()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 		float frustumTop = 1.0f;
 
-		fixture.setFrustumTop(frustumTop);
+		fixture.updateFrustumTop(frustumTop);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumTop(float) method test.
+	 * Run the void updateFrustumTop(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumTop_fixture6_1()
+	public void testupdateFrustumTop_fixture6_1()
 		throws Exception {
-		Camera fixture = getFixture6();
+		CameraView fixture = getFixture6();
 		float frustumTop = 1.0f;
 
-		fixture.setFrustumTop(frustumTop);
+		fixture.updateFrustumTop(frustumTop);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumTop(float) method test.
+	 * Run the void updateFrustumTop(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumTop_fixture7_1()
+	public void testupdateFrustumTop_fixture7_1()
 		throws Exception {
-		Camera fixture = getFixture7();
+		CameraView fixture = getFixture7();
 		float frustumTop = 1.0f;
 
-		fixture.setFrustumTop(frustumTop);
+		fixture.updateFrustumTop(frustumTop);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumTop(float) method test.
+	 * Run the void updateFrustumTop(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumTop_fixture8_1()
+	public void testupdateFrustumTop_fixture8_1()
 		throws Exception {
-		Camera fixture = getFixture8();
+		CameraView fixture = getFixture8();
 		float frustumTop = 1.0f;
 
-		fixture.setFrustumTop(frustumTop);
+		fixture.updateFrustumTop(frustumTop);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumTop(float) method test.
+	 * Run the void updateFrustumTop(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumTop_fixture9_1()
+	public void testupdateFrustumTop_fixture9_1()
 		throws Exception {
-		Camera fixture = getFixture9();
+		CameraView fixture = getFixture9();
 		float frustumTop = 1.0f;
 
-		fixture.setFrustumTop(frustumTop);
+		fixture.updateFrustumTop(frustumTop);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumTop(float) method test.
+	 * Run the void updateFrustumTop(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumTop_fixture10_1()
+	public void testupdateFrustumTop_fixture10_1()
 		throws Exception {
-		Camera fixture = getFixture10();
+		CameraView fixture = getFixture10();
 		float frustumTop = 1.0f;
 
-		fixture.setFrustumTop(frustumTop);
+		fixture.updateFrustumTop(frustumTop);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumTop(float) method test.
+	 * Run the void updateFrustumTop(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumTop_fixture11_1()
+	public void testupdateFrustumTop_fixture11_1()
 		throws Exception {
-		Camera fixture = getFixture11();
+		CameraView fixture = getFixture11();
 		float frustumTop = 1.0f;
 
-		fixture.setFrustumTop(frustumTop);
+		fixture.updateFrustumTop(frustumTop);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumTop(float) method test.
+	 * Run the void updateFrustumTop(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumTop_fixture12_1()
+	public void testupdateFrustumTop_fixture12_1()
 		throws Exception {
-		Camera fixture = getFixture12();
+		CameraView fixture = getFixture12();
 		float frustumTop = 1.0f;
 
-		fixture.setFrustumTop(frustumTop);
+		fixture.updateFrustumTop(frustumTop);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumTop(float) method test.
+	 * Run the void updateFrustumTop(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumTop_fixture13_1()
+	public void testupdateFrustumTop_fixture13_1()
 		throws Exception {
-		Camera fixture = getFixture13();
+		CameraView fixture = getFixture13();
 		float frustumTop = 1.0f;
 
-		fixture.setFrustumTop(frustumTop);
+		fixture.updateFrustumTop(frustumTop);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumTop(float) method test.
+	 * Run the void updateFrustumTop(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumTop_fixture14_1()
+	public void testupdateFrustumTop_fixture14_1()
 		throws Exception {
-		Camera fixture = getFixture14();
+		CameraView fixture = getFixture14();
 		float frustumTop = 1.0f;
 
-		fixture.setFrustumTop(frustumTop);
+		fixture.updateFrustumTop(frustumTop);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumTop(float) method test.
+	 * Run the void updateFrustumTop(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumTop_fixture15_1()
+	public void testupdateFrustumTop_fixture15_1()
 		throws Exception {
-		Camera fixture = getFixture15();
+		CameraView fixture = getFixture15();
 		float frustumTop = 1.0f;
 
-		fixture.setFrustumTop(frustumTop);
+		fixture.updateFrustumTop(frustumTop);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumTop(float) method test.
+	 * Run the void updateFrustumTop(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumTop_fixture16_1()
+	public void testupdateFrustumTop_fixture16_1()
 		throws Exception {
-		Camera fixture = getFixture16();
+		CameraView fixture = getFixture16();
 		float frustumTop = 1.0f;
 
-		fixture.setFrustumTop(frustumTop);
+		fixture.updateFrustumTop(frustumTop);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumTop(float) method test.
+	 * Run the void updateFrustumTop(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumTop_fixture17_1()
+	public void testupdateFrustumTop_fixture17_1()
 		throws Exception {
-		Camera fixture = getFixture17();
+		CameraView fixture = getFixture17();
 		float frustumTop = 1.0f;
 
-		fixture.setFrustumTop(frustumTop);
+		fixture.updateFrustumTop(frustumTop);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumTop(float) method test.
+	 * Run the void updateFrustumTop(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumTop_fixture18_1()
+	public void testupdateFrustumTop_fixture18_1()
 		throws Exception {
-		Camera fixture = getFixture18();
+		CameraView fixture = getFixture18();
 		float frustumTop = 1.0f;
 
-		fixture.setFrustumTop(frustumTop);
+		fixture.updateFrustumTop(frustumTop);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumTop(float) method test.
+	 * Run the void updateFrustumTop(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumTop_fixture19_1()
+	public void testupdateFrustumTop_fixture19_1()
 		throws Exception {
-		Camera fixture = getFixture19();
+		CameraView fixture = getFixture19();
 		float frustumTop = 1.0f;
 
-		fixture.setFrustumTop(frustumTop);
+		fixture.updateFrustumTop(frustumTop);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumTop(float) method test.
+	 * Run the void updateFrustumTop(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumTop_fixture20_1()
+	public void testupdateFrustumTop_fixture20_1()
 		throws Exception {
-		Camera fixture = getFixture20();
+		CameraView fixture = getFixture20();
 		float frustumTop = 1.0f;
 
-		fixture.setFrustumTop(frustumTop);
+		fixture.updateFrustumTop(frustumTop);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumTop(float) method test.
+	 * Run the void updateFrustumTop(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumTop_fixture21_1()
+	public void testupdateFrustumTop_fixture21_1()
 		throws Exception {
-		Camera fixture = getFixture21();
+		CameraView fixture = getFixture21();
 		float frustumTop = 1.0f;
 
-		fixture.setFrustumTop(frustumTop);
+		fixture.updateFrustumTop(frustumTop);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumTop(float) method test.
+	 * Run the void updateFrustumTop(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumTop_fixture22_1()
+	public void testupdateFrustumTop_fixture22_1()
 		throws Exception {
-		Camera fixture = getFixture22();
+		CameraView fixture = getFixture22();
 		float frustumTop = 1.0f;
 
-		fixture.setFrustumTop(frustumTop);
+		fixture.updateFrustumTop(frustumTop);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumTop(float) method test.
+	 * Run the void updateFrustumTop(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumTop_fixture23_1()
+	public void testupdateFrustumTop_fixture23_1()
 		throws Exception {
-		Camera fixture = getFixture23();
+		CameraView fixture = getFixture23();
 		float frustumTop = 1.0f;
 
-		fixture.setFrustumTop(frustumTop);
+		fixture.updateFrustumTop(frustumTop);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumTop(float) method test.
+	 * Run the void updateFrustumTop(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumTop_fixture24_1()
+	public void testupdateFrustumTop_fixture24_1()
 		throws Exception {
-		Camera fixture = getFixture24();
+		CameraView fixture = getFixture24();
 		float frustumTop = 1.0f;
 
-		fixture.setFrustumTop(frustumTop);
+		fixture.updateFrustumTop(frustumTop);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumTop(float) method test.
+	 * Run the void updateFrustumTop(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumTop_fixture25_1()
+	public void testupdateFrustumTop_fixture25_1()
 		throws Exception {
-		Camera fixture = getFixture25();
+		CameraView fixture = getFixture25();
 		float frustumTop = 1.0f;
 
-		fixture.setFrustumTop(frustumTop);
+		fixture.updateFrustumTop(frustumTop);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumTop(float) method test.
+	 * Run the void updateFrustumTop(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumTop_fixture26_1()
+	public void testupdateFrustumTop_fixture26_1()
 		throws Exception {
-		Camera fixture = getFixture26();
+		CameraView fixture = getFixture26();
 		float frustumTop = 1.0f;
 
-		fixture.setFrustumTop(frustumTop);
+		fixture.updateFrustumTop(frustumTop);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumTop(float) method test.
+	 * Run the void updateFrustumTop(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumTop_fixture27_1()
+	public void testupdateFrustumTop_fixture27_1()
 		throws Exception {
-		Camera fixture = getFixture27();
+		CameraView fixture = getFixture27();
 		float frustumTop = 1.0f;
 
-		fixture.setFrustumTop(frustumTop);
+		fixture.updateFrustumTop(frustumTop);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumTop(float) method test.
+	 * Run the void updateFrustumTop(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumTop_fixture28_1()
+	public void testupdateFrustumTop_fixture28_1()
 		throws Exception {
-		Camera fixture = getFixture28();
+		CameraView fixture = getFixture28();
 		float frustumTop = 1.0f;
 
-		fixture.setFrustumTop(frustumTop);
+		fixture.updateFrustumTop(frustumTop);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumTop(float) method test.
+	 * Run the void updateFrustumTop(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumTop_fixture29_1()
+	public void testupdateFrustumTop_fixture29_1()
 		throws Exception {
-		Camera fixture = getFixture29();
+		CameraView fixture = getFixture29();
 		float frustumTop = 1.0f;
 
-		fixture.setFrustumTop(frustumTop);
+		fixture.updateFrustumTop(frustumTop);
 
 		// add additional test code here
 	}
 
 	/**
-	 * Run the void setFrustumTop(float) method test.
+	 * Run the void updateFrustumTop(float) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-07 19:30
 	 */
 	@Test
-	public void testSetFrustumTop_fixture2_2()
+	public void testupdateFrustumTop_fixture2_2()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 		float frustumTop = -1.0f;
 
-		fixture.setFrustumTop(frustumTop);
+		fixture.updateFrustumTop(frustumTop);
 
 		// add additional test code here
 	}
@@ -38027,7 +38027,7 @@ public class CameraTest {
 	@Test
 	public void testSetLocation_fixture2_1()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 		Vector3f location = Vector3f.NEGATIVE_INFINITY;
 
 		fixture.setLocation(location);
@@ -38045,7 +38045,7 @@ public class CameraTest {
 	@Test
 	public void testSetLocation_fixture3_1()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 		Vector3f location = Vector3f.POSITIVE_INFINITY;
 
 		fixture.setLocation(location);
@@ -38063,7 +38063,7 @@ public class CameraTest {
 	@Test
 	public void testSetLocation_fixture4_1()
 		throws Exception {
-		Camera fixture = getFixture4();
+		CameraView fixture = getFixture4();
 		Vector3f location = Vector3f.UNIT_X;
 
 		fixture.setLocation(location);
@@ -38081,7 +38081,7 @@ public class CameraTest {
 	@Test
 	public void testSetLocation_fixture5_1()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 		Vector3f location = Vector3f.UNIT_XYZ;
 
 		fixture.setLocation(location);
@@ -38099,7 +38099,7 @@ public class CameraTest {
 	@Test
 	public void testSetLocation_fixture6_1()
 		throws Exception {
-		Camera fixture = getFixture6();
+		CameraView fixture = getFixture6();
 		Vector3f location = Vector3f.UNIT_Y;
 
 		fixture.setLocation(location);
@@ -38117,7 +38117,7 @@ public class CameraTest {
 	@Test
 	public void testSetLocation_fixture7_1()
 		throws Exception {
-		Camera fixture = getFixture7();
+		CameraView fixture = getFixture7();
 		Vector3f location = Vector3f.UNIT_Z;
 
 		fixture.setLocation(location);
@@ -38135,7 +38135,7 @@ public class CameraTest {
 	@Test
 	public void testSetLocation_fixture8_1()
 		throws Exception {
-		Camera fixture = getFixture8();
+		CameraView fixture = getFixture8();
 		Vector3f location = Vector3f.ZERO;
 
 		fixture.setLocation(location);
@@ -38153,7 +38153,7 @@ public class CameraTest {
 	@Test
 	public void testSetLocation_fixture9_1()
 		throws Exception {
-		Camera fixture = getFixture9();
+		CameraView fixture = getFixture9();
 		Vector3f location = new Vector3f();
 
 		fixture.setLocation(location);
@@ -38611,7 +38611,7 @@ public class CameraTest {
 	@Test
 	public void testSetLocation_fixture2_2()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 		Vector3f location = Vector3f.NAN;
 
 		fixture.setLocation(location);
@@ -38629,7 +38629,7 @@ public class CameraTest {
 	@Test
 	public void testSetName_fixture1_1()
 		throws Exception {
-		Camera fixture = getFixture1();
+		CameraView fixture = getFixture1();
 		String name = "";
 
 		fixture.setName(name);
@@ -38647,7 +38647,7 @@ public class CameraTest {
 	@Test
 	public void testSetName_fixture2_1()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 		String name = "0123456789";
 
 		fixture.setName(name);
@@ -38665,7 +38665,7 @@ public class CameraTest {
 	@Test
 	public void testSetName_fixture3_1()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 		String name = "0123456789";
 
 		fixture.setName(name);
@@ -38683,7 +38683,7 @@ public class CameraTest {
 	@Test
 	public void testSetName_fixture4_1()
 		throws Exception {
-		Camera fixture = getFixture4();
+		CameraView fixture = getFixture4();
 		String name = "0123456789";
 
 		fixture.setName(name);
@@ -38701,7 +38701,7 @@ public class CameraTest {
 	@Test
 	public void testSetName_fixture5_1()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 		String name = "0123456789";
 
 		fixture.setName(name);
@@ -38719,7 +38719,7 @@ public class CameraTest {
 	@Test
 	public void testSetName_fixture6_1()
 		throws Exception {
-		Camera fixture = getFixture6();
+		CameraView fixture = getFixture6();
 		String name = "0123456789";
 
 		fixture.setName(name);
@@ -38737,7 +38737,7 @@ public class CameraTest {
 	@Test
 	public void testSetName_fixture7_1()
 		throws Exception {
-		Camera fixture = getFixture7();
+		CameraView fixture = getFixture7();
 		String name = "0123456789";
 
 		fixture.setName(name);
@@ -38755,7 +38755,7 @@ public class CameraTest {
 	@Test
 	public void testSetName_fixture8_1()
 		throws Exception {
-		Camera fixture = getFixture8();
+		CameraView fixture = getFixture8();
 		String name = "0123456789";
 
 		fixture.setName(name);
@@ -38773,7 +38773,7 @@ public class CameraTest {
 	@Test
 	public void testSetName_fixture9_1()
 		throws Exception {
-		Camera fixture = getFixture9();
+		CameraView fixture = getFixture9();
 		String name = "0123456789";
 
 		fixture.setName(name);
@@ -38791,7 +38791,7 @@ public class CameraTest {
 	@Test
 	public void testSetName_fixture10_1()
 		throws Exception {
-		Camera fixture = getFixture10();
+		CameraView fixture = getFixture10();
 		String name = "0123456789";
 
 		fixture.setName(name);
@@ -38809,7 +38809,7 @@ public class CameraTest {
 	@Test
 	public void testSetName_fixture11_1()
 		throws Exception {
-		Camera fixture = getFixture11();
+		CameraView fixture = getFixture11();
 		String name = "0123456789";
 
 		fixture.setName(name);
@@ -38827,7 +38827,7 @@ public class CameraTest {
 	@Test
 	public void testSetName_fixture12_1()
 		throws Exception {
-		Camera fixture = getFixture12();
+		CameraView fixture = getFixture12();
 		String name = "0123456789";
 
 		fixture.setName(name);
@@ -38845,7 +38845,7 @@ public class CameraTest {
 	@Test
 	public void testSetName_fixture13_1()
 		throws Exception {
-		Camera fixture = getFixture13();
+		CameraView fixture = getFixture13();
 		String name = "0123456789";
 
 		fixture.setName(name);
@@ -38863,7 +38863,7 @@ public class CameraTest {
 	@Test
 	public void testSetName_fixture14_1()
 		throws Exception {
-		Camera fixture = getFixture14();
+		CameraView fixture = getFixture14();
 		String name = "0123456789";
 
 		fixture.setName(name);
@@ -38881,7 +38881,7 @@ public class CameraTest {
 	@Test
 	public void testSetName_fixture15_1()
 		throws Exception {
-		Camera fixture = getFixture15();
+		CameraView fixture = getFixture15();
 		String name = "0123456789";
 
 		fixture.setName(name);
@@ -38899,7 +38899,7 @@ public class CameraTest {
 	@Test
 	public void testSetName_fixture16_1()
 		throws Exception {
-		Camera fixture = getFixture16();
+		CameraView fixture = getFixture16();
 		String name = "0123456789";
 
 		fixture.setName(name);
@@ -38917,7 +38917,7 @@ public class CameraTest {
 	@Test
 	public void testSetName_fixture17_1()
 		throws Exception {
-		Camera fixture = getFixture17();
+		CameraView fixture = getFixture17();
 		String name = "0123456789";
 
 		fixture.setName(name);
@@ -38935,7 +38935,7 @@ public class CameraTest {
 	@Test
 	public void testSetName_fixture18_1()
 		throws Exception {
-		Camera fixture = getFixture18();
+		CameraView fixture = getFixture18();
 		String name = "0123456789";
 
 		fixture.setName(name);
@@ -38953,7 +38953,7 @@ public class CameraTest {
 	@Test
 	public void testSetName_fixture19_1()
 		throws Exception {
-		Camera fixture = getFixture19();
+		CameraView fixture = getFixture19();
 		String name = "0123456789";
 
 		fixture.setName(name);
@@ -38971,7 +38971,7 @@ public class CameraTest {
 	@Test
 	public void testSetName_fixture20_1()
 		throws Exception {
-		Camera fixture = getFixture20();
+		CameraView fixture = getFixture20();
 		String name = "0123456789";
 
 		fixture.setName(name);
@@ -38989,7 +38989,7 @@ public class CameraTest {
 	@Test
 	public void testSetName_fixture21_1()
 		throws Exception {
-		Camera fixture = getFixture21();
+		CameraView fixture = getFixture21();
 		String name = "0123456789";
 
 		fixture.setName(name);
@@ -39007,7 +39007,7 @@ public class CameraTest {
 	@Test
 	public void testSetName_fixture22_1()
 		throws Exception {
-		Camera fixture = getFixture22();
+		CameraView fixture = getFixture22();
 		String name = "0123456789";
 
 		fixture.setName(name);
@@ -39025,7 +39025,7 @@ public class CameraTest {
 	@Test
 	public void testSetName_fixture23_1()
 		throws Exception {
-		Camera fixture = getFixture23();
+		CameraView fixture = getFixture23();
 		String name = "0123456789";
 
 		fixture.setName(name);
@@ -39043,7 +39043,7 @@ public class CameraTest {
 	@Test
 	public void testSetName_fixture24_1()
 		throws Exception {
-		Camera fixture = getFixture24();
+		CameraView fixture = getFixture24();
 		String name = "0123456789";
 
 		fixture.setName(name);
@@ -39061,7 +39061,7 @@ public class CameraTest {
 	@Test
 	public void testSetName_fixture25_1()
 		throws Exception {
-		Camera fixture = getFixture25();
+		CameraView fixture = getFixture25();
 		String name = "0123456789";
 
 		fixture.setName(name);
@@ -39079,7 +39079,7 @@ public class CameraTest {
 	@Test
 	public void testSetName_fixture26_1()
 		throws Exception {
-		Camera fixture = getFixture26();
+		CameraView fixture = getFixture26();
 		String name = "0123456789";
 
 		fixture.setName(name);
@@ -39097,7 +39097,7 @@ public class CameraTest {
 	@Test
 	public void testSetName_fixture27_1()
 		throws Exception {
-		Camera fixture = getFixture27();
+		CameraView fixture = getFixture27();
 		String name = "0123456789";
 
 		fixture.setName(name);
@@ -39115,7 +39115,7 @@ public class CameraTest {
 	@Test
 	public void testSetName_fixture28_1()
 		throws Exception {
-		Camera fixture = getFixture28();
+		CameraView fixture = getFixture28();
 		String name = "0123456789";
 
 		fixture.setName(name);
@@ -39133,7 +39133,7 @@ public class CameraTest {
 	@Test
 	public void testSetName_fixture29_1()
 		throws Exception {
-		Camera fixture = getFixture29();
+		CameraView fixture = getFixture29();
 		String name = "0123456789";
 
 		fixture.setName(name);
@@ -39151,7 +39151,7 @@ public class CameraTest {
 	@Test
 	public void testSetName_fixture2_2()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 		String name = "";
 
 		fixture.setName(name);
@@ -39191,7 +39191,7 @@ public class CameraTest {
 	@Test
 	public void testSetParallelProjection_fixture2_1()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 		boolean value = true;
 
 		fixture.setParallelProjection(value);
@@ -39209,7 +39209,7 @@ public class CameraTest {
 	@Test
 	public void testSetParallelProjection_fixture3_1()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 		boolean value = true;
 
 		fixture.setParallelProjection(value);
@@ -39227,7 +39227,7 @@ public class CameraTest {
 	@Test
 	public void testSetParallelProjection_fixture4_1()
 		throws Exception {
-		Camera fixture = getFixture4();
+		CameraView fixture = getFixture4();
 		boolean value = true;
 
 		fixture.setParallelProjection(value);
@@ -39245,7 +39245,7 @@ public class CameraTest {
 	@Test
 	public void testSetParallelProjection_fixture5_1()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 		boolean value = true;
 
 		fixture.setParallelProjection(value);
@@ -39263,7 +39263,7 @@ public class CameraTest {
 	@Test
 	public void testSetParallelProjection_fixture6_1()
 		throws Exception {
-		Camera fixture = getFixture6();
+		CameraView fixture = getFixture6();
 		boolean value = true;
 
 		fixture.setParallelProjection(value);
@@ -39281,7 +39281,7 @@ public class CameraTest {
 	@Test
 	public void testSetParallelProjection_fixture7_1()
 		throws Exception {
-		Camera fixture = getFixture7();
+		CameraView fixture = getFixture7();
 		boolean value = true;
 
 		fixture.setParallelProjection(value);
@@ -39299,7 +39299,7 @@ public class CameraTest {
 	@Test
 	public void testSetParallelProjection_fixture8_1()
 		throws Exception {
-		Camera fixture = getFixture8();
+		CameraView fixture = getFixture8();
 		boolean value = true;
 
 		fixture.setParallelProjection(value);
@@ -39317,7 +39317,7 @@ public class CameraTest {
 	@Test
 	public void testSetParallelProjection_fixture9_1()
 		throws Exception {
-		Camera fixture = getFixture9();
+		CameraView fixture = getFixture9();
 		boolean value = true;
 
 		fixture.setParallelProjection(value);
@@ -39335,7 +39335,7 @@ public class CameraTest {
 	@Test
 	public void testSetParallelProjection_fixture10_1()
 		throws Exception {
-		Camera fixture = getFixture10();
+		CameraView fixture = getFixture10();
 		boolean value = true;
 
 		fixture.setParallelProjection(value);
@@ -39353,7 +39353,7 @@ public class CameraTest {
 	@Test
 	public void testSetParallelProjection_fixture11_1()
 		throws Exception {
-		Camera fixture = getFixture11();
+		CameraView fixture = getFixture11();
 		boolean value = true;
 
 		fixture.setParallelProjection(value);
@@ -39371,7 +39371,7 @@ public class CameraTest {
 	@Test
 	public void testSetParallelProjection_fixture12_1()
 		throws Exception {
-		Camera fixture = getFixture12();
+		CameraView fixture = getFixture12();
 		boolean value = true;
 
 		fixture.setParallelProjection(value);
@@ -39389,7 +39389,7 @@ public class CameraTest {
 	@Test
 	public void testSetParallelProjection_fixture13_1()
 		throws Exception {
-		Camera fixture = getFixture13();
+		CameraView fixture = getFixture13();
 		boolean value = true;
 
 		fixture.setParallelProjection(value);
@@ -39407,7 +39407,7 @@ public class CameraTest {
 	@Test
 	public void testSetParallelProjection_fixture14_1()
 		throws Exception {
-		Camera fixture = getFixture14();
+		CameraView fixture = getFixture14();
 		boolean value = true;
 
 		fixture.setParallelProjection(value);
@@ -39425,7 +39425,7 @@ public class CameraTest {
 	@Test
 	public void testSetParallelProjection_fixture15_1()
 		throws Exception {
-		Camera fixture = getFixture15();
+		CameraView fixture = getFixture15();
 		boolean value = true;
 
 		fixture.setParallelProjection(value);
@@ -39443,7 +39443,7 @@ public class CameraTest {
 	@Test
 	public void testSetParallelProjection_fixture16_1()
 		throws Exception {
-		Camera fixture = getFixture16();
+		CameraView fixture = getFixture16();
 		boolean value = true;
 
 		fixture.setParallelProjection(value);
@@ -39461,7 +39461,7 @@ public class CameraTest {
 	@Test
 	public void testSetParallelProjection_fixture17_1()
 		throws Exception {
-		Camera fixture = getFixture17();
+		CameraView fixture = getFixture17();
 		boolean value = true;
 
 		fixture.setParallelProjection(value);
@@ -39479,7 +39479,7 @@ public class CameraTest {
 	@Test
 	public void testSetParallelProjection_fixture18_1()
 		throws Exception {
-		Camera fixture = getFixture18();
+		CameraView fixture = getFixture18();
 		boolean value = true;
 
 		fixture.setParallelProjection(value);
@@ -39497,7 +39497,7 @@ public class CameraTest {
 	@Test
 	public void testSetParallelProjection_fixture19_1()
 		throws Exception {
-		Camera fixture = getFixture19();
+		CameraView fixture = getFixture19();
 		boolean value = true;
 
 		fixture.setParallelProjection(value);
@@ -39515,7 +39515,7 @@ public class CameraTest {
 	@Test
 	public void testSetParallelProjection_fixture20_1()
 		throws Exception {
-		Camera fixture = getFixture20();
+		CameraView fixture = getFixture20();
 		boolean value = true;
 
 		fixture.setParallelProjection(value);
@@ -39533,7 +39533,7 @@ public class CameraTest {
 	@Test
 	public void testSetParallelProjection_fixture21_1()
 		throws Exception {
-		Camera fixture = getFixture21();
+		CameraView fixture = getFixture21();
 		boolean value = true;
 
 		fixture.setParallelProjection(value);
@@ -39551,7 +39551,7 @@ public class CameraTest {
 	@Test
 	public void testSetParallelProjection_fixture22_1()
 		throws Exception {
-		Camera fixture = getFixture22();
+		CameraView fixture = getFixture22();
 		boolean value = true;
 
 		fixture.setParallelProjection(value);
@@ -39569,7 +39569,7 @@ public class CameraTest {
 	@Test
 	public void testSetParallelProjection_fixture23_1()
 		throws Exception {
-		Camera fixture = getFixture23();
+		CameraView fixture = getFixture23();
 		boolean value = true;
 
 		fixture.setParallelProjection(value);
@@ -39587,7 +39587,7 @@ public class CameraTest {
 	@Test
 	public void testSetParallelProjection_fixture24_1()
 		throws Exception {
-		Camera fixture = getFixture24();
+		CameraView fixture = getFixture24();
 		boolean value = true;
 
 		fixture.setParallelProjection(value);
@@ -39605,7 +39605,7 @@ public class CameraTest {
 	@Test
 	public void testSetParallelProjection_fixture25_1()
 		throws Exception {
-		Camera fixture = getFixture25();
+		CameraView fixture = getFixture25();
 		boolean value = true;
 
 		fixture.setParallelProjection(value);
@@ -39623,7 +39623,7 @@ public class CameraTest {
 	@Test
 	public void testSetParallelProjection_fixture26_1()
 		throws Exception {
-		Camera fixture = getFixture26();
+		CameraView fixture = getFixture26();
 		boolean value = true;
 
 		fixture.setParallelProjection(value);
@@ -39641,7 +39641,7 @@ public class CameraTest {
 	@Test
 	public void testSetParallelProjection_fixture27_1()
 		throws Exception {
-		Camera fixture = getFixture27();
+		CameraView fixture = getFixture27();
 		boolean value = true;
 
 		fixture.setParallelProjection(value);
@@ -39659,7 +39659,7 @@ public class CameraTest {
 	@Test
 	public void testSetParallelProjection_fixture28_1()
 		throws Exception {
-		Camera fixture = getFixture28();
+		CameraView fixture = getFixture28();
 		boolean value = true;
 
 		fixture.setParallelProjection(value);
@@ -39677,7 +39677,7 @@ public class CameraTest {
 	@Test
 	public void testSetParallelProjection_fixture29_1()
 		throws Exception {
-		Camera fixture = getFixture29();
+		CameraView fixture = getFixture29();
 		boolean value = true;
 
 		fixture.setParallelProjection(value);
@@ -39695,7 +39695,7 @@ public class CameraTest {
 	@Test
 	public void testSetParallelProjection_fixture2_2()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 		boolean value = false;
 
 		fixture.setParallelProjection(value);
@@ -39713,7 +39713,7 @@ public class CameraTest {
 	@Test
 	public void testSetPlaneState_fixture1_1()
 		throws Exception {
-		Camera fixture = getFixture1();
+		CameraView fixture = getFixture1();
 		int planeState = 0;
 
 		fixture.setPlaneState(planeState);
@@ -39731,7 +39731,7 @@ public class CameraTest {
 	@Test
 	public void testSetPlaneState_fixture2_1()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 		int planeState = 1;
 
 		fixture.setPlaneState(planeState);
@@ -39749,7 +39749,7 @@ public class CameraTest {
 	@Test
 	public void testSetPlaneState_fixture3_1()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 		int planeState = 7;
 
 		fixture.setPlaneState(planeState);
@@ -39767,7 +39767,7 @@ public class CameraTest {
 	@Test
 	public void testSetPlaneState_fixture4_1()
 		throws Exception {
-		Camera fixture = getFixture4();
+		CameraView fixture = getFixture4();
 		int planeState = 7;
 
 		fixture.setPlaneState(planeState);
@@ -39785,7 +39785,7 @@ public class CameraTest {
 	@Test
 	public void testSetPlaneState_fixture5_1()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 		int planeState = 7;
 
 		fixture.setPlaneState(planeState);
@@ -39803,7 +39803,7 @@ public class CameraTest {
 	@Test
 	public void testSetPlaneState_fixture6_1()
 		throws Exception {
-		Camera fixture = getFixture6();
+		CameraView fixture = getFixture6();
 		int planeState = 7;
 
 		fixture.setPlaneState(planeState);
@@ -39821,7 +39821,7 @@ public class CameraTest {
 	@Test
 	public void testSetPlaneState_fixture7_1()
 		throws Exception {
-		Camera fixture = getFixture7();
+		CameraView fixture = getFixture7();
 		int planeState = 7;
 
 		fixture.setPlaneState(planeState);
@@ -39839,7 +39839,7 @@ public class CameraTest {
 	@Test
 	public void testSetPlaneState_fixture8_1()
 		throws Exception {
-		Camera fixture = getFixture8();
+		CameraView fixture = getFixture8();
 		int planeState = 7;
 
 		fixture.setPlaneState(planeState);
@@ -39857,7 +39857,7 @@ public class CameraTest {
 	@Test
 	public void testSetPlaneState_fixture9_1()
 		throws Exception {
-		Camera fixture = getFixture9();
+		CameraView fixture = getFixture9();
 		int planeState = 7;
 
 		fixture.setPlaneState(planeState);
@@ -39875,7 +39875,7 @@ public class CameraTest {
 	@Test
 	public void testSetPlaneState_fixture10_1()
 		throws Exception {
-		Camera fixture = getFixture10();
+		CameraView fixture = getFixture10();
 		int planeState = 7;
 
 		fixture.setPlaneState(planeState);
@@ -39893,7 +39893,7 @@ public class CameraTest {
 	@Test
 	public void testSetPlaneState_fixture11_1()
 		throws Exception {
-		Camera fixture = getFixture11();
+		CameraView fixture = getFixture11();
 		int planeState = 7;
 
 		fixture.setPlaneState(planeState);
@@ -39911,7 +39911,7 @@ public class CameraTest {
 	@Test
 	public void testSetPlaneState_fixture12_1()
 		throws Exception {
-		Camera fixture = getFixture12();
+		CameraView fixture = getFixture12();
 		int planeState = 7;
 
 		fixture.setPlaneState(planeState);
@@ -39929,7 +39929,7 @@ public class CameraTest {
 	@Test
 	public void testSetPlaneState_fixture13_1()
 		throws Exception {
-		Camera fixture = getFixture13();
+		CameraView fixture = getFixture13();
 		int planeState = 7;
 
 		fixture.setPlaneState(planeState);
@@ -39947,7 +39947,7 @@ public class CameraTest {
 	@Test
 	public void testSetPlaneState_fixture14_1()
 		throws Exception {
-		Camera fixture = getFixture14();
+		CameraView fixture = getFixture14();
 		int planeState = 7;
 
 		fixture.setPlaneState(planeState);
@@ -39965,7 +39965,7 @@ public class CameraTest {
 	@Test
 	public void testSetPlaneState_fixture15_1()
 		throws Exception {
-		Camera fixture = getFixture15();
+		CameraView fixture = getFixture15();
 		int planeState = 7;
 
 		fixture.setPlaneState(planeState);
@@ -39983,7 +39983,7 @@ public class CameraTest {
 	@Test
 	public void testSetPlaneState_fixture16_1()
 		throws Exception {
-		Camera fixture = getFixture16();
+		CameraView fixture = getFixture16();
 		int planeState = 7;
 
 		fixture.setPlaneState(planeState);
@@ -40001,7 +40001,7 @@ public class CameraTest {
 	@Test
 	public void testSetPlaneState_fixture17_1()
 		throws Exception {
-		Camera fixture = getFixture17();
+		CameraView fixture = getFixture17();
 		int planeState = 7;
 
 		fixture.setPlaneState(planeState);
@@ -40019,7 +40019,7 @@ public class CameraTest {
 	@Test
 	public void testSetPlaneState_fixture18_1()
 		throws Exception {
-		Camera fixture = getFixture18();
+		CameraView fixture = getFixture18();
 		int planeState = 7;
 
 		fixture.setPlaneState(planeState);
@@ -40037,7 +40037,7 @@ public class CameraTest {
 	@Test
 	public void testSetPlaneState_fixture19_1()
 		throws Exception {
-		Camera fixture = getFixture19();
+		CameraView fixture = getFixture19();
 		int planeState = 7;
 
 		fixture.setPlaneState(planeState);
@@ -40055,7 +40055,7 @@ public class CameraTest {
 	@Test
 	public void testSetPlaneState_fixture20_1()
 		throws Exception {
-		Camera fixture = getFixture20();
+		CameraView fixture = getFixture20();
 		int planeState = 7;
 
 		fixture.setPlaneState(planeState);
@@ -40073,7 +40073,7 @@ public class CameraTest {
 	@Test
 	public void testSetPlaneState_fixture21_1()
 		throws Exception {
-		Camera fixture = getFixture21();
+		CameraView fixture = getFixture21();
 		int planeState = 7;
 
 		fixture.setPlaneState(planeState);
@@ -40091,7 +40091,7 @@ public class CameraTest {
 	@Test
 	public void testSetPlaneState_fixture22_1()
 		throws Exception {
-		Camera fixture = getFixture22();
+		CameraView fixture = getFixture22();
 		int planeState = 7;
 
 		fixture.setPlaneState(planeState);
@@ -40109,7 +40109,7 @@ public class CameraTest {
 	@Test
 	public void testSetPlaneState_fixture23_1()
 		throws Exception {
-		Camera fixture = getFixture23();
+		CameraView fixture = getFixture23();
 		int planeState = 7;
 
 		fixture.setPlaneState(planeState);
@@ -40127,7 +40127,7 @@ public class CameraTest {
 	@Test
 	public void testSetPlaneState_fixture24_1()
 		throws Exception {
-		Camera fixture = getFixture24();
+		CameraView fixture = getFixture24();
 		int planeState = 7;
 
 		fixture.setPlaneState(planeState);
@@ -40145,7 +40145,7 @@ public class CameraTest {
 	@Test
 	public void testSetPlaneState_fixture25_1()
 		throws Exception {
-		Camera fixture = getFixture25();
+		CameraView fixture = getFixture25();
 		int planeState = 7;
 
 		fixture.setPlaneState(planeState);
@@ -40163,7 +40163,7 @@ public class CameraTest {
 	@Test
 	public void testSetPlaneState_fixture26_1()
 		throws Exception {
-		Camera fixture = getFixture26();
+		CameraView fixture = getFixture26();
 		int planeState = 7;
 
 		fixture.setPlaneState(planeState);
@@ -40181,7 +40181,7 @@ public class CameraTest {
 	@Test
 	public void testSetPlaneState_fixture27_1()
 		throws Exception {
-		Camera fixture = getFixture27();
+		CameraView fixture = getFixture27();
 		int planeState = 7;
 
 		fixture.setPlaneState(planeState);
@@ -40199,7 +40199,7 @@ public class CameraTest {
 	@Test
 	public void testSetPlaneState_fixture28_1()
 		throws Exception {
-		Camera fixture = getFixture28();
+		CameraView fixture = getFixture28();
 		int planeState = 7;
 
 		fixture.setPlaneState(planeState);
@@ -40217,7 +40217,7 @@ public class CameraTest {
 	@Test
 	public void testSetPlaneState_fixture29_1()
 		throws Exception {
-		Camera fixture = getFixture29();
+		CameraView fixture = getFixture29();
 		int planeState = 7;
 
 		fixture.setPlaneState(planeState);
@@ -40235,7 +40235,7 @@ public class CameraTest {
 	@Test
 	public void testSetPlaneState_fixture2_2()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 		int planeState = 0;
 
 		fixture.setPlaneState(planeState);
@@ -40271,7 +40271,7 @@ public class CameraTest {
 	@Test
 	public void testSetProjectionMatrix_fixture2_1()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 		Matrix4f projMatrix = Matrix4f.ZERO;
 
 		fixture.setProjectionMatrix(projMatrix);
@@ -40289,7 +40289,7 @@ public class CameraTest {
 	@Test
 	public void testSetProjectionMatrix_fixture3_1()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 		Matrix4f projMatrix = new Matrix4f();
 
 		fixture.setProjectionMatrix(projMatrix);
@@ -40307,7 +40307,7 @@ public class CameraTest {
 	@Test
 	public void testSetProjectionMatrix_fixture4_1()
 		throws Exception {
-		Camera fixture = getFixture4();
+		CameraView fixture = getFixture4();
 		Matrix4f projMatrix = new Matrix4f(-1.0f, -1.0f, -1.0f, -1.0f, -1.0f, -1.0f, -1.0f, -1.0f, -1.0f, -1.0f, -1.0f, -1.0f, -1.0f, -1.0f, -1.0f, -1.0f);
 
 		fixture.setProjectionMatrix(projMatrix);
@@ -40325,7 +40325,7 @@ public class CameraTest {
 	@Test(expected=java.lang.IllegalArgumentException.class)
 	public void testSetProjectionMatrix_fixture5_1()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 		Matrix4f projMatrix = new Matrix4f(new float[] {-1.0f, 0.0f, 1.0f, -0.5f, 0.5f, Float.MAX_VALUE, Float.MIN_VALUE});
 
 		fixture.setProjectionMatrix(projMatrix);
@@ -40347,7 +40347,7 @@ public class CameraTest {
 	@Test
 	public void testSetProjectionMatrix_fixture6_1()
 		throws Exception {
-		Camera fixture = getFixture6();
+		CameraView fixture = getFixture6();
 		Matrix4f projMatrix = new Matrix4f((Matrix4f) null);
 
 		fixture.setProjectionMatrix(projMatrix);
@@ -40365,7 +40365,7 @@ public class CameraTest {
 	@Test
 	public void testSetProjectionMatrix_fixture7_1()
 		throws Exception {
-		Camera fixture = getFixture7();
+		CameraView fixture = getFixture7();
 		Matrix4f projMatrix = new Matrix4f((Matrix4f) null);
 
 		fixture.setProjectionMatrix(projMatrix);
@@ -40383,7 +40383,7 @@ public class CameraTest {
 	@Test
 	public void testSetProjectionMatrix_fixture8_1()
 		throws Exception {
-		Camera fixture = getFixture8();
+		CameraView fixture = getFixture8();
 		Matrix4f projMatrix = new Matrix4f((Matrix4f) null);
 
 		fixture.setProjectionMatrix(projMatrix);
@@ -40401,7 +40401,7 @@ public class CameraTest {
 	@Test
 	public void testSetProjectionMatrix_fixture9_1()
 		throws Exception {
-		Camera fixture = getFixture9();
+		CameraView fixture = getFixture9();
 		Matrix4f projMatrix = new Matrix4f((Matrix4f) null);
 
 		fixture.setProjectionMatrix(projMatrix);
@@ -40419,7 +40419,7 @@ public class CameraTest {
 	@Test
 	public void testSetProjectionMatrix_fixture10_1()
 		throws Exception {
-		Camera fixture = getFixture10();
+		CameraView fixture = getFixture10();
 		Matrix4f projMatrix = new Matrix4f((Matrix4f) null);
 
 		fixture.setProjectionMatrix(projMatrix);
@@ -40437,7 +40437,7 @@ public class CameraTest {
 	@Test
 	public void testSetProjectionMatrix_fixture11_1()
 		throws Exception {
-		Camera fixture = getFixture11();
+		CameraView fixture = getFixture11();
 		Matrix4f projMatrix = new Matrix4f((Matrix4f) null);
 
 		fixture.setProjectionMatrix(projMatrix);
@@ -40455,7 +40455,7 @@ public class CameraTest {
 	@Test
 	public void testSetProjectionMatrix_fixture12_1()
 		throws Exception {
-		Camera fixture = getFixture12();
+		CameraView fixture = getFixture12();
 		Matrix4f projMatrix = new Matrix4f((Matrix4f) null);
 
 		fixture.setProjectionMatrix(projMatrix);
@@ -40473,7 +40473,7 @@ public class CameraTest {
 	@Test
 	public void testSetProjectionMatrix_fixture13_1()
 		throws Exception {
-		Camera fixture = getFixture13();
+		CameraView fixture = getFixture13();
 		Matrix4f projMatrix = new Matrix4f((Matrix4f) null);
 
 		fixture.setProjectionMatrix(projMatrix);
@@ -40491,7 +40491,7 @@ public class CameraTest {
 	@Test
 	public void testSetProjectionMatrix_fixture14_1()
 		throws Exception {
-		Camera fixture = getFixture14();
+		CameraView fixture = getFixture14();
 		Matrix4f projMatrix = new Matrix4f((Matrix4f) null);
 
 		fixture.setProjectionMatrix(projMatrix);
@@ -40509,7 +40509,7 @@ public class CameraTest {
 	@Test
 	public void testSetProjectionMatrix_fixture15_1()
 		throws Exception {
-		Camera fixture = getFixture15();
+		CameraView fixture = getFixture15();
 		Matrix4f projMatrix = new Matrix4f((Matrix4f) null);
 
 		fixture.setProjectionMatrix(projMatrix);
@@ -40527,7 +40527,7 @@ public class CameraTest {
 	@Test
 	public void testSetProjectionMatrix_fixture16_1()
 		throws Exception {
-		Camera fixture = getFixture16();
+		CameraView fixture = getFixture16();
 		Matrix4f projMatrix = new Matrix4f((Matrix4f) null);
 
 		fixture.setProjectionMatrix(projMatrix);
@@ -40545,7 +40545,7 @@ public class CameraTest {
 	@Test
 	public void testSetProjectionMatrix_fixture17_1()
 		throws Exception {
-		Camera fixture = getFixture17();
+		CameraView fixture = getFixture17();
 		Matrix4f projMatrix = new Matrix4f((Matrix4f) null);
 
 		fixture.setProjectionMatrix(projMatrix);
@@ -40563,7 +40563,7 @@ public class CameraTest {
 	@Test
 	public void testSetProjectionMatrix_fixture18_1()
 		throws Exception {
-		Camera fixture = getFixture18();
+		CameraView fixture = getFixture18();
 		Matrix4f projMatrix = new Matrix4f((Matrix4f) null);
 
 		fixture.setProjectionMatrix(projMatrix);
@@ -40581,7 +40581,7 @@ public class CameraTest {
 	@Test
 	public void testSetProjectionMatrix_fixture19_1()
 		throws Exception {
-		Camera fixture = getFixture19();
+		CameraView fixture = getFixture19();
 		Matrix4f projMatrix = new Matrix4f((Matrix4f) null);
 
 		fixture.setProjectionMatrix(projMatrix);
@@ -40599,7 +40599,7 @@ public class CameraTest {
 	@Test
 	public void testSetProjectionMatrix_fixture20_1()
 		throws Exception {
-		Camera fixture = getFixture20();
+		CameraView fixture = getFixture20();
 		Matrix4f projMatrix = new Matrix4f((Matrix4f) null);
 
 		fixture.setProjectionMatrix(projMatrix);
@@ -40617,7 +40617,7 @@ public class CameraTest {
 	@Test
 	public void testSetProjectionMatrix_fixture21_1()
 		throws Exception {
-		Camera fixture = getFixture21();
+		CameraView fixture = getFixture21();
 		Matrix4f projMatrix = new Matrix4f((Matrix4f) null);
 
 		fixture.setProjectionMatrix(projMatrix);
@@ -40635,7 +40635,7 @@ public class CameraTest {
 	@Test
 	public void testSetProjectionMatrix_fixture22_1()
 		throws Exception {
-		Camera fixture = getFixture22();
+		CameraView fixture = getFixture22();
 		Matrix4f projMatrix = new Matrix4f((Matrix4f) null);
 
 		fixture.setProjectionMatrix(projMatrix);
@@ -40653,7 +40653,7 @@ public class CameraTest {
 	@Test
 	public void testSetProjectionMatrix_fixture23_1()
 		throws Exception {
-		Camera fixture = getFixture23();
+		CameraView fixture = getFixture23();
 		Matrix4f projMatrix = new Matrix4f((Matrix4f) null);
 
 		fixture.setProjectionMatrix(projMatrix);
@@ -40671,7 +40671,7 @@ public class CameraTest {
 	@Test
 	public void testSetProjectionMatrix_fixture24_1()
 		throws Exception {
-		Camera fixture = getFixture24();
+		CameraView fixture = getFixture24();
 		Matrix4f projMatrix = new Matrix4f((Matrix4f) null);
 
 		fixture.setProjectionMatrix(projMatrix);
@@ -40689,7 +40689,7 @@ public class CameraTest {
 	@Test
 	public void testSetProjectionMatrix_fixture25_1()
 		throws Exception {
-		Camera fixture = getFixture25();
+		CameraView fixture = getFixture25();
 		Matrix4f projMatrix = new Matrix4f((Matrix4f) null);
 
 		fixture.setProjectionMatrix(projMatrix);
@@ -40707,7 +40707,7 @@ public class CameraTest {
 	@Test
 	public void testSetProjectionMatrix_fixture26_1()
 		throws Exception {
-		Camera fixture = getFixture26();
+		CameraView fixture = getFixture26();
 		Matrix4f projMatrix = new Matrix4f((Matrix4f) null);
 
 		fixture.setProjectionMatrix(projMatrix);
@@ -40725,7 +40725,7 @@ public class CameraTest {
 	@Test
 	public void testSetProjectionMatrix_fixture27_1()
 		throws Exception {
-		Camera fixture = getFixture27();
+		CameraView fixture = getFixture27();
 		Matrix4f projMatrix = new Matrix4f((Matrix4f) null);
 
 		fixture.setProjectionMatrix(projMatrix);
@@ -40743,7 +40743,7 @@ public class CameraTest {
 	@Test
 	public void testSetProjectionMatrix_fixture28_1()
 		throws Exception {
-		Camera fixture = getFixture28();
+		CameraView fixture = getFixture28();
 		Matrix4f projMatrix = new Matrix4f((Matrix4f) null);
 
 		fixture.setProjectionMatrix(projMatrix);
@@ -40761,7 +40761,7 @@ public class CameraTest {
 	@Test
 	public void testSetProjectionMatrix_fixture29_1()
 		throws Exception {
-		Camera fixture = getFixture29();
+		CameraView fixture = getFixture29();
 		Matrix4f projMatrix = new Matrix4f((Matrix4f) null);
 
 		fixture.setProjectionMatrix(projMatrix);
@@ -40779,7 +40779,7 @@ public class CameraTest {
 	@Test
 	public void testSetProjectionMatrix_fixture2_2()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 		Matrix4f projMatrix = Matrix4f.IDENTITY;
 
 		fixture.setProjectionMatrix(projMatrix);
@@ -40818,7 +40818,7 @@ public class CameraTest {
 	@Test
 	public void testSetRotation_fixture2_1()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 		Quaternion rotation = Quaternion.IDENTITY;
 
 		fixture.setRotation(rotation);
@@ -40836,7 +40836,7 @@ public class CameraTest {
 	@Test
 	public void testSetRotation_fixture3_1()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 		Quaternion rotation = Quaternion.ZERO;
 
 		fixture.setRotation(rotation);
@@ -40854,7 +40854,7 @@ public class CameraTest {
 	@Test
 	public void testSetRotation_fixture4_1()
 		throws Exception {
-		Camera fixture = getFixture4();
+		CameraView fixture = getFixture4();
 		Quaternion rotation = new Quaternion();
 
 		fixture.setRotation(rotation);
@@ -40872,7 +40872,7 @@ public class CameraTest {
 	@Test
 	public void testSetRotation_fixture5_1()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 		Quaternion rotation = new Quaternion(-0.5f, -0.5f, -0.5f, -0.5f);
 
 		fixture.setRotation(rotation);
@@ -40890,7 +40890,7 @@ public class CameraTest {
 	@Test
 	public void testSetRotation_fixture6_1()
 		throws Exception {
-		Camera fixture = getFixture6();
+		CameraView fixture = getFixture6();
 		Quaternion rotation = new Quaternion(-1.0f, -1.0f, -1.0f, -1.0f);
 
 		fixture.setRotation(rotation);
@@ -40908,7 +40908,7 @@ public class CameraTest {
 	@Test
 	public void testSetRotation_fixture7_1()
 		throws Exception {
-		Camera fixture = getFixture7();
+		CameraView fixture = getFixture7();
 		Quaternion rotation = new Quaternion(0.0f, 0.0f, 0.0f, 0.0f);
 
 		fixture.setRotation(rotation);
@@ -40926,7 +40926,7 @@ public class CameraTest {
 	@Test
 	public void testSetRotation_fixture8_1()
 		throws Exception {
-		Camera fixture = getFixture8();
+		CameraView fixture = getFixture8();
 		Quaternion rotation = new Quaternion(1.0f, 1.0f, 1.0f, 1.0f);
 
 		fixture.setRotation(rotation);
@@ -40944,7 +40944,7 @@ public class CameraTest {
 	@Test(expected=java.lang.IllegalArgumentException.class)
 	public void testSetRotation_fixture9_1()
 		throws Exception {
-		Camera fixture = getFixture9();
+		CameraView fixture = getFixture9();
 		Quaternion rotation = new Quaternion(new float[] {-1.0f, 0.0f, 1.0f, -0.5f, 0.5f, Float.MAX_VALUE, Float.MIN_VALUE});
 
 		fixture.setRotation(rotation);
@@ -41405,7 +41405,7 @@ public class CameraTest {
 	@Test
 	public void testSetRotation_fixture2_2()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 		Quaternion rotation = Quaternion.DIRECTION_Z;
 
 		fixture.setRotation(rotation);
@@ -41423,7 +41423,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPort_fixture1_1()
 		throws Exception {
-		Camera fixture = getFixture1();
+		CameraView fixture = getFixture1();
 		float left = -1.0f;
 		float right = -1.0f;
 		float bottom = -1.0f;
@@ -41444,7 +41444,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPort_fixture2_1()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 		float left = 0.0f;
 		float right = 0.0f;
 		float bottom = 0.0f;
@@ -41465,7 +41465,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPort_fixture3_1()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 		float left = 1.0f;
 		float right = 1.0f;
 		float bottom = 1.0f;
@@ -41486,7 +41486,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPort_fixture5_1()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 		float left = 0.0f;
 		float right = 0.0f;
 		float bottom = -1.0f;
@@ -41507,7 +41507,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPort_fixture6_1()
 		throws Exception {
-		Camera fixture = getFixture6();
+		CameraView fixture = getFixture6();
 		float left = 1.0f;
 		float right = 1.0f;
 		float bottom = 0.0f;
@@ -41528,7 +41528,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPort_fixture8_1()
 		throws Exception {
-		Camera fixture = getFixture8();
+		CameraView fixture = getFixture8();
 		float left = 0.0f;
 		float right = -1.0f;
 		float bottom = 0.0f;
@@ -41549,7 +41549,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPort_fixture9_1()
 		throws Exception {
-		Camera fixture = getFixture9();
+		CameraView fixture = getFixture9();
 		float left = 1.0f;
 		float right = 0.0f;
 		float bottom = 0.0f;
@@ -41570,7 +41570,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPort_fixture11_1()
 		throws Exception {
-		Camera fixture = getFixture11();
+		CameraView fixture = getFixture11();
 		float left = -1.0f;
 		float right = 0.0f;
 		float bottom = 0.0f;
@@ -41591,7 +41591,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPort_fixture12_1()
 		throws Exception {
-		Camera fixture = getFixture12();
+		CameraView fixture = getFixture12();
 		float left = 0.0f;
 		float right = 0.0f;
 		float bottom = 0.0f;
@@ -41612,7 +41612,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPort_fixture13_1()
 		throws Exception {
-		Camera fixture = getFixture13();
+		CameraView fixture = getFixture13();
 		float left = 0.0f;
 		float right = 0.0f;
 		float bottom = 0.0f;
@@ -41633,7 +41633,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPort_fixture14_1()
 		throws Exception {
-		Camera fixture = getFixture14();
+		CameraView fixture = getFixture14();
 		float left = 0.0f;
 		float right = 0.0f;
 		float bottom = 0.0f;
@@ -41654,7 +41654,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPort_fixture15_1()
 		throws Exception {
-		Camera fixture = getFixture15();
+		CameraView fixture = getFixture15();
 		float left = 0.0f;
 		float right = 0.0f;
 		float bottom = 0.0f;
@@ -41675,7 +41675,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPort_fixture16_1()
 		throws Exception {
-		Camera fixture = getFixture16();
+		CameraView fixture = getFixture16();
 		float left = 0.0f;
 		float right = 0.0f;
 		float bottom = 0.0f;
@@ -41696,7 +41696,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPort_fixture17_1()
 		throws Exception {
-		Camera fixture = getFixture17();
+		CameraView fixture = getFixture17();
 		float left = 0.0f;
 		float right = 0.0f;
 		float bottom = 0.0f;
@@ -41717,7 +41717,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPort_fixture18_1()
 		throws Exception {
-		Camera fixture = getFixture18();
+		CameraView fixture = getFixture18();
 		float left = 0.0f;
 		float right = 0.0f;
 		float bottom = 0.0f;
@@ -41738,7 +41738,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPort_fixture19_1()
 		throws Exception {
-		Camera fixture = getFixture19();
+		CameraView fixture = getFixture19();
 		float left = 0.0f;
 		float right = 0.0f;
 		float bottom = 0.0f;
@@ -41759,7 +41759,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPort_fixture20_1()
 		throws Exception {
-		Camera fixture = getFixture20();
+		CameraView fixture = getFixture20();
 		float left = 0.0f;
 		float right = 0.0f;
 		float bottom = 0.0f;
@@ -41780,7 +41780,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPort_fixture21_1()
 		throws Exception {
-		Camera fixture = getFixture21();
+		CameraView fixture = getFixture21();
 		float left = 0.0f;
 		float right = 0.0f;
 		float bottom = 0.0f;
@@ -41801,7 +41801,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPort_fixture22_1()
 		throws Exception {
-		Camera fixture = getFixture22();
+		CameraView fixture = getFixture22();
 		float left = 0.0f;
 		float right = 0.0f;
 		float bottom = 0.0f;
@@ -41822,7 +41822,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPort_fixture23_1()
 		throws Exception {
-		Camera fixture = getFixture23();
+		CameraView fixture = getFixture23();
 		float left = 0.0f;
 		float right = 0.0f;
 		float bottom = 0.0f;
@@ -41843,7 +41843,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPort_fixture24_1()
 		throws Exception {
-		Camera fixture = getFixture24();
+		CameraView fixture = getFixture24();
 		float left = 0.0f;
 		float right = 0.0f;
 		float bottom = 0.0f;
@@ -41864,7 +41864,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPort_fixture25_1()
 		throws Exception {
-		Camera fixture = getFixture25();
+		CameraView fixture = getFixture25();
 		float left = 0.0f;
 		float right = 0.0f;
 		float bottom = 0.0f;
@@ -41885,7 +41885,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPort_fixture26_1()
 		throws Exception {
-		Camera fixture = getFixture26();
+		CameraView fixture = getFixture26();
 		float left = 0.0f;
 		float right = 0.0f;
 		float bottom = 0.0f;
@@ -41906,7 +41906,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPort_fixture27_1()
 		throws Exception {
-		Camera fixture = getFixture27();
+		CameraView fixture = getFixture27();
 		float left = 0.0f;
 		float right = 0.0f;
 		float bottom = 0.0f;
@@ -41927,7 +41927,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPort_fixture28_1()
 		throws Exception {
-		Camera fixture = getFixture28();
+		CameraView fixture = getFixture28();
 		float left = 0.0f;
 		float right = 0.0f;
 		float bottom = 0.0f;
@@ -41948,7 +41948,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPort_fixture29_1()
 		throws Exception {
-		Camera fixture = getFixture29();
+		CameraView fixture = getFixture29();
 		float left = 0.0f;
 		float right = 0.0f;
 		float bottom = 0.0f;
@@ -41969,7 +41969,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPort_fixture1_2()
 		throws Exception {
-		Camera fixture = getFixture1();
+		CameraView fixture = getFixture1();
 		float left = 0.0f;
 		float right = 0.0f;
 		float bottom = 0.0f;
@@ -41990,7 +41990,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPort_fixture2_2()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 		float left = 0.0f;
 		float right = 0.0f;
 		float bottom = 0.0f;
@@ -42011,7 +42011,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPort_fixture3_2()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 		float left = 0.0f;
 		float right = 0.0f;
 		float bottom = 0.0f;
@@ -42032,7 +42032,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPort_fixture5_2()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 		float left = -1.0f;
 		float right = -1.0f;
 		float bottom = -1.0f;
@@ -42053,7 +42053,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortBottom_fixture1_1()
 		throws Exception {
-		Camera fixture = getFixture1();
+		CameraView fixture = getFixture1();
 		float bottom = -1.0f;
 
 		fixture.setViewPortBottom(bottom);
@@ -42071,7 +42071,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortBottom_fixture2_1()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 		float bottom = 0.0f;
 
 		fixture.setViewPortBottom(bottom);
@@ -42089,7 +42089,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortBottom_fixture3_1()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 		float bottom = 1.0f;
 
 		fixture.setViewPortBottom(bottom);
@@ -42107,7 +42107,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortBottom_fixture4_1()
 		throws Exception {
-		Camera fixture = getFixture4();
+		CameraView fixture = getFixture4();
 		float bottom = 1.0f;
 
 		fixture.setViewPortBottom(bottom);
@@ -42125,7 +42125,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortBottom_fixture5_1()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 		float bottom = 1.0f;
 
 		fixture.setViewPortBottom(bottom);
@@ -42143,7 +42143,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortBottom_fixture6_1()
 		throws Exception {
-		Camera fixture = getFixture6();
+		CameraView fixture = getFixture6();
 		float bottom = 1.0f;
 
 		fixture.setViewPortBottom(bottom);
@@ -42161,7 +42161,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortBottom_fixture7_1()
 		throws Exception {
-		Camera fixture = getFixture7();
+		CameraView fixture = getFixture7();
 		float bottom = 1.0f;
 
 		fixture.setViewPortBottom(bottom);
@@ -42179,7 +42179,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortBottom_fixture8_1()
 		throws Exception {
-		Camera fixture = getFixture8();
+		CameraView fixture = getFixture8();
 		float bottom = 1.0f;
 
 		fixture.setViewPortBottom(bottom);
@@ -42197,7 +42197,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortBottom_fixture9_1()
 		throws Exception {
-		Camera fixture = getFixture9();
+		CameraView fixture = getFixture9();
 		float bottom = 1.0f;
 
 		fixture.setViewPortBottom(bottom);
@@ -42215,7 +42215,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortBottom_fixture10_1()
 		throws Exception {
-		Camera fixture = getFixture10();
+		CameraView fixture = getFixture10();
 		float bottom = 1.0f;
 
 		fixture.setViewPortBottom(bottom);
@@ -42233,7 +42233,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortBottom_fixture11_1()
 		throws Exception {
-		Camera fixture = getFixture11();
+		CameraView fixture = getFixture11();
 		float bottom = 1.0f;
 
 		fixture.setViewPortBottom(bottom);
@@ -42251,7 +42251,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortBottom_fixture12_1()
 		throws Exception {
-		Camera fixture = getFixture12();
+		CameraView fixture = getFixture12();
 		float bottom = 1.0f;
 
 		fixture.setViewPortBottom(bottom);
@@ -42269,7 +42269,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortBottom_fixture13_1()
 		throws Exception {
-		Camera fixture = getFixture13();
+		CameraView fixture = getFixture13();
 		float bottom = 1.0f;
 
 		fixture.setViewPortBottom(bottom);
@@ -42287,7 +42287,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortBottom_fixture14_1()
 		throws Exception {
-		Camera fixture = getFixture14();
+		CameraView fixture = getFixture14();
 		float bottom = 1.0f;
 
 		fixture.setViewPortBottom(bottom);
@@ -42305,7 +42305,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortBottom_fixture15_1()
 		throws Exception {
-		Camera fixture = getFixture15();
+		CameraView fixture = getFixture15();
 		float bottom = 1.0f;
 
 		fixture.setViewPortBottom(bottom);
@@ -42323,7 +42323,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortBottom_fixture16_1()
 		throws Exception {
-		Camera fixture = getFixture16();
+		CameraView fixture = getFixture16();
 		float bottom = 1.0f;
 
 		fixture.setViewPortBottom(bottom);
@@ -42341,7 +42341,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortBottom_fixture17_1()
 		throws Exception {
-		Camera fixture = getFixture17();
+		CameraView fixture = getFixture17();
 		float bottom = 1.0f;
 
 		fixture.setViewPortBottom(bottom);
@@ -42359,7 +42359,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortBottom_fixture18_1()
 		throws Exception {
-		Camera fixture = getFixture18();
+		CameraView fixture = getFixture18();
 		float bottom = 1.0f;
 
 		fixture.setViewPortBottom(bottom);
@@ -42377,7 +42377,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortBottom_fixture19_1()
 		throws Exception {
-		Camera fixture = getFixture19();
+		CameraView fixture = getFixture19();
 		float bottom = 1.0f;
 
 		fixture.setViewPortBottom(bottom);
@@ -42395,7 +42395,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortBottom_fixture20_1()
 		throws Exception {
-		Camera fixture = getFixture20();
+		CameraView fixture = getFixture20();
 		float bottom = 1.0f;
 
 		fixture.setViewPortBottom(bottom);
@@ -42413,7 +42413,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortBottom_fixture21_1()
 		throws Exception {
-		Camera fixture = getFixture21();
+		CameraView fixture = getFixture21();
 		float bottom = 1.0f;
 
 		fixture.setViewPortBottom(bottom);
@@ -42431,7 +42431,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortBottom_fixture22_1()
 		throws Exception {
-		Camera fixture = getFixture22();
+		CameraView fixture = getFixture22();
 		float bottom = 1.0f;
 
 		fixture.setViewPortBottom(bottom);
@@ -42449,7 +42449,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortBottom_fixture23_1()
 		throws Exception {
-		Camera fixture = getFixture23();
+		CameraView fixture = getFixture23();
 		float bottom = 1.0f;
 
 		fixture.setViewPortBottom(bottom);
@@ -42467,7 +42467,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortBottom_fixture24_1()
 		throws Exception {
-		Camera fixture = getFixture24();
+		CameraView fixture = getFixture24();
 		float bottom = 1.0f;
 
 		fixture.setViewPortBottom(bottom);
@@ -42485,7 +42485,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortBottom_fixture25_1()
 		throws Exception {
-		Camera fixture = getFixture25();
+		CameraView fixture = getFixture25();
 		float bottom = 1.0f;
 
 		fixture.setViewPortBottom(bottom);
@@ -42503,7 +42503,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortBottom_fixture26_1()
 		throws Exception {
-		Camera fixture = getFixture26();
+		CameraView fixture = getFixture26();
 		float bottom = 1.0f;
 
 		fixture.setViewPortBottom(bottom);
@@ -42521,7 +42521,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortBottom_fixture27_1()
 		throws Exception {
-		Camera fixture = getFixture27();
+		CameraView fixture = getFixture27();
 		float bottom = 1.0f;
 
 		fixture.setViewPortBottom(bottom);
@@ -42539,7 +42539,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortBottom_fixture28_1()
 		throws Exception {
-		Camera fixture = getFixture28();
+		CameraView fixture = getFixture28();
 		float bottom = 1.0f;
 
 		fixture.setViewPortBottom(bottom);
@@ -42557,7 +42557,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortBottom_fixture29_1()
 		throws Exception {
-		Camera fixture = getFixture29();
+		CameraView fixture = getFixture29();
 		float bottom = 1.0f;
 
 		fixture.setViewPortBottom(bottom);
@@ -42575,7 +42575,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortBottom_fixture2_2()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 		float bottom = -1.0f;
 
 		fixture.setViewPortBottom(bottom);
@@ -42593,7 +42593,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortLeft_fixture1_1()
 		throws Exception {
-		Camera fixture = getFixture1();
+		CameraView fixture = getFixture1();
 		float left = -1.0f;
 
 		fixture.setViewPortLeft(left);
@@ -42611,7 +42611,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortLeft_fixture2_1()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 		float left = 0.0f;
 
 		fixture.setViewPortLeft(left);
@@ -42629,7 +42629,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortLeft_fixture3_1()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 		float left = 1.0f;
 
 		fixture.setViewPortLeft(left);
@@ -42647,7 +42647,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortLeft_fixture4_1()
 		throws Exception {
-		Camera fixture = getFixture4();
+		CameraView fixture = getFixture4();
 		float left = 1.0f;
 
 		fixture.setViewPortLeft(left);
@@ -42665,7 +42665,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortLeft_fixture5_1()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 		float left = 1.0f;
 
 		fixture.setViewPortLeft(left);
@@ -42683,7 +42683,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortLeft_fixture6_1()
 		throws Exception {
-		Camera fixture = getFixture6();
+		CameraView fixture = getFixture6();
 		float left = 1.0f;
 
 		fixture.setViewPortLeft(left);
@@ -42701,7 +42701,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortLeft_fixture7_1()
 		throws Exception {
-		Camera fixture = getFixture7();
+		CameraView fixture = getFixture7();
 		float left = 1.0f;
 
 		fixture.setViewPortLeft(left);
@@ -42719,7 +42719,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortLeft_fixture8_1()
 		throws Exception {
-		Camera fixture = getFixture8();
+		CameraView fixture = getFixture8();
 		float left = 1.0f;
 
 		fixture.setViewPortLeft(left);
@@ -42737,7 +42737,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortLeft_fixture9_1()
 		throws Exception {
-		Camera fixture = getFixture9();
+		CameraView fixture = getFixture9();
 		float left = 1.0f;
 
 		fixture.setViewPortLeft(left);
@@ -42755,7 +42755,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortLeft_fixture10_1()
 		throws Exception {
-		Camera fixture = getFixture10();
+		CameraView fixture = getFixture10();
 		float left = 1.0f;
 
 		fixture.setViewPortLeft(left);
@@ -42773,7 +42773,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortLeft_fixture11_1()
 		throws Exception {
-		Camera fixture = getFixture11();
+		CameraView fixture = getFixture11();
 		float left = 1.0f;
 
 		fixture.setViewPortLeft(left);
@@ -42791,7 +42791,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortLeft_fixture12_1()
 		throws Exception {
-		Camera fixture = getFixture12();
+		CameraView fixture = getFixture12();
 		float left = 1.0f;
 
 		fixture.setViewPortLeft(left);
@@ -42809,7 +42809,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortLeft_fixture13_1()
 		throws Exception {
-		Camera fixture = getFixture13();
+		CameraView fixture = getFixture13();
 		float left = 1.0f;
 
 		fixture.setViewPortLeft(left);
@@ -42827,7 +42827,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortLeft_fixture14_1()
 		throws Exception {
-		Camera fixture = getFixture14();
+		CameraView fixture = getFixture14();
 		float left = 1.0f;
 
 		fixture.setViewPortLeft(left);
@@ -42845,7 +42845,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortLeft_fixture15_1()
 		throws Exception {
-		Camera fixture = getFixture15();
+		CameraView fixture = getFixture15();
 		float left = 1.0f;
 
 		fixture.setViewPortLeft(left);
@@ -42863,7 +42863,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortLeft_fixture16_1()
 		throws Exception {
-		Camera fixture = getFixture16();
+		CameraView fixture = getFixture16();
 		float left = 1.0f;
 
 		fixture.setViewPortLeft(left);
@@ -42881,7 +42881,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortLeft_fixture17_1()
 		throws Exception {
-		Camera fixture = getFixture17();
+		CameraView fixture = getFixture17();
 		float left = 1.0f;
 
 		fixture.setViewPortLeft(left);
@@ -42899,7 +42899,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortLeft_fixture18_1()
 		throws Exception {
-		Camera fixture = getFixture18();
+		CameraView fixture = getFixture18();
 		float left = 1.0f;
 
 		fixture.setViewPortLeft(left);
@@ -42917,7 +42917,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortLeft_fixture19_1()
 		throws Exception {
-		Camera fixture = getFixture19();
+		CameraView fixture = getFixture19();
 		float left = 1.0f;
 
 		fixture.setViewPortLeft(left);
@@ -42935,7 +42935,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortLeft_fixture20_1()
 		throws Exception {
-		Camera fixture = getFixture20();
+		CameraView fixture = getFixture20();
 		float left = 1.0f;
 
 		fixture.setViewPortLeft(left);
@@ -42953,7 +42953,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortLeft_fixture21_1()
 		throws Exception {
-		Camera fixture = getFixture21();
+		CameraView fixture = getFixture21();
 		float left = 1.0f;
 
 		fixture.setViewPortLeft(left);
@@ -42971,7 +42971,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortLeft_fixture22_1()
 		throws Exception {
-		Camera fixture = getFixture22();
+		CameraView fixture = getFixture22();
 		float left = 1.0f;
 
 		fixture.setViewPortLeft(left);
@@ -42989,7 +42989,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortLeft_fixture23_1()
 		throws Exception {
-		Camera fixture = getFixture23();
+		CameraView fixture = getFixture23();
 		float left = 1.0f;
 
 		fixture.setViewPortLeft(left);
@@ -43007,7 +43007,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortLeft_fixture24_1()
 		throws Exception {
-		Camera fixture = getFixture24();
+		CameraView fixture = getFixture24();
 		float left = 1.0f;
 
 		fixture.setViewPortLeft(left);
@@ -43025,7 +43025,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortLeft_fixture25_1()
 		throws Exception {
-		Camera fixture = getFixture25();
+		CameraView fixture = getFixture25();
 		float left = 1.0f;
 
 		fixture.setViewPortLeft(left);
@@ -43043,7 +43043,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortLeft_fixture26_1()
 		throws Exception {
-		Camera fixture = getFixture26();
+		CameraView fixture = getFixture26();
 		float left = 1.0f;
 
 		fixture.setViewPortLeft(left);
@@ -43061,7 +43061,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortLeft_fixture27_1()
 		throws Exception {
-		Camera fixture = getFixture27();
+		CameraView fixture = getFixture27();
 		float left = 1.0f;
 
 		fixture.setViewPortLeft(left);
@@ -43079,7 +43079,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortLeft_fixture28_1()
 		throws Exception {
-		Camera fixture = getFixture28();
+		CameraView fixture = getFixture28();
 		float left = 1.0f;
 
 		fixture.setViewPortLeft(left);
@@ -43097,7 +43097,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortLeft_fixture29_1()
 		throws Exception {
-		Camera fixture = getFixture29();
+		CameraView fixture = getFixture29();
 		float left = 1.0f;
 
 		fixture.setViewPortLeft(left);
@@ -43115,7 +43115,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortLeft_fixture2_2()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 		float left = -1.0f;
 
 		fixture.setViewPortLeft(left);
@@ -43133,7 +43133,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortRight_fixture1_1()
 		throws Exception {
-		Camera fixture = getFixture1();
+		CameraView fixture = getFixture1();
 		float right = -1.0f;
 
 		fixture.setViewPortRight(right);
@@ -43151,7 +43151,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortRight_fixture2_1()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 		float right = 0.0f;
 
 		fixture.setViewPortRight(right);
@@ -43169,7 +43169,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortRight_fixture3_1()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 		float right = 1.0f;
 
 		fixture.setViewPortRight(right);
@@ -43187,7 +43187,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortRight_fixture4_1()
 		throws Exception {
-		Camera fixture = getFixture4();
+		CameraView fixture = getFixture4();
 		float right = 1.0f;
 
 		fixture.setViewPortRight(right);
@@ -43205,7 +43205,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortRight_fixture5_1()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 		float right = 1.0f;
 
 		fixture.setViewPortRight(right);
@@ -43223,7 +43223,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortRight_fixture6_1()
 		throws Exception {
-		Camera fixture = getFixture6();
+		CameraView fixture = getFixture6();
 		float right = 1.0f;
 
 		fixture.setViewPortRight(right);
@@ -43241,7 +43241,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortRight_fixture7_1()
 		throws Exception {
-		Camera fixture = getFixture7();
+		CameraView fixture = getFixture7();
 		float right = 1.0f;
 
 		fixture.setViewPortRight(right);
@@ -43259,7 +43259,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortRight_fixture8_1()
 		throws Exception {
-		Camera fixture = getFixture8();
+		CameraView fixture = getFixture8();
 		float right = 1.0f;
 
 		fixture.setViewPortRight(right);
@@ -43277,7 +43277,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortRight_fixture9_1()
 		throws Exception {
-		Camera fixture = getFixture9();
+		CameraView fixture = getFixture9();
 		float right = 1.0f;
 
 		fixture.setViewPortRight(right);
@@ -43295,7 +43295,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortRight_fixture10_1()
 		throws Exception {
-		Camera fixture = getFixture10();
+		CameraView fixture = getFixture10();
 		float right = 1.0f;
 
 		fixture.setViewPortRight(right);
@@ -43313,7 +43313,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortRight_fixture11_1()
 		throws Exception {
-		Camera fixture = getFixture11();
+		CameraView fixture = getFixture11();
 		float right = 1.0f;
 
 		fixture.setViewPortRight(right);
@@ -43331,7 +43331,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortRight_fixture12_1()
 		throws Exception {
-		Camera fixture = getFixture12();
+		CameraView fixture = getFixture12();
 		float right = 1.0f;
 
 		fixture.setViewPortRight(right);
@@ -43349,7 +43349,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortRight_fixture13_1()
 		throws Exception {
-		Camera fixture = getFixture13();
+		CameraView fixture = getFixture13();
 		float right = 1.0f;
 
 		fixture.setViewPortRight(right);
@@ -43367,7 +43367,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortRight_fixture14_1()
 		throws Exception {
-		Camera fixture = getFixture14();
+		CameraView fixture = getFixture14();
 		float right = 1.0f;
 
 		fixture.setViewPortRight(right);
@@ -43385,7 +43385,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortRight_fixture15_1()
 		throws Exception {
-		Camera fixture = getFixture15();
+		CameraView fixture = getFixture15();
 		float right = 1.0f;
 
 		fixture.setViewPortRight(right);
@@ -43403,7 +43403,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortRight_fixture16_1()
 		throws Exception {
-		Camera fixture = getFixture16();
+		CameraView fixture = getFixture16();
 		float right = 1.0f;
 
 		fixture.setViewPortRight(right);
@@ -43421,7 +43421,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortRight_fixture17_1()
 		throws Exception {
-		Camera fixture = getFixture17();
+		CameraView fixture = getFixture17();
 		float right = 1.0f;
 
 		fixture.setViewPortRight(right);
@@ -43439,7 +43439,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortRight_fixture18_1()
 		throws Exception {
-		Camera fixture = getFixture18();
+		CameraView fixture = getFixture18();
 		float right = 1.0f;
 
 		fixture.setViewPortRight(right);
@@ -43457,7 +43457,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortRight_fixture19_1()
 		throws Exception {
-		Camera fixture = getFixture19();
+		CameraView fixture = getFixture19();
 		float right = 1.0f;
 
 		fixture.setViewPortRight(right);
@@ -43475,7 +43475,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortRight_fixture20_1()
 		throws Exception {
-		Camera fixture = getFixture20();
+		CameraView fixture = getFixture20();
 		float right = 1.0f;
 
 		fixture.setViewPortRight(right);
@@ -43493,7 +43493,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortRight_fixture21_1()
 		throws Exception {
-		Camera fixture = getFixture21();
+		CameraView fixture = getFixture21();
 		float right = 1.0f;
 
 		fixture.setViewPortRight(right);
@@ -43511,7 +43511,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortRight_fixture22_1()
 		throws Exception {
-		Camera fixture = getFixture22();
+		CameraView fixture = getFixture22();
 		float right = 1.0f;
 
 		fixture.setViewPortRight(right);
@@ -43529,7 +43529,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortRight_fixture23_1()
 		throws Exception {
-		Camera fixture = getFixture23();
+		CameraView fixture = getFixture23();
 		float right = 1.0f;
 
 		fixture.setViewPortRight(right);
@@ -43547,7 +43547,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortRight_fixture24_1()
 		throws Exception {
-		Camera fixture = getFixture24();
+		CameraView fixture = getFixture24();
 		float right = 1.0f;
 
 		fixture.setViewPortRight(right);
@@ -43565,7 +43565,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortRight_fixture25_1()
 		throws Exception {
-		Camera fixture = getFixture25();
+		CameraView fixture = getFixture25();
 		float right = 1.0f;
 
 		fixture.setViewPortRight(right);
@@ -43583,7 +43583,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortRight_fixture26_1()
 		throws Exception {
-		Camera fixture = getFixture26();
+		CameraView fixture = getFixture26();
 		float right = 1.0f;
 
 		fixture.setViewPortRight(right);
@@ -43601,7 +43601,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortRight_fixture27_1()
 		throws Exception {
-		Camera fixture = getFixture27();
+		CameraView fixture = getFixture27();
 		float right = 1.0f;
 
 		fixture.setViewPortRight(right);
@@ -43619,7 +43619,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortRight_fixture28_1()
 		throws Exception {
-		Camera fixture = getFixture28();
+		CameraView fixture = getFixture28();
 		float right = 1.0f;
 
 		fixture.setViewPortRight(right);
@@ -43637,7 +43637,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortRight_fixture29_1()
 		throws Exception {
-		Camera fixture = getFixture29();
+		CameraView fixture = getFixture29();
 		float right = 1.0f;
 
 		fixture.setViewPortRight(right);
@@ -43655,7 +43655,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortRight_fixture2_2()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 		float right = -1.0f;
 
 		fixture.setViewPortRight(right);
@@ -43673,7 +43673,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortTop_fixture1_1()
 		throws Exception {
-		Camera fixture = getFixture1();
+		CameraView fixture = getFixture1();
 		float top = -1.0f;
 
 		fixture.setViewPortTop(top);
@@ -43691,7 +43691,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortTop_fixture2_1()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 		float top = 0.0f;
 
 		fixture.setViewPortTop(top);
@@ -43709,7 +43709,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortTop_fixture3_1()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 		float top = 1.0f;
 
 		fixture.setViewPortTop(top);
@@ -43727,7 +43727,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortTop_fixture4_1()
 		throws Exception {
-		Camera fixture = getFixture4();
+		CameraView fixture = getFixture4();
 		float top = 1.0f;
 
 		fixture.setViewPortTop(top);
@@ -43745,7 +43745,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortTop_fixture5_1()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 		float top = 1.0f;
 
 		fixture.setViewPortTop(top);
@@ -43763,7 +43763,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortTop_fixture6_1()
 		throws Exception {
-		Camera fixture = getFixture6();
+		CameraView fixture = getFixture6();
 		float top = 1.0f;
 
 		fixture.setViewPortTop(top);
@@ -43781,7 +43781,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortTop_fixture7_1()
 		throws Exception {
-		Camera fixture = getFixture7();
+		CameraView fixture = getFixture7();
 		float top = 1.0f;
 
 		fixture.setViewPortTop(top);
@@ -43799,7 +43799,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortTop_fixture8_1()
 		throws Exception {
-		Camera fixture = getFixture8();
+		CameraView fixture = getFixture8();
 		float top = 1.0f;
 
 		fixture.setViewPortTop(top);
@@ -43817,7 +43817,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortTop_fixture9_1()
 		throws Exception {
-		Camera fixture = getFixture9();
+		CameraView fixture = getFixture9();
 		float top = 1.0f;
 
 		fixture.setViewPortTop(top);
@@ -43835,7 +43835,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortTop_fixture10_1()
 		throws Exception {
-		Camera fixture = getFixture10();
+		CameraView fixture = getFixture10();
 		float top = 1.0f;
 
 		fixture.setViewPortTop(top);
@@ -43853,7 +43853,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortTop_fixture11_1()
 		throws Exception {
-		Camera fixture = getFixture11();
+		CameraView fixture = getFixture11();
 		float top = 1.0f;
 
 		fixture.setViewPortTop(top);
@@ -43871,7 +43871,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortTop_fixture12_1()
 		throws Exception {
-		Camera fixture = getFixture12();
+		CameraView fixture = getFixture12();
 		float top = 1.0f;
 
 		fixture.setViewPortTop(top);
@@ -43889,7 +43889,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortTop_fixture13_1()
 		throws Exception {
-		Camera fixture = getFixture13();
+		CameraView fixture = getFixture13();
 		float top = 1.0f;
 
 		fixture.setViewPortTop(top);
@@ -43907,7 +43907,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortTop_fixture14_1()
 		throws Exception {
-		Camera fixture = getFixture14();
+		CameraView fixture = getFixture14();
 		float top = 1.0f;
 
 		fixture.setViewPortTop(top);
@@ -43925,7 +43925,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortTop_fixture15_1()
 		throws Exception {
-		Camera fixture = getFixture15();
+		CameraView fixture = getFixture15();
 		float top = 1.0f;
 
 		fixture.setViewPortTop(top);
@@ -43943,7 +43943,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortTop_fixture16_1()
 		throws Exception {
-		Camera fixture = getFixture16();
+		CameraView fixture = getFixture16();
 		float top = 1.0f;
 
 		fixture.setViewPortTop(top);
@@ -43961,7 +43961,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortTop_fixture17_1()
 		throws Exception {
-		Camera fixture = getFixture17();
+		CameraView fixture = getFixture17();
 		float top = 1.0f;
 
 		fixture.setViewPortTop(top);
@@ -43979,7 +43979,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortTop_fixture18_1()
 		throws Exception {
-		Camera fixture = getFixture18();
+		CameraView fixture = getFixture18();
 		float top = 1.0f;
 
 		fixture.setViewPortTop(top);
@@ -43997,7 +43997,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortTop_fixture19_1()
 		throws Exception {
-		Camera fixture = getFixture19();
+		CameraView fixture = getFixture19();
 		float top = 1.0f;
 
 		fixture.setViewPortTop(top);
@@ -44015,7 +44015,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortTop_fixture20_1()
 		throws Exception {
-		Camera fixture = getFixture20();
+		CameraView fixture = getFixture20();
 		float top = 1.0f;
 
 		fixture.setViewPortTop(top);
@@ -44033,7 +44033,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortTop_fixture21_1()
 		throws Exception {
-		Camera fixture = getFixture21();
+		CameraView fixture = getFixture21();
 		float top = 1.0f;
 
 		fixture.setViewPortTop(top);
@@ -44051,7 +44051,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortTop_fixture22_1()
 		throws Exception {
-		Camera fixture = getFixture22();
+		CameraView fixture = getFixture22();
 		float top = 1.0f;
 
 		fixture.setViewPortTop(top);
@@ -44069,7 +44069,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortTop_fixture23_1()
 		throws Exception {
-		Camera fixture = getFixture23();
+		CameraView fixture = getFixture23();
 		float top = 1.0f;
 
 		fixture.setViewPortTop(top);
@@ -44087,7 +44087,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortTop_fixture24_1()
 		throws Exception {
-		Camera fixture = getFixture24();
+		CameraView fixture = getFixture24();
 		float top = 1.0f;
 
 		fixture.setViewPortTop(top);
@@ -44105,7 +44105,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortTop_fixture25_1()
 		throws Exception {
-		Camera fixture = getFixture25();
+		CameraView fixture = getFixture25();
 		float top = 1.0f;
 
 		fixture.setViewPortTop(top);
@@ -44123,7 +44123,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortTop_fixture26_1()
 		throws Exception {
-		Camera fixture = getFixture26();
+		CameraView fixture = getFixture26();
 		float top = 1.0f;
 
 		fixture.setViewPortTop(top);
@@ -44141,7 +44141,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortTop_fixture27_1()
 		throws Exception {
-		Camera fixture = getFixture27();
+		CameraView fixture = getFixture27();
 		float top = 1.0f;
 
 		fixture.setViewPortTop(top);
@@ -44159,7 +44159,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortTop_fixture28_1()
 		throws Exception {
-		Camera fixture = getFixture28();
+		CameraView fixture = getFixture28();
 		float top = 1.0f;
 
 		fixture.setViewPortTop(top);
@@ -44177,7 +44177,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortTop_fixture29_1()
 		throws Exception {
-		Camera fixture = getFixture29();
+		CameraView fixture = getFixture29();
 		float top = 1.0f;
 
 		fixture.setViewPortTop(top);
@@ -44195,7 +44195,7 @@ public class CameraTest {
 	@Test
 	public void testSetViewPortTop_fixture2_2()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 		float top = -1.0f;
 
 		fixture.setViewPortTop(top);
@@ -44235,7 +44235,7 @@ public class CameraTest {
 	@Test
 	public void testToString_fixture2_1()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 
 		String result = fixture.toString();
 
@@ -44253,7 +44253,7 @@ public class CameraTest {
 	@Test
 	public void testToString_fixture3_1()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 
 		String result = fixture.toString();
 
@@ -44271,7 +44271,7 @@ public class CameraTest {
 	@Test
 	public void testToString_fixture4_1()
 		throws Exception {
-		Camera fixture = getFixture4();
+		CameraView fixture = getFixture4();
 
 		String result = fixture.toString();
 
@@ -44289,7 +44289,7 @@ public class CameraTest {
 	@Test
 	public void testToString_fixture5_1()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 
 		String result = fixture.toString();
 
@@ -44307,7 +44307,7 @@ public class CameraTest {
 	@Test
 	public void testToString_fixture6_1()
 		throws Exception {
-		Camera fixture = getFixture6();
+		CameraView fixture = getFixture6();
 
 		String result = fixture.toString();
 
@@ -44325,7 +44325,7 @@ public class CameraTest {
 	@Test
 	public void testToString_fixture7_1()
 		throws Exception {
-		Camera fixture = getFixture7();
+		CameraView fixture = getFixture7();
 
 		String result = fixture.toString();
 
@@ -44343,7 +44343,7 @@ public class CameraTest {
 	@Test
 	public void testToString_fixture8_1()
 		throws Exception {
-		Camera fixture = getFixture8();
+		CameraView fixture = getFixture8();
 
 		String result = fixture.toString();
 
@@ -44361,7 +44361,7 @@ public class CameraTest {
 	@Test
 	public void testToString_fixture9_1()
 		throws Exception {
-		Camera fixture = getFixture9();
+		CameraView fixture = getFixture9();
 
 		String result = fixture.toString();
 
@@ -44379,7 +44379,7 @@ public class CameraTest {
 	@Test
 	public void testToString_fixture10_1()
 		throws Exception {
-		Camera fixture = getFixture10();
+		CameraView fixture = getFixture10();
 
 		String result = fixture.toString();
 
@@ -44397,7 +44397,7 @@ public class CameraTest {
 	@Test
 	public void testToString_fixture11_1()
 		throws Exception {
-		Camera fixture = getFixture11();
+		CameraView fixture = getFixture11();
 
 		String result = fixture.toString();
 
@@ -44415,7 +44415,7 @@ public class CameraTest {
 	@Test
 	public void testToString_fixture12_1()
 		throws Exception {
-		Camera fixture = getFixture12();
+		CameraView fixture = getFixture12();
 
 		String result = fixture.toString();
 
@@ -44433,7 +44433,7 @@ public class CameraTest {
 	@Test
 	public void testToString_fixture13_1()
 		throws Exception {
-		Camera fixture = getFixture13();
+		CameraView fixture = getFixture13();
 
 		String result = fixture.toString();
 
@@ -44451,7 +44451,7 @@ public class CameraTest {
 	@Test
 	public void testToString_fixture14_1()
 		throws Exception {
-		Camera fixture = getFixture14();
+		CameraView fixture = getFixture14();
 
 		String result = fixture.toString();
 
@@ -44469,7 +44469,7 @@ public class CameraTest {
 	@Test
 	public void testToString_fixture15_1()
 		throws Exception {
-		Camera fixture = getFixture15();
+		CameraView fixture = getFixture15();
 
 		String result = fixture.toString();
 
@@ -44487,7 +44487,7 @@ public class CameraTest {
 	@Test
 	public void testToString_fixture16_1()
 		throws Exception {
-		Camera fixture = getFixture16();
+		CameraView fixture = getFixture16();
 
 		String result = fixture.toString();
 
@@ -44505,7 +44505,7 @@ public class CameraTest {
 	@Test
 	public void testToString_fixture17_1()
 		throws Exception {
-		Camera fixture = getFixture17();
+		CameraView fixture = getFixture17();
 
 		String result = fixture.toString();
 
@@ -44523,7 +44523,7 @@ public class CameraTest {
 	@Test
 	public void testToString_fixture18_1()
 		throws Exception {
-		Camera fixture = getFixture18();
+		CameraView fixture = getFixture18();
 
 		String result = fixture.toString();
 
@@ -44541,7 +44541,7 @@ public class CameraTest {
 	@Test
 	public void testToString_fixture19_1()
 		throws Exception {
-		Camera fixture = getFixture19();
+		CameraView fixture = getFixture19();
 
 		String result = fixture.toString();
 
@@ -44559,7 +44559,7 @@ public class CameraTest {
 	@Test
 	public void testToString_fixture20_1()
 		throws Exception {
-		Camera fixture = getFixture20();
+		CameraView fixture = getFixture20();
 
 		String result = fixture.toString();
 
@@ -44577,7 +44577,7 @@ public class CameraTest {
 	@Test
 	public void testToString_fixture21_1()
 		throws Exception {
-		Camera fixture = getFixture21();
+		CameraView fixture = getFixture21();
 
 		String result = fixture.toString();
 
@@ -44595,7 +44595,7 @@ public class CameraTest {
 	@Test
 	public void testToString_fixture22_1()
 		throws Exception {
-		Camera fixture = getFixture22();
+		CameraView fixture = getFixture22();
 
 		String result = fixture.toString();
 
@@ -44613,7 +44613,7 @@ public class CameraTest {
 	@Test
 	public void testToString_fixture23_1()
 		throws Exception {
-		Camera fixture = getFixture23();
+		CameraView fixture = getFixture23();
 
 		String result = fixture.toString();
 
@@ -44631,7 +44631,7 @@ public class CameraTest {
 	@Test
 	public void testToString_fixture24_1()
 		throws Exception {
-		Camera fixture = getFixture24();
+		CameraView fixture = getFixture24();
 
 		String result = fixture.toString();
 
@@ -44649,7 +44649,7 @@ public class CameraTest {
 	@Test
 	public void testToString_fixture25_1()
 		throws Exception {
-		Camera fixture = getFixture25();
+		CameraView fixture = getFixture25();
 
 		String result = fixture.toString();
 
@@ -44667,7 +44667,7 @@ public class CameraTest {
 	@Test
 	public void testToString_fixture26_1()
 		throws Exception {
-		Camera fixture = getFixture26();
+		CameraView fixture = getFixture26();
 
 		String result = fixture.toString();
 
@@ -44685,7 +44685,7 @@ public class CameraTest {
 	@Test
 	public void testToString_fixture27_1()
 		throws Exception {
-		Camera fixture = getFixture27();
+		CameraView fixture = getFixture27();
 
 		String result = fixture.toString();
 
@@ -44703,7 +44703,7 @@ public class CameraTest {
 	@Test
 	public void testToString_fixture28_1()
 		throws Exception {
-		Camera fixture = getFixture28();
+		CameraView fixture = getFixture28();
 
 		String result = fixture.toString();
 
@@ -44721,7 +44721,7 @@ public class CameraTest {
 	@Test
 	public void testToString_fixture29_1()
 		throws Exception {
-		Camera fixture = getFixture29();
+		CameraView fixture = getFixture29();
 
 		String result = fixture.toString();
 
@@ -44760,7 +44760,7 @@ public class CameraTest {
 	@Test
 	public void testUpdate_fixture2_1()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 
 		fixture.update();
 
@@ -44777,7 +44777,7 @@ public class CameraTest {
 	@Test
 	public void testUpdate_fixture3_1()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 
 		fixture.update();
 
@@ -44794,7 +44794,7 @@ public class CameraTest {
 	@Test
 	public void testUpdate_fixture4_1()
 		throws Exception {
-		Camera fixture = getFixture4();
+		CameraView fixture = getFixture4();
 
 		fixture.update();
 
@@ -44811,7 +44811,7 @@ public class CameraTest {
 	@Test
 	public void testUpdate_fixture5_1()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 
 		fixture.update();
 
@@ -44828,7 +44828,7 @@ public class CameraTest {
 	@Test
 	public void testUpdate_fixture6_1()
 		throws Exception {
-		Camera fixture = getFixture6();
+		CameraView fixture = getFixture6();
 
 		fixture.update();
 
@@ -44845,7 +44845,7 @@ public class CameraTest {
 	@Test
 	public void testUpdate_fixture7_1()
 		throws Exception {
-		Camera fixture = getFixture7();
+		CameraView fixture = getFixture7();
 
 		fixture.update();
 
@@ -44862,7 +44862,7 @@ public class CameraTest {
 	@Test
 	public void testUpdate_fixture8_1()
 		throws Exception {
-		Camera fixture = getFixture8();
+		CameraView fixture = getFixture8();
 
 		fixture.update();
 
@@ -44879,7 +44879,7 @@ public class CameraTest {
 	@Test
 	public void testUpdate_fixture9_1()
 		throws Exception {
-		Camera fixture = getFixture9();
+		CameraView fixture = getFixture9();
 
 		fixture.update();
 
@@ -44896,7 +44896,7 @@ public class CameraTest {
 	@Test
 	public void testUpdate_fixture10_1()
 		throws Exception {
-		Camera fixture = getFixture10();
+		CameraView fixture = getFixture10();
 
 		fixture.update();
 
@@ -44913,7 +44913,7 @@ public class CameraTest {
 	@Test
 	public void testUpdate_fixture11_1()
 		throws Exception {
-		Camera fixture = getFixture11();
+		CameraView fixture = getFixture11();
 
 		fixture.update();
 
@@ -44930,7 +44930,7 @@ public class CameraTest {
 	@Test
 	public void testUpdate_fixture12_1()
 		throws Exception {
-		Camera fixture = getFixture12();
+		CameraView fixture = getFixture12();
 
 		fixture.update();
 
@@ -44947,7 +44947,7 @@ public class CameraTest {
 	@Test
 	public void testUpdate_fixture13_1()
 		throws Exception {
-		Camera fixture = getFixture13();
+		CameraView fixture = getFixture13();
 
 		fixture.update();
 
@@ -44964,7 +44964,7 @@ public class CameraTest {
 	@Test
 	public void testUpdate_fixture14_1()
 		throws Exception {
-		Camera fixture = getFixture14();
+		CameraView fixture = getFixture14();
 
 		fixture.update();
 
@@ -44981,7 +44981,7 @@ public class CameraTest {
 	@Test
 	public void testUpdate_fixture15_1()
 		throws Exception {
-		Camera fixture = getFixture15();
+		CameraView fixture = getFixture15();
 
 		fixture.update();
 
@@ -44998,7 +44998,7 @@ public class CameraTest {
 	@Test
 	public void testUpdate_fixture16_1()
 		throws Exception {
-		Camera fixture = getFixture16();
+		CameraView fixture = getFixture16();
 
 		fixture.update();
 
@@ -45015,7 +45015,7 @@ public class CameraTest {
 	@Test
 	public void testUpdate_fixture17_1()
 		throws Exception {
-		Camera fixture = getFixture17();
+		CameraView fixture = getFixture17();
 
 		fixture.update();
 
@@ -45032,7 +45032,7 @@ public class CameraTest {
 	@Test
 	public void testUpdate_fixture18_1()
 		throws Exception {
-		Camera fixture = getFixture18();
+		CameraView fixture = getFixture18();
 
 		fixture.update();
 
@@ -45049,7 +45049,7 @@ public class CameraTest {
 	@Test
 	public void testUpdate_fixture19_1()
 		throws Exception {
-		Camera fixture = getFixture19();
+		CameraView fixture = getFixture19();
 
 		fixture.update();
 
@@ -45066,7 +45066,7 @@ public class CameraTest {
 	@Test
 	public void testUpdate_fixture20_1()
 		throws Exception {
-		Camera fixture = getFixture20();
+		CameraView fixture = getFixture20();
 
 		fixture.update();
 
@@ -45083,7 +45083,7 @@ public class CameraTest {
 	@Test
 	public void testUpdate_fixture21_1()
 		throws Exception {
-		Camera fixture = getFixture21();
+		CameraView fixture = getFixture21();
 
 		fixture.update();
 
@@ -45100,7 +45100,7 @@ public class CameraTest {
 	@Test
 	public void testUpdate_fixture22_1()
 		throws Exception {
-		Camera fixture = getFixture22();
+		CameraView fixture = getFixture22();
 
 		fixture.update();
 
@@ -45117,7 +45117,7 @@ public class CameraTest {
 	@Test
 	public void testUpdate_fixture23_1()
 		throws Exception {
-		Camera fixture = getFixture23();
+		CameraView fixture = getFixture23();
 
 		fixture.update();
 
@@ -45134,7 +45134,7 @@ public class CameraTest {
 	@Test
 	public void testUpdate_fixture24_1()
 		throws Exception {
-		Camera fixture = getFixture24();
+		CameraView fixture = getFixture24();
 
 		fixture.update();
 
@@ -45151,7 +45151,7 @@ public class CameraTest {
 	@Test
 	public void testUpdate_fixture25_1()
 		throws Exception {
-		Camera fixture = getFixture25();
+		CameraView fixture = getFixture25();
 
 		fixture.update();
 
@@ -45168,7 +45168,7 @@ public class CameraTest {
 	@Test
 	public void testUpdate_fixture26_1()
 		throws Exception {
-		Camera fixture = getFixture26();
+		CameraView fixture = getFixture26();
 
 		fixture.update();
 
@@ -45185,7 +45185,7 @@ public class CameraTest {
 	@Test
 	public void testUpdate_fixture27_1()
 		throws Exception {
-		Camera fixture = getFixture27();
+		CameraView fixture = getFixture27();
 
 		fixture.update();
 
@@ -45202,7 +45202,7 @@ public class CameraTest {
 	@Test
 	public void testUpdate_fixture28_1()
 		throws Exception {
-		Camera fixture = getFixture28();
+		CameraView fixture = getFixture28();
 
 		fixture.update();
 
@@ -45219,7 +45219,7 @@ public class CameraTest {
 	@Test
 	public void testUpdate_fixture29_1()
 		throws Exception {
-		Camera fixture = getFixture29();
+		CameraView fixture = getFixture29();
 
 		fixture.update();
 
@@ -45253,7 +45253,7 @@ public class CameraTest {
 	@Test
 	public void testUpdateViewProjection_fixture2_1()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 
 		fixture.updateViewProjection();
 
@@ -45270,7 +45270,7 @@ public class CameraTest {
 	@Test
 	public void testUpdateViewProjection_fixture3_1()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 
 		fixture.updateViewProjection();
 
@@ -45287,7 +45287,7 @@ public class CameraTest {
 	@Test
 	public void testUpdateViewProjection_fixture4_1()
 		throws Exception {
-		Camera fixture = getFixture4();
+		CameraView fixture = getFixture4();
 
 		fixture.updateViewProjection();
 
@@ -45304,7 +45304,7 @@ public class CameraTest {
 	@Test
 	public void testUpdateViewProjection_fixture5_1()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 
 		fixture.updateViewProjection();
 
@@ -45321,7 +45321,7 @@ public class CameraTest {
 	@Test
 	public void testUpdateViewProjection_fixture6_1()
 		throws Exception {
-		Camera fixture = getFixture6();
+		CameraView fixture = getFixture6();
 
 		fixture.updateViewProjection();
 
@@ -45338,7 +45338,7 @@ public class CameraTest {
 	@Test
 	public void testUpdateViewProjection_fixture7_1()
 		throws Exception {
-		Camera fixture = getFixture7();
+		CameraView fixture = getFixture7();
 
 		fixture.updateViewProjection();
 
@@ -45355,7 +45355,7 @@ public class CameraTest {
 	@Test
 	public void testUpdateViewProjection_fixture8_1()
 		throws Exception {
-		Camera fixture = getFixture8();
+		CameraView fixture = getFixture8();
 
 		fixture.updateViewProjection();
 
@@ -45372,7 +45372,7 @@ public class CameraTest {
 	@Test
 	public void testUpdateViewProjection_fixture9_1()
 		throws Exception {
-		Camera fixture = getFixture9();
+		CameraView fixture = getFixture9();
 
 		fixture.updateViewProjection();
 
@@ -45389,7 +45389,7 @@ public class CameraTest {
 	@Test
 	public void testUpdateViewProjection_fixture10_1()
 		throws Exception {
-		Camera fixture = getFixture10();
+		CameraView fixture = getFixture10();
 
 		fixture.updateViewProjection();
 
@@ -45406,7 +45406,7 @@ public class CameraTest {
 	@Test
 	public void testUpdateViewProjection_fixture11_1()
 		throws Exception {
-		Camera fixture = getFixture11();
+		CameraView fixture = getFixture11();
 
 		fixture.updateViewProjection();
 
@@ -45423,7 +45423,7 @@ public class CameraTest {
 	@Test
 	public void testUpdateViewProjection_fixture12_1()
 		throws Exception {
-		Camera fixture = getFixture12();
+		CameraView fixture = getFixture12();
 
 		fixture.updateViewProjection();
 
@@ -45440,7 +45440,7 @@ public class CameraTest {
 	@Test
 	public void testUpdateViewProjection_fixture13_1()
 		throws Exception {
-		Camera fixture = getFixture13();
+		CameraView fixture = getFixture13();
 
 		fixture.updateViewProjection();
 
@@ -45457,7 +45457,7 @@ public class CameraTest {
 	@Test
 	public void testUpdateViewProjection_fixture14_1()
 		throws Exception {
-		Camera fixture = getFixture14();
+		CameraView fixture = getFixture14();
 
 		fixture.updateViewProjection();
 
@@ -45474,7 +45474,7 @@ public class CameraTest {
 	@Test
 	public void testUpdateViewProjection_fixture15_1()
 		throws Exception {
-		Camera fixture = getFixture15();
+		CameraView fixture = getFixture15();
 
 		fixture.updateViewProjection();
 
@@ -45491,7 +45491,7 @@ public class CameraTest {
 	@Test
 	public void testUpdateViewProjection_fixture16_1()
 		throws Exception {
-		Camera fixture = getFixture16();
+		CameraView fixture = getFixture16();
 
 		fixture.updateViewProjection();
 
@@ -45508,7 +45508,7 @@ public class CameraTest {
 	@Test
 	public void testUpdateViewProjection_fixture17_1()
 		throws Exception {
-		Camera fixture = getFixture17();
+		CameraView fixture = getFixture17();
 
 		fixture.updateViewProjection();
 
@@ -45525,7 +45525,7 @@ public class CameraTest {
 	@Test
 	public void testUpdateViewProjection_fixture18_1()
 		throws Exception {
-		Camera fixture = getFixture18();
+		CameraView fixture = getFixture18();
 
 		fixture.updateViewProjection();
 
@@ -45542,7 +45542,7 @@ public class CameraTest {
 	@Test
 	public void testUpdateViewProjection_fixture19_1()
 		throws Exception {
-		Camera fixture = getFixture19();
+		CameraView fixture = getFixture19();
 
 		fixture.updateViewProjection();
 
@@ -45559,7 +45559,7 @@ public class CameraTest {
 	@Test
 	public void testUpdateViewProjection_fixture20_1()
 		throws Exception {
-		Camera fixture = getFixture20();
+		CameraView fixture = getFixture20();
 
 		fixture.updateViewProjection();
 
@@ -45576,7 +45576,7 @@ public class CameraTest {
 	@Test
 	public void testUpdateViewProjection_fixture21_1()
 		throws Exception {
-		Camera fixture = getFixture21();
+		CameraView fixture = getFixture21();
 
 		fixture.updateViewProjection();
 
@@ -45593,7 +45593,7 @@ public class CameraTest {
 	@Test
 	public void testUpdateViewProjection_fixture22_1()
 		throws Exception {
-		Camera fixture = getFixture22();
+		CameraView fixture = getFixture22();
 
 		fixture.updateViewProjection();
 
@@ -45610,7 +45610,7 @@ public class CameraTest {
 	@Test
 	public void testUpdateViewProjection_fixture23_1()
 		throws Exception {
-		Camera fixture = getFixture23();
+		CameraView fixture = getFixture23();
 
 		fixture.updateViewProjection();
 
@@ -45627,7 +45627,7 @@ public class CameraTest {
 	@Test
 	public void testUpdateViewProjection_fixture24_1()
 		throws Exception {
-		Camera fixture = getFixture24();
+		CameraView fixture = getFixture24();
 
 		fixture.updateViewProjection();
 
@@ -45644,7 +45644,7 @@ public class CameraTest {
 	@Test
 	public void testUpdateViewProjection_fixture25_1()
 		throws Exception {
-		Camera fixture = getFixture25();
+		CameraView fixture = getFixture25();
 
 		fixture.updateViewProjection();
 
@@ -45661,7 +45661,7 @@ public class CameraTest {
 	@Test
 	public void testUpdateViewProjection_fixture26_1()
 		throws Exception {
-		Camera fixture = getFixture26();
+		CameraView fixture = getFixture26();
 
 		fixture.updateViewProjection();
 
@@ -45678,7 +45678,7 @@ public class CameraTest {
 	@Test
 	public void testUpdateViewProjection_fixture27_1()
 		throws Exception {
-		Camera fixture = getFixture27();
+		CameraView fixture = getFixture27();
 
 		fixture.updateViewProjection();
 
@@ -45695,7 +45695,7 @@ public class CameraTest {
 	@Test
 	public void testUpdateViewProjection_fixture28_1()
 		throws Exception {
-		Camera fixture = getFixture28();
+		CameraView fixture = getFixture28();
 
 		fixture.updateViewProjection();
 
@@ -45712,7 +45712,7 @@ public class CameraTest {
 	@Test
 	public void testUpdateViewProjection_fixture29_1()
 		throws Exception {
-		Camera fixture = getFixture29();
+		CameraView fixture = getFixture29();
 
 		fixture.updateViewProjection();
 
@@ -45754,7 +45754,7 @@ public class CameraTest {
 	@Test
 	public void testWrite_fixture2_1()
 		throws Exception {
-		Camera fixture = getFixture2();
+		CameraView fixture = getFixture2();
 		JmeExporter e = EasyMock.createMock(JmeExporter.class);
 		// add mock object expectations here
 
@@ -45779,7 +45779,7 @@ public class CameraTest {
 	@Test
 	public void testWrite_fixture3_1()
 		throws Exception {
-		Camera fixture = getFixture3();
+		CameraView fixture = getFixture3();
 		JmeExporter e = EasyMock.createMock(JmeExporter.class);
 		// add mock object expectations here
 
@@ -45804,7 +45804,7 @@ public class CameraTest {
 	@Test
 	public void testWrite_fixture4_1()
 		throws Exception {
-		Camera fixture = getFixture4();
+		CameraView fixture = getFixture4();
 		JmeExporter e = EasyMock.createMock(JmeExporter.class);
 		// add mock object expectations here
 
@@ -45829,7 +45829,7 @@ public class CameraTest {
 	@Test
 	public void testWrite_fixture5_1()
 		throws Exception {
-		Camera fixture = getFixture5();
+		CameraView fixture = getFixture5();
 		JmeExporter e = EasyMock.createMock(JmeExporter.class);
 		// add mock object expectations here
 
@@ -45854,7 +45854,7 @@ public class CameraTest {
 	@Test
 	public void testWrite_fixture6_1()
 		throws Exception {
-		Camera fixture = getFixture6();
+		CameraView fixture = getFixture6();
 		JmeExporter e = EasyMock.createMock(JmeExporter.class);
 		// add mock object expectations here
 
@@ -45879,7 +45879,7 @@ public class CameraTest {
 	@Test
 	public void testWrite_fixture7_1()
 		throws Exception {
-		Camera fixture = getFixture7();
+		CameraView fixture = getFixture7();
 		JmeExporter e = EasyMock.createMock(JmeExporter.class);
 		// add mock object expectations here
 
@@ -45904,7 +45904,7 @@ public class CameraTest {
 	@Test
 	public void testWrite_fixture8_1()
 		throws Exception {
-		Camera fixture = getFixture8();
+		CameraView fixture = getFixture8();
 		JmeExporter e = EasyMock.createMock(JmeExporter.class);
 		// add mock object expectations here
 
@@ -45929,7 +45929,7 @@ public class CameraTest {
 	@Test
 	public void testWrite_fixture9_1()
 		throws Exception {
-		Camera fixture = getFixture9();
+		CameraView fixture = getFixture9();
 		JmeExporter e = EasyMock.createMock(JmeExporter.class);
 		// add mock object expectations here
 
@@ -45954,7 +45954,7 @@ public class CameraTest {
 	@Test
 	public void testWrite_fixture10_1()
 		throws Exception {
-		Camera fixture = getFixture10();
+		CameraView fixture = getFixture10();
 		JmeExporter e = EasyMock.createMock(JmeExporter.class);
 		// add mock object expectations here
 
@@ -45979,7 +45979,7 @@ public class CameraTest {
 	@Test
 	public void testWrite_fixture11_1()
 		throws Exception {
-		Camera fixture = getFixture11();
+		CameraView fixture = getFixture11();
 		JmeExporter e = EasyMock.createMock(JmeExporter.class);
 		// add mock object expectations here
 
@@ -46004,7 +46004,7 @@ public class CameraTest {
 	@Test
 	public void testWrite_fixture12_1()
 		throws Exception {
-		Camera fixture = getFixture12();
+		CameraView fixture = getFixture12();
 		JmeExporter e = EasyMock.createMock(JmeExporter.class);
 		// add mock object expectations here
 
@@ -46029,7 +46029,7 @@ public class CameraTest {
 	@Test
 	public void testWrite_fixture13_1()
 		throws Exception {
-		Camera fixture = getFixture13();
+		CameraView fixture = getFixture13();
 		JmeExporter e = EasyMock.createMock(JmeExporter.class);
 		// add mock object expectations here
 
@@ -46054,7 +46054,7 @@ public class CameraTest {
 	@Test
 	public void testWrite_fixture14_1()
 		throws Exception {
-		Camera fixture = getFixture14();
+		CameraView fixture = getFixture14();
 		JmeExporter e = EasyMock.createMock(JmeExporter.class);
 		// add mock object expectations here
 
@@ -46079,7 +46079,7 @@ public class CameraTest {
 	@Test
 	public void testWrite_fixture15_1()
 		throws Exception {
-		Camera fixture = getFixture15();
+		CameraView fixture = getFixture15();
 		JmeExporter e = EasyMock.createMock(JmeExporter.class);
 		// add mock object expectations here
 
@@ -46104,7 +46104,7 @@ public class CameraTest {
 	@Test
 	public void testWrite_fixture16_1()
 		throws Exception {
-		Camera fixture = getFixture16();
+		CameraView fixture = getFixture16();
 		JmeExporter e = EasyMock.createMock(JmeExporter.class);
 		// add mock object expectations here
 
@@ -46129,7 +46129,7 @@ public class CameraTest {
 	@Test
 	public void testWrite_fixture17_1()
 		throws Exception {
-		Camera fixture = getFixture17();
+		CameraView fixture = getFixture17();
 		JmeExporter e = EasyMock.createMock(JmeExporter.class);
 		// add mock object expectations here
 
@@ -46154,7 +46154,7 @@ public class CameraTest {
 	@Test
 	public void testWrite_fixture18_1()
 		throws Exception {
-		Camera fixture = getFixture18();
+		CameraView fixture = getFixture18();
 		JmeExporter e = EasyMock.createMock(JmeExporter.class);
 		// add mock object expectations here
 
@@ -46179,7 +46179,7 @@ public class CameraTest {
 	@Test
 	public void testWrite_fixture19_1()
 		throws Exception {
-		Camera fixture = getFixture19();
+		CameraView fixture = getFixture19();
 		JmeExporter e = EasyMock.createMock(JmeExporter.class);
 		// add mock object expectations here
 
@@ -46204,7 +46204,7 @@ public class CameraTest {
 	@Test
 	public void testWrite_fixture20_1()
 		throws Exception {
-		Camera fixture = getFixture20();
+		CameraView fixture = getFixture20();
 		JmeExporter e = EasyMock.createMock(JmeExporter.class);
 		// add mock object expectations here
 
@@ -46229,7 +46229,7 @@ public class CameraTest {
 	@Test
 	public void testWrite_fixture21_1()
 		throws Exception {
-		Camera fixture = getFixture21();
+		CameraView fixture = getFixture21();
 		JmeExporter e = EasyMock.createMock(JmeExporter.class);
 		// add mock object expectations here
 
@@ -46254,7 +46254,7 @@ public class CameraTest {
 	@Test
 	public void testWrite_fixture22_1()
 		throws Exception {
-		Camera fixture = getFixture22();
+		CameraView fixture = getFixture22();
 		JmeExporter e = EasyMock.createMock(JmeExporter.class);
 		// add mock object expectations here
 
@@ -46279,7 +46279,7 @@ public class CameraTest {
 	@Test
 	public void testWrite_fixture23_1()
 		throws Exception {
-		Camera fixture = getFixture23();
+		CameraView fixture = getFixture23();
 		JmeExporter e = EasyMock.createMock(JmeExporter.class);
 		// add mock object expectations here
 
@@ -46304,7 +46304,7 @@ public class CameraTest {
 	@Test
 	public void testWrite_fixture24_1()
 		throws Exception {
-		Camera fixture = getFixture24();
+		CameraView fixture = getFixture24();
 		JmeExporter e = EasyMock.createMock(JmeExporter.class);
 		// add mock object expectations here
 
@@ -46329,7 +46329,7 @@ public class CameraTest {
 	@Test
 	public void testWrite_fixture25_1()
 		throws Exception {
-		Camera fixture = getFixture25();
+		CameraView fixture = getFixture25();
 		JmeExporter e = EasyMock.createMock(JmeExporter.class);
 		// add mock object expectations here
 
@@ -46354,7 +46354,7 @@ public class CameraTest {
 	@Test
 	public void testWrite_fixture26_1()
 		throws Exception {
-		Camera fixture = getFixture26();
+		CameraView fixture = getFixture26();
 		JmeExporter e = EasyMock.createMock(JmeExporter.class);
 		// add mock object expectations here
 
@@ -46379,7 +46379,7 @@ public class CameraTest {
 	@Test
 	public void testWrite_fixture27_1()
 		throws Exception {
-		Camera fixture = getFixture27();
+		CameraView fixture = getFixture27();
 		JmeExporter e = EasyMock.createMock(JmeExporter.class);
 		// add mock object expectations here
 
@@ -46404,7 +46404,7 @@ public class CameraTest {
 	@Test
 	public void testWrite_fixture28_1()
 		throws Exception {
-		Camera fixture = getFixture28();
+		CameraView fixture = getFixture28();
 		JmeExporter e = EasyMock.createMock(JmeExporter.class);
 		// add mock object expectations here
 
@@ -46429,7 +46429,7 @@ public class CameraTest {
 	@Test
 	public void testWrite_fixture29_1()
 		throws Exception {
-		Camera fixture = getFixture29();
+		CameraView fixture = getFixture29();
 		JmeExporter e = EasyMock.createMock(JmeExporter.class);
 		// add mock object expectations here
 

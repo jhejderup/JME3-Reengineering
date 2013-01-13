@@ -93,7 +93,7 @@ public class TestFancyCar extends SimpleApplication implements ActionListener {
             bsr.setDirection(new Vector3f(-0.5f, -0.3f, -0.3f).normalizeLocal());
             viewPort.addProcessor(bsr);
         }
-        cam.setFrustumFar(150f);
+        cam.updateFrustumFar(150f);
         flyCam.setMoveSpeed(10);
 
         setupKeys();

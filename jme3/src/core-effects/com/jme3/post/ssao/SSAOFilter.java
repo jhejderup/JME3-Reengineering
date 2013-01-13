@@ -136,11 +136,11 @@ public class SSAOFilter extends Filter {
 
         frustumNearFar = new Vector2f();
 
-        float farY = (vp.getCamera().getFrustumTop() / vp.getCamera().getFrustumNear()) * vp.getCamera().getFrustumFar();
+        float farY = (vp.getCamera().getFrustum().getFrustumTop() / vp.getCamera().getFrustum().getFrustumNear()) * vp.getCamera().getFrustum().getFrustumFar();
         float farX = farY * ((float) screenWidth / (float) screenHeight);
-        frustumCorner = new Vector3f(farX, farY, vp.getCamera().getFrustumFar());
-        frustumNearFar.x = vp.getCamera().getFrustumNear();
-        frustumNearFar.y = vp.getCamera().getFrustumFar();
+        frustumCorner = new Vector3f(farX, farY, vp.getCamera().getFrustum().getFrustumFar());
+        frustumNearFar.x = vp.getCamera().getFrustum().getFrustumNear();
+        frustumNearFar.y = vp.getCamera().getFrustum().getFrustumFar();
 
 
 

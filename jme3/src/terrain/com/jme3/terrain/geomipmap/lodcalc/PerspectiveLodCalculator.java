@@ -35,7 +35,7 @@ import com.jme3.export.JmeExporter;
 import com.jme3.export.JmeImporter;
 import com.jme3.math.FastMath;
 import com.jme3.math.Vector3f;
-import com.jme3.renderer.Camera;
+import com.jme3.renderer.CameraView;
 import com.jme3.terrain.geomipmap.TerrainPatch;
 import com.jme3.terrain.geomipmap.UpdatedTerrainPatch;
 import java.io.IOException;
@@ -44,13 +44,13 @@ import java.util.List;
 
 public class PerspectiveLodCalculator implements LodCalculator {
 
-    private Camera cam;
+    private CameraView cam;
     private float[] entropyDistances;
     private float pixelError;
 
     public PerspectiveLodCalculator() {}
     
-    public PerspectiveLodCalculator(Camera cam, float pixelError){
+    public PerspectiveLodCalculator(CameraView cam, float pixelError){
         this.cam = cam;
         this.pixelError = pixelError;
     }
@@ -63,9 +63,9 @@ public class PerspectiveLodCalculator implements LodCalculator {
      * @param pixelLimit
      * @return
      */
-    private float getCameraConstant(Camera cam, float pixelLimit){
-        float n = cam.getFrustumNear();
-        float t = FastMath.abs(cam.getFrustumTop());
+    private float getCameraConstant(CameraView cam, float pixelLimit){
+        float n = cam.getFrustum().getFrustumNear();
+        float t = FastMath.abs(cam.getFrustum().getFrustumTop());
         float A = n / t;
         float v_res = cam.getHeight();
         float T = (2f * pixelLimit) / v_res;
@@ -150,7 +150,7 @@ public class PerspectiveLodCalculator implements LodCalculator {
         this.pixelError = pixelError;
     }
 
-    public void setCam(Camera cam) {
+    public void setCam(CameraView cam) {
         this.cam = cam;
     }
 

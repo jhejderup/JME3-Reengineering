@@ -58,7 +58,7 @@ public class HDRRenderer implements SceneProcessor {
     private ViewPort viewPort;
     private static final Logger logger = Logger.getLogger(HDRRenderer.class.getName());
 
-    private Camera fbCam = new Camera(1, 1);
+    private CameraView fbCam = new CameraView(1, 1);
 
     private FrameBuffer msFB;
 

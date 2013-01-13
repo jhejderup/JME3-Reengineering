@@ -37,7 +37,7 @@ import com.jme3.export.JmeExporter;
 import com.jme3.export.JmeImporter;
 import com.jme3.export.OutputCapsule;
 import com.jme3.math.FastMath;
-import com.jme3.renderer.Camera;
+import com.jme3.renderer.CameraView;
 import com.jme3.renderer.RenderManager;
 import com.jme3.renderer.ViewPort;
 import com.jme3.scene.Geometry;
@@ -149,10 +149,10 @@ public class LodControl extends AbstractControl implements Cloneable {
     protected void controlRender(RenderManager rm, ViewPort vp){
         BoundingVolume bv = spatial.getWorldBound();
 
-        Camera cam = vp.getCamera();
-        float atanNH = FastMath.atan(cam.getFrustumNear() * cam.getFrustumTop());
+        CameraView cam = vp.getCamera();
+        float atanNH = FastMath.atan(cam.getFrustum().getFrustumNear() * cam.getFrustum().getFrustumTop());
         float ratio = (FastMath.PI / (8f * atanNH));
-        float newDistance = bv.distanceTo(vp.getCamera().getLocation()) / ratio;
+        float newDistance = bv.distanceTo(vp.getCamera().getCamera().getLocation()) / ratio;
         int level;
 
         if (Math.abs(newDistance - lastDistance) <= distTolerance)

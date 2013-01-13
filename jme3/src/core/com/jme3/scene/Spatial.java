@@ -40,7 +40,7 @@ import com.jme3.light.Light;
 import com.jme3.light.LightList;
 import com.jme3.material.Material;
 import com.jme3.math.*;
-import com.jme3.renderer.Camera;
+import com.jme3.renderer.CameraView;
 import com.jme3.renderer.Frustum;
 import com.jme3.renderer.RenderManager;
 import com.jme3.renderer.ViewPort;
@@ -262,7 +262,7 @@ public abstract class Spatial implements Savable, Cloneable, Collidable, Cloneab
      * containsGUI should be moved from Camera class to Frustum Class
      * Done!
      */
-    public boolean checkCulling(Camera cam) {
+    public boolean checkCulling(CameraView cam) {
         if (refreshFlags != 0) {
             throw new IllegalStateException("Scene graph is not properly updated for rendering.\n"
                     + "State was changed after rootNode.updateGeometricState() call. \n"
@@ -286,9 +286,9 @@ public abstract class Spatial implements Savable, Cloneable, Collidable, Cloneab
 
         if (frustrumIntersects == Frustum.FrustumIntersect.Intersects) {
             if (getQueueBucket() == Bucket.Gui) {
-                return cam.containsGui(getWorldBound());
+                return cam.getFrustum().containsGui(getWorldBound());
             } else {
-                frustrumIntersects = cam.contains(getWorldBound());
+                frustrumIntersects = cam.getFrustum().contains(getWorldBound());
             }
         }
 

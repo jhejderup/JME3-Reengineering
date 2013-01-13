@@ -37,7 +37,7 @@ import com.jme3.material.Material;
 import com.jme3.math.ColorRGBA;
 import com.jme3.math.Quaternion;
 import com.jme3.math.Vector3f;
-import com.jme3.renderer.Camera;
+import com.jme3.renderer.CameraView;
 import com.jme3.renderer.queue.RenderQueue.ShadowMode;
 import com.jme3.scene.Geometry;
 import com.jme3.scene.Spatial;
@@ -70,9 +70,9 @@ public class TestShadow extends SimpleApplication {
     @Override
     public void simpleInitApp() {
         // put the camera in a bad position
-        cam.setLocation(new Vector3f(0.7804813f, 1.7502685f, -2.1556435f));
-        cam.setRotation(new Quaternion(0.1961598f, -0.7213164f, 0.2266092f, 0.6243975f));
-        cam.setFrustumFar(10);
+        cam.updateLocation(new Vector3f(0.7804813f, 1.7502685f, -2.1556435f));
+        cam.vRotation(new Quaternion(0.1961598f, -0.7213164f, 0.2266092f, 0.6243975f));
+        cam.updateFrustumFar(10);
 
         Material mat = assetManager.loadMaterial("Common/Materials/WhiteColor.j3m");
         rootNode.setShadowMode(ShadowMode.Off);
@@ -110,7 +110,7 @@ public class TestShadow extends SimpleApplication {
 
     @Override
     public void simpleUpdate(float tpf){
-        Camera shadowCam = bsr.getShadowCamera();
+        CameraView shadowCam = bsr.getShadowCamera();
         ShadowUtil.updateFrustumPoints2(shadowCam, points);
 
         frustum.update(points);

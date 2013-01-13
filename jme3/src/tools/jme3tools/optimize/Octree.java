@@ -39,7 +39,7 @@ import com.jme3.material.Material;
 import com.jme3.math.Matrix4f;
 import com.jme3.math.Ray;
 import com.jme3.math.Triangle;
-import com.jme3.renderer.Camera;
+import com.jme3.renderer.CameraView;
 import com.jme3.renderer.queue.RenderQueue;
 import com.jme3.scene.Geometry;
 import com.jme3.scene.Mesh;
@@ -132,7 +132,7 @@ public class Octree {
         root.generateFastOctnodeLinks(null, null, 0);
     }
     
-    public void generateRenderSet(Set<Geometry> renderSet, Camera cam){
+    public void generateRenderSet(Set<Geometry> renderSet, CameraView cam){
         root.generateRenderSet(renderSet, cam);
     }
 

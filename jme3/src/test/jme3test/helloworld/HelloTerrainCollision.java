@@ -44,7 +44,7 @@ import com.jme3.input.controls.ActionListener;
 import com.jme3.input.controls.KeyTrigger;
 import com.jme3.material.Material;
 import com.jme3.math.Vector3f;
-import com.jme3.renderer.Camera;
+import com.jme3.renderer.CameraView;
 import com.jme3.scene.Node;
 import com.jme3.terrain.geomipmap.TerrainLodControl;
 import com.jme3.terrain.geomipmap.TerrainQuad;
@@ -139,7 +139,7 @@ public class HelloTerrainCollision extends SimpleApplication
     rootNode.attachChild(terrain);
 
     /** 5. The LOD (level of detail) depends on were the camera is: */
-    List<Camera> cameras = new ArrayList<Camera>();
+    List<CameraView> cameras = new ArrayList<CameraView>();
     cameras.add(getCamera());
     TerrainLodControl control = new TerrainLodControl(terrain, cameras);
     terrain.addControl(control);
@@ -210,15 +210,15 @@ public class HelloTerrainCollision extends SimpleApplication
    */
   @Override
   public void simpleUpdate(float tpf) {
-    Vector3f camDir = cam.getDirection().clone().multLocal(0.6f);
-    Vector3f camLeft = cam.getLeft().clone().multLocal(0.4f);
+    Vector3f camDir = cam.getCamera().getDirection().clone().multLocal(0.6f);
+    Vector3f camLeft = cam.getCamera().getLeft().clone().multLocal(0.4f);
     walkDirection.set(0, 0, 0);
     if (left)  { walkDirection.addLocal(camLeft); }
     if (right) { walkDirection.addLocal(camLeft.negate()); }
     if (up)    { walkDirection.addLocal(camDir); }
     if (down)  { walkDirection.addLocal(camDir.negate()); }
     player.setWalkDirection(walkDirection);
-    cam.setLocation(player.getPhysicsLocation());
+    cam.updateLocation(player.getPhysicsLocation());
   }
 }
 

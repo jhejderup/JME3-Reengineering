@@ -44,10 +44,10 @@ import java.util.List;
  * A <code>ViewPort</code> represents a view inside the display
  * window or a {@link FrameBuffer} to which scenes will be rendered. 
  * <p>
- * A viewport has a {@link #ViewPort(java.lang.String, com.jme3.renderer.Camera) camera}
+ * A viewport has a {@link #ViewPort(java.lang.String, com.jme3.renderer.CameraView) camera}
  * which is used to render a set of {@link #attachScene(com.jme3.scene.Spatial) scenes}.
  * A view port has a location on the screen as set by the 
- * {@link Camera#setViewPort(float, float, float, float) } method.
+ * {@link CameraView#setViewPort(float, float, float, float) } method.
  * By default, a view port does not clear the framebuffer, but it can be
  * set to {@link #setClearFlags(boolean, boolean, boolean) clear the framebuffer}.
  * The background color which the color buffer is cleared to can be specified 
@@ -61,12 +61,12 @@ import java.util.List;
  * @see RenderManager
  * @see SceneProcessor
  * @see Spatial
- * @see Camera
+ * @see CameraView
  */
 public class ViewPort {
 
     protected final String name;
-    protected final Camera cam;
+    protected final CameraView cam;
     protected final RenderQueue queue = new RenderQueue();
     protected final ArrayList<Spatial> sceneList = new ArrayList<Spatial>();
     protected final ArrayList<SceneProcessor> processors = new ArrayList<SceneProcessor>();
@@ -79,16 +79,16 @@ public class ViewPort {
     /**
      * Create a new viewport. User code should generally use these methods instead:<br>
      * <ul>
-     * <li>{@link RenderManager#createPreView(java.lang.String, com.jme3.renderer.Camera) }</li>
-     * <li>{@link RenderManager#createMainView(java.lang.String, com.jme3.renderer.Camera)  }</li>
-     * <li>{@link RenderManager#createPostView(java.lang.String, com.jme3.renderer.Camera)  }</li>
+     * <li>{@link RenderManager#createPreView(java.lang.String, com.jme3.renderer.CameraView) }</li>
+     * <li>{@link RenderManager#createMainView(java.lang.String, com.jme3.renderer.CameraView)  }</li>
+     * <li>{@link RenderManager#createPostView(java.lang.String, com.jme3.renderer.CameraView)  }</li>
      * </ul>
      * 
      * @param name The name of the viewport. Used for debugging only.
      * @param cam The camera through which the viewport is rendered. The camera
      * cannot be swapped to a different one after creating the viewport.
      */
-    public ViewPort(String name, Camera cam) {
+    public ViewPort(String name, CameraView cam) {
         this.name = name;
         this.cam = cam;
     }
@@ -98,7 +98,7 @@ public class ViewPort {
      * 
      * @return the name of the viewport
      * 
-     * @see #ViewPort(java.lang.String, com.jme3.renderer.Camera) 
+     * @see #ViewPort(java.lang.String, com.jme3.renderer.CameraView) 
      */
     public String getName() {
         return name;
@@ -278,9 +278,9 @@ public class ViewPort {
      * 
      * @return the camera which renders the attached scenes.
      * 
-     * @see Camera
+     * @see CameraView
      */
-    public Camera getCamera() {
+    public CameraView getCamera() {
         return cam;
     }
 

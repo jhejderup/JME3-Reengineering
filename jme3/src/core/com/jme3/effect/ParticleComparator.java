@@ -31,15 +31,15 @@
  */
 package com.jme3.effect;
 
-import com.jme3.renderer.Camera;
+import com.jme3.renderer.CameraView;
 import java.util.Comparator;
 
 @Deprecated
 class ParticleComparator implements Comparator<Particle> {
 
-    private Camera cam;
+    private CameraView cam;
 
-    public void setCamera(Camera cam){
+    public void setCamera(CameraView cam){
         this.cam = cam;
     }
 

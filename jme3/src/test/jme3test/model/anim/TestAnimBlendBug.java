@@ -90,7 +90,7 @@ public class TestAnimBlendBug extends SimpleApplication implements ActionListene
         inputManager.addListener(this, "One");
 
         flyCam.setMoveSpeed(100f);
-        cam.setLocation( new Vector3f( 0f, 150f, -325f ) );
+        cam.updateLocation( new Vector3f( 0f, 150f, -325f ) );
         cam.lookAt( new Vector3f( 0f, 100f, 0f ), Vector3f.UNIT_Y );
 
         DirectionalLight dl = new DirectionalLight();

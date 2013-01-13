@@ -45,7 +45,7 @@ import com.jme3.math.ColorRGBA;
 import com.jme3.math.FastMath;
 import com.jme3.math.Matrix3f;
 import com.jme3.math.Vector3f;
-import com.jme3.renderer.Camera;
+import com.jme3.renderer.CameraView;
 import com.jme3.renderer.RenderManager;
 import com.jme3.renderer.ViewPort;
 import com.jme3.renderer.queue.RenderQueue.Bucket;
@@ -1064,10 +1064,10 @@ public class ParticleEmitter extends Geometry {
      * @param vp 
      */
     private void renderFromControl(RenderManager rm, ViewPort vp) {
-        Camera cam = vp.getCamera();
+        CameraView cam = vp.getCamera();
 
         if (meshType == ParticleMesh.Type.Point) {
-            float C = cam.getProjectionMatrix().m00;
+            float C = cam.getCamera().getProjectionMatrix().m00;
             C *= cam.getWidth() * 0.5f;
 
             // send attenuation params

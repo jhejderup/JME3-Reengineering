@@ -11,7 +11,7 @@ import com.jme3.material.Material;
 import com.jme3.math.*;
 import com.jme3.post.FilterPostProcessor;
 import com.jme3.post.filters.DepthOfFieldFilter;
-import com.jme3.renderer.Camera;
+import com.jme3.renderer.CameraView;
 import com.jme3.renderer.queue.RenderQueue.ShadowMode;
 import com.jme3.scene.Node;
 import com.jme3.scene.Spatial;
@@ -60,9 +60,9 @@ public class TestDepthOfField extends SimpleApplication {
         mainScene.addLight(l);
 
         flyCam.setMoveSpeed(50);
-        cam.setFrustumFar(3000);
-        cam.setLocation(new Vector3f(-700, 100, 300));
-        cam.setRotation(new Quaternion().fromAngles(new float[]{FastMath.PI * 0.06f, FastMath.PI * 0.65f, 0}));
+        cam.updateFrustumFar(3000);
+        cam.updateLocation(new Vector3f(-700, 100, 300));
+        cam.updateRotation(new Quaternion().fromAngles(new float[]{FastMath.PI * 0.06f, FastMath.PI * 0.65f, 0}));
 
 
         Spatial sky = SkyFactory.createSky(assetManager, "Scenes/Beach/FullskiesSunset0068.dds", false);
@@ -171,7 +171,7 @@ public class TestDepthOfField extends SimpleApplication {
             e.printStackTrace();
         }
         terrain = new TerrainQuad("terrain", 65, 513, heightmap.getHeightMap());
-        List<Camera> cameras = new ArrayList<Camera>();
+        List<CameraView> cameras = new ArrayList<CameraView>();
         cameras.add(getCamera());
         terrain.setMaterial(matRock);
         terrain.setLocalScale(new Vector3f(5, 5, 5));

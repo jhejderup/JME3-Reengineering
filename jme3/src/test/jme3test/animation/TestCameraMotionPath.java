@@ -71,7 +71,7 @@ public class TestCameraMotionPath extends SimpleApplication {
     @Override
     public void simpleInitApp() {
         createScene();
-        cam.setLocation(new Vector3f(8.4399185f, 11.189463f, 14.267577f));
+        cam.updateLocation(new Vector3f(8.4399185f, 11.189463f, 14.267577f));
         camNode = new CameraNode("Motion cam", cam);
         camNode.setControlDir(ControlDirection.SpatialToCamera);
         camNode.setEnabled(false);

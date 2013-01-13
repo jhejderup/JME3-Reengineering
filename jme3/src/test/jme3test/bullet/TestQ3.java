@@ -76,7 +76,7 @@ public class TestQ3 extends SimpleApplication implements ActionListener {
         flyCam.setMoveSpeed(100);
         setupKeys();
 
-        this.cam.setFrustumFar(2000);
+        this.cam.updateFrustumFar(2000);
 
         DirectionalLight dl = new DirectionalLight();
         dl.setColor(ColorRGBA.White.clone().multLocal(2));
@@ -122,8 +122,8 @@ public class TestQ3 extends SimpleApplication implements ActionListener {
 
     @Override
     public void simpleUpdate(float tpf) {
-        Vector3f camDir = cam.getDirection().clone().multLocal(0.6f);
-        Vector3f camLeft = cam.getLeft().clone().multLocal(0.4f);
+        Vector3f camDir = cam.getCamera().getDirection().clone().multLocal(0.6f);
+        Vector3f camLeft = cam.getCamera().getLeft().clone().multLocal(0.4f);
         walkDirection.set(0,0,0);
         if(left)
             walkDirection.addLocal(camLeft);
@@ -134,7 +134,7 @@ public class TestQ3 extends SimpleApplication implements ActionListener {
         if(down)
             walkDirection.addLocal(camDir.negate());
         player.setWalkDirection(walkDirection);
-        cam.setLocation(player.getPhysicsLocation());
+        cam.updateLocation(player.getPhysicsLocation());
     }
 
     private void setupKeys() {

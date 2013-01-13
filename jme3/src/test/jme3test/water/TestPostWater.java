@@ -18,7 +18,7 @@ import com.jme3.post.FilterPostProcessor;
 import com.jme3.post.filters.BloomFilter;
 import com.jme3.post.filters.DepthOfFieldFilter;
 import com.jme3.post.filters.LightScatteringFilter;
-import com.jme3.renderer.Camera;
+import com.jme3.renderer.CameraView;
 import com.jme3.renderer.queue.RenderQueue.Bucket;
 import com.jme3.renderer.queue.RenderQueue.ShadowMode;
 import com.jme3.scene.Geometry;
@@ -80,18 +80,18 @@ public class TestPostWater extends SimpleApplication {
 
         //cam.setLocation(new Vector3f(-700, 100, 300));
          //cam.setRotation(new Quaternion().fromAngleAxis(0.5f, Vector3f.UNIT_Z));
-        cam.setLocation(new Vector3f(-327.21957f, 61.6459f, 126.884346f));
-        cam.setRotation(new Quaternion(0.052168474f, 0.9443102f, -0.18395276f, 0.2678024f));
+        cam.updateLocation(new Vector3f(-327.21957f, 61.6459f, 126.884346f));
+        cam.updateRotation(new Quaternion(0.052168474f, 0.9443102f, -0.18395276f, 0.2678024f));
 
           
-        cam.setRotation(new Quaternion().fromAngles(new float[]{FastMath.PI * 0.06f, FastMath.PI * 0.65f, 0}));
+        cam.updateRotation(new Quaternion().fromAngles(new float[]{FastMath.PI * 0.06f, FastMath.PI * 0.65f, 0}));
 
 
         Spatial sky = SkyFactory.createSky(assetManager, "Scenes/Beach/FullskiesSunset0068.dds", false);
         sky.setLocalScale(350);
       
         mainScene.attachChild(sky);
-        cam.setFrustumFar(4000);
+        cam.updateFrustumFar(4000);
         //cam.setFrustumNear(100);
        
         
@@ -135,7 +135,7 @@ public class TestPostWater extends SimpleApplication {
         //water.setFoamHardness(0.6f);
 
         water.setWaterHeight(initialWaterHeight);
-      uw=cam.getLocation().y<waterHeight; 
+      uw=cam.getCamera().getLocation().y<waterHeight; 
       
         waves = new AudioNode(assetManager, "Sound/Environment/Ocean Waves.ogg", false);
         waves.setLooping(true);
@@ -259,7 +259,7 @@ public class TestPostWater extends SimpleApplication {
             e.printStackTrace();
         }
         terrain = new TerrainQuad("terrain", 65, 513, heightmap.getHeightMap());
-        List<Camera> cameras = new ArrayList<Camera>();
+        List<CameraView> cameras = new ArrayList<CameraView>();
         cameras.add(getCamera());
         terrain.setMaterial(matRock);
         terrain.setLocalScale(new Vector3f(5, 5, 5));
