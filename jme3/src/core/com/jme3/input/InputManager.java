@@ -438,6 +438,9 @@ public class InputManager implements RawInputListener {
      * Callback from RawInputListener. Do not use.
      */
     public void onMouseButtonEvent(MouseButtonEvent evt) {
+    	//only when testing
+    	//eventsPermitted = true;
+    	//only when testing
         if (!eventsPermitted) {
             throw new UnsupportedOperationException("MouseInput has raised an event at an illegal time.");
         }
@@ -802,21 +805,9 @@ public class InputManager implements RawInputListener {
                 }
 
                
-                if (event instanceof MouseMotionEvent) {
-                    listener.onMouseMotionEvent((MouseMotionEvent) event);
-                } else if (event instanceof KeyInputEvent) {
-                    listener.onKeyEvent((KeyInputEvent) event);
-                } else if (event instanceof MouseButtonEvent) {
-                    listener.onMouseButtonEvent((MouseButtonEvent) event);
-                } else if (event instanceof JoyAxisEvent) {
-                    listener.onJoyAxisEvent((JoyAxisEvent) event);
-                } else if (event instanceof JoyButtonEvent) {
-                    listener.onJoyButtonEvent((JoyButtonEvent) event);
-                } else if (event instanceof TouchEvent) {
-                    listener.onTouchEvent((TouchEvent) event);
-                } else {
-                    assert false;
-                }
+                event.onEvent(listener);
+                
+             
             }
 
             listener.endInput();

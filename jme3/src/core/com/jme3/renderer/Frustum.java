@@ -204,23 +204,19 @@ public class Frustum {
         Intersects;
     }
 	
-    public Frustum(){
-    	
-    	initPlanes();
-    	
-    }
+   
     
     //the construcotr as per constructor public Camera(int width, int height) in camera class
     // can this be placed in the method?
 	
     
     /**
-     * This needs to be sorted 
-     * @param a
+     * Default constructor
+     * 
      */
-    public Frustum(boolean a)
+    public Frustum()
 	{
-    	this();
+    	initPlanes();
 		frustumNear = 1.0f;
         frustumFar = 2.0f;
         frustumLeft = -0.5f;
@@ -240,7 +236,7 @@ public class Frustum {
 
 	}
 	
-	public void initPlanes(){
+	private void initPlanes(){
 		 worldPlane = new Plane[getMaxWorldPlanes()];
 	     for (int i = 0; i < getMaxWorldPlanes(); i++) {
 	           worldPlane[i] = new Plane();
@@ -248,29 +244,35 @@ public class Frustum {
 	}
 	
 	@Override
-	protected Object clone() throws CloneNotSupportedException {
-		try
-		{
-		Frustum frustum = (Frustum) super.clone();
+	public Object clone() throws CloneNotSupportedException {
+	//	try
+	//	{
+		//Frustum frustum = (Frustum) Object.clone();
+		Frustum frustum = new Frustum();
 		frustum.setPlaneState(0);
-        frustum.worldPlane = new Plane[6];
+        frustum.worldPlane = new Plane[getMaxWorldPlanes()];
         for (int i = 0; i < this.getWorldPlane().length; i++) {
           
          	frustum.worldPlane[i] = this.worldPlane[i].clone();
             }
  
             //Float[] was changed to float[] !
-            
-            frustum.setCoeffLeft(new float[2]); // = new float[2]; //to keep things in tact
+            frustum.setPlaneState(this.getPlaneState());
+            try {
+				frustum.setCoeffLeft(new float[2]); // = new float[2]; //to keep things in tact
             frustum.setCoeffRight(new float[2]); //to keep things in tact
             frustum.setCoeffBottom(new float[2]); // to keep things in tact
             frustum.setCoeffTop(new float[2]); // to kepp things in tact
+            } catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
             frustum.setGuiBounding((BoundingBox) this.getGuiBounding().clone());
 		return frustum;
-		}
-		catch (CloneNotSupportedException ex) {
-            throw new AssertionError();
-        }
+	//	}
+	//	catch (CloneNotSupportedException ex) {
+     //       throw new AssertionError();
+      //  }
 
 	}
 	/**
@@ -467,6 +469,17 @@ public class Frustum {
   
     }
     /**
+     * This internal method is used to see whether a valid index
+     * is provided to the different coeff arrays
+     * @param index
+     */
+    private void checkIndexOutOfBoundsCoeff(int index){
+    	if(index < 0 || index > 1)
+    		throw new java.lang.ArrayIndexOutOfBoundsException("The index value 0 or 1 is only accepted");
+    	
+    }
+  
+    /**
      * 
      * @return
      */
@@ -474,25 +487,46 @@ public class Frustum {
 		return MAX_WORLD_PLANES;
 	}
     public void setCoeffLeftAssignValue(int index,float value){
+    	checkIndexOutOfBoundsCoeff(index);
     	this.coeffLeft[index] = value;
     }
     public void setCoeffRightAssignValue(int index,float value){
+    	checkIndexOutOfBoundsCoeff(index);
     	this.coeffRight[index] = value;
     }
     public void setCoeffBottomAssignValue(int index,float value){
+    	checkIndexOutOfBoundsCoeff(index);
  	   this.coeffBottom[index] = value;
     }    
     public void setCoeffTopAssignValue(int index,float value){
+    	
+    	checkIndexOutOfBoundsCoeff(index);
 	 	this.coeffTop[index] = value;
 	}    
 	public float[] getCoeffLeft() {
+		
 		return coeffLeft;
 	}
 	/**
-	 * @param floats the coeffLeft to set
+	 * This method is use to validate the the array length to see
+	 * whether it meets the requirements of a coeff array
+	 * @param floats provided float array
+	 * @throws Exception if the length is less or more than 2
 	 */
-	public void setCoeffLeft(float[] floats) {
+	private void checkCoeffSize(float[] floats) throws Exception{
+		
+		if(floats.length != 2)
+			throw new Exception("The minimum length is 2");
+	}
+	
+	/**
+	 * @param floats the coeffLeft to set
+	 * @throws Exception 
+	 */
+	public void setCoeffLeft(float[] floats) throws Exception {
+		checkCoeffSize(floats);
 		this.coeffLeft = floats;
+		
 	}
 	/**
 	 * @return the coeffRight
@@ -502,9 +536,12 @@ public class Frustum {
 	}
 	/**
 	 * @param floats the coeffRight to set
+	 * @throws Exception 
 	 */
-	public void setCoeffRight(float[] floats) {
-		this.coeffRight = floats;
+	public void setCoeffRight(float[] floats) throws Exception {
+		checkCoeffSize(floats);
+			this.coeffRight = floats;
+		
 	}
 	/**
 	 * @return the coeffBottom
@@ -514,9 +551,12 @@ public class Frustum {
 	}
 	/**
 	 * @param coeffBottom the coeffBottom to set
+	 * @throws Exception 
 	 */
-	public void setCoeffBottom(float[] coeffBottom) {
+	public void setCoeffBottom(float[] coeffBottom) throws Exception {
+		checkCoeffSize(coeffBottom);
 		this.coeffBottom = coeffBottom;
+		
 	}
 	/**
 	 * @return the coeffTop
@@ -526,9 +566,12 @@ public class Frustum {
 	}
 	/**
 	 * @param coeffTop the coeffTop to set
+	 * @throws Exception 
 	 */
-	public void setCoeffTop(float[] coeffTop) {
+	public void setCoeffTop(float[] coeffTop) throws Exception {
+		checkCoeffSize(coeffTop);
 		this.coeffTop = coeffTop;
+		
 	}
     /**
      * <code>getViewPortLeft</code> gets the left boundary of the viewport
@@ -844,84 +887,6 @@ public void onFrustrumChange(boolean isParallelProjection)
         coeffTop[0] = -1;
         coeffTop[1] = 0;
     }
-    
-    
-    //Camera code
- //   camuse.getProjectionMatrix().fromFrustum(frustumNear, frustumFar, frustumLeft, frustumRight, frustumTop, frustumBottom, camuse.isParallelProjection());
-//    projectionMatrix.transposeLocal();
-
-    // The frame is effected by the frustum values
-    // update it as well
-
 }
-/*
- public void onFrameChangeFrustrum()
- {
-	 
-	 TempVars vars = TempVars.get();
-     Vector3f left = camuse.getLeft(vars.vect1);
-     Vector3f direction = camuse.getDirection(vars.vect2);
-     Vector3f up = camuse.getUp(vars.vect3);
 
-     float dirDotLocation = direction.dot(camuse.getLocation());
-	// left plane
-     Vector3f leftPlaneNormal = camuse.worldPlane[LEFT_PLANE].getNormal();
-     leftPlaneNormal.x = left.x * coeffLeft[0];
-     leftPlaneNormal.y = left.y * coeffLeft[0];
-     leftPlaneNormal.z = left.z * coeffLeft[0];
-     leftPlaneNormal.addLocal(direction.x * coeffLeft[1], direction.y
-             * coeffLeft[1], direction.z * coeffLeft[1]);
-     camuse.worldPlane[LEFT_PLANE].setConstant(camuse.getLocation().dot(leftPlaneNormal));
-
-     // right plane
-     Vector3f rightPlaneNormal = camuse.worldPlane[RIGHT_PLANE].getNormal();
-     rightPlaneNormal.x = left.x * coeffRight[0];
-     rightPlaneNormal.y = left.y * coeffRight[0];
-     rightPlaneNormal.z = left.z * coeffRight[0];
-     rightPlaneNormal.addLocal(direction.x * coeffRight[1], direction.y
-             * coeffRight[1], direction.z * coeffRight[1]);
-     camuse.worldPlane[RIGHT_PLANE].setConstant(camuse.getLocation().dot(rightPlaneNormal));
-
-     // bottom plane
-     Vector3f bottomPlaneNormal = camuse.worldPlane[BOTTOM_PLANE].getNormal();
-     bottomPlaneNormal.x = up.x * coeffBottom[0];
-     bottomPlaneNormal.y = up.y * coeffBottom[0];
-     bottomPlaneNormal.z = up.z * coeffBottom[0];
-     bottomPlaneNormal.addLocal(direction.x * coeffBottom[1], direction.y
-             * coeffBottom[1], direction.z * coeffBottom[1]);
-     camuse.worldPlane[BOTTOM_PLANE].setConstant(camuse.getLocation().dot(bottomPlaneNormal));
-
-     // top plane
-     Vector3f topPlaneNormal = camuse.worldPlane[TOP_PLANE].getNormal();
-     topPlaneNormal.x = up.x * coeffTop[0];
-     topPlaneNormal.y = up.y * coeffTop[0];
-     topPlaneNormal.z = up.z * coeffTop[0];
-     topPlaneNormal.addLocal(direction.x * coeffTop[1], direction.y
-             * coeffTop[1], direction.z * coeffTop[1]);
-     camuse.worldPlane[TOP_PLANE].setConstant(camuse.getLocation().dot(topPlaneNormal));
-
-     
-     //condition: camera code, code inside: fustrum code 
-     
-     if (camuse.isParallelProjection()) {
-         camuse.worldPlane[LEFT_PLANE].setConstant(camuse.worldPlane[LEFT_PLANE].getConstant() + frustumLeft);
-         camuse.worldPlane[RIGHT_PLANE].setConstant(camuse.worldPlane[RIGHT_PLANE].getConstant() - frustumRight);
-         camuse.worldPlane[TOP_PLANE].setConstant(camuse.worldPlane[TOP_PLANE].getConstant() - frustumTop);
-         camuse.worldPlane[BOTTOM_PLANE].setConstant(camuse.worldPlane[BOTTOM_PLANE].getConstant() + frustumBottom);
-     }
-
-     // far plane
-     camuse.worldPlane[FAR_PLANE].setNormal(left);
-     camuse.worldPlane[FAR_PLANE].setNormal(-direction.x, -direction.y, -direction.z);
-     camuse.worldPlane[FAR_PLANE].setConstant(-(dirDotLocation + frustumFar));
-
-     // near plane
-     camuse.worldPlane[getNearPlane()].setNormal(direction.x, direction.y, direction.z);
-     camuse.worldPlane[getNearPlane()].setConstant(dirDotLocation + frustumNear);
-     camuse.getViewMatrix().fromFrame(camuse.getLocation(), direction, up, left);
-    
-     vars.release();
-
- }
-*/
 }

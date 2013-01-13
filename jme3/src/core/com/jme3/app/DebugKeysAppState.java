@@ -40,6 +40,7 @@ import com.jme3.input.controls.KeyTrigger;
 import com.jme3.math.Quaternion;
 import com.jme3.math.Vector3f;
 import com.jme3.renderer.Camera;
+import com.jme3.renderer.CameraView;
 import com.jme3.util.BufferUtils;
 
 
@@ -100,14 +101,14 @@ public class DebugKeysAppState extends AbstractAppState {
             }
 
             if (name.equals(INPUT_MAPPING_CAMERA_POS)) {
-                Camera cam = app.getCamera();
+                CameraView cam = app.getCamera();
                 if (cam != null) {
-                    Vector3f loc = cam.getLocation();
-                    Quaternion rot = cam.getRotation();
+                    Vector3f loc = cam.getCamera().getLocation();
+                    Quaternion rot = cam.getCamera().getRotation();
                     System.out.println("Camera Position: ("
                             + loc.x + ", " + loc.y + ", " + loc.z + ")");
                     System.out.println("Camera Rotation: " + rot);
-                    System.out.println("Camera Direction: " + cam.getDirection());
+                    System.out.println("Camera Direction: " + cam.getCamera().getDirection());
                 }
             } else if (name.equals(INPUT_MAPPING_MEMORY)) {
                 BufferUtils.printCurrentDirectMemory(null);

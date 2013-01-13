@@ -33,6 +33,7 @@ package com.jme3.input.event;
 
 import com.jme3.input.Joystick;
 import com.jme3.input.JoystickButton;
+import com.jme3.input.RawInputListener;
 
 /**
  * Joystick button event.
@@ -90,6 +91,12 @@ public class JoyButtonEvent extends InputEvent {
     public boolean isPressed() {
         return pressed;
     }
+
+	@Override
+	public void onEvent(RawInputListener listener) {
+		listener.onJoyButtonEvent(this);
+		
+	}
 
 
 

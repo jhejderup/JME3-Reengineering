@@ -855,7 +855,7 @@ public class RenderManager {
                 renderer.setViewProjectionMatrices(Matrix4f.IDENTITY, orthoMatrix);
             } else {
                 renderer.setViewProjectionMatrices(cam.getCamera().getViewMatrix(),
-                        cam.getProjectionMatrix());
+                        cam.getCamera().getProjectionMatrix());
             }
         }
     }

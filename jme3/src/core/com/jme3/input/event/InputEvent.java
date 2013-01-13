@@ -80,7 +80,10 @@ public abstract class InputEvent {
     public void setConsumed() {
         this.consumed = true;
     }
-    
-  //  public abstract void onEvent(RawInputListener listener);
+   /**
+    * Handles onEvent 
+    * @param listener rawinputlistener
+    */
+   public abstract void onEvent(RawInputListener listener);
     
 }

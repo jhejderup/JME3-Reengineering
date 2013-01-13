@@ -228,11 +228,10 @@ public class TouchEvent extends InputEvent {
     public void setScaleSpanInProgress(boolean scaleSpanInProgress) {
         this.scaleSpanInProgress = scaleSpanInProgress;
     }
-/*
+
 	@Override
 	public void onEvent(RawInputListener listener) {
-		  listener.onTouchEvent(this);
+		listener.onTouchEvent(this);
 		
 	}
-    */
 }

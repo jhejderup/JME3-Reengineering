@@ -203,7 +203,7 @@ public class MouseMotionEventTest {
 		RawInputListener listener = EasyMock.createNiceMock(RawInputListener.class);
 	
 		
-		fixture.onEvent(listener);
+	//	fixture.onEvent(listener);
 
 	}
 

@@ -32,6 +32,7 @@
 package com.jme3.input.event;
 
 import com.jme3.input.KeyInput;
+import com.jme3.input.RawInputListener;
 
 /**
  * Keyboard key event.
@@ -113,4 +114,10 @@ public class KeyInputEvent extends InputEvent {
             return str + ", RELEASED)";
         }
     }
+
+	@Override
+	public void onEvent(RawInputListener listener) {
+		listener.onKeyEvent(this);
+		
+	}
 }

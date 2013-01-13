@@ -32,6 +32,7 @@
 package com.jme3.input.event;
 
 import com.jme3.input.MouseInput;
+import com.jme3.input.RawInputListener;
 
 /**
  * Mouse button press/release event.
@@ -106,5 +107,11 @@ public class MouseButtonEvent extends InputEvent {
             return str + ", RELEASED)";
         }
     }
+
+	@Override
+	public void onEvent(RawInputListener listener) {
+		listener.onMouseButtonEvent(this);
+		
+	}
 
 }

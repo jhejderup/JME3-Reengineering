@@ -34,6 +34,7 @@ package com.jme3.input.event;
 import com.jme3.input.InputManager;
 import com.jme3.input.Joystick;
 import com.jme3.input.JoystickAxis;
+import com.jme3.input.RawInputListener;
 
 /**
  * Joystick axis event.
@@ -89,4 +90,10 @@ public class JoyAxisEvent extends InputEvent {
     public float getValue() {
         return value;
     }
+
+	@Override
+	public void onEvent(RawInputListener listener) {
+		listener.onJoyAxisEvent(this);
+		
+	}
 }

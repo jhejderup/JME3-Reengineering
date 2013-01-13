@@ -71,7 +71,7 @@ public class TestShadow extends SimpleApplication {
     public void simpleInitApp() {
         // put the camera in a bad position
         cam.updateLocation(new Vector3f(0.7804813f, 1.7502685f, -2.1556435f));
-        cam.vRotation(new Quaternion(0.1961598f, -0.7213164f, 0.2266092f, 0.6243975f));
+        cam.updateRotation(new Quaternion(0.1961598f, -0.7213164f, 0.2266092f, 0.6243975f));
         cam.updateFrustumFar(10);
 
         Material mat = assetManager.loadMaterial("Common/Materials/WhiteColor.j3m");

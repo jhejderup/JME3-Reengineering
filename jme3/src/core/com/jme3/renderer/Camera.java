@@ -4,6 +4,7 @@
 package com.jme3.renderer;
 
 import com.jme3.math.Matrix4f;
+import com.jme3.math.Plane;
 import com.jme3.math.Quaternion;
 import com.jme3.math.Vector3f;
 import com.jme3.renderer.Frustum.Planes;
@@ -340,10 +341,12 @@ public class Camera {
 
         float dirDotLocation = direction.dot(this.getLocation());
 
+       
+        
         //fustrum code
                 
         // left plane
-        Vector3f leftPlaneNormal = frustum.getWorldPlane()[Planes.LEFT_PLANE.getPlaneValue()].getNormal();
+        Vector3f leftPlaneNormal = frustum.worldPlane[Planes.LEFT_PLANE.getPlaneValue()].getNormal();
         leftPlaneNormal.x = left.x * frustum.getCoeffLeft()[0];
         leftPlaneNormal.y = left.y * frustum.getCoeffLeft()[0];
         leftPlaneNormal.z = left.z * frustum.getCoeffLeft()[0];

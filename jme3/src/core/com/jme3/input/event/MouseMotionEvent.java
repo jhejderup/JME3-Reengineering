@@ -31,6 +31,8 @@
  */
 package com.jme3.input.event;
 
+import com.jme3.input.RawInputListener;
+
 /**
  * Mouse movement event.
  * <p>
@@ -105,5 +107,11 @@ public class MouseMotionEvent extends InputEvent {
     public String toString(){
         return "MouseMotion(X="+x+", Y="+y+", DX="+dx+", DY="+dy+")";
     }
+
+	@Override
+	public void onEvent(RawInputListener listener) {
+		listener.onMouseMotionEvent(this);
+		
+	}
 
 }
