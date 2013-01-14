@@ -143,278 +143,418 @@ public class LineSegment implements Cloneable, Savable, java.io.Serializable {
         vars.release();
         float determinant = FastMath.abs(1.0f - negativeDirectionDot
                 * negativeDirectionDot);
-        float s0, s1, squareDistance, extentDeterminant0, extentDeterminant1, tempS0, tempS1;
+        float squareDistance;
+       // float s0, s1, extentDeterminant0, extentDeterminant1, tempS0, tempS1;
 
         if (determinant >= FastMath.FLT_EPSILON) {
-            // segments are not parallel
-            s0 = negativeDirectionDot * diffTestDot - diffThisDot;
-            s1 = negativeDirectionDot * diffThisDot - diffTestDot;
-            extentDeterminant0 = extent * determinant;
-            extentDeterminant1 = test.getExtent() * determinant;
-
-            if (s0 >= -extentDeterminant0) {
-                if (s0 <= extentDeterminant0) {
-                    if (s1 >= -extentDeterminant1) {
-                        if (s1 <= extentDeterminant1) // region 0 (interior)
-                        {
-                            // minimum at two interior points of 3D lines
-                            float inverseDeterminant = ((float) 1.0)
-                                    / determinant;
-                            s0 *= inverseDeterminant;
-                            s1 *= inverseDeterminant;
-                            squareDistance = s0
-                                    * (s0 + negativeDirectionDot * s1 + (2.0f) * diffThisDot)
-                                    + s1
-                                    * (negativeDirectionDot * s0 + s1 + (2.0f) * diffTestDot)
-                                    + lengthOfDiff;
-                        } else // region 3 (side)
-                        {
-                            s1 = test.getExtent();
-                            tempS0 = -(negativeDirectionDot * s1 + diffThisDot);
-                            if (tempS0 < -extent) {
-                                s0 = -extent;
-                                squareDistance = s0 * (s0 - (2.0f) * tempS0)
-                                        + s1 * (s1 + (2.0f) * diffTestDot)
-                                        + lengthOfDiff;
-                            } else if (tempS0 <= extent) {
-                                s0 = tempS0;
-                                squareDistance = -s0 * s0 + s1
-                                        * (s1 + (2.0f) * diffTestDot)
-                                        + lengthOfDiff;
-                            } else {
-                                s0 = extent;
-                                squareDistance = s0 * (s0 - (2.0f) * tempS0)
-                                        + s1 * (s1 + (2.0f) * diffTestDot)
-                                        + lengthOfDiff;
-                            }
-                        }
-                    } else // region 7 (side)
-                    {
-                        s1 = -test.getExtent();
-                        tempS0 = -(negativeDirectionDot * s1 + diffThisDot);
-                        if (tempS0 < -extent) {
-                            s0 = -extent;
-                            squareDistance = s0 * (s0 - (2.0f) * tempS0) + s1
-                                    * (s1 + (2.0f) * diffTestDot)
-                                    + lengthOfDiff;
-                        } else if (tempS0 <= extent) {
-                            s0 = tempS0;
-                            squareDistance = -s0 * s0 + s1
-                                    * (s1 + (2.0f) * diffTestDot)
-                                    + lengthOfDiff;
-                        } else {
-                            s0 = extent;
-                            squareDistance = s0 * (s0 - (2.0f) * tempS0) + s1
-                                    * (s1 + (2.0f) * diffTestDot)
-                                    + lengthOfDiff;
-                        }
-                    }
-                } else {
-                    if (s1 >= -extentDeterminant1) {
-                        if (s1 <= extentDeterminant1) // region 1 (side)
-                        {
-                            s0 = extent;
-                            tempS1 = -(negativeDirectionDot * s0 + diffTestDot);
-                            if (tempS1 < -test.getExtent()) {
-                                s1 = -test.getExtent();
-                                squareDistance = s1 * (s1 - (2.0f) * tempS1)
-                                        + s0 * (s0 + (2.0f) * diffThisDot)
-                                        + lengthOfDiff;
-                            } else if (tempS1 <= test.getExtent()) {
-                                s1 = tempS1;
-                                squareDistance = -s1 * s1 + s0
-                                        * (s0 + (2.0f) * diffThisDot)
-                                        + lengthOfDiff;
-                            } else {
-                                s1 = test.getExtent();
-                                squareDistance = s1 * (s1 - (2.0f) * tempS1)
-                                        + s0 * (s0 + (2.0f) * diffThisDot)
-                                        + lengthOfDiff;
-                            }
-                        } else // region 2 (corner)
-                        {
-                            s1 = test.getExtent();
-                            tempS0 = -(negativeDirectionDot * s1 + diffThisDot);
-                            if (tempS0 < -extent) {
-                                s0 = -extent;
-                                squareDistance = s0 * (s0 - (2.0f) * tempS0)
-                                        + s1 * (s1 + (2.0f) * diffTestDot)
-                                        + lengthOfDiff;
-                            } else if (tempS0 <= extent) {
-                                s0 = tempS0;
-                                squareDistance = -s0 * s0 + s1
-                                        * (s1 + (2.0f) * diffTestDot)
-                                        + lengthOfDiff;
-                            } else {
-                                s0 = extent;
-                                tempS1 = -(negativeDirectionDot * s0 + diffTestDot);
-                                if (tempS1 < -test.getExtent()) {
-                                    s1 = -test.getExtent();
-                                    squareDistance = s1
-                                            * (s1 - (2.0f) * tempS1) + s0
-                                            * (s0 + (2.0f) * diffThisDot)
-                                            + lengthOfDiff;
-                                } else if (tempS1 <= test.getExtent()) {
-                                    s1 = tempS1;
-                                    squareDistance = -s1 * s1 + s0
-                                            * (s0 + (2.0f) * diffThisDot)
-                                            + lengthOfDiff;
-                                } else {
-                                    s1 = test.getExtent();
-                                    squareDistance = s1
-                                            * (s1 - (2.0f) * tempS1) + s0
-                                            * (s0 + (2.0f) * diffThisDot)
-                                            + lengthOfDiff;
-                                }
-                            }
-                        }
-                    } else // region 8 (corner)
-                    {
-                        s1 = -test.getExtent();
-                        tempS0 = -(negativeDirectionDot * s1 + diffThisDot);
-                        if (tempS0 < -extent) {
-                            s0 = -extent;
-                            squareDistance = s0 * (s0 - (2.0f) * tempS0) + s1
-                                    * (s1 + (2.0f) * diffTestDot)
-                                    + lengthOfDiff;
-                        } else if (tempS0 <= extent) {
-                            s0 = tempS0;
-                            squareDistance = -s0 * s0 + s1
-                                    * (s1 + (2.0f) * diffTestDot)
-                                    + lengthOfDiff;
-                        } else {
-                            s0 = extent;
-                            tempS1 = -(negativeDirectionDot * s0 + diffTestDot);
-                            if (tempS1 > test.getExtent()) {
-                                s1 = test.getExtent();
-                                squareDistance = s1 * (s1 - (2.0f) * tempS1)
-                                        + s0 * (s0 + (2.0f) * diffThisDot)
-                                        + lengthOfDiff;
-                            } else if (tempS1 >= -test.getExtent()) {
-                                s1 = tempS1;
-                                squareDistance = -s1 * s1 + s0
-                                        * (s0 + (2.0f) * diffThisDot)
-                                        + lengthOfDiff;
-                            } else {
-                                s1 = -test.getExtent();
-                                squareDistance = s1 * (s1 - (2.0f) * tempS1)
-                                        + s0 * (s0 + (2.0f) * diffThisDot)
-                                        + lengthOfDiff;
-                            }
-                        }
-                    }
-                }
-            } else {
-                if (s1 >= -extentDeterminant1) {
-                    if (s1 <= extentDeterminant1) // region 5 (side)
-                    {
-                        s0 = -extent;
-                        tempS1 = -(negativeDirectionDot * s0 + diffTestDot);
-                        if (tempS1 < -test.getExtent()) {
-                            s1 = -test.getExtent();
-                            squareDistance = s1 * (s1 - (2.0f) * tempS1) + s0
-                                    * (s0 + (2.0f) * diffThisDot)
-                                    + lengthOfDiff;
-                        } else if (tempS1 <= test.getExtent()) {
-                            s1 = tempS1;
-                            squareDistance = -s1 * s1 + s0
-                                    * (s0 + (2.0f) * diffThisDot)
-                                    + lengthOfDiff;
-                        } else {
-                            s1 = test.getExtent();
-                            squareDistance = s1 * (s1 - (2.0f) * tempS1) + s0
-                                    * (s0 + (2.0f) * diffThisDot)
-                                    + lengthOfDiff;
-                        }
-                    } else // region 4 (corner)
-                    {
-                        s1 = test.getExtent();
-                        tempS0 = -(negativeDirectionDot * s1 + diffThisDot);
-                        if (tempS0 > extent) {
-                            s0 = extent;
-                            squareDistance = s0 * (s0 - (2.0f) * tempS0) + s1
-                                    * (s1 + (2.0f) * diffTestDot)
-                                    + lengthOfDiff;
-                        } else if (tempS0 >= -extent) {
-                            s0 = tempS0;
-                            squareDistance = -s0 * s0 + s1
-                                    * (s1 + (2.0f) * diffTestDot)
-                                    + lengthOfDiff;
-                        } else {
-                            s0 = -extent;
-                            tempS1 = -(negativeDirectionDot * s0 + diffTestDot);
-                            if (tempS1 < -test.getExtent()) {
-                                s1 = -test.getExtent();
-                                squareDistance = s1 * (s1 - (2.0f) * tempS1)
-                                        + s0 * (s0 + (2.0f) * diffThisDot)
-                                        + lengthOfDiff;
-                            } else if (tempS1 <= test.getExtent()) {
-                                s1 = tempS1;
-                                squareDistance = -s1 * s1 + s0
-                                        * (s0 + (2.0f) * diffThisDot)
-                                        + lengthOfDiff;
-                            } else {
-                                s1 = test.getExtent();
-                                squareDistance = s1 * (s1 - (2.0f) * tempS1)
-                                        + s0 * (s0 + (2.0f) * diffThisDot)
-                                        + lengthOfDiff;
-                            }
-                        }
-                    }
-                } else // region 6 (corner)
-                {
-                    s1 = -test.getExtent();
-                    tempS0 = -(negativeDirectionDot * s1 + diffThisDot);
-                    if (tempS0 > extent) {
-                        s0 = extent;
-                        squareDistance = s0 * (s0 - (2.0f) * tempS0) + s1
-                                * (s1 + (2.0f) * diffTestDot) + lengthOfDiff;
-                    } else if (tempS0 >= -extent) {
-                        s0 = tempS0;
-                        squareDistance = -s0 * s0 + s1
-                                * (s1 + (2.0f) * diffTestDot) + lengthOfDiff;
-                    } else {
-                        s0 = -extent;
-                        tempS1 = -(negativeDirectionDot * s0 + diffTestDot);
-                        if (tempS1 < -test.getExtent()) {
-                            s1 = -test.getExtent();
-                            squareDistance = s1 * (s1 - (2.0f) * tempS1) + s0
-                                    * (s0 + (2.0f) * diffThisDot)
-                                    + lengthOfDiff;
-                        } else if (tempS1 <= test.getExtent()) {
-                            s1 = tempS1;
-                            squareDistance = -s1 * s1 + s0
-                                    * (s0 + (2.0f) * diffThisDot)
-                                    + lengthOfDiff;
-                        } else {
-                            s1 = test.getExtent();
-                            squareDistance = s1 * (s1 - (2.0f) * tempS1) + s0
-                                    * (s0 + (2.0f) * diffThisDot)
-                                    + lengthOfDiff;
-                        }
-                    }
-                }
-            }
+            squareDistance = nonParallelSegment(test, negativeDirectionDot,
+					diffThisDot, diffTestDot, lengthOfDiff, determinant);
         } else {
-            // The segments are parallel. The average b0 term is designed to
-            // ensure symmetry of the function. That is, dist(seg0,seg1) and
-            // dist(seg1,seg0) should produce the same number.get
-            float extentSum = extent + test.getExtent();
-            float sign = (negativeDirectionDot > 0.0f ? -1.0f : 1.0f);
-            float averageB0 = (0.5f) * (diffThisDot - sign * diffTestDot);
-            float lambda = -averageB0;
-            if (lambda < -extentSum) {
-                lambda = -extentSum;
-            } else if (lambda > extentSum) {
-                lambda = extentSum;
-            }
-
-            squareDistance = lambda * (lambda + (2.0f) * averageB0)
-                    + lengthOfDiff;
+            squareDistance = paralllelSegment(test, negativeDirectionDot,
+					diffThisDot, diffTestDot, lengthOfDiff);
         }
 
         return FastMath.abs(squareDistance);
     }
+
+	/**
+	 * NonParallelSegement
+	 * @param test
+	 * @param negativeDirectionDot
+	 * @param diffThisDot
+	 * @param diffTestDot
+	 * @param lengthOfDiff
+	 * @param determinant
+	 * @return
+	 */
+	private float nonParallelSegment(LineSegment test,
+			float negativeDirectionDot, float diffThisDot, float diffTestDot,
+			float lengthOfDiff, float determinant) {
+		float s0;
+		float s1;
+		float squareDistance;
+		float extentDeterminant0;
+		float extentDeterminant1;
+		// segments are not parallel
+		s0 = negativeDirectionDot * diffTestDot - diffThisDot;
+		s1 = negativeDirectionDot * diffThisDot - diffTestDot;
+		extentDeterminant0 = extent * determinant;
+		extentDeterminant1 = test.getExtent() * determinant;
+
+		if (s0 >= -extentDeterminant0) {
+		    if (s0 <= extentDeterminant0) {
+		        if (s1 >= -extentDeterminant1) {
+		            if (s1 <= extentDeterminant1) // region 0 (interior)
+		            {
+		                // minimum at two interior points of 3D lines
+		                squareDistance = region0Determinant(
+								negativeDirectionDot, diffThisDot,
+								diffTestDot, lengthOfDiff, determinant, s0,
+								s1);
+		            } else // region 3 (side)
+		            {
+		                squareDistance = regionSide73Determinant(test,
+								negativeDirectionDot, diffThisDot,
+								diffTestDot, lengthOfDiff,false);
+		            }
+		        } else // region 7 (side)
+		        {
+		            squareDistance = regionSide73Determinant(test,
+							negativeDirectionDot, diffThisDot, diffTestDot,
+							lengthOfDiff,true);
+		        }
+		    } else {
+		        if (s1 >= -extentDeterminant1) {
+		            if (s1 <= extentDeterminant1) // region 1 (side)
+		            {
+		                squareDistance = region1Determinant(test,
+								negativeDirectionDot, diffThisDot,
+								diffTestDot, lengthOfDiff);
+		            } else // region 2 (corner)
+		            {
+		                squareDistance = region2Determinant(test,
+								negativeDirectionDot, diffThisDot,
+								diffTestDot, lengthOfDiff);
+		            }
+		        } else // region 8 (corner)
+		        {
+		            squareDistance = region8Determinant(test,
+							negativeDirectionDot, diffThisDot, diffTestDot,
+							lengthOfDiff);
+		        }
+		    }
+		} else {
+		    if (s1 >= -extentDeterminant1) {
+		        if (s1 <= extentDeterminant1) // region 5 (side)
+		        {
+		            squareDistance = region5Determinant(test,
+							negativeDirectionDot, diffThisDot, diffTestDot,
+							lengthOfDiff);
+		        } else // region 4 (corner)
+		        {
+		            squareDistance = regionCornor46Determinant(test,
+							negativeDirectionDot, diffThisDot, diffTestDot,
+							lengthOfDiff,true);
+		        }
+		    } else // region 6 (corner)
+		    {
+		        squareDistance = regionCornor46Determinant(test,
+						negativeDirectionDot, diffThisDot, diffTestDot,
+						lengthOfDiff,false);
+		    }
+		}
+		return squareDistance;
+	}
+
+	/**
+	 * The parallel segment
+	 * @param test
+	 * @param negativeDirectionDot
+	 * @param diffThisDot
+	 * @param diffTestDot
+	 * @param lengthOfDiff
+	 * @return
+	 */
+	private float paralllelSegment(LineSegment test,
+			float negativeDirectionDot, float diffThisDot, float diffTestDot,
+			float lengthOfDiff) {
+		float squareDistance;
+		// The segments are parallel. The average b0 term is designed to
+		// ensure symmetry of the function. That is, dist(seg0,seg1) and
+		// dist(seg1,seg0) should produce the same number.get
+		float extentSum = extent + test.getExtent();
+		float sign = (negativeDirectionDot > 0.0f ? -1.0f : 1.0f);
+		float averageB0 = (0.5f) * (diffThisDot - sign * diffTestDot);
+		float lambda = -averageB0;
+		if (lambda < -extentSum) {
+		    lambda = -extentSum;
+		} else if (lambda > extentSum) {
+		    lambda = extentSum;
+		}
+
+		squareDistance = lambda * (lambda + (2.0f) * averageB0)
+		        + lengthOfDiff;
+		return squareDistance;
+	}
+
+	
+	
+	
+	/**
+	 * Calculation of Corner for either region 4 or 6
+	 * @param test
+	 * @param negativeDirectionDot
+	 * @param diffThisDot
+	 * @param diffTestDot
+	 * @param lengthOfDiff
+	 * @return
+	 */
+	private float regionCornor46Determinant(LineSegment test,
+			float negativeDirectionDot, float diffThisDot, float diffTestDot,
+			float lengthOfDiff, boolean isRegion4) {
+		float s0;
+		float s1;
+		float squareDistance;
+		float tempS0;
+		if(isRegion4){
+		s1 = test.getExtent();
+		}else{
+		s1 = -test.getExtent();	
+		}
+		tempS0 = -(negativeDirectionDot * s1 + diffThisDot);
+		if (tempS0 > extent) {
+		    s0 = extent;
+		    squareDistance = s0 * (s0 - (2.0f) * tempS0) + s1
+		            * (s1 + (2.0f) * diffTestDot) + lengthOfDiff;
+		} else if (tempS0 >= -extent) {
+		    s0 = tempS0;
+		    squareDistance = -s0 * s0 + s1
+		            * (s1 + (2.0f) * diffTestDot) + lengthOfDiff;
+		} else {
+		    squareDistance = region5Determinant(test,
+					negativeDirectionDot, diffThisDot, diffTestDot,
+					lengthOfDiff);
+		}
+		return squareDistance;
+	}
+	/**
+	 * Calculation of Side for region 5
+	 * @param test
+	 * @param negativeDirectionDot
+	 * @param diffThisDot
+	 * @param diffTestDot
+	 * @param lengthOfDiff
+	 * @return
+	 */
+	private float region5Determinant(LineSegment test,
+			float negativeDirectionDot, float diffThisDot, float diffTestDot,
+			float lengthOfDiff) {
+		float s0;
+		float s1;
+		float squareDistance;
+		float tempS1;
+		s0 = -extent;
+		tempS1 = -(negativeDirectionDot * s0 + diffTestDot);
+		if (tempS1 < -test.getExtent()) {
+		    s1 = -test.getExtent();
+		    squareDistance = s1 * (s1 - (2.0f) * tempS1) + s0
+		            * (s0 + (2.0f) * diffThisDot)
+		            + lengthOfDiff;
+		} else if (tempS1 <= test.getExtent()) {
+		    s1 = tempS1;
+		    squareDistance = -s1 * s1 + s0
+		            * (s0 + (2.0f) * diffThisDot)
+		            + lengthOfDiff;
+		} else {
+		    s1 = test.getExtent();
+		    squareDistance = s1 * (s1 - (2.0f) * tempS1) + s0
+		            * (s0 + (2.0f) * diffThisDot)
+		            + lengthOfDiff;
+		}
+		return squareDistance;
+	}
+
+	/**
+	 * Calculation of corner for region 8
+	 * @param test
+	 * @param negativeDirectionDot
+	 * @param diffThisDot
+	 * @param diffTestDot
+	 * @param lengthOfDiff
+	 * @return
+	 */
+	private float region8Determinant(LineSegment test,
+			float negativeDirectionDot, float diffThisDot, float diffTestDot,
+			float lengthOfDiff) {
+		float s0;
+		float s1;
+		float squareDistance;
+		float tempS0;
+		float tempS1;
+		s1 = -test.getExtent();
+		tempS0 = -(negativeDirectionDot * s1 + diffThisDot);
+		if (tempS0 < -extent) {
+		    squareDistance = calcSquareDistance(diffTestDot, lengthOfDiff, s1,
+					tempS0);
+		} else if (tempS0 <= extent) {
+		    s0 = tempS0;
+		    squareDistance = -s0 * s0 + s1
+		            * (s1 + (2.0f) * diffTestDot)
+		            + lengthOfDiff;
+		} else {
+		    s0 = extent;
+		    tempS1 = -(negativeDirectionDot * s0 + diffTestDot);
+		    if (tempS1 > test.getExtent()) {
+		        s1 = test.getExtent();
+		        squareDistance = s1 * (s1 - (2.0f) * tempS1)
+		                + s0 * (s0 + (2.0f) * diffThisDot)
+		                + lengthOfDiff;
+		    } else if (tempS1 >= -test.getExtent()) {
+		        s1 = tempS1;
+		        squareDistance = -s1 * s1 + s0
+		                * (s0 + (2.0f) * diffThisDot)
+		                + lengthOfDiff;
+		    } else {
+		        s1 = -test.getExtent();
+		        squareDistance = s1 * (s1 - (2.0f) * tempS1)
+		                + s0 * (s0 + (2.0f) * diffThisDot)
+		                + lengthOfDiff;
+		    }
+		}
+		return squareDistance;
+	}
+
+	/**
+	 * @param diffTestDot
+	 * @param lengthOfDiff
+	 * @param s1
+	 * @param tempS0
+	 * @return
+	 */
+	private float calcSquareDistance(float diffTestDot, float lengthOfDiff,
+			float s1, float tempS0) {
+		float s0;
+		float squareDistance;
+		s0 = -extent;
+		squareDistance = s0 * (s0 - (2.0f) * tempS0) + s1
+		        * (s1 + (2.0f) * diffTestDot)
+		        + lengthOfDiff;
+		return squareDistance;
+	}
+
+	/**
+	 * calculation of corner for region 2
+	 * @param test
+	 * @param negativeDirectionDot
+	 * @param diffThisDot
+	 * @param diffTestDot
+	 * @param lengthOfDiff
+	 * @return
+	 */
+	private float region2Determinant(LineSegment test,
+			float negativeDirectionDot, float diffThisDot, float diffTestDot,
+			float lengthOfDiff) {
+		float s0;
+		float s1;
+		float squareDistance;
+		float tempS0;
+		s1 = test.getExtent();
+		tempS0 = -(negativeDirectionDot * s1 + diffThisDot);
+		if (tempS0 < -extent) {
+		    squareDistance = calcSquareDistance(diffTestDot, lengthOfDiff, s1,
+					tempS0);
+		} else if (tempS0 <= extent) {
+		    s0 = tempS0;
+		    squareDistance = -s0 * s0 + s1
+		            * (s1 + (2.0f) * diffTestDot)
+		            + lengthOfDiff;
+		} else {
+		    squareDistance = region1Determinant(test,
+					negativeDirectionDot, diffThisDot,
+					diffTestDot, lengthOfDiff);
+		}
+		return squareDistance;
+	}
+
+	/**
+	 * calculation of side for region 1
+	 * @param test
+	 * @param negativeDirectionDot
+	 * @param diffThisDot
+	 * @param diffTestDot
+	 * @param lengthOfDiff
+	 * @return
+	 */
+	private float region1Determinant(LineSegment test,
+			float negativeDirectionDot, float diffThisDot, float diffTestDot,
+			float lengthOfDiff) {
+		float s0;
+		float s1;
+		float squareDistance;
+		float tempS1;
+		s0 = extent;
+		tempS1 = -(negativeDirectionDot * s0 + diffTestDot);
+		if (tempS1 < -test.getExtent()) {
+		    s1 = -test.getExtent();
+		    squareDistance = s1 * (s1 - (2.0f) * tempS1)
+		            + s0 * (s0 + (2.0f) * diffThisDot)
+		            + lengthOfDiff;
+		} else if (tempS1 <= test.getExtent()) {
+		    s1 = tempS1;
+		    squareDistance = -s1 * s1 + s0
+		            * (s0 + (2.0f) * diffThisDot)
+		            + lengthOfDiff;
+		} else {
+		    s1 = test.getExtent();
+		    squareDistance = s1 * (s1 - (2.0f) * tempS1)
+		            + s0 * (s0 + (2.0f) * diffThisDot)
+		            + lengthOfDiff;
+		}
+		return squareDistance;
+	}
+	/**
+	 * calculation of side for either region 7 or 3
+	 * @param test
+	 * @param negativeDirectionDot
+	 * @param diffThisDot
+	 * @param diffTestDot
+	 * @param lengthOfDiff
+	 * @return
+	 */
+	private float regionSide73Determinant(LineSegment test,
+			float negativeDirectionDot, float diffThisDot, float diffTestDot,
+			float lengthOfDiff,boolean isRegion7) {
+		float s0;
+		float s1;
+		float squareDistance;
+		float tempS0;
+		if(isRegion7)
+		s1 = -test.getExtent();
+		else
+			s1 = test.getExtent();
+		tempS0 = -(negativeDirectionDot * s1 + diffThisDot);
+		if (tempS0 < -extent) {
+		    squareDistance = calcSquareDistance(diffTestDot, lengthOfDiff, s1,
+					tempS0);
+		} else if (tempS0 <= extent) {
+		    s0 = tempS0;
+		    squareDistance = -s0 * s0 + s1
+		            * (s1 + (2.0f) * diffTestDot)
+		            + lengthOfDiff;
+		} else {
+		    s0 = extent;
+		    squareDistance = s0 * (s0 - (2.0f) * tempS0) + s1
+		            * (s1 + (2.0f) * diffTestDot)
+		            + lengthOfDiff;
+		}
+		return squareDistance;
+	}
+	/**
+	 * Calculation of interior for region 0
+	 * @param negativeDirectionDot
+	 * @param diffThisDot
+	 * @param diffTestDot
+	 * @param lengthOfDiff
+	 * @param determinant
+	 * @param s0
+	 * @param s1
+	 * @return
+	 */
+	private float region0Determinant(float negativeDirectionDot,
+			float diffThisDot, float diffTestDot, float lengthOfDiff,
+			float determinant, float s0, float s1) {
+		float squareDistance;
+		float inverseDeterminant = ((float) 1.0)
+		        / determinant;
+		s0 *= inverseDeterminant;
+		s1 *= inverseDeterminant;
+		squareDistance = s0
+		        * (s0 + negativeDirectionDot * s1 + (2.0f) * diffThisDot)
+		        + s1
+		        * (negativeDirectionDot * s0 + s1 + (2.0f) * diffTestDot)
+		        + lengthOfDiff;
+		return squareDistance;
+	}
 
     public float distanceSquared(Ray r) {
         Vector3f kDiff = r.getOrigin().subtract(origin);
@@ -423,117 +563,240 @@ public class LineSegment implements Cloneable, Savable, java.io.Serializable {
         float fB1 = -kDiff.dot(direction);
         float fC = kDiff.lengthSquared();
         float fDet = FastMath.abs(1.0f - fA01 * fA01);
-        float fS0, fS1, fSqrDist, fExtDet;
+        float fSqrDist;
+      //  float fS0, fS1,  fExtDet;
 
         if (fDet >= FastMath.FLT_EPSILON) {
-            // The ray and segment are not parallel.
-            fS0 = fA01 * fB1 - fB0;
-            fS1 = fA01 * fB0 - fB1;
-            fExtDet = extent * fDet;
-
-            if (fS0 >= (float) 0.0) {
-                if (fS1 >= -fExtDet) {
-                    if (fS1 <= fExtDet) // region 0
-                    {
-                        // minimum at interior points of ray and segment
-                        float fInvDet = ((float) 1.0) / fDet;
-                        fS0 *= fInvDet;
-                        fS1 *= fInvDet;
-                        fSqrDist = fS0
-                                * (fS0 + fA01 * fS1 + ((float) 2.0) * fB0)
-                                + fS1
-                                * (fA01 * fS0 + fS1 + ((float) 2.0) * fB1) + fC;
-                    } else // region 1
-                    {
-                        fS1 = extent;
-                        fS0 = -(fA01 * fS1 + fB0);
-                        if (fS0 > (float) 0.0) {
-                            fSqrDist = -fS0 * fS0 + fS1
-                                    * (fS1 + ((float) 2.0) * fB1) + fC;
-                        } else {
-                            fS0 = (float) 0.0;
-                            fSqrDist = fS1 * (fS1 + ((float) 2.0) * fB1) + fC;
-                        }
-                    }
-                } else // region 5
-                {
-                    fS1 = -extent;
-                    fS0 = -(fA01 * fS1 + fB0);
-                    if (fS0 > (float) 0.0) {
-                        fSqrDist = -fS0 * fS0 + fS1
-                                * (fS1 + ((float) 2.0) * fB1) + fC;
-                    } else {
-                        fS0 = (float) 0.0;
-                        fSqrDist = fS1 * (fS1 + ((float) 2.0) * fB1) + fC;
-                    }
-                }
-            } else {
-                if (fS1 <= -fExtDet) // region 4
-                {
-                    fS0 = -(-fA01 * extent + fB0);
-                    if (fS0 > (float) 0.0) {
-                        fS1 = -extent;
-                        fSqrDist = -fS0 * fS0 + fS1
-                                * (fS1 + ((float) 2.0) * fB1) + fC;
-                    } else {
-                        fS0 = (float) 0.0;
-                        fS1 = -fB1;
-                        if (fS1 < -extent) {
-                            fS1 = -extent;
-                        } else if (fS1 > extent) {
-                            fS1 = extent;
-                        }
-                        fSqrDist = fS1 * (fS1 + ((float) 2.0) * fB1) + fC;
-                    }
-                } else if (fS1 <= fExtDet) // region 3
-                {
-                    fS0 = (float) 0.0;
-                    fS1 = -fB1;
-                    if (fS1 < -extent) {
-                        fS1 = -extent;
-                    } else if (fS1 > extent) {
-                        fS1 = extent;
-                    }
-                    fSqrDist = fS1 * (fS1 + ((float) 2.0) * fB1) + fC;
-                } else // region 2
-                {
-                    fS0 = -(fA01 * extent + fB0);
-                    if (fS0 > (float) 0.0) {
-                        fS1 = extent;
-                        fSqrDist = -fS0 * fS0 + fS1
-                                * (fS1 + ((float) 2.0) * fB1) + fC;
-                    } else {
-                        fS0 = (float) 0.0;
-                        fS1 = -fB1;
-                        if (fS1 < -extent) {
-                            fS1 = -extent;
-                        } else if (fS1 > extent) {
-                            fS1 = extent;
-                        }
-                        fSqrDist = fS1 * (fS1 + ((float) 2.0) * fB1) + fC;
-                    }
-                }
-            }
+            fSqrDist = nonParallelRaySegment(fA01, fB0, fB1, fC, fDet);
         } else {
-            // ray and segment are parallel
-            if (fA01 > (float) 0.0) {
-                // opposite direction vectors
-                fS1 = -extent;
-            } else {
-                // same direction vectors
-                fS1 = extent;
-            }
-
-            fS0 = -(fA01 * fS1 + fB0);
-            if (fS0 > (float) 0.0) {
-                fSqrDist = -fS0 * fS0 + fS1 * (fS1 + ((float) 2.0) * fB1) + fC;
-            } else {
-                fS0 = (float) 0.0;
-                fSqrDist = fS1 * (fS1 + ((float) 2.0) * fB1) + fC;
-            }
+            fSqrDist = parallelRaySegment(fA01, fB0, fB1, fC);
         }
         return FastMath.abs(fSqrDist);
     }
+
+	/**
+	 * Calculation of a non-parallel ray and segment
+	 * @param fA01
+	 * @param fB0
+	 * @param fB1
+	 * @param fC
+	 * @param fDet
+	 * @return
+	 */
+	private float nonParallelRaySegment(float fA01, float fB0, float fB1,
+			float fC, float fDet) {
+		float fS0;
+		float fS1;
+		float fSqrDist;
+		float fExtDet;
+		// The ray and segment are not parallel.
+		fS0 = fA01 * fB1 - fB0;
+		fS1 = fA01 * fB0 - fB1;
+		fExtDet = extent * fDet;
+
+		if (fS0 >= (float) 0.0) {
+		    if (fS1 >= -fExtDet) {
+		        if (fS1 <= fExtDet) // region 0
+		        {
+		            fSqrDist = distanceSquaredRayRegion0(fA01, fB0, fB1,
+							fC, fDet, fS0, fS1);
+		        } else // region 1
+		        {
+		            fSqrDist = distanceSquaredRayRegion1(fA01, fB0, fB1, fC);
+		        }
+		    } else // region 5
+		    {
+		        fSqrDist = distanceSquaredRayRegion5(fA01, fB0, fB1, fC);
+		    }
+		} else {
+		    if (fS1 <= -fExtDet) // region 4
+		    {
+		        fSqrDist = distanceSquaredRayRegion4(fA01, fB0, fB1, fC);
+		    } else if (fS1 <= fExtDet) // region 3
+		    {
+		        fSqrDist = distanceSquaredRayRegion3(fB1, fC);
+		    } else // region 2
+		    {
+		        fSqrDist = distanceSquaredRayRegion2(fA01, fB0, fB1, fC);
+		    }
+		}
+		return fSqrDist;
+	}
+
+	/**
+	 * Calculation of parallel ray and segment
+	 * @param fA01
+	 * @param fB0
+	 * @param fB1
+	 * @param fC
+	 * @return
+	 */
+	private float parallelRaySegment(float fA01, float fB0, float fB1, float fC) {
+		float fS0;
+		float fS1;
+		float fSqrDist;
+		// ray and segment are parallel
+		if (fA01 > (float) 0.0) {
+		    // opposite direction vectors
+		    fS1 = -extent;
+		} else {
+		    // same direction vectors
+		    fS1 = extent;
+		}
+
+		fS0 = -(fA01 * fS1 + fB0);
+		if (fS0 > (float) 0.0) {
+		    fSqrDist = -fS0 * fS0 + fS1 * (fS1 + ((float) 2.0) * fB1) + fC;
+		} else {
+		    fS0 = (float) 0.0;
+		    fSqrDist = fS1 * (fS1 + ((float) 2.0) * fB1) + fC;
+		}
+		return fSqrDist;
+	}
+
+	/**
+	 * Calculation of region 2 for a ray and segment
+	 * @param fA01
+	 * @param fB0
+	 * @param fB1
+	 * @param fC
+	 * @return
+	 */
+	private float distanceSquaredRayRegion2(float fA01, float fB0, float fB1,
+			float fC) {
+		float fS0;
+		float fS1;
+		float fSqrDist;
+		fS0 = -(fA01 * extent + fB0);
+		if (fS0 > (float) 0.0) {
+		    fS1 = extent;
+		    fSqrDist = -fS0 * fS0 + fS1
+		            * (fS1 + ((float) 2.0) * fB1) + fC;
+		} else {
+		    fSqrDist = distanceSquaredRayRegion3(fB1, fC);
+		}
+		return fSqrDist;
+	}
+
+	/**
+	 * Calculation of region 3 for a ray and segment
+	 * @param fB1
+	 * @param fC
+	 * @return
+	 */
+	private float distanceSquaredRayRegion3(float fB1, float fC) {
+	   // float fS0;
+		float fS1;
+		float fSqrDist;
+	//	fS0 = (float) 0.0;
+		fS1 = -fB1;
+		if (fS1 < -extent) {
+		    fS1 = -extent;
+		} else if (fS1 > extent) {
+		    fS1 = extent;
+		}
+		fSqrDist = fS1 * (fS1 + ((float) 2.0) * fB1) + fC;
+		return fSqrDist;
+	}
+
+	/**
+	 * Calculation of region 4 for a ray and segment
+	 * @param fA01
+	 * @param fB0
+	 * @param fB1
+	 * @param fC
+	 * @return
+	 */
+	private float distanceSquaredRayRegion4(float fA01, float fB0, float fB1,
+			float fC) {
+		float fS0;
+		float fS1;
+		float fSqrDist;
+		fS0 = -(-fA01 * extent + fB0);
+		if (fS0 > (float) 0.0) {
+		    fS1 = -extent;
+		    fSqrDist = -fS0 * fS0 + fS1
+		            * (fS1 + ((float) 2.0) * fB1) + fC;
+		} else {
+		    fSqrDist = distanceSquaredRayRegion3(fB1, fC);
+		}
+		return fSqrDist;
+	}
+
+	/**
+	 * Calculation of region 5 for a ray and segment
+	 * @param fA01
+	 * @param fB0
+	 * @param fB1
+	 * @param fC
+	 * @return
+	 */
+	private float distanceSquaredRayRegion5(float fA01, float fB0, float fB1,
+			float fC) {
+		float fS0;
+		float fS1;
+		float fSqrDist;
+		fS1 = -extent;
+		fS0 = -(fA01 * fS1 + fB0);
+		if (fS0 > (float) 0.0) {
+		    fSqrDist = -fS0 * fS0 + fS1
+		            * (fS1 + ((float) 2.0) * fB1) + fC;
+		} else {
+		    fS0 = (float) 0.0;
+		    fSqrDist = fS1 * (fS1 + ((float) 2.0) * fB1) + fC;
+		}
+		return fSqrDist;
+	}
+
+	/**
+	 * Calculation of region 1 for a ray and segment
+	 * @param fA01
+	 * @param fB0
+	 * @param fB1
+	 * @param fC
+	 * @return
+	 */
+	private float distanceSquaredRayRegion1(float fA01, float fB0, float fB1,
+			float fC) {
+		float fS0;
+		float fS1;
+		float fSqrDist;
+		fS1 = extent;
+		fS0 = -(fA01 * fS1 + fB0);
+		if (fS0 > (float) 0.0) {
+		    fSqrDist = -fS0 * fS0 + fS1
+		            * (fS1 + ((float) 2.0) * fB1) + fC;
+		} else {
+		    fS0 = (float) 0.0;
+		    fSqrDist = fS1 * (fS1 + ((float) 2.0) * fB1) + fC;
+		}
+		return fSqrDist;
+	}
+
+	/**
+	 * Calculation of region 0 for a ray and segment
+	 * @param fA01
+	 * @param fB0
+	 * @param fB1
+	 * @param fC
+	 * @param fDet
+	 * @param fS0
+	 * @param fS1
+	 * @return
+	 */
+	private float distanceSquaredRayRegion0(float fA01, float fB0, float fB1,
+			float fC, float fDet, float fS0, float fS1) {
+		float fSqrDist;
+		// minimum at interior points of ray and segment
+		float fInvDet = ((float) 1.0) / fDet;
+		fS0 *= fInvDet;
+		fS1 *= fInvDet;
+		fSqrDist = fS0
+		        * (fS0 + fA01 * fS1 + ((float) 2.0) * fB0)
+		        + fS1
+		        * (fA01 * fS0 + fS1 + ((float) 2.0) * fB1) + fC;
+		return fSqrDist;
+	}
 
     public Vector3f getDirection() {
         return direction;

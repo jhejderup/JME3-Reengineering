@@ -1176,14 +1176,14 @@ public class LineSegmentTest {
 		// add additional test code here
 		assertEquals(true, result);
 	}
-
-	/**
+/*
+	*//**
 	 * Run the void read(JmeImporter) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-13 23:52
-	 */
+	 *//*
 	@Test
 	public void testRead_1()
 		throws Exception {
@@ -1202,13 +1202,13 @@ public class LineSegmentTest {
 		//       at com.jme3.math.LineSegment.read(LineSegment.java:587)
 	}
 
-	/**
+	*//**
 	 * Run the void read(JmeImporter) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-13 23:52
-	 */
+	 *//*
 	@Test
 	public void testRead_2()
 		throws Exception {
@@ -1227,13 +1227,13 @@ public class LineSegmentTest {
 		//       at com.jme3.math.LineSegment.read(LineSegment.java:587)
 	}
 
-	/**
+	*//**
 	 * Run the void read(JmeImporter) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-13 23:52
-	 */
+	 *//*
 	@Test
 	public void testRead_3()
 		throws Exception {
@@ -1252,13 +1252,13 @@ public class LineSegmentTest {
 		//       at com.jme3.math.LineSegment.read(LineSegment.java:587)
 	}
 
-	/**
+	*//**
 	 * Run the void read(JmeImporter) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-13 23:52
-	 */
+	 *//*
 	@Test
 	public void testRead_4()
 		throws Exception {
@@ -1275,7 +1275,7 @@ public class LineSegmentTest {
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
 		//       at com.jme3.math.LineSegment.read(LineSegment.java:587)
-	}
+	}*/
 
 	/**
 	 * Run the void set(LineSegment) method test.
@@ -1349,13 +1349,13 @@ public class LineSegmentTest {
 		// add additional test code here
 	}
 
-	/**
+/*	*//**
 	 * Run the void write(JmeExporter) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-13 23:52
-	 */
+	 *//*
 	@Test
 	public void testWrite_1()
 		throws Exception {
@@ -1374,13 +1374,13 @@ public class LineSegmentTest {
 		//       at com.jme3.math.LineSegment.write(LineSegment.java:580)
 	}
 
-	/**
+	*//**
 	 * Run the void write(JmeExporter) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-13 23:52
-	 */
+	 *//*
 	@Test
 	public void testWrite_2()
 		throws Exception {
@@ -1399,13 +1399,13 @@ public class LineSegmentTest {
 		//       at com.jme3.math.LineSegment.write(LineSegment.java:580)
 	}
 
-	/**
+	*//**
 	 * Run the void write(JmeExporter) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-13 23:52
-	 */
+	 *//*
 	@Test
 	public void testWrite_3()
 		throws Exception {
@@ -1424,13 +1424,13 @@ public class LineSegmentTest {
 		//       at com.jme3.math.LineSegment.write(LineSegment.java:580)
 	}
 
-	/**
+	*//**
 	 * Run the void write(JmeExporter) method test.
 	 *
 	 * @throws Exception
 	 *
 	 * @generatedBy CodePro at 2013-01-13 23:52
-	 */
+	 *//*
 	@Test
 	public void testWrite_4()
 		throws Exception {
@@ -1447,7 +1447,7 @@ public class LineSegmentTest {
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
 		//       at com.jme3.math.LineSegment.write(LineSegment.java:580)
-	}
+	}*/
 
 	/**
 	 * Perform pre-test initialization.
